@@ -1,0 +1,146 @@
+\documentclass[a4paper, 11pt]{report}
+
+\addtolength{\hoffset}{-1cm}
+\addtolength{\textwidth}{2cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{tikz}
+\tikzstyle{int}=[draw, fill=white!20, minimum size=2em]
+\tikzstyle{init} = [pin edge={to-,thin,black}]
+
+\usepackage{csquotes}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstnewenvironment{OCaml}
+                  {\lstset{
+                      language=[Objective]Caml,
+                      breaklines=true,
+                      commentstyle=\color{purple},
+                      stringstyle=\color{red},
+                      identifierstyle=\ttfamily,
+                      keywordstyle=\color{blue},
+                      basicstyle=\footnotesize,
+                      xleftmargin=0.15\textwidth
+                    }
+                  }
+                  {}
+
+\begin{document}
+
+\chapter{}
+
+Béatrice CARRE
+
+\section*{Introduction}
+
+\section{}
+
+
+ $[\![ VAR(v,t) ]\!]
+_{(fr=false,sd="",nb=0),count,tabvar,dollar2,dollar3 | v\notin tabvar, t\neq FUNTYPE} $
+$\longrightarrow$
+\begin{OCaml}
+tabVar := v::!tabVar;  
+out_start ("\n"^v^ ":") 0 ;  
+out_start (string_of_type t) 3; 
+\end{OCaml}
+
+
+ $[\![ CONST(INT i) ]\!]
+_{(fr=false,sd="v",nb=0),count,tabvar,dollar2,dollar3} $
+$\longrightarrow$
+\begin{OCaml}
+out ((string_of_int i));
+count := !count + 1
+\end{OCaml}
+
+
+ $[\![ AFFECT(var, instr) ]\!]
+_{(fr,sd=,nb),count,tabvar,dollar2,dollar3} $
+$\longrightarrow$
+\begin{center}
+ $[\![ i ]\!]
+_{(fr=false,sd=var,nb),count,tabvar,dollar2,dollar3} $
+\end{center}
+
+ $[\![ PRIM((s,lt),instr\_list) ]\!]
+_{(fr=false,sd="v",nb),count,tabvar,dollar2,dollar3} $
+$\longrightarrow$
+\begin{OCaml}
+let res = List.
+out ((string_of_int i));
+count := !count + 1
+\end{OCaml}
+
+ $[\![ BLOCK(list, instr) ]\!]
+_{(fr,sd=,nb),count,tabvar,dollar2,dollar3} $
+$\longrightarrow$
+\begin{center}
+List.iter (fun (s,li\_t,i) -> $[\![ i ]\!]
+_{(fr,sd=,nb),count,tabvar,dollar2,dollar3} $) list;
+
+$[\![ instr ]\!]
+_{(fr,sd=,nb),count,tabvar,dollar2,dollar3} $
+\end{center}
+$[\![ CONST(c) ]\!]
+_{(fr,sd=,nb),tabvarF} $
+$\longrightarrow$
+\begin{OCaml}
+  if nb >1 then
+  tabVarF := (c,"")::!tabVarF;
+\end{OCaml}
+     
+$[\![ VAR(v,FUNTYPE) ]\!]
+_{(fr,sd=,nb),etiqf,tabvarF} $
+$\longrightarrow$
+\begin{OCaml}
+  etiqf := (String.sub v ((String.index v '.')+1) (((String.length v) - (String.index v '.'))-1) );
+  isCreat := true;
+  tabVarF := [];
+\end{OCaml}
+
+$[\![ VAR(v,t) ]\!]
+_{(fr,sd,nb),etiqf,tabvarF} $
+$\longrightarrow$
+\begin{OCaml}
+  if nb > 1 then
+  tabVarF := (UNIT,v) ::!tabVarF;
+\end{OCaml}
+
+$[\![ AFFECT(v,i) ]\!]
+_{(fr,sd,nb),etiqf,tabvarF} $
+$\longrightarrow$
+\begin{OCaml}
+ prod\_call\_func2 (false,"pp",nb+1) i;
+\end{OCaml}
+
+$[\![ BLOCK(l,i) ]\!]
+_{(fr,sd,nb),etiqf,tabvarF} $
+$\longrightarrow$
+\begin{OCaml}
+  List.iter (fun (v,t,i) -> prod\_call\_func2 (false,sd,nb+1) i) l;
+  prod\_call\_func2 (fr,sd,nb+1) i;
+\end{OCaml}
+
+$[\![ BLOCK(l,i) ]\!]
+_{(fr,sd,nb),etiqf,tabvarF,isCreat} $
+$\longrightarrow$
+\begin{OCaml}
+  if !isCreat then(
+  tabVarF := List.rev !tabVarF;
+  prod\_fun\_called !etiqf !tabVarF;
+  tabVarF := [];
+  isCreat := false
+  )
+\end{OCaml} 
+
+
+\end{document}
