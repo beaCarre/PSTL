@@ -1,0 +1,16 @@
+package mypack;
+
+class Point {
+ 
+  int x;
+  int y; 
+  
+  [name default_point] <init> ();
+  [name point] <init> (int,int);
+
+  void display();
+
+  static void main(string [] arg);
+
+}
+
