@@ -8,7 +8,7 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{multicol}
-\usepackage{csquotes}
+
 
 \usepackage{listings}
 \usepackage{color}
@@ -71,6 +71,8 @@ dont voici la structure :
 \newpage
 \begin{multicols}{2}
 \begin{OCaml}
+(**  module Idl  *)
+
 type ident = {
     id_location: Loc.t;
     id_desc: string 
@@ -172,6 +174,8 @@ chaque classe ou interface déninie dans l'idl.
 Le module Cidl définit l'AST allant être manipulé dans les passes de
 génération de code.
 \begin{OCaml}
+(**  module CIdl  *)
+
 type typ =
   | Cvoid
   | Cboolean (** boolean -> bool *)
@@ -293,7 +297,8 @@ après ces précédents phases, le CIdl.file.
   List.rev str_list
 \end{OCaml}
 
-\textbf{make\_jni\_type :}
+\textbf{Type jni}
+\emph{MlClass.make\_jni\_type}
 \newline
 $[\![ file ]\!]$$\longrightarrow$
 
@@ -304,7 +309,8 @@ $[\![ clazz ]\!]$$\longrightarrow$
 "type _jni_"^clazz.cc_ident.ic_ml_name^" = Jni.obj;;"
 \end{OCaml}
 
-\textbf{make\_class\_type}
+\textbf{Class type}
+\emph{MlClass.make\_class\_type}
 \newline
 $[\![ clazz ]\!]_{callback=false}$$\longrightarrow$
 
@@ -318,7 +324,7 @@ $[\![ clazz.cc\_exends ]\!]_{callback=false}$
 $[\![ clazz.cc\_implements ]\!]_{callback=false}$
 
 \begin{OCaml}
-    "method "^_get_jni_"^clazz.cc_ident.ic_ml_name^" : "^_jni_^"clazz.cc_ident.ic_ml_name
+    "method _get_jni_"^clazz.cc_ident.ic_ml_name^" : _jni_"^ clazz.cc_ident.ic_ml_name
 \end{OCaml}
 
 $[\![ clazz.cc\_methods ]\!]_{callback=false}$
@@ -366,58 +372,252 @@ $[\![ cc\_implements ]\!]_{callback=false}$$\longrightarrow$
 $[\![ cc\_all\_inherited ]\!]_{callback=true}$$\longrightarrow$
 
 \begin{OCaml}
-   List.map (fun cl -> 
-   "method _get_jni_" ^ cl.cc_ident.ic_ml_name^" : _jni_"^cl.cc_ident.ic_ml_name ) cl.cc_all_inherited
+   String.concat (List.map (fun cl -> 
+   "method _get_jni_" ^ cl.cc_ident.ic_ml_name^" : _jni_"^cl.cc_ident.ic_ml_name ) cl.cc_all_inherited)
 \end{OCaml}
 $[\![ cc\_methods ]\!]_{callback=false}$$\longrightarrow$
 
 \begin{OCaml}
-   List.map ( fun m ->
+   String.concat (List.map ( fun m ->
      match m.cm_desc with
       | Cmethod (abstract, rtype, args) ->   
-         let typ = (args, rtype) in
 	 "method "^m.cm_ident.im_ml_name^" : "^\end{OCaml}
-\-\hspace{2cm}$[\![ typ ]\!]$\begin{OCaml} 
-      | Cset typ -> 	
-         let typ = ([typ], Cvoid) in
+\-\hspace{2cm}$[\![ typs(rtype,args) ]\!]$\begin{OCaml} 
+      | Cset typ ->
 	 "method "^m.cm_ident.im_ml_name" : "^\end{OCaml}
-\-\hspace{2cm}$[\![ typ ]\!]$\begin{OCaml} 
+\-\hspace{2cm}$[\![ typs([typ], Cvoid) ]\!]$\begin{OCaml} 
       | Cget typ ->
-	 let typ = ([], typ) in
 	 "method "^m.cm_ident.im_ml_name^" : "^\end{OCaml}
-\-\hspace{2cm}$[\![ typ ]\!]$\begin{OCaml} 
-    ) cc_methods
+\-\hspace{2cm}$[\![ typs([], typ) ]\!]$\begin{OCaml} 
+    ) cc_methods)
 \end{OCaml}
-$[\![ cc\_public\_methods ]\!]_{callback=true}$$\longrightarrow$
+$[\![ cc\_methods ]\!]_{callback=true}$$\longrightarrow$
 
 \begin{OCaml}
-   List.map ( fun ->
-     match m.cm_desc with 
-       | Cset _ 
-       | Cget _ -> acc
-       | Cmethod (abstract,rtyp, targs) -> 
-         let ml_stub_name = Ident.get_method_ml_stub_name m.cm_ident in
-	 let sign = match targs with 
-           | [] -> MlType.ml_jni_signature_of_type rtyp
-	   | targs -> MlType.ml_jni_signature targs rtyp in
-	   <:class_sig_item< method $lid:ml_stub_name$ : $sign$ >> :: acc
+     List.map ( fun m ->
+     match m.cm_desc with
+      | Cmethod (abstract, rtype, args) -> 
+         if abstract then
+            "method virtual "^m.cm_ident.im_ml_name^" : "^\end{OCaml}
+\-\hspace{2.5cm}$[\![ typs(rtype,args) ]\!]$\begin{OCaml} 
+         else
+	    "method "^m.cm_ident.im_ml_name^" : "^\end{OCaml}
+\-\hspace{2.5cm}$[\![ typs(rtype,args) ]\!]$\begin{OCaml} 
+      | Cset typ ->
+	 "method "^m.cm_ident.im_ml_name" : "^\end{OCaml}
+\-\hspace{2cm}$[\![ typs([typ], Cvoid) ]\!]$\begin{OCaml} 
+      | Cget typ ->
+	 "method "^m.cm_ident.im_ml_name^" : "^\end{OCaml}
+\-\hspace{2cm}$[\![ typs([], typ) ]\!]$\begin{OCaml} 
+    ) cc_methods
+\end{OCaml}
+$[\![ typs(args,rtyp) ]\!]$$\longrightarrow$
+\begin{OCaml}
+   let rec loop args = match args with
+     | [] -> ml_signature_of_type rtyp
+     | typ::args -> $[\![ typ ]\!]$^" -> "^loop args
+     in 
+     match args with 
+       | [] -> "unit -> "^$[\![ typ=rtyp ]\!]$
+       | args -> loop args 
+\end{OCaml}
+$[\![ typ ]\!]$$\longrightarrow$
 
+\begin{OCaml}
+     match typ with
+    | Cvoid -> "unit"
+    | Cboolean -> "bool"
+    | Cchar -> "int"
+    | Cbyte -> "int"
+    | Cshort -> "int"
+    | Cint -> "int32"
+    | Ccamlint -> "int"
+    | Clong -> "int64"
+    | Cfloat -> "float"
+    | Cdouble -> "float"
+    | Cobject Cstring -> "string "
+    | Cobject Ctop ->"JniHierarchy.top"
+    | Cobject (Cjavaarray typ) -> "JniArray.jArray "^\end{OCaml}
+\-\hspace{2cm}$[\![ typ ]\!]$\begin{OCaml}
+    | Cobject (Carray typ) -> "array "^\end{OCaml}
+\-\hspace{2cm}$[\![ typ ]\!]$\begin{OCaml}
+    | Cobject (Cname id) ->  id.ic_ml_name
+    | Ccallback id -> id.ic_ml_name
+\end{OCaml}
+
+\textbf{Cast JNI}
+\emph{MlClass.make\_jniupcast}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
 \end{OCaml}
 
 
+\emph{MlClass.make\_jnidowncast}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+
+\textbf{Fonction d'allocation}
+\emph{MlClass.make\_alloc}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
 
 
+\emph{MlClass.make\_alloc\_stub}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+
+\textbf{Capsule / souche}
+\emph{MlClass.make\_wrapper}
+\newline
+$[\![ file ]\!]_{callback=false}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]_{callback=false}$ file
+\newline
+$[\![ clazz ]\!]_{callback=false}$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+$[\![ file ]\!]_{callback=true}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]_{callback=true}$ file
+\newline
+$[\![ clazz ]\!]_{callback=true}$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+ 
+\textbf{Downcast utilisateur}
+\emph{MlClass.make\_downcast}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
 
 
+\emph{MlClass.make\_instance\_of}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
 
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
 
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
 
+\textbf{Tableaux}
+\emph{MlClass.make\_array}
+\newline
+$[\![ file ]\!]$$\longrightarrow$
 
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+
+\textbf{Fonction d'initialisation}
+\emph{MlClass.make\_fun}
+\newline
+$[\![ file ]\!]_{callback=false}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]_{callback=false}$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+$[\![ file ]\!]_{callback=true}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]_{callback=true}$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+
+\textbf{Classe de construction}
+\emph{MlClass.make\_class}
+\newline
+$[\![ file ]\!]_{callback=false}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]_{callback=false}$$\longrightarrow$
+
+\begin{OCaml}
+     
+\end{OCaml}
+$[\![ file ]\!]_{callback=true}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]_{callback=true}$$\longrightarrow$
+
+\begin{OCaml}
+     List.map ( fun ->  ) cl_list
+\end{OCaml}
+\textbf{fonctions / methodes static}
+\emph{MlClass.make\_static}
+\newline
+$[\![ file ]\!]_{callback=false}$$\longrightarrow$
+
+String.concat $[\![ clazz ]\!]$ file
+\newline
+$[\![ clazz ]\!]_{callback=false}$$\longrightarrow$
+
+\begin{OCaml}
+     
+\end{OCaml}
 
 
 
 \section{génération .mli}
-
+ 
 
 
 \end{document}
