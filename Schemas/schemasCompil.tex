@@ -1,20 +1,18 @@
 \documentclass[a4paper, 11pt]{report}
-
 \addtolength{\hoffset}{-1cm}
 \addtolength{\textwidth}{2cm}
-
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 \usepackage[T1]{fontenc}
 
 \usepackage{multicol}
-
-
 \usepackage{listings}
+
 \usepackage{color}
 \definecolor{lightgray}{rgb}{.9,.9,.9}
 \definecolor{darkgray}{rgb}{.4,.4,.4}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
 \lstnewenvironment{OCaml}
                   {\lstset{
                       language=[Objective]Caml,
@@ -29,33 +27,37 @@
                     }
                   }
                   {}
-\lstdefinelanguage{idlgrammar}{
-  morekeywords={package,abstract,extends,class,implements,static,final,<ini>,interface,callback,array,[,],name,void,boolean,byte,char,short,int,long,float,double,string},
-  opt={<,>},
-  typ={file,idlpackage,decl,idlclass,class_elt,idlinterface,interface_elt,args,arg,attributes,attribute,type,basetype,object,qname,idlname}
+\newcommand{\class}{\ttfamily\textit{class}}
+\newcommand{\interface}{\ttfamily\textit{interface}}
+\newcommand{\name}{\ttfamily\textit{name}}
+\newcommand{\package}{\ttfamily\textit{package}}
+\newcommand{\ident}{\footnotesize\textbf{ident}}
+  \lstdefinelanguage{idlgrammar}{
+  morekeywords={package,abstract,extends,class,implements,static,final,<ini>,interface,callback,array,[,],{,},
+    name ,void,boolean,byte,char,short,int,long,float,double,string},
+  alsoletter=[]{},
 }
  \lstnewenvironment{idl}
                   {\lstset{
                       language=idlgrammar,
                       breaklines=true,
                       showstringspaces=false,
-                      optstyle=\color{red},
-                      typstyle={\color{purple},
-                      keywordstyle=\color{blue},
-                      identifierstyle=\ttfamily,
+                      keywordstyle=\ttfamily\color{blue},
+                      identifierstyle=\ttfamily\textit,
                       basicstyle=\footnotesize,
+                     escapeinside={(*}{*)},
                       %xleftmargin=0.08\textwidth
                     }
                   }
-                  {}        
+                  {} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
-
 \chapter{}
-
 Béatrice CARRE
 
 \section*{Introduction}
-
 La génération de code se fait en plusieurs passes :
 \begin{itemize}
 \item analyse lexicale et analyse syntaxique de l' idl donnant un
@@ -68,117 +70,116 @@ La génération de code se fait en plusieurs passes :
 \end{itemize}
 Ces différentes étapes seront présentées plus en profondeur.
 
-\section{BNF}
-\begin{multicols}{2}
-\begin{idl}
-file ::= package [package]*
-  	| decl [decl]*
- 
-package	::= package qname ; decl [decl]*
-decl ::= class
-  	| interface
- 
-class ::= [ [attributes] ] [abstract] class name
-  	  [ extends qname ]
-  	  [ implements qname [, qname]* ]
-  	  { [class_elt ;]* }
-class_elt ::= [ [attributes] ] [static] [final] type name
-  	| [ [attributes] ] [static] [abstract] type name ([args])
-  	| [attributes] <init> ([args])
- 
-interface ::= [ [attributes] ] interface name
-  	      [ extends qname [, qname]* ]
-  	      { [interface_elt ;]* }
-interface_elt ::= 
-      [ [attributes] ] type name
-      | [ [attributes] ] type name ([args])
- 
-args ::= arg [, arg]*
-arg ::= [ [attributes] ] type [name]
- 
-attributes ::= 	attribute [, attribute]*
-attribute ::= name ident
-  	| callback
-  	| array
- 
-type ::= basetype
-  	| object
-  	| basetype [ ]
-basetype ::= void
-  	| boolean
-  	| byte
-  	| char
-  	| short
-  	| int
-  	| long
-  	| float
-  	| double
-  	| string
-object := qname
-qname ::= name [. name]*
-name ::= ident
-\end{idl}
-\end{multicols}
+\section{La syntaxe de l'idl}
+La syntaxe du langage d'interface est donné en annexe, en utilisant la
+notation BNF.
+
+Les symboles < et > encadrent des règles optionnelles,
+les terminaux sont en bleu, et les non-terminaux sont en italique.
+
 
 \section{lexing parsing}
-La première phase est la phase d'analyse lexicale et syntaxique,
+La première phase est celle d'analyse lexicale et syntaxique,
 séparant l'idl en lexèmes et construisant l'AST, défini par Idl.file,
-dont voici la structure :
+dont la structure : est définie en annexe
 
-\ 
-\newline
 \section{check}
-
-Vient ensuite une phase, prenant l'AST obtenue par la
-phase précédente, construisant une liste de CIdl.clazz, structurant
-chaque classe ou interface déninie dans l'idl. 
-Le module Cidl définit l'AST allant être manipulé dans les passes de
-génération de code.
+Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
+phase précédente, vérifiant si le programme est correct, et
+construisant une liste de CIdl.clazz, restructurant chaque classe ou interface définie dans l'idl. 
+Le module Cidl définit le nouvel AST allant être manipulé dans les passes de
+génération de code. Il est décrit en annexe.
 
 \section{génération stub\_file}
 //TODO
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   SCHEMAS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section{génération .ml}
 
 La génération de ce code se fait en plusieurs passes sur l'ast obtenu
 après ces précédents phases, le CIdl.file.
 
-\textbf{Type jni}
-\emph{MlClass.make\_jni\_type}
+\subsection{schémas de compilation}
+La génération de code rend une liste de valeurs imprimées (dans le
+fichier engendré), en modifiant
+Nous considérons l'environnement contenant les :
+\begin{itemize}
+\item package (:string) le nom du package courant
+\item class\_env, un structure contenant les variables nécessaires à l
+TODO
 
-\textbf{Class type}
-\emph{MlClass.make\_class\_type}
+\item isInterface (:bool) est vrai si la déclaration courante est une
+  interface. Faux si c'ets une classe.
+\item isCallback (:bool) si la classe courante a l'attribut callback
+\item isAbstractC (:bool) si la classe courante est abstraite
+\item classname (:string) 
+\item isAbstractElt (:bool) util?TODO
+\item isStaticElt (:bool) util?TODO
+\item isFinalElt (:bool) util?TODO
+\end{itemize} 
+Et les fonctions suivantes :
+\begin{itemize}
+\item init\_class\_env ()
+\end{itemize} 
+\noindent
+$[\![ package\ <package>^* ]\!]$$\longrightarrow$
 
-\textbf{Cast JNI}
-\emph{MlClass.make\_jniupcast}
-\emph{MlClass.make\_jnidowncast}
+$[\![ package ]\!]$
+\begin{OCaml}
+   init_env ();
+\end{OCaml} 
 
-\textbf{Fonction d'allocation}
-\emph{MlClass.make\_alloc}
-\emph{MlClass.make\_alloc\_stub}
-
-\textbf{Capsule / souche}
-\emph{MlClass.make\_wrapper}
-
-\textbf{Downcast utilisateur}
-\emph{MlClass.make\_downcast}
-\emph{MlClass.make\_instance\_of}
-
-\textbf{Tableaux}
-\emph{MlClass.make\_array}
-
-\textbf{Fonction d'initialisation}
-\emph{MlClass.make\_fun}
-
-\textbf{Classe de construction}
-\emph{MlClass.make\_class}
-
-
-
-\textbf{fonctions / methodes static}
-\emph{MlClass.make\_static}
+$[\![ package ]\!]$ 
+\newline
+\ 
+\newline
+\noindent
+$[\![ decl\ <decl>^* ]\!]$$\longrightarrow$
+% classes et interfaces sans package
 
 
 
+\newline
+\ 
+\newline
+\noindent
+$[\![ package\ {\color{blue}qname}\ ;\ decl <decl>^* ]\!]$$\longrightarrow$
+% metttre package name dans env
+
+
+
+\newline
+\ 
+\newline
+\noindent
+$[\![ class\ {\color{blue}qname}\ ]\!]$$\longrightarrow$
+% 1 type objet t 
+% 1 classe encapsulante W de type t
+% 1 a n classes (Ci), sous-classes de W (1 par constructeur)
+% 1 fonction instanceof pr ce type
+% 1 fonction de cast pour ce type
+
+\noindent
+$[\![{\color{blue}class}\  name\ {\color{blue}extends}\ qname ]\!]$$\longrightarrow$
+%  
+
+\noindent
+$[\![{\color{blue}class}\  name\ {\color{blue}extends}\ qname ]\!]$$\longrightarrow$
+% 
+
+\noindent
+$[\![{\color{blue}class}\  name\ {\color{blue}extends}\ qname ]\!]$$\longrightarrow$
+% 
 
 
 \section{génération .mli}
@@ -195,10 +196,66 @@ après ces précédents phases, le CIdl.file.
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   ANNEXE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \newpage
 \section*{Annexe}
+
+
+\subsection*{BNF}
+\begin{idl}
+(*\class*)
+
+file ::= (*\package*) <(*\package*)>*
+  	| decl <decl>*
+ 
+(*\package*) ::= package qname ; decl <decl>*
+
+decl ::= (*\class*)
+  	|(*\interface*)
+ 
+(*\class*) ::= <[attributes]> <abstract> class (*\name*)
+  	  < extends qname >
+  	  < implements qname <, qname>* >
+  	  { <class_elt ;>* }
+class_elt ::= <[ attributes ]> <static> <final> type (*\name*)
+            | <[ attributes ]> <static> <abstract> type (*\name*) (<args>)
+            | [ attributes ] <init> (<args>)
+ 
+(*\interface*) ::= <[ attributes ]> interface (*\name*)
+  	       < extends qname <, qname>* >
+  	      { <interface_elt;>* }
+interface_elt ::= 
+     <[ attributes ]> type (*\name*)
+   | <[ attributes ]> type (*\name*) (<args>)
+ 
+args ::= arg <, arg>*
+arg ::= <[ attributes ]> type <(*\name*)>
+ 
+attributes ::= 	attribute <, attribute>*
+attribute ::= name (*\ident*)
+  	    | callback
+  	    | array
+ 
+type ::= basetype
+       | object
+       | basetype [ ]
+basetype ::= void
+           | boolean
+           | byte
+           | char
+           | short
+           | int
+           | long
+           | float
+           | double
+           | string
+object := qname
+qname ::= (*\name*)<.(*\name*)>*
+(*\name*) ::= (*\ident*)
+\end{idl}
+\newpage
 \subsection*{Module Idl}
 \begin{multicols}{2}
 \begin{OCaml}
@@ -295,6 +352,7 @@ type file = package list
  
 \end{OCaml}
 \end{multicols}
+\newpage
 \subsection*{Module CIdl}
 \begin{OCaml}
 (**  module CIdl  *)
@@ -346,6 +404,7 @@ and init = {
   }
 type file = clazz list
 \end{OCaml}
+
 \subsection*{module Ident}
 \begin{OCaml}
 (* module Ident  *)
@@ -367,53 +426,56 @@ type mmethod = {
     im_ml_name_kind: ml_kind;
   }
 \end{OCaml}
+\ 
 
 \subsection*{idl\_camlgen.make ast}
-\begin{OCaml}
-(** Fonction idl_camlgen.make *)
+\ 
+\newline
+Type jni
 
-  let str_list = [] in
-  (** Type jni *)
-  let str_list = (MlClass.make_jni_type c_file) :: str_list in
-  (** Class type *)
-  let class_type = MlClass.make_class_type ~callback:false c_file in
-  let str_list = match class_type with 
-  | [] -> str_list 
-  | list -> <:str_item< class type $MlGen.make_rec_class_type class_type$ >> :: str_list in
-  let class_type = MlClass.make_class_type ~callback:true c_file in
-  let str_list = match class_type with 
-  | [] -> str_list 
-  | list -> <:str_item< class type $MlGen.make_rec_class_type class_type$ >> :: str_list in
-  (** cast JNI *)
-  let str_list = (MlClass.make_jniupcast c_file) :: str_list in
-  let str_list = (MlClass.make_jnidowncast c_file):: str_list in 
-  (** fonction d'allocations *)
-  let str_list = (MlClass.make_alloc c_file) :: str_list in
-  let str_list = (MlClass.make_alloc_stub c_file) :: str_list in
-  (** capsule/souche *)
-  let wrapper = [] in
-  let wrapper = List.append (MlClass.make_wrapper ~callback:true c_file) wrapper in
-  let wrapper = List.append (MlClass.make_wrapper ~callback:false c_file) wrapper in
-  let str_list = match wrapper with 
-    | [] -> str_list 
-    | _ ->
-        let list = MlGen.make_rec_class_expr wrapper in
-        <:str_item< class $list$ >> :: str_list
-  in
-  (** downcast 'utilisateur' *)
-  let str_list = (MlClass.make_downcast c_file) :: str_list in
-  let str_list = (MlClass.make_instance_of c_file) :: str_list in
-  (** Tableaux *)
-  let str_list = (MlClass.make_array c_file) :: str_list in
-  (** fonction d'initialisation *)
-  let str_list = (MlInit.make_fun ~callback:false c_file) :: str_list in
-  let str_list = (MlInit.make_fun ~callback:true c_file) :: str_list in
-  (** classe de construction *)
-  let str_list = (MlInit.make_class ~callback:false c_file) :: str_list in
-  let str_list = (MlInit.make_class ~callback:true c_file) :: str_list in
-  (** fonctions / mehodes static *)
-  let str_list = (MlMethod.make_static c_file) :: str_list in
-  List.rev str_list
-\end{OCaml}
+\emph{MlClass.make\_jni\_type}
+\newline
+Class type
+
+\emph{MlClass.make\_class\_type}
+\newline
+Cast JNI
+
+\emph{MlClass.make\_jniupcast}
+
+\emph{MlClass.make\_jnidowncast}
+\newline
+Fonction d'allocation
+
+\emph{MlClass.make\_alloc}
+
+\emph{MlClass.make\_alloc\_stub}
+\newline
+Capsule / souche
+
+\emph{MlClass.make\_wrapper}
+\newline
+Downcast utilisateur
+
+\emph{MlClass.make\_downcast}
+
+\emph{MlClass.make\_instance\_of}
+\newline
+Tableaux
+
+\emph{MlClass.make\_array}
+\newline
+Fonction d'initialisation
+
+\emph{MlClass.make\_fun}
+\newline
+Classe de construction
+
+\emph{MlClass.make\_class}
+\newline
+fonctions / methodes static
+
+\emph{MlClass.make\_static}
+
 
 \end{document}
