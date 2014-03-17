@@ -112,66 +112,157 @@ après ces précédents phases, le CIdl.file.
 \subsection{schémas de compilation}
 La génération de code rend une liste de valeurs imprimées (dans le
 fichier engendré), en modifiant
-Nous considérons l'environnement contenant les :
-\begin{itemize}
-\item package (:string) le nom du package courant
-\item class\_env, un structure contenant les variables nécessaires à l
-TODO
+Nous considérons un environnement contenant les  variables suivantes : 
+\begin{OCaml}
+let package = ref ""
 
-\item isInterface (:bool) est vrai si la déclaration courante est une
-  interface. Faux si c'ets une classe.
-\item isCallback (:bool) si la classe courante a l'attribut callback
-\item isAbstractC (:bool) si la classe courante est abstraite
-\item classname (:string) 
-\item isAbstractElt (:bool) util?TODO
-\item isStaticElt (:bool) util?TODO
-\item isFinalElt (:bool) util?TODO
-\end{itemize} 
+let isInterface = ref false
+let decl_name = ref ""
+let isCallback = ref false
+let isAbstractDecl = ref false
+let extends = ref "JniHierarchy.top"
+let implements = ref []
+\end{OCaml}
 Et les fonctions suivantes :
-\begin{itemize}
-\item init\_class\_env ()
-\end{itemize} 
-\noindent
-$[\![ package\ <package>^* ]\!]$$\longrightarrow$
+\begin{OCaml}
+let init_env () =
+  package := "";
+  init_class_env ()
 
-$[\![ package ]\!]$
+let init_class_env () =
+  isInterface := false;
+  decl_name := "";
+  isCallback := false;
+  isAbstractDecl := false;
+  extends := "";
+  implements := []
+\end{OCaml}
+\textbf{file}
+\newline
+\noindent
+$[\![ package^* ]\!]$$\longrightarrow$
+
+$[\![ hd(package^*) ]\!]$
 \begin{OCaml}
    init_env ();
 \end{OCaml} 
 
-$[\![ package ]\!]$ 
+$[\![ tl(package^*) ]\!]$ 
 \newline
 \ 
 \newline
 \noindent
-$[\![ decl\ <decl>^* ]\!]$$\longrightarrow$
+$[\![ decl^* ]\!]$$\longrightarrow$
 % classes et interfaces sans package
 
+$[\![ hd(decl^*) ]\!]$
+\begin{OCaml}
+   init_class_env ();
+\end{OCaml} 
 
-
+$[\![ tl(decl^*) ]\!]$ 
 \newline
 \ 
 \newline
+
+\textbf{package}
+\newline
 \noindent
-$[\![ package\ {\color{blue}qname}\ ;\ decl <decl>^* ]\!]$$\longrightarrow$
+$[\![ package\ {\color{blue}qname}\ ;\ decl^* ]\!]$$\longrightarrow$
 % metttre package name dans env
 
-
-
+$[\![ decl^* ]\!]_package:=qname$ 
 \newline
 \ 
 \newline
+
+\textbf{class}
+\newline
 \noindent
-$[\![ class\ {\color{blue}qname}\ ]\!]$$\longrightarrow$
+$[\![ class\ {\color{blue}qname}\ ]\!]_package$$\longrightarrow$
 % 1 type objet t 
 % 1 classe encapsulante W de type t
 % 1 a n classes (Ci), sous-classes de W (1 par constructeur)
 % 1 fonction instanceof pr ce type
 % 1 fonction de cast pour ce type
+\begin{OCaml}
+(* type jni.obj t *)
+"type _jni_j"^qname^" = Jni.obj;;"
+(* classe encapsulante *)
+"class type j"^qname^" ="
+(* herite top car extends = "" *)
+ " object inherit "^extends^" method _get_jni_j"^qname^" : _jni_j"^qname^"
+  end;;"
+(* upcast jni *)
+"let __jni_obj_of_jni_j"^qname^" (java_obj : _jni_j"^qname^") =
+  (Obj.magic : _jni_j"^qname^" -> Jni.obj) java_obj;;"
+(* downcast jni *)
+"let __jni_j"^qname^"_of_jni_obj =
+  let clazz =
+    try Jni.find_class \""^package^"/"^qname^"\"
+    with | _ -> failwith "Class not found : "^package^"."^qname^"."
+  in
+    fun (java_obj : Jni.obj) ->
+      if not (Jni.is_instance_of java_obj clazz)
+      then failwith \"cast error\" : j"^qname^" ("^package^"/"^qname^")
+      else (Obj.magic java_obj : _jni_j"^qname^");;"
+(* allocation *)
+"let _alloc_j"^qname^" =
+  let clazz = Jni.find_class "^package^"/"^qname^"
+  in fun () -> (Jni.alloc_object clazz : _jni_j"^qname^");;"
+(* capsule *)
+"class _capsule_j"^qname^" =
+  let clazz = Jni.find_class \""^package^"/"^qname^"\"
+  in
+    fun (jni_ref : _jni_j"^qname^") ->
+      let _ =
+        if Jni.is_null jni_ref
+        then raise (JniHierarchy.Null_object \""^package^"/"^qname^"\")
+        else ()
+      in
+        object (self)
+          method _get_jni_j"^qname^" = jni_ref
+          inherit JniHierarchy.top jni_ref
+        end;;"
+(* downcast utilisateur *)
+"let j"^qname^"_of_top (o : JniHierarchy.top) : j"^qname^" =
+  new _capsule_j"^qname^" (__jni_j"^qname^"_of_jni_obj o#_get_jniobj);;"
+(* instance_of *)
+let _instance_of_j"^qname^" =
+ "let clazz = Jni.find_class \""^package^"/"^qname^"\"
+  in fun (o : JniHierarchy.top) -> Jni.is_instance_of o#_get_jniobj clazz;;"
+(* tableaux *)
+"let _new_jArray_j"^qname^" size =
+  let java_obj = Jni.new_object_array size (Jni.find_class \""^package^"/"^qname^"\")
+  in
+    new JniArray._Array Jni.get_object_array_element Jni.
+      set_object_array_element (fun jniobj -> new _capsule_j"^qname^" jniobj)
+      (fun obj -> obj#_get_jni_j"^qname^") java_obj;;"
+"let jArray_init_j"^qname^" size f =
+  let a = _new_jArray_j"^qname^" size
+  in (for i = 0 to pred size do a#set i (f i) done; a);;"
+\end{OCaml}
 
 \noindent
 $[\![{\color{blue}class}\  name\ {\color{blue}extends}\ qname ]\!]$$\longrightarrow$
 %  
+ object inherit JniHierarchy.top method _get_jni_jPoint : _jni_jPoint
+ end;;
+
+
+let capsule ...
+   let _ =
+      if not (Jni.is_assignable_from clazz (Jni.find_class "mypack/P"))
+      then
+        failwith
+          "Wrong super class in IDL : mypack.Point not extends
+        mypack.P."       
+      else ()
+    in
+...
+   method _get_jni_jP = jni_ref
+             inherit JniHierarchy.top jni_ref
+
 
 \noindent
 $[\![{\color{blue}class}\  name\ {\color{blue}extends}\ qname ]\!]$$\longrightarrow$

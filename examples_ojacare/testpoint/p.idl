@@ -1,16 +1,8 @@
 package mypack;
 
-class Point {
+class P {
  
-  int x;
-  int y; 
-  
-  [name default_point] <init> ();
-  [name point] <init> (int,int);
-
-  void display();
-
-  static void main(string [] arg);
+}
+class Point extends P {
 
 }
-
