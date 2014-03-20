@@ -10,7 +10,7 @@
 
 \usepackage{color}
 \definecolor{lightgray}{rgb}{.9,.9,.9}
-\definecolor{darkgray}{rgb}{.3,.2,.2}
+\definecolor{darkgray}{rgb}{.5,.2,.2}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 \definecolor{brown}{RGB}{140, 0, 0}
 
@@ -24,6 +24,7 @@
                       identifierstyle=\ttfamily,
                       keywordstyle=\color{blue},
                       basicstyle=\footnotesize,
+                      escapeinside={/*}{*/},
                       %xleftmargin=0.08\textwidth
                     }
                   }
@@ -33,6 +34,8 @@
 \newcommand{\name}{\ttfamily\textit{name}}
 \newcommand{\package}{\ttfamily\textit{package}}
 \newcommand{\ident}{\footnotesize\textbf{ident}}
+\newcommand{\fun}[1]{\ttfamily\textbf{#1}}
+
   \lstdefinelanguage{idlgrammar}{
   morekeywords={package,abstract,extends,class,implements,static,final,<ini>,interface,callback,array,[,],{,},
     name ,void,boolean,byte,char,short,int,long,float,double,string},
@@ -115,14 +118,16 @@ La génération de code rend une liste de valeurs imprimées (dans le
 fichier engendré), en modifiant
 Nous considérons un environnement contenant les  variables suivantes : 
 \begin{OCaml}
-let package = ref ""
+let package := ""
 
-let isInterface = ref false
-let decl_name = ref ""
-let isCallback = ref false
-let isAbstractDecl = ref false
-let extends = ref "JniHierarchy.top"
-let implements = ref []
+let isInterface := false
+let decl_name := ""
+let isCallback := false
+let isAbstractDecl := false
+let extends := "JniHierarchy.top"
+let implements := []
+let init_list := {initname; arg*} list
+
 \end{OCaml}
 Et les fonctions suivantes :
 \begin{OCaml}
@@ -180,7 +185,7 @@ $[\![ decl^* ]\!]_package:=qname$
 \textbf{class}
 \newline
 \noindent
-$[\![ class\ {\color{blue}name}\ ]\!]_{package,extends}$$\longrightarrow$
+$[\![ {\color{blue}class}\ ]\!]_{isInterface, package, extends, implements, init\_list:\{initname, args^*\}^*, }$$\longrightarrow$
 % 1 type objet t 
 % 1 classe encapsulante W de type t
 % 1 a n classes (Ci), sous-classes de W (1 par constructeur)
@@ -192,7 +197,9 @@ $[\![ class\ {\color{blue}name}\ ]\!]_{package,extends}$$\longrightarrow$
 (** classe encapsulante *)
 "class type j"^name^" ="
 (** herite top car extends = "" *)
-   "object inherit "^extends^" method _get_jni_j"^name^" : _jni_j"^name^"
+   "object inherit "^extends^""
+    make_implements implements
+   "method _get_jni_j"^name^" : _jni_j"^name^"
    end;;"
 (** upcast jni *)
 "let __jni_obj_of_jni_j"^name^" (java_obj : _jni_j"^name^") =
@@ -208,35 +215,15 @@ $[\![ class\ {\color{blue}name}\ ]\!]_{package,extends}$$\longrightarrow$
         then failwith \"cast error\" : j"^name^" ("^package^"/"^name^")
         else (Obj.magic java_obj : _jni_j"^name^");;"
 (* allocation *)
-"let _alloc_j"^name^" =
-    let clazz = Jni.find_class "^package^"/"^name^"
-    in fun () -> (Jni.alloc_object clazz : _jni_j"^name^");;"
+/* \fun{make\_alloc} */package name isInterface;
 (* capsule *)
-"class _capsule_j"^name^" =
-   let clazz = Jni.find_class \""^package^"/"^name^"\"
-   in 
-\end{OCaml}
-\ \ \ \ \ \ \ $_{capsule\_verif}[\![{\color{blue}extends} ]\!]_{package,classname:=name}$
-\begin{OCaml}
-      "fun (jni_ref : _jni_j"^name^") ->
-        let _ =
-          if Jni.is_null jni_ref
-          then raise (JniHierarchy.Null_object \""^package^"/"^name^"\")
-          else ()
-        in
-          object (self)
-            method _get_jni_j"^name^" = jni_ref"
-\end{OCaml}
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $_{capsule\_get}[\![{\color{blue}extends} ]\!]_{package,classname:=name}$
-\begin{OCaml}
-            "inherit JniHierarchy.top jni_ref
-          end;;"
+/* \fun{make\_capsule} */package name extends implements;
 (* downcast utilisateur *)
 "let j"^name^"_of_top (o : JniHierarchy.top) : j"^name^" =
     new _capsule_j"^name^" (__jni_j"^name^"_of_jni_obj o#_get_jniobj);;"
 (* instance_of *)
-let _instance_of_j"^name^" =
-   "let clazz = Jni.find_class \""^package^"/"^name^"\"
+"let _instance_of_j"^name^" =
+   let clazz = Jni.find_class \""^package^"/"^name^"\"
     in fun (o : JniHierarchy.top) -> Jni.is_instance_of o#_get_jniobj clazz;;"
 (* tableaux *)
 "let _new_jArray_j"^name^" size =
@@ -248,46 +235,129 @@ let _instance_of_j"^name^" =
 "let jArray_init_j"^name^" size f =
     let a = _new_jArray_j"^name^" size
     in (for i = 0 to pred size do a#set i (f i) done; a);;"
+make_inits init_list;
 \end{OCaml}
 
 \ 
 \newline
-
-\textbf{extends}
+\textbf{ interface }
 \newline
 \noindent
-$_{capsule\_get}[\![ {\color{blue}extends} ]\!]$$\longrightarrow$
-% verification extends
-\begin{OCaml}
-   "method _get_jni_j"^extends^" = jni_ref"
-\end{OCaml}
+$[\![{\color{blue}interface}\  name ]\!]$$\longrightarrow$
+% 
 
+$[\![{\color{blue}class}\  name ]\!]_{isInterface:=true}$
+\newline
+\ 
+\newline
 \noindent
-$_{capsule\_verif}[\![ {\color{blue}extends} ]\!]$$\longrightarrow$
-% verification extends
+$[\![{\color{blue}interface}\  name\ {\color{blue}implements}\ qname* ]\!]$$\longrightarrow$
+% 
+
 \begin{OCaml}
-   "let _ =
-      if not (Jni.is_assignable_from clazz (Jni.find_class \""^package^"/"^extends^"\"))
-      then
-        failwith
-          \"Wrong super class in IDL : "^package^"/"^classname^" not extends
-        "^package^"/"^extends^".\"
-      else ()
-    in"
+let make_alloc name isInterface =
+   if not isInterface then
+      "let _alloc_j"^name^" =
+       let clazz = Jni.find_class "^package^"/"^name^"
+       in fun () -> (Jni.alloc_object clazz : _jni_j"^name^");;"
 \end{OCaml}
 
 \ 
 \newline
-
-\textbf{extends}
+\textbf{extends, implements}
 \newline
 \noindent
-$[\![{\color{blue}class}\  name\ {\color{blue}extends} ]\!]$$\longrightarrow$
+$[\![{\color{blue}class}\  name\ {\color{blue}implements}\ qname* ]\!]$$\longrightarrow$
 % 
 
+let l = String.split "," qname* in
+
+$[\![{\color{blue}class}\  name ]\!]_{implements:=l}$
+\newline
+\ 
+\newline
 \noindent
-$[\![{\color{blue}class}\  name\ {\color{blue}extends}\ qname ]\!]$$\longrightarrow$
+\noindent
+$[\![  {\color{blue}class}\ name\ {\color{blue}extends} qname ]\!]$$\longrightarrow$
+% verification extends
+
+$[\![  {\color{blue}class}\ name]\!]_{extends:=qname}$
+
+\noindent
+% capsule selon extends extends
+\begin{OCaml}
+let make_inherits_implements implements =
+   List.iter (fun int -> "inherit j"^int ) implements
+
+let make_capsule package name extends implements =
+     "class _capsule_j"^name^" =
+       let clazz = Jni.find_class \""^package^"/"^name^"\"
+       in"
+    (* si la class extends une autre *)
+    if extends != "JniHierarchy.top" then ( 
+        " let _ =
+           if not (Jni.is_assignable_from clazz (Jni.find_class \""^package^"/"^extends^"\"))
+           then
+           failwith \"Wrong super class in IDL : "^package^"/"^classname^" not extends"^package^"/"^extends^".\"
+           else ()
+         in "
+    );
+   (* pour chaque interface implementee : *)
+    List.iter (fun int ->
+        "let _ =
+           if not (Jni.is_assignable_from clazz (Jni.find_class "^package^"/"^int^"))
+           then
+             failwith \"Wrong implemented interface in IDL : "^package^"."^name^ "does not implements "^package^"."^int^".\"
+           else ()
+        in"
+    ) implements;
+      (* fonction commune *)
+       "fun (jni_ref : _jni_j"^name^") ->
+         let _ =
+           if Jni.is_null jni_ref
+           then raise (JniHierarchy.Null_object \""^package^"/"^name^"\")
+           else ()
+         in
+         (* objet avec les methodes d'acces a toutes les classes/interfaces implementee ou heritees *)
+         object (self)
+           method _get_jni_j"^name^" = jni_ref"
+      if extends != "JniHierarchy.top" then (
+          "  method _get_jni_j"^extends^" = jni_ref"
+      );
+      List.iter (fun int -> "method _get_jni_j"^int^" = jni_ref;;") implements;
+          " inherit JniHierarchy.top jni_ref
+         end;;"
+  
+\end{OCaml}
+
+
+
+\ 
+\newline
+\noindent
+\textbf{ inits }
+\newline
+\noindent
+$[\![... {\color{blue}class}\  name\ ... \{ ...
+    $[$ {\color{blue}name}\ initname $]${\color{blue} <init>} (arg*); ...\} ]\!]$$\longrightarrow$
 % 
+
+$[\![{\color{blue}class}\  name ]\!]_{init\_list:=\{initname;arg*\}::!init\_list}$
+
+\ 
+\newline
+\noindent
+\textbf{ attributs }
+\newline
+\noindent
+
+ 
+\newline
+\noindent
+\textbf{ methodes }
+\newline
+\noindent
+
 
 
 \section{génération .mli}
