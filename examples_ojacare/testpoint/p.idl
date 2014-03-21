@@ -1,8 +1,6 @@
 package mypack;
 
-class P {
- 
-}
-class Point{
-
+class Point {
+  [name init1]<init> ();
+  [name init2]<init> (int,int);
 }

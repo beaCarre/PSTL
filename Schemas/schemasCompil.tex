@@ -127,14 +127,12 @@ let isAbstractDecl := false
 let extends := "JniHierarchy.top"
 let implements := []
 let init_list := {initname; arg*} list
-
 \end{OCaml}
 Et les fonctions suivantes :
 \begin{OCaml}
 let init_env () =
   package := "";
   init_class_env ()
-
 let init_class_env () =
   isInterface := false;
   decl_name := "";
@@ -143,6 +141,7 @@ let init_class_env () =
   extends := "";
   implements := []
 \end{OCaml}
+\begin{multicols}{2}
 \textbf{file}
 \newline
 \noindent
@@ -170,7 +169,7 @@ $[\![ tl(decl^*) ]\!]$
 \newline
 \ 
 \newline
-
+\end{multicols}
 \textbf{package}
 \newline
 \noindent
@@ -178,7 +177,7 @@ $[\![ package\ {\color{blue}qname}\ ;\ decl^* ]\!]$$\longrightarrow$
 % metttre package name dans env
 
 $[\![ decl^* ]\!]_package:=qname$ 
-\newline
+
 \ 
 \newline
 
@@ -238,7 +237,8 @@ $[\![ {\color{blue}class}\ ]\!]_{isInterface, package, extends, implements, init
 make_inits init_list;
 \end{OCaml}
 
-\ 
+\newpage
+\
 \newline
 \textbf{ interface }
 \newline
@@ -344,14 +344,72 @@ $[\![... {\color{blue}class}\  name\ ... \{ ...
 
 $[\![{\color{blue}class}\  name ]\!]_{init\_list:=\{initname;arg*\}::!init\_list}$
 
+\begin{OCaml}
+
+let getArgsString args =
+String.concat (List.map (fun arg -> 
+   match arg with
+   | ("int",name,attr) -> "I"
+   | ("boolean",name,attr) -> "Z"
+   | ("string",name,attr) -> "LJava/lang/String"
+     ...
+   | (obj,name,attr) -> "L"^package^obj^";"
+in
+
+(* todo : fun pr recup jtype, method get_jni_jtype et jni.mltype *)
+
+let makefun = (* exemples : *)
+ "fun (java_obj : _jni_j"^classname^") _p0 _p1 ->
+      let _p1 = _p1 in
+      let _p0 = _p0
+      in
+        Jni.call_nonvirtual_void_method java_obj clazz id
+          [| Jni. _p0; Jni.Camlint _p1 "|];;" 
+ fun (java_obj : _jni_jOu) (_p0 : jFormule) (_p1 : jFormule) ->
+      let _p1 = _p1#_get_jni_jFormule in
+      let _p0 = _p0#_get_jni_jFormule
+      in
+        Jni.call_nonvirtual_void_method java_obj clazz id
+          [| Jni.Obj _p0; Jni.Obj _p1 |];;
+in"
+
+"let _init_"^initname^" =
+  let clazz = Jni.find_class \""^package^"/"^classname^"\" in
+  let id =
+    try Jni.get_methodID clazz \"<init>\" \"("^(getArgsString args)^")V\"
+    with
+    | _ ->
+        failwith
+          \"Unknown constructor from IDL in class \""^package^"."^classname^"\" : \""^classname^"(int,int)\".\"
+  in
+    fun (java_obj : _jni_j"^classname^") _p0 _p1 ->
+      let _p1 = _p1 in
+      let _p0 = _p0
+      in
+        Jni.call_nonvirtual_void_method java_obj clazz id
+          [| Jni."^^" _p0; Jni.Camlint _p1 |];;
+let _init_"^initname^" =
+  let clazz = Jni.find_class \""^package^"/"^classname^"\" in
+  let id =
+    try Jni.get_methodID clazz \"<init>\" \"()V\"
+    with
+    | _ ->
+        failwith
+          \"Unknown constructor from IDL in class \""^package^"."^classname^"\" : \""^classname^"()\".\"
+  in
+    fun (java_obj : _jni_j"^classname^") ->
+      Jni.call_nonvirtual_void_method java_obj clazz id [| 
+
+       |];;"
+
+\end{OCaml}
 \ 
 \newline
 \noindent
 \textbf{ attributs }
 \newline
 \noindent
-
- 
+\ 
 \newline
 \noindent
 \textbf{ methodes }
