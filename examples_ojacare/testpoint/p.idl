@@ -1,6 +1,8 @@
 package mypack;
 
 class Point {
-  [name init1]<init> ();
-  [name init2]<init> (int,int);
+  string mETHStrVoid ();
+  void mETHVoidIntInt (int, int);
+  Point mETHPointPoint (Point);
+  int mETHIntBoolStringPoint (boolean, string, Point);
 }

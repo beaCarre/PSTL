@@ -184,57 +184,93 @@ $[\![ decl^* ]\!]_package:=qname$
 \textbf{class}
 \newline
 \noindent
-$[\![ {\color{blue}class}\ ]\!]_{isInterface, package, extends, implements, init\_list:\{initname, args^*\}^*, }$$\longrightarrow$
+$[\![ {\color{blue}class}\ NAME\ 
+ {\color{blue}extends}\  E \ 
+ {\color{blue}implements}\  I1,I2... \{$
+
+ $ \ \ \ attr1; attr2; ...;$
+
+  $\ \ \ m1; m2; ...;$
+
+  $\ \ \ init1; init2; ...;$
+
+ $\} ]\!]_{\rho,CB}\longrightarrow$
 % 1 type objet t 
 % 1 classe encapsulante W de type t
 % 1 a n classes (Ci), sous-classes de W (1 par constructeur)
 % 1 fonction instanceof pr ce type
 % 1 fonction de cast pour ce type
+\ 
+\newline
+
 \begin{OCaml}
+let clazz = Jni.find_class PACK/NAME
+
 (** type jni.obj t *)
-"type _jni_j"^name^" = Jni.obj;;"
+"type _jni_jNAME = Jni.obj;;"
+
 (** classe encapsulante *)
-"class type j"^name^" ="
-(** herite top car extends = "" *)
-   "object inherit "^extends^""
-    make_implements implements
-   "method _get_jni_j"^name^" : _jni_j"^name^"
+"class type jNAME =
+   object inherit E
+   inherits jI1
+   inherits jI2 ...
+   method _get_jni_jNAME : _jni_jNAME
    end;;"
+
 (** upcast jni *)
-"let __jni_obj_of_jni_j"^name^" (java_obj : _jni_j"^name^") =
-   (Obj.magic : _jni_j"^name^" -> Jni.obj) java_obj;;"
+"let __jni_obj_of_jni_jNAME (java_obj : _jni_jNAME) =
+   (Obj.magic : _jni_jNAME -> Jni.obj) java_obj;;"
 (** downcast jni *)
-"let __jni_j"^name^"_of_jni_obj =
-   let clazz =
-      try Jni.find_class \""^package^"/"^name^"\"
-   with | _ -> failwith "Class not found : "^package^"."^name^"."
-   in
-      fun (java_obj : Jni.obj) ->
-        if not (Jni.is_instance_of java_obj clazz)
-        then failwith \"cast error\" : j"^name^" ("^package^"/"^name^")
-        else (Obj.magic java_obj : _jni_j"^name^");;"
-(* allocation *)
-/* \fun{make\_alloc} */package name isInterface;
-(* capsule *)
-/* \fun{make\_capsule} */package name extends implements;
+"let __jni_jNAME_of_jni_obj =
+   fun (java_obj : Jni.obj) ->
+     Jni.is_instance_of java_obj clazz"
+ 
+(* allocation : si ce n'est pas une interface *)
+ "let _alloc_jNAME =
+     fun () -> (Jni.alloc_object clazz : _jni_jNAME);;"
+
+(* capsule wrapper *)
+"class _capsule_jNAME = fun (jni_ref : _jni_jNAME) ->
+    object (self)
+      method _get_jni_jNAME = jni_ref
+      method _get_jni_jE = jni_ref
+      method _get_jni_jI1 = jni_ref
+      method _get_jni_jI2 = jni_ref
+      inherit JniHierarchy.top jni_ref
+    end;;"
+
 (* downcast utilisateur *)
-"let j"^name^"_of_top (o : JniHierarchy.top) : j"^name^" =
-    new _capsule_j"^name^" (__jni_j"^name^"_of_jni_obj o#_get_jniobj);;"
+"let jNAME_of_top (o : TOP) : jNAME =
+    new _capsule_jNAME (__jni_jNAME_of_jni_obj o#_get_jniobj);;"
 (* instance_of *)
-"let _instance_of_j"^name^" =
-   let clazz = Jni.find_class \""^package^"/"^name^"\"
-    in fun (o : JniHierarchy.top) -> Jni.is_instance_of o#_get_jniobj clazz;;"
+"let _instance_of_jNAME =
+    in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz;;"
+
 (* tableaux *)
-"let _new_jArray_j"^name^" size =
-    let java_obj = Jni.new_object_array size (Jni.find_class \""^package^"/"^name^"\")
+"let _new_jArray_jNAME size =
+    let java_obj = Jni.new_object_array size (Jni.find_class \"PACK/NAME\")
     in
       new JniArray._Array Jni.get_object_array_element Jni.
-        set_object_array_element (fun jniobj -> new _capsule_j"^name^" jniobj)
-        (fun obj -> obj#_get_jni_j"^name^") java_obj;;"
-"let jArray_init_j"^name^" size f =
-    let a = _new_jArray_j"^name^" size
+        set_object_array_element (fun jniobj -> new _capsule_jNAME jniobj)
+        (fun obj -> obj#_get_jni_jNAME) java_obj;;"
+"let jArray_init_jNAME size f =
+    let a = _new_jArray_jNAME size
     in (for i = 0 to pred size do a#set i (f i) done; a);;"
-make_inits init_list;
+
+(* inits *)
+\end{OCaml}
+
+$[\![$[$ {\color{blue}name}\ init1 $]${\color{blue} <init>} (arg*); ...\}
+]\!]$
+
+$[\![$[$ {\color{blue}name}\ init1 $]${\color{blue} <init>} (arg*); ...\}
+]\!]$
+
+...
+\begin{OCaml}
+(* fonctions et  methodes statiques*)
+
+
 \end{OCaml}
 
 \newpage
@@ -246,91 +282,7 @@ make_inits init_list;
 $[\![{\color{blue}interface}\  name ]\!]$$\longrightarrow$
 % 
 
-$[\![{\color{blue}class}\  name ]\!]_{isInterface:=true}$
-\newline
-\ 
-\newline
-\noindent
-$[\![{\color{blue}interface}\  name\ {\color{blue}implements}\ qname* ]\!]$$\longrightarrow$
-% 
-
-\begin{OCaml}
-let make_alloc name isInterface =
-   if not isInterface then
-      "let _alloc_j"^name^" =
-       let clazz = Jni.find_class "^package^"/"^name^"
-       in fun () -> (Jni.alloc_object clazz : _jni_j"^name^");;"
-\end{OCaml}
-
-\ 
-\newline
-\textbf{extends, implements}
-\newline
-\noindent
-$[\![{\color{blue}class}\  name\ {\color{blue}implements}\ qname* ]\!]$$\longrightarrow$
-% 
-
-let l = String.split "," qname* in
-
-$[\![{\color{blue}class}\  name ]\!]_{implements:=l}$
-\newline
-\ 
-\newline
-\noindent
-\noindent
-$[\![  {\color{blue}class}\ name\ {\color{blue}extends} qname ]\!]$$\longrightarrow$
-% verification extends
-
-$[\![  {\color{blue}class}\ name]\!]_{extends:=qname}$
-
-\noindent
-% capsule selon extends extends
-\begin{OCaml}
-let make_inherits_implements implements =
-   List.iter (fun int -> "inherit j"^int ) implements
-
-let make_capsule package name extends implements =
-     "class _capsule_j"^name^" =
-       let clazz = Jni.find_class \""^package^"/"^name^"\"
-       in"
-    (* si la class extends une autre *)
-    if extends != "JniHierarchy.top" then ( 
-        " let _ =
-           if not (Jni.is_assignable_from clazz (Jni.find_class \""^package^"/"^extends^"\"))
-           then
-           failwith \"Wrong super class in IDL : "^package^"/"^classname^" not extends"^package^"/"^extends^".\"
-           else ()
-         in "
-    );
-   (* pour chaque interface implementee : *)
-    List.iter (fun int ->
-        "let _ =
-           if not (Jni.is_assignable_from clazz (Jni.find_class "^package^"/"^int^"))
-           then
-             failwith \"Wrong implemented interface in IDL : "^package^"."^name^ "does not implements "^package^"."^int^".\"
-           else ()
-        in"
-    ) implements;
-      (* fonction commune *)
-       "fun (jni_ref : _jni_j"^name^") ->
-         let _ =
-           if Jni.is_null jni_ref
-           then raise (JniHierarchy.Null_object \""^package^"/"^name^"\")
-           else ()
-         in
-         (* objet avec les methodes d'acces a toutes les classes/interfaces implementee ou heritees *)
-         object (self)
-           method _get_jni_j"^name^" = jni_ref"
-      if extends != "JniHierarchy.top" then (
-          "  method _get_jni_j"^extends^" = jni_ref"
-      );
-      List.iter (fun int -> "method _get_jni_j"^int^" = jni_ref;;") implements;
-          " inherit JniHierarchy.top jni_ref
-         end;;"
-  
-\end{OCaml}
-
-
+$[\![{\color{blue}class}\  name ]\!]_{}$
 
 \ 
 \newline
@@ -338,69 +290,51 @@ let make_capsule package name extends implements =
 \textbf{ inits }
 \newline
 \noindent
-$[\![... {\color{blue}class}\  name\ ... \{ ...
-    $[$ {\color{blue}name}\ initname $]${\color{blue} <init>} (arg*); ...\} ]\!]$$\longrightarrow$
+$[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (A0,
+    A1, ...)]\!]_{}$$\longrightarrow$
 % 
-
-$[\![{\color{blue}class}\  name ]\!]_{init\_list:=\{initname;arg*\}::!init\_list}$
 
 \begin{OCaml}
 
-let getArgsString args =
-String.concat (List.map (fun arg -> 
-   match arg with
-   | ("int",name,attr) -> "I"
-   | ("boolean",name,attr) -> "Z"
-   | ("string",name,attr) -> "LJava/lang/String"
+let aStr arg =
+   | int-> "I"
+   | boolean -> "Z"
+   | string -> "LJava/lang/String"
      ...
-   | (obj,name,attr) -> "L"^package^obj^";"
-in
+   | Obj -> "LPACK/Obj;"
+let aTypeJni arg =
+   | int -> "Jni.CamlInt _pi"
+   | boolean -> "Jni.Boolean _pi"
+   | string -> "Jni.Obj _pi"
+     ...
+   | Obj -> "Jni.Obj _pi"
+let aAcces arg =
+  | string -> "Jni.string_to_java _pi"
+  | Obj -> "_pi#_get_jni_jAi"
+  |  _ -> "_pi"
+let aCast arg =
+  | Obj -> "(_pi : jObj)"
+  |  _ -> "_pi"
 
-(* todo : fun pr recup jtype, method get_jni_jtype et jni.mltype *)
+\end{OCaml}
 
-let makefun = (* exemples : *)
- "fun (java_obj : _jni_j"^classname^") _p0 _p1 ->
-      let _p1 = _p1 in
-      let _p0 = _p0
-      in
-        Jni.call_nonvirtual_void_method java_obj clazz id
-          [| Jni. _p0; Jni.Camlint _p1 "|];;" 
- fun (java_obj : _jni_jOu) (_p0 : jFormule) (_p1 : jFormule) ->
-      let _p1 = _p1#_get_jni_jFormule in
-      let _p0 = _p0#_get_jni_jFormule
-      in
-        Jni.call_nonvirtual_void_method java_obj clazz id
-          [| Jni.Obj _p0; Jni.Obj _p1 |];;
-in"
-
-"let _init_"^initname^" =
-  let clazz = Jni.find_class \""^package^"/"^classname^"\" in
-  let id =
-    try Jni.get_methodID clazz \"<init>\" \"("^(getArgsString args)^")V\"
-    with
-    | _ ->
-        failwith
-          \"Unknown constructor from IDL in class \""^package^"."^classname^"\" : \""^classname^"(int,int)\".\"
+\begin{OCaml}
+"let _init_INIT =
+  let id = Jni.get_methodID clazz \"<init>\" 
+            \"("(aStr A0)(aStr A1)...")V\"
   in
-    fun (java_obj : _jni_j"^classname^") _p0 _p1 ->
-      let _p1 = _p1 in
-      let _p0 = _p0
-      in
-        Jni.call_nonvirtual_void_method java_obj clazz id
-          [| Jni."^^" _p0; Jni.Camlint _p1 |];;
-let _init_"^initname^" =
-  let clazz = Jni.find_class \""^package^"/"^classname^"\" in
-  let id =
-    try Jni.get_methodID clazz \"<init>\" \"()V\"
-    with
-    | _ ->
-        failwith
-          \"Unknown constructor from IDL in class \""^package^"."^classname^"\" : \""^classname^"()\".\"
-  in
-    fun (java_obj : _jni_j"^classname^") ->
-      Jni.call_nonvirtual_void_method java_obj clazz id [| 
+    fun (java_obj : _jni_jNAME) "(aCast A0) (aCast A1) ..." -> 
+      ...
+      let _p1 = "(aAcces A1)" in
+      let _p0 = "(aAcces A0)" in
+      Jni.call_nonvirtual_void_method java_obj clazz id 
+          [| "(aTypeJni A0)"; "(aTypeJni A1)"; ... |]
 
-       |];;"
+class INIT _p0 _p1 ... =
+  let java_obj = _alloc_jNAME ()
+  in let _ = _init_INIT java_obj _p0 _p1 ...
+    in object (self) inherit _capsule_jNAME java_obj 
+end;;"
 
 \end{OCaml}
 \ 
@@ -410,14 +344,77 @@ let _init_"^initname^" =
 \newline
 \noindent
 \ 
+$[\![ TYPE ATTR; ]\!]_{}$$\longrightarrow$
+
+\begin{OCaml}
+...
+(* type class *)
+"class type jNAME =
+  ...
+   method set_ATTR : (j)TYPE -> unit
+   method get_ATTR : unit -> (j)TYPE
+   ... "
+(* capsule *)
+"class _capsule_jNAME =
+   let __fid_ATTR = try Jni.get_fieldID clazz \"ATTR\" "(aStr TYPE)" in
+   ...
+   fun (jni_ref : _jni_jNAME) -> 
+     object (self)
+        method set_ATTR =
+           fun "(castArg TYPE)" ->
+              let _p = "(aAccess TYPE)"
+              in Jni.set_object_field jni_ref __fid_ATTR _p
+        method get_ATTR =
+        fun () ->
+           (new _capsule_jNAME (Jni.get_object_field jni_ref __fid_ATTR) :
+           jNAME)
+        ...
+   "
+\end{OCaml}
+\ 
 \newline
 \noindent
 \textbf{ methodes }
 \newline
 \noindent
+$[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
 
-
-
+\begin{OCaml}
+...
+(* type class *)
+"class type jNAME =
+   ...
+   method METH : ARG1 -> ARG2 -> ... -> TYPE
+   ... "
+(* capsule *)
+"class _capsule_jNAME =
+   let __mid_METH = Jni.get_methodID clazz "mETH"
+         \"("(aStr ARG1)(aStr ARG2)...")"(aStr TYPE)"\"
+   ...
+   in
+   object (self)
+"(*TODO*)"      (*method METHObj1Obj2 =
+         fun (_p0 : jObj1) ->
+           let _p0 = _p0#_get_jni_jObj1
+           ...
+             in
+             (new _capsule_jObj2
+               (Jni.call_"Object"_method jni_ref __mid_mETHObj1Obj2
+               [| Jni.Obj _p0 |]) : jObj2)
+      *)
+      method METH =
+         fun "(aCast A0) (aCast A1) ..." ->
+           let _p2 = "(aAccess ARG2)" in
+           let _p1 = "(aAccess ARG1)" in
+           let _p0 = "(aAccess ARG0)"
+           in
+             Jni.call_"(aJniType TYPE)"_method jni_ref __mid_METH
+               [| "(aTypeJni ARG0)"; "(aTypeJni ARG1)"; ... |]
+\end{OCaml}
+//TODO : 
+retour Obj dans methode
+array
+callback
 \section{génération .mli}
  
 
