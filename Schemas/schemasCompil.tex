@@ -36,12 +36,12 @@
 \newcommand{\ident}{\footnotesize\textbf{ident}}
 \newcommand{\fun}[1]{\ttfamily\textbf{#1}}
 
-  \lstdefinelanguage{idlgrammar}{
+\lstdefinelanguage{idlgrammar}{
   morekeywords={package,abstract,extends,class,implements,static,final,<ini>,interface,callback,array,[,],{,},
     name ,void,boolean,byte,char,short,int,long,float,double,string},
   alsoletter=[]{},
 }
- \lstnewenvironment{idl}
+\lstnewenvironment{idl}
                   {\lstset{
                       language=idlgrammar,
                       breaklines=true,
@@ -207,7 +207,7 @@ $[\![ {\color{blue}class}\ NAME\
 let clazz = Jni.find_class PACK/NAME
 
 (** type jni.obj t *)
-"type _jni_jNAME = Jni.obj;;"
+"type _jni_jNAME = Jni.obj"
 
 (** classe encapsulante *)
 "class type jNAME =
@@ -215,19 +215,19 @@ let clazz = Jni.find_class PACK/NAME
    inherits jI1
    inherits jI2 ...
    method _get_jni_jNAME : _jni_jNAME
-   end;;"
+   end"
 
 (** upcast jni *)
 "let __jni_obj_of_jni_jNAME (java_obj : _jni_jNAME) =
-   (Obj.magic : _jni_jNAME -> Jni.obj) java_obj;;"
+   (Obj.magic : _jni_jNAME -> Jni.obj) java_obj"
 (** downcast jni *)
 "let __jni_jNAME_of_jni_obj =
    fun (java_obj : Jni.obj) ->
      Jni.is_instance_of java_obj clazz"
  
 (* allocation : si ce n'est pas une interface *)
- "let _alloc_jNAME =
-     fun () -> (Jni.alloc_object clazz : _jni_jNAME);;"
+"let _alloc_jNAME =
+     fun () -> (Jni.alloc_object clazz : _jni_jNAME)"
 
 (* capsule wrapper *)
 "class _capsule_jNAME = fun (jni_ref : _jni_jNAME) ->
@@ -237,14 +237,14 @@ let clazz = Jni.find_class PACK/NAME
       method _get_jni_jI1 = jni_ref
       method _get_jni_jI2 = jni_ref
       inherit JniHierarchy.top jni_ref
-    end;;"
+    end"
 
 (* downcast utilisateur *)
 "let jNAME_of_top (o : TOP) : jNAME =
-    new _capsule_jNAME (__jni_jNAME_of_jni_obj o#_get_jniobj);;"
+    new _capsule_jNAME (__jni_jNAME_of_jni_obj o#_get_jniobj)"
 (* instance_of *)
 "let _instance_of_jNAME =
-    in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz;;"
+    in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz"
 
 (* tableaux *)
 "let _new_jArray_jNAME size =
@@ -252,10 +252,10 @@ let clazz = Jni.find_class PACK/NAME
     in
       new JniArray._Array Jni.get_object_array_element Jni.
         set_object_array_element (fun jniobj -> new _capsule_jNAME jniobj)
-        (fun obj -> obj#_get_jni_jNAME) java_obj;;"
+        (fun obj -> obj#_get_jni_jNAME) java_obj"
 "let jArray_init_jNAME size f =
     let a = _new_jArray_jNAME size
-    in (for i = 0 to pred size do a#set i (f i) done; a);;"
+    in (for i = 0 to pred size do a#set i (f i) done; a)"
 
 (* inits *)
 \end{OCaml}
@@ -294,10 +294,29 @@ $[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (A0,
     A1, ...)]\!]_{}$$\longrightarrow$
 % 
 
+
+\begin{tabular}{|l|c|c|c|c|}
+  \hline
+  TYPE & str & colonne 3 & bla& fg\\
+  \hline
+  void & & & & \\
+  boolean & "Z" & "Jni.Boolean \_pi" & "\_pi" & "\_pi" \\
+  byte & & & & \\
+  char  & & & &\\
+  short & & && \\
+  int & & && \\
+  long & & & &\\
+  float & & & &\\
+  double & & & &\\
+  string & & & &\\
+  Obj(qname) & & & &\\
+  \hline
+\end{tabular}
+
 \begin{OCaml}
 
 let aStr arg =
-   | int-> "I"
+   | int -> "I"
    | boolean -> "Z"
    | string -> "LJava/lang/String"
      ...
@@ -334,7 +353,7 @@ class INIT _p0 _p1 ... =
   let java_obj = _alloc_jNAME ()
   in let _ = _init_INIT java_obj _p0 _p1 ...
     in object (self) inherit _capsule_jNAME java_obj 
-end;;"
+end"
 
 \end{OCaml}
 \ 
@@ -344,7 +363,7 @@ end;;"
 \newline
 \noindent
 \ 
-$[\![ TYPE ATTR; ]\!]_{}$$\longrightarrow$
+$[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
 
 \begin{OCaml}
 ...
