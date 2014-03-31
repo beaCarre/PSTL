@@ -45,6 +45,12 @@ Encadrants : Emmanuel Chailloux, Xavier Clerc, Grégoire Henry
 Lien vers l'énnoncé du projet : 
 \href{https://www-master.ufr-info-p6.jussieu.fr/2013/interoperabilite-entre-OCaml-et}{lien}.
 
+
+
+
+
+%%%%%%%%  mardi 21 janvier : Le projet  %%%%%%%%
+
 \section{mardi 21 janvier : Le projet}
 \subsection{sujets abordés}
 
@@ -84,16 +90,24 @@ Mais ces articles, très intéressants, nous ont un peu ouvert les yeux sur
 le sujet du projet et ont répondu à beaucoup de questions restées en
 attente jusque là sur chacun des outils. 
 
+
+
+
+
+%%%%%%%%  mercredi 12 février : Découverte d'OCaml Java  %%%%%%%%
+
 \section{mercredi 12 février : Découverte d'OCaml Java}
 \subsection{sujets abordés}
 Nous avons fait un point sur la découverte d'Ocaml-Java. La question à
 se poser est maintenant : comment modifier la génération d'O'Jacaré
 pour obtenir les classes d'encapsulation adaptées pour OCaml-Java.
+\begin{figure}[h]
 \includegraphics{schema1.pdf}
+\end{figure}
 Dans le Schéma ci-dessus, montrant un schéma représentant le
 méchanisme d'O'Jacaré.
-L'intérêt est de connaître le \delta et
-\delta'.
+L'intérêt est de connaître le $\Delta$ et
+$\Delta'$.
 Plusieurs questions ou sujets ont été lancés :
 \begin{itemize}
 \item encapsulation des classes Java (wrapper) avec attribut callback
@@ -105,35 +119,97 @@ Plusieurs questions ou sujets ont été lancés :
 \item faire peut-être dans un futur un paquet pour opam ?
 \end{itemize}
 
-Il existe un version d'O'Jacaré ayant été adaptées aux nouvelles
+Il existe une version d'O'Jacaré ayant été adaptées aux nouvelles
 version d'OCaml, il nous est désormais accessible.
 La seconde phase de ce projet sera d'explorer O'Jacaré, son code et
 ses possibilités.
+
 \subsection{travail effectué}
 Nous avons commencé à développer des exemples pour explorer toutes ses
 possibilités : un othello, en utilisant le OCaml pour le côté calcul,
 et le Java et sa bibliothèque swing, pour le côté graphique. 
 
-TODO : othello bloquée, à finir si c'ets possible
+L'othello bloqué (pb d'accès à graphics, \textbf{A finir si temps}).
 
 O'Jacaré a pu être installé et testé sur les exemples fournis.
 
+Faire othello sur ojacaré TODO
 
-TODO : finir othello pour O'Jacaré
+
+
+%%%%%%%%  vendredi 21 février : Découverte d'O'Jacaré  %%%%%%%%
 
 \section{vendredi 21 février : Découverte d'O'Jacaré}
 \subsection{sujets abordés}
 
-schemas compil
+Question sur l'adaptation pour Ocaml-Java:
+
+
+
+faire schemas compilations d'O'Jacaré.
+
+voir pprint, camlp5, yacc et lex,  
+
 \subsection{travail effectué}
 
+schemas compil à partir du CIDL, structs de ojacaré (voir annexe)
 
+
+%%%%%%%  lundi 10 mars : Schémas de compilation d'O'Jacaré  %%%%%%%%
 
 \section{lundi 10 mars : Schémas de compilation d'O'Jacaré}
 \subsection{sujets abordés}
 
-\subsection{travail effectué (en conséquence ou non)}
+schemas compil KO : départ trop proche code oj, et schémas contiennent
+trop de code.
 
+=> pas précis et illisible
+
+pb: encapsuler type obj? => beaucoup de cast
+    ou type plus précis ? => si on arrive à en avoir un
+self, echappement variable ?
+alias constructeurs, comment encapsuler ?
+sous-classe et creer vrai OCaml
+
+\subsection{travail effectué}
+
+schemas compil à partir de la BNF directement, plus formel
++ ébauche code pour ocaml-java à la main.
+
+
+
+
+%%%%%%%  vendredi 21 mars : Schémas de compil, ébauche adapatation  %%%%%%%%
+
+\section{vendredi 21 mars : Schémas de compilation et ébauche adaptation}
+\subsection{sujets abordés}
+
+schemas compil OK
+
+objet ocaml qui aura uune var d'instance d'objet java ( 'a
+java\_instance)
+
+la gestion des casts pour accès : faire tous les casts dans les 2 sens?
+pour acceder aux super types ?
+
+\subsection{travail effectué}
+
+partir de l'ébauche à la main, et du code généré par o'jacaré, pour
+rejoindre les deux modèles.
+
+faire exemple sur Point + PC
+
+
+
+
+%%%%%%%    %%%%%%%%
+
+%% \section{}
+%% \subsection{sujets abordés}     
+%% \subsection{travail effectué}
+
+\newpage
+%%%%%%%    Références    %%%%%%%%
 
 \section*{References}
 \begin{enumerate}
