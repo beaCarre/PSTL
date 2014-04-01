@@ -114,33 +114,35 @@ La génération de ce code se fait en plusieurs passes sur l'ast obtenu
 après ces précédents phases, le CIdl.file.
 
 \subsection{schémas de compilation}
-La génération de code rend une liste de valeurs imprimées (dans le
-fichier engendré), en modifiant
-Nous considérons un environnement contenant les  variables suivantes : 
-\begin{OCaml}
-let package := ""
+La génération de code rend du code OCaml (écrit dans un fichier).
 
-let isInterface := false
-let decl_name := ""
-let isCallback := false
-let isAbstractDecl := false
-let extends := "JniHierarchy.top"
-let implements := []
-let init_list := {initname; arg*} list
-\end{OCaml}
+\noindent
+Nous considérons un environnement contenant les  variables suivantes, initialisées à leur valuer par défaut: 
+
+$\rho$ = "" : le nom du \textbf{package} où trouver les classes définies.
+
+$\Gamma$ = false : si la déclaration est une \textbf{interface}.
+
+$\theta$ = false : si l'élément porte l'attribut \textbf{callback}.
+
+$\alpha$ = false : si l'élément est déclaré \textbf{abstract}.
+
+$\delta$ = "JniHierarchy.top" : la classe dont \textbf{extends} la classe courante.
+
+$\Delta$ = [] : les interfaces qu'\textbf{implements} la classe courante.
+\
+\newline
+\noindent
 Et les fonctions suivantes :
-\begin{OCaml}
-let init_env () =
-  package := "";
-  init_class_env ()
-let init_class_env () =
-  isInterface := false;
-  decl_name := "";
-  isCallback := false;
-  isAbstractDecl := false;
-  extends := "";
-  implements := []
-\end{OCaml}
+
+init\_env () : réinitialise toutes les variables d'environnement 
+
+init\_class\_env () : réinitialise toutes les variables d'environnement sauf $\rho$.
+
+hd(elt*) : rend le premier élément de la list elt*.
+
+tl(elt*) : rend la liste elt* privée de son premier élément.
+
 \begin{multicols}{2}
 \textbf{file}
 \newline
@@ -169,19 +171,41 @@ $[\![ tl(decl^*) ]\!]$
 \newline
 \ 
 \newline
-\end{multicols}
+
 \textbf{package}
 \newline
 \noindent
 $[\![ package\ {\color{blue}qname}\ ;\ decl^* ]\!]$$\longrightarrow$
 % metttre package name dans env
 
-$[\![ decl^* ]\!]_package:=qname$ 
+$[\![ decl^* ]\!]_{\rho=qname}$ 
 
 \ 
 \newline
 
-\textbf{class}
+\textbf{ decl interface }
+\newline
+\noindent
+$[\![{\color{blue}interface}\  name ]\!]$$\longrightarrow$
+
+$[\![{\color{blue}class}\  name ]\!]_{\rho,\Gamma=true}$
+
+\ 
+\newline
+
+\textbf{ decl class }
+\newline
+\noindent
+$[\![$[$ {\color{blue}callabck}$]${\color{blue} class}\  name ]\!]_{\rho,\Gamma,\theta,\alpha}$$\longrightarrow$
+
+$[\![{\color{blue}class}\  name ]\!]_{\rho,\Gamma,\theta=true,\alpha}$
+\end{multicols}
+
+\ 
+\newpage
+\noindent
+
+\textbf{ decl class}
 \newline
 \noindent
 $[\![ {\color{blue}class}\ NAME\ 
@@ -269,21 +293,37 @@ $[\![$[$ {\color{blue}name}\ init1 $]${\color{blue} <init>} (arg*); ...\}
 ...
 \begin{OCaml}
 (* fonctions et  methodes statiques*)
-
+ 
+    (*TODO*)
 
 \end{OCaml}
 
-\newpage
+
 \
+\ 
 \newline
-\textbf{ interface }
+\ 
 \newline
+Ce tableau représente le résultat des fonctions str, jni\_type, getJni, cast sur les types lors des générations des constructeurs ou des méthodes.
+
 \noindent
-$[\![{\color{blue}interface}\  name ]\!]$$\longrightarrow$
-% 
-
-$[\![{\color{blue}class}\  name ]\!]_{}$
-
+\begin{tabular}{|l|c|c|c|c|}
+  \hline
+  TYPE & str & jni\_type & getJni & cast \\
+  \hline
+  void & " "||V & & & \\
+  boolean & Z & Jni.Boolean \_pi & \_pi  & \_pi \\
+  byte & B & Jni.Byte \_pi & \_pi & \_pi \\
+  char & C & Jni.Char \_pi & \_pi & \_pi \\
+  short & S & Jni.Short \_pi & \_pi & \_pi  \\
+  int & I & Jni.Camlint \_pi & \_pi &  \_pi \\
+  long & J & Jni.Long \_pi &\_pi  & \_pi \\
+  float & F & Jni.Float \_pi & \_pi & \_pi \\
+  double & D & Jni.Double \_pi & \_pi & \_pi \\
+  string &LJava/lang/String;& Jni.Obj \_pi & Jni.string\_to\_java \_pi & \_pi \\
+  pack/Obj& Lpack/Obj;& Jni.Obj \_pi & \_pi\#\_get\_jni\_jname & (\_pi : jObj) \\
+  \hline
+\end{tabular}
 \ 
 \newline
 \noindent
@@ -294,60 +334,17 @@ $[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (A0,
     A1, ...)]\!]_{}$$\longrightarrow$
 % 
 
-
-\begin{tabular}{|l|c|c|c|c|}
-  \hline
-  TYPE & str & colonne 3 & bla& fg\\
-  \hline
-  void & & & & \\
-  boolean & "Z" & "Jni.Boolean \_pi" & "\_pi" & "\_pi" \\
-  byte & & & & \\
-  char  & & & &\\
-  short & & && \\
-  int & & && \\
-  long & & & &\\
-  float & & & &\\
-  double & & & &\\
-  string & & & &\\
-  Obj(qname) & & & &\\
-  \hline
-\end{tabular}
-
-\begin{OCaml}
-
-let aStr arg =
-   | int -> "I"
-   | boolean -> "Z"
-   | string -> "LJava/lang/String"
-     ...
-   | Obj -> "LPACK/Obj;"
-let aTypeJni arg =
-   | int -> "Jni.CamlInt _pi"
-   | boolean -> "Jni.Boolean _pi"
-   | string -> "Jni.Obj _pi"
-     ...
-   | Obj -> "Jni.Obj _pi"
-let aAcces arg =
-  | string -> "Jni.string_to_java _pi"
-  | Obj -> "_pi#_get_jni_jAi"
-  |  _ -> "_pi"
-let aCast arg =
-  | Obj -> "(_pi : jObj)"
-  |  _ -> "_pi"
-
-\end{OCaml}
-
 \begin{OCaml}
 "let _init_INIT =
   let id = Jni.get_methodID clazz \"<init>\" 
-            \"("(aStr A0)(aStr A1)...")V\"
+            \"("(toStr A0)(toStr A1)...")V\"
   in
-    fun (java_obj : _jni_jNAME) "(aCast A0) (aCast A1) ..." -> 
+    fun (java_obj : _jni_jNAME) "(cast A0) (cast A1) ..." -> 
       ...
-      let _p1 = "(aAcces A1)" in
-      let _p0 = "(aAcces A0)" in
+      let _p1 = "(getJni A1)" in
+      let _p0 = "(getJni A0)" in
       Jni.call_nonvirtual_void_method java_obj clazz id 
-          [| "(aTypeJni A0)"; "(aTypeJni A1)"; ... |]
+          [| "(jni\_type A0)"; "(jni\_type A1)"; ... |]
 
 class INIT _p0 _p1 ... =
   let java_obj = _alloc_jNAME ()
@@ -375,13 +372,13 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
    ... "
 (* capsule *)
 "class _capsule_jNAME =
-   let __fid_ATTR = try Jni.get_fieldID clazz \"ATTR\" "(aStr TYPE)" in
+   let __fid_ATTR = try Jni.get_fieldID clazz \"ATTR\" "(toStr TYPE)" in
    ...
    fun (jni_ref : _jni_jNAME) -> 
      object (self)
         method set_ATTR =
            fun "(castArg TYPE)" ->
-              let _p = "(aAccess TYPE)"
+              let _p = "(getJni TYPE)"
               in Jni.set_object_field jni_ref __fid_ATTR _p
         method get_ATTR =
         fun () ->
@@ -408,7 +405,7 @@ $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
 (* capsule *)
 "class _capsule_jNAME =
    let __mid_METH = Jni.get_methodID clazz "mETH"
-         \"("(aStr ARG1)(aStr ARG2)...")"(aStr TYPE)"\"
+         \"("(toStr ARG1)(toStr ARG2)...")"(toStr TYPE)"\"
    ...
    in
    object (self)
@@ -422,13 +419,13 @@ $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
                [| Jni.Obj _p0 |]) : jObj2)
       *)
       method METH =
-         fun "(aCast A0) (aCast A1) ..." ->
-           let _p2 = "(aAccess ARG2)" in
-           let _p1 = "(aAccess ARG1)" in
-           let _p0 = "(aAccess ARG0)"
+         fun "(cast A0) (cast A1) ..." ->
+           let _p2 = "(getJni ARG2)" in
+           let _p1 = "(getJni ARG1)" in
+           let _p0 = "(getJni ARG0)"
            in
              Jni.call_"(aJniType TYPE)"_method jni_ref __mid_METH
-               [| "(aTypeJni ARG0)"; "(aTypeJni ARG1)"; ... |]
+               [| "(jni\_type ARG0)"; "(jni\_type ARG1)"; ... |]
 \end{OCaml}
 //TODO : 
 retour Obj dans methode
@@ -436,6 +433,101 @@ array
 callback
 \section{génération .mli}
  
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCava   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ocaml-Java}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCava   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Génération pour Ocaml-Java}
+Le type top manipulé sera le type d'instance objet de Ocaml-Java :
+\begin{OCaml}
+type top = java'lang'Object java_instance;;
+\end{OCaml}
+
+Exception :
+\begin{OCaml}
+exception Null_object of string
+\end{OCaml}
+\ 
+\newline
+
+\textbf{class}
+\newline
+\noindent
+$[\![ {\color{blue}class}\ NAME\ 
+ {\color{blue}extends}\  E \ 
+ {\color{blue}implements}\  I1,I2... \{$
+
+ $ \ \ \ attr1; attr2; ...;$
+
+  $\ \ \ m1; m2; ...;$
+
+  $\ \ \ init1; init2; ...;$
+
+ $\} ]\!]_{\rho,CB}\longrightarrow$
+% 1 type objet t 
+% 1 classe encapsulante W de type t
+% 1 a n classes (Ci), sous-classes de W (1 par constructeur)
+% 1 fonction instanceof pr ce type
+% 1 fonction de cast pour ce type
+\ 
+\newline
+
+\begin{OCaml}
+
+(** type jni.obj t *)
+"type _jni_jNAME = PACK'NAME java_instance;;"
+
+(** classe encapsulante *)
+"class type jNAME =
+   object inherit E
+   inherits jI1
+   inherits jI2 ...
+   method _get_jni_jNAME : _jni_jNAME
+   end"
+
+(* capsule wrapper *)
+"class _capsule_jNAME = 
+  fun (jni_ref : _jni_jNAME) ->
+     let _ =
+        if Java.is_null jni_ref
+        then raise (Null_object "mypack/Point")
+        else ()
+     in
+
+    object (self)
+     (* method _get_jni_jNAME = jni_ref
+      method _get_jni_jE = jni_ref
+      method _get_jni_jI1 = jni_ref
+      method _get_jni_jI2 = jni_ref*)
+      inherit JniHierarchy.top jni_ref
+    end"
+
+(* downcast utilisateur *)
+"let jNAME_of_top (o : TOP) : jNAME =
+    new _capsule_jNAME (__jni_jNAME_of_jni_obj o#_get_jniobj)"
+(* instance_of *)
+"let _instance_of_jNAME =
+    in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz"
+
+(* tableaux *)
+"let _new_jArray_jNAME size =
+    let java_obj = Jni.new_object_array size (Jni.find_class \"PACK/NAME\")
+    in
+      new JniArray._Array Jni.get_object_array_element Jni.
+        set_object_array_element (fun jniobj -> new _capsule_jNAME jniobj)
+        (fun obj -> obj#_get_jni_jNAME) java_obj"
+"let jArray_init_jNAME size f =
+    let a = _new_jArray_jNAME size
+    in (for i = 0 to pred size do a#set i (f i) done; a)"
+
+\end{OCaml}
+
+
+
+
+
+
 
 
 
