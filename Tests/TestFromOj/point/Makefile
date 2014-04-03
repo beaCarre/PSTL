@@ -1,14 +1,13 @@
 #HOME
-#JAVA_PATH=/usr/lib/jvm/java-7-oracle
-
+JAVA_PATH=/usr/lib/jvm/java-7-oracle
 #ARI :
-JAVA_PATH=/usr/lib/jvm/jdk1.7.0_07
+#JAVA_PATH=/usr/lib/jvm/jdk1.7.0_07
 
 JAVA=$(JAVA_PATH)/bin/java
 JAVAC=$(JAVA_PATH)/bin/javac
 OCAMLJAVA=ocamljava -java-extensions javalib.cmja
 
-CP=-cp $(JAVA_PATH)/lib/ct.sym -cp mypack
+CP=-annot -cp $(JAVA_PATH)/lib/ct.sym -cp mypack
 
 default: clean compile run
 

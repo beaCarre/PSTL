@@ -1,18 +1,22 @@
-open Package'java'lang
+type top = java'lang'Object java_instance;;
 
-class point (this : java'lang'Object java_instance) = 
+type jPoint
+
+class point (this : mypack'Point java_instance) = 
 object (self)
-  method this_object () = this;
+  inherit top
+  method this'java'lang'Object = (this:>java'lang'Object java_instance)
+  method this'mypack'Point = this
   method displayP () = print_endline "point"
 end
 
 let p = new point (Java.make "java'lang'Object()" ())
 
-class pc (this : java'lang'String java_instance) =
+class point_colore (this : mypack'Point java_instance) =
 object (self)
-  inherit point (this:>java'lang'Object java_instance)
-  (*method  this_object () = this;*)
-  method display () = print_endline "pc"
+  inherit point (this:> mypack'Point java_instance)
+  method this'mypack'Point_colore = this
+  method displayPC () = print_endline "pc"
 end
 
 let _ =
