@@ -199,21 +199,51 @@ rejoindre les deux modèles.
 
 faire exemple sur Point + PC
 
+-> from nothing : tests d'encapsulation de classes simples, pour
+imaginer la syntaxe : Integer, Float, Number (pour héritgae). 
+(voir t.ml) 
+classe C avec en paramètre p la java_instance de la classe encapsulée, 
+et héritant de la classe encapsulant obj, en sous-typant le paramètre
+p en java_instance de Object.
 
+->from Ojacare : en partant du fichier généré par O'Jacaré :
+Il est immédiatement ramrquable que un bon nombre d'éléments est
+inutile.
+En effet, CamlJava ne fait aucune vérification dynamique de type, ou
+d'existance d'éléments, que fait OCaml-Java. Ces éléments sont alors
+inutiles :
+\begin{OCaml}
+let clazz =
+    try Jni.find_class "mypack/Point"
+    with | _ -> failwith "Class not found : mypack.Point."
+...
+try Jni.get_methodID clazz "eq" "(Lmypack/Point;)Z"
+      with
+      | _ ->
+          failwith
+            "Unknown method from IDL in class \"mypack.Point\" :
+          \"boolean eq(mypack.Point)\"."
+\end{OCaml}
+puisque OCaml-Java s'occupe des vérifications dynamiques.
+=> réduction immédiate de moitié du nombre de ligne !
 
-
-%%%%%%%    %%%%%%%%
+%%%%%%% vendredi 11 avril : mise au point sur les nouveaux schémas  %%%%%%%%
 
 %% \section{}
 %% \subsection{sujets abordés}     
 %% \subsection{travail effectué}
+
+
+%%%%%%%   %%%%%%%%
+
+
 
 \newpage
 %%%%%%%    Références    %%%%%%%%
 
 \section*{References}
 \begin{enumerate}
-\item Cours 10 de MPIL : \emph{Interopérabilité OCaml et Java}, E. Chailloux,
+\item Cours 10 de MPIL : \emph{Interopérabilité OCaml et Java}, E.Chailloux,
 \href{https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2013/ue/LI332-2013oct/public/cours/COURS10.pdf}{lien}
 \item \emph{O'Jacaré, une interface objet entre Objective Caml et Java}, E.Chailloux - G. Henry
 \item\emph{OCaml-Java: Typing Java Accesses from OCaml Programs}, X. Clerc,

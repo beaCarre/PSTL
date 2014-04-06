@@ -1,0 +1,543 @@
+"main.ml" 3 8 12 "main.ml" 3 8 19
+type(
+  string -> unit
+)
+ident(
+  def display "main.ml" 5 57 57 "_none_" 1 0 -1
+)
+"main.ml" 3 8 20 "main.ml" 3 8 21
+type(
+  string
+)
+ident(
+  def s "main.ml" 3 8 24 "main.ml" 3 8 52
+)
+"main.ml" 3 8 24 "main.ml" 3 8 36
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"main.ml" 3 8 37 "main.ml" 3 8 38
+type(
+  string
+)
+ident(
+  int_ref s "main.ml" 3 8 20 "main.ml" 3 8 21
+)
+"main.ml" 3 8 24 "main.ml" 3 8 38
+type(
+  unit
+)
+"main.ml" 3 8 40 "main.ml" 3 8 45
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"main.ml" 3 8 46 "main.ml" 3 8 52
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"main.ml" 3 8 40 "main.ml" 3 8 52
+type(
+  unit
+)
+"main.ml" 3 8 24 "main.ml" 3 8 52
+type(
+  unit
+)
+"main.ml" 5 57 57 "main.ml" 5 57 64
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 5 57 65 "main.ml" 5 57 92
+type(
+  string
+)
+"main.ml" 5 57 57 "main.ml" 5 57 92
+type(
+  unit
+)
+"main.ml" 6 95 99 "main.ml" 6 95 100
+type(
+  P.default_point
+)
+ident(
+  def p "main.ml" 7 126 126 "_none_" 1 0 -1
+)
+"main.ml" 6 95 103 "main.ml" 6 95 120
+type(
+  unit -> P.default_point
+)
+"main.ml" 6 95 121 "main.ml" 6 95 123
+type(
+  unit
+)
+"main.ml" 6 95 103 "main.ml" 6 95 123
+type(
+  P.default_point
+)
+"main.ml" 7 126 126 "main.ml" 7 126 133
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 7 126 134 "main.ml" 7 126 140
+type(
+  string
+)
+"main.ml" 7 126 126 "main.ml" 7 126 140
+type(
+  unit
+)
+"main.ml" 9 144 144 "main.ml" 9 144 151
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 9 144 152 "main.ml" 9 144 187
+type(
+  string
+)
+"main.ml" 9 144 144 "main.ml" 9 144 187
+type(
+  unit
+)
+"main.ml" 10 190 194 "main.ml" 10 190 196
+type(
+  P.point
+)
+ident(
+  def p2 "main.ml" 11 215 215 "_none_" 1 0 -1
+)
+"main.ml" 10 190 199 "main.ml" 10 190 208
+type(
+  int -> int -> P.point
+)
+"main.ml" 10 190 209 "main.ml" 10 190 210
+type(
+  int
+)
+"main.ml" 10 190 211 "main.ml" 10 190 212
+type(
+  int
+)
+"main.ml" 10 190 199 "main.ml" 10 190 212
+type(
+  P.point
+)
+"main.ml" 11 215 215 "main.ml" 11 215 222
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 11 215 223 "main.ml" 11 215 229
+type(
+  string
+)
+"main.ml" 11 215 215 "main.ml" 11 215 229
+type(
+  unit
+)
+"main.ml" 13 233 233 "main.ml" 13 233 240
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 13 233 241 "main.ml" 13 233 261
+type(
+  string
+)
+"main.ml" 13 233 233 "main.ml" 13 233 261
+type(
+  unit
+)
+"main.ml" 14 264 264 "main.ml" 14 264 265
+type(
+  P.default_point
+)
+ident(
+  int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
+)
+"main.ml" 14 264 264 "main.ml" 14 264 273
+type(
+  unit -> unit
+)
+"main.ml" 14 264 274 "main.ml" 14 264 276
+type(
+  unit
+)
+"main.ml" 14 264 264 "main.ml" 14 264 276
+type(
+  unit
+)
+"main.ml" 15 279 279 "main.ml" 15 279 286
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 15 279 287 "main.ml" 15 279 308
+type(
+  string
+)
+"main.ml" 15 279 279 "main.ml" 15 279 308
+type(
+  unit
+)
+"main.ml" 16 311 311 "main.ml" 16 311 313
+type(
+  P.point
+)
+ident(
+  int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
+)
+"main.ml" 16 311 311 "main.ml" 16 311 321
+type(
+  unit -> unit
+)
+"main.ml" 16 311 322 "main.ml" 16 311 324
+type(
+  unit
+)
+"main.ml" 16 311 311 "main.ml" 16 311 324
+type(
+  unit
+)
+"main.ml" 18 328 328 "main.ml" 18 328 335
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 18 328 336 "main.ml" 18 328 359
+type(
+  string
+)
+"main.ml" 18 328 328 "main.ml" 18 328 359
+type(
+  unit
+)
+"main.ml" 19 362 362 "main.ml" 19 362 363
+type(
+  P.default_point
+)
+ident(
+  int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
+)
+"main.ml" 19 362 362 "main.ml" 19 362 370
+type(
+  int -> int -> unit
+)
+"main.ml" 19 362 371 "main.ml" 19 362 372
+type(
+  int
+)
+"main.ml" 19 362 373 "main.ml" 19 362 374
+type(
+  int
+)
+"main.ml" 19 362 362 "main.ml" 19 362 374
+type(
+  unit
+)
+"main.ml" 20 377 377 "main.ml" 20 377 378
+type(
+  P.default_point
+)
+ident(
+  int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
+)
+"main.ml" 20 377 377 "main.ml" 20 377 386
+type(
+  unit -> unit
+)
+"main.ml" 20 377 387 "main.ml" 20 377 389
+type(
+  unit
+)
+"main.ml" 20 377 377 "main.ml" 20 377 389
+type(
+  unit
+)
+"main.ml" 22 393 393 "main.ml" 22 393 400
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 22 393 401 "main.ml" 22 393 426
+type(
+  string
+)
+"main.ml" 22 393 393 "main.ml" 22 393 426
+type(
+  unit
+)
+"main.ml" 23 429 429 "main.ml" 23 429 430
+type(
+  P.default_point
+)
+ident(
+  int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
+)
+"main.ml" 23 429 429 "main.ml" 23 429 438
+type(
+  int -> int -> unit
+)
+"main.ml" 23 429 439 "main.ml" 23 429 440
+type(
+  int
+)
+"main.ml" 23 429 441 "main.ml" 23 429 443
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"main.ml" 23 429 443 "main.ml" 23 429 444
+type(
+  int
+)
+"main.ml" 23 429 441 "main.ml" 23 429 444
+type(
+  int
+)
+"main.ml" 23 429 429 "main.ml" 23 429 444
+type(
+  unit
+)
+"main.ml" 24 447 447 "main.ml" 24 447 448
+type(
+  P.default_point
+)
+ident(
+  int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
+)
+"main.ml" 24 447 447 "main.ml" 24 447 456
+type(
+  unit -> unit
+)
+"main.ml" 24 447 457 "main.ml" 24 447 459
+type(
+  unit
+)
+"main.ml" 24 447 447 "main.ml" 24 447 459
+type(
+  unit
+)
+"main.ml" 26 465 465 "main.ml" 26 465 472
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 26 465 473 "main.ml" 26 465 495
+type(
+  string
+)
+"main.ml" 26 465 465 "main.ml" 26 465 495
+type(
+  unit
+)
+"main.ml" 27 498 502 "main.ml" 27 498 503
+type(
+  string
+)
+ident(
+  def s "main.ml" 27 498 524 "main.ml" 27 498 556
+)
+"main.ml" 27 498 506 "main.ml" 27 498 508
+type(
+  P.point
+)
+ident(
+  int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
+)
+"main.ml" 27 498 506 "main.ml" 27 498 517
+type(
+  unit -> string
+)
+"main.ml" 27 498 518 "main.ml" 27 498 520
+type(
+  unit
+)
+"main.ml" 27 498 506 "main.ml" 27 498 520
+type(
+  string
+)
+"main.ml" 27 498 524 "main.ml" 27 498 536
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"main.ml" 27 498 537 "main.ml" 27 498 538
+type(
+  string
+)
+ident(
+  int_ref s "main.ml" 27 498 502 "main.ml" 27 498 503
+)
+"main.ml" 27 498 524 "main.ml" 27 498 538
+type(
+  unit
+)
+"main.ml" 27 498 540 "main.ml" 27 498 553
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"main.ml" 27 498 554 "main.ml" 27 498 556
+type(
+  unit
+)
+"main.ml" 27 498 540 "main.ml" 27 498 556
+type(
+  unit
+)
+"main.ml" 27 498 524 "main.ml" 27 498 556
+type(
+  unit
+)
+"main.ml" 27 498 498 "main.ml" 27 498 556
+type(
+  unit
+)
+"main.ml" 29 560 560 "main.ml" 29 560 567
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 29 560 568 "main.ml" 29 560 590
+type(
+  string
+)
+"main.ml" 29 560 560 "main.ml" 29 560 590
+type(
+  unit
+)
+"main.ml" 30 593 597 "main.ml" 30 593 598
+type(
+  float
+)
+ident(
+  def d "main.ml" 30 593 619 "main.ml" 30 593 650
+)
+"main.ml" 30 593 601 "main.ml" 30 593 603
+type(
+  P.point
+)
+ident(
+  int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
+)
+"main.ml" 30 593 601 "main.ml" 30 593 612
+type(
+  unit -> float
+)
+"main.ml" 30 593 613 "main.ml" 30 593 615
+type(
+  unit
+)
+"main.ml" 30 593 601 "main.ml" 30 593 615
+type(
+  float
+)
+"main.ml" 30 593 619 "main.ml" 30 593 630
+type(
+  float -> unit
+)
+ident(
+  ext_ref Pervasives.print_float
+)
+"main.ml" 30 593 631 "main.ml" 30 593 632
+type(
+  float
+)
+ident(
+  int_ref d "main.ml" 30 593 597 "main.ml" 30 593 598
+)
+"main.ml" 30 593 619 "main.ml" 30 593 632
+type(
+  unit
+)
+"main.ml" 30 593 634 "main.ml" 30 593 647
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"main.ml" 30 593 648 "main.ml" 30 593 650
+type(
+  unit
+)
+"main.ml" 30 593 634 "main.ml" 30 593 650
+type(
+  unit
+)
+"main.ml" 30 593 619 "main.ml" 30 593 650
+type(
+  unit
+)
+"main.ml" 30 593 593 "main.ml" 30 593 650
+type(
+  unit
+)
+"main.ml" 32 654 654 "main.ml" 32 654 661
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 32 654 662 "main.ml" 32 654 683
+type(
+  string
+)
+"main.ml" 32 654 654 "main.ml" 32 654 683
+type(
+  unit
+)
+"main.ml" 33 686 686 "main.ml" 33 686 688
+type(
+  P.point
+)
+ident(
+  int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
+)
+"main.ml" 33 686 686 "main.ml" 33 686 694
+type(
+  int32 -> unit
+)
+"main.ml" 33 686 695 "main.ml" 33 686 696
+type(
+  int
+)

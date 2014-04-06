@@ -13,7 +13,7 @@ clean:
 	rm -f *.cm* *.jo *~ $(SRC).jar
 
 compile:
-	ocamljava $(OPT) $(LIB) $(JE) -c $(SRC).ml
+	ocamljava $(OPT) $(LIB) $(JE) -annot -c $(SRC).ml
 #	ocamljava $(OPT) $(LIB) $(JE) -c $(SRC).mli
 	ocamljava $(OPT) $(LIB) $(JE) -o $(SRC).jar $(SRC).cmj
 

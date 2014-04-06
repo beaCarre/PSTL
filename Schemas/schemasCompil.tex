@@ -387,10 +387,29 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
         ...
    "
 \end{OCaml}
-\ 
-\newline
+
 \noindent
 \textbf{ methodes }
+
+\noindent
+\begin{tabular}{|l|c|c|c|c|}
+  \hline
+  TYPE & str & jni\_type & getJni & cast \\
+  \hline
+  void & " "||V & & & \\
+  boolean & Z & Jni.Boolean \_pi & \_pi  & \_pi \\
+  byte & B & Jni.Byte \_pi & \_pi & \_pi \\
+  char & C & Jni.Char \_pi & \_pi & \_pi \\
+  short & S & Jni.Short \_pi & \_pi & \_pi  \\
+  int & I & Jni.Camlint \_pi & \_pi &  \_pi \\
+  long & J & Jni.Long \_pi &\_pi  & \_pi \\
+  float & F & Jni.Float \_pi & \_pi & \_pi \\
+  double & D & Jni.Double \_pi & \_pi & \_pi \\
+  string &LJava/lang/String;& Jni.Obj \_pi & Jni.string\_to\_java \_pi & \_pi \\
+  pack/Obj& Lpack/Obj;& Jni.Obj \_pi & \_pi\#\_get\_jni\_jname & (\_pi : jObj) \\
+  \hline
+\end{tabular}
+\ 
 \newline
 \noindent
 $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
@@ -433,10 +452,18 @@ array
 callback
 \section{génération .mli}
  
+
+
+
+
+
+
+
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Ocaml-Java}
-\subsection{
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCava   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Génération de code pour Ocaml-Java}
@@ -524,7 +551,89 @@ $[\![ {\color{blue}class}\ NAME\
     in (for i = 0 to pred size do a#set i (f i) done; a)"
 
 \end{OCaml}
+\ 
+\newline
+\noindent
+\textbf{ methodes } 
+Tableau représentant les équivalents en OCaml des types Java manipulés.
+%% The following table shows how Java primitive types are mapped to OCaml predefined types. 
+\noindent
+\begin{tabular}{|l|l|}
+ \hline
+Java type & OCaml type & \\
+ \hline
+boolean & bool\\
+byte & int\\
+char & int\\
+double & float\\
+float & float\\
+int & int32\\
+long & int64\\
+short & int\\
+ \hline
+\end{tabular}
+\
+\newline
+Tbleau associant pour chaque types de l'IDL les
+fonctions utiles aux schémas de compilation manipulant ceux-ci.
 
+\noindent
+\begin{tabular}{|l|c|c|c|c|}
+  \hline
+  TYPE(IDL) & ocamlType & javaType &to\_mlType & to\_JavaType \\
+  \hline
+  void &  " "||void &     &   & \\
+
+  boolean & boolean & \_pi & \_pi  & \_pi \\
+
+  byte & byte & \_pi & \_pi & \_pi \\
+
+  char & char & \_pi & \_pi & \_pi \\
+
+  short & short & \_pi & \_pi & \_pi  \\
+
+  int & int & Int32.of\_int \_pi & Int32.to\_int \_pi &  \_pi \\
+
+  long & long & Int64.of\_int\_pi & Int64.to\_int\_pi  & \_pi \\
+
+  float & float & Jni.Float \_pi & \_pi & \_pi \\
+
+  double & double & Jni.Double \_pi & \_pi & \_pi \\
+
+  string & java.lang.String & Jni.Obj \_pi & Jni.string\_to\_java \_pi
+  & \_pi \\
+
+  pack/Obj& pack.Obj & \_pi\#\_get\_jni\_jObj &
+  \_pi & \_pi \\
+
+  \hline
+\end{tabular}
+\ 
+\newline
+\ 
+\newline
+\noindent
+$[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
+
+\begin{OCaml}
+...
+(* type class *)
+"class type jNAME =
+   ...
+   method METH : ARG1 -> ARG2 -> ... -> RTYPE
+   ... "
+(* capsule *)
+"class _capsule_jNAME =
+   object (self)      
+      method METH =
+         fun "(cast A0) (cast A1) ..." ->
+           let _p1 = "(getJava ARG1)" _p1 in
+           let _p0 = "(getJava ARG0)" _p0
+           in
+             (getJava RTYPE) "Java.call \"PACK.CLASS.METH("(javaType
+           ARG1)","(javaType ARG2)","..."):"(javaType RTYPE)"\"
+           jni_ref _p0 _p1 ...
+\end{OCaml}
 
 
 
