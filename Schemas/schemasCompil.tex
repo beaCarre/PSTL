@@ -8,6 +8,8 @@
 \usepackage{multicol}
 \usepackage{listings}
 
+\usepackage{hyperref}
+
 \usepackage{color}
 \definecolor{lightgray}{rgb}{.9,.9,.9}
 \definecolor{darkgray}{rgb}{.5,.2,.2}
@@ -25,6 +27,23 @@
                       keywordstyle=\color{blue},
                       basicstyle=\footnotesize,
                       escapeinside={/*}{*/},
+                      %xleftmargin=0.08\textwidth
+                    }
+                  }
+                  {}
+\lstnewenvironment{OCamlEx}
+                  {\lstset{
+                      language=[Objective]Caml,
+                      breaklines=true,
+                      showstringspaces=false,
+                      commentstyle=\color{red},
+                      stringstyle=\color{darkgray},
+                      identifierstyle=\ttfamily,
+                      keywordstyle=\color{blue},
+                      basicstyle=\footnotesize,
+                      escapeinside={/*}{*/},
+                      frame=single,
+                      numbers=left,
                       %xleftmargin=0.08\textwidth
                     }
                   }
@@ -208,7 +227,7 @@ $[\![{\color{blue}class}\  name ]\!]_{\rho,\Gamma,\theta=true,\alpha}$
 \textbf{ decl class}
 \newline
 \noindent
-$[\![ {\color{blue}class}\ NAME\ 
+$[\![ {\color{blue}class}\ CLASS\ 
  {\color{blue}extends}\  E \ 
  {\color{blue}implements}\  I1,I2... \{$
 
@@ -228,35 +247,35 @@ $[\![ {\color{blue}class}\ NAME\
 \newline
 
 \begin{OCaml}
-let clazz = Jni.find_class PACK/NAME
+let clazz = Jni.find_class PACK/CLASS
 
 (** type jni.obj t *)
-"type _jni_jNAME = Jni.obj"
+"type _jni_jCLASS = Jni.obj"
 
 (** classe encapsulante *)
-"class type jNAME =
+"class type jCLASS =
    object inherit E
    inherits jI1
    inherits jI2 ...
-   method _get_jni_jNAME : _jni_jNAME
+   method _get_jni_jCLASS : _jni_jCLASS
    end"
 
 (** upcast jni *)
-"let __jni_obj_of_jni_jNAME (java_obj : _jni_jNAME) =
-   (Obj.magic : _jni_jNAME -> Jni.obj) java_obj"
+"let __jni_obj_of_jni_jCLASS (java_obj : _jni_jCLASS) =
+   (Obj.magic : _jni_jCLASS -> Jni.obj) java_obj"
 (** downcast jni *)
-"let __jni_jNAME_of_jni_obj =
+"let __jni_jCLASS_of_jni_obj =
    fun (java_obj : Jni.obj) ->
      Jni.is_instance_of java_obj clazz"
  
 (* allocation : si ce n'est pas une interface *)
-"let _alloc_jNAME =
-     fun () -> (Jni.alloc_object clazz : _jni_jNAME)"
+"let _alloc_jCLASS =
+     fun () -> (Jni.alloc_object clazz : _jni_jCLASS)"
 
 (* capsule wrapper *)
-"class _capsule_jNAME = fun (jni_ref : _jni_jNAME) ->
+"class _capsule_jCLASS = fun (jni_ref : _jni_jCLASS) ->
     object (self)
-      method _get_jni_jNAME = jni_ref
+      method _get_jni_jCLASS = jni_ref
       method _get_jni_jE = jni_ref
       method _get_jni_jI1 = jni_ref
       method _get_jni_jI2 = jni_ref
@@ -264,21 +283,21 @@ let clazz = Jni.find_class PACK/NAME
     end"
 
 (* downcast utilisateur *)
-"let jNAME_of_top (o : TOP) : jNAME =
-    new _capsule_jNAME (__jni_jNAME_of_jni_obj o#_get_jniobj)"
+"let jCLASS_of_top (o : TOP) : jCLASS =
+    new _capsule_jCLASS (__jni_jCLASS_of_jni_obj o#_get_jniobj)"
 (* instance_of *)
-"let _instance_of_jNAME =
+"let _instance_of_jCLASS =
     in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz"
 
 (* tableaux *)
-"let _new_jArray_jNAME size =
-    let java_obj = Jni.new_object_array size (Jni.find_class \"PACK/NAME\")
+"let _new_jArray_jCLASS size =
+    let java_obj = Jni.new_object_array size (Jni.find_class \"PACK/CLASS\")
     in
       new JniArray._Array Jni.get_object_array_element Jni.
-        set_object_array_element (fun jniobj -> new _capsule_jNAME jniobj)
-        (fun obj -> obj#_get_jni_jNAME) java_obj"
-"let jArray_init_jNAME size f =
-    let a = _new_jArray_jNAME size
+        set_object_array_element (fun jniobj -> new _capsule_jCLASS jniobj)
+        (fun obj -> obj#_get_jni_jCLASS) java_obj"
+"let jArray_init_jCLASS size f =
+    let a = _new_jArray_jCLASS size
     in (for i = 0 to pred size do a#set i (f i) done; a)"
 
 (* inits *)
@@ -287,7 +306,7 @@ let clazz = Jni.find_class PACK/NAME
 $[\![$[$ {\color{blue}name}\ init1 $]${\color{blue} <init>} (arg*); ...\}
 ]\!]$
 
-$[\![$[$ {\color{blue}name}\ init1 $]${\color{blue} <init>} (arg*); ...\}
+$[\![$[$ {\color{blue}name}\ init2 $]${\color{blue} <init>} (arg*); ...\}
 ]\!]$
 
 ...
@@ -339,7 +358,7 @@ $[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (A0,
   let id = Jni.get_methodID clazz \"<init>\" 
             \"("(toStr A0)(toStr A1)...")V\"
   in
-    fun (java_obj : _jni_jNAME) "(cast A0) (cast A1) ..." -> 
+    fun (java_obj : _jni_jCLASS) "(cast A0) (cast A1) ..." -> 
       ...
       let _p1 = "(getJni A1)" in
       let _p0 = "(getJni A0)" in
@@ -347,9 +366,9 @@ $[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (A0,
           [| "(jni\_type A0)"; "(jni\_type A1)"; ... |]
 
 class INIT _p0 _p1 ... =
-  let java_obj = _alloc_jNAME ()
+  let java_obj = _alloc_jCLASS ()
   in let _ = _init_INIT java_obj _p0 _p1 ...
-    in object (self) inherit _capsule_jNAME java_obj 
+    in object (self) inherit _capsule_jCLASS java_obj 
 end"
 
 \end{OCaml}
@@ -365,16 +384,16 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
 \begin{OCaml}
 ...
 (* type class *)
-"class type jNAME =
+"class type jCLASS =
   ...
    method set_ATTR : (j)TYPE -> unit
    method get_ATTR : unit -> (j)TYPE
    ... "
 (* capsule *)
-"class _capsule_jNAME =
+"class _capsule_jCLASS =
    let __fid_ATTR = try Jni.get_fieldID clazz \"ATTR\" "(toStr TYPE)" in
    ...
-   fun (jni_ref : _jni_jNAME) -> 
+   fun (jni_ref : _jni_jCLASS) -> 
      object (self)
         method set_ATTR =
            fun "(castArg TYPE)" ->
@@ -382,8 +401,8 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
               in Jni.set_object_field jni_ref __fid_ATTR _p
         method get_ATTR =
         fun () ->
-           (new _capsule_jNAME (Jni.get_object_field jni_ref __fid_ATTR) :
-           jNAME)
+           (new _capsule_jCLASS (Jni.get_object_field jni_ref __fid_ATTR) :
+           jCLASS)
         ...
    "
 \end{OCaml}
@@ -417,12 +436,12 @@ $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
 \begin{OCaml}
 ...
 (* type class *)
-"class type jNAME =
+"class type jCLASS =
    ...
    method METH : ARG1 -> ARG2 -> ... -> TYPE
    ... "
 (* capsule *)
-"class _capsule_jNAME =
+"class _capsule_jCLASS =
    let __mid_METH = Jni.get_methodID clazz "mETH"
          \"("(toStr ARG1)(toStr ARG2)...")"(toStr TYPE)"\"
    ...
@@ -469,21 +488,75 @@ callback
 \subsection{Génération de code pour Ocaml-Java}
 L'idée est de partir de 
 Le type top manipulé sera le type d'instance objet de Ocaml-Java :
-\begin{OCaml}
+\begin{OCamlEx}
 type top = java'lang'Object java_instance;;
-\end{OCaml}
+\end{OCamlEx}
 
 Exception :
-\begin{OCaml}
+\begin{OCamlEx}
 exception Null_object of string
-\end{OCaml}
+\end{OCamlEx}
+
+\noindent
+Description des types manipulés par OCaml-Java.
+
+\begin{tabular}{|l|l|}
+  \hline
+  type Java & description et exemple \\
+  \hline
+  java\_constructor & signature d'un constructeur  \\
+  &  "java.lang.Object()" \\
+  \hline
+  java\_method & signature d'une méthode \\
+  & "java.lang.String.lastIndexOf(string):int"\\
+  \hline
+  java\_field\_get & signature d'un attribut\\
+  & "mypack.Point.x:int" \\
+  \hline
+  java\_field\_set & signature d'un attribut\\
+  & "mypack.Point.x:int" \\
+  \hline
+  java\_type & classe, interface ou type Array\\
+  & "java.lang.String"\\
+  \hline
+  java\_proxy & type d'une interface\\
+  & "java.lang.Comparable"\\ 
+  \hline
+\end{tabular}
+
+\noindent
+Description du module Java
+
+\begin{OCamlEx}
+make : 'a java_constructor -> 'a
+call : 'a java_method -> 'a
+get : 'a java_field_get -> 'a
+set : 'a java_field_set -> 'a
+instanceof : 'a java_type -> 'b java_instance -> bool
+cast : 'a java_type -> 'b java_instance -> 'a
+proxy : 'a java_proxy -> 'a
+\end{OCamlEx}
+
+
 \ 
 \newline
-
 \textbf{class}
+
+Le schéma de compilation de base pour une classe est largement allégé. 
+En effet,la fonction downcast jni est inutile, puisqu'on a la fonction Java.cast, effectuant tout le travail.
+
+De même, l'upcast -> est direct ? pour quoi ?
+
+TODO : voir http://www.pps.univ-paris-diderot.fr/~henry/ojacare/doc/ojacare006.html. (** cast JNI, exporté pour préparer la fonction 'import' *)
+
+L'allocation n'est pas non plus nécessaire, OCaml-Java gérant tout ça côté Java. 
+
+La capsule est aussi très simplifiée, les tests d'existance des méthodes classes etc est aussi géré par COaml-Java.
+
+\ 
 \newline
 \noindent
-$[\![ {\color{blue}class}\ NAME\ 
+$[\![ {\color{blue}class}\ CLASS\ 
  {\color{blue}extends}\  E \ 
  {\color{blue}implements}\  I1,I2... \{$
 
@@ -504,20 +577,20 @@ $[\![ {\color{blue}class}\ NAME\
 
 \begin{OCaml}
 
-(** type jni.obj t *)
-"type _jni_jNAME = PACK'NAME java_instance;;"
+(** type 'a java_instance*)
+"type _jni_jCLASS = PACK'CLASS java_instance;;"
 
 (** classe encapsulante *)
-"class type jNAME =
+"class type jCLASS =
    object inherit E
    inherits jI1
    inherits jI2 ...
-   method _get_jni_jNAME : _jni_jNAME
+   method _get_jni_jCLASS : _jni_jCLASS
    end"
 
 (* capsule wrapper *)
-"class _capsule_jNAME = 
-  fun (jni_ref : _jni_jNAME) ->
+"class _capsule_jCLASS = 
+  fun (jni_ref : _jni_jCLASS) ->
      let _ =
         if Java.is_null jni_ref
         then raise (Null_object "mypack/Point")
@@ -525,7 +598,7 @@ $[\![ {\color{blue}class}\ NAME\
      in
 
     object (self)
-     (* method _get_jni_jNAME = jni_ref
+     (* method _get_jni_jCLASS = jni_ref
       method _get_jni_jE = jni_ref
       method _get_jni_jI1 = jni_ref
       method _get_jni_jI2 = jni_ref*)
@@ -533,78 +606,80 @@ $[\![ {\color{blue}class}\ NAME\
     end"
 
 (* downcast utilisateur *)
-"let jNAME_of_top (o : TOP) : jNAME =
-    new _capsule_jNAME (__jni_jNAME_of_jni_obj o#_get_jniobj)"
+"let jCLASS_of_top (o : TOP) : jCLASS =
+    new _capsule_jCLASS (__jni_jCLASS_of_jni_obj o#_get_jniobj)"
 (* instance_of *)
-"let _instance_of_jNAME =
+"let _instance_of_jCLASS =
     in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz"
 
-(* tableaux *)
-"let _new_jArray_jNAME size =
-    let java_obj = Jni.new_object_array size (Jni.find_class \"PACK/NAME\")
-    in
-      new JniArray._Array Jni.get_object_array_element Jni.
-        set_object_array_element (fun jniobj -> new _capsule_jNAME jniobj)
-        (fun obj -> obj#_get_jni_jNAME) java_obj"
-"let jArray_init_jNAME size f =
-    let a = _new_jArray_jNAME size
-    in (for i = 0 to pred size do a#set i (f i) done; a)"
 
 \end{OCaml}
 \ 
 \newline
 \noindent
 \textbf{ methodes } 
+
+Module Java, module Javastring et des types array
+\url{http://ocamljava.x9c.fr/preview/javalib/index.html}
+
 Tableau représentant les équivalents en OCaml des types Java manipulés.
+La troisième colonne représente les types manipulés par les programmes OCaml.
+Le problème est donc de convertir du deuxième au troisième type pour la manipulation côté OCaml et du troisième au second lors d'un appel à une fonction du module Java (un appel, un constructeur ou autre).
 %% The following table shows how Java primitive types are mapped to OCaml predefined types. 
-\noindent
-\begin{tabular}{|l|l|}
+
+
+
+\begin{tabular}{|c|l|l|l|}
  \hline
-Java type & OCaml type & \\
+TYPE IDL &type Java & type OCaml  pour OCaml-Java & type OCaml \\
+& (java\_type) & (oj\_type t) & (ml\_type t) \\
  \hline
-boolean & bool\\
-byte & int\\
-char & int\\
-double & float\\
-float & float\\
-int & int32\\
-long & int64\\
-short & int\\
+\emph{void} & void & unit & unit\\
+\emph{boolean} &boolean & bool & bool\\
+\emph{byte} & byte & int & int \\
+\emph{char} &char & int & char\\
+\emph{double} & double & float & float\\
+\emph{float} & float & float & float\\
+\emph{int} & int & int32 & int\\
+\emph{long} & long & int64 & int\\
+\emph{short} & short & int & int\\
+\emph{string} & java.lang.String & java'lang'String java\_instance & string\\
+\emph{pack/Obj} & pack.Obj & pack'Obj java\_instance & jObj\\
  \hline
 \end{tabular}
 \
 \newline
-Tbleau associant pour chaque types de l'IDL les
-fonctions utiles aux schémas de compilation manipulant ceux-ci.
+Tableau associant pour chaque types de l'IDL les
+fonctions utiles aux schémas de compilation manipulant ceux-ci, comme explicité ci-dessus. 
 
-\noindent
-\begin{tabular}{|l|c|c|c|c|}
+
+\begin{tabular}{|c|l|l|l|}
   \hline
-  TYPE(IDL) & ocamlType & javaType &to\_mlType & to\_JavaType \\
+
+  TYPE IDL & to\_oj\_Type ARGi & to\_ml\_type ARGi & fcast\\
+
   \hline
-  void &  " "||void &     &   & \\
+  \emph{void} &   &  & \\
 
-  boolean & boolean & \_pi & \_pi  & \_pi \\
+  \emph{boolean} &  &  &\_pi \\
 
-  byte & byte & \_pi & \_pi & \_pi \\
+ \emph{byte} & &  &\_pi  \\
 
-  char & char & \_pi & \_pi & \_pi \\
+ \emph{cha}r & TODO  & TODO & \_pi \\
 
-  short & short & \_pi & \_pi & \_pi  \\
+  \emph{short} & &  & \\
 
-  int & int & Int32.of\_int \_pi & Int32.to\_int \_pi &  \_pi \\
+ \emph{int} & Int32.of\_int\ & Int32.to\_int & \_pi\\
 
-  long & long & Int64.of\_int\_pi & Int64.to\_int\_pi  & \_pi \\
+ \emph{long} & Int64.of\_int & Int64.to\_int & \_pi\\
 
-  float & float & Jni.Float \_pi & \_pi & \_pi \\
+ \emph{float} & & &\_pi \\
 
-  double & double & Jni.Double \_pi & \_pi & \_pi \\
+  \emph{doubl}e & & & \_pi\\
 
-  string & java.lang.String & Jni.Obj \_pi & Jni.string\_to\_java \_pi
-  & \_pi \\
+ \emph{string} & JavaString.of\_string & JavaString.to\_string & \_pi\\
 
-  pack/Obj& pack.Obj & \_pi\#\_get\_jni\_jObj &
-  \_pi & \_pi \\
+ \emph{pack/Obj} & \_pi\#\_get\_jni\_jObj & TODO & (\_pi: jObj)\\
 
   \hline
 \end{tabular}
@@ -618,28 +693,87 @@ $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
 \begin{OCaml}
 ...
 (* type class *)
-"class type jNAME =
+"class type jCLASS =
    ...
    method METH : ARG1 -> ARG2 -> ... -> RTYPE
    ... "
 (* capsule *)
-"class _capsule_jNAME =
+"class _capsule_jCLASS =
    object (self)      
       method METH =
-         fun "(cast A0) (cast A1) ..." ->
-           let _p1 = "(getJava ARG1)" _p1 in
-           let _p0 = "(getJava ARG0)" _p0
-           in
-             (getJava RTYPE) "Java.call \"PACK.CLASS.METH("(javaType
-           ARG1)","(javaType ARG2)","..."):"(javaType RTYPE)"\"
-           jni_ref _p0 _p1 ...
+         fun "(fcast ARG0) (fcast ARG1) ..." ->
+           let _p1 = "(to_oj_type ARG1)" _p1 in
+           let _p0 = "(to_oj_type ARG0)" _p0
+           in"
+             (to_ml_type RTYPE)
+             "Java.call \"PACK.CLASS.METH("(javaType ARG1),(javaType ARG2),...):(javaType RTYPE)"\" jni_ref _p0 _p1 ..."
+
+\end{OCaml}
+\ 
+\newline
+\noindent
+\textbf{ inits }
+\newline
+\noindent
+$[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (ARG0,
+    ARG1, ...)]\!]_{}$$\longrightarrow$
+% 
+
+\begin{OCaml}
+"class INIT _p0 _p1 ... =
+  let _p1 = "(to_oj_type ARG1)"  in
+  let _p0 = "(to_oj_type ARG2)" in
+  let java_obj = Java.make \"PACK.CLASS("(javaType
+           ARG1),(javaType ARG2),...")\" _p0 _p1
+  in 
+  object (self) 
+     inherit _capsule_jCLASS java_obj 
+  end;;"
+
 \end{OCaml}
 
+\ 
+\newline
+\noindent
+\textbf{ attributs }
+\newline
+\noindent
+\ 
+$[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
 
+\begin{OCaml}
+...
+(* type class *)
+"class type jCLASS =
+  ...
+   method set_ATTR : (j)TYPE -> unit
+   method get_ATTR : unit -> (j)TYPE
+   ... "
+(* capsule *)
+"class _capsule_jCLASS =
+   ...
+   fun (jni_ref : _jni_jCLASS) -> 
+     object (self)
+     ...
+        method set_ATTR =
+           fun "(fcast TYPE)" ->
+              let _p = "(to_oj_type TYPE)"
+              in Jni.set_object_field jni_ref __fid_ATTR _p
+        method get_ATTR =
+        fun () ->
+           "(to_ml_type TYPE)"
+           (new _capsule_jCLASS (Jni.get_object_field jni_ref __fid_ATTR) :
+           jCLASS)
+        ...
+   "
 
-
-
-
+  method set_y =
+    fun _p ->
+      let _p = Int32.of_int _p
+      in Java.set "mypack.Point.y:int" jni_ref _p
+  method get_y =
+    fun () -> Int32.to_int (Java.get "mypack.Point.y:int" jni_ref)
+\end{OCaml}
 
 
 

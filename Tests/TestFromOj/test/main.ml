@@ -30,5 +30,5 @@ display "Envoi p2#distance : ";;
 let d = p2#distance () in print_float d; print_newline ();;
 
 display "Envoi p2#set_x 4 : ";;
-p2#set_x 4;;
+p2#set_x (Int32.of_int 4);;
 p2#display ();;

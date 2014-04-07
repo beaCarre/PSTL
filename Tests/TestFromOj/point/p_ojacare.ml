@@ -5,8 +5,9 @@ class type jPoint =
     method _get_jni_jPoint : _jni_jPoint
     method set_x : int -> unit
     method get_x : unit -> int
-    method set_y : int -> unit
-    method get_y : unit -> int
+    method set_y : jPoint -> unit
+    method get_y : unit -> jPoint
+      
     method moveto : int -> int -> unit
     method rmoveto : int -> int -> unit
     method toString : unit -> string
@@ -129,7 +130,7 @@ class _capsule_jPoint =
                                 Jni.call_void_method jni_ref __mid_moveto
                                   [| Jni.Camlint _p0; Jni.Camlint _p1 |]
                           method set_y =
-                            fun _p ->
+                            fun (_p : jPoint) ->
                               let _p = _p
                               in Jni.set_camlint_field jni_ref __fid_y _p
                           method get_y =

@@ -27,6 +27,9 @@ ident(
   int_ref s "main.ml" 3 8 20 "main.ml" 3 8 21
 )
 "main.ml" 3 8 24 "main.ml" 3 8 38
+call(
+  stack
+)
 type(
   unit
 )
@@ -45,6 +48,9 @@ ident(
   ext_ref Pervasives.stdout
 )
 "main.ml" 3 8 40 "main.ml" 3 8 52
+call(
+  tail
+)
 type(
   unit
 )
@@ -64,6 +70,9 @@ type(
   string
 )
 "main.ml" 5 57 57 "main.ml" 5 57 92
+call(
+  stack
+)
 type(
   unit
 )
@@ -83,6 +92,9 @@ type(
   unit
 )
 "main.ml" 6 95 103 "main.ml" 6 95 123
+call(
+  stack
+)
 type(
   P.default_point
 )
@@ -98,6 +110,9 @@ type(
   string
 )
 "main.ml" 7 126 126 "main.ml" 7 126 140
+call(
+  stack
+)
 type(
   unit
 )
@@ -113,6 +128,9 @@ type(
   string
 )
 "main.ml" 9 144 144 "main.ml" 9 144 187
+call(
+  stack
+)
 type(
   unit
 )
@@ -136,6 +154,9 @@ type(
   int
 )
 "main.ml" 10 190 199 "main.ml" 10 190 212
+call(
+  stack
+)
 type(
   P.point
 )
@@ -151,6 +172,9 @@ type(
   string
 )
 "main.ml" 11 215 215 "main.ml" 11 215 229
+call(
+  stack
+)
 type(
   unit
 )
@@ -166,6 +190,9 @@ type(
   string
 )
 "main.ml" 13 233 233 "main.ml" 13 233 261
+call(
+  stack
+)
 type(
   unit
 )
@@ -177,6 +204,9 @@ ident(
   int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
 )
 "main.ml" 14 264 264 "main.ml" 14 264 273
+call(
+  stack
+)
 type(
   unit -> unit
 )
@@ -200,6 +230,9 @@ type(
   string
 )
 "main.ml" 15 279 279 "main.ml" 15 279 308
+call(
+  stack
+)
 type(
   unit
 )
@@ -211,6 +244,9 @@ ident(
   int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
 )
 "main.ml" 16 311 311 "main.ml" 16 311 321
+call(
+  stack
+)
 type(
   unit -> unit
 )
@@ -234,6 +270,9 @@ type(
   string
 )
 "main.ml" 18 328 328 "main.ml" 18 328 359
+call(
+  stack
+)
 type(
   unit
 )
@@ -245,6 +284,9 @@ ident(
   int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
 )
 "main.ml" 19 362 362 "main.ml" 19 362 370
+call(
+  stack
+)
 type(
   int -> int -> unit
 )
@@ -268,6 +310,9 @@ ident(
   int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
 )
 "main.ml" 20 377 377 "main.ml" 20 377 386
+call(
+  stack
+)
 type(
   unit -> unit
 )
@@ -291,6 +336,9 @@ type(
   string
 )
 "main.ml" 22 393 393 "main.ml" 22 393 426
+call(
+  stack
+)
 type(
   unit
 )
@@ -302,6 +350,9 @@ ident(
   int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
 )
 "main.ml" 23 429 429 "main.ml" 23 429 438
+call(
+  stack
+)
 type(
   int -> int -> unit
 )
@@ -336,6 +387,9 @@ ident(
   int_ref p "main.ml" 6 95 99 "main.ml" 6 95 100
 )
 "main.ml" 24 447 447 "main.ml" 24 447 456
+call(
+  stack
+)
 type(
   unit -> unit
 )
@@ -359,6 +413,9 @@ type(
   string
 )
 "main.ml" 26 465 465 "main.ml" 26 465 495
+call(
+  stack
+)
 type(
   unit
 )
@@ -377,6 +434,9 @@ ident(
   int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
 )
 "main.ml" 27 498 506 "main.ml" 27 498 517
+call(
+  stack
+)
 type(
   unit -> string
 )
@@ -403,6 +463,9 @@ ident(
   int_ref s "main.ml" 27 498 502 "main.ml" 27 498 503
 )
 "main.ml" 27 498 524 "main.ml" 27 498 538
+call(
+  stack
+)
 type(
   unit
 )
@@ -418,6 +481,9 @@ type(
   unit
 )
 "main.ml" 27 498 540 "main.ml" 27 498 556
+call(
+  stack
+)
 type(
   unit
 )
@@ -441,6 +507,9 @@ type(
   string
 )
 "main.ml" 29 560 560 "main.ml" 29 560 590
+call(
+  stack
+)
 type(
   unit
 )
@@ -459,6 +528,9 @@ ident(
   int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
 )
 "main.ml" 30 593 601 "main.ml" 30 593 612
+call(
+  stack
+)
 type(
   unit -> float
 )
@@ -485,6 +557,9 @@ ident(
   int_ref d "main.ml" 30 593 597 "main.ml" 30 593 598
 )
 "main.ml" 30 593 619 "main.ml" 30 593 632
+call(
+  stack
+)
 type(
   unit
 )
@@ -500,6 +575,9 @@ type(
   unit
 )
 "main.ml" 30 593 634 "main.ml" 30 593 650
+call(
+  stack
+)
 type(
   unit
 )
@@ -523,6 +601,9 @@ type(
   string
 )
 "main.ml" 32 654 654 "main.ml" 32 654 683
+call(
+  stack
+)
 type(
   unit
 )
@@ -534,10 +615,50 @@ ident(
   int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
 )
 "main.ml" 33 686 686 "main.ml" 33 686 694
+call(
+  stack
+)
 type(
   int32 -> unit
 )
-"main.ml" 33 686 695 "main.ml" 33 686 696
+"main.ml" 33 686 696 "main.ml" 33 686 708
+type(
+  int -> int32
+)
+ident(
+  ext_ref Int32.of_int
+)
+"main.ml" 33 686 709 "main.ml" 33 686 710
 type(
   int
+)
+"main.ml" 33 686 695 "main.ml" 33 686 711
+type(
+  int32
+)
+"main.ml" 33 686 686 "main.ml" 33 686 711
+type(
+  unit
+)
+"main.ml" 34 714 714 "main.ml" 34 714 716
+type(
+  P.point
+)
+ident(
+  int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
+)
+"main.ml" 34 714 714 "main.ml" 34 714 724
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"main.ml" 34 714 725 "main.ml" 34 714 727
+type(
+  unit
+)
+"main.ml" 34 714 714 "main.ml" 34 714 727
+type(
+  unit
 )
