@@ -41,7 +41,7 @@
                       identifierstyle=\ttfamily,
                       keywordstyle=\color{blue},
                       basicstyle=\footnotesize,
-                      escapeinside={/*}{*/},
+                     escapeinside={/*}{*/},
                       frame=single,
                       numbers=left,
                       %xleftmargin=0.08\textwidth
@@ -140,7 +140,9 @@ Nous considérons un environnement contenant les  variables suivantes, initialis
 
 $\rho$ = "" : le nom du \textbf{package} où trouver les classes définies.
 
-$\Gamma$ = false : si la déclaration est une \textbf{interface}.
+$\Lambda$ = "" : le \textbf{nom de la classe} courant.
+
+$\gamma$ = false : si la déclaration est une \textbf{interface}.
 
 $\theta$ = false : si l'élément porte l'attribut \textbf{callback}.
 
@@ -149,7 +151,7 @@ $\alpha$ = false : si l'élément est déclaré \textbf{abstract}.
 $\delta$ = "JniHierarchy.top" : la classe dont \textbf{extends} la classe courante.
 
 $\Delta$ = [] : les interfaces qu'\textbf{implements} la classe courante.
-\
+\ %%   \rho,\Lambda,\gamma,\theta,\alpha,\delta,\Delta
 \newline
 \noindent
 Et les fonctions suivantes :
@@ -207,7 +209,7 @@ $[\![ decl^* ]\!]_{\rho=qname}$
 \noindent
 $[\![{\color{blue}interface}\  name ]\!]$$\longrightarrow$
 
-$[\![{\color{blue}class}\  name ]\!]_{\rho,\Gamma=true}$
+$[\![{\color{blue}class}\  name ]\!]_{\rho,\Lambda=name,\gamma=true}$
 
 \ 
 \newline
@@ -215,9 +217,9 @@ $[\![{\color{blue}class}\  name ]\!]_{\rho,\Gamma=true}$
 \textbf{ decl class }
 \newline
 \noindent
-$[\![$[$ {\color{blue}callabck}$]${\color{blue} class}\  name ]\!]_{\rho,\Gamma,\theta,\alpha}$$\longrightarrow$
+$[\![$[$ {\color{blue}callabck}$]${\color{blue} class}\  name ]\!]_{\rho,\Lambda,\gamma,\theta,\alpha}$$\longrightarrow$
 
-$[\![{\color{blue}class}\  name ]\!]_{\rho,\Gamma,\theta=true,\alpha}$
+$[\![{\color{blue}class}\  name ]\!]_{\rho,\Lambda=name,\gamma,\theta=true,\alpha}$
 \end{multicols}
 
 \ 
@@ -237,7 +239,7 @@ $[\![ {\color{blue}class}\ CLASS\
 
   $\ \ \ init1; init2; ...;$
 
- $\} ]\!]_{\rho,CB}\longrightarrow$
+ $\} ]\!]_{\rho=PACK,\ \Lambda,\ \gamma,\ \theta=false,\ \alpha=false,\ \delta,\ \Delta}\longrightarrow$
 % 1 type objet t 
 % 1 classe encapsulante W de type t
 % 1 a n classes (Ci), sous-classes de W (1 par constructeur)
@@ -246,8 +248,16 @@ $[\![ {\color{blue}class}\ CLASS\
 \ 
 \newline
 
+$\Lambda=CLASS$
+
+$\alpha=false$
+
+$\delta=E$
+
+$\Delta=[I1,I2,I3]$
+
 \begin{OCaml}
-let clazz = Jni.find_class PACK/CLASS
+   let clazz = Jni.find_class PACK/CLASS
 
 (** type jni.obj t *)
 "type _jni_jCLASS = Jni.obj"
@@ -268,7 +278,8 @@ let clazz = Jni.find_class PACK/CLASS
    fun (java_obj : Jni.obj) ->
      Jni.is_instance_of java_obj clazz"
  
-(* allocation : si ce n'est pas une interface *)
+(* allocation *)
+if not/* $\gamma$ */then
 "let _alloc_jCLASS =
      fun () -> (Jni.alloc_object clazz : _jni_jCLASS)"
 
@@ -304,10 +315,10 @@ let clazz = Jni.find_class PACK/CLASS
 \end{OCaml}
 
 $[\![$[$ {\color{blue}name}\ init1 $]${\color{blue} <init>} (arg*); ...\}
-]\!]$
+]\!]_{\rho,\ \Lambda,\ \gamma,\ \theta,\ \alpha,\ \delta,\ \Delta}$
 
 $[\![$[$ {\color{blue}name}\ init2 $]${\color{blue} <init>} (arg*); ...\}
-]\!]$
+]\!]_{\rho,\ \Lambda,\ \gamma,\ \theta,\ \alpha,\ \delta,\ \Delta}$
 
 ...
 \begin{OCaml}
@@ -478,6 +489,9 @@ callback
 
 
 
+
+
+
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -498,7 +512,7 @@ exception Null_object of string
 \end{OCamlEx}
 
 \noindent
-Description des types manipulés par OCaml-Java.
+Description des types manipulés par OCaml-Java.  
 
 \begin{tabular}{|l|l|}
   \hline
@@ -746,8 +760,8 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
 (* type class *)
 "class type jCLASS =
   ...
-   method set_ATTR : (j)TYPE -> unit
-   method get_ATTR : unit -> (j)TYPE
+   method set_ATTR : "(ml_type TYPE)" -> unit
+   method get_ATTR : unit -> "(ml_type TYPE)"
    ... "
 (* capsule *)
 "class _capsule_jCLASS =
@@ -774,6 +788,30 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
   method get_y =
     fun () -> Int32.to_int (Java.get "mypack.Point.y:int" jni_ref)
 \end{OCaml}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
