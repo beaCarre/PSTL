@@ -1,57 +1,57 @@
-"p.ml" 22 572 579 "p.ml" 22 572 586
+"p.ml" 30 739 746 "p.ml" 30 739 753
 type(
   _jni_jPoint
 )
-"p.ml" 23 605 613 "p.ml" 23 605 614
+"p.ml" 31 772 780 "p.ml" 31 772 781
 type(
   unit
 )
-"p.ml" 24 617 626 "p.ml" 24 617 638
+"p.ml" 32 784 793 "p.ml" 32 784 805
 type(
   _jni_jPoint -> bool
 )
 ident(
   ext_ref Java.is_null
 )
-"p.ml" 24 617 639 "p.ml" 24 617 646
+"p.ml" 32 784 806 "p.ml" 32 784 813
 type(
   _jni_jPoint
 )
 ident(
-  int_ref jni_ref "p.ml" 22 572 579 "p.ml" 22 572 586
+  int_ref jni_ref "p.ml" 30 739 746 "p.ml" 30 739 753
 )
-"p.ml" 24 617 626 "p.ml" 24 617 646
+"p.ml" 32 784 793 "p.ml" 32 784 813
 type(
   bool
 )
-"p.ml" 25 647 658 "p.ml" 25 647 663
+"p.ml" 33 814 825 "p.ml" 33 814 830
 type(
   exn -> unit
 )
 ident(
   ext_ref Pervasives.raise
 )
-"p.ml" 25 647 677 "p.ml" 25 647 691
+"p.ml" 33 814 844 "p.ml" 33 814 858
 type(
   string
 )
-"p.ml" 25 647 664 "p.ml" 25 647 692
+"p.ml" 33 814 831 "p.ml" 33 814 859
 type(
   exn
 )
-"p.ml" 25 647 658 "p.ml" 25 647 692
+"p.ml" 33 814 825 "p.ml" 33 814 859
 type(
   unit
 )
-"p.ml" 26 693 704 "p.ml" 26 693 706
+"p.ml" 34 860 871 "p.ml" 34 860 873
 type(
   unit
 )
-"p.ml" 24 617 623 "p.ml" 26 693 706
+"p.ml" 32 784 790 "p.ml" 34 860 873
 type(
   unit
 )
-"p.ml" 28 714 721 "p.ml" 28 714 727
+"p.ml" 36 881 888 "p.ml" 36 881 894
 type(
   < _get_jni_jPoint : _jni_jPoint; display : unit -> unit;
     distance : unit -> float; eq : jPoint -> bool; get_x : unit -> int;
@@ -59,32 +59,32 @@ type(
     rmoveto : int -> int -> unit; set_x : int -> unit; set_y : int -> unit;
     toString : unit -> string; .. >
 )
-"p.ml" 30 742 751 "p.ml" 30 742 754
+"p.ml" 38 909 918 "p.ml" 38 909 921
 type(
   jPoint
 )
 ident(
-  def _p0 "p.ml" 31 768 774 "p.ml" 32 807 874
+  def _p0 "p.ml" 39 935 941 "p.ml" 40 974 1036
 )
-"p.ml" 31 768 778 "p.ml" 31 768 781
+"p.ml" 39 935 945 "p.ml" 39 935 948
 type(
   _jni_jPoint
 )
 ident(
-  def _p0 "p.ml" 32 807 813 "p.ml" 32 807 874
+  def _p0 "p.ml" 40 974 975 "p.ml" 40 974 1036
 )
-"p.ml" 31 768 784 "p.ml" 31 768 787
+"p.ml" 39 935 951 "p.ml" 39 935 954
 type(
   jPoint
 )
 ident(
-  int_ref _p0 "p.ml" 30 742 751 "p.ml" 30 742 754
+  int_ref _p0 "p.ml" 38 909 918 "p.ml" 38 909 921
 )
-"p.ml" 31 768 784 "p.ml" 31 768 803
+"p.ml" 39 935 951 "p.ml" 39 935 970
 type(
   _jni_jPoint
 )
-"p.ml" 32 807 813 "p.ml" 32 807 822
+"p.ml" 40 974 975 "p.ml" 40 974 984
 type(
   (_jni_jPoint -> _jni_jPoint -> bool) java_method ->
   _jni_jPoint -> _jni_jPoint -> bool
@@ -92,108 +92,108 @@ type(
 ident(
   ext_ref Java.call
 )
-"p.ml" 32 807 823 "p.ml" 32 807 862
+"p.ml" 40 974 985 "p.ml" 40 974 1024
 type(
   (_jni_jPoint -> _jni_jPoint -> bool) java_method
 )
-"p.ml" 32 807 863 "p.ml" 32 807 870
+"p.ml" 40 974 1025 "p.ml" 40 974 1032
 type(
   _jni_jPoint
 )
-"p.ml" 32 807 871 "p.ml" 32 807 874
+"p.ml" 40 974 1033 "p.ml" 40 974 1036
 type(
   _jni_jPoint
 )
 ident(
-  int_ref _p0 "p.ml" 31 768 778 "p.ml" 31 768 781
+  int_ref _p0 "p.ml" 39 935 945 "p.ml" 39 935 948
 )
-"p.ml" 32 807 813 "p.ml" 32 807 874
+"p.ml" 40 974 975 "p.ml" 40 974 1036
 type(
   bool
 )
-"p.ml" 31 768 774 "p.ml" 32 807 874
+"p.ml" 39 935 941 "p.ml" 40 974 1036
 type(
   bool
 )
-"p.ml" 30 742 746 "p.ml" 32 807 874
+"p.ml" 38 909 913 "p.ml" 40 974 1036
 type(
   jPoint -> bool
 )
 type(
   jPoint -> bool
 )
-"p.ml" 34 895 903 "p.ml" 34 895 905
+"p.ml" 42 1057 1065 "p.ml" 42 1057 1067
 type(
   unit
 )
-"p.ml" 35 909 915 "p.ml" 35 909 924
+"p.ml" 43 1071 1077 "p.ml" 43 1071 1086
 type(
   (_jni_jPoint -> float) java_method -> _jni_jPoint -> float
 )
 ident(
   ext_ref Java.call
 )
-"p.ml" 35 909 925 "p.ml" 35 909 957
+"p.ml" 43 1071 1087 "p.ml" 43 1071 1119
 type(
   (_jni_jPoint -> float) java_method
 )
-"p.ml" 35 909 958 "p.ml" 35 909 965
+"p.ml" 43 1071 1120 "p.ml" 43 1071 1127
 type(
   _jni_jPoint
 )
-"p.ml" 35 909 915 "p.ml" 35 909 965
+"p.ml" 43 1071 1077 "p.ml" 43 1071 1127
 type(
   float
 )
-"p.ml" 34 895 899 "p.ml" 35 909 965
+"p.ml" 42 1057 1061 "p.ml" 43 1071 1127
 type(
   unit -> float
 )
 type(
   unit -> float
 )
-"p.ml" 37 985 993 "p.ml" 37 985 995
+"p.ml" 45 1147 1155 "p.ml" 45 1147 1157
 type(
   unit
 )
-"p.ml" 38 999 1005 "p.ml" 38 999 1014
+"p.ml" 46 1161 1167 "p.ml" 46 1161 1176
 type(
   (_jni_jPoint -> unit) java_method -> _jni_jPoint -> unit
 )
 ident(
   ext_ref Java.call
 )
-"p.ml" 38 999 1015 "p.ml" 38 999 1044
+"p.ml" 46 1161 1177 "p.ml" 46 1161 1206
 type(
   (_jni_jPoint -> unit) java_method
 )
-"p.ml" 38 999 1045 "p.ml" 38 999 1052
+"p.ml" 46 1161 1207 "p.ml" 46 1161 1214
 type(
   _jni_jPoint
 )
-"p.ml" 38 999 1005 "p.ml" 38 999 1052
+"p.ml" 46 1161 1167 "p.ml" 46 1161 1214
 type(
   unit
 )
-"p.ml" 37 985 989 "p.ml" 38 999 1052
+"p.ml" 45 1147 1151 "p.ml" 46 1161 1214
 type(
   unit -> unit
 )
 type(
   unit -> unit
 )
-"p.ml" 40 1073 1081 "p.ml" 40 1073 1083
+"p.ml" 48 1235 1243 "p.ml" 48 1235 1245
 type(
   unit
 )
-"p.ml" 41 1087 1093 "p.ml" 41 1087 1113
+"p.ml" 49 1249 1255 "p.ml" 49 1249 1275
 type(
   java'lang'String java_instance -> string
 )
 ident(
   ext_ref JavaString.to_string
 )
-"p.ml" 42 1114 1116 "p.ml" 42 1114 1125
+"p.ml" 50 1276 1278 "p.ml" 50 1276 1287
 type(
   (_jni_jPoint -> java'lang'String java_instance) java_method ->
   _jni_jPoint -> java'lang'String java_instance
@@ -201,94 +201,94 @@ type(
 ident(
   ext_ref Java.call
 )
-"p.ml" 42 1114 1126 "p.ml" 42 1114 1168
+"p.ml" 50 1276 1288 "p.ml" 50 1276 1330
 type(
   (_jni_jPoint -> java'lang'String java_instance) java_method
 )
-"p.ml" 42 1114 1169 "p.ml" 42 1114 1176
+"p.ml" 50 1276 1331 "p.ml" 50 1276 1338
 type(
   _jni_jPoint
 )
-"p.ml" 42 1114 1115 "p.ml" 42 1114 1177
+"p.ml" 50 1276 1277 "p.ml" 50 1276 1339
 type(
   java'lang'String java_instance
 )
-"p.ml" 41 1087 1093 "p.ml" 42 1114 1177
+"p.ml" 49 1249 1255 "p.ml" 50 1276 1339
 type(
   string
 )
-"p.ml" 40 1073 1077 "p.ml" 42 1114 1177
+"p.ml" 48 1235 1239 "p.ml" 50 1276 1339
 type(
   unit -> string
 )
 type(
   unit -> string
 )
-"p.ml" 44 1197 1205 "p.ml" 44 1197 1208
+"p.ml" 52 1359 1367 "p.ml" 52 1359 1370
 type(
   int
 )
 ident(
-  def _p0 "p.ml" 44 1197 1209 "p.ml" 47 1285 1356
+  def _p0 "p.ml" 52 1359 1371 "p.ml" 55 1447 1518
 )
-"p.ml" 44 1197 1209 "p.ml" 44 1197 1212
+"p.ml" 52 1359 1371 "p.ml" 52 1359 1374
 type(
   int
 )
 ident(
-  def _p1 "p.ml" 45 1216 1222 "p.ml" 47 1285 1356
+  def _p1 "p.ml" 53 1378 1384 "p.ml" 55 1447 1518
 )
-"p.ml" 45 1216 1226 "p.ml" 45 1216 1229
+"p.ml" 53 1378 1388 "p.ml" 53 1378 1391
 type(
   int32
 )
 ident(
-  def _p1 "p.ml" 46 1252 1258 "p.ml" 47 1285 1356
+  def _p1 "p.ml" 54 1414 1420 "p.ml" 55 1447 1518
 )
-"p.ml" 45 1216 1232 "p.ml" 45 1216 1244
+"p.ml" 53 1378 1394 "p.ml" 53 1378 1406
 type(
   int -> int32
 )
 ident(
   ext_ref Int32.of_int
 )
-"p.ml" 45 1216 1245 "p.ml" 45 1216 1248
+"p.ml" 53 1378 1407 "p.ml" 53 1378 1410
 type(
   int
 )
 ident(
-  int_ref _p1 "p.ml" 44 1197 1209 "p.ml" 44 1197 1212
+  int_ref _p1 "p.ml" 52 1359 1371 "p.ml" 52 1359 1374
 )
-"p.ml" 45 1216 1232 "p.ml" 45 1216 1248
+"p.ml" 53 1378 1394 "p.ml" 53 1378 1410
 type(
   int32
 )
-"p.ml" 46 1252 1262 "p.ml" 46 1252 1265
+"p.ml" 54 1414 1424 "p.ml" 54 1414 1427
 type(
   int32
 )
 ident(
-  def _p0 "p.ml" 47 1285 1294 "p.ml" 47 1285 1356
+  def _p0 "p.ml" 55 1447 1456 "p.ml" 55 1447 1518
 )
-"p.ml" 46 1252 1268 "p.ml" 46 1252 1280
+"p.ml" 54 1414 1430 "p.ml" 54 1414 1442
 type(
   int -> int32
 )
 ident(
   ext_ref Int32.of_int
 )
-"p.ml" 46 1252 1281 "p.ml" 46 1252 1284
+"p.ml" 54 1414 1443 "p.ml" 54 1414 1446
 type(
   int
 )
 ident(
-  int_ref _p0 "p.ml" 44 1197 1205 "p.ml" 44 1197 1208
+  int_ref _p0 "p.ml" 52 1359 1367 "p.ml" 52 1359 1370
 )
-"p.ml" 46 1252 1268 "p.ml" 46 1252 1284
+"p.ml" 54 1414 1430 "p.ml" 54 1414 1446
 type(
   int32
 )
-"p.ml" 47 1285 1294 "p.ml" 47 1285 1303
+"p.ml" 55 1447 1456 "p.ml" 55 1447 1465
 type(
   (_jni_jPoint -> int32 -> int32 -> unit) java_method ->
   _jni_jPoint -> int32 -> int32 -> unit
@@ -296,112 +296,112 @@ type(
 ident(
   ext_ref Java.call
 )
-"p.ml" 47 1285 1304 "p.ml" 47 1285 1340
+"p.ml" 55 1447 1466 "p.ml" 55 1447 1502
 type(
   (_jni_jPoint -> int32 -> int32 -> unit) java_method
 )
-"p.ml" 47 1285 1341 "p.ml" 47 1285 1348
+"p.ml" 55 1447 1503 "p.ml" 55 1447 1510
 type(
   _jni_jPoint
 )
-"p.ml" 47 1285 1349 "p.ml" 47 1285 1352
+"p.ml" 55 1447 1511 "p.ml" 55 1447 1514
 type(
   int32
 )
 ident(
-  int_ref _p0 "p.ml" 46 1252 1262 "p.ml" 46 1252 1265
+  int_ref _p0 "p.ml" 54 1414 1424 "p.ml" 54 1414 1427
 )
-"p.ml" 47 1285 1353 "p.ml" 47 1285 1356
+"p.ml" 55 1447 1515 "p.ml" 55 1447 1518
 type(
   int32
 )
 ident(
-  int_ref _p1 "p.ml" 45 1216 1226 "p.ml" 45 1216 1229
+  int_ref _p1 "p.ml" 53 1378 1388 "p.ml" 53 1378 1391
 )
-"p.ml" 47 1285 1294 "p.ml" 47 1285 1356
+"p.ml" 55 1447 1456 "p.ml" 55 1447 1518
 type(
   unit
 )
-"p.ml" 46 1252 1258 "p.ml" 47 1285 1356
+"p.ml" 54 1414 1420 "p.ml" 55 1447 1518
 type(
   unit
 )
-"p.ml" 45 1216 1222 "p.ml" 47 1285 1356
+"p.ml" 53 1378 1384 "p.ml" 55 1447 1518
 type(
   unit
 )
-"p.ml" 44 1197 1201 "p.ml" 47 1285 1356
+"p.ml" 52 1359 1363 "p.ml" 55 1447 1518
 type(
   int -> int -> unit
 )
 type(
   int -> int -> unit
 )
-"p.ml" 49 1375 1383 "p.ml" 49 1375 1386
+"p.ml" 57 1537 1545 "p.ml" 57 1537 1548
 type(
   int
 )
 ident(
-  def _p0 "p.ml" 49 1375 1387 "p.ml" 52 1463 1533
+  def _p0 "p.ml" 57 1537 1549 "p.ml" 60 1625 1695
 )
-"p.ml" 49 1375 1387 "p.ml" 49 1375 1390
+"p.ml" 57 1537 1549 "p.ml" 57 1537 1552
 type(
   int
 )
 ident(
-  def _p1 "p.ml" 50 1394 1400 "p.ml" 52 1463 1533
+  def _p1 "p.ml" 58 1556 1562 "p.ml" 60 1625 1695
 )
-"p.ml" 50 1394 1404 "p.ml" 50 1394 1407
+"p.ml" 58 1556 1566 "p.ml" 58 1556 1569
 type(
   int32
 )
 ident(
-  def _p1 "p.ml" 51 1430 1436 "p.ml" 52 1463 1533
+  def _p1 "p.ml" 59 1592 1598 "p.ml" 60 1625 1695
 )
-"p.ml" 50 1394 1410 "p.ml" 50 1394 1422
+"p.ml" 58 1556 1572 "p.ml" 58 1556 1584
 type(
   int -> int32
 )
 ident(
   ext_ref Int32.of_int
 )
-"p.ml" 50 1394 1423 "p.ml" 50 1394 1426
+"p.ml" 58 1556 1585 "p.ml" 58 1556 1588
 type(
   int
 )
 ident(
-  int_ref _p1 "p.ml" 49 1375 1387 "p.ml" 49 1375 1390
+  int_ref _p1 "p.ml" 57 1537 1549 "p.ml" 57 1537 1552
 )
-"p.ml" 50 1394 1410 "p.ml" 50 1394 1426
+"p.ml" 58 1556 1572 "p.ml" 58 1556 1588
 type(
   int32
 )
-"p.ml" 51 1430 1440 "p.ml" 51 1430 1443
+"p.ml" 59 1592 1602 "p.ml" 59 1592 1605
 type(
   int32
 )
 ident(
-  def _p0 "p.ml" 52 1463 1472 "p.ml" 52 1463 1533
+  def _p0 "p.ml" 60 1625 1634 "p.ml" 60 1625 1695
 )
-"p.ml" 51 1430 1446 "p.ml" 51 1430 1458
+"p.ml" 59 1592 1608 "p.ml" 59 1592 1620
 type(
   int -> int32
 )
 ident(
   ext_ref Int32.of_int
 )
-"p.ml" 51 1430 1459 "p.ml" 51 1430 1462
+"p.ml" 59 1592 1621 "p.ml" 59 1592 1624
 type(
   int
 )
 ident(
-  int_ref _p0 "p.ml" 49 1375 1383 "p.ml" 49 1375 1386
+  int_ref _p0 "p.ml" 57 1537 1545 "p.ml" 57 1537 1548
 )
-"p.ml" 51 1430 1446 "p.ml" 51 1430 1462
+"p.ml" 59 1592 1608 "p.ml" 59 1592 1624
 type(
   int32
 )
-"p.ml" 52 1463 1472 "p.ml" 52 1463 1481
+"p.ml" 60 1625 1634 "p.ml" 60 1625 1643
 type(
   (_jni_jPoint -> int32 -> int32 -> unit) java_method ->
   _jni_jPoint -> int32 -> int32 -> unit
@@ -409,80 +409,80 @@ type(
 ident(
   ext_ref Java.call
 )
-"p.ml" 52 1463 1482 "p.ml" 52 1463 1517
+"p.ml" 60 1625 1644 "p.ml" 60 1625 1679
 type(
   (_jni_jPoint -> int32 -> int32 -> unit) java_method
 )
-"p.ml" 52 1463 1518 "p.ml" 52 1463 1525
+"p.ml" 60 1625 1680 "p.ml" 60 1625 1687
 type(
   _jni_jPoint
 )
-"p.ml" 52 1463 1526 "p.ml" 52 1463 1529
+"p.ml" 60 1625 1688 "p.ml" 60 1625 1691
 type(
   int32
 )
 ident(
-  int_ref _p0 "p.ml" 51 1430 1440 "p.ml" 51 1430 1443
+  int_ref _p0 "p.ml" 59 1592 1602 "p.ml" 59 1592 1605
 )
-"p.ml" 52 1463 1530 "p.ml" 52 1463 1533
+"p.ml" 60 1625 1692 "p.ml" 60 1625 1695
 type(
   int32
 )
 ident(
-  int_ref _p1 "p.ml" 50 1394 1404 "p.ml" 50 1394 1407
+  int_ref _p1 "p.ml" 58 1556 1566 "p.ml" 58 1556 1569
 )
-"p.ml" 52 1463 1472 "p.ml" 52 1463 1533
+"p.ml" 60 1625 1634 "p.ml" 60 1625 1695
 type(
   unit
 )
-"p.ml" 51 1430 1436 "p.ml" 52 1463 1533
+"p.ml" 59 1592 1598 "p.ml" 60 1625 1695
 type(
   unit
 )
-"p.ml" 50 1394 1400 "p.ml" 52 1463 1533
+"p.ml" 58 1556 1562 "p.ml" 60 1625 1695
 type(
   unit
 )
-"p.ml" 49 1375 1379 "p.ml" 52 1463 1533
+"p.ml" 57 1537 1541 "p.ml" 60 1625 1695
 type(
   int -> int -> unit
 )
 type(
   int -> int -> unit
 )
-"p.ml" 54 1551 1559 "p.ml" 54 1551 1561
+"p.ml" 62 1713 1721 "p.ml" 62 1713 1723
 type(
   int
 )
 ident(
-  def _p "p.ml" 55 1565 1571 "p.ml" 56 1596 1645
+  def _p "p.ml" 63 1727 1733 "p.ml" 64 1758 1807
 )
-"p.ml" 55 1565 1575 "p.ml" 55 1565 1577
+"p.ml" 63 1727 1737 "p.ml" 63 1727 1739
 type(
   int32
 )
 ident(
-  def _p "p.ml" 56 1596 1605 "p.ml" 56 1596 1645
+  def _p "p.ml" 64 1758 1767 "p.ml" 64 1758 1807
 )
-"p.ml" 55 1565 1580 "p.ml" 55 1565 1592
+"p.ml" 63 1727 1742 "p.ml" 63 1727 1754
 type(
   int -> int32
 )
 ident(
   ext_ref Int32.of_int
 )
-"p.ml" 55 1565 1593 "p.ml" 55 1565 1595
+"p.ml" 63 1727 1755 "p.ml" 63 1727 1757
 type(
   int
 )
 ident(
-  int_ref _p "p.ml" 54 1551 1559 "p.ml" 54 1551 1561
+  int_ref _p "p.ml" 62 1713 1721 "p.ml" 62 1713 1723
 )
-"p.ml" 55 1565 1580 "p.ml" 55 1565 1595
+"p.ml" 63 1727 1742 "p.ml" 63 1727 1757
 type(
   int32
 )
-"p.ml" 56 1596 1605 "p.ml" 56 1596 1613
+"p.ml" 64 1758 1767 "p.ml" 64 1758 1775
 type(
   (_jni_jPoint -> int32 -> unit) java_field_set ->
   _jni_jPoint -> int32 -> unit
@@ -490,110 +490,110 @@ type(
 ident(
   ext_ref Java.set
 )
-"p.ml" 56 1596 1614 "p.ml" 56 1596 1634
+"p.ml" 64 1758 1776 "p.ml" 64 1758 1796
 type(
   (_jni_jPoint -> int32 -> unit) java_field_set
 )
-"p.ml" 56 1596 1635 "p.ml" 56 1596 1642
+"p.ml" 64 1758 1797 "p.ml" 64 1758 1804
 type(
   _jni_jPoint
 )
-"p.ml" 56 1596 1643 "p.ml" 56 1596 1645
+"p.ml" 64 1758 1805 "p.ml" 64 1758 1807
 type(
   int32
 )
 ident(
-  int_ref _p "p.ml" 55 1565 1575 "p.ml" 55 1565 1577
+  int_ref _p "p.ml" 63 1727 1737 "p.ml" 63 1727 1739
 )
-"p.ml" 56 1596 1605 "p.ml" 56 1596 1645
+"p.ml" 64 1758 1767 "p.ml" 64 1758 1807
 type(
   unit
 )
-"p.ml" 55 1565 1571 "p.ml" 56 1596 1645
+"p.ml" 63 1727 1733 "p.ml" 64 1758 1807
 type(
   unit
 )
-"p.ml" 54 1551 1555 "p.ml" 56 1596 1645
+"p.ml" 62 1713 1717 "p.ml" 64 1758 1807
 type(
   int -> unit
 )
 type(
   int -> unit
 )
-"p.ml" 58 1663 1671 "p.ml" 58 1663 1673
+"p.ml" 66 1825 1833 "p.ml" 66 1825 1835
 type(
   unit
 )
-"p.ml" 58 1663 1677 "p.ml" 58 1663 1689
+"p.ml" 66 1825 1839 "p.ml" 66 1825 1851
 type(
   int32 -> int
 )
 ident(
   ext_ref Int32.to_int
 )
-"p.ml" 58 1663 1691 "p.ml" 58 1663 1699
+"p.ml" 66 1825 1853 "p.ml" 66 1825 1861
 type(
   (_jni_jPoint -> int32) java_field_get -> _jni_jPoint -> int32
 )
 ident(
   ext_ref Java.get
 )
-"p.ml" 58 1663 1700 "p.ml" 58 1663 1720
+"p.ml" 66 1825 1862 "p.ml" 66 1825 1882
 type(
   (_jni_jPoint -> int32) java_field_get
 )
-"p.ml" 58 1663 1721 "p.ml" 58 1663 1728
+"p.ml" 66 1825 1883 "p.ml" 66 1825 1890
 type(
   _jni_jPoint
 )
-"p.ml" 58 1663 1690 "p.ml" 58 1663 1729
+"p.ml" 66 1825 1852 "p.ml" 66 1825 1891
 type(
   int32
 )
-"p.ml" 58 1663 1677 "p.ml" 58 1663 1729
+"p.ml" 66 1825 1839 "p.ml" 66 1825 1891
 type(
   int
 )
-"p.ml" 58 1663 1667 "p.ml" 58 1663 1729
+"p.ml" 66 1825 1829 "p.ml" 66 1825 1891
 type(
   unit -> int
 )
 type(
   unit -> int
 )
-"p.ml" 60 1747 1755 "p.ml" 60 1747 1757
+"p.ml" 68 1909 1917 "p.ml" 68 1909 1919
 type(
   int
 )
 ident(
-  def _p "p.ml" 61 1761 1767 "p.ml" 62 1792 1841
+  def _p "p.ml" 69 1923 1929 "p.ml" 70 1954 2003
 )
-"p.ml" 61 1761 1771 "p.ml" 61 1761 1773
+"p.ml" 69 1923 1933 "p.ml" 69 1923 1935
 type(
   int32
 )
 ident(
-  def _p "p.ml" 62 1792 1801 "p.ml" 62 1792 1841
+  def _p "p.ml" 70 1954 1963 "p.ml" 70 1954 2003
 )
-"p.ml" 61 1761 1776 "p.ml" 61 1761 1788
+"p.ml" 69 1923 1938 "p.ml" 69 1923 1950
 type(
   int -> int32
 )
 ident(
   ext_ref Int32.of_int
 )
-"p.ml" 61 1761 1789 "p.ml" 61 1761 1791
+"p.ml" 69 1923 1951 "p.ml" 69 1923 1953
 type(
   int
 )
 ident(
-  int_ref _p "p.ml" 60 1747 1755 "p.ml" 60 1747 1757
+  int_ref _p "p.ml" 68 1909 1917 "p.ml" 68 1909 1919
 )
-"p.ml" 61 1761 1776 "p.ml" 61 1761 1791
+"p.ml" 69 1923 1938 "p.ml" 69 1923 1953
 type(
   int32
 )
-"p.ml" 62 1792 1801 "p.ml" 62 1792 1809
+"p.ml" 70 1954 1963 "p.ml" 70 1954 1971
 type(
   (_jni_jPoint -> int32 -> unit) java_field_set ->
   _jni_jPoint -> int32 -> unit
@@ -601,125 +601,157 @@ type(
 ident(
   ext_ref Java.set
 )
-"p.ml" 62 1792 1810 "p.ml" 62 1792 1830
+"p.ml" 70 1954 1972 "p.ml" 70 1954 1992
 type(
   (_jni_jPoint -> int32 -> unit) java_field_set
 )
-"p.ml" 62 1792 1831 "p.ml" 62 1792 1838
+"p.ml" 70 1954 1993 "p.ml" 70 1954 2000
 type(
   _jni_jPoint
 )
-"p.ml" 62 1792 1839 "p.ml" 62 1792 1841
+"p.ml" 70 1954 2001 "p.ml" 70 1954 2003
 type(
   int32
 )
 ident(
-  int_ref _p "p.ml" 61 1761 1771 "p.ml" 61 1761 1773
+  int_ref _p "p.ml" 69 1923 1933 "p.ml" 69 1923 1935
 )
-"p.ml" 62 1792 1801 "p.ml" 62 1792 1841
+"p.ml" 70 1954 1963 "p.ml" 70 1954 2003
 type(
   unit
 )
-"p.ml" 61 1761 1767 "p.ml" 62 1792 1841
+"p.ml" 69 1923 1929 "p.ml" 70 1954 2003
 type(
   unit
 )
-"p.ml" 60 1747 1751 "p.ml" 62 1792 1841
+"p.ml" 68 1909 1913 "p.ml" 70 1954 2003
 type(
   int -> unit
 )
 type(
   int -> unit
 )
-"p.ml" 64 1859 1867 "p.ml" 64 1859 1869
+"p.ml" 72 2021 2029 "p.ml" 72 2021 2031
 type(
   unit
 )
-"p.ml" 64 1859 1873 "p.ml" 64 1859 1885
+"p.ml" 72 2021 2035 "p.ml" 72 2021 2047
 type(
   int32 -> int
 )
 ident(
   ext_ref Int32.to_int
 )
-"p.ml" 64 1859 1887 "p.ml" 64 1859 1895
+"p.ml" 72 2021 2049 "p.ml" 72 2021 2057
 type(
   (_jni_jPoint -> int32) java_field_get -> _jni_jPoint -> int32
 )
 ident(
   ext_ref Java.get
 )
-"p.ml" 64 1859 1896 "p.ml" 64 1859 1916
+"p.ml" 72 2021 2058 "p.ml" 72 2021 2078
 type(
   (_jni_jPoint -> int32) java_field_get
 )
-"p.ml" 64 1859 1917 "p.ml" 64 1859 1924
+"p.ml" 72 2021 2079 "p.ml" 72 2021 2086
 type(
   _jni_jPoint
 )
-"p.ml" 64 1859 1886 "p.ml" 64 1859 1925
+"p.ml" 72 2021 2048 "p.ml" 72 2021 2087
 type(
   int32
 )
-"p.ml" 64 1859 1873 "p.ml" 64 1859 1925
+"p.ml" 72 2021 2035 "p.ml" 72 2021 2087
 type(
   int
 )
-"p.ml" 64 1859 1863 "p.ml" 64 1859 1925
+"p.ml" 72 2021 2025 "p.ml" 72 2021 2087
 type(
   unit -> int
 )
 type(
   unit -> int
 )
-"p.ml" 65 1926 1953 "p.ml" 65 1926 1960
+"p.ml" 73 2088 2115 "p.ml" 73 2088 2122
 type(
   _jni_jPoint
 )
 type(
   _jni_jPoint
 )
-"p.ml" 68 1968 1972 "p.ml" 68 1968 1985
+"p.ml" 77 2156 2163 "p.ml" 77 2156 2170
 type(
-  top -> '_a
+  _jni_jColored
+)
+"p.ml" 78 2191 2199 "p.ml" 78 2191 2200
+type(
+  unit
+)
+"p.ml" 79 2203 2212 "p.ml" 79 2203 2224
+type(
+  _jni_jColored -> bool
 )
 ident(
-  def jPoint_of_top "p.ml" 71 2061 2061 "_none_" 1 0 -1
+  ext_ref Java.is_null
 )
-"p.ml" 68 1968 1987 "p.ml" 68 1968 1988
+"p.ml" 79 2203 2225 "p.ml" 79 2203 2232
 type(
-  top
+  _jni_jColored
 )
 ident(
-  def o "p.ml" 68 1968 1996 "p.ml" 69 2007 2057
+  int_ref jni_ref "p.ml" 77 2156 2163 "p.ml" 77 2156 2170
 )
-"p.ml" 69 2007 2009 "p.ml" 69 2007 2028
+"p.ml" 79 2203 2212 "p.ml" 79 2203 2232
 type(
-  _jni_jPoint -> _capsule_jPoint
+  bool
 )
-"p.ml" 69 2007 2030 "p.ml" 69 2007 2039
+"p.ml" 80 2233 2244 "p.ml" 80 2233 2249
 type(
-  _jni_jPoint java_type -> top -> _jni_jPoint
+  exn -> unit
 )
 ident(
-  ext_ref Java.cast
+  ext_ref Pervasives.raise
 )
-"p.ml" 69 2007 2040 "p.ml" 69 2007 2054
+"p.ml" 80 2233 2263 "p.ml" 80 2233 2279
 type(
-  _jni_jPoint java_type
+  string
 )
-"p.ml" 69 2007 2055 "p.ml" 69 2007 2056
+"p.ml" 80 2233 2250 "p.ml" 80 2233 2280
 type(
-  top
+  exn
+)
+"p.ml" 80 2233 2244 "p.ml" 80 2233 2280
+type(
+  unit
+)
+"p.ml" 81 2281 2292 "p.ml" 81 2281 2294
+type(
+  unit
+)
+"p.ml" 79 2203 2209 "p.ml" 81 2281 2294
+type(
+  unit
+)
+"p.ml" 83 2302 2309 "p.ml" 83 2302 2315
+type(
+  < _get_jni_jColored : '_a; getColor : unit -> '_b; setColor : '_c -> '_d;
+    _.. >
+)
+"p.ml" 85 2336 2344 "p.ml" 85 2336 2346
+type(
+  unit
+)
+"p.ml" 86 2350 2356 "p.ml" 86 2350 2376
+type(
+  java'lang'String java_instance -> string
 )
 ident(
-  int_ref o "p.ml" 68 1968 1987 "p.ml" 68 1968 1988
+  ext_ref JavaString.to_string
 )
-"p.ml" 69 2007 2029 "p.ml" 69 2007 2057
+"p.ml" 86 2350 2378 "p.ml" 86 2350 2387
 type(
-  _jni_jPoint
+  ('_e -> '_f) java_method -> '_e -> '_f
 )
-"p.ml" 69 2007 2009 "p.ml" 69 2007 2057
-type(
-  _capsule_jPoint
+ident(
+  ext_ref Java.call
 )

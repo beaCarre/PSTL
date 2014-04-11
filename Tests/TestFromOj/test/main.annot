@@ -619,46 +619,35 @@ call(
   stack
 )
 type(
-  int32 -> unit
+  int -> unit
 )
-"main.ml" 33 686 696 "main.ml" 33 686 708
-type(
-  int -> int32
-)
-ident(
-  ext_ref Int32.of_int
-)
-"main.ml" 33 686 709 "main.ml" 33 686 710
+"main.ml" 33 686 696 "main.ml" 33 686 697
 type(
   int
 )
-"main.ml" 33 686 695 "main.ml" 33 686 711
-type(
-  int32
-)
-"main.ml" 33 686 686 "main.ml" 33 686 711
+"main.ml" 33 686 686 "main.ml" 33 686 697
 type(
   unit
 )
-"main.ml" 34 714 714 "main.ml" 34 714 716
+"main.ml" 34 700 700 "main.ml" 34 700 702
 type(
   P.point
 )
 ident(
   int_ref p2 "main.ml" 10 190 194 "main.ml" 10 190 196
 )
-"main.ml" 34 714 714 "main.ml" 34 714 724
+"main.ml" 34 700 700 "main.ml" 34 700 710
 call(
   stack
 )
 type(
   unit -> unit
 )
-"main.ml" 34 714 725 "main.ml" 34 714 727
+"main.ml" 34 700 711 "main.ml" 34 700 713
 type(
   unit
 )
-"main.ml" 34 714 714 "main.ml" 34 714 727
+"main.ml" 34 700 700 "main.ml" 34 700 713
 type(
   unit
 )
