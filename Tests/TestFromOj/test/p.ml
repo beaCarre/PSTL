@@ -83,11 +83,11 @@ class _capsule_jColored =
 object (self)
   method getColor =
     fun () ->
-      JavaString.to_string (Java.call "mypack.Colored.getColor():string" jni_ref)
+      JavaString.to_string (Java.call "mypack.Colored.getColor():java.lang.String" jni_ref)
   method setColor =
     fun _p0 ->
       let _p0 = JavaString.of_string _p0 in
-	(Java.call "mypack.Colored.setColor(string)" jni_ref _p0)
+	(Java.call "mypack.Colored.setColor(java.lang.String):void" jni_ref _p0)
   method _get_jni_jColored = jni_ref
 end
 

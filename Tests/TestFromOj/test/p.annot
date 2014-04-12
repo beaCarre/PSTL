@@ -81,6 +81,9 @@ ident(
   int_ref _p0 "p.ml" 38 909 918 "p.ml" 38 909 921
 )
 "p.ml" 39 935 951 "p.ml" 39 935 970
+call(
+  stack
+)
 type(
   _jni_jPoint
 )
@@ -734,8 +737,8 @@ type(
 )
 "p.ml" 83 2302 2309 "p.ml" 83 2302 2315
 type(
-  < _get_jni_jColored : '_a; getColor : unit -> '_b; setColor : '_c -> '_d;
-    _.. >
+  < _get_jni_jColored : _jni_jColored; getColor : unit -> string;
+    setColor : string -> unit; .. >
 )
 "p.ml" 85 2336 2344 "p.ml" 85 2336 2346
 type(
@@ -750,8 +753,425 @@ ident(
 )
 "p.ml" 86 2350 2378 "p.ml" 86 2350 2387
 type(
-  ('_e -> '_f) java_method -> '_e -> '_f
+  (_jni_jColored -> java'lang'String java_instance) java_method ->
+  _jni_jColored -> java'lang'String java_instance
 )
 ident(
   ext_ref Java.call
+)
+"p.ml" 86 2350 2388 "p.ml" 86 2350 2432
+type(
+  (_jni_jColored -> java'lang'String java_instance) java_method
+)
+"p.ml" 86 2350 2433 "p.ml" 86 2350 2440
+type(
+  _jni_jColored
+)
+"p.ml" 86 2350 2377 "p.ml" 86 2350 2441
+type(
+  java'lang'String java_instance
+)
+"p.ml" 86 2350 2356 "p.ml" 86 2350 2441
+type(
+  string
+)
+"p.ml" 85 2336 2340 "p.ml" 86 2350 2441
+type(
+  unit -> string
+)
+type(
+  unit -> string
+)
+"p.ml" 88 2462 2470 "p.ml" 88 2462 2473
+type(
+  string
+)
+ident(
+  def _p0 "p.ml" 89 2477 2483 "p.ml" 90 2521 2594
+)
+"p.ml" 89 2477 2487 "p.ml" 89 2477 2490
+type(
+  java'lang'String java_instance
+)
+ident(
+  def _p0 "p.ml" 90 2521 2522 "p.ml" 90 2521 2594
+)
+"p.ml" 89 2477 2493 "p.ml" 89 2477 2513
+type(
+  string -> java'lang'String java_instance
+)
+ident(
+  ext_ref JavaString.of_string
+)
+"p.ml" 89 2477 2514 "p.ml" 89 2477 2517
+type(
+  string
+)
+ident(
+  int_ref _p0 "p.ml" 88 2462 2470 "p.ml" 88 2462 2473
+)
+"p.ml" 89 2477 2493 "p.ml" 89 2477 2517
+type(
+  java'lang'String java_instance
+)
+"p.ml" 90 2521 2523 "p.ml" 90 2521 2532
+type(
+  (_jni_jColored -> java'lang'String java_instance -> unit) java_method ->
+  _jni_jColored -> java'lang'String java_instance -> unit
+)
+ident(
+  ext_ref Java.call
+)
+"p.ml" 90 2521 2533 "p.ml" 90 2521 2581
+type(
+  (_jni_jColored -> java'lang'String java_instance -> unit) java_method
+)
+"p.ml" 90 2521 2582 "p.ml" 90 2521 2589
+type(
+  _jni_jColored
+)
+"p.ml" 90 2521 2590 "p.ml" 90 2521 2593
+type(
+  java'lang'String java_instance
+)
+ident(
+  int_ref _p0 "p.ml" 89 2477 2487 "p.ml" 89 2477 2490
+)
+"p.ml" 90 2521 2522 "p.ml" 90 2521 2594
+type(
+  unit
+)
+"p.ml" 89 2477 2483 "p.ml" 90 2521 2594
+type(
+  unit
+)
+"p.ml" 88 2462 2466 "p.ml" 90 2521 2594
+type(
+  string -> unit
+)
+type(
+  string -> unit
+)
+"p.ml" 91 2595 2624 "p.ml" 91 2595 2631
+type(
+  _jni_jColored
+)
+type(
+  _jni_jColored
+)
+"p.ml" 94 2637 2641 "p.ml" 94 2637 2654
+type(
+  top -> jPoint
+)
+ident(
+  def jPoint_of_top "p.ml" 97 2730 2730 "_none_" 1 0 -1
+)
+"p.ml" 94 2637 2656 "p.ml" 94 2637 2657
+type(
+  top
+)
+ident(
+  def o "p.ml" 94 2637 2665 "p.ml" 95 2676 2726
+)
+"p.ml" 95 2676 2678 "p.ml" 95 2676 2697
+type(
+  _jni_jPoint -> _capsule_jPoint
+)
+"p.ml" 95 2676 2699 "p.ml" 95 2676 2708
+type(
+  _jni_jPoint java_type -> top -> _jni_jPoint
+)
+ident(
+  ext_ref Java.cast
+)
+"p.ml" 95 2676 2709 "p.ml" 95 2676 2723
+type(
+  _jni_jPoint java_type
+)
+"p.ml" 95 2676 2724 "p.ml" 95 2676 2725
+type(
+  top
+)
+ident(
+  int_ref o "p.ml" 94 2637 2656 "p.ml" 94 2637 2657
+)
+"p.ml" 95 2676 2698 "p.ml" 95 2676 2726
+type(
+  _jni_jPoint
+)
+"p.ml" 95 2676 2678 "p.ml" 95 2676 2726
+call(
+  tail
+)
+type(
+  jPoint
+)
+type(
+  _capsule_jPoint
+)
+"p.ml" 97 2730 2734 "p.ml" 97 2730 2749
+type(
+  top -> jColored
+)
+ident(
+  def jColored_of_top "p.ml" 100 2829 2829 "_none_" 1 0 -1
+)
+"p.ml" 97 2730 2751 "p.ml" 97 2730 2752
+type(
+  top
+)
+ident(
+  def o "p.ml" 97 2730 2760 "p.ml" 98 2773 2827
+)
+"p.ml" 98 2773 2775 "p.ml" 98 2773 2796
+type(
+  _jni_jColored -> _capsule_jColored
+)
+"p.ml" 98 2773 2798 "p.ml" 98 2773 2807
+type(
+  _jni_jColored java_type -> top -> _jni_jColored
+)
+ident(
+  ext_ref Java.cast
+)
+"p.ml" 98 2773 2808 "p.ml" 98 2773 2824
+type(
+  _jni_jColored java_type
+)
+"p.ml" 98 2773 2825 "p.ml" 98 2773 2826
+type(
+  top
+)
+ident(
+  int_ref o "p.ml" 97 2730 2751 "p.ml" 97 2730 2752
+)
+"p.ml" 98 2773 2797 "p.ml" 98 2773 2827
+type(
+  _jni_jColored
+)
+"p.ml" 98 2773 2775 "p.ml" 98 2773 2827
+call(
+  tail
+)
+type(
+  jColored
+)
+type(
+  _capsule_jColored
+)
+"p.ml" 100 2829 2833 "p.ml" 100 2829 2852
+type(
+  top -> bool
+)
+ident(
+  def _instance_of_jPoint "p.ml" 103 2903 2903 "_none_" 1 0 -1
+)
+"p.ml" 100 2829 2854 "p.ml" 100 2829 2855
+type(
+  top
+)
+ident(
+  def o "p.ml" 101 2865 2867 "p.ml" 101 2865 2899
+)
+"p.ml" 101 2865 2867 "p.ml" 101 2865 2882
+type(
+  mypack'Point java_instance java_type -> top -> bool
+)
+ident(
+  ext_ref Java.instanceof
+)
+"p.ml" 101 2865 2883 "p.ml" 101 2865 2897
+type(
+  mypack'Point java_instance java_type
+)
+"p.ml" 101 2865 2898 "p.ml" 101 2865 2899
+type(
+  top
+)
+ident(
+  int_ref o "p.ml" 100 2829 2854 "p.ml" 100 2829 2855
+)
+"p.ml" 101 2865 2867 "p.ml" 101 2865 2899
+type(
+  bool
+)
+"p.ml" 103 2903 2907 "p.ml" 103 2903 2928
+type(
+  top -> bool
+)
+ident(
+  def _instance_of_jColored "p.ml" 106 2981 2981 "_none_" 1 0 -1
+)
+"p.ml" 103 2903 2930 "p.ml" 103 2903 2931
+type(
+  top
+)
+ident(
+  def o "p.ml" 104 2941 2943 "p.ml" 104 2941 2977
+)
+"p.ml" 104 2941 2943 "p.ml" 104 2941 2958
+type(
+  mypack'Colored java_instance java_type -> top -> bool
+)
+ident(
+  ext_ref Java.instanceof
+)
+"p.ml" 104 2941 2959 "p.ml" 104 2941 2975
+type(
+  mypack'Colored java_instance java_type
+)
+"p.ml" 104 2941 2976 "p.ml" 104 2941 2977
+type(
+  top
+)
+ident(
+  int_ref o "p.ml" 103 2903 2930 "p.ml" 103 2903 2931
+)
+"p.ml" 104 2941 2943 "p.ml" 104 2941 2977
+type(
+  bool
+)
+"p.ml" 106 2981 2993 "p.ml" 106 2981 2996
+type(
+  int
+)
+"p.ml" 106 2981 2997 "p.ml" 106 2981 3000
+type(
+  int
+)
+"p.ml" 107 3003 3009 "p.ml" 107 3003 3012
+type(
+  int32
+)
+"p.ml" 107 3003 3015 "p.ml" 107 3003 3027
+type(
+  int -> int32
+)
+ident(
+  ext_ref Int32.of_int
+)
+"p.ml" 107 3003 3028 "p.ml" 107 3003 3031
+type(
+  int
+)
+ident(
+  int_ref _p1 "p.ml" 106 2981 2997 "p.ml" 106 2981 3000
+)
+"p.ml" 107 3003 3015 "p.ml" 107 3003 3031
+type(
+  int32
+)
+"p.ml" 108 3035 3041 "p.ml" 108 3035 3044
+type(
+  int32
+)
+"p.ml" 108 3035 3047 "p.ml" 108 3035 3059
+type(
+  int -> int32
+)
+ident(
+  ext_ref Int32.of_int
+)
+"p.ml" 108 3035 3060 "p.ml" 108 3035 3063
+type(
+  int
+)
+ident(
+  int_ref _p0 "p.ml" 106 2981 2993 "p.ml" 106 2981 2996
+)
+"p.ml" 108 3035 3047 "p.ml" 108 3035 3063
+type(
+  int32
+)
+"p.ml" 109 3067 3073 "p.ml" 109 3067 3081
+type(
+  mypack'Point java_instance
+)
+"p.ml" 109 3067 3084 "p.ml" 109 3067 3093
+type(
+  (int32 -> int32 -> mypack'Point java_instance) java_constructor ->
+  int32 -> int32 -> mypack'Point java_instance
+)
+ident(
+  ext_ref Java.make
+)
+"p.ml" 109 3067 3094 "p.ml" 109 3067 3117
+type(
+  (int32 -> int32 -> mypack'Point java_instance) java_constructor
+)
+"p.ml" 109 3067 3118 "p.ml" 109 3067 3121
+type(
+  int32
+)
+ident(
+  int_ref _p0 "p.ml" 108 3035 3041 "p.ml" 108 3035 3044
+)
+"p.ml" 109 3067 3122 "p.ml" 109 3067 3125
+type(
+  int32
+)
+ident(
+  int_ref _p1 "p.ml" 107 3003 3009 "p.ml" 107 3003 3012
+)
+"p.ml" 109 3067 3084 "p.ml" 109 3067 3125
+type(
+  mypack'Point java_instance
+)
+"p.ml" 110 3126 3138 "p.ml" 110 3126 3144
+type(
+  < _get_jni_jPoint : _jni_jPoint; display : unit -> unit;
+    distance : unit -> float; eq : jPoint -> bool; get_x : unit -> int;
+    get_y : unit -> int; moveto : int -> int -> unit;
+    rmoveto : int -> int -> unit; set_x : int -> unit; set_y : int -> unit;
+    toString : unit -> string; .. >
+)
+"p.ml" 110 3126 3169 "p.ml" 110 3126 3177
+type(
+  _jni_jPoint
+)
+ident(
+  int_ref java_obj "p.ml" 109 3067 3073 "p.ml" 109 3067 3081
+)
+"p.ml" 112 3185 3205 "p.ml" 112 3185 3207
+type(
+  unit
+)
+"p.ml" 113 3210 3216 "p.ml" 113 3210 3224
+type(
+  mypack'Point java_instance
+)
+"p.ml" 113 3210 3227 "p.ml" 113 3210 3236
+type(
+  (unit -> mypack'Point java_instance) java_constructor ->
+  unit -> mypack'Point java_instance
+)
+ident(
+  ext_ref Java.make
+)
+"p.ml" 113 3210 3237 "p.ml" 113 3210 3253
+type(
+  (unit -> mypack'Point java_instance) java_constructor
+)
+"p.ml" 113 3210 3254 "p.ml" 113 3210 3256
+type(
+  unit
+)
+"p.ml" 113 3210 3227 "p.ml" 113 3210 3256
+type(
+  mypack'Point java_instance
+)
+"p.ml" 114 3257 3269 "p.ml" 114 3257 3275
+type(
+  < _get_jni_jPoint : _jni_jPoint; display : unit -> unit;
+    distance : unit -> float; eq : jPoint -> bool; get_x : unit -> int;
+    get_y : unit -> int; moveto : int -> int -> unit;
+    rmoveto : int -> int -> unit; set_x : int -> unit; set_y : int -> unit;
+    toString : unit -> string; .. >
+)
+"p.ml" 114 3257 3300 "p.ml" 114 3257 3308
+type(
+  _jni_jPoint
+)
+ident(
+  int_ref java_obj "p.ml" 113 3210 3216 "p.ml" 113 3210 3224
 )
