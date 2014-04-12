@@ -32,3 +32,21 @@ let d = p2#distance () in print_float d; print_newline ();;
 display "Envoi p2#set_x 4 : ";;
 p2#set_x  4;;
 p2#display ();;
+
+
+display "Creation d'un point colore pc = (1,3) cyan : ";;
+let pc = new colored_point 1 3 "cyan";;
+display "OK\n";;
+
+display "Creation d'un point colore pc2 = (2,3) blue : ";;
+let pc2 = new colored_point 1 3 "blue";;
+display "OK\n";;
+
+display "Envoi pc#display : ";;
+pc#display ();;
+
+display "Envoi pc2#display : ";;
+pc2#display ();;
+
+display "Envoi pc2#getColor : ";;
+let s = pc2#getColor () in print_string s; print_newline ();;

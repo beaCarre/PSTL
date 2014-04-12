@@ -2,6 +2,7 @@ type top;;
 
 type _jni_jPoint;;
 type _jni_jColored;;
+type _jni_jColoredPoint;;
 
 class type jPoint =
 object
@@ -25,12 +26,24 @@ object
   method setColor : string -> unit
 end;;
 
+class type jColoredPoint =
+object
+  inherit jPoint
+  inherit jColored
+  method _get_jni_jColoredPoint : _jni_jColoredPoint
+  method eq_colored_point : jColoredPoint -> bool
+end;;
+
 val jPoint_of_top : top -> jPoint;; 
 val jColored_of_top : top -> jColored;;
+val jColoredPoint_of_top : top -> jColoredPoint;;
 
 val _instance_of_jPoint : top -> bool;;
 val _instance_of_jColored : top -> bool;;
+val _instance_of_jColoredPoint : top -> bool;;
 
 class point : int -> int -> jPoint;;
-
 class default_point : unit -> jPoint;;
+
+class colored_point : int -> int -> string -> jColoredPoint;;
+class default_colored_point : unit -> jColoredPoint;;
