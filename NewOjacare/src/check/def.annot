@@ -1,0 +1,1513 @@
+"def.ml" 7 88 92 "def.ml" 7 88 109
+type(
+  string list * Env_idl.clazz_env -> Env_ident.t -> Idl.qident -> Cidl.clazz
+)
+ident(
+  def get_class_by_name "def.ml" 14 345 345 "_none_" 1 0 -1
+)
+"def.ml" 7 88 110 "def.ml" 7 88 117
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "def.ml" 7 88 118 "def.ml" 12 285 343
+)
+"def.ml" 7 88 118 "def.ml" 7 88 121
+type(
+  Env_ident.t
+)
+ident(
+  def env "def.ml" 7 88 122 "def.ml" 12 285 343
+)
+"def.ml" 7 88 122 "def.ml" 7 88 126
+type(
+  Idl.qident
+)
+ident(
+  def name "def.ml" 8 129 131 "def.ml" 12 285 343
+)
+"def.ml" 8 129 135 "def.ml" 8 129 137
+type(
+  Ident.clazz
+)
+ident(
+  def id "def.ml" 11 246 248 "def.ml" 12 285 343
+)
+"def.ml" 9 141 149 "def.ml" 9 141 167
+type(
+  string list * Env_idl.clazz_env -> Idl.qident -> Ident.clazz
+)
+ident(
+  ext_ref Env_idl.find_class
+)
+"def.ml" 9 141 168 "def.ml" 9 141 175
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 7 88 110 "def.ml" 7 88 117
+)
+"def.ml" 9 141 176 "def.ml" 9 141 180
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 7 88 122 "def.ml" 7 88 126
+)
+"def.ml" 9 141 149 "def.ml" 9 141 180
+call(
+  stack
+)
+type(
+  Ident.clazz
+)
+"def.ml" 10 187 193 "def.ml" 10 187 202
+type(
+  exn
+)
+"def.ml" 10 187 206 "def.ml" 10 187 211
+type(
+  exn -> Ident.clazz
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"def.ml" 10 187 235 "def.ml" 10 187 239
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 7 88 122 "def.ml" 7 88 126
+)
+"def.ml" 10 187 219 "def.ml" 10 187 240
+type(
+  Error.t
+)
+"def.ml" 10 187 212 "def.ml" 10 187 241
+type(
+  exn
+)
+"def.ml" 10 187 206 "def.ml" 10 187 241
+type(
+  Ident.clazz
+)
+"def.ml" 9 141 145 "def.ml" 10 187 241
+type(
+  Ident.clazz
+)
+"def.ml" 11 246 252 "def.ml" 11 246 272
+type(
+  Env_ident.t -> Ident.clazz -> Cidl.clazz
+)
+ident(
+  ext_ref Env_ident.find_class
+)
+"def.ml" 11 246 273 "def.ml" 11 246 276
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 7 88 118 "def.ml" 7 88 121
+)
+"def.ml" 11 246 277 "def.ml" 11 246 279
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 8 129 135 "def.ml" 8 129 137
+)
+"def.ml" 11 246 252 "def.ml" 11 246 279
+call(
+  stack
+)
+type(
+  Cidl.clazz
+)
+"def.ml" 12 285 289 "def.ml" 12 285 298
+type(
+  exn
+)
+"def.ml" 12 285 302 "def.ml" 12 285 307
+type(
+  exn -> Cidl.clazz
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"def.ml" 12 285 337 "def.ml" 12 285 341
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 7 88 122 "def.ml" 7 88 126
+)
+"def.ml" 12 285 315 "def.ml" 12 285 342
+type(
+  Error.t
+)
+"def.ml" 12 285 308 "def.ml" 12 285 343
+type(
+  exn
+)
+"def.ml" 12 285 302 "def.ml" 12 285 343
+type(
+  Cidl.clazz
+)
+"def.ml" 11 246 248 "def.ml" 12 285 343
+type(
+  Cidl.clazz
+)
+"def.ml" 8 129 131 "def.ml" 12 285 343
+type(
+  Cidl.clazz
+)
+"def.ml" 14 345 349 "def.ml" 14 345 370
+type(
+  string list * Env_idl.clazz_env -> Env_ident.t -> Idl.qident -> Cidl.clazz
+)
+ident(
+  def get_interface_by_name "def.ml" 21 625 625 "_none_" 1 0 -1
+)
+"def.ml" 14 345 371 "def.ml" 14 345 378
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "def.ml" 14 345 379 "def.ml" 19 555 622
+)
+"def.ml" 14 345 379 "def.ml" 14 345 382
+type(
+  Env_ident.t
+)
+ident(
+  def env "def.ml" 14 345 383 "def.ml" 19 555 622
+)
+"def.ml" 14 345 383 "def.ml" 14 345 387
+type(
+  Idl.qident
+)
+ident(
+  def name "def.ml" 15 391 393 "def.ml" 19 555 622
+)
+"def.ml" 15 391 397 "def.ml" 15 391 399
+type(
+  Ident.clazz
+)
+ident(
+  def id "def.ml" 18 512 514 "def.ml" 19 555 622
+)
+"def.ml" 16 403 411 "def.ml" 16 403 429
+type(
+  string list * Env_idl.clazz_env -> Idl.qident -> Ident.clazz
+)
+ident(
+  ext_ref Env_idl.find_class
+)
+"def.ml" 16 403 430 "def.ml" 16 403 437
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 14 345 371 "def.ml" 14 345 378
+)
+"def.ml" 16 403 438 "def.ml" 16 403 442
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 14 345 383 "def.ml" 14 345 387
+)
+"def.ml" 16 403 411 "def.ml" 16 403 442
+call(
+  stack
+)
+type(
+  Ident.clazz
+)
+"def.ml" 17 449 455 "def.ml" 17 449 464
+type(
+  exn
+)
+"def.ml" 17 449 468 "def.ml" 17 449 473
+type(
+  exn -> Ident.clazz
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"def.ml" 17 449 501 "def.ml" 17 449 505
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 14 345 383 "def.ml" 14 345 387
+)
+"def.ml" 17 449 481 "def.ml" 17 449 506
+type(
+  Error.t
+)
+"def.ml" 17 449 474 "def.ml" 17 449 507
+type(
+  exn
+)
+"def.ml" 17 449 468 "def.ml" 17 449 507
+type(
+  Ident.clazz
+)
+"def.ml" 16 403 407 "def.ml" 17 449 507
+type(
+  Ident.clazz
+)
+"def.ml" 18 512 518 "def.ml" 18 512 542
+type(
+  Env_ident.t -> Ident.clazz -> Cidl.clazz
+)
+ident(
+  ext_ref Env_ident.find_interface
+)
+"def.ml" 18 512 543 "def.ml" 18 512 546
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 14 345 379 "def.ml" 14 345 382
+)
+"def.ml" 18 512 547 "def.ml" 18 512 549
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 15 391 397 "def.ml" 15 391 399
+)
+"def.ml" 18 512 518 "def.ml" 18 512 549
+call(
+  stack
+)
+type(
+  Cidl.clazz
+)
+"def.ml" 19 555 559 "def.ml" 19 555 568
+type(
+  exn
+)
+"def.ml" 19 555 572 "def.ml" 19 555 577
+type(
+  exn -> Cidl.clazz
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"def.ml" 19 555 616 "def.ml" 19 555 620
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 14 345 383 "def.ml" 14 345 387
+)
+"def.ml" 19 555 585 "def.ml" 19 555 621
+type(
+  Error.t
+)
+"def.ml" 19 555 578 "def.ml" 19 555 622
+type(
+  exn
+)
+"def.ml" 19 555 572 "def.ml" 19 555 622
+type(
+  Cidl.clazz
+)
+"def.ml" 18 512 514 "def.ml" 19 555 622
+type(
+  Cidl.clazz
+)
+"def.ml" 15 391 393 "def.ml" 19 555 622
+type(
+  Cidl.clazz
+)
+"def.ml" 21 625 629 "def.ml" 21 625 636
+type(
+  string list * Env_idl.clazz_env -> Env_ident.t -> Idl.def -> Env_ident.t
+)
+ident(
+  def convert "def.ml" 76 2898 2933 "_none_" 1 0 -1
+)
+"def.ml" 21 625 637 "def.ml" 21 625 644
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "def.ml" 21 625 645 "def.ml" 76 2898 2933
+)
+"def.ml" 21 625 645 "def.ml" 21 625 648
+type(
+  Env_ident.t
+)
+ident(
+  def env "def.ml" 21 625 649 "def.ml" 76 2898 2933
+)
+"def.ml" 21 625 649 "def.ml" 21 625 652
+type(
+  Idl.def
+)
+ident(
+  def def "def.ml" 23 708 710 "def.ml" 76 2898 2933
+)
+"def.ml" 23 708 714 "def.ml" 23 708 716
+type(
+  Ident.clazz
+)
+ident(
+  def id "def.ml" 26 808 810 "def.ml" 76 2898 2933
+)
+"def.ml" 23 708 719 "def.ml" 23 708 744
+type(
+  string list * Env_idl.clazz_env -> Idl.ident -> Ident.clazz
+)
+ident(
+  ext_ref Env_idl.find_class_simple
+)
+"def.ml" 23 708 745 "def.ml" 23 708 752
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 21 625 637 "def.ml" 21 625 644
+)
+"def.ml" 23 708 753 "def.ml" 23 708 756
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 23 708 753 "def.ml" 23 708 763
+type(
+  Idl.ident
+)
+"def.ml" 23 708 719 "def.ml" 23 708 763
+call(
+  stack
+)
+type(
+  Ident.clazz
+)
+"def.ml" 26 808 814 "def.ml" 26 808 822
+type(
+  bool
+)
+ident(
+  def abstract "def.ml" 30 1012 1014 "def.ml" 76 2898 2933
+)
+"def.ml" 26 808 825 "def.ml" 26 808 846
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_abstract
+)
+"def.ml" 26 808 847 "def.ml" 26 808 850
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 26 808 847 "def.ml" 26 808 862
+type(
+  Idl.modifier list
+)
+"def.ml" 26 808 825 "def.ml" 26 808 862
+call(
+  stack
+)
+type(
+  bool
+)
+"def.ml" 26 808 863 "def.ml" 26 808 865
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"def.ml" 26 808 866 "def.ml" 26 808 869
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 26 808 866 "def.ml" 26 808 881
+type(
+  bool
+)
+"def.ml" 26 808 825 "def.ml" 26 808 881
+type(
+  bool
+)
+"def.ml" 27 882 888 "def.ml" 27 882 896
+type(
+  bool
+)
+ident(
+  def callback "def.ml" 30 1012 1014 "def.ml" 76 2898 2933
+)
+"def.ml" 27 882 899 "def.ml" 27 882 916
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  ext_ref Annot.is_callback
+)
+"def.ml" 27 882 917 "def.ml" 27 882 920
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 27 882 917 "def.ml" 27 882 928
+type(
+  Idl.annotation list
+)
+"def.ml" 27 882 899 "def.ml" 27 882 928
+call(
+  stack
+)
+type(
+  bool
+)
+"def.ml" 30 1012 1018 "def.ml" 30 1012 1023
+type(
+  Cidl.clazz option
+)
+ident(
+  def super "def.ml" 33 1128 1130 "def.ml" 76 2898 2933
+)
+"def.ml" 30 1012 1032 "def.ml" 30 1012 1035
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 30 1012 1032 "def.ml" 30 1012 1043
+type(
+  Idl.qident option
+)
+"def.ml" 31 1049 1053 "def.ml" 31 1049 1057
+type(
+  Idl.qident option
+)
+"def.ml" 31 1049 1061 "def.ml" 31 1049 1065
+type(
+  Cidl.clazz option
+)
+"def.ml" 32 1066 1075 "def.ml" 32 1066 1079
+type(
+  Idl.qident
+)
+ident(
+  def name "def.ml" 32 1066 1083 "def.ml" 32 1066 1124
+)
+"def.ml" 32 1066 1070 "def.ml" 32 1066 1079
+type(
+  Idl.qident option
+)
+"def.ml" 32 1066 1089 "def.ml" 32 1066 1106
+type(
+  string list * Env_idl.clazz_env -> Env_ident.t -> Idl.qident -> Cidl.clazz
+)
+ident(
+  int_ref get_class_by_name "def.ml" 7 88 92 "def.ml" 7 88 109
+)
+"def.ml" 32 1066 1107 "def.ml" 32 1066 1114
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 21 625 637 "def.ml" 21 625 644
+)
+"def.ml" 32 1066 1115 "def.ml" 32 1066 1118
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 21 625 645 "def.ml" 21 625 648
+)
+"def.ml" 32 1066 1119 "def.ml" 32 1066 1123
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "def.ml" 32 1066 1075 "def.ml" 32 1066 1079
+)
+"def.ml" 32 1066 1088 "def.ml" 32 1066 1124
+call(
+  stack
+)
+type(
+  Cidl.clazz
+)
+"def.ml" 32 1066 1083 "def.ml" 32 1066 1124
+type(
+  Cidl.clazz option
+)
+"def.ml" 30 1012 1026 "def.ml" 32 1066 1124
+type(
+  Cidl.clazz option
+)
+"def.ml" 33 1128 1134 "def.ml" 33 1128 1144
+type(
+  Cidl.clazz list
+)
+ident(
+  def interfaces "def.ml" 36 1248 1250 "def.ml" 76 2898 2933
+)
+"def.ml" 33 1128 1147 "def.ml" 33 1128 1155
+type(
+  (Idl.qident -> Cidl.clazz) -> Idl.qident list -> Cidl.clazz list
+)
+ident(
+  ext_ref List.map
+)
+"def.ml" 33 1128 1157 "def.ml" 33 1128 1178
+type(
+  string list * Env_idl.clazz_env -> Env_ident.t -> Idl.qident -> Cidl.clazz
+)
+ident(
+  int_ref get_interface_by_name "def.ml" 14 345 349 "def.ml" 14 345 370
+)
+"def.ml" 33 1128 1179 "def.ml" 33 1128 1186
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 21 625 637 "def.ml" 21 625 644
+)
+"def.ml" 33 1128 1187 "def.ml" 33 1128 1190
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 21 625 645 "def.ml" 21 625 648
+)
+"def.ml" 33 1128 1156 "def.ml" 33 1128 1191
+call(
+  stack
+)
+type(
+  Idl.qident -> Cidl.clazz
+)
+"def.ml" 33 1128 1192 "def.ml" 33 1128 1195
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 33 1128 1192 "def.ml" 33 1128 1208
+type(
+  Idl.qident list
+)
+"def.ml" 33 1128 1147 "def.ml" 33 1128 1208
+call(
+  stack
+)
+type(
+  Cidl.clazz list
+)
+"def.ml" 36 1248 1254 "def.ml" 36 1248 1259
+type(
+  Cidl.init list
+)
+ident(
+  def inits "def.ml" 37 1301 1303 "def.ml" 76 2898 2933
+)
+"def.ml" 36 1248 1262 "def.ml" 36 1248 1274
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz -> Idl.init list -> Cidl.init list
+)
+ident(
+  ext_ref Init.convert
+)
+"def.ml" 36 1248 1275 "def.ml" 36 1248 1282
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 21 625 637 "def.ml" 21 625 644
+)
+"def.ml" 36 1248 1283 "def.ml" 36 1248 1285
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 36 1248 1286 "def.ml" 36 1248 1289
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 36 1248 1286 "def.ml" 36 1248 1297
+type(
+  Idl.init list
+)
+"def.ml" 36 1248 1262 "def.ml" 36 1248 1297
+call(
+  stack
+)
+type(
+  Cidl.init list
+)
+"def.ml" 37 1301 1307 "def.ml" 37 1301 1321
+type(
+  Cidl.mmethod list
+)
+ident(
+  def static_methods "def.ml" 39 1377 1379 "def.ml" 76 2898 2933
+)
+"def.ml" 37 1301 1324 "def.ml" 37 1301 1346
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz -> Idl.content list -> Cidl.mmethod list
+)
+ident(
+  ext_ref Content.convert_static
+)
+"def.ml" 37 1301 1347 "def.ml" 37 1301 1354
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 21 625 637 "def.ml" 21 625 644
+)
+"def.ml" 37 1301 1355 "def.ml" 37 1301 1357
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 37 1301 1358 "def.ml" 37 1301 1361
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 37 1301 1358 "def.ml" 37 1301 1372
+type(
+  Idl.content list
+)
+"def.ml" 37 1301 1324 "def.ml" 37 1301 1372
+call(
+  stack
+)
+type(
+  Cidl.mmethod list
+)
+"def.ml" 39 1377 1383 "def.ml" 39 1377 1396
+type(
+  Env_ident.t
+)
+ident(
+  def all_inherited "def.ml" 42 1528 1530 "def.ml" 76 2898 2933
+)
+"def.ml" 39 1377 1405 "def.ml" 39 1377 1410
+type(
+  Cidl.clazz option
+)
+ident(
+  int_ref super "def.ml" 30 1012 1018 "def.ml" 30 1012 1023
+)
+"def.ml" 40 1416 1420 "def.ml" 40 1416 1424
+type(
+  Cidl.clazz option
+)
+"def.ml" 40 1416 1428 "def.ml" 40 1416 1443
+type(
+  Env_ident.t
+)
+ident(
+  ext_ref Env_ident.empty
+)
+"def.ml" 41 1444 1453 "def.ml" 41 1444 1455
+type(
+  Cidl.clazz
+)
+ident(
+  def cl "def.ml" 41 1444 1459 "def.ml" 41 1444 1524
+)
+"def.ml" 41 1444 1448 "def.ml" 41 1444 1455
+type(
+  Cidl.clazz option
+)
+"def.ml" 41 1444 1459 "def.ml" 41 1444 1482
+type(
+  Cidl.clazz list -> Env_ident.t -> Env_ident.t
+)
+ident(
+  ext_ref Env_ident.add_from_list
+)
+"def.ml" 41 1444 1484 "def.ml" 41 1444 1486
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "def.ml" 41 1444 1453 "def.ml" 41 1444 1455
+)
+"def.ml" 41 1444 1488 "def.ml" 41 1444 1490
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "def.ml" 41 1444 1453 "def.ml" 41 1444 1455
+)
+"def.ml" 41 1444 1488 "def.ml" 41 1444 1507
+type(
+  Cidl.clazz list
+)
+"def.ml" 41 1444 1483 "def.ml" 41 1444 1508
+type(
+  Cidl.clazz list
+)
+"def.ml" 41 1444 1509 "def.ml" 41 1444 1524
+type(
+  Env_ident.t
+)
+ident(
+  ext_ref Env_ident.empty
+)
+"def.ml" 41 1444 1459 "def.ml" 41 1444 1524
+call(
+  stack
+)
+type(
+  Env_ident.t
+)
+"def.ml" 39 1377 1399 "def.ml" 41 1444 1524
+type(
+  Env_ident.t
+)
+"def.ml" 42 1528 1534 "def.ml" 42 1528 1547
+type(
+  Env_ident.t
+)
+ident(
+  def all_inherited "def.ml" 43 1657 1659 "def.ml" 76 2898 2933
+)
+"def.ml" 42 1528 1550 "def.ml" 42 1528 1564
+type(
+  (Env_ident.t -> Cidl.clazz -> Env_ident.t) ->
+  Env_ident.t -> Cidl.clazz list -> Env_ident.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"def.ml" 42 1528 1570 "def.ml" 42 1528 1573
+type(
+  Env_ident.t
+)
+ident(
+  def env "def.ml" 42 1528 1574 "def.ml" 42 1528 1627
+)
+"def.ml" 42 1528 1574 "def.ml" 42 1528 1576
+type(
+  Cidl.clazz
+)
+ident(
+  def cl "def.ml" 42 1528 1580 "def.ml" 42 1528 1627
+)
+"def.ml" 42 1528 1580 "def.ml" 42 1528 1603
+type(
+  Cidl.clazz list -> Env_ident.t -> Env_ident.t
+)
+ident(
+  ext_ref Env_ident.add_from_list
+)
+"def.ml" 42 1528 1604 "def.ml" 42 1528 1606
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "def.ml" 42 1528 1574 "def.ml" 42 1528 1576
+)
+"def.ml" 42 1528 1604 "def.ml" 42 1528 1623
+type(
+  Cidl.clazz list
+)
+"def.ml" 42 1528 1624 "def.ml" 42 1528 1627
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 42 1528 1570 "def.ml" 42 1528 1573
+)
+"def.ml" 42 1528 1580 "def.ml" 42 1528 1627
+call(
+  tail
+)
+type(
+  Env_ident.t
+)
+"def.ml" 42 1528 1565 "def.ml" 42 1528 1628
+type(
+  Env_ident.t -> Cidl.clazz -> Env_ident.t
+)
+"def.ml" 42 1528 1629 "def.ml" 42 1528 1642
+type(
+  Env_ident.t
+)
+ident(
+  int_ref all_inherited "def.ml" 39 1377 1383 "def.ml" 39 1377 1396
+)
+"def.ml" 42 1528 1643 "def.ml" 42 1528 1653
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref interfaces "def.ml" 33 1128 1134 "def.ml" 33 1128 1144
+)
+"def.ml" 42 1528 1550 "def.ml" 42 1528 1653
+call(
+  stack
+)
+type(
+  Env_ident.t
+)
+"def.ml" 43 1657 1663 "def.ml" 43 1657 1676
+type(
+  Env_ident.t
+)
+ident(
+  def all_inherited "def.ml" 44 1781 1783 "def.ml" 76 2898 2933
+)
+"def.ml" 43 1657 1679 "def.ml" 43 1657 1693
+type(
+  (Env_ident.t -> Cidl.clazz -> Env_ident.t) ->
+  Env_ident.t -> Cidl.clazz list -> Env_ident.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"def.ml" 43 1657 1699 "def.ml" 43 1657 1702
+type(
+  Env_ident.t
+)
+ident(
+  def env "def.ml" 43 1657 1703 "def.ml" 43 1657 1751
+)
+"def.ml" 43 1657 1703 "def.ml" 43 1657 1705
+type(
+  Cidl.clazz
+)
+ident(
+  def cl "def.ml" 43 1657 1709 "def.ml" 43 1657 1751
+)
+"def.ml" 43 1657 1709 "def.ml" 43 1657 1732
+type(
+  Env_ident.t -> Ident.clazz -> Cidl.clazz -> Env_ident.t
+)
+ident(
+  ext_ref Env_ident.add_interface
+)
+"def.ml" 43 1657 1733 "def.ml" 43 1657 1736
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 43 1657 1699 "def.ml" 43 1657 1702
+)
+"def.ml" 43 1657 1737 "def.ml" 43 1657 1739
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "def.ml" 43 1657 1703 "def.ml" 43 1657 1705
+)
+"def.ml" 43 1657 1737 "def.ml" 43 1657 1748
+type(
+  Ident.clazz
+)
+"def.ml" 43 1657 1749 "def.ml" 43 1657 1751
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "def.ml" 43 1657 1703 "def.ml" 43 1657 1705
+)
+"def.ml" 43 1657 1709 "def.ml" 43 1657 1751
+call(
+  tail
+)
+type(
+  Env_ident.t
+)
+"def.ml" 43 1657 1694 "def.ml" 43 1657 1752
+type(
+  Env_ident.t -> Cidl.clazz -> Env_ident.t
+)
+"def.ml" 43 1657 1753 "def.ml" 43 1657 1766
+type(
+  Env_ident.t
+)
+ident(
+  int_ref all_inherited "def.ml" 42 1528 1534 "def.ml" 42 1528 1547
+)
+"def.ml" 43 1657 1767 "def.ml" 43 1657 1777
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref interfaces "def.ml" 33 1128 1134 "def.ml" 33 1128 1144
+)
+"def.ml" 43 1657 1679 "def.ml" 43 1657 1777
+call(
+  stack
+)
+type(
+  Env_ident.t
+)
+"def.ml" 44 1781 1787 "def.ml" 44 1781 1800
+type(
+  Cidl.clazz list
+)
+ident(
+  def all_inherited "def.ml" 47 1879 1881 "def.ml" 76 2898 2933
+)
+"def.ml" 44 1781 1803 "def.ml" 44 1781 1824
+type(
+  Env_ident.t -> Cidl.clazz list
+)
+ident(
+  ext_ref Env_ident.env_to_list
+)
+"def.ml" 44 1781 1825 "def.ml" 44 1781 1838
+type(
+  Env_ident.t
+)
+ident(
+  int_ref all_inherited "def.ml" 43 1657 1663 "def.ml" 43 1657 1676
+)
+"def.ml" 44 1781 1803 "def.ml" 44 1781 1838
+call(
+  stack
+)
+type(
+  Cidl.clazz list
+)
+"def.ml" 47 1879 1885 "def.ml" 47 1879 1895
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "def.ml" 48 1978 1980 "def.ml" 76 2898 2933
+)
+"def.ml" 47 1879 1898 "def.ml" 47 1879 1925
+type(
+  ?concrete:bool ->
+  Cidl.clazz list -> Cidl.clazz option -> Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  ext_ref Env_ident.create_method_env
+)
+"def.ml" 47 1879 1937 "def.ml" 47 1879 1940
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"def.ml" 47 1879 1941 "def.ml" 47 1879 1944
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 47 1879 1941 "def.ml" 47 1879 1956
+type(
+  bool
+)
+"def.ml" 47 1879 1936 "def.ml" 47 1879 1957
+type(
+  bool
+)
+"def.ml" 47 1879 1958 "def.ml" 47 1879 1968
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref interfaces "def.ml" 33 1128 1134 "def.ml" 33 1128 1144
+)
+"def.ml" 47 1879 1969 "def.ml" 47 1879 1974
+type(
+  Cidl.clazz option
+)
+ident(
+  int_ref super "def.ml" 30 1012 1018 "def.ml" 30 1012 1023
+)
+"def.ml" 47 1879 1898 "def.ml" 47 1879 1974
+call(
+  stack
+)
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+"def.ml" 48 1978 1984 "def.ml" 48 1978 1991
+type(
+  Cidl.mmethod list
+)
+ident(
+  def methods "def.ml" 50 2075 2077 "def.ml" 76 2898 2933
+)
+"def.ml" 48 1978 1993 "def.ml" 48 1978 2007
+type(
+  Cidl.mmethod list
+)
+ident(
+  def public_methods "def.ml" 50 2075 2077 "def.ml" 76 2898 2933
+)
+"def.ml" 48 1978 1984 "def.ml" 48 1978 2007
+type(
+  Cidl.mmethod list * Cidl.mmethod list
+)
+"def.ml" 48 1978 2010 "def.ml" 48 1978 2033
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz ->
+  Cidl.mmethod Env_ident.mmethod_env ->
+  Idl.content list -> Cidl.mmethod list * Cidl.mmethod list
+)
+ident(
+  ext_ref Content.convert_dynamic
+)
+"def.ml" 48 1978 2034 "def.ml" 48 1978 2041
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "def.ml" 21 625 637 "def.ml" 21 625 644
+)
+"def.ml" 48 1978 2042 "def.ml" 48 1978 2044
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 48 1978 2045 "def.ml" 48 1978 2055
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "def.ml" 47 1879 1885 "def.ml" 47 1879 1895
+)
+"def.ml" 48 1978 2056 "def.ml" 48 1978 2059
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 48 1978 2056 "def.ml" 48 1978 2070
+type(
+  Idl.content list
+)
+"def.ml" 48 1978 2010 "def.ml" 48 1978 2070
+call(
+  stack
+)
+type(
+  Cidl.mmethod list * Cidl.mmethod list
+)
+"def.ml" 50 2075 2080 "def.ml" 50 2075 2083
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"def.ml" 50 2075 2084 "def.ml" 50 2075 2092
+type(
+  bool
+)
+ident(
+  int_ref abstract "def.ml" 26 808 814 "def.ml" 26 808 822
+)
+"def.ml" 50 2075 2080 "def.ml" 50 2075 2092
+type(
+  bool
+)
+"def.ml" 50 2075 2093 "def.ml" 50 2075 2095
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"def.ml" 50 2075 2096 "def.ml" 50 2075 2116
+type(
+  Cidl.mmethod list -> bool
+)
+ident(
+  ext_ref Method.have_abstract
+)
+"def.ml" 50 2075 2117 "def.ml" 50 2075 2131
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref public_methods "def.ml" 48 1978 1993 "def.ml" 48 1978 2007
+)
+"def.ml" 50 2075 2096 "def.ml" 50 2075 2131
+call(
+  stack
+)
+type(
+  bool
+)
+"def.ml" 50 2075 2080 "def.ml" 50 2075 2131
+type(
+  bool
+)
+"def.ml" 50 2075 2137 "def.ml" 50 2075 2142
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"def.ml" 50 2075 2173 "def.ml" 50 2075 2176
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 50 2075 2173 "def.ml" 50 2075 2183
+type(
+  Idl.ident
+)
+"def.ml" 50 2075 2156 "def.ml" 50 2075 2184
+type(
+  Error.t
+)
+"def.ml" 50 2075 2143 "def.ml" 50 2075 2185
+type(
+  exn
+)
+"def.ml" 50 2075 2137 "def.ml" 50 2075 2185
+type(
+  unit
+)
+"def.ml" 50 2075 2077 "def.ml" 50 2075 2185
+type(
+  unit
+)
+"def.ml" 52 2188 2193 "def.ml" 52 2188 2196
+type(
+  Idl.def
+)
+ident(
+  int_ref def "def.ml" 21 625 649 "def.ml" 21 625 652
+)
+"def.ml" 52 2188 2193 "def.ml" 52 2188 2208
+type(
+  bool
+)
+"def.ml" 53 2214 2222 "def.ml" 53 2214 2226
+type(
+  Cidl.clazz
+)
+ident(
+  def self "def.ml" 65 2552 2556 "def.ml" 65 2552 2591
+)
+"def.ml" 54 2231 2248 "def.ml" 54 2231 2250
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 55 2252 2272 "def.ml" 55 2252 2280
+type(
+  bool
+)
+ident(
+  int_ref abstract "def.ml" 26 808 814 "def.ml" 26 808 822
+)
+"def.ml" 56 2282 2302 "def.ml" 56 2282 2310
+type(
+  bool
+)
+ident(
+  int_ref callback "def.ml" 27 882 888 "def.ml" 27 882 896
+)
+"def.ml" 57 2312 2330 "def.ml" 57 2312 2334
+type(
+  Cidl.clazz option
+)
+"def.ml" 58 2336 2358 "def.ml" 58 2336 2368
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref interfaces "def.ml" 33 1128 1134 "def.ml" 33 1128 1144
+)
+"def.ml" 59 2370 2395 "def.ml" 59 2370 2408
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref all_inherited "def.ml" 44 1781 1787 "def.ml" 44 1781 1800
+)
+"def.ml" 60 2410 2427 "def.ml" 60 2410 2429
+type(
+  Cidl.init list
+)
+"def.ml" 61 2431 2457 "def.ml" 61 2431 2471
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref static_methods "def.ml" 37 1301 1307 "def.ml" 37 1301 1321
+)
+"def.ml" 62 2473 2492 "def.ml" 62 2473 2499
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref methods "def.ml" 48 1978 1984 "def.ml" 48 1978 1991
+)
+"def.ml" 63 2501 2527 "def.ml" 63 2501 2541
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref public_methods "def.ml" 48 1978 1993 "def.ml" 48 1978 2007
+)
+"def.ml" 53 2214 2229 "def.ml" 64 2543 2548
+type(
+  Cidl.clazz
+)
+"def.ml" 65 2552 2556 "def.ml" 65 2552 2579
+type(
+  Env_ident.t -> Ident.clazz -> Cidl.clazz -> Env_ident.t
+)
+ident(
+  ext_ref Env_ident.add_interface
+)
+"def.ml" 65 2552 2580 "def.ml" 65 2552 2583
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 21 625 645 "def.ml" 21 625 648
+)
+"def.ml" 65 2552 2584 "def.ml" 65 2552 2586
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 65 2552 2587 "def.ml" 65 2552 2591
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref self "def.ml" 53 2214 2222 "def.ml" 53 2214 2226
+)
+"def.ml" 65 2552 2556 "def.ml" 65 2552 2591
+call(
+  tail
+)
+type(
+  Env_ident.t
+)
+"def.ml" 53 2214 2218 "def.ml" 65 2552 2591
+type(
+  Env_ident.t
+)
+"def.ml" 67 2599 2607 "def.ml" 67 2599 2611
+type(
+  Cidl.clazz
+)
+ident(
+  def self "def.ml" 76 2898 2902 "def.ml" 76 2898 2933
+)
+"def.ml" 69 2624 2639 "def.ml" 69 2624 2647
+type(
+  bool
+)
+ident(
+  int_ref abstract "def.ml" 26 808 814 "def.ml" 26 808 822
+)
+"def.ml" 69 2624 2663 "def.ml" 69 2624 2671
+type(
+  bool
+)
+ident(
+  int_ref callback "def.ml" 27 882 888 "def.ml" 27 882 896
+)
+"def.ml" 70 2673 2685 "def.ml" 70 2673 2687
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 71 2689 2702 "def.ml" 71 2689 2707
+type(
+  Cidl.clazz option
+)
+ident(
+  int_ref super "def.ml" 30 1012 1018 "def.ml" 30 1012 1023
+)
+"def.ml" 71 2689 2725 "def.ml" 71 2689 2735
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref interfaces "def.ml" 33 1128 1134 "def.ml" 33 1128 1144
+)
+"def.ml" 72 2737 2757 "def.ml" 72 2737 2770
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref all_inherited "def.ml" 44 1781 1787 "def.ml" 44 1781 1800
+)
+"def.ml" 73 2772 2784 "def.ml" 73 2772 2789
+type(
+  Cidl.init list
+)
+ident(
+  int_ref inits "def.ml" 36 1248 1254 "def.ml" 36 1248 1259
+)
+"def.ml" 73 2772 2811 "def.ml" 73 2772 2825
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref static_methods "def.ml" 37 1301 1307 "def.ml" 37 1301 1321
+)
+"def.ml" 74 2827 2841 "def.ml" 74 2827 2848
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref methods "def.ml" 48 1978 1984 "def.ml" 48 1978 1991
+)
+"def.ml" 74 2827 2870 "def.ml" 74 2827 2884
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref public_methods "def.ml" 48 1978 1993 "def.ml" 48 1978 2007
+)
+"def.ml" 68 2615 2621 "def.ml" 75 2886 2893
+type(
+  Cidl.clazz
+)
+"def.ml" 76 2898 2902 "def.ml" 76 2898 2921
+type(
+  Env_ident.t -> Ident.clazz -> Cidl.clazz -> Env_ident.t
+)
+ident(
+  ext_ref Env_ident.add_class
+)
+"def.ml" 76 2898 2922 "def.ml" 76 2898 2925
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "def.ml" 21 625 645 "def.ml" 21 625 648
+)
+"def.ml" 76 2898 2926 "def.ml" 76 2898 2928
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "def.ml" 23 708 714 "def.ml" 23 708 716
+)
+"def.ml" 76 2898 2929 "def.ml" 76 2898 2933
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref self "def.ml" 67 2599 2607 "def.ml" 67 2599 2611
+)
+"def.ml" 76 2898 2902 "def.ml" 76 2898 2933
+call(
+  tail
+)
+type(
+  Env_ident.t
+)
+"def.ml" 67 2599 2603 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 52 2188 2190 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 50 2075 2077 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 48 1978 1980 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 47 1879 1881 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 44 1781 1783 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 43 1657 1659 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 42 1528 1530 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 39 1377 1379 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 37 1301 1303 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 36 1248 1250 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 33 1128 1130 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 30 1012 1014 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 26 808 810 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)
+"def.ml" 23 708 710 "def.ml" 76 2898 2933
+type(
+  Env_ident.t
+)

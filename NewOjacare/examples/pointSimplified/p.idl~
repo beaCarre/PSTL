@@ -1,0 +1,8 @@
+package mypack;
+
+
+class Point {
+
+  [name defaut_point] <init> (boolean, byte , char, short , int, long, float, double, string) ;
+  
+}

@@ -1,0 +1,2459 @@
+"jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+type(
+  'a -> 'a
+)
+ident(
+  def id "jniArray.ml" 12 200 200 "_none_" 1 0 -1
+)
+"jniArray.ml" 9 141 154 "jniArray.ml" 9 141 155
+type(
+  'a
+)
+ident(
+  def x "jniArray.ml" 9 141 159 "jniArray.ml" 9 141 160
+)
+"jniArray.ml" 9 141 159 "jniArray.ml" 9 141 160
+type(
+  'a
+)
+ident(
+  int_ref x "jniArray.ml" 9 141 154 "jniArray.ml" 9 141 155
+)
+"jniArray.ml" 9 141 150 "jniArray.ml" 9 141 160
+type(
+  'a -> 'a
+)
+"jniArray.ml" 13 229 234 "jniArray.ml" 13 229 241
+type(
+  Jni.obj -> int -> 'jni
+)
+"jniArray.ml" 14 267 272 "jniArray.ml" 14 267 279
+type(
+  Jni.obj -> int -> 'jni -> unit
+)
+"jniArray.ml" 15 313 318 "jniArray.ml" 15 313 327
+type(
+  'jni -> 'jCaml
+)
+"jniArray.ml" 16 346 351 "jniArray.ml" 16 346 358
+type(
+  'jCaml -> 'jni
+)
+"jniArray.ml" 17 377 382 "jniArray.ml" 17 377 390
+type(
+  Jni.obj
+)
+"jniArray.ml" 19 413 442 "jniArray.ml" 19 413 450
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 17 377 382 "jniArray.ml" 17 377 390
+)
+"jniArray.ml" 20 451 466 "jniArray.ml" 20 451 467
+type(
+  int
+)
+ident(
+  def i "jniArray.ml" 20 451 468 "jniArray.ml" 22 495 533
+)
+"jniArray.ml" 20 451 469 "jniArray.ml" 20 451 472
+type(
+  'jCaml
+)
+ident(
+  def obj "jniArray.ml" 22 495 501 "jniArray.ml" 22 495 533
+)
+"jniArray.ml" 22 495 501 "jniArray.ml" 22 495 508
+type(
+  Jni.obj -> int -> 'jni -> unit
+)
+"jniArray.ml" 22 495 509 "jniArray.ml" 22 495 517
+type(
+  Jni.obj
+)
+"jniArray.ml" 22 495 518 "jniArray.ml" 22 495 519
+type(
+  int
+)
+ident(
+  int_ref i "jniArray.ml" 20 451 466 "jniArray.ml" 20 451 467
+)
+"jniArray.ml" 22 495 521 "jniArray.ml" 22 495 528
+type(
+  'jCaml -> 'jni
+)
+"jniArray.ml" 22 495 529 "jniArray.ml" 22 495 532
+type(
+  'jCaml
+)
+ident(
+  int_ref obj "jniArray.ml" 20 451 469 "jniArray.ml" 20 451 472
+)
+"jniArray.ml" 22 495 520 "jniArray.ml" 22 495 533
+call(
+  stack
+)
+type(
+  'jni
+)
+"jniArray.ml" 22 495 501 "jniArray.ml" 22 495 533
+call(
+  tail
+)
+type(
+  unit
+)
+"jniArray.ml" 24 590 605 "jniArray.ml" 24 590 606
+type(
+  int
+)
+ident(
+  def i "jniArray.ml" 26 620 626 "jniArray.ml" 26 620 656
+)
+"jniArray.ml" 26 620 626 "jniArray.ml" 26 620 635
+type(
+  'jni -> 'jCaml
+)
+"jniArray.ml" 26 620 637 "jniArray.ml" 26 620 644
+type(
+  Jni.obj -> int -> 'jni
+)
+"jniArray.ml" 26 620 645 "jniArray.ml" 26 620 653
+type(
+  Jni.obj
+)
+"jniArray.ml" 26 620 654 "jniArray.ml" 26 620 655
+type(
+  int
+)
+ident(
+  int_ref i "jniArray.ml" 24 590 605 "jniArray.ml" 24 590 606
+)
+"jniArray.ml" 26 620 636 "jniArray.ml" 26 620 656
+call(
+  stack
+)
+type(
+  'jni
+)
+"jniArray.ml" 26 620 626 "jniArray.ml" 26 620 656
+call(
+  tail
+)
+type(
+  'jCaml
+)
+"jniArray.ml" 32 763 767 "jniArray.ml" 32 763 786
+type(
+  int -> bool jArray
+)
+ident(
+  def _new_boolean_jArray "jniArray.ml" 36 947 947 "_none_" 1 0 -1
+)
+"jniArray.ml" 32 763 787 "jniArray.ml" 32 763 791
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 33 794 796 "jniArray.ml" 34 842 945
+)
+"jniArray.ml" 33 794 800 "jniArray.ml" 33 794 808
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 34 842 844 "jniArray.ml" 34 842 945
+)
+"jniArray.ml" 33 794 811 "jniArray.ml" 33 794 832
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_boolean_array
+)
+"jniArray.ml" 33 794 833 "jniArray.ml" 33 794 837
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 32 763 787 "jniArray.ml" 32 763 791
+)
+"jniArray.ml" 33 794 811 "jniArray.ml" 33 794 837
+type(
+  Jni.obj
+)
+"jniArray.ml" 34 842 845 "jniArray.ml" 34 842 855
+type(
+  (Jni.obj -> int -> bool) ->
+  (Jni.obj -> int -> bool -> unit) ->
+  (bool -> bool) -> (bool -> bool) -> Jni.obj -> (bool, bool) _Array
+)
+"jniArray.ml" 34 842 856 "jniArray.ml" 34 842 885
+type(
+  Jni.obj -> int -> bool
+)
+ident(
+  ext_ref Jni.get_boolean_array_element
+)
+"jniArray.ml" 34 842 886 "jniArray.ml" 34 842 915
+type(
+  Jni.obj -> int -> bool -> unit
+)
+ident(
+  ext_ref Jni.set_boolean_array_element
+)
+"jniArray.ml" 34 842 916 "jniArray.ml" 34 842 918
+type(
+  bool -> bool
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 34 842 919 "jniArray.ml" 34 842 921
+type(
+  bool -> bool
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 34 842 922 "jniArray.ml" 34 842 930
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 33 794 800 "jniArray.ml" 33 794 808
+)
+"jniArray.ml" 34 842 845 "jniArray.ml" 34 842 930
+call(
+  tail
+)
+type(
+  bool jArray
+)
+type(
+  (bool, bool) _Array
+)
+"jniArray.ml" 33 794 796 "jniArray.ml" 34 842 945
+type(
+  bool jArray
+)
+"jniArray.ml" 36 947 951 "jniArray.ml" 36 947 967
+type(
+  int -> int jArray
+)
+ident(
+  def _new_byte_jArray "jniArray.ml" 40 1118 1118 "_none_" 1 0 -1
+)
+"jniArray.ml" 36 947 968 "jniArray.ml" 36 947 972
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 37 975 977 "jniArray.ml" 38 1020 1116
+)
+"jniArray.ml" 37 975 981 "jniArray.ml" 37 975 989
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 38 1020 1022 "jniArray.ml" 38 1020 1116
+)
+"jniArray.ml" 37 975 992 "jniArray.ml" 37 975 1010
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_byte_array
+)
+"jniArray.ml" 37 975 1011 "jniArray.ml" 37 975 1015
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 36 947 968 "jniArray.ml" 36 947 972
+)
+"jniArray.ml" 37 975 992 "jniArray.ml" 37 975 1015
+type(
+  Jni.obj
+)
+"jniArray.ml" 38 1020 1023 "jniArray.ml" 38 1020 1033
+type(
+  (Jni.obj -> int -> int) ->
+  (Jni.obj -> int -> int -> unit) ->
+  (int -> int) -> (int -> int) -> Jni.obj -> (int, int) _Array
+)
+"jniArray.ml" 38 1020 1034 "jniArray.ml" 38 1020 1060
+type(
+  Jni.obj -> int -> int
+)
+ident(
+  ext_ref Jni.get_byte_array_element
+)
+"jniArray.ml" 38 1020 1061 "jniArray.ml" 38 1020 1087
+type(
+  Jni.obj -> int -> int -> unit
+)
+ident(
+  ext_ref Jni.set_byte_array_element
+)
+"jniArray.ml" 38 1020 1088 "jniArray.ml" 38 1020 1090
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 38 1020 1091 "jniArray.ml" 38 1020 1093
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 38 1020 1094 "jniArray.ml" 38 1020 1102
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 37 975 981 "jniArray.ml" 37 975 989
+)
+"jniArray.ml" 38 1020 1023 "jniArray.ml" 38 1020 1102
+call(
+  tail
+)
+type(
+  int jArray
+)
+type(
+  (int, int) _Array
+)
+"jniArray.ml" 37 975 977 "jniArray.ml" 38 1020 1116
+type(
+  int jArray
+)
+"jniArray.ml" 40 1118 1122 "jniArray.ml" 40 1118 1138
+type(
+  int -> int jArray
+)
+ident(
+  def _new_char_jArray "jniArray.ml" 44 1289 1289 "_none_" 1 0 -1
+)
+"jniArray.ml" 40 1118 1139 "jniArray.ml" 40 1118 1143
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 41 1146 1148 "jniArray.ml" 42 1191 1287
+)
+"jniArray.ml" 41 1146 1152 "jniArray.ml" 41 1146 1160
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 42 1191 1193 "jniArray.ml" 42 1191 1287
+)
+"jniArray.ml" 41 1146 1163 "jniArray.ml" 41 1146 1181
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_char_array
+)
+"jniArray.ml" 41 1146 1182 "jniArray.ml" 41 1146 1186
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 40 1118 1139 "jniArray.ml" 40 1118 1143
+)
+"jniArray.ml" 41 1146 1163 "jniArray.ml" 41 1146 1186
+type(
+  Jni.obj
+)
+"jniArray.ml" 42 1191 1194 "jniArray.ml" 42 1191 1204
+type(
+  (Jni.obj -> int -> int) ->
+  (Jni.obj -> int -> int -> unit) ->
+  (int -> int) -> (int -> int) -> Jni.obj -> (int, int) _Array
+)
+"jniArray.ml" 42 1191 1205 "jniArray.ml" 42 1191 1231
+type(
+  Jni.obj -> int -> int
+)
+ident(
+  ext_ref Jni.get_char_array_element
+)
+"jniArray.ml" 42 1191 1232 "jniArray.ml" 42 1191 1258
+type(
+  Jni.obj -> int -> int -> unit
+)
+ident(
+  ext_ref Jni.set_char_array_element
+)
+"jniArray.ml" 42 1191 1259 "jniArray.ml" 42 1191 1261
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 42 1191 1262 "jniArray.ml" 42 1191 1264
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 42 1191 1265 "jniArray.ml" 42 1191 1273
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 41 1146 1152 "jniArray.ml" 41 1146 1160
+)
+"jniArray.ml" 42 1191 1194 "jniArray.ml" 42 1191 1273
+call(
+  tail
+)
+type(
+  int jArray
+)
+type(
+  (int, int) _Array
+)
+"jniArray.ml" 41 1146 1148 "jniArray.ml" 42 1191 1287
+type(
+  int jArray
+)
+"jniArray.ml" 44 1289 1293 "jniArray.ml" 44 1289 1310
+type(
+  int -> int jArray
+)
+ident(
+  def _new_short_jArray "jniArray.ml" 49 1493 1493 "_none_" 1 0 -1
+)
+"jniArray.ml" 44 1289 1311 "jniArray.ml" 44 1289 1315
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 45 1318 1320 "jniArray.ml" 46 1364 1462
+)
+"jniArray.ml" 45 1318 1324 "jniArray.ml" 45 1318 1332
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 46 1364 1366 "jniArray.ml" 46 1364 1462
+)
+"jniArray.ml" 45 1318 1335 "jniArray.ml" 45 1318 1354
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_short_array
+)
+"jniArray.ml" 45 1318 1355 "jniArray.ml" 45 1318 1359
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 44 1289 1311 "jniArray.ml" 44 1289 1315
+)
+"jniArray.ml" 45 1318 1335 "jniArray.ml" 45 1318 1359
+type(
+  Jni.obj
+)
+"jniArray.ml" 46 1364 1367 "jniArray.ml" 46 1364 1377
+type(
+  (Jni.obj -> int -> int) ->
+  (Jni.obj -> int -> int -> unit) ->
+  (int -> int) -> (int -> int) -> Jni.obj -> (int, int) _Array
+)
+"jniArray.ml" 46 1364 1378 "jniArray.ml" 46 1364 1405
+type(
+  Jni.obj -> int -> int
+)
+ident(
+  ext_ref Jni.get_short_array_element
+)
+"jniArray.ml" 46 1364 1406 "jniArray.ml" 46 1364 1433
+type(
+  Jni.obj -> int -> int -> unit
+)
+ident(
+  ext_ref Jni.set_short_array_element
+)
+"jniArray.ml" 46 1364 1434 "jniArray.ml" 46 1364 1436
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 46 1364 1437 "jniArray.ml" 46 1364 1439
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 46 1364 1440 "jniArray.ml" 46 1364 1448
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 45 1318 1324 "jniArray.ml" 45 1318 1332
+)
+"jniArray.ml" 46 1364 1367 "jniArray.ml" 46 1364 1448
+call(
+  tail
+)
+type(
+  int jArray
+)
+type(
+  (int, int) _Array
+)
+"jniArray.ml" 45 1318 1320 "jniArray.ml" 46 1364 1462
+type(
+  int jArray
+)
+"jniArray.ml" 49 1493 1497 "jniArray.ml" 49 1493 1512
+type(
+  int -> int jArray
+)
+ident(
+  def _new_int_jArray "jniArray.ml" 53 1668 1668 "_none_" 1 0 -1
+)
+"jniArray.ml" 49 1493 1513 "jniArray.ml" 49 1493 1517
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 50 1520 1522 "jniArray.ml" 51 1564 1666
+)
+"jniArray.ml" 50 1520 1526 "jniArray.ml" 50 1520 1534
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 51 1564 1566 "jniArray.ml" 51 1564 1666
+)
+"jniArray.ml" 50 1520 1537 "jniArray.ml" 50 1520 1554
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_int_array
+)
+"jniArray.ml" 50 1520 1555 "jniArray.ml" 50 1520 1559
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 49 1493 1513 "jniArray.ml" 49 1493 1517
+)
+"jniArray.ml" 50 1520 1537 "jniArray.ml" 50 1520 1559
+type(
+  Jni.obj
+)
+"jniArray.ml" 51 1564 1567 "jniArray.ml" 51 1564 1577
+type(
+  (Jni.obj -> int -> int) ->
+  (Jni.obj -> int -> int -> unit) ->
+  (int -> int) -> (int -> int) -> Jni.obj -> (int, int) _Array
+)
+"jniArray.ml" 51 1564 1578 "jniArray.ml" 51 1564 1607
+type(
+  Jni.obj -> int -> int
+)
+ident(
+  ext_ref Jni.get_camlint_array_element
+)
+"jniArray.ml" 51 1564 1608 "jniArray.ml" 51 1564 1637
+type(
+  Jni.obj -> int -> int -> unit
+)
+ident(
+  ext_ref Jni.set_camlint_array_element
+)
+"jniArray.ml" 51 1564 1638 "jniArray.ml" 51 1564 1640
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 51 1564 1641 "jniArray.ml" 51 1564 1643
+type(
+  int -> int
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 51 1564 1644 "jniArray.ml" 51 1564 1652
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 50 1520 1526 "jniArray.ml" 50 1520 1534
+)
+"jniArray.ml" 51 1564 1567 "jniArray.ml" 51 1564 1652
+call(
+  tail
+)
+type(
+  int jArray
+)
+type(
+  (int, int) _Array
+)
+"jniArray.ml" 50 1520 1522 "jniArray.ml" 51 1564 1666
+type(
+  int jArray
+)
+"jniArray.ml" 53 1668 1672 "jniArray.ml" 53 1668 1688
+type(
+  int -> int64 jArray
+)
+ident(
+  def _new_long_jArray "jniArray.ml" 57 1841 1841 "_none_" 1 0 -1
+)
+"jniArray.ml" 53 1668 1689 "jniArray.ml" 53 1668 1693
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 54 1696 1698 "jniArray.ml" 55 1741 1839
+)
+"jniArray.ml" 54 1696 1702 "jniArray.ml" 54 1696 1710
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 55 1741 1743 "jniArray.ml" 55 1741 1839
+)
+"jniArray.ml" 54 1696 1713 "jniArray.ml" 54 1696 1731
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_long_array
+)
+"jniArray.ml" 54 1696 1732 "jniArray.ml" 54 1696 1736
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 53 1668 1689 "jniArray.ml" 53 1668 1693
+)
+"jniArray.ml" 54 1696 1713 "jniArray.ml" 54 1696 1736
+type(
+  Jni.obj
+)
+"jniArray.ml" 55 1741 1744 "jniArray.ml" 55 1741 1754
+type(
+  (Jni.obj -> int -> int64) ->
+  (Jni.obj -> int -> int64 -> unit) ->
+  (int64 -> int64) -> (int64 -> int64) -> Jni.obj -> (int64, int64) _Array
+)
+"jniArray.ml" 55 1741 1755 "jniArray.ml" 55 1741 1781
+type(
+  Jni.obj -> int -> int64
+)
+ident(
+  ext_ref Jni.get_long_array_element
+)
+"jniArray.ml" 55 1741 1782 "jniArray.ml" 55 1741 1808
+type(
+  Jni.obj -> int -> int64 -> unit
+)
+ident(
+  ext_ref Jni.set_long_array_element
+)
+"jniArray.ml" 55 1741 1809 "jniArray.ml" 55 1741 1811
+type(
+  int64 -> int64
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 55 1741 1812 "jniArray.ml" 55 1741 1814
+type(
+  int64 -> int64
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 55 1741 1815 "jniArray.ml" 55 1741 1823
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 54 1696 1702 "jniArray.ml" 54 1696 1710
+)
+"jniArray.ml" 55 1741 1744 "jniArray.ml" 55 1741 1823
+call(
+  tail
+)
+type(
+  int64 jArray
+)
+type(
+  (int64, int64) _Array
+)
+"jniArray.ml" 54 1696 1698 "jniArray.ml" 55 1741 1839
+type(
+  int64 jArray
+)
+"jniArray.ml" 57 1841 1845 "jniArray.ml" 57 1841 1862
+type(
+  int -> float jArray
+)
+ident(
+  def _new_float_jArray "jniArray.ml" 61 2022 2022 "_none_" 1 0 -1
+)
+"jniArray.ml" 57 1841 1863 "jniArray.ml" 57 1841 1867
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 58 1870 1872 "jniArray.ml" 59 1916 2016
+)
+"jniArray.ml" 58 1870 1876 "jniArray.ml" 58 1870 1884
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 59 1916 1918 "jniArray.ml" 59 1916 2016
+)
+"jniArray.ml" 58 1870 1887 "jniArray.ml" 58 1870 1906
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_float_array
+)
+"jniArray.ml" 58 1870 1907 "jniArray.ml" 58 1870 1911
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 57 1841 1863 "jniArray.ml" 57 1841 1867
+)
+"jniArray.ml" 58 1870 1887 "jniArray.ml" 58 1870 1911
+type(
+  Jni.obj
+)
+"jniArray.ml" 59 1916 1919 "jniArray.ml" 59 1916 1929
+type(
+  (Jni.obj -> int -> float) ->
+  (Jni.obj -> int -> float -> unit) ->
+  (float -> float) -> (float -> float) -> Jni.obj -> (float, float) _Array
+)
+"jniArray.ml" 59 1916 1930 "jniArray.ml" 59 1916 1957
+type(
+  Jni.obj -> int -> float
+)
+ident(
+  ext_ref Jni.get_float_array_element
+)
+"jniArray.ml" 59 1916 1958 "jniArray.ml" 59 1916 1985
+type(
+  Jni.obj -> int -> float -> unit
+)
+ident(
+  ext_ref Jni.set_float_array_element
+)
+"jniArray.ml" 59 1916 1986 "jniArray.ml" 59 1916 1988
+type(
+  float -> float
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 59 1916 1989 "jniArray.ml" 59 1916 1991
+type(
+  float -> float
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 59 1916 1992 "jniArray.ml" 59 1916 2000
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 58 1870 1876 "jniArray.ml" 58 1870 1884
+)
+"jniArray.ml" 59 1916 1919 "jniArray.ml" 59 1916 2000
+call(
+  tail
+)
+type(
+  float jArray
+)
+type(
+  (float, float) _Array
+)
+"jniArray.ml" 58 1870 1872 "jniArray.ml" 59 1916 2016
+type(
+  float jArray
+)
+"jniArray.ml" 61 2022 2026 "jniArray.ml" 61 2022 2044
+type(
+  int -> float jArray
+)
+ident(
+  def _new_double_jArray "jniArray.ml" 65 2203 2203 "_none_" 1 0 -1
+)
+"jniArray.ml" 61 2022 2045 "jniArray.ml" 61 2022 2049
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 62 2052 2054 "jniArray.ml" 63 2099 2201
+)
+"jniArray.ml" 62 2052 2058 "jniArray.ml" 62 2052 2066
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 63 2099 2101 "jniArray.ml" 63 2099 2201
+)
+"jniArray.ml" 62 2052 2069 "jniArray.ml" 62 2052 2089
+type(
+  int -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_double_array
+)
+"jniArray.ml" 62 2052 2090 "jniArray.ml" 62 2052 2094
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 61 2022 2045 "jniArray.ml" 61 2022 2049
+)
+"jniArray.ml" 62 2052 2069 "jniArray.ml" 62 2052 2094
+type(
+  Jni.obj
+)
+"jniArray.ml" 63 2099 2102 "jniArray.ml" 63 2099 2112
+type(
+  (Jni.obj -> int -> float) ->
+  (Jni.obj -> int -> float -> unit) ->
+  (float -> float) -> (float -> float) -> Jni.obj -> (float, float) _Array
+)
+"jniArray.ml" 63 2099 2113 "jniArray.ml" 63 2099 2141
+type(
+  Jni.obj -> int -> float
+)
+ident(
+  ext_ref Jni.get_double_array_element
+)
+"jniArray.ml" 63 2099 2142 "jniArray.ml" 63 2099 2170
+type(
+  Jni.obj -> int -> float -> unit
+)
+ident(
+  ext_ref Jni.set_double_array_element
+)
+"jniArray.ml" 63 2099 2171 "jniArray.ml" 63 2099 2173
+type(
+  float -> float
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 63 2099 2174 "jniArray.ml" 63 2099 2176
+type(
+  float -> float
+)
+ident(
+  int_ref id "jniArray.ml" 9 141 145 "jniArray.ml" 9 141 147
+)
+"jniArray.ml" 63 2099 2177 "jniArray.ml" 63 2099 2185
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 62 2052 2058 "jniArray.ml" 62 2052 2066
+)
+"jniArray.ml" 63 2099 2102 "jniArray.ml" 63 2099 2185
+call(
+  tail
+)
+type(
+  float jArray
+)
+type(
+  (float, float) _Array
+)
+"jniArray.ml" 62 2052 2054 "jniArray.ml" 63 2099 2201
+type(
+  float jArray
+)
+"jniArray.ml" 65 2203 2207 "jniArray.ml" 65 2203 2225
+type(
+  int -> string jArray
+)
+ident(
+  def _new_string_jArray "jniArray.ml" 70 2460 2460 "_none_" 1 0 -1
+)
+"jniArray.ml" 65 2203 2226 "jniArray.ml" 65 2203 2230
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 66 2233 2235 "jniArray.ml" 68 2437 2458
+)
+"jniArray.ml" 66 2233 2239 "jniArray.ml" 66 2233 2247
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 67 2316 2318 "jniArray.ml" 68 2437 2458
+)
+"jniArray.ml" 66 2233 2250 "jniArray.ml" 66 2233 2270
+type(
+  int -> Jni.clazz -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_object_array
+)
+"jniArray.ml" 66 2233 2271 "jniArray.ml" 66 2233 2275
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 65 2203 2226 "jniArray.ml" 65 2203 2230
+)
+"jniArray.ml" 66 2233 2277 "jniArray.ml" 66 2233 2291
+type(
+  string -> Jni.clazz
+)
+ident(
+  ext_ref Jni.find_class
+)
+"jniArray.ml" 66 2233 2292 "jniArray.ml" 66 2233 2310
+type(
+  string
+)
+"jniArray.ml" 66 2233 2276 "jniArray.ml" 66 2233 2311
+type(
+  Jni.clazz
+)
+"jniArray.ml" 66 2233 2250 "jniArray.ml" 66 2233 2311
+type(
+  Jni.obj
+)
+"jniArray.ml" 67 2316 2319 "jniArray.ml" 67 2316 2329
+type(
+  (Jni.obj -> int -> Jni.obj) ->
+  (Jni.obj -> int -> Jni.obj -> unit) ->
+  (Jni.obj -> string) ->
+  (string -> Jni.obj) -> Jni.obj -> (Jni.obj, string) _Array
+)
+"jniArray.ml" 67 2316 2330 "jniArray.ml" 67 2316 2358
+type(
+  Jni.obj -> int -> Jni.obj
+)
+ident(
+  ext_ref Jni.get_object_array_element
+)
+"jniArray.ml" 67 2316 2359 "jniArray.ml" 67 2316 2387
+type(
+  Jni.obj -> int -> Jni.obj -> unit
+)
+ident(
+  ext_ref Jni.set_object_array_element
+)
+"jniArray.ml" 67 2316 2388 "jniArray.ml" 67 2316 2408
+type(
+  Jni.obj -> string
+)
+ident(
+  ext_ref Jni.string_from_java
+)
+"jniArray.ml" 67 2316 2409 "jniArray.ml" 67 2316 2427
+type(
+  string -> Jni.obj
+)
+ident(
+  ext_ref Jni.string_to_java
+)
+"jniArray.ml" 67 2316 2428 "jniArray.ml" 67 2316 2436
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 66 2233 2239 "jniArray.ml" 66 2233 2247
+)
+"jniArray.ml" 67 2316 2319 "jniArray.ml" 67 2316 2436
+call(
+  tail
+)
+type(
+  string jArray
+)
+type(
+  (Jni.obj, string) _Array
+)
+"jniArray.ml" 66 2233 2235 "jniArray.ml" 68 2437 2458
+type(
+  string jArray
+)
+"jniArray.ml" 70 2460 2464 "jniArray.ml" 70 2460 2479
+type(
+  int -> JniHierarchy.top jArray
+)
+ident(
+  def _new_top_jArray "jniArray.ml" 81 2826 2826 "_none_" 1 0 -1
+)
+"jniArray.ml" 70 2460 2480 "jniArray.ml" 70 2460 2484
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 71 2487 2489 "jniArray.ml" 77 2738 2778
+)
+"jniArray.ml" 71 2487 2493 "jniArray.ml" 71 2487 2501
+type(
+  Jni.obj
+)
+ident(
+  def java_obj "jniArray.ml" 72 2570 2572 "jniArray.ml" 77 2738 2778
+)
+"jniArray.ml" 71 2487 2504 "jniArray.ml" 71 2487 2524
+type(
+  int -> Jni.clazz -> Jni.obj
+)
+ident(
+  ext_ref Jni.new_object_array
+)
+"jniArray.ml" 71 2487 2525 "jniArray.ml" 71 2487 2529
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 70 2460 2480 "jniArray.ml" 70 2460 2484
+)
+"jniArray.ml" 71 2487 2531 "jniArray.ml" 71 2487 2545
+type(
+  string -> Jni.clazz
+)
+ident(
+  ext_ref Jni.find_class
+)
+"jniArray.ml" 71 2487 2546 "jniArray.ml" 71 2487 2564
+type(
+  string
+)
+"jniArray.ml" 71 2487 2530 "jniArray.ml" 71 2487 2565
+type(
+  Jni.clazz
+)
+"jniArray.ml" 71 2487 2504 "jniArray.ml" 71 2487 2565
+type(
+  Jni.obj
+)
+"jniArray.ml" 72 2570 2573 "jniArray.ml" 72 2570 2583
+type(
+  (Jni.obj -> int -> Jni.obj) ->
+  (Jni.obj -> int -> Jni.obj -> unit) ->
+  (Jni.obj -> JniHierarchy.top) ->
+  (JniHierarchy.top -> Jni.obj) ->
+  Jni.obj -> (Jni.obj, JniHierarchy.top) _Array
+)
+"jniArray.ml" 73 2585 2590 "jniArray.ml" 73 2585 2618
+type(
+  Jni.obj -> int -> Jni.obj
+)
+ident(
+  ext_ref Jni.get_object_array_element
+)
+"jniArray.ml" 74 2620 2625 "jniArray.ml" 74 2620 2653
+type(
+  Jni.obj -> int -> Jni.obj -> unit
+)
+ident(
+  ext_ref Jni.set_object_array_element
+)
+"jniArray.ml" 75 2654 2664 "jniArray.ml" 75 2654 2670
+type(
+  Jni.obj
+)
+ident(
+  def jniobj "jniArray.ml" 75 2654 2674 "jniArray.ml" 75 2654 2701
+)
+"jniArray.ml" 75 2654 2674 "jniArray.ml" 75 2654 2694
+type(
+  Jni.obj -> JniHierarchy.top
+)
+"jniArray.ml" 75 2654 2695 "jniArray.ml" 75 2654 2701
+type(
+  Jni.obj
+)
+ident(
+  int_ref jniobj "jniArray.ml" 75 2654 2664 "jniArray.ml" 75 2654 2670
+)
+"jniArray.ml" 75 2654 2674 "jniArray.ml" 75 2654 2701
+call(
+  tail
+)
+type(
+  JniHierarchy.top
+)
+"jniArray.ml" 75 2654 2659 "jniArray.ml" 75 2654 2702
+type(
+  Jni.obj -> JniHierarchy.top
+)
+"jniArray.ml" 76 2704 2714 "jniArray.ml" 76 2704 2717
+type(
+  JniHierarchy.top
+)
+ident(
+  def obj "jniArray.ml" 76 2704 2721 "jniArray.ml" 76 2704 2736
+)
+"jniArray.ml" 76 2704 2721 "jniArray.ml" 76 2704 2724
+type(
+  JniHierarchy.top
+)
+ident(
+  int_ref obj "jniArray.ml" 76 2704 2714 "jniArray.ml" 76 2704 2717
+)
+"jniArray.ml" 76 2704 2721 "jniArray.ml" 76 2704 2736
+call(
+  tail
+)
+type(
+  Jni.obj
+)
+"jniArray.ml" 76 2704 2709 "jniArray.ml" 76 2704 2737
+type(
+  JniHierarchy.top -> Jni.obj
+)
+"jniArray.ml" 77 2738 2743 "jniArray.ml" 77 2738 2751
+type(
+  Jni.obj
+)
+ident(
+  int_ref java_obj "jniArray.ml" 71 2487 2493 "jniArray.ml" 71 2487 2501
+)
+"jniArray.ml" 72 2570 2573 "jniArray.ml" 77 2738 2751
+call(
+  tail
+)
+type(
+  JniHierarchy.top jArray
+)
+type(
+  (Jni.obj, JniHierarchy.top) _Array
+)
+"jniArray.ml" 71 2487 2489 "jniArray.ml" 77 2738 2778
+type(
+  JniHierarchy.top jArray
+)
+"jniArray.ml" 81 2826 2830 "jniArray.ml" 81 2826 2849
+type(
+  int -> (int -> bool) -> bool jArray
+)
+ident(
+  def init_boolean_jArray "jniArray.ml" 88 2960 2960 "_none_" 1 0 -1
+)
+"jniArray.ml" 81 2826 2850 "jniArray.ml" 81 2826 2854
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 81 2826 2855 "jniArray.ml" 86 2951 2954
+)
+"jniArray.ml" 81 2826 2855 "jniArray.ml" 81 2826 2856
+type(
+  int -> bool
+)
+ident(
+  def f "jniArray.ml" 82 2859 2861 "jniArray.ml" 86 2951 2954
+)
+"jniArray.ml" 82 2859 2865 "jniArray.ml" 82 2859 2866
+type(
+  bool jArray
+)
+ident(
+  def a "jniArray.ml" 83 2897 2899 "jniArray.ml" 86 2951 2954
+)
+"jniArray.ml" 82 2859 2869 "jniArray.ml" 82 2859 2888
+type(
+  int -> bool jArray
+)
+ident(
+  int_ref _new_boolean_jArray "jniArray.ml" 32 763 767 "jniArray.ml" 32 763 786
+)
+"jniArray.ml" 82 2859 2889 "jniArray.ml" 82 2859 2893
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 81 2826 2850 "jniArray.ml" 81 2826 2854
+)
+"jniArray.ml" 82 2859 2869 "jniArray.ml" 82 2859 2893
+call(
+  stack
+)
+type(
+  bool jArray
+)
+"jniArray.ml" 83 2897 2907 "jniArray.ml" 83 2897 2908
+type(
+  int
+)
+"jniArray.ml" 83 2897 2912 "jniArray.ml" 83 2897 2916
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 83 2897 2917 "jniArray.ml" 83 2897 2921
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 81 2826 2850 "jniArray.ml" 81 2826 2854
+)
+"jniArray.ml" 83 2897 2912 "jniArray.ml" 83 2897 2921
+type(
+  int
+)
+"jniArray.ml" 84 2925 2929 "jniArray.ml" 84 2925 2930
+type(
+  bool jArray
+)
+ident(
+  int_ref a "jniArray.ml" 82 2859 2865 "jniArray.ml" 82 2859 2866
+)
+"jniArray.ml" 84 2925 2929 "jniArray.ml" 84 2925 2934
+call(
+  stack
+)
+type(
+  int -> bool -> unit
+)
+"jniArray.ml" 84 2925 2935 "jniArray.ml" 84 2925 2936
+type(
+  int
+)
+"jniArray.ml" 84 2925 2938 "jniArray.ml" 84 2925 2939
+type(
+  int -> bool
+)
+ident(
+  int_ref f "jniArray.ml" 81 2826 2855 "jniArray.ml" 81 2826 2856
+)
+"jniArray.ml" 84 2925 2940 "jniArray.ml" 84 2925 2941
+type(
+  int
+)
+"jniArray.ml" 84 2925 2937 "jniArray.ml" 84 2925 2942
+call(
+  stack
+)
+type(
+  bool
+)
+"jniArray.ml" 84 2925 2929 "jniArray.ml" 84 2925 2942
+type(
+  unit
+)
+"jniArray.ml" 83 2897 2899 "jniArray.ml" 85 2943 2949
+type(
+  unit
+)
+"jniArray.ml" 86 2951 2953 "jniArray.ml" 86 2951 2954
+type(
+  bool jArray
+)
+ident(
+  int_ref a "jniArray.ml" 82 2859 2865 "jniArray.ml" 82 2859 2866
+)
+"jniArray.ml" 83 2897 2899 "jniArray.ml" 86 2951 2954
+type(
+  bool jArray
+)
+"jniArray.ml" 82 2859 2861 "jniArray.ml" 86 2951 2954
+type(
+  bool jArray
+)
+"jniArray.ml" 88 2960 2964 "jniArray.ml" 88 2960 2980
+type(
+  int -> (int -> int) -> int jArray
+)
+ident(
+  def init_byte_jArray "jniArray.ml" 95 3085 3085 "_none_" 1 0 -1
+)
+"jniArray.ml" 88 2960 2981 "jniArray.ml" 88 2960 2985
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 88 2960 2986 "jniArray.ml" 93 3079 3082
+)
+"jniArray.ml" 88 2960 2986 "jniArray.ml" 88 2960 2987
+type(
+  int -> int
+)
+ident(
+  def f "jniArray.ml" 89 2990 2992 "jniArray.ml" 93 3079 3082
+)
+"jniArray.ml" 89 2990 2996 "jniArray.ml" 89 2990 2997
+type(
+  int jArray
+)
+ident(
+  def a "jniArray.ml" 90 3025 3027 "jniArray.ml" 93 3079 3082
+)
+"jniArray.ml" 89 2990 3000 "jniArray.ml" 89 2990 3016
+type(
+  int -> int jArray
+)
+ident(
+  int_ref _new_byte_jArray "jniArray.ml" 36 947 951 "jniArray.ml" 36 947 967
+)
+"jniArray.ml" 89 2990 3017 "jniArray.ml" 89 2990 3021
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 88 2960 2981 "jniArray.ml" 88 2960 2985
+)
+"jniArray.ml" 89 2990 3000 "jniArray.ml" 89 2990 3021
+call(
+  stack
+)
+type(
+  int jArray
+)
+"jniArray.ml" 90 3025 3035 "jniArray.ml" 90 3025 3036
+type(
+  int
+)
+"jniArray.ml" 90 3025 3040 "jniArray.ml" 90 3025 3044
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 90 3025 3045 "jniArray.ml" 90 3025 3049
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 88 2960 2981 "jniArray.ml" 88 2960 2985
+)
+"jniArray.ml" 90 3025 3040 "jniArray.ml" 90 3025 3049
+type(
+  int
+)
+"jniArray.ml" 91 3053 3057 "jniArray.ml" 91 3053 3058
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 89 2990 2996 "jniArray.ml" 89 2990 2997
+)
+"jniArray.ml" 91 3053 3057 "jniArray.ml" 91 3053 3062
+call(
+  stack
+)
+type(
+  int -> int -> unit
+)
+"jniArray.ml" 91 3053 3063 "jniArray.ml" 91 3053 3064
+type(
+  int
+)
+"jniArray.ml" 91 3053 3066 "jniArray.ml" 91 3053 3067
+type(
+  int -> int
+)
+ident(
+  int_ref f "jniArray.ml" 88 2960 2986 "jniArray.ml" 88 2960 2987
+)
+"jniArray.ml" 91 3053 3068 "jniArray.ml" 91 3053 3069
+type(
+  int
+)
+"jniArray.ml" 91 3053 3065 "jniArray.ml" 91 3053 3070
+call(
+  stack
+)
+type(
+  int
+)
+"jniArray.ml" 91 3053 3057 "jniArray.ml" 91 3053 3070
+type(
+  unit
+)
+"jniArray.ml" 90 3025 3027 "jniArray.ml" 92 3071 3077
+type(
+  unit
+)
+"jniArray.ml" 93 3079 3081 "jniArray.ml" 93 3079 3082
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 89 2990 2996 "jniArray.ml" 89 2990 2997
+)
+"jniArray.ml" 90 3025 3027 "jniArray.ml" 93 3079 3082
+type(
+  int jArray
+)
+"jniArray.ml" 89 2990 2992 "jniArray.ml" 93 3079 3082
+type(
+  int jArray
+)
+"jniArray.ml" 95 3085 3089 "jniArray.ml" 95 3085 3105
+type(
+  int -> (int -> int) -> int jArray
+)
+ident(
+  def init_char_jArray "jniArray.ml" 102 3210 3210 "_none_" 1 0 -1
+)
+"jniArray.ml" 95 3085 3106 "jniArray.ml" 95 3085 3110
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 95 3085 3111 "jniArray.ml" 100 3204 3207
+)
+"jniArray.ml" 95 3085 3111 "jniArray.ml" 95 3085 3112
+type(
+  int -> int
+)
+ident(
+  def f "jniArray.ml" 96 3115 3117 "jniArray.ml" 100 3204 3207
+)
+"jniArray.ml" 96 3115 3121 "jniArray.ml" 96 3115 3122
+type(
+  int jArray
+)
+ident(
+  def a "jniArray.ml" 97 3150 3152 "jniArray.ml" 100 3204 3207
+)
+"jniArray.ml" 96 3115 3125 "jniArray.ml" 96 3115 3141
+type(
+  int -> int jArray
+)
+ident(
+  int_ref _new_char_jArray "jniArray.ml" 40 1118 1122 "jniArray.ml" 40 1118 1138
+)
+"jniArray.ml" 96 3115 3142 "jniArray.ml" 96 3115 3146
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 95 3085 3106 "jniArray.ml" 95 3085 3110
+)
+"jniArray.ml" 96 3115 3125 "jniArray.ml" 96 3115 3146
+call(
+  stack
+)
+type(
+  int jArray
+)
+"jniArray.ml" 97 3150 3160 "jniArray.ml" 97 3150 3161
+type(
+  int
+)
+"jniArray.ml" 97 3150 3165 "jniArray.ml" 97 3150 3169
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 97 3150 3170 "jniArray.ml" 97 3150 3174
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 95 3085 3106 "jniArray.ml" 95 3085 3110
+)
+"jniArray.ml" 97 3150 3165 "jniArray.ml" 97 3150 3174
+type(
+  int
+)
+"jniArray.ml" 98 3178 3182 "jniArray.ml" 98 3178 3183
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 96 3115 3121 "jniArray.ml" 96 3115 3122
+)
+"jniArray.ml" 98 3178 3182 "jniArray.ml" 98 3178 3187
+call(
+  stack
+)
+type(
+  int -> int -> unit
+)
+"jniArray.ml" 98 3178 3188 "jniArray.ml" 98 3178 3189
+type(
+  int
+)
+"jniArray.ml" 98 3178 3191 "jniArray.ml" 98 3178 3192
+type(
+  int -> int
+)
+ident(
+  int_ref f "jniArray.ml" 95 3085 3111 "jniArray.ml" 95 3085 3112
+)
+"jniArray.ml" 98 3178 3193 "jniArray.ml" 98 3178 3194
+type(
+  int
+)
+"jniArray.ml" 98 3178 3190 "jniArray.ml" 98 3178 3195
+call(
+  stack
+)
+type(
+  int
+)
+"jniArray.ml" 98 3178 3182 "jniArray.ml" 98 3178 3195
+type(
+  unit
+)
+"jniArray.ml" 97 3150 3152 "jniArray.ml" 99 3196 3202
+type(
+  unit
+)
+"jniArray.ml" 100 3204 3206 "jniArray.ml" 100 3204 3207
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 96 3115 3121 "jniArray.ml" 96 3115 3122
+)
+"jniArray.ml" 97 3150 3152 "jniArray.ml" 100 3204 3207
+type(
+  int jArray
+)
+"jniArray.ml" 96 3115 3117 "jniArray.ml" 100 3204 3207
+type(
+  int jArray
+)
+"jniArray.ml" 102 3210 3214 "jniArray.ml" 102 3210 3231
+type(
+  int -> (int -> int) -> int jArray
+)
+ident(
+  def init_short_jArray "jniArray.ml" 109 3337 3337 "_none_" 1 0 -1
+)
+"jniArray.ml" 102 3210 3232 "jniArray.ml" 102 3210 3236
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 102 3210 3237 "jniArray.ml" 107 3331 3334
+)
+"jniArray.ml" 102 3210 3237 "jniArray.ml" 102 3210 3238
+type(
+  int -> int
+)
+ident(
+  def f "jniArray.ml" 103 3241 3243 "jniArray.ml" 107 3331 3334
+)
+"jniArray.ml" 103 3241 3247 "jniArray.ml" 103 3241 3248
+type(
+  int jArray
+)
+ident(
+  def a "jniArray.ml" 104 3277 3279 "jniArray.ml" 107 3331 3334
+)
+"jniArray.ml" 103 3241 3251 "jniArray.ml" 103 3241 3268
+type(
+  int -> int jArray
+)
+ident(
+  int_ref _new_short_jArray "jniArray.ml" 44 1289 1293 "jniArray.ml" 44 1289 1310
+)
+"jniArray.ml" 103 3241 3269 "jniArray.ml" 103 3241 3273
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 102 3210 3232 "jniArray.ml" 102 3210 3236
+)
+"jniArray.ml" 103 3241 3251 "jniArray.ml" 103 3241 3273
+call(
+  stack
+)
+type(
+  int jArray
+)
+"jniArray.ml" 104 3277 3287 "jniArray.ml" 104 3277 3288
+type(
+  int
+)
+"jniArray.ml" 104 3277 3292 "jniArray.ml" 104 3277 3296
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 104 3277 3297 "jniArray.ml" 104 3277 3301
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 102 3210 3232 "jniArray.ml" 102 3210 3236
+)
+"jniArray.ml" 104 3277 3292 "jniArray.ml" 104 3277 3301
+type(
+  int
+)
+"jniArray.ml" 105 3305 3309 "jniArray.ml" 105 3305 3310
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 103 3241 3247 "jniArray.ml" 103 3241 3248
+)
+"jniArray.ml" 105 3305 3309 "jniArray.ml" 105 3305 3314
+call(
+  stack
+)
+type(
+  int -> int -> unit
+)
+"jniArray.ml" 105 3305 3315 "jniArray.ml" 105 3305 3316
+type(
+  int
+)
+"jniArray.ml" 105 3305 3318 "jniArray.ml" 105 3305 3319
+type(
+  int -> int
+)
+ident(
+  int_ref f "jniArray.ml" 102 3210 3237 "jniArray.ml" 102 3210 3238
+)
+"jniArray.ml" 105 3305 3320 "jniArray.ml" 105 3305 3321
+type(
+  int
+)
+"jniArray.ml" 105 3305 3317 "jniArray.ml" 105 3305 3322
+call(
+  stack
+)
+type(
+  int
+)
+"jniArray.ml" 105 3305 3309 "jniArray.ml" 105 3305 3322
+type(
+  unit
+)
+"jniArray.ml" 104 3277 3279 "jniArray.ml" 106 3323 3329
+type(
+  unit
+)
+"jniArray.ml" 107 3331 3333 "jniArray.ml" 107 3331 3334
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 103 3241 3247 "jniArray.ml" 103 3241 3248
+)
+"jniArray.ml" 104 3277 3279 "jniArray.ml" 107 3331 3334
+type(
+  int jArray
+)
+"jniArray.ml" 103 3241 3243 "jniArray.ml" 107 3331 3334
+type(
+  int jArray
+)
+"jniArray.ml" 109 3337 3341 "jniArray.ml" 109 3337 3356
+type(
+  int -> (int -> int) -> int jArray
+)
+ident(
+  def init_int_jArray "jniArray.ml" 116 3460 3460 "_none_" 1 0 -1
+)
+"jniArray.ml" 109 3337 3357 "jniArray.ml" 109 3337 3361
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 109 3337 3362 "jniArray.ml" 114 3454 3457
+)
+"jniArray.ml" 109 3337 3362 "jniArray.ml" 109 3337 3363
+type(
+  int -> int
+)
+ident(
+  def f "jniArray.ml" 110 3366 3368 "jniArray.ml" 114 3454 3457
+)
+"jniArray.ml" 110 3366 3372 "jniArray.ml" 110 3366 3373
+type(
+  int jArray
+)
+ident(
+  def a "jniArray.ml" 111 3400 3402 "jniArray.ml" 114 3454 3457
+)
+"jniArray.ml" 110 3366 3376 "jniArray.ml" 110 3366 3391
+type(
+  int -> int jArray
+)
+ident(
+  int_ref _new_int_jArray "jniArray.ml" 49 1493 1497 "jniArray.ml" 49 1493 1512
+)
+"jniArray.ml" 110 3366 3392 "jniArray.ml" 110 3366 3396
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 109 3337 3357 "jniArray.ml" 109 3337 3361
+)
+"jniArray.ml" 110 3366 3376 "jniArray.ml" 110 3366 3396
+call(
+  stack
+)
+type(
+  int jArray
+)
+"jniArray.ml" 111 3400 3410 "jniArray.ml" 111 3400 3411
+type(
+  int
+)
+"jniArray.ml" 111 3400 3415 "jniArray.ml" 111 3400 3419
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 111 3400 3420 "jniArray.ml" 111 3400 3424
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 109 3337 3357 "jniArray.ml" 109 3337 3361
+)
+"jniArray.ml" 111 3400 3415 "jniArray.ml" 111 3400 3424
+type(
+  int
+)
+"jniArray.ml" 112 3428 3432 "jniArray.ml" 112 3428 3433
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 110 3366 3372 "jniArray.ml" 110 3366 3373
+)
+"jniArray.ml" 112 3428 3432 "jniArray.ml" 112 3428 3437
+call(
+  stack
+)
+type(
+  int -> int -> unit
+)
+"jniArray.ml" 112 3428 3438 "jniArray.ml" 112 3428 3439
+type(
+  int
+)
+"jniArray.ml" 112 3428 3441 "jniArray.ml" 112 3428 3442
+type(
+  int -> int
+)
+ident(
+  int_ref f "jniArray.ml" 109 3337 3362 "jniArray.ml" 109 3337 3363
+)
+"jniArray.ml" 112 3428 3443 "jniArray.ml" 112 3428 3444
+type(
+  int
+)
+"jniArray.ml" 112 3428 3440 "jniArray.ml" 112 3428 3445
+call(
+  stack
+)
+type(
+  int
+)
+"jniArray.ml" 112 3428 3432 "jniArray.ml" 112 3428 3445
+type(
+  unit
+)
+"jniArray.ml" 111 3400 3402 "jniArray.ml" 113 3446 3452
+type(
+  unit
+)
+"jniArray.ml" 114 3454 3456 "jniArray.ml" 114 3454 3457
+type(
+  int jArray
+)
+ident(
+  int_ref a "jniArray.ml" 110 3366 3372 "jniArray.ml" 110 3366 3373
+)
+"jniArray.ml" 111 3400 3402 "jniArray.ml" 114 3454 3457
+type(
+  int jArray
+)
+"jniArray.ml" 110 3366 3368 "jniArray.ml" 114 3454 3457
+type(
+  int jArray
+)
+"jniArray.ml" 116 3460 3464 "jniArray.ml" 116 3460 3480
+type(
+  int -> (int -> int64) -> int64 jArray
+)
+ident(
+  def init_long_jArray "jniArray.ml" 123 3585 3585 "_none_" 1 0 -1
+)
+"jniArray.ml" 116 3460 3481 "jniArray.ml" 116 3460 3485
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 116 3460 3486 "jniArray.ml" 121 3579 3582
+)
+"jniArray.ml" 116 3460 3486 "jniArray.ml" 116 3460 3487
+type(
+  int -> int64
+)
+ident(
+  def f "jniArray.ml" 117 3490 3492 "jniArray.ml" 121 3579 3582
+)
+"jniArray.ml" 117 3490 3496 "jniArray.ml" 117 3490 3497
+type(
+  int64 jArray
+)
+ident(
+  def a "jniArray.ml" 118 3525 3527 "jniArray.ml" 121 3579 3582
+)
+"jniArray.ml" 117 3490 3500 "jniArray.ml" 117 3490 3516
+type(
+  int -> int64 jArray
+)
+ident(
+  int_ref _new_long_jArray "jniArray.ml" 53 1668 1672 "jniArray.ml" 53 1668 1688
+)
+"jniArray.ml" 117 3490 3517 "jniArray.ml" 117 3490 3521
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 116 3460 3481 "jniArray.ml" 116 3460 3485
+)
+"jniArray.ml" 117 3490 3500 "jniArray.ml" 117 3490 3521
+call(
+  stack
+)
+type(
+  int64 jArray
+)
+"jniArray.ml" 118 3525 3535 "jniArray.ml" 118 3525 3536
+type(
+  int
+)
+"jniArray.ml" 118 3525 3540 "jniArray.ml" 118 3525 3544
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 118 3525 3545 "jniArray.ml" 118 3525 3549
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 116 3460 3481 "jniArray.ml" 116 3460 3485
+)
+"jniArray.ml" 118 3525 3540 "jniArray.ml" 118 3525 3549
+type(
+  int
+)
+"jniArray.ml" 119 3553 3557 "jniArray.ml" 119 3553 3558
+type(
+  int64 jArray
+)
+ident(
+  int_ref a "jniArray.ml" 117 3490 3496 "jniArray.ml" 117 3490 3497
+)
+"jniArray.ml" 119 3553 3557 "jniArray.ml" 119 3553 3562
+call(
+  stack
+)
+type(
+  int -> int64 -> unit
+)
+"jniArray.ml" 119 3553 3563 "jniArray.ml" 119 3553 3564
+type(
+  int
+)
+"jniArray.ml" 119 3553 3566 "jniArray.ml" 119 3553 3567
+type(
+  int -> int64
+)
+ident(
+  int_ref f "jniArray.ml" 116 3460 3486 "jniArray.ml" 116 3460 3487
+)
+"jniArray.ml" 119 3553 3568 "jniArray.ml" 119 3553 3569
+type(
+  int
+)
+"jniArray.ml" 119 3553 3565 "jniArray.ml" 119 3553 3570
+call(
+  stack
+)
+type(
+  int64
+)
+"jniArray.ml" 119 3553 3557 "jniArray.ml" 119 3553 3570
+type(
+  unit
+)
+"jniArray.ml" 118 3525 3527 "jniArray.ml" 120 3571 3577
+type(
+  unit
+)
+"jniArray.ml" 121 3579 3581 "jniArray.ml" 121 3579 3582
+type(
+  int64 jArray
+)
+ident(
+  int_ref a "jniArray.ml" 117 3490 3496 "jniArray.ml" 117 3490 3497
+)
+"jniArray.ml" 118 3525 3527 "jniArray.ml" 121 3579 3582
+type(
+  int64 jArray
+)
+"jniArray.ml" 117 3490 3492 "jniArray.ml" 121 3579 3582
+type(
+  int64 jArray
+)
+"jniArray.ml" 123 3585 3589 "jniArray.ml" 123 3585 3606
+type(
+  int -> (int -> float) -> float jArray
+)
+ident(
+  def init_float_jArray "jniArray.ml" 130 3712 3712 "_none_" 1 0 -1
+)
+"jniArray.ml" 123 3585 3607 "jniArray.ml" 123 3585 3611
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 123 3585 3612 "jniArray.ml" 128 3706 3709
+)
+"jniArray.ml" 123 3585 3612 "jniArray.ml" 123 3585 3613
+type(
+  int -> float
+)
+ident(
+  def f "jniArray.ml" 124 3616 3618 "jniArray.ml" 128 3706 3709
+)
+"jniArray.ml" 124 3616 3622 "jniArray.ml" 124 3616 3623
+type(
+  float jArray
+)
+ident(
+  def a "jniArray.ml" 125 3652 3654 "jniArray.ml" 128 3706 3709
+)
+"jniArray.ml" 124 3616 3626 "jniArray.ml" 124 3616 3643
+type(
+  int -> float jArray
+)
+ident(
+  int_ref _new_float_jArray "jniArray.ml" 57 1841 1845 "jniArray.ml" 57 1841 1862
+)
+"jniArray.ml" 124 3616 3644 "jniArray.ml" 124 3616 3648
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 123 3585 3607 "jniArray.ml" 123 3585 3611
+)
+"jniArray.ml" 124 3616 3626 "jniArray.ml" 124 3616 3648
+call(
+  stack
+)
+type(
+  float jArray
+)
+"jniArray.ml" 125 3652 3662 "jniArray.ml" 125 3652 3663
+type(
+  int
+)
+"jniArray.ml" 125 3652 3667 "jniArray.ml" 125 3652 3671
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 125 3652 3672 "jniArray.ml" 125 3652 3676
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 123 3585 3607 "jniArray.ml" 123 3585 3611
+)
+"jniArray.ml" 125 3652 3667 "jniArray.ml" 125 3652 3676
+type(
+  int
+)
+"jniArray.ml" 126 3680 3684 "jniArray.ml" 126 3680 3685
+type(
+  float jArray
+)
+ident(
+  int_ref a "jniArray.ml" 124 3616 3622 "jniArray.ml" 124 3616 3623
+)
+"jniArray.ml" 126 3680 3684 "jniArray.ml" 126 3680 3689
+call(
+  stack
+)
+type(
+  int -> float -> unit
+)
+"jniArray.ml" 126 3680 3690 "jniArray.ml" 126 3680 3691
+type(
+  int
+)
+"jniArray.ml" 126 3680 3693 "jniArray.ml" 126 3680 3694
+type(
+  int -> float
+)
+ident(
+  int_ref f "jniArray.ml" 123 3585 3612 "jniArray.ml" 123 3585 3613
+)
+"jniArray.ml" 126 3680 3695 "jniArray.ml" 126 3680 3696
+type(
+  int
+)
+"jniArray.ml" 126 3680 3692 "jniArray.ml" 126 3680 3697
+call(
+  stack
+)
+type(
+  float
+)
+"jniArray.ml" 126 3680 3684 "jniArray.ml" 126 3680 3697
+type(
+  unit
+)
+"jniArray.ml" 125 3652 3654 "jniArray.ml" 127 3698 3704
+type(
+  unit
+)
+"jniArray.ml" 128 3706 3708 "jniArray.ml" 128 3706 3709
+type(
+  float jArray
+)
+ident(
+  int_ref a "jniArray.ml" 124 3616 3622 "jniArray.ml" 124 3616 3623
+)
+"jniArray.ml" 125 3652 3654 "jniArray.ml" 128 3706 3709
+type(
+  float jArray
+)
+"jniArray.ml" 124 3616 3618 "jniArray.ml" 128 3706 3709
+type(
+  float jArray
+)
+"jniArray.ml" 130 3712 3716 "jniArray.ml" 130 3712 3734
+type(
+  int -> (int -> float) -> float jArray
+)
+ident(
+  def init_double_jArray "jniArray.ml" 137 3840 3840 "_none_" 1 0 -1
+)
+"jniArray.ml" 130 3712 3735 "jniArray.ml" 130 3712 3739
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 130 3712 3740 "jniArray.ml" 135 3835 3838
+)
+"jniArray.ml" 130 3712 3740 "jniArray.ml" 130 3712 3741
+type(
+  int -> float
+)
+ident(
+  def f "jniArray.ml" 131 3744 3746 "jniArray.ml" 135 3835 3838
+)
+"jniArray.ml" 131 3744 3750 "jniArray.ml" 131 3744 3751
+type(
+  float jArray
+)
+ident(
+  def a "jniArray.ml" 132 3781 3783 "jniArray.ml" 135 3835 3838
+)
+"jniArray.ml" 131 3744 3754 "jniArray.ml" 131 3744 3772
+type(
+  int -> float jArray
+)
+ident(
+  int_ref _new_double_jArray "jniArray.ml" 61 2022 2026 "jniArray.ml" 61 2022 2044
+)
+"jniArray.ml" 131 3744 3773 "jniArray.ml" 131 3744 3777
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 130 3712 3735 "jniArray.ml" 130 3712 3739
+)
+"jniArray.ml" 131 3744 3754 "jniArray.ml" 131 3744 3777
+call(
+  stack
+)
+type(
+  float jArray
+)
+"jniArray.ml" 132 3781 3791 "jniArray.ml" 132 3781 3792
+type(
+  int
+)
+"jniArray.ml" 132 3781 3796 "jniArray.ml" 132 3781 3800
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 132 3781 3801 "jniArray.ml" 132 3781 3805
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 130 3712 3735 "jniArray.ml" 130 3712 3739
+)
+"jniArray.ml" 132 3781 3796 "jniArray.ml" 132 3781 3805
+type(
+  int
+)
+"jniArray.ml" 133 3809 3813 "jniArray.ml" 133 3809 3814
+type(
+  float jArray
+)
+ident(
+  int_ref a "jniArray.ml" 131 3744 3750 "jniArray.ml" 131 3744 3751
+)
+"jniArray.ml" 133 3809 3813 "jniArray.ml" 133 3809 3818
+call(
+  stack
+)
+type(
+  int -> float -> unit
+)
+"jniArray.ml" 133 3809 3819 "jniArray.ml" 133 3809 3820
+type(
+  int
+)
+"jniArray.ml" 133 3809 3822 "jniArray.ml" 133 3809 3823
+type(
+  int -> float
+)
+ident(
+  int_ref f "jniArray.ml" 130 3712 3740 "jniArray.ml" 130 3712 3741
+)
+"jniArray.ml" 133 3809 3824 "jniArray.ml" 133 3809 3825
+type(
+  int
+)
+"jniArray.ml" 133 3809 3821 "jniArray.ml" 133 3809 3826
+call(
+  stack
+)
+type(
+  float
+)
+"jniArray.ml" 133 3809 3813 "jniArray.ml" 133 3809 3826
+type(
+  unit
+)
+"jniArray.ml" 132 3781 3783 "jniArray.ml" 134 3827 3833
+type(
+  unit
+)
+"jniArray.ml" 135 3835 3837 "jniArray.ml" 135 3835 3838
+type(
+  float jArray
+)
+ident(
+  int_ref a "jniArray.ml" 131 3744 3750 "jniArray.ml" 131 3744 3751
+)
+"jniArray.ml" 132 3781 3783 "jniArray.ml" 135 3835 3838
+type(
+  float jArray
+)
+"jniArray.ml" 131 3744 3746 "jniArray.ml" 135 3835 3838
+type(
+  float jArray
+)
+"jniArray.ml" 137 3840 3844 "jniArray.ml" 137 3840 3862
+type(
+  int -> (int -> string) -> string jArray
+)
+ident(
+  def init_string_jArray "jniArray.ml" 144 3968 3968 "_none_" 1 0 -1
+)
+"jniArray.ml" 137 3840 3863 "jniArray.ml" 137 3840 3867
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 137 3840 3868 "jniArray.ml" 142 3963 3966
+)
+"jniArray.ml" 137 3840 3868 "jniArray.ml" 137 3840 3869
+type(
+  int -> string
+)
+ident(
+  def f "jniArray.ml" 138 3872 3874 "jniArray.ml" 142 3963 3966
+)
+"jniArray.ml" 138 3872 3878 "jniArray.ml" 138 3872 3879
+type(
+  string jArray
+)
+ident(
+  def a "jniArray.ml" 139 3909 3911 "jniArray.ml" 142 3963 3966
+)
+"jniArray.ml" 138 3872 3882 "jniArray.ml" 138 3872 3900
+type(
+  int -> string jArray
+)
+ident(
+  int_ref _new_string_jArray "jniArray.ml" 65 2203 2207 "jniArray.ml" 65 2203 2225
+)
+"jniArray.ml" 138 3872 3901 "jniArray.ml" 138 3872 3905
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 137 3840 3863 "jniArray.ml" 137 3840 3867
+)
+"jniArray.ml" 138 3872 3882 "jniArray.ml" 138 3872 3905
+call(
+  stack
+)
+type(
+  string jArray
+)
+"jniArray.ml" 139 3909 3919 "jniArray.ml" 139 3909 3920
+type(
+  int
+)
+"jniArray.ml" 139 3909 3924 "jniArray.ml" 139 3909 3928
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 139 3909 3929 "jniArray.ml" 139 3909 3933
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 137 3840 3863 "jniArray.ml" 137 3840 3867
+)
+"jniArray.ml" 139 3909 3924 "jniArray.ml" 139 3909 3933
+type(
+  int
+)
+"jniArray.ml" 140 3937 3941 "jniArray.ml" 140 3937 3942
+type(
+  string jArray
+)
+ident(
+  int_ref a "jniArray.ml" 138 3872 3878 "jniArray.ml" 138 3872 3879
+)
+"jniArray.ml" 140 3937 3941 "jniArray.ml" 140 3937 3946
+call(
+  stack
+)
+type(
+  int -> string -> unit
+)
+"jniArray.ml" 140 3937 3947 "jniArray.ml" 140 3937 3948
+type(
+  int
+)
+"jniArray.ml" 140 3937 3950 "jniArray.ml" 140 3937 3951
+type(
+  int -> string
+)
+ident(
+  int_ref f "jniArray.ml" 137 3840 3868 "jniArray.ml" 137 3840 3869
+)
+"jniArray.ml" 140 3937 3952 "jniArray.ml" 140 3937 3953
+type(
+  int
+)
+"jniArray.ml" 140 3937 3949 "jniArray.ml" 140 3937 3954
+call(
+  stack
+)
+type(
+  string
+)
+"jniArray.ml" 140 3937 3941 "jniArray.ml" 140 3937 3954
+type(
+  unit
+)
+"jniArray.ml" 139 3909 3911 "jniArray.ml" 141 3955 3961
+type(
+  unit
+)
+"jniArray.ml" 142 3963 3965 "jniArray.ml" 142 3963 3966
+type(
+  string jArray
+)
+ident(
+  int_ref a "jniArray.ml" 138 3872 3878 "jniArray.ml" 138 3872 3879
+)
+"jniArray.ml" 139 3909 3911 "jniArray.ml" 142 3963 3966
+type(
+  string jArray
+)
+"jniArray.ml" 138 3872 3874 "jniArray.ml" 142 3963 3966
+type(
+  string jArray
+)
+"jniArray.ml" 144 3968 3972 "jniArray.ml" 144 3968 3987
+type(
+  int -> (int -> JniHierarchy.top) -> JniHierarchy.top jArray
+)
+ident(
+  def init_top_jArray "jniArray.ml" 149 4085 4088 "_none_" 1 0 -1
+)
+"jniArray.ml" 144 3968 3988 "jniArray.ml" 144 3968 3992
+type(
+  int
+)
+ident(
+  def size "jniArray.ml" 144 3968 3993 "jniArray.ml" 149 4085 4088
+)
+"jniArray.ml" 144 3968 3993 "jniArray.ml" 144 3968 3994
+type(
+  int -> JniHierarchy.top
+)
+ident(
+  def f "jniArray.ml" 145 3997 3999 "jniArray.ml" 149 4085 4088
+)
+"jniArray.ml" 145 3997 4003 "jniArray.ml" 145 3997 4004
+type(
+  JniHierarchy.top jArray
+)
+ident(
+  def a "jniArray.ml" 146 4031 4033 "jniArray.ml" 149 4085 4088
+)
+"jniArray.ml" 145 3997 4007 "jniArray.ml" 145 3997 4022
+type(
+  int -> JniHierarchy.top jArray
+)
+ident(
+  int_ref _new_top_jArray "jniArray.ml" 70 2460 2464 "jniArray.ml" 70 2460 2479
+)
+"jniArray.ml" 145 3997 4023 "jniArray.ml" 145 3997 4027
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 144 3968 3988 "jniArray.ml" 144 3968 3992
+)
+"jniArray.ml" 145 3997 4007 "jniArray.ml" 145 3997 4027
+call(
+  stack
+)
+type(
+  JniHierarchy.top jArray
+)
+"jniArray.ml" 146 4031 4041 "jniArray.ml" 146 4031 4042
+type(
+  int
+)
+"jniArray.ml" 146 4031 4046 "jniArray.ml" 146 4031 4050
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"jniArray.ml" 146 4031 4051 "jniArray.ml" 146 4031 4055
+type(
+  int
+)
+ident(
+  int_ref size "jniArray.ml" 144 3968 3988 "jniArray.ml" 144 3968 3992
+)
+"jniArray.ml" 146 4031 4046 "jniArray.ml" 146 4031 4055
+type(
+  int
+)
+"jniArray.ml" 147 4059 4063 "jniArray.ml" 147 4059 4064
+type(
+  JniHierarchy.top jArray
+)
+ident(
+  int_ref a "jniArray.ml" 145 3997 4003 "jniArray.ml" 145 3997 4004
+)
+"jniArray.ml" 147 4059 4063 "jniArray.ml" 147 4059 4068
+call(
+  stack
+)
+type(
+  int -> JniHierarchy.top -> unit
+)
+"jniArray.ml" 147 4059 4069 "jniArray.ml" 147 4059 4070
+type(
+  int
+)
+"jniArray.ml" 147 4059 4072 "jniArray.ml" 147 4059 4073
+type(
+  int -> JniHierarchy.top
+)
+ident(
+  int_ref f "jniArray.ml" 144 3968 3993 "jniArray.ml" 144 3968 3994
+)
+"jniArray.ml" 147 4059 4074 "jniArray.ml" 147 4059 4075
+type(
+  int
+)
+"jniArray.ml" 147 4059 4071 "jniArray.ml" 147 4059 4076
+call(
+  stack
+)
+type(
+  JniHierarchy.top
+)
+"jniArray.ml" 147 4059 4063 "jniArray.ml" 147 4059 4076
+type(
+  unit
+)
+"jniArray.ml" 146 4031 4033 "jniArray.ml" 148 4077 4083
+type(
+  unit
+)
+"jniArray.ml" 149 4085 4087 "jniArray.ml" 149 4085 4088
+type(
+  JniHierarchy.top jArray
+)
+ident(
+  int_ref a "jniArray.ml" 145 3997 4003 "jniArray.ml" 145 3997 4004
+)
+"jniArray.ml" 146 4031 4033 "jniArray.ml" 149 4085 4088
+type(
+  JniHierarchy.top jArray
+)
+"jniArray.ml" 145 3997 3999 "jniArray.ml" 149 4085 4088
+type(
+  JniHierarchy.top jArray
+)

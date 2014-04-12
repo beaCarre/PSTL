@@ -1,0 +1,1066 @@
+"javaType.ml" 6 85 93 "javaType.ml" 6 85 99
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  def output "javaType.ml" 6 85 85 "_none_" 1 0 -1
+)
+"javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaType.ml" 6 85 104 "javaType.ml" 23 750 814
+)
+"javaType.ml" 6 85 104 "javaType.ml" 6 85 107
+type(
+  Cidl.typ
+)
+ident(
+  def typ "javaType.ml" 7 110 112 "javaType.ml" 23 750 814
+)
+"javaType.ml" 7 110 118 "javaType.ml" 7 110 121
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "javaType.ml" 6 85 104 "javaType.ml" 6 85 107
+)
+"javaType.ml" 8 127 131 "javaType.ml" 8 127 139
+type(
+  Cidl.typ
+)
+"javaType.ml" 8 127 143 "javaType.ml" 8 127 150
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 8 127 151 "javaType.ml" 8 127 154
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 8 127 155 "javaType.ml" 8 127 164
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 8 127 143 "javaType.ml" 8 127 164
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 9 165 169 "javaType.ml" 9 165 174
+type(
+  Cidl.typ
+)
+"javaType.ml" 9 165 178 "javaType.ml" 9 165 185
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 9 165 186 "javaType.ml" 9 165 189
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 9 165 190 "javaType.ml" 9 165 196
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 9 165 178 "javaType.ml" 9 165 196
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 10 197 201 "javaType.ml" 10 197 206
+type(
+  Cidl.typ
+)
+"javaType.ml" 10 197 210 "javaType.ml" 10 197 217
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 10 197 218 "javaType.ml" 10 197 221
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 10 197 222 "javaType.ml" 10 197 228
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 10 197 210 "javaType.ml" 10 197 228
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 11 229 233 "javaType.ml" 11 229 239
+type(
+  Cidl.typ
+)
+"javaType.ml" 11 229 243 "javaType.ml" 11 229 250
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 11 229 251 "javaType.ml" 11 229 254
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 11 229 255 "javaType.ml" 11 229 262
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 11 229 243 "javaType.ml" 11 229 262
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 12 263 267 "javaType.ml" 12 263 271
+type(
+  Cidl.typ
+)
+"javaType.ml" 12 263 275 "javaType.ml" 12 263 282
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 12 263 283 "javaType.ml" 12 263 286
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 12 263 287 "javaType.ml" 12 263 292
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 12 263 275 "javaType.ml" 12 263 292
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 13 293 297 "javaType.ml" 13 293 305
+type(
+  Cidl.typ
+)
+"javaType.ml" 13 293 309 "javaType.ml" 13 293 316
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 13 293 317 "javaType.ml" 13 293 320
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 13 293 321 "javaType.ml" 13 293 326
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 13 293 309 "javaType.ml" 13 293 326
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 14 327 331 "javaType.ml" 14 327 336
+type(
+  Cidl.typ
+)
+"javaType.ml" 14 327 340 "javaType.ml" 14 327 347
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 14 327 348 "javaType.ml" 14 327 351
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 14 327 352 "javaType.ml" 14 327 358
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 14 327 340 "javaType.ml" 14 327 358
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 15 359 363 "javaType.ml" 15 359 369
+type(
+  Cidl.typ
+)
+"javaType.ml" 15 359 373 "javaType.ml" 15 359 380
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 15 359 381 "javaType.ml" 15 359 384
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 15 359 385 "javaType.ml" 15 359 392
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 15 359 373 "javaType.ml" 15 359 392
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 16 393 397 "javaType.ml" 16 393 404
+type(
+  Cidl.typ
+)
+"javaType.ml" 16 393 408 "javaType.ml" 16 393 415
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 16 393 416 "javaType.ml" 16 393 419
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 16 393 420 "javaType.ml" 16 393 428
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 16 393 408 "javaType.ml" 16 393 428
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 17 429 441 "javaType.ml" 17 429 445
+type(
+  Cidl.object_type
+)
+"javaType.ml" 17 429 433 "javaType.ml" 17 429 445
+type(
+  Cidl.typ
+)
+"javaType.ml" 17 429 449 "javaType.ml" 17 429 456
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 17 429 457 "javaType.ml" 17 429 460
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 17 429 461 "javaType.ml" 17 429 469
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 17 429 449 "javaType.ml" 17 429 469
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 18 470 482 "javaType.ml" 18 470 489
+type(
+  Cidl.object_type
+)
+"javaType.ml" 18 470 474 "javaType.ml" 18 470 489
+type(
+  Cidl.typ
+)
+"javaType.ml" 18 470 493 "javaType.ml" 18 470 500
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 18 470 501 "javaType.ml" 18 470 504
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 18 470 505 "javaType.ml" 18 470 513
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 18 470 493 "javaType.ml" 18 470 513
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 19 514 533 "javaType.ml" 19 514 535
+type(
+  Ident.clazz
+)
+ident(
+  def id "javaType.ml" 19 514 540 "javaType.ml" 19 514 597
+)
+"javaType.ml" 19 514 526 "javaType.ml" 19 514 536
+type(
+  Cidl.object_type
+)
+"javaType.ml" 19 514 518 "javaType.ml" 19 514 536
+type(
+  Cidl.typ
+)
+"javaType.ml" 19 514 540 "javaType.ml" 19 514 547
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 19 514 548 "javaType.ml" 19 514 551
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 19 514 552 "javaType.ml" 19 514 556
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 19 514 558 "javaType.ml" 19 514 593
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"javaType.ml" 19 514 594 "javaType.ml" 19 514 596
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "javaType.ml" 19 514 533 "javaType.ml" 19 514 535
+)
+"javaType.ml" 19 514 557 "javaType.ml" 19 514 597
+call(
+  stack
+)
+type(
+  string
+)
+"javaType.ml" 19 514 540 "javaType.ml" 19 514 597
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 20 598 622 "javaType.ml" 20 598 625
+type(
+  Cidl.typ
+)
+ident(
+  def typ "javaType.ml" 20 598 630 "javaType.ml" 20 598 659
+)
+"javaType.ml" 20 598 610 "javaType.ml" 20 598 626
+type(
+  Cidl.object_type
+)
+"javaType.ml" 20 598 602 "javaType.ml" 20 598 626
+type(
+  Cidl.typ
+)
+"javaType.ml" 20 598 630 "javaType.ml" 20 598 637
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 20 598 638 "javaType.ml" 20 598 641
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 20 598 642 "javaType.ml" 20 598 648
+type(
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaType.ml" 20 598 649 "javaType.ml" 20 598 655
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  int_ref output "javaType.ml" 6 85 93 "javaType.ml" 6 85 99
+)
+"javaType.ml" 20 598 656 "javaType.ml" 20 598 659
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "javaType.ml" 20 598 622 "javaType.ml" 20 598 625
+)
+"javaType.ml" 20 598 630 "javaType.ml" 20 598 659
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 21 660 680 "javaType.ml" 21 660 683
+type(
+  Cidl.typ
+)
+ident(
+  def typ "javaType.ml" 21 660 688 "javaType.ml" 21 660 717
+)
+"javaType.ml" 21 660 672 "javaType.ml" 21 660 684
+type(
+  Cidl.object_type
+)
+"javaType.ml" 21 660 664 "javaType.ml" 21 660 684
+type(
+  Cidl.typ
+)
+"javaType.ml" 21 660 688 "javaType.ml" 21 660 695
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 21 660 696 "javaType.ml" 21 660 699
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 21 660 700 "javaType.ml" 21 660 706
+type(
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaType.ml" 21 660 707 "javaType.ml" 21 660 713
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  int_ref output "javaType.ml" 6 85 93 "javaType.ml" 6 85 99
+)
+"javaType.ml" 21 660 714 "javaType.ml" 21 660 717
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "javaType.ml" 21 660 680 "javaType.ml" 21 660 683
+)
+"javaType.ml" 21 660 688 "javaType.ml" 21 660 717
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 22 718 722 "javaType.ml" 22 718 727
+type(
+  Cidl.typ
+)
+"javaType.ml" 22 718 731 "javaType.ml" 22 718 738
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 22 718 739 "javaType.ml" 22 718 742
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 22 718 743 "javaType.ml" 22 718 749
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 22 718 731 "javaType.ml" 22 718 749
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 23 750 764 "javaType.ml" 23 750 765
+type(
+  Ident.clazz
+)
+"javaType.ml" 23 750 754 "javaType.ml" 23 750 765
+type(
+  Cidl.typ
+)
+"javaType.ml" 23 750 769 "javaType.ml" 23 750 776
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 23 750 777 "javaType.ml" 23 750 780
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 6 85 100 "javaType.ml" 6 85 103
+)
+"javaType.ml" 23 750 781 "javaType.ml" 23 750 814
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaType.ml" 23 750 769 "javaType.ml" 23 750 814
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 7 110 112 "javaType.ml" 23 750 814
+type(
+  unit
+)
+"javaType.ml" 25 817 821 "javaType.ml" 25 817 841
+type(
+  Format.formatter -> string * Cidl.typ -> unit
+)
+ident(
+  def output_convert_to_ml "javaType.ml" 38 1610 1684 "_none_" 1 0 -1
+)
+"javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaType.ml" 25 817 846 "javaType.ml" 38 1610 1684
+)
+"javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+type(
+  string
+)
+ident(
+  def name "javaType.ml" 26 859 861 "javaType.ml" 38 1610 1684
+)
+"javaType.ml" 25 817 852 "javaType.ml" 25 817 855
+type(
+  Cidl.typ
+)
+ident(
+  def typ "javaType.ml" 26 859 861 "javaType.ml" 38 1610 1684
+)
+"javaType.ml" 25 817 846 "javaType.ml" 25 817 856
+type(
+  string * Cidl.typ
+)
+"javaType.ml" 26 859 867 "javaType.ml" 26 859 870
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "javaType.ml" 25 817 852 "javaType.ml" 25 817 855
+)
+"javaType.ml" 27 876 880 "javaType.ml" 27 876 888
+type(
+  Cidl.typ
+)
+"javaType.ml" 27 876 892 "javaType.ml" 27 876 899
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 27 876 900 "javaType.ml" 27 876 903
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 27 876 904 "javaType.ml" 27 876 944
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 27 876 945 "javaType.ml" 27 876 949
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 27 876 892 "javaType.ml" 27 876 949
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 28 950 954 "javaType.ml" 28 950 959
+type(
+  Cidl.typ
+)
+"javaType.ml" 28 950 963 "javaType.ml" 28 950 970
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 28 950 971 "javaType.ml" 28 950 974
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 28 950 975 "javaType.ml" 28 950 1012
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 28 950 1013 "javaType.ml" 28 950 1017
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 28 950 963 "javaType.ml" 28 950 1017
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 29 1018 1022 "javaType.ml" 29 1018 1027
+type(
+  Cidl.typ
+)
+"javaType.ml" 29 1018 1031 "javaType.ml" 29 1018 1038
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 29 1018 1039 "javaType.ml" 29 1018 1042
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 29 1018 1043 "javaType.ml" 29 1018 1080
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 29 1018 1081 "javaType.ml" 29 1018 1085
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 29 1018 1031 "javaType.ml" 29 1018 1085
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 30 1086 1090 "javaType.ml" 30 1086 1096
+type(
+  Cidl.typ
+)
+"javaType.ml" 30 1086 1100 "javaType.ml" 30 1086 1107
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 30 1086 1108 "javaType.ml" 30 1086 1111
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 30 1086 1112 "javaType.ml" 30 1086 1150
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 30 1086 1151 "javaType.ml" 30 1086 1155
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 30 1086 1100 "javaType.ml" 30 1086 1155
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 31 1156 1160 "javaType.ml" 31 1156 1164
+type(
+  Cidl.typ
+)
+"javaType.ml" 31 1156 1168 "javaType.ml" 31 1156 1175
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 31 1156 1176 "javaType.ml" 31 1156 1179
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 31 1156 1180 "javaType.ml" 31 1156 1216
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 31 1156 1217 "javaType.ml" 31 1156 1221
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 31 1156 1168 "javaType.ml" 31 1156 1221
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 32 1222 1226 "javaType.ml" 32 1222 1234
+type(
+  Cidl.typ
+)
+"javaType.ml" 32 1222 1238 "javaType.ml" 32 1222 1245
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 32 1222 1246 "javaType.ml" 32 1222 1249
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 32 1222 1250 "javaType.ml" 32 1222 1290
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 32 1222 1291 "javaType.ml" 32 1222 1295
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 32 1222 1238 "javaType.ml" 32 1222 1295
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 33 1296 1300 "javaType.ml" 33 1296 1305
+type(
+  Cidl.typ
+)
+"javaType.ml" 33 1296 1309 "javaType.ml" 33 1296 1316
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 33 1296 1317 "javaType.ml" 33 1296 1320
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 33 1296 1321 "javaType.ml" 33 1296 1358
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 33 1296 1359 "javaType.ml" 33 1296 1363
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 33 1296 1309 "javaType.ml" 33 1296 1363
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 34 1364 1368 "javaType.ml" 34 1364 1374
+type(
+  Cidl.typ
+)
+"javaType.ml" 34 1364 1378 "javaType.ml" 34 1364 1385
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 34 1364 1386 "javaType.ml" 34 1364 1389
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 34 1364 1390 "javaType.ml" 34 1364 1428
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 34 1364 1429 "javaType.ml" 34 1364 1433
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 34 1364 1378 "javaType.ml" 34 1364 1433
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 35 1434 1438 "javaType.ml" 35 1434 1445
+type(
+  Cidl.typ
+)
+"javaType.ml" 35 1434 1449 "javaType.ml" 35 1434 1456
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 35 1434 1457 "javaType.ml" 35 1434 1460
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 35 1434 1461 "javaType.ml" 35 1434 1500
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 35 1434 1501 "javaType.ml" 35 1434 1505
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 35 1434 1449 "javaType.ml" 35 1434 1505
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 36 1506 1518 "javaType.ml" 36 1506 1519
+type(
+  Cidl.object_type
+)
+"javaType.ml" 36 1506 1510 "javaType.ml" 36 1506 1519
+type(
+  Cidl.typ
+)
+"javaType.ml" 36 1506 1523 "javaType.ml" 36 1506 1530
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaType.ml" 36 1506 1531 "javaType.ml" 36 1506 1534
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaType.ml" 25 817 842 "javaType.ml" 25 817 845
+)
+"javaType.ml" 36 1506 1535 "javaType.ml" 36 1506 1539
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaType.ml" 36 1506 1540 "javaType.ml" 36 1506 1544
+type(
+  string
+)
+ident(
+  int_ref name "javaType.ml" 25 817 847 "javaType.ml" 25 817 851
+)
+"javaType.ml" 36 1506 1523 "javaType.ml" 36 1506 1544
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 37 1545 1549 "javaType.ml" 37 1545 1554
+type(
+  Cidl.typ
+)
+"javaType.ml" 37 1545 1558 "javaType.ml" 37 1545 1569
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"javaType.ml" 37 1545 1570 "javaType.ml" 37 1545 1609
+type(
+  string
+)
+"javaType.ml" 37 1545 1558 "javaType.ml" 37 1545 1609
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 38 1610 1624 "javaType.ml" 38 1610 1625
+type(
+  Ident.clazz
+)
+"javaType.ml" 38 1610 1614 "javaType.ml" 38 1610 1625
+type(
+  Cidl.typ
+)
+"javaType.ml" 38 1610 1629 "javaType.ml" 38 1610 1640
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"javaType.ml" 38 1610 1641 "javaType.ml" 38 1610 1684
+type(
+  string
+)
+"javaType.ml" 38 1610 1629 "javaType.ml" 38 1610 1684
+call(
+  tail
+)
+type(
+  unit
+)
+"javaType.ml" 26 859 861 "javaType.ml" 38 1610 1684
+type(
+  unit
+)

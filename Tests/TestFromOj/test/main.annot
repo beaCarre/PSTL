@@ -957,3 +957,206 @@ type(
 type(
   unit
 )
+"main.ml" 54 1149 1149 "main.ml" 54 1149 1156
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 54 1149 1157 "main.ml" 54 1149 1172
+type(
+  string
+)
+"main.ml" 54 1149 1149 "main.ml" 54 1149 1172
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 55 1175 1179 "main.ml" 55 1175 1180
+type(
+  bool
+)
+ident(
+  def r "main.ml" 55 1175 1212 "main.ml" 55 1175 1273
+)
+"main.ml" 55 1175 1184 "main.ml" 55 1175 1187
+type(
+  P.colored_point
+)
+ident(
+  int_ref pc2 "main.ml" 42 893 897 "main.ml" 42 893 900
+)
+"main.ml" 55 1175 1184 "main.ml" 55 1175 1204
+call(
+  stack
+)
+type(
+  P.jColoredPoint -> bool
+)
+"main.ml" 55 1175 1205 "main.ml" 55 1175 1207
+type(
+  P.colored_point
+)
+ident(
+  int_ref pc "main.ml" 38 776 780 "main.ml" 38 776 782
+)
+"main.ml" 55 1175 1183 "main.ml" 55 1175 1208
+type(
+  bool
+)
+"main.ml" 55 1175 1212 "main.ml" 55 1175 1224
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"main.ml" 55 1175 1229 "main.ml" 55 1175 1230
+type(
+  bool
+)
+ident(
+  int_ref r "main.ml" 55 1175 1179 "main.ml" 55 1175 1180
+)
+"main.ml" 55 1175 1236 "main.ml" 55 1175 1242
+type(
+  string
+)
+"main.ml" 55 1175 1248 "main.ml" 55 1175 1255
+type(
+  string
+)
+"main.ml" 55 1175 1225 "main.ml" 55 1175 1256
+type(
+  string
+)
+"main.ml" 55 1175 1212 "main.ml" 55 1175 1256
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 55 1175 1257 "main.ml" 55 1175 1270
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"main.ml" 55 1175 1271 "main.ml" 55 1175 1273
+type(
+  unit
+)
+"main.ml" 55 1175 1257 "main.ml" 55 1175 1273
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 55 1175 1212 "main.ml" 55 1175 1273
+type(
+  unit
+)
+"main.ml" 55 1175 1175 "main.ml" 55 1175 1273
+type(
+  unit
+)
+"main.ml" 57 1277 1277 "main.ml" 57 1277 1284
+type(
+  string -> unit
+)
+ident(
+  int_ref display "main.ml" 3 8 12 "main.ml" 3 8 19
+)
+"main.ml" 57 1277 1285 "main.ml" 57 1277 1308
+type(
+  string
+)
+"main.ml" 57 1277 1277 "main.ml" 57 1277 1308
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 58 1311 1315 "main.ml" 58 1311 1316
+type(
+  float
+)
+ident(
+  def d "main.ml" 58 1311 1338 "main.ml" 58 1311 1369
+)
+"main.ml" 58 1311 1319 "main.ml" 58 1311 1322
+type(
+  P.colored_point
+)
+ident(
+  int_ref pc2 "main.ml" 42 893 897 "main.ml" 42 893 900
+)
+"main.ml" 58 1311 1319 "main.ml" 58 1311 1331
+call(
+  stack
+)
+type(
+  unit -> float
+)
+"main.ml" 58 1311 1332 "main.ml" 58 1311 1334
+type(
+  unit
+)
+"main.ml" 58 1311 1319 "main.ml" 58 1311 1334
+type(
+  float
+)
+"main.ml" 58 1311 1338 "main.ml" 58 1311 1349
+type(
+  float -> unit
+)
+ident(
+  ext_ref Pervasives.print_float
+)
+"main.ml" 58 1311 1350 "main.ml" 58 1311 1351
+type(
+  float
+)
+ident(
+  int_ref d "main.ml" 58 1311 1315 "main.ml" 58 1311 1316
+)
+"main.ml" 58 1311 1338 "main.ml" 58 1311 1351
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 58 1311 1353 "main.ml" 58 1311 1366
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"main.ml" 58 1311 1367 "main.ml" 58 1311 1369
+type(
+  unit
+)
+"main.ml" 58 1311 1353 "main.ml" 58 1311 1369
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 58 1311 1338 "main.ml" 58 1311 1369
+type(
+  unit
+)
+"main.ml" 58 1311 1311 "main.ml" 58 1311 1369
+type(
+  unit
+)

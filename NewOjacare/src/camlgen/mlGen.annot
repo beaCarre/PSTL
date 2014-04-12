@@ -1,0 +1,2699 @@
+"mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  def _loc "mlGen.ml" 10 154 154 "_none_" 1 0 -1
+)
+"mlGen.ml" 7 91 102 "mlGen.ml" 7 91 111
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  ext_ref Camlp4.PreCast.Loc.ghost
+)
+"mlGen.ml" 10 154 158 "mlGen.ml" 10 154 167
+type(
+  Camlp4.PreCast.Ast.expr ->
+  Camlp4.PreCast.Ast.expr list -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def make_call "mlGen.ml" 18 349 349 "_none_" 1 0 -1
+)
+"mlGen.ml" 10 154 168 "mlGen.ml" 10 154 169
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def f "mlGen.ml" 10 154 170 "mlGen.ml" 15 292 300
+)
+"mlGen.ml" 10 154 170 "mlGen.ml" 10 154 175
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+ident(
+  def nargs "mlGen.ml" 11 178 180 "mlGen.ml" 15 292 300
+)
+"mlGen.ml" 11 178 186 "mlGen.ml" 11 178 191
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+ident(
+  int_ref nargs "mlGen.ml" 10 154 170 "mlGen.ml" 10 154 175
+)
+"mlGen.ml" 12 197 201 "mlGen.ml" 12 197 203
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+"mlGen.ml" 12 197 214 "mlGen.ml" 12 197 214
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 12 197 215 "mlGen.ml" 12 197 216
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref f "mlGen.ml" 10 154 168 "mlGen.ml" 10 154 169
+)
+"mlGen.ml" 13 225 229 "mlGen.ml" 13 225 234
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+ident(
+  def nargs "mlGen.ml" 13 225 238 "mlGen.ml" 15 292 300
+)
+"mlGen.ml" 13 225 238 "mlGen.ml" 13 225 252
+type(
+  (Camlp4.PreCast.Ast.expr ->
+   Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr) ->
+  Camlp4.PreCast.Ast.expr ->
+  Camlp4.PreCast.Ast.expr list -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref List.fold_left
+)
+"mlGen.ml" 14 253 259 "mlGen.ml" 14 253 260
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlGen.ml" 14 253 261 "mlGen.ml" 14 253 290
+)
+"mlGen.ml" 14 253 261 "mlGen.ml" 14 253 265
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def narg "mlGen.ml" 14 253 276 "mlGen.ml" 14 253 276
+)
+"mlGen.ml" 14 253 276 "mlGen.ml" 14 253 276
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 14 253 277 "mlGen.ml" 14 253 278
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 14 253 259 "mlGen.ml" 14 253 260
+)
+"mlGen.ml" 14 253 281 "mlGen.ml" 14 253 285
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref narg "mlGen.ml" 14 253 261 "mlGen.ml" 14 253 265
+)
+"mlGen.ml" 14 253 261 "mlGen.ml" 14 253 290
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 14 253 259 "mlGen.ml" 14 253 290
+type(
+  Camlp4.PreCast.Ast.expr ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 15 292 293 "mlGen.ml" 15 292 294
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref f "mlGen.ml" 10 154 168 "mlGen.ml" 10 154 169
+)
+"mlGen.ml" 15 292 295 "mlGen.ml" 15 292 300
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+ident(
+  int_ref nargs "mlGen.ml" 13 225 229 "mlGen.ml" 13 225 234
+)
+"mlGen.ml" 13 225 238 "mlGen.ml" 15 292 300
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 11 178 180 "mlGen.ml" 15 292 300
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 10 154 170 "mlGen.ml" 15 292 300
+type(
+  Camlp4.PreCast.Ast.expr list -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 10 154 168 "mlGen.ml" 15 292 300
+type(
+  Camlp4.PreCast.Ast.expr ->
+  Camlp4.PreCast.Ast.expr list -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 18 349 353 "mlGen.ml" 18 349 365
+type(
+  string -> string list -> Camlp4.PreCast.Ast.class_str_item
+)
+ident(
+  def make_inherit "mlGen.ml" 30 642 642 "_none_" 1 0 -1
+)
+"mlGen.ml" 18 349 366 "mlGen.ml" 18 349 371
+type(
+  string
+)
+ident(
+  def super "mlGen.ml" 18 349 372 "mlGen.ml" 26 574 608
+)
+"mlGen.ml" 18 349 372 "mlGen.ml" 18 349 377
+type(
+  string list
+)
+ident(
+  def nargs "mlGen.ml" 19 380 382 "mlGen.ml" 26 574 608
+)
+"mlGen.ml" 19 380 386 "mlGen.ml" 19 380 387
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def e "mlGen.ml" 26 574 593 "mlGen.ml" 26 574 593
+)
+"mlGen.ml" 19 380 397 "mlGen.ml" 19 380 402
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlGen.ml" 18 349 372 "mlGen.ml" 18 349 377
+)
+"mlGen.ml" 20 408 412 "mlGen.ml" 20 408 414
+type(
+  string list
+)
+"mlGen.ml" 20 408 431 "mlGen.ml" 20 408 431
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.virtual_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 20 408 431 "mlGen.ml" 20 408 436
+type(
+  string
+)
+ident(
+  int_ref super "mlGen.ml" 18 349 366 "mlGen.ml" 18 349 371
+)
+"mlGen.ml" 21 450 454 "mlGen.ml" 21 450 459
+type(
+  string list
+)
+ident(
+  def nargs "mlGen.ml" 22 463 469 "mlGen.ml" 24 533 568
+)
+"mlGen.ml" 22 463 469 "mlGen.ml" 22 463 483
+type(
+  (Camlp4.PreCast.Ast.class_expr -> string -> Camlp4.PreCast.Ast.class_expr) ->
+  Camlp4.PreCast.Ast.class_expr ->
+  string list -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  ext_ref List.fold_left
+)
+"mlGen.ml" 23 484 490 "mlGen.ml" 23 484 491
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def e "mlGen.ml" 23 484 492 "mlGen.ml" 23 484 531
+)
+"mlGen.ml" 23 484 492 "mlGen.ml" 23 484 496
+type(
+  string
+)
+ident(
+  def narg "mlGen.ml" 23 484 513 "mlGen.ml" 23 484 513
+)
+"mlGen.ml" 23 484 513 "mlGen.ml" 23 484 513
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 23 484 514 "mlGen.ml" 23 484 515
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref e "mlGen.ml" 23 484 490 "mlGen.ml" 23 484 491
+)
+"mlGen.ml" 23 484 513 "mlGen.ml" 23 484 517
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 23 484 492 "mlGen.ml" 23 484 496
+)
+"mlGen.ml" 23 484 492 "mlGen.ml" 23 484 531
+type(
+  string -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 23 484 490 "mlGen.ml" 23 484 531
+type(
+  Camlp4.PreCast.Ast.class_expr -> string -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 24 533 547 "mlGen.ml" 24 533 547
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.virtual_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 24 533 547 "mlGen.ml" 24 533 552
+type(
+  string
+)
+ident(
+  int_ref super "mlGen.ml" 18 349 366 "mlGen.ml" 18 349 371
+)
+"mlGen.ml" 24 533 563 "mlGen.ml" 24 533 568
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlGen.ml" 21 450 454 "mlGen.ml" 21 450 459
+)
+"mlGen.ml" 22 463 469 "mlGen.ml" 24 533 568
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 19 380 391 "mlGen.ml" 24 533 568
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 26 574 593 "mlGen.ml" 26 574 593
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.override_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlGen.ml" 26 574 602 "mlGen.ml" 26 574 603
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref e "mlGen.ml" 19 380 386 "mlGen.ml" 19 380 387
+)
+"mlGen.ml" 19 380 382 "mlGen.ml" 26 574 608
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlGen.ml" 18 349 372 "mlGen.ml" 26 574 608
+type(
+  string list -> Camlp4.PreCast.Ast.class_str_item
+)
+"mlGen.ml" 18 349 366 "mlGen.ml" 26 574 608
+type(
+  string -> string list -> Camlp4.PreCast.Ast.class_str_item
+)
+"mlGen.ml" 30 642 646 "mlGen.ml" 30 642 654
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def make_fun "mlGen.ml" 44 1270 1270 "_none_" 1 0 -1
+)
+"mlGen.ml" 30 642 655 "mlGen.ml" 30 642 659
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlGen.ml" 30 642 660 "mlGen.ml" 41 1216 1226
+)
+"mlGen.ml" 30 642 660 "mlGen.ml" 30 642 664
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlGen.ml" 31 667 669 "mlGen.ml" 41 1216 1226
+)
+"mlGen.ml" 31 667 675 "mlGen.ml" 31 667 679
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlGen.ml" 30 642 655 "mlGen.ml" 30 642 659
+)
+"mlGen.ml" 32 685 689 "mlGen.ml" 32 685 691
+type(
+  (string * Cidl.typ) list
+)
+"mlGen.ml" 32 685 702 "mlGen.ml" 32 685 702
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 32 685 713 "mlGen.ml" 32 685 717
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlGen.ml" 30 642 660 "mlGen.ml" 30 642 664
+)
+"mlGen.ml" 33 723 727 "mlGen.ml" 33 723 731
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlGen.ml" 34 735 741 "mlGen.ml" 41 1216 1226
+)
+"mlGen.ml" 34 735 741 "mlGen.ml" 34 735 756
+type(
+  (string * Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr) ->
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlGen.ml" 35 757 764 "mlGen.ml" 35 757 768
+type(
+  string
+)
+ident(
+  def narg "mlGen.ml" 35 757 775 "mlGen.ml" 40 1175 1214
+)
+"mlGen.ml" 35 757 769 "mlGen.ml" 35 757 773
+type(
+  Cidl.typ
+)
+ident(
+  def targ "mlGen.ml" 35 757 775 "mlGen.ml" 40 1175 1214
+)
+"mlGen.ml" 35 757 764 "mlGen.ml" 35 757 773
+type(
+  string * Cidl.typ
+)
+"mlGen.ml" 35 757 775 "mlGen.ml" 35 757 776
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlGen.ml" 35 757 780 "mlGen.ml" 40 1175 1214
+)
+"mlGen.ml" 35 757 786 "mlGen.ml" 35 757 790
+type(
+  Cidl.typ
+)
+ident(
+  int_ref targ "mlGen.ml" 35 757 769 "mlGen.ml" 35 757 773
+)
+"mlGen.ml" 36 796 814 "mlGen.ml" 36 796 816
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlGen.ml" 36 796 828 "mlGen.ml" 36 796 828
+)
+"mlGen.ml" 36 796 808 "mlGen.ml" 36 796 816
+type(
+  Cidl.object_type
+)
+"mlGen.ml" 36 796 799 "mlGen.ml" 36 796 817
+type(
+  Cidl.typ
+)
+"mlGen.ml" 36 796 828 "mlGen.ml" 36 796 828
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 36 796 828 "mlGen.ml" 36 796 832
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 35 757 764 "mlGen.ml" 35 757 768
+)
+"mlGen.ml" 36 796 828 "mlGen.ml" 36 796 851
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_name
+)
+"mlGen.ml" 36 796 852 "mlGen.ml" 36 796 854
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlGen.ml" 36 796 814 "mlGen.ml" 36 796 816
+)
+"mlGen.ml" 36 796 828 "mlGen.ml" 36 796 854
+call(
+  stack
+)
+type(
+  string
+)
+"mlGen.ml" 36 796 884 "mlGen.ml" 36 796 885
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 35 757 775 "mlGen.ml" 35 757 776
+)
+"mlGen.ml" 37 890 909 "mlGen.ml" 37 890 910
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlGen.ml" 37 890 922 "mlGen.ml" 37 890 922
+)
+"mlGen.ml" 37 890 902 "mlGen.ml" 37 890 910
+type(
+  Cidl.object_type
+)
+"mlGen.ml" 37 890 893 "mlGen.ml" 37 890 911
+type(
+  Cidl.typ
+)
+"mlGen.ml" 37 890 922 "mlGen.ml" 37 890 922
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 37 890 922 "mlGen.ml" 37 890 926
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 35 757 764 "mlGen.ml" 35 757 768
+)
+"mlGen.ml" 37 890 947 "mlGen.ml" 37 890 974
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature_of_type
+)
+"mlGen.ml" 37 890 975 "mlGen.ml" 37 890 976
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlGen.ml" 37 890 909 "mlGen.ml" 37 890 910
+)
+"mlGen.ml" 37 890 947 "mlGen.ml" 37 890 976
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlGen.ml" 37 890 983 "mlGen.ml" 37 890 984
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 35 757 775 "mlGen.ml" 35 757 776
+)
+"mlGen.ml" 38 989 1012 "mlGen.ml" 38 989 1013
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlGen.ml" 38 989 1025 "mlGen.ml" 38 989 1025
+)
+"mlGen.ml" 38 989 1001 "mlGen.ml" 38 989 1013
+type(
+  Cidl.object_type
+)
+"mlGen.ml" 38 989 992 "mlGen.ml" 38 989 1014
+type(
+  Cidl.typ
+)
+"mlGen.ml" 38 989 1025 "mlGen.ml" 38 989 1025
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 38 989 1025 "mlGen.ml" 38 989 1029
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 35 757 764 "mlGen.ml" 35 757 768
+)
+"mlGen.ml" 38 989 1060 "mlGen.ml" 38 989 1087
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature_of_type
+)
+"mlGen.ml" 38 989 1088 "mlGen.ml" 38 989 1089
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlGen.ml" 38 989 1012 "mlGen.ml" 38 989 1013
+)
+"mlGen.ml" 38 989 1060 "mlGen.ml" 38 989 1089
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlGen.ml" 38 989 1096 "mlGen.ml" 38 989 1097
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 35 757 775 "mlGen.ml" 35 757 776
+)
+"mlGen.ml" 39 1102 1113 "mlGen.ml" 39 1102 1117
+type(
+  Cidl.object_type
+)
+"mlGen.ml" 39 1102 1105 "mlGen.ml" 39 1102 1117
+type(
+  Cidl.typ
+)
+"mlGen.ml" 39 1102 1128 "mlGen.ml" 39 1102 1128
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 39 1102 1128 "mlGen.ml" 39 1102 1132
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 35 757 764 "mlGen.ml" 35 757 768
+)
+"mlGen.ml" 39 1102 1169 "mlGen.ml" 39 1102 1170
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 35 757 775 "mlGen.ml" 35 757 776
+)
+"mlGen.ml" 40 1175 1178 "mlGen.ml" 40 1175 1179
+type(
+  Cidl.typ
+)
+"mlGen.ml" 40 1175 1190 "mlGen.ml" 40 1175 1190
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 40 1175 1190 "mlGen.ml" 40 1175 1194
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 35 757 764 "mlGen.ml" 35 757 768
+)
+"mlGen.ml" 40 1175 1209 "mlGen.ml" 40 1175 1210
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 35 757 775 "mlGen.ml" 35 757 776
+)
+"mlGen.ml" 35 757 780 "mlGen.ml" 40 1175 1214
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 35 757 775 "mlGen.ml" 40 1175 1214
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 35 757 763 "mlGen.ml" 40 1175 1214
+type(
+  string * Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 41 1216 1217 "mlGen.ml" 41 1216 1221
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlGen.ml" 33 723 727 "mlGen.ml" 33 723 731
+)
+"mlGen.ml" 41 1216 1222 "mlGen.ml" 41 1216 1226
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlGen.ml" 30 642 660 "mlGen.ml" 30 642 664
+)
+"mlGen.ml" 34 735 741 "mlGen.ml" 41 1216 1226
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 31 667 669 "mlGen.ml" 41 1216 1226
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 30 642 660 "mlGen.ml" 41 1216 1226
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 30 642 655 "mlGen.ml" 41 1216 1226
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 44 1270 1274 "mlGen.ml" 44 1270 1291
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def make_callback_fun "mlGen.ml" 56 1717 1717 "_none_" 1 0 -1
+)
+"mlGen.ml" 44 1270 1292 "mlGen.ml" 44 1270 1296
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlGen.ml" 44 1270 1297 "mlGen.ml" 53 1649 1659
+)
+"mlGen.ml" 44 1270 1297 "mlGen.ml" 44 1270 1301
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlGen.ml" 45 1304 1306 "mlGen.ml" 53 1649 1659
+)
+"mlGen.ml" 45 1304 1312 "mlGen.ml" 45 1304 1316
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlGen.ml" 44 1270 1292 "mlGen.ml" 44 1270 1296
+)
+"mlGen.ml" 46 1322 1326 "mlGen.ml" 46 1322 1328
+type(
+  (string * Cidl.typ) list
+)
+"mlGen.ml" 46 1322 1339 "mlGen.ml" 46 1322 1339
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 46 1322 1350 "mlGen.ml" 46 1322 1354
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlGen.ml" 44 1270 1297 "mlGen.ml" 44 1270 1301
+)
+"mlGen.ml" 47 1360 1364 "mlGen.ml" 47 1360 1368
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlGen.ml" 48 1372 1378 "mlGen.ml" 53 1649 1659
+)
+"mlGen.ml" 48 1372 1378 "mlGen.ml" 48 1372 1393
+type(
+  (string * Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr) ->
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlGen.ml" 49 1394 1401 "mlGen.ml" 49 1394 1405
+type(
+  string
+)
+ident(
+  def narg "mlGen.ml" 49 1394 1412 "mlGen.ml" 52 1608 1647
+)
+"mlGen.ml" 49 1394 1406 "mlGen.ml" 49 1394 1410
+type(
+  Cidl.typ
+)
+ident(
+  def targ "mlGen.ml" 49 1394 1412 "mlGen.ml" 52 1608 1647
+)
+"mlGen.ml" 49 1394 1401 "mlGen.ml" 49 1394 1410
+type(
+  string * Cidl.typ
+)
+"mlGen.ml" 49 1394 1412 "mlGen.ml" 49 1394 1413
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlGen.ml" 49 1394 1417 "mlGen.ml" 52 1608 1647
+)
+"mlGen.ml" 49 1394 1423 "mlGen.ml" 49 1394 1427
+type(
+  Cidl.typ
+)
+ident(
+  int_ref targ "mlGen.ml" 49 1394 1406 "mlGen.ml" 49 1394 1410
+)
+"mlGen.ml" 50 1433 1451 "mlGen.ml" 50 1433 1453
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlGen.ml" 50 1433 1465 "mlGen.ml" 50 1433 1465
+)
+"mlGen.ml" 50 1433 1445 "mlGen.ml" 50 1433 1453
+type(
+  Cidl.object_type
+)
+"mlGen.ml" 50 1433 1436 "mlGen.ml" 50 1433 1454
+type(
+  Cidl.typ
+)
+"mlGen.ml" 50 1433 1465 "mlGen.ml" 50 1433 1465
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 50 1433 1465 "mlGen.ml" 50 1433 1469
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 49 1394 1401 "mlGen.ml" 49 1394 1405
+)
+"mlGen.ml" 50 1433 1465 "mlGen.ml" 50 1433 1497
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_jni_type_name
+)
+"mlGen.ml" 50 1433 1498 "mlGen.ml" 50 1433 1500
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlGen.ml" 50 1433 1451 "mlGen.ml" 50 1433 1453
+)
+"mlGen.ml" 50 1433 1465 "mlGen.ml" 50 1433 1500
+call(
+  stack
+)
+type(
+  string
+)
+"mlGen.ml" 50 1433 1530 "mlGen.ml" 50 1433 1531
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 49 1394 1412 "mlGen.ml" 49 1394 1413
+)
+"mlGen.ml" 51 1536 1547 "mlGen.ml" 51 1536 1551
+type(
+  Cidl.object_type
+)
+"mlGen.ml" 51 1536 1539 "mlGen.ml" 51 1536 1551
+type(
+  Cidl.typ
+)
+"mlGen.ml" 51 1536 1562 "mlGen.ml" 51 1536 1562
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 51 1536 1562 "mlGen.ml" 51 1536 1566
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 49 1394 1401 "mlGen.ml" 49 1394 1405
+)
+"mlGen.ml" 51 1536 1602 "mlGen.ml" 51 1536 1603
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 49 1394 1412 "mlGen.ml" 49 1394 1413
+)
+"mlGen.ml" 52 1608 1611 "mlGen.ml" 52 1608 1612
+type(
+  Cidl.typ
+)
+"mlGen.ml" 52 1608 1623 "mlGen.ml" 52 1608 1623
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 52 1608 1623 "mlGen.ml" 52 1608 1627
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 49 1394 1401 "mlGen.ml" 49 1394 1405
+)
+"mlGen.ml" 52 1608 1642 "mlGen.ml" 52 1608 1643
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 49 1394 1412 "mlGen.ml" 49 1394 1413
+)
+"mlGen.ml" 49 1394 1417 "mlGen.ml" 52 1608 1647
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 49 1394 1412 "mlGen.ml" 52 1608 1647
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 49 1394 1400 "mlGen.ml" 52 1608 1647
+type(
+  string * Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 53 1649 1650 "mlGen.ml" 53 1649 1654
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlGen.ml" 47 1360 1364 "mlGen.ml" 47 1360 1368
+)
+"mlGen.ml" 53 1649 1655 "mlGen.ml" 53 1649 1659
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlGen.ml" 44 1270 1297 "mlGen.ml" 44 1270 1301
+)
+"mlGen.ml" 48 1372 1378 "mlGen.ml" 53 1649 1659
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 45 1304 1306 "mlGen.ml" 53 1649 1659
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 44 1270 1297 "mlGen.ml" 53 1649 1659
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 44 1270 1292 "mlGen.ml" 53 1649 1659
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 56 1717 1721 "mlGen.ml" 56 1717 1735
+type(
+  string list ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def make_class_fun "mlGen.ml" 64 1916 1916 "_none_" 1 0 -1
+)
+"mlGen.ml" 56 1717 1736 "mlGen.ml" 56 1717 1741
+type(
+  string list
+)
+ident(
+  def nargs "mlGen.ml" 56 1717 1742 "mlGen.ml" 62 1902 1913
+)
+"mlGen.ml" 56 1717 1742 "mlGen.ml" 56 1717 1746
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def body "mlGen.ml" 57 1749 1751 "mlGen.ml" 62 1902 1913
+)
+"mlGen.ml" 57 1749 1757 "mlGen.ml" 57 1749 1762
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlGen.ml" 56 1717 1736 "mlGen.ml" 56 1717 1741
+)
+"mlGen.ml" 58 1768 1772 "mlGen.ml" 58 1768 1774
+type(
+  string list
+)
+"mlGen.ml" 58 1768 1791 "mlGen.ml" 58 1768 1791
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 58 1768 1802 "mlGen.ml" 58 1768 1806
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref body "mlGen.ml" 56 1717 1742 "mlGen.ml" 56 1717 1746
+)
+"mlGen.ml" 59 1812 1816 "mlGen.ml" 59 1812 1821
+type(
+  string list
+)
+ident(
+  def nargs "mlGen.ml" 60 1825 1831 "mlGen.ml" 62 1902 1913
+)
+"mlGen.ml" 60 1825 1831 "mlGen.ml" 60 1825 1846
+type(
+  (string -> Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr) ->
+  string list ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlGen.ml" 61 1847 1853 "mlGen.ml" 61 1847 1857
+type(
+  string
+)
+ident(
+  def narg "mlGen.ml" 61 1847 1858 "mlGen.ml" 61 1847 1900
+)
+"mlGen.ml" 61 1847 1858 "mlGen.ml" 61 1847 1859
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def e "mlGen.ml" 61 1847 1876 "mlGen.ml" 61 1847 1876
+)
+"mlGen.ml" 61 1847 1876 "mlGen.ml" 61 1847 1876
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 61 1847 1876 "mlGen.ml" 61 1847 1880
+type(
+  string
+)
+ident(
+  int_ref narg "mlGen.ml" 61 1847 1853 "mlGen.ml" 61 1847 1857
+)
+"mlGen.ml" 61 1847 1895 "mlGen.ml" 61 1847 1896
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref e "mlGen.ml" 61 1847 1858 "mlGen.ml" 61 1847 1859
+)
+"mlGen.ml" 61 1847 1858 "mlGen.ml" 61 1847 1900
+type(
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 61 1847 1853 "mlGen.ml" 61 1847 1900
+type(
+  string -> Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 62 1902 1903 "mlGen.ml" 62 1902 1908
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlGen.ml" 59 1812 1816 "mlGen.ml" 59 1812 1821
+)
+"mlGen.ml" 62 1902 1909 "mlGen.ml" 62 1902 1913
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref body "mlGen.ml" 56 1717 1742 "mlGen.ml" 56 1717 1746
+)
+"mlGen.ml" 60 1825 1831 "mlGen.ml" 62 1902 1913
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 57 1749 1751 "mlGen.ml" 62 1902 1913
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 56 1717 1742 "mlGen.ml" 62 1902 1913
+type(
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 56 1717 1736 "mlGen.ml" 62 1902 1913
+type(
+  string list ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 64 1916 1924 "mlGen.ml" 64 1916 1939
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def make_local_decl "mlGen.ml" 64 1916 1916 "_none_" 1 0 -1
+)
+"mlGen.ml" 64 1916 1940 "mlGen.ml" 64 1916 1941
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  def l "mlGen.ml" 64 1916 1942 "mlGen.ml" 67 1980 2058
+)
+"mlGen.ml" 64 1916 1942 "mlGen.ml" 64 1916 1946
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlGen.ml" 65 1949 1951 "mlGen.ml" 67 1980 2058
+)
+"mlGen.ml" 65 1949 1957 "mlGen.ml" 65 1949 1958
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  int_ref l "mlGen.ml" 64 1916 1940 "mlGen.ml" 64 1916 1941
+)
+"mlGen.ml" 66 1965 1969 "mlGen.ml" 66 1965 1971
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlGen.ml" 66 1965 1975 "mlGen.ml" 66 1965 1979
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlGen.ml" 64 1916 1942 "mlGen.ml" 64 1916 1946
+)
+"mlGen.ml" 67 1980 1985 "mlGen.ml" 67 1980 1989
+type(
+  string
+)
+ident(
+  def name "mlGen.ml" 67 1980 1999 "mlGen.ml" 67 1980 2058
+)
+"mlGen.ml" 67 1980 1990 "mlGen.ml" 67 1980 1991
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlGen.ml" 67 1980 1999 "mlGen.ml" 67 1980 2058
+)
+"mlGen.ml" 67 1980 1985 "mlGen.ml" 67 1980 1991
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 67 1980 1994 "mlGen.ml" 67 1980 1995
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  def l "mlGen.ml" 67 1980 1999 "mlGen.ml" 67 1980 2058
+)
+"mlGen.ml" 67 1980 1984 "mlGen.ml" 67 1980 1995
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlGen.ml" 67 1980 1999 "mlGen.ml" 67 1980 2014
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref make_local_decl "mlGen.ml" 64 1916 1924 "mlGen.ml" 64 1916 1939
+)
+"mlGen.ml" 67 1980 2015 "mlGen.ml" 67 1980 2016
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  int_ref l "mlGen.ml" 67 1980 1994 "mlGen.ml" 67 1980 1995
+)
+"mlGen.ml" 67 1980 2024 "mlGen.ml" 67 1980 2024
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 67 1980 2024 "mlGen.ml" 67 1980 2028
+type(
+  string
+)
+ident(
+  int_ref name "mlGen.ml" 67 1980 1985 "mlGen.ml" 67 1980 1989
+)
+"mlGen.ml" 67 1980 2042 "mlGen.ml" 67 1980 2043
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 67 1980 1990 "mlGen.ml" 67 1980 1991
+)
+"mlGen.ml" 67 1980 2049 "mlGen.ml" 67 1980 2053
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlGen.ml" 64 1916 1942 "mlGen.ml" 64 1916 1946
+)
+"mlGen.ml" 67 1980 1999 "mlGen.ml" 67 1980 2058
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 65 1949 1951 "mlGen.ml" 67 1980 2058
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 64 1916 1942 "mlGen.ml" 67 1980 2058
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 64 1916 1940 "mlGen.ml" 67 1980 2058
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 69 2060 2068 "mlGen.ml" 69 2060 2089
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def make_class_local_decl "mlGen.ml" 69 2060 2060 "_none_" 1 0 -1
+)
+"mlGen.ml" 69 2060 2090 "mlGen.ml" 69 2060 2091
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  def l "mlGen.ml" 69 2060 2092 "mlGen.ml" 72 2130 2220
+)
+"mlGen.ml" 69 2060 2092 "mlGen.ml" 69 2060 2096
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def body "mlGen.ml" 70 2099 2101 "mlGen.ml" 72 2130 2220
+)
+"mlGen.ml" 70 2099 2107 "mlGen.ml" 70 2099 2108
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  int_ref l "mlGen.ml" 69 2060 2090 "mlGen.ml" 69 2060 2091
+)
+"mlGen.ml" 71 2115 2119 "mlGen.ml" 71 2115 2121
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlGen.ml" 71 2115 2125 "mlGen.ml" 71 2115 2129
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref body "mlGen.ml" 69 2060 2092 "mlGen.ml" 69 2060 2096
+)
+"mlGen.ml" 72 2130 2135 "mlGen.ml" 72 2130 2139
+type(
+  string
+)
+ident(
+  def name "mlGen.ml" 72 2130 2149 "mlGen.ml" 72 2130 2220
+)
+"mlGen.ml" 72 2130 2140 "mlGen.ml" 72 2130 2141
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlGen.ml" 72 2130 2149 "mlGen.ml" 72 2130 2220
+)
+"mlGen.ml" 72 2130 2135 "mlGen.ml" 72 2130 2141
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+"mlGen.ml" 72 2130 2144 "mlGen.ml" 72 2130 2145
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  def l "mlGen.ml" 72 2130 2149 "mlGen.ml" 72 2130 2220
+)
+"mlGen.ml" 72 2130 2134 "mlGen.ml" 72 2130 2145
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlGen.ml" 72 2130 2149 "mlGen.ml" 72 2130 2170
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref make_class_local_decl "mlGen.ml" 69 2060 2068 "mlGen.ml" 69 2060 2089
+)
+"mlGen.ml" 72 2130 2171 "mlGen.ml" 72 2130 2172
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  int_ref l "mlGen.ml" 72 2130 2144 "mlGen.ml" 72 2130 2145
+)
+"mlGen.ml" 72 2130 2186 "mlGen.ml" 72 2130 2186
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 72 2130 2186 "mlGen.ml" 72 2130 2190
+type(
+  string
+)
+ident(
+  int_ref name "mlGen.ml" 72 2130 2135 "mlGen.ml" 72 2130 2139
+)
+"mlGen.ml" 72 2130 2204 "mlGen.ml" 72 2130 2205
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlGen.ml" 72 2130 2140 "mlGen.ml" 72 2130 2141
+)
+"mlGen.ml" 72 2130 2211 "mlGen.ml" 72 2130 2215
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref body "mlGen.ml" 69 2060 2092 "mlGen.ml" 69 2060 2096
+)
+"mlGen.ml" 72 2130 2149 "mlGen.ml" 72 2130 2220
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 70 2099 2101 "mlGen.ml" 72 2130 2220
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 69 2060 2092 "mlGen.ml" 72 2130 2220
+type(
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 69 2060 2090 "mlGen.ml" 72 2130 2220
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 76 2232 2236 "mlGen.ml" 76 2232 2255
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_type) list ->
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def make_rec_class_type "mlGen.ml" 85 2511 2511 "_none_" 1 0 -1
+)
+"mlGen.ml" 76 2232 2256 "mlGen.ml" 76 2232 2266
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_type) list
+)
+ident(
+  def clazz_list "mlGen.ml" 77 2269 2271 "mlGen.ml" 83 2460 2509
+)
+"mlGen.ml" 77 2269 2275 "mlGen.ml" 77 2269 2279
+type(
+  string * bool * Camlp4.PreCast.Ast.class_type ->
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def make "mlGen.ml" 83 2460 2462 "mlGen.ml" 83 2460 2509
+)
+"mlGen.ml" 77 2269 2281 "mlGen.ml" 77 2269 2285
+type(
+  string
+)
+ident(
+  def name "mlGen.ml" 78 2335 2339 "mlGen.ml" 81 2412 2454
+)
+"mlGen.ml" 77 2269 2286 "mlGen.ml" 77 2269 2294
+type(
+  bool
+)
+ident(
+  def abstract "mlGen.ml" 78 2335 2339 "mlGen.ml" 81 2412 2454
+)
+"mlGen.ml" 77 2269 2295 "mlGen.ml" 77 2269 2299
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def expr "mlGen.ml" 78 2335 2339 "mlGen.ml" 81 2412 2454
+)
+"mlGen.ml" 77 2269 2281 "mlGen.ml" 77 2269 2299
+type(
+  string * bool * Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 78 2335 2342 "mlGen.ml" 78 2335 2350
+type(
+  bool
+)
+ident(
+  int_ref abstract "mlGen.ml" 77 2269 2286 "mlGen.ml" 77 2269 2294
+)
+"mlGen.ml" 79 2356 2375 "mlGen.ml" 79 2356 2375
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.virtual_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 79 2356 2375 "mlGen.ml" 79 2356 2379
+type(
+  string
+)
+ident(
+  int_ref name "mlGen.ml" 77 2269 2281 "mlGen.ml" 77 2269 2285
+)
+"mlGen.ml" 79 2356 2393 "mlGen.ml" 79 2356 2397
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref expr "mlGen.ml" 77 2269 2295 "mlGen.ml" 77 2269 2299
+)
+"mlGen.ml" 81 2412 2431 "mlGen.ml" 81 2412 2431
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.virtual_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 81 2412 2431 "mlGen.ml" 81 2412 2435
+type(
+  string
+)
+ident(
+  int_ref name "mlGen.ml" 77 2269 2281 "mlGen.ml" 77 2269 2285
+)
+"mlGen.ml" 81 2412 2445 "mlGen.ml" 81 2412 2449
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref expr "mlGen.ml" 77 2269 2295 "mlGen.ml" 77 2269 2299
+)
+"mlGen.ml" 78 2335 2339 "mlGen.ml" 81 2412 2454
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 77 2269 2280 "mlGen.ml" 81 2412 2454
+type(
+  string * bool * Camlp4.PreCast.Ast.class_type ->
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 83 2460 2462 "mlGen.ml" 83 2460 2482
+type(
+  Camlp4.PreCast.Ast.class_type list -> Camlp4.PreCast.Ast.class_type
+)
+ident(
+  ext_ref P4helper.class_types
+)
+"mlGen.ml" 83 2460 2484 "mlGen.ml" 83 2460 2492
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_type ->
+   Camlp4.PreCast.Ast.class_type) ->
+  (string * bool * Camlp4.PreCast.Ast.class_type) list ->
+  Camlp4.PreCast.Ast.class_type list
+)
+ident(
+  ext_ref List.map
+)
+"mlGen.ml" 83 2460 2493 "mlGen.ml" 83 2460 2497
+type(
+  string * bool * Camlp4.PreCast.Ast.class_type ->
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref make "mlGen.ml" 77 2269 2275 "mlGen.ml" 77 2269 2279
+)
+"mlGen.ml" 83 2460 2498 "mlGen.ml" 83 2460 2508
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_type) list
+)
+ident(
+  int_ref clazz_list "mlGen.ml" 76 2232 2256 "mlGen.ml" 76 2232 2266
+)
+"mlGen.ml" 83 2460 2484 "mlGen.ml" 83 2460 2508
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+"mlGen.ml" 83 2460 2462 "mlGen.ml" 83 2460 2509
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 77 2269 2271 "mlGen.ml" 83 2460 2509
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 76 2232 2256 "mlGen.ml" 83 2460 2509
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_type) list ->
+  Camlp4.PreCast.Ast.class_type
+)
+"mlGen.ml" 85 2511 2515 "mlGen.ml" 85 2511 2534
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def make_rec_class_expr "mlGen.ml" 92 2707 2756 "_none_" 1 0 -1
+)
+"mlGen.ml" 85 2511 2535 "mlGen.ml" 85 2511 2545
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_expr) list
+)
+ident(
+  def clazz_list "mlGen.ml" 86 2548 2550 "mlGen.ml" 92 2707 2756
+)
+"mlGen.ml" 86 2548 2554 "mlGen.ml" 86 2548 2558
+type(
+  string * bool * Camlp4.PreCast.Ast.class_expr ->
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def make "mlGen.ml" 92 2707 2709 "mlGen.ml" 92 2707 2756
+)
+"mlGen.ml" 86 2548 2560 "mlGen.ml" 86 2548 2564
+type(
+  string
+)
+ident(
+  def name "mlGen.ml" 87 2582 2586 "mlGen.ml" 90 2659 2701
+)
+"mlGen.ml" 86 2548 2565 "mlGen.ml" 86 2548 2573
+type(
+  bool
+)
+ident(
+  def abstract "mlGen.ml" 87 2582 2586 "mlGen.ml" 90 2659 2701
+)
+"mlGen.ml" 86 2548 2574 "mlGen.ml" 86 2548 2578
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def expr "mlGen.ml" 87 2582 2586 "mlGen.ml" 90 2659 2701
+)
+"mlGen.ml" 86 2548 2560 "mlGen.ml" 86 2548 2578
+type(
+  string * bool * Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 87 2582 2589 "mlGen.ml" 87 2582 2597
+type(
+  bool
+)
+ident(
+  int_ref abstract "mlGen.ml" 86 2548 2565 "mlGen.ml" 86 2548 2573
+)
+"mlGen.ml" 88 2603 2622 "mlGen.ml" 88 2603 2622
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.virtual_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 88 2603 2622 "mlGen.ml" 88 2603 2626
+type(
+  string
+)
+ident(
+  int_ref name "mlGen.ml" 86 2548 2560 "mlGen.ml" 86 2548 2564
+)
+"mlGen.ml" 88 2603 2640 "mlGen.ml" 88 2603 2644
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref expr "mlGen.ml" 86 2548 2574 "mlGen.ml" 86 2548 2578
+)
+"mlGen.ml" 90 2659 2678 "mlGen.ml" 90 2659 2678
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.virtual_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlGen.ml" 7 91 95 "mlGen.ml" 7 91 99
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 90 2659 2678 "mlGen.ml" 90 2659 2682
+type(
+  string
+)
+ident(
+  int_ref name "mlGen.ml" 86 2548 2560 "mlGen.ml" 86 2548 2564
+)
+"mlGen.ml" 90 2659 2692 "mlGen.ml" 90 2659 2696
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref expr "mlGen.ml" 86 2548 2574 "mlGen.ml" 86 2548 2578
+)
+"mlGen.ml" 87 2582 2586 "mlGen.ml" 90 2659 2701
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 86 2548 2559 "mlGen.ml" 90 2659 2701
+type(
+  string * bool * Camlp4.PreCast.Ast.class_expr ->
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 92 2707 2709 "mlGen.ml" 92 2707 2729
+type(
+  Camlp4.PreCast.Ast.class_expr list -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  ext_ref P4helper.class_exprs
+)
+"mlGen.ml" 92 2707 2731 "mlGen.ml" 92 2707 2739
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_expr ->
+   Camlp4.PreCast.Ast.class_expr) ->
+  (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
+  Camlp4.PreCast.Ast.class_expr list
+)
+ident(
+  ext_ref List.map
+)
+"mlGen.ml" 92 2707 2740 "mlGen.ml" 92 2707 2744
+type(
+  string * bool * Camlp4.PreCast.Ast.class_expr ->
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref make "mlGen.ml" 86 2548 2554 "mlGen.ml" 86 2548 2558
+)
+"mlGen.ml" 92 2707 2745 "mlGen.ml" 92 2707 2755
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_expr) list
+)
+ident(
+  int_ref clazz_list "mlGen.ml" 85 2511 2535 "mlGen.ml" 85 2511 2545
+)
+"mlGen.ml" 92 2707 2731 "mlGen.ml" 92 2707 2755
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+"mlGen.ml" 92 2707 2709 "mlGen.ml" 92 2707 2756
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 86 2548 2550 "mlGen.ml" 92 2707 2756
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"mlGen.ml" 85 2511 2535 "mlGen.ml" 92 2707 2756
+type(
+  (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
+  Camlp4.PreCast.Ast.class_expr
+)

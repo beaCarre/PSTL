@@ -1,0 +1,1135 @@
+"error.ml" 23 666 670 "error.ml" 23 666 685
+type(
+  Idl.qident -> string
+)
+ident(
+  def string_of_qname "error.ml" 26 784 784 "_none_" 1 0 -1
+)
+"error.ml" 23 666 686 "error.ml" 23 666 691
+type(
+  Idl.qident
+)
+ident(
+  def qname "error.ml" 24 694 696 "error.ml" 24 694 782
+)
+"error.ml" 24 694 696 "error.ml" 24 694 709
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"error.ml" 24 694 710 "error.ml" 24 694 713
+type(
+  string
+)
+"error.ml" 24 694 715 "error.ml" 24 694 723
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"error.ml" 24 694 725 "error.ml" 24 694 730
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 23 666 686 "error.ml" 23 666 691
+)
+"error.ml" 24 694 725 "error.ml" 24 694 743
+type(
+  Idl.ident
+)
+"error.ml" 24 694 725 "error.ml" 24 694 755
+type(
+  string
+)
+"error.ml" 24 694 759 "error.ml" 24 694 764
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 23 666 686 "error.ml" 23 666 691
+)
+"error.ml" 24 694 759 "error.ml" 24 694 780
+type(
+  string list
+)
+"error.ml" 24 694 724 "error.ml" 24 694 781
+type(
+  string list
+)
+"error.ml" 24 694 714 "error.ml" 24 694 782
+call(
+  stack
+)
+type(
+  string list
+)
+"error.ml" 24 694 696 "error.ml" 24 694 782
+call(
+  tail
+)
+type(
+  string
+)
+"error.ml" 26 784 788 "error.ml" 26 784 795
+type(
+  t -> Loc.t option
+)
+ident(
+  def explain "error.ml" 69 3236 3236 "_none_" 1 0 -1
+)
+"error.ml" 26 784 796 "error.ml" 26 784 799
+type(
+  t
+)
+ident(
+  def err "error.ml" 27 802 804 "error.ml" 67 3220 3234
+)
+"error.ml" 27 802 810 "error.ml" 27 802 813
+type(
+  t
+)
+ident(
+  int_ref err "error.ml" 26 784 796 "error.ml" 26 784 799
+)
+"error.ml" 28 820 843 "error.ml" 28 820 850
+type(
+  string list
+)
+ident(
+  def package "error.ml" 29 861 867 "error.ml" 30 986 1017
+)
+"error.ml" 28 820 851 "error.ml" 28 820 855
+type(
+  Idl.ident
+)
+ident(
+  def name "error.ml" 29 861 867 "error.ml" 30 986 1017
+)
+"error.ml" 28 820 842 "error.ml" 28 820 856
+type(
+  string list * Idl.ident
+)
+"error.ml" 28 820 824 "error.ml" 28 820 856
+type(
+  t
+)
+"error.ml" 29 861 867 "error.ml" 29 861 881
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 29 861 882 "error.ml" 29 861 922
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 29 861 925 "error.ml" 29 861 938
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"error.ml" 29 861 939 "error.ml" 29 861 942
+type(
+  string
+)
+"error.ml" 29 861 944 "error.ml" 29 861 952
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"error.ml" 29 861 954 "error.ml" 29 861 958
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 28 820 851 "error.ml" 28 820 855
+)
+"error.ml" 29 861 954 "error.ml" 29 861 970
+type(
+  string
+)
+"error.ml" 29 861 974 "error.ml" 29 861 981
+type(
+  string list
+)
+ident(
+  int_ref package "error.ml" 28 820 843 "error.ml" 28 820 850
+)
+"error.ml" 29 861 953 "error.ml" 29 861 982
+type(
+  string list
+)
+"error.ml" 29 861 943 "error.ml" 29 861 983
+call(
+  stack
+)
+type(
+  string list
+)
+"error.ml" 29 861 924 "error.ml" 29 861 984
+call(
+  stack
+)
+type(
+  string
+)
+"error.ml" 29 861 867 "error.ml" 29 861 984
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 30 986 997 "error.ml" 30 986 1001
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 28 820 851 "error.ml" 28 820 855
+)
+"error.ml" 30 986 997 "error.ml" 30 986 1017
+type(
+  Loc.t
+)
+"error.ml" 30 986 992 "error.ml" 30 986 1017
+type(
+  Loc.t option
+)
+"error.ml" 29 861 867 "error.ml" 30 986 1017
+type(
+  Loc.t option
+)
+"error.ml" 31 1018 1037 "error.ml" 31 1018 1042
+type(
+  Idl.qident
+)
+ident(
+  def qname "error.ml" 32 1047 1053 "error.ml" 33 1133 1166
+)
+"error.ml" 31 1018 1022 "error.ml" 31 1018 1042
+type(
+  t
+)
+"error.ml" 32 1047 1053 "error.ml" 32 1047 1067
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 32 1047 1068 "error.ml" 32 1047 1107
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 32 1047 1109 "error.ml" 32 1047 1124
+type(
+  Idl.qident -> string
+)
+ident(
+  int_ref string_of_qname "error.ml" 23 666 670 "error.ml" 23 666 685
+)
+"error.ml" 32 1047 1125 "error.ml" 32 1047 1130
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 31 1018 1037 "error.ml" 31 1018 1042
+)
+"error.ml" 32 1047 1108 "error.ml" 32 1047 1131
+call(
+  stack
+)
+type(
+  string
+)
+"error.ml" 32 1047 1053 "error.ml" 32 1047 1131
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 33 1133 1144 "error.ml" 33 1133 1149
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 31 1018 1037 "error.ml" 31 1018 1042
+)
+"error.ml" 33 1133 1144 "error.ml" 33 1133 1166
+type(
+  Loc.t
+)
+"error.ml" 33 1133 1139 "error.ml" 33 1133 1166
+type(
+  Loc.t option
+)
+"error.ml" 32 1047 1053 "error.ml" 33 1133 1166
+type(
+  Loc.t option
+)
+"error.ml" 34 1167 1192 "error.ml" 34 1167 1197
+type(
+  Idl.qident
+)
+ident(
+  def qname "error.ml" 35 1202 1208 "error.ml" 36 1316 1349
+)
+"error.ml" 34 1167 1171 "error.ml" 34 1167 1197
+type(
+  t
+)
+"error.ml" 35 1202 1208 "error.ml" 35 1202 1222
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 35 1202 1223 "error.ml" 35 1202 1290
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 35 1202 1292 "error.ml" 35 1202 1307
+type(
+  Idl.qident -> string
+)
+ident(
+  int_ref string_of_qname "error.ml" 23 666 670 "error.ml" 23 666 685
+)
+"error.ml" 35 1202 1308 "error.ml" 35 1202 1313
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 34 1167 1192 "error.ml" 34 1167 1197
+)
+"error.ml" 35 1202 1291 "error.ml" 35 1202 1314
+call(
+  stack
+)
+type(
+  string
+)
+"error.ml" 35 1202 1208 "error.ml" 35 1202 1314
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 36 1316 1327 "error.ml" 36 1316 1332
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 34 1167 1192 "error.ml" 34 1167 1197
+)
+"error.ml" 36 1316 1327 "error.ml" 36 1316 1349
+type(
+  Loc.t
+)
+"error.ml" 36 1316 1322 "error.ml" 36 1316 1349
+type(
+  Loc.t option
+)
+"error.ml" 35 1202 1208 "error.ml" 36 1316 1349
+type(
+  Loc.t option
+)
+"error.ml" 37 1350 1380 "error.ml" 37 1350 1385
+type(
+  Idl.qident
+)
+ident(
+  def qname "error.ml" 38 1390 1396 "error.ml" 39 1515 1548
+)
+"error.ml" 37 1350 1354 "error.ml" 37 1350 1385
+type(
+  t
+)
+"error.ml" 38 1390 1396 "error.ml" 38 1390 1410
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 38 1390 1411 "error.ml" 38 1390 1489
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 38 1390 1491 "error.ml" 38 1390 1506
+type(
+  Idl.qident -> string
+)
+ident(
+  int_ref string_of_qname "error.ml" 23 666 670 "error.ml" 23 666 685
+)
+"error.ml" 38 1390 1507 "error.ml" 38 1390 1512
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 37 1350 1380 "error.ml" 37 1350 1385
+)
+"error.ml" 38 1390 1490 "error.ml" 38 1390 1513
+call(
+  stack
+)
+type(
+  string
+)
+"error.ml" 38 1390 1396 "error.ml" 38 1390 1513
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 39 1515 1526 "error.ml" 39 1515 1531
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 37 1350 1380 "error.ml" 37 1350 1385
+)
+"error.ml" 39 1515 1526 "error.ml" 39 1515 1548
+type(
+  Loc.t
+)
+"error.ml" 39 1515 1521 "error.ml" 39 1515 1548
+type(
+  Loc.t option
+)
+"error.ml" 38 1390 1396 "error.ml" 39 1515 1548
+type(
+  Loc.t option
+)
+"error.ml" 40 1549 1569 "error.ml" 40 1549 1573
+type(
+  Idl.ident
+)
+ident(
+  def name "error.ml" 41 1577 1583 "error.ml" 42 1706 1737
+)
+"error.ml" 40 1549 1553 "error.ml" 40 1549 1573
+type(
+  t
+)
+"error.ml" 41 1577 1583 "error.ml" 41 1577 1597
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 41 1577 1598 "error.ml" 41 1577 1687
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 41 1577 1688 "error.ml" 41 1577 1692
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 40 1549 1569 "error.ml" 40 1549 1573
+)
+"error.ml" 41 1577 1688 "error.ml" 41 1577 1704
+type(
+  string
+)
+"error.ml" 41 1577 1583 "error.ml" 41 1577 1704
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 42 1706 1717 "error.ml" 42 1706 1721
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 40 1549 1569 "error.ml" 40 1549 1573
+)
+"error.ml" 42 1706 1717 "error.ml" 42 1706 1737
+type(
+  Loc.t
+)
+"error.ml" 42 1706 1712 "error.ml" 42 1706 1737
+type(
+  Loc.t option
+)
+"error.ml" 41 1577 1583 "error.ml" 42 1706 1737
+type(
+  Loc.t option
+)
+"error.ml" 43 1738 1761 "error.ml" 43 1738 1766
+type(
+  Idl.qident
+)
+ident(
+  def qname "error.ml" 44 1771 1777 "error.ml" 45 1859 1892
+)
+"error.ml" 43 1738 1742 "error.ml" 43 1738 1766
+type(
+  t
+)
+"error.ml" 44 1771 1777 "error.ml" 44 1771 1791
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 44 1771 1792 "error.ml" 44 1771 1833
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 44 1771 1835 "error.ml" 44 1771 1850
+type(
+  Idl.qident -> string
+)
+ident(
+  int_ref string_of_qname "error.ml" 23 666 670 "error.ml" 23 666 685
+)
+"error.ml" 44 1771 1851 "error.ml" 44 1771 1856
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 43 1738 1761 "error.ml" 43 1738 1766
+)
+"error.ml" 44 1771 1834 "error.ml" 44 1771 1857
+call(
+  stack
+)
+type(
+  string
+)
+"error.ml" 44 1771 1777 "error.ml" 44 1771 1857
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 45 1859 1870 "error.ml" 45 1859 1875
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 43 1738 1761 "error.ml" 43 1738 1766
+)
+"error.ml" 45 1859 1870 "error.ml" 45 1859 1892
+type(
+  Loc.t
+)
+"error.ml" 45 1859 1865 "error.ml" 45 1859 1892
+type(
+  Loc.t option
+)
+"error.ml" 44 1771 1777 "error.ml" 45 1859 1892
+type(
+  Loc.t option
+)
+"error.ml" 46 1893 1927 "error.ml" 46 1893 1932
+type(
+  Idl.qident
+)
+ident(
+  def qname "error.ml" 47 1937 1943 "error.ml" 48 2056 2089
+)
+"error.ml" 46 1893 1897 "error.ml" 46 1893 1932
+type(
+  t
+)
+"error.ml" 47 1937 1943 "error.ml" 47 1937 1957
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 47 1937 1958 "error.ml" 47 1937 2030
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 47 1937 2032 "error.ml" 47 1937 2047
+type(
+  Idl.qident -> string
+)
+ident(
+  int_ref string_of_qname "error.ml" 23 666 670 "error.ml" 23 666 685
+)
+"error.ml" 47 1937 2048 "error.ml" 47 1937 2053
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 46 1893 1927 "error.ml" 46 1893 1932
+)
+"error.ml" 47 1937 2031 "error.ml" 47 1937 2054
+call(
+  stack
+)
+type(
+  string
+)
+"error.ml" 47 1937 1943 "error.ml" 47 1937 2054
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 48 2056 2067 "error.ml" 48 2056 2072
+type(
+  Idl.qident
+)
+ident(
+  int_ref qname "error.ml" 46 1893 1927 "error.ml" 46 1893 1932
+)
+"error.ml" 48 2056 2067 "error.ml" 48 2056 2089
+type(
+  Loc.t
+)
+"error.ml" 48 2056 2062 "error.ml" 48 2056 2089
+type(
+  Loc.t option
+)
+"error.ml" 47 1937 1943 "error.ml" 48 2056 2089
+type(
+  Loc.t option
+)
+"error.ml" 49 2090 2114 "error.ml" 49 2090 2118
+type(
+  Idl.ident
+)
+ident(
+  def name "error.ml" 50 2123 2129 "error.ml" 52 2321 2352
+)
+"error.ml" 49 2090 2094 "error.ml" 49 2090 2118
+type(
+  t
+)
+"error.ml" 50 2123 2129 "error.ml" 50 2123 2143
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 50 2123 2144 "error.ml" 50 2123 2215
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 50 2123 2216 "error.ml" 50 2123 2220
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 49 2090 2114 "error.ml" 49 2090 2118
+)
+"error.ml" 50 2123 2216 "error.ml" 50 2123 2232
+type(
+  string
+)
+"error.ml" 50 2123 2129 "error.ml" 50 2123 2232
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 51 2234 2240 "error.ml" 51 2234 2254
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 51 2234 2255 "error.ml" 51 2234 2319
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 51 2234 2240 "error.ml" 51 2234 2319
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 52 2321 2332 "error.ml" 52 2321 2336
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 49 2090 2114 "error.ml" 49 2090 2118
+)
+"error.ml" 52 2321 2332 "error.ml" 52 2321 2352
+type(
+  Loc.t
+)
+"error.ml" 52 2321 2327 "error.ml" 52 2321 2352
+type(
+  Loc.t option
+)
+"error.ml" 51 2234 2240 "error.ml" 52 2321 2352
+type(
+  Loc.t option
+)
+"error.ml" 50 2123 2129 "error.ml" 52 2321 2352
+type(
+  Loc.t option
+)
+"error.ml" 53 2353 2381 "error.ml" 53 2353 2385
+type(
+  string
+)
+ident(
+  def name "error.ml" 54 2395 2401 "error.ml" 55 2481 2495
+)
+"error.ml" 53 2353 2386 "error.ml" 53 2353 2389
+type(
+  Loc.t
+)
+ident(
+  def loc "error.ml" 54 2395 2401 "error.ml" 55 2481 2495
+)
+"error.ml" 53 2353 2357 "error.ml" 53 2353 2390
+type(
+  t
+)
+"error.ml" 54 2395 2401 "error.ml" 54 2395 2415
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 54 2395 2416 "error.ml" 54 2395 2474
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 54 2395 2475 "error.ml" 54 2395 2479
+type(
+  string
+)
+ident(
+  int_ref name "error.ml" 53 2353 2381 "error.ml" 53 2353 2385
+)
+"error.ml" 54 2395 2401 "error.ml" 54 2395 2479
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 55 2481 2492 "error.ml" 55 2481 2495
+type(
+  Loc.t
+)
+ident(
+  int_ref loc "error.ml" 53 2353 2386 "error.ml" 53 2353 2389
+)
+"error.ml" 55 2481 2487 "error.ml" 55 2481 2495
+type(
+  Loc.t option
+)
+"error.ml" 54 2395 2401 "error.ml" 55 2481 2495
+type(
+  Loc.t option
+)
+"error.ml" 56 2496 2521 "error.ml" 56 2496 2525
+type(
+  Idl.ident
+)
+ident(
+  def name "error.ml" 57 2530 2536 "error.ml" 59 2726 2757
+)
+"error.ml" 56 2496 2500 "error.ml" 56 2496 2525
+type(
+  t
+)
+"error.ml" 57 2530 2536 "error.ml" 57 2530 2550
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 57 2530 2551 "error.ml" 57 2530 2620
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 57 2530 2621 "error.ml" 57 2530 2625
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 56 2496 2521 "error.ml" 56 2496 2525
+)
+"error.ml" 57 2530 2621 "error.ml" 57 2530 2637
+type(
+  string
+)
+"error.ml" 57 2530 2536 "error.ml" 57 2530 2637
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 58 2639 2645 "error.ml" 58 2639 2659
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 58 2639 2660 "error.ml" 58 2639 2724
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 58 2639 2645 "error.ml" 58 2639 2724
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 59 2726 2737 "error.ml" 59 2726 2741
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 56 2496 2521 "error.ml" 56 2496 2525
+)
+"error.ml" 59 2726 2737 "error.ml" 59 2726 2757
+type(
+  Loc.t
+)
+"error.ml" 59 2726 2732 "error.ml" 59 2726 2757
+type(
+  Loc.t option
+)
+"error.ml" 58 2639 2645 "error.ml" 59 2726 2757
+type(
+  Loc.t option
+)
+"error.ml" 57 2530 2536 "error.ml" 59 2726 2757
+type(
+  Loc.t option
+)
+"error.ml" 60 2758 2785 "error.ml" 60 2758 2788
+type(
+  Loc.t
+)
+ident(
+  def loc "error.ml" 61 2793 2799 "error.ml" 63 2984 2998
+)
+"error.ml" 60 2758 2762 "error.ml" 60 2758 2788
+type(
+  t
+)
+"error.ml" 61 2793 2799 "error.ml" 61 2793 2813
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 61 2793 2814 "error.ml" 61 2793 2887
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 61 2793 2799 "error.ml" 61 2793 2887
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 62 2889 2895 "error.ml" 62 2889 2909
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 62 2889 2910 "error.ml" 62 2889 2982
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 62 2889 2895 "error.ml" 62 2889 2982
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 63 2984 2995 "error.ml" 63 2984 2998
+type(
+  Loc.t
+)
+ident(
+  int_ref loc "error.ml" 60 2758 2785 "error.ml" 60 2758 2788
+)
+"error.ml" 63 2984 2990 "error.ml" 63 2984 2998
+type(
+  Loc.t option
+)
+"error.ml" 62 2889 2895 "error.ml" 63 2984 2998
+type(
+  Loc.t option
+)
+"error.ml" 61 2793 2799 "error.ml" 63 2984 2998
+type(
+  Loc.t option
+)
+"error.ml" 64 2999 3025 "error.ml" 64 2999 3028
+type(
+  Loc.t
+)
+ident(
+  def loc "error.ml" 65 3033 3039 "error.ml" 67 3220 3234
+)
+"error.ml" 64 2999 3003 "error.ml" 64 2999 3028
+type(
+  t
+)
+"error.ml" 65 3033 3039 "error.ml" 65 3033 3053
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 65 3033 3054 "error.ml" 65 3033 3125
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 65 3033 3039 "error.ml" 65 3033 3125
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 66 3127 3133 "error.ml" 66 3127 3147
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 66 3127 3148 "error.ml" 66 3127 3218
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 66 3127 3133 "error.ml" 66 3127 3218
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 67 3220 3231 "error.ml" 67 3220 3234
+type(
+  Loc.t
+)
+ident(
+  int_ref loc "error.ml" 64 2999 3025 "error.ml" 64 2999 3028
+)
+"error.ml" 67 3220 3226 "error.ml" 67 3220 3234
+type(
+  Loc.t option
+)
+"error.ml" 66 3127 3133 "error.ml" 67 3220 3234
+type(
+  Loc.t option
+)
+"error.ml" 65 3033 3039 "error.ml" 67 3220 3234
+type(
+  Loc.t option
+)
+"error.ml" 27 802 804 "error.ml" 67 3220 3234
+type(
+  Loc.t option
+)
+"error.ml" 69 3236 3240 "error.ml" 69 3236 3252
+type(
+  w -> unit
+)
+ident(
+  def explain_warn "error.ml" 75 3639 3639 "_none_" 1 0 -1
+)
+"error.ml" 69 3236 3253 "error.ml" 69 3236 3254
+type(
+  w
+)
+ident(
+  def w "error.ml" 69 3236 3257 "error.ml" 74 3558 3637
+)
+"error.ml" 69 3236 3263 "error.ml" 69 3236 3264
+type(
+  w
+)
+ident(
+  int_ref w "error.ml" 69 3236 3253 "error.ml" 69 3236 3254
+)
+"error.ml" 70 3270 3299 "error.ml" 70 3270 3303
+type(
+  Idl.ident
+)
+ident(
+  def name "error.ml" 71 3307 3313 "error.ml" 72 3426 3511
+)
+"error.ml" 70 3270 3276 "error.ml" 70 3270 3303
+type(
+  w
+)
+"error.ml" 71 3307 3313 "error.ml" 71 3307 3327
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 71 3307 3328 "error.ml" 71 3307 3405
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 71 3307 3407 "error.ml" 71 3307 3411
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "error.ml" 70 3270 3299 "error.ml" 70 3270 3303
+)
+"error.ml" 71 3307 3407 "error.ml" 71 3307 3423
+type(
+  string
+)
+"error.ml" 71 3307 3313 "error.ml" 71 3307 3423
+call(
+  stack
+)
+type(
+  unit
+)
+"error.ml" 72 3426 3432 "error.ml" 72 3426 3446
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 72 3426 3447 "error.ml" 72 3426 3511
+type(
+  (unit, out_channel, unit) format
+)
+"error.ml" 72 3426 3432 "error.ml" 72 3426 3511
+call(
+  tail
+)
+type(
+  unit
+)
+"error.ml" 71 3307 3313 "error.ml" 72 3426 3511
+type(
+  unit
+)
+"error.ml" 73 3512 3545 "error.ml" 73 3512 3549
+type(
+  string
+)
+ident(
+  def name "error.ml" 74 3558 3564 "error.ml" 74 3558 3637
+)
+"error.ml" 73 3512 3550 "error.ml" 73 3512 3553
+type(
+  Loc.t
+)
+ident(
+  def loc "error.ml" 74 3558 3564 "error.ml" 74 3558 3637
+)
+"error.ml" 73 3512 3518 "error.ml" 73 3512 3554
+type(
+  w
+)
+"error.ml" 74 3558 3564 "error.ml" 74 3558 3578
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"error.ml" 74 3558 3579 "error.ml" 74 3558 3632
+type(
+  (string -> unit, out_channel, unit) format
+)
+"error.ml" 74 3558 3633 "error.ml" 74 3558 3637
+type(
+  string
+)
+ident(
+  int_ref name "error.ml" 73 3512 3545 "error.ml" 73 3512 3549
+)
+"error.ml" 74 3558 3564 "error.ml" 74 3558 3637
+call(
+  tail
+)
+type(
+  unit
+)
+"error.ml" 69 3236 3257 "error.ml" 74 3558 3637
+type(
+  unit
+)
+"error.ml" 75 3639 3643 "error.ml" 75 3639 3647
+type(
+  w -> unit
+)
+ident(
+  def warn "error.ml" 76 3654 3672 "_none_" 1 0 -1
+)
+"error.ml" 75 3639 3648 "error.ml" 75 3639 3651
+type(
+  w
+)
+ident(
+  def err "error.ml" 76 3654 3656 "error.ml" 76 3654 3672
+)
+"error.ml" 76 3654 3656 "error.ml" 76 3654 3668
+type(
+  w -> unit
+)
+ident(
+  int_ref explain_warn "error.ml" 69 3236 3240 "error.ml" 69 3236 3252
+)
+"error.ml" 76 3654 3669 "error.ml" 76 3654 3672
+type(
+  w
+)
+ident(
+  int_ref err "error.ml" 75 3639 3648 "error.ml" 75 3639 3651
+)
+"error.ml" 76 3654 3656 "error.ml" 76 3654 3672
+call(
+  tail
+)
+type(
+  unit
+)

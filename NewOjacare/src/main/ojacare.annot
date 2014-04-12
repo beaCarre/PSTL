@@ -1,0 +1,711 @@
+"main/ojacare.ml" 3 61 65 "main/ojacare.ml" 3 61 69
+type(
+  unit -> unit
+)
+ident(
+  def main "main/ojacare.ml" 28 959 959 "_none_" 1 0 -1
+)
+"main/ojacare.ml" 3 61 70 "main/ojacare.ml" 3 61 72
+type(
+  unit
+)
+"main/ojacare.ml" 4 75 80 "main/ojacare.ml" 4 75 92
+type(
+  string array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"main/ojacare.ml" 4 75 93 "main/ojacare.ml" 4 75 101
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"main/ojacare.ml" 4 75 80 "main/ojacare.ml" 4 75 101
+type(
+  int
+)
+"main/ojacare.ml" 4 75 102 "main/ojacare.ml" 4 75 103
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"main/ojacare.ml" 4 75 104 "main/ojacare.ml" 4 75 105
+type(
+  int
+)
+"main/ojacare.ml" 4 75 80 "main/ojacare.ml" 4 75 105
+type(
+  bool
+)
+"main/ojacare.ml" 5 117 121 "main/ojacare.ml" 5 117 135
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"main/ojacare.ml" 5 117 136 "main/ojacare.ml" 5 117 158
+type(
+  (string -> unit, out_channel, unit) format
+)
+"main/ojacare.ml" 5 117 159 "main/ojacare.ml" 5 117 167
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"main/ojacare.ml" 5 117 169 "main/ojacare.ml" 5 117 170
+type(
+  int
+)
+"main/ojacare.ml" 5 117 159 "main/ojacare.ml" 5 117 171
+type(
+  string
+)
+"main/ojacare.ml" 5 117 121 "main/ojacare.ml" 5 117 171
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 6 173 177 "main/ojacare.ml" 6 173 181
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"main/ojacare.ml" 6 173 182 "main/ojacare.ml" 6 173 183
+type(
+  int
+)
+"main/ojacare.ml" 6 173 177 "main/ojacare.ml" 6 173 183
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 4 75 111 "main/ojacare.ml" 7 184 189
+type(
+  unit
+)
+"main/ojacare.ml" 4 75 77 "main/ojacare.ml" 7 184 189
+type(
+  unit
+)
+"main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+type(
+  string
+)
+ident(
+  def file "main/ojacare.ml" 10 221 223 "main/ojacare.ml" 26 941 957
+)
+"main/ojacare.ml" 9 192 205 "main/ojacare.ml" 9 192 213
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"main/ojacare.ml" 9 192 215 "main/ojacare.ml" 9 192 216
+type(
+  int
+)
+"main/ojacare.ml" 9 192 205 "main/ojacare.ml" 9 192 217
+type(
+  string
+)
+"main/ojacare.ml" 10 221 226 "main/ojacare.ml" 10 221 229
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"main/ojacare.ml" 10 221 231 "main/ojacare.ml" 10 221 252
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"main/ojacare.ml" 10 221 253 "main/ojacare.ml" 10 221 257
+type(
+  string
+)
+ident(
+  int_ref file "main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+)
+"main/ojacare.ml" 10 221 258 "main/ojacare.ml" 10 221 264
+type(
+  string
+)
+"main/ojacare.ml" 10 221 230 "main/ojacare.ml" 10 221 265
+call(
+  stack
+)
+type(
+  bool
+)
+"main/ojacare.ml" 10 221 226 "main/ojacare.ml" 10 221 265
+type(
+  bool
+)
+"main/ojacare.ml" 11 277 281 "main/ojacare.ml" 11 277 295
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"main/ojacare.ml" 11 277 296 "main/ojacare.ml" 11 277 342
+type(
+  (string -> unit, out_channel, unit) format
+)
+"main/ojacare.ml" 11 277 343 "main/ojacare.ml" 11 277 347
+type(
+  string
+)
+ident(
+  int_ref file "main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+)
+"main/ojacare.ml" 11 277 281 "main/ojacare.ml" 11 277 347
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 12 349 353 "main/ojacare.ml" 12 349 367
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"main/ojacare.ml" 12 349 368 "main/ojacare.ml" 12 349 390
+type(
+  (string -> unit, out_channel, unit) format
+)
+"main/ojacare.ml" 12 349 391 "main/ojacare.ml" 12 349 399
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"main/ojacare.ml" 12 349 401 "main/ojacare.ml" 12 349 402
+type(
+  int
+)
+"main/ojacare.ml" 12 349 391 "main/ojacare.ml" 12 349 403
+type(
+  string
+)
+"main/ojacare.ml" 12 349 353 "main/ojacare.ml" 12 349 403
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 13 405 409 "main/ojacare.ml" 13 405 413
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"main/ojacare.ml" 13 405 414 "main/ojacare.ml" 13 405 415
+type(
+  int
+)
+"main/ojacare.ml" 13 405 409 "main/ojacare.ml" 13 405 415
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 12 349 353 "main/ojacare.ml" 13 405 415
+type(
+  unit
+)
+"main/ojacare.ml" 10 221 271 "main/ojacare.ml" 14 416 421
+type(
+  unit
+)
+"main/ojacare.ml" 10 221 223 "main/ojacare.ml" 14 416 421
+type(
+  unit
+)
+"main/ojacare.ml" 16 428 434 "main/ojacare.ml" 16 428 440
+type(
+  Idl.file
+)
+ident(
+  def p_file "main/ojacare.ml" 17 473 475 "main/ojacare.ml" 26 941 957
+)
+"main/ojacare.ml" 16 428 444 "main/ojacare.ml" 16 428 464
+type(
+  string -> Idl.file
+)
+ident(
+  ext_ref Idl_parser.from_file
+)
+"main/ojacare.ml" 16 428 465 "main/ojacare.ml" 16 428 469
+type(
+  string
+)
+ident(
+  int_ref file "main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+)
+"main/ojacare.ml" 16 428 444 "main/ojacare.ml" 16 428 469
+call(
+  stack
+)
+type(
+  Idl.file
+)
+"main/ojacare.ml" 17 473 479 "main/ojacare.ml" 17 473 485
+type(
+  Cidl.file
+)
+ident(
+  def c_file "main/ojacare.ml" 18 518 520 "main/ojacare.ml" 26 941 957
+)
+"main/ojacare.ml" 17 473 488 "main/ojacare.ml" 17 473 502
+type(
+  string -> Idl.file -> Cidl.file
+)
+ident(
+  ext_ref Idl_check.main
+)
+"main/ojacare.ml" 17 473 503 "main/ojacare.ml" 17 473 507
+type(
+  string
+)
+ident(
+  int_ref file "main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+)
+"main/ojacare.ml" 17 473 508 "main/ojacare.ml" 17 473 514
+type(
+  Idl.file
+)
+ident(
+  int_ref p_file "main/ojacare.ml" 16 428 434 "main/ojacare.ml" 16 428 440
+)
+"main/ojacare.ml" 17 473 488 "main/ojacare.ml" 17 473 514
+call(
+  stack
+)
+type(
+  Cidl.file
+)
+"main/ojacare.ml" 18 518 520 "main/ojacare.ml" 18 518 549
+type(
+  Cidl.file -> unit
+)
+ident(
+  ext_ref Idl_javagen.create_stub_files
+)
+"main/ojacare.ml" 18 518 550 "main/ojacare.ml" 18 518 556
+type(
+  Cidl.file
+)
+ident(
+  int_ref c_file "main/ojacare.ml" 17 473 479 "main/ojacare.ml" 17 473 485
+)
+"main/ojacare.ml" 18 518 520 "main/ojacare.ml" 18 518 556
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 19 558 564 "main/ojacare.ml" 19 558 567
+type(
+  Unix.file_descr
+)
+ident(
+  def out "main/ojacare.ml" 20 680 682 "main/ojacare.ml" 26 941 957
+)
+"main/ojacare.ml" 19 558 570 "main/ojacare.ml" 19 558 583
+type(
+  string -> Unix.open_flag list -> Unix.file_perm -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.openfile
+)
+"main/ojacare.ml" 19 558 586 "main/ojacare.ml" 19 558 606
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.chop_suffix
+)
+"main/ojacare.ml" 19 558 607 "main/ojacare.ml" 19 558 611
+type(
+  string
+)
+ident(
+  int_ref file "main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+)
+"main/ojacare.ml" 19 558 612 "main/ojacare.ml" 19 558 618
+type(
+  string
+)
+"main/ojacare.ml" 19 558 585 "main/ojacare.ml" 19 558 619
+call(
+  stack
+)
+type(
+  string
+)
+"main/ojacare.ml" 19 558 620 "main/ojacare.ml" 19 558 621
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"main/ojacare.ml" 19 558 622 "main/ojacare.ml" 19 558 627
+type(
+  string
+)
+"main/ojacare.ml" 19 558 584 "main/ojacare.ml" 19 558 628
+call(
+  stack
+)
+type(
+  string
+)
+"main/ojacare.ml" 19 558 630 "main/ojacare.ml" 19 558 643
+type(
+  Unix.open_flag
+)
+"main/ojacare.ml" 19 558 644 "main/ojacare.ml" 19 558 656
+type(
+  Unix.open_flag
+)
+"main/ojacare.ml" 19 558 657 "main/ojacare.ml" 19 558 669
+type(
+  Unix.open_flag
+)
+"main/ojacare.ml" 19 558 629 "main/ojacare.ml" 19 558 670
+type(
+  Unix.open_flag list
+)
+"main/ojacare.ml" 19 558 671 "main/ojacare.ml" 19 558 676
+type(
+  Unix.file_perm
+)
+"main/ojacare.ml" 19 558 570 "main/ojacare.ml" 19 558 676
+call(
+  stack
+)
+type(
+  Unix.file_descr
+)
+"main/ojacare.ml" 20 680 682 "main/ojacare.ml" 20 680 691
+type(
+  Unix.file_descr -> Unix.file_descr -> unit
+)
+ident(
+  ext_ref Unix.dup2
+)
+"main/ojacare.ml" 20 680 692 "main/ojacare.ml" 20 680 695
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref out "main/ojacare.ml" 19 558 564 "main/ojacare.ml" 19 558 567
+)
+"main/ojacare.ml" 20 680 696 "main/ojacare.ml" 20 680 707
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stdout
+)
+"main/ojacare.ml" 20 680 682 "main/ojacare.ml" 20 680 707
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 21 709 711 "main/ojacare.ml" 21 709 729
+type(
+  Cidl.file -> unit
+)
+ident(
+  ext_ref Idl_camlgen.output
+)
+"main/ojacare.ml" 21 709 730 "main/ojacare.ml" 21 709 736
+type(
+  Cidl.file
+)
+ident(
+  int_ref c_file "main/ojacare.ml" 17 473 479 "main/ojacare.ml" 17 473 485
+)
+"main/ojacare.ml" 21 709 711 "main/ojacare.ml" 21 709 736
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 22 738 740 "main/ojacare.ml" 22 738 750
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  ext_ref Unix.close
+)
+"main/ojacare.ml" 22 738 751 "main/ojacare.ml" 22 738 754
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref out "main/ojacare.ml" 19 558 564 "main/ojacare.ml" 19 558 567
+)
+"main/ojacare.ml" 22 738 740 "main/ojacare.ml" 22 738 754
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 23 756 762 "main/ojacare.ml" 23 756 765
+type(
+  Unix.file_descr
+)
+ident(
+  def out "main/ojacare.ml" 24 879 881 "main/ojacare.ml" 26 941 957
+)
+"main/ojacare.ml" 23 756 768 "main/ojacare.ml" 23 756 781
+type(
+  string -> Unix.open_flag list -> Unix.file_perm -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.openfile
+)
+"main/ojacare.ml" 23 756 784 "main/ojacare.ml" 23 756 804
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.chop_suffix
+)
+"main/ojacare.ml" 23 756 805 "main/ojacare.ml" 23 756 809
+type(
+  string
+)
+ident(
+  int_ref file "main/ojacare.ml" 9 192 198 "main/ojacare.ml" 9 192 202
+)
+"main/ojacare.ml" 23 756 810 "main/ojacare.ml" 23 756 816
+type(
+  string
+)
+"main/ojacare.ml" 23 756 783 "main/ojacare.ml" 23 756 817
+call(
+  stack
+)
+type(
+  string
+)
+"main/ojacare.ml" 23 756 818 "main/ojacare.ml" 23 756 819
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"main/ojacare.ml" 23 756 820 "main/ojacare.ml" 23 756 826
+type(
+  string
+)
+"main/ojacare.ml" 23 756 782 "main/ojacare.ml" 23 756 827
+call(
+  stack
+)
+type(
+  string
+)
+"main/ojacare.ml" 23 756 829 "main/ojacare.ml" 23 756 842
+type(
+  Unix.open_flag
+)
+"main/ojacare.ml" 23 756 843 "main/ojacare.ml" 23 756 855
+type(
+  Unix.open_flag
+)
+"main/ojacare.ml" 23 756 856 "main/ojacare.ml" 23 756 868
+type(
+  Unix.open_flag
+)
+"main/ojacare.ml" 23 756 828 "main/ojacare.ml" 23 756 869
+type(
+  Unix.open_flag list
+)
+"main/ojacare.ml" 23 756 870 "main/ojacare.ml" 23 756 875
+type(
+  Unix.file_perm
+)
+"main/ojacare.ml" 23 756 768 "main/ojacare.ml" 23 756 875
+call(
+  stack
+)
+type(
+  Unix.file_descr
+)
+"main/ojacare.ml" 24 879 881 "main/ojacare.ml" 24 879 890
+type(
+  Unix.file_descr -> Unix.file_descr -> unit
+)
+ident(
+  ext_ref Unix.dup2
+)
+"main/ojacare.ml" 24 879 891 "main/ojacare.ml" 24 879 894
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref out "main/ojacare.ml" 23 756 762 "main/ojacare.ml" 23 756 765
+)
+"main/ojacare.ml" 24 879 895 "main/ojacare.ml" 24 879 906
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stdout
+)
+"main/ojacare.ml" 24 879 881 "main/ojacare.ml" 24 879 906
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 25 908 910 "main/ojacare.ml" 25 908 932
+type(
+  Cidl.file -> unit
+)
+ident(
+  ext_ref Idl_camlgen.output_sig
+)
+"main/ojacare.ml" 25 908 933 "main/ojacare.ml" 25 908 939
+type(
+  Cidl.file
+)
+ident(
+  int_ref c_file "main/ojacare.ml" 17 473 479 "main/ojacare.ml" 17 473 485
+)
+"main/ojacare.ml" 25 908 910 "main/ojacare.ml" 25 908 939
+call(
+  stack
+)
+type(
+  unit
+)
+"main/ojacare.ml" 26 941 943 "main/ojacare.ml" 26 941 953
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  ext_ref Unix.close
+)
+"main/ojacare.ml" 26 941 954 "main/ojacare.ml" 26 941 957
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref out "main/ojacare.ml" 23 756 762 "main/ojacare.ml" 23 756 765
+)
+"main/ojacare.ml" 26 941 943 "main/ojacare.ml" 26 941 957
+call(
+  tail
+)
+type(
+  unit
+)
+"main/ojacare.ml" 25 908 910 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 24 879 881 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 23 756 758 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 22 738 740 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 21 709 711 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 20 680 682 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 19 558 560 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 18 518 520 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 17 473 475 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 16 428 430 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 10 221 223 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 9 192 194 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 4 75 77 "main/ojacare.ml" 26 941 957
+type(
+  unit
+)
+"main/ojacare.ml" 28 959 967 "main/ojacare.ml" 28 959 971
+type(
+  unit -> unit
+)
+ident(
+  int_ref main "main/ojacare.ml" 3 61 65 "main/ojacare.ml" 3 61 69
+)
+"main/ojacare.ml" 28 959 972 "main/ojacare.ml" 28 959 974
+type(
+  unit
+)
+"main/ojacare.ml" 28 959 967 "main/ojacare.ml" 28 959 974
+call(
+  stack
+)
+type(
+  unit
+)

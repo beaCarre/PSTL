@@ -1,0 +1,723 @@
+"loc.ml" 6 134 138 "loc.ml" 6 134 141
+type(
+  unit -> t
+)
+ident(
+  def get "loc.ml" 9 203 203 "_none_" 1 0 -1
+)
+"loc.ml" 6 134 142 "loc.ml" 6 134 144
+type(
+  unit
+)
+"loc.ml" 7 147 154 "loc.ml" 7 147 174
+type(
+  unit -> int
+)
+ident(
+  ext_ref Parsing.symbol_start
+)
+"loc.ml" 7 147 175 "loc.ml" 7 147 177
+type(
+  unit
+)
+"loc.ml" 7 147 154 "loc.ml" 7 147 177
+call(
+  stack
+)
+type(
+  int
+)
+"loc.ml" 7 147 179 "loc.ml" 7 147 197
+type(
+  unit -> int
+)
+ident(
+  ext_ref Parsing.symbol_end
+)
+"loc.ml" 7 147 198 "loc.ml" 7 147 200
+type(
+  unit
+)
+"loc.ml" 7 147 179 "loc.ml" 7 147 200
+call(
+  stack
+)
+type(
+  int
+)
+"loc.ml" 7 147 149 "loc.ml" 7 147 201
+type(
+  t
+)
+"loc.ml" 9 203 211 "loc.ml" 9 203 223
+type(
+  in_channel -> t -> unit
+)
+ident(
+  def print_source "loc.ml" 9 203 203 "_none_" 1 0 -1
+)
+"loc.ml" 9 203 224 "loc.ml" 9 203 234
+type(
+  in_channel
+)
+ident(
+  def in_channel "loc.ml" 9 203 235 "loc.ml" 24 883 937
+)
+"loc.ml" 9 203 240 "loc.ml" 9 203 243
+type(
+  int
+)
+ident(
+  def deb "loc.ml" 10 253 255 "loc.ml" 24 883 937
+)
+"loc.ml" 9 203 245 "loc.ml" 9 203 248
+type(
+  int
+)
+ident(
+  def fin "loc.ml" 10 253 255 "loc.ml" 24 883 937
+)
+"loc.ml" 9 203 235 "loc.ml" 9 203 250
+type(
+  t
+)
+"loc.ml" 10 253 259 "loc.ml" 10 253 261
+type(
+  int
+)
+ident(
+  def lg "loc.ml" 11 296 298 "loc.ml" 24 883 937
+)
+"loc.ml" 10 253 264 "loc.ml" 10 253 281
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.in_channel_length
+)
+"loc.ml" 10 253 282 "loc.ml" 10 253 292
+type(
+  in_channel
+)
+ident(
+  int_ref in_channel "loc.ml" 9 203 224 "loc.ml" 9 203 234
+)
+"loc.ml" 10 253 264 "loc.ml" 10 253 292
+call(
+  stack
+)
+type(
+  int
+)
+"loc.ml" 11 296 306 "loc.ml" 11 296 313
+type(
+  int -> int -> int -> int * int
+)
+ident(
+  def cherche "loc.ml" 11 296 298 "loc.ml" 24 883 937
+)
+"loc.ml" 11 296 314 "loc.ml" 11 296 322
+type(
+  int
+)
+ident(
+  def deb_line "loc.ml" 11 296 323 "loc.ml" 15 476 522
+)
+"loc.ml" 11 296 323 "loc.ml" 11 296 326
+type(
+  int
+)
+ident(
+  def pos "loc.ml" 11 296 327 "loc.ml" 15 476 522
+)
+"loc.ml" 11 296 327 "loc.ml" 11 296 335
+type(
+  int
+)
+ident(
+  def num_line "loc.ml" 12 338 342 "loc.ml" 15 476 522
+)
+"loc.ml" 12 338 346 "loc.ml" 12 338 349
+type(
+  string
+)
+ident(
+  def lig "loc.ml" 13 377 381 "loc.ml" 15 476 522
+)
+"loc.ml" 12 338 352 "loc.ml" 12 338 362
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"loc.ml" 12 338 363 "loc.ml" 12 338 373
+type(
+  in_channel
+)
+ident(
+  int_ref in_channel "loc.ml" 9 203 224 "loc.ml" 9 203 234
+)
+"loc.ml" 12 338 352 "loc.ml" 12 338 373
+call(
+  stack
+)
+type(
+  string
+)
+"loc.ml" 13 377 385 "loc.ml" 13 377 393
+type(
+  int
+)
+ident(
+  def end_line "loc.ml" 14 428 432 "loc.ml" 15 476 522
+)
+"loc.ml" 13 377 396 "loc.ml" 13 377 404
+type(
+  int
+)
+ident(
+  int_ref deb_line "loc.ml" 11 296 314 "loc.ml" 11 296 322
+)
+"loc.ml" 13 377 405 "loc.ml" 13 377 406
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"loc.ml" 13 377 407 "loc.ml" 13 377 420
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"loc.ml" 13 377 421 "loc.ml" 13 377 424
+type(
+  string
+)
+ident(
+  int_ref lig "loc.ml" 12 338 346 "loc.ml" 12 338 349
+)
+"loc.ml" 13 377 407 "loc.ml" 13 377 424
+type(
+  int
+)
+"loc.ml" 13 377 396 "loc.ml" 13 377 424
+type(
+  int
+)
+"loc.ml" 14 428 435 "loc.ml" 14 428 443
+type(
+  int
+)
+ident(
+  int_ref end_line "loc.ml" 13 377 385 "loc.ml" 13 377 393
+)
+"loc.ml" 14 428 444 "loc.ml" 14 428 446
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"loc.ml" 14 428 447 "loc.ml" 14 428 450
+type(
+  int
+)
+ident(
+  int_ref pos "loc.ml" 11 296 323 "loc.ml" 11 296 326
+)
+"loc.ml" 14 428 435 "loc.ml" 14 428 450
+type(
+  bool
+)
+"loc.ml" 14 428 457 "loc.ml" 14 428 465
+type(
+  int
+)
+ident(
+  int_ref num_line "loc.ml" 11 296 327 "loc.ml" 11 296 335
+)
+"loc.ml" 14 428 466 "loc.ml" 14 428 474
+type(
+  int
+)
+ident(
+  int_ref deb_line "loc.ml" 11 296 314 "loc.ml" 11 296 322
+)
+"loc.ml" 14 428 456 "loc.ml" 14 428 475
+type(
+  int * int
+)
+"loc.ml" 15 476 485 "loc.ml" 15 476 492
+type(
+  int -> int -> int -> int * int
+)
+ident(
+  int_ref cherche "loc.ml" 11 296 306 "loc.ml" 11 296 313
+)
+"loc.ml" 15 476 494 "loc.ml" 15 476 502
+type(
+  int
+)
+ident(
+  int_ref end_line "loc.ml" 13 377 385 "loc.ml" 13 377 393
+)
+"loc.ml" 15 476 502 "loc.ml" 15 476 503
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"loc.ml" 15 476 503 "loc.ml" 15 476 504
+type(
+  int
+)
+"loc.ml" 15 476 493 "loc.ml" 15 476 505
+type(
+  int
+)
+"loc.ml" 15 476 506 "loc.ml" 15 476 509
+type(
+  int
+)
+ident(
+  int_ref pos "loc.ml" 11 296 323 "loc.ml" 11 296 326
+)
+"loc.ml" 15 476 511 "loc.ml" 15 476 519
+type(
+  int
+)
+ident(
+  int_ref num_line "loc.ml" 11 296 327 "loc.ml" 11 296 335
+)
+"loc.ml" 15 476 519 "loc.ml" 15 476 520
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"loc.ml" 15 476 520 "loc.ml" 15 476 521
+type(
+  int
+)
+"loc.ml" 15 476 510 "loc.ml" 15 476 522
+type(
+  int
+)
+"loc.ml" 15 476 485 "loc.ml" 15 476 522
+call(
+  tail
+)
+type(
+  int * int
+)
+"loc.ml" 14 428 432 "loc.ml" 15 476 522
+type(
+  int * int
+)
+"loc.ml" 13 377 381 "loc.ml" 15 476 522
+type(
+  int * int
+)
+"loc.ml" 12 338 342 "loc.ml" 15 476 522
+type(
+  int * int
+)
+"loc.ml" 17 528 534 "loc.ml" 17 528 542
+type(
+  int
+)
+ident(
+  def num_line "loc.ml" 18 597 599 "loc.ml" 24 883 937
+)
+"loc.ml" 17 528 543 "loc.ml" 17 528 551
+type(
+  int
+)
+ident(
+  def deb_line "loc.ml" 18 597 599 "loc.ml" 24 883 937
+)
+"loc.ml" 17 528 534 "loc.ml" 17 528 551
+type(
+  int * int
+)
+"loc.ml" 17 528 555 "loc.ml" 17 528 562
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"loc.ml" 17 528 563 "loc.ml" 17 528 573
+type(
+  in_channel
+)
+ident(
+  int_ref in_channel "loc.ml" 9 203 224 "loc.ml" 9 203 234
+)
+"loc.ml" 17 528 574 "loc.ml" 17 528 575
+type(
+  int
+)
+"loc.ml" 17 528 555 "loc.ml" 17 528 575
+call(
+  stack
+)
+type(
+  unit
+)
+"loc.ml" 17 528 577 "loc.ml" 17 528 584
+type(
+  int -> int -> int -> int * int
+)
+ident(
+  int_ref cherche "loc.ml" 11 296 306 "loc.ml" 11 296 313
+)
+"loc.ml" 17 528 585 "loc.ml" 17 528 586
+type(
+  int
+)
+"loc.ml" 17 528 587 "loc.ml" 17 528 590
+type(
+  int
+)
+ident(
+  int_ref deb "loc.ml" 9 203 240 "loc.ml" 9 203 243
+)
+"loc.ml" 17 528 591 "loc.ml" 17 528 592
+type(
+  int
+)
+"loc.ml" 17 528 577 "loc.ml" 17 528 592
+call(
+  stack
+)
+type(
+  int * int
+)
+"loc.ml" 17 528 554 "loc.ml" 17 528 593
+type(
+  int * int
+)
+"loc.ml" 18 597 599 "loc.ml" 18 597 606
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"loc.ml" 18 597 607 "loc.ml" 18 597 617
+type(
+  in_channel
+)
+ident(
+  int_ref in_channel "loc.ml" 9 203 224 "loc.ml" 9 203 234
+)
+"loc.ml" 18 597 618 "loc.ml" 18 597 626
+type(
+  int
+)
+ident(
+  int_ref deb_line "loc.ml" 17 528 543 "loc.ml" 17 528 551
+)
+"loc.ml" 18 597 599 "loc.ml" 18 597 626
+call(
+  stack
+)
+type(
+  unit
+)
+"loc.ml" 19 628 634 "loc.ml" 19 628 638
+type(
+  string
+)
+ident(
+  def line "loc.ml" 20 667 669 "loc.ml" 24 883 937
+)
+"loc.ml" 19 628 641 "loc.ml" 19 628 651
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"loc.ml" 19 628 652 "loc.ml" 19 628 662
+type(
+  in_channel
+)
+ident(
+  int_ref in_channel "loc.ml" 9 203 224 "loc.ml" 9 203 234
+)
+"loc.ml" 19 628 641 "loc.ml" 19 628 662
+call(
+  stack
+)
+type(
+  string
+)
+"loc.ml" 20 667 673 "loc.ml" 20 667 684
+type(
+  int
+)
+ident(
+  def line_length "loc.ml" 21 709 711 "loc.ml" 24 883 937
+)
+"loc.ml" 20 667 687 "loc.ml" 20 667 700
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"loc.ml" 20 667 701 "loc.ml" 20 667 705
+type(
+  string
+)
+ident(
+  int_ref line "loc.ml" 19 628 634 "loc.ml" 19 628 638
+)
+"loc.ml" 20 667 687 "loc.ml" 20 667 705
+type(
+  int
+)
+"loc.ml" 21 709 715 "loc.ml" 21 709 727
+type(
+  string
+)
+ident(
+  def space_string "loc.ml" 23 840 842 "loc.ml" 24 883 937
+)
+"loc.ml" 21 709 730 "loc.ml" 21 709 741
+type(
+  int -> char -> string
+)
+ident(
+  ext_ref String.make
+)
+"loc.ml" 21 709 743 "loc.ml" 21 709 746
+type(
+  int
+)
+ident(
+  int_ref deb "loc.ml" 9 203 240 "loc.ml" 9 203 243
+)
+"loc.ml" 21 709 746 "loc.ml" 21 709 747
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"loc.ml" 21 709 747 "loc.ml" 21 709 755
+type(
+  int
+)
+ident(
+  int_ref deb_line "loc.ml" 17 528 543 "loc.ml" 17 528 551
+)
+"loc.ml" 21 709 742 "loc.ml" 21 709 756
+type(
+  int
+)
+"loc.ml" 21 709 758 "loc.ml" 21 709 761
+type(
+  char
+)
+"loc.ml" 21 709 730 "loc.ml" 21 709 761
+call(
+  stack
+)
+type(
+  string
+)
+"loc.ml" 22 762 768 "loc.ml" 22 762 779
+type(
+  string
+)
+ident(
+  def here_string "loc.ml" 23 840 842 "loc.ml" 24 883 937
+)
+"loc.ml" 22 762 782 "loc.ml" 22 762 793
+type(
+  int -> char -> string
+)
+ident(
+  ext_ref String.make
+)
+"loc.ml" 22 762 796 "loc.ml" 22 762 799
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"loc.ml" 22 762 800 "loc.ml" 22 762 803
+type(
+  int
+)
+ident(
+  int_ref fin "loc.ml" 9 203 245 "loc.ml" 9 203 248
+)
+"loc.ml" 22 762 805 "loc.ml" 22 762 813
+type(
+  int
+)
+ident(
+  int_ref deb_line "loc.ml" 17 528 543 "loc.ml" 17 528 551
+)
+"loc.ml" 22 762 813 "loc.ml" 22 762 814
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"loc.ml" 22 762 814 "loc.ml" 22 762 825
+type(
+  int
+)
+ident(
+  int_ref line_length "loc.ml" 20 667 673 "loc.ml" 20 667 684
+)
+"loc.ml" 22 762 804 "loc.ml" 22 762 826
+type(
+  int
+)
+"loc.ml" 22 762 795 "loc.ml" 22 762 827
+call(
+  stack
+)
+type(
+  int
+)
+"loc.ml" 22 762 827 "loc.ml" 22 762 828
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"loc.ml" 22 762 828 "loc.ml" 22 762 831
+type(
+  int
+)
+ident(
+  int_ref deb "loc.ml" 9 203 240 "loc.ml" 9 203 243
+)
+"loc.ml" 22 762 794 "loc.ml" 22 762 832
+type(
+  int
+)
+"loc.ml" 22 762 833 "loc.ml" 22 762 836
+type(
+  char
+)
+"loc.ml" 22 762 782 "loc.ml" 22 762 836
+call(
+  stack
+)
+type(
+  string
+)
+"loc.ml" 23 840 842 "loc.ml" 23 840 855
+type(
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"loc.ml" 23 840 856 "loc.ml" 23 840 867
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"loc.ml" 23 840 868 "loc.ml" 23 840 876
+type(
+  int
+)
+ident(
+  int_ref num_line "loc.ml" 17 528 534 "loc.ml" 17 528 542
+)
+"loc.ml" 23 840 877 "loc.ml" 23 840 881
+type(
+  string
+)
+ident(
+  int_ref line "loc.ml" 19 628 634 "loc.ml" 19 628 638
+)
+"loc.ml" 23 840 842 "loc.ml" 23 840 881
+call(
+  stack
+)
+type(
+  unit
+)
+"loc.ml" 24 883 885 "loc.ml" 24 883 898
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"loc.ml" 24 883 899 "loc.ml" 24 883 912
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"loc.ml" 24 883 913 "loc.ml" 24 883 925
+type(
+  string
+)
+ident(
+  int_ref space_string "loc.ml" 21 709 715 "loc.ml" 21 709 727
+)
+"loc.ml" 24 883 926 "loc.ml" 24 883 937
+type(
+  string
+)
+ident(
+  int_ref here_string "loc.ml" 22 762 768 "loc.ml" 22 762 779
+)
+"loc.ml" 24 883 885 "loc.ml" 24 883 937
+call(
+  tail
+)
+type(
+  unit
+)
+"loc.ml" 23 840 842 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 21 709 711 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 20 667 669 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 19 628 630 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 18 597 599 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 17 528 530 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 11 296 298 "loc.ml" 24 883 937
+type(
+  unit
+)
+"loc.ml" 10 253 255 "loc.ml" 24 883 937
+type(
+  unit
+)

@@ -1,0 +1,327 @@
+"modifiers.ml" 5 73 81 "modifiers.ml" 5 73 92
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  def is_abstract "modifiers.ml" 5 73 73 "_none_" 1 0 -1
+)
+"modifiers.ml" 5 73 93 "modifiers.ml" 5 73 94
+type(
+  Idl.modifier list
+)
+ident(
+  def l "modifiers.ml" 5 73 97 "modifiers.ml" 7 124 172
+)
+"modifiers.ml" 5 73 103 "modifiers.ml" 5 73 104
+type(
+  Idl.modifier list
+)
+ident(
+  int_ref l "modifiers.ml" 5 73 93 "modifiers.ml" 5 73 94
+)
+"modifiers.ml" 6 110 112 "modifiers.ml" 6 110 114
+type(
+  Idl.modifier list
+)
+"modifiers.ml" 6 110 118 "modifiers.ml" 6 110 123
+type(
+  bool
+)
+"modifiers.ml" 7 124 126 "modifiers.ml" 7 124 127
+type(
+  Idl.modifier
+)
+ident(
+  def e "modifiers.ml" 7 124 134 "modifiers.ml" 7 124 172
+)
+"modifiers.ml" 7 124 129 "modifiers.ml" 7 124 130
+type(
+  Idl.modifier list
+)
+ident(
+  def l "modifiers.ml" 7 124 134 "modifiers.ml" 7 124 172
+)
+"modifiers.ml" 7 124 126 "modifiers.ml" 7 124 130
+type(
+  Idl.modifier list
+)
+"modifiers.ml" 7 124 134 "modifiers.ml" 7 124 135
+type(
+  Idl.modifier
+)
+ident(
+  int_ref e "modifiers.ml" 7 124 126 "modifiers.ml" 7 124 127
+)
+"modifiers.ml" 7 124 134 "modifiers.ml" 7 124 143
+type(
+  Idl.modifier_desc
+)
+"modifiers.ml" 7 124 144 "modifiers.ml" 7 124 145
+type(
+  Idl.modifier_desc -> Idl.modifier_desc -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"modifiers.ml" 7 124 146 "modifiers.ml" 7 124 155
+type(
+  Idl.modifier_desc
+)
+"modifiers.ml" 7 124 134 "modifiers.ml" 7 124 155
+type(
+  bool
+)
+"modifiers.ml" 7 124 156 "modifiers.ml" 7 124 158
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( or )
+)
+"modifiers.ml" 7 124 159 "modifiers.ml" 7 124 170
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  int_ref is_abstract "modifiers.ml" 5 73 81 "modifiers.ml" 5 73 92
+)
+"modifiers.ml" 7 124 171 "modifiers.ml" 7 124 172
+type(
+  Idl.modifier list
+)
+ident(
+  int_ref l "modifiers.ml" 7 124 129 "modifiers.ml" 7 124 130
+)
+"modifiers.ml" 7 124 159 "modifiers.ml" 7 124 172
+call(
+  tail
+)
+type(
+  bool
+)
+"modifiers.ml" 7 124 134 "modifiers.ml" 7 124 172
+type(
+  bool
+)
+"modifiers.ml" 5 73 97 "modifiers.ml" 7 124 172
+type(
+  bool
+)
+"modifiers.ml" 9 174 182 "modifiers.ml" 9 174 190
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  def is_final "modifiers.ml" 9 174 174 "_none_" 1 0 -1
+)
+"modifiers.ml" 9 174 191 "modifiers.ml" 9 174 192
+type(
+  Idl.modifier list
+)
+ident(
+  def l "modifiers.ml" 9 174 195 "modifiers.ml" 11 222 264
+)
+"modifiers.ml" 9 174 201 "modifiers.ml" 9 174 202
+type(
+  Idl.modifier list
+)
+ident(
+  int_ref l "modifiers.ml" 9 174 191 "modifiers.ml" 9 174 192
+)
+"modifiers.ml" 10 208 210 "modifiers.ml" 10 208 212
+type(
+  Idl.modifier list
+)
+"modifiers.ml" 10 208 216 "modifiers.ml" 10 208 221
+type(
+  bool
+)
+"modifiers.ml" 11 222 224 "modifiers.ml" 11 222 225
+type(
+  Idl.modifier
+)
+ident(
+  def e "modifiers.ml" 11 222 232 "modifiers.ml" 11 222 264
+)
+"modifiers.ml" 11 222 227 "modifiers.ml" 11 222 228
+type(
+  Idl.modifier list
+)
+ident(
+  def l "modifiers.ml" 11 222 232 "modifiers.ml" 11 222 264
+)
+"modifiers.ml" 11 222 224 "modifiers.ml" 11 222 228
+type(
+  Idl.modifier list
+)
+"modifiers.ml" 11 222 232 "modifiers.ml" 11 222 233
+type(
+  Idl.modifier
+)
+ident(
+  int_ref e "modifiers.ml" 11 222 224 "modifiers.ml" 11 222 225
+)
+"modifiers.ml" 11 222 232 "modifiers.ml" 11 222 241
+type(
+  Idl.modifier_desc
+)
+"modifiers.ml" 11 222 242 "modifiers.ml" 11 222 243
+type(
+  Idl.modifier_desc -> Idl.modifier_desc -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"modifiers.ml" 11 222 244 "modifiers.ml" 11 222 250
+type(
+  Idl.modifier_desc
+)
+"modifiers.ml" 11 222 232 "modifiers.ml" 11 222 250
+type(
+  bool
+)
+"modifiers.ml" 11 222 251 "modifiers.ml" 11 222 253
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( or )
+)
+"modifiers.ml" 11 222 254 "modifiers.ml" 11 222 262
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  int_ref is_final "modifiers.ml" 9 174 182 "modifiers.ml" 9 174 190
+)
+"modifiers.ml" 11 222 263 "modifiers.ml" 11 222 264
+type(
+  Idl.modifier list
+)
+ident(
+  int_ref l "modifiers.ml" 11 222 227 "modifiers.ml" 11 222 228
+)
+"modifiers.ml" 11 222 254 "modifiers.ml" 11 222 264
+call(
+  tail
+)
+type(
+  bool
+)
+"modifiers.ml" 11 222 232 "modifiers.ml" 11 222 264
+type(
+  bool
+)
+"modifiers.ml" 9 174 195 "modifiers.ml" 11 222 264
+type(
+  bool
+)
+"modifiers.ml" 13 266 274 "modifiers.ml" 13 266 283
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  def is_static "modifiers.ml" 13 266 266 "_none_" 1 0 -1
+)
+"modifiers.ml" 13 266 284 "modifiers.ml" 13 266 285
+type(
+  Idl.modifier list
+)
+ident(
+  def l "modifiers.ml" 13 266 288 "modifiers.ml" 15 315 359
+)
+"modifiers.ml" 13 266 294 "modifiers.ml" 13 266 295
+type(
+  Idl.modifier list
+)
+ident(
+  int_ref l "modifiers.ml" 13 266 284 "modifiers.ml" 13 266 285
+)
+"modifiers.ml" 14 301 303 "modifiers.ml" 14 301 305
+type(
+  Idl.modifier list
+)
+"modifiers.ml" 14 301 309 "modifiers.ml" 14 301 314
+type(
+  bool
+)
+"modifiers.ml" 15 315 317 "modifiers.ml" 15 315 318
+type(
+  Idl.modifier
+)
+ident(
+  def e "modifiers.ml" 15 315 325 "modifiers.ml" 15 315 359
+)
+"modifiers.ml" 15 315 320 "modifiers.ml" 15 315 321
+type(
+  Idl.modifier list
+)
+ident(
+  def l "modifiers.ml" 15 315 325 "modifiers.ml" 15 315 359
+)
+"modifiers.ml" 15 315 317 "modifiers.ml" 15 315 321
+type(
+  Idl.modifier list
+)
+"modifiers.ml" 15 315 325 "modifiers.ml" 15 315 326
+type(
+  Idl.modifier
+)
+ident(
+  int_ref e "modifiers.ml" 15 315 317 "modifiers.ml" 15 315 318
+)
+"modifiers.ml" 15 315 325 "modifiers.ml" 15 315 334
+type(
+  Idl.modifier_desc
+)
+"modifiers.ml" 15 315 335 "modifiers.ml" 15 315 336
+type(
+  Idl.modifier_desc -> Idl.modifier_desc -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"modifiers.ml" 15 315 337 "modifiers.ml" 15 315 344
+type(
+  Idl.modifier_desc
+)
+"modifiers.ml" 15 315 325 "modifiers.ml" 15 315 344
+type(
+  bool
+)
+"modifiers.ml" 15 315 345 "modifiers.ml" 15 315 347
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( or )
+)
+"modifiers.ml" 15 315 348 "modifiers.ml" 15 315 357
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  int_ref is_static "modifiers.ml" 13 266 274 "modifiers.ml" 13 266 283
+)
+"modifiers.ml" 15 315 358 "modifiers.ml" 15 315 359
+type(
+  Idl.modifier list
+)
+ident(
+  int_ref l "modifiers.ml" 15 315 320 "modifiers.ml" 15 315 321
+)
+"modifiers.ml" 15 315 348 "modifiers.ml" 15 315 359
+call(
+  tail
+)
+type(
+  bool
+)
+"modifiers.ml" 15 315 325 "modifiers.ml" 15 315 359
+type(
+  bool
+)
+"modifiers.ml" 13 266 288 "modifiers.ml" 15 315 359
+type(
+  bool
+)

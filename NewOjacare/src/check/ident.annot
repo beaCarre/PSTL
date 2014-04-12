@@ -1,0 +1,3669 @@
+"ident.ml" 19 393 397 "ident.ml" 19 393 409
+type(
+  clazz -> bool
+)
+ident(
+  def is_interface "ident.ml" 21 436 436 "_none_" 1 0 -1
+)
+"ident.ml" 19 393 410 "ident.ml" 19 393 411
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 19 393 414 "ident.ml" 19 393 428
+)
+"ident.ml" 19 393 414 "ident.ml" 19 393 415
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 19 393 410 "ident.ml" 19 393 411
+)
+"ident.ml" 19 393 414 "ident.ml" 19 393 428
+type(
+  bool
+)
+"ident.ml" 21 436 440 "ident.ml" 21 436 462
+type(
+  clazz -> string list
+)
+ident(
+  def get_class_java_package "ident.ml" 22 494 494 "_none_" 1 0 -1
+)
+"ident.ml" 21 436 463 "ident.ml" 21 436 464
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 21 436 467 "ident.ml" 21 436 493
+)
+"ident.ml" 21 436 467 "ident.ml" 21 436 475
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"ident.ml" 21 436 476 "ident.ml" 21 436 477
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 21 436 463 "ident.ml" 21 436 464
+)
+"ident.ml" 21 436 476 "ident.ml" 21 436 493
+type(
+  string list
+)
+"ident.ml" 21 436 467 "ident.ml" 21 436 493
+call(
+  tail
+)
+type(
+  string list
+)
+"ident.ml" 22 494 498 "ident.ml" 22 494 525
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_package_name "ident.ml" 24 576 576 "_none_" 1 0 -1
+)
+"ident.ml" 22 494 526 "ident.ml" 22 494 527
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 22 494 530 "ident.ml" 22 494 574
+)
+"ident.ml" 22 494 530 "ident.ml" 22 494 543
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 22 494 544 "ident.ml" 22 494 547
+type(
+  string
+)
+"ident.ml" 22 494 549 "ident.ml" 22 494 571
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 22 494 572 "ident.ml" 22 494 573
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 22 494 526 "ident.ml" 22 494 527
+)
+"ident.ml" 22 494 548 "ident.ml" 22 494 574
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 22 494 530 "ident.ml" 22 494 574
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 24 576 580 "ident.ml" 24 576 611
+type(
+  clazz -> string list
+)
+ident(
+  def get_class_java_callback_package "ident.ml" 25 657 657 "_none_" 1 0 -1
+)
+"ident.ml" 24 576 612 "ident.ml" 24 576 613
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 24 576 616 "ident.ml" 24 576 656
+)
+"ident.ml" 24 576 616 "ident.ml" 24 576 626
+type(
+  string
+)
+"ident.ml" 24 576 631 "ident.ml" 24 576 653
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 24 576 654 "ident.ml" 24 576 655
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 24 576 612 "ident.ml" 24 576 613
+)
+"ident.ml" 24 576 630 "ident.ml" 24 576 656
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 24 576 616 "ident.ml" 24 576 656
+type(
+  string list
+)
+"ident.ml" 25 657 661 "ident.ml" 25 657 697
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_callback_package_name "ident.ml" 27 757 757 "_none_" 1 0 -1
+)
+"ident.ml" 25 657 698 "ident.ml" 25 657 699
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 25 657 702 "ident.ml" 25 657 755
+)
+"ident.ml" 25 657 702 "ident.ml" 25 657 715
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 25 657 716 "ident.ml" 25 657 719
+type(
+  string
+)
+"ident.ml" 25 657 721 "ident.ml" 25 657 752
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_callback_package "ident.ml" 24 576 580 "ident.ml" 24 576 611
+)
+"ident.ml" 25 657 753 "ident.ml" 25 657 754
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 25 657 698 "ident.ml" 25 657 699
+)
+"ident.ml" 25 657 720 "ident.ml" 25 657 755
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 25 657 702 "ident.ml" 25 657 755
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 27 757 761 "ident.ml" 27 757 780
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_name "ident.ml" 28 800 800 "_none_" 1 0 -1
+)
+"ident.ml" 27 757 781 "ident.ml" 27 757 782
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 27 757 785 "ident.ml" 27 757 799
+)
+"ident.ml" 27 757 785 "ident.ml" 27 757 786
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 27 757 781 "ident.ml" 27 757 782
+)
+"ident.ml" 27 757 785 "ident.ml" 27 757 799
+type(
+  string
+)
+"ident.ml" 28 800 804 "ident.ml" 28 800 828
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_stub_name "ident.ml" 29 848 848 "_none_" 1 0 -1
+)
+"ident.ml" 28 800 829 "ident.ml" 28 800 830
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 28 800 833 "ident.ml" 28 800 847
+)
+"ident.ml" 28 800 833 "ident.ml" 28 800 834
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 28 800 829 "ident.ml" 28 800 830
+)
+"ident.ml" 28 800 833 "ident.ml" 28 800 847
+type(
+  string
+)
+"ident.ml" 29 848 852 "ident.ml" 29 848 881
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_qualified_name "ident.ml" 30 959 959 "_none_" 1 0 -1
+)
+"ident.ml" 29 848 882 "ident.ml" 29 848 883
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 29 848 886 "ident.ml" 29 848 958
+)
+"ident.ml" 29 848 886 "ident.ml" 29 848 899
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 29 848 900 "ident.ml" 29 848 903
+type(
+  string
+)
+"ident.ml" 29 848 906 "ident.ml" 29 848 928
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 29 848 929 "ident.ml" 29 848 930
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 29 848 882 "ident.ml" 29 848 883
+)
+"ident.ml" 29 848 905 "ident.ml" 29 848 931
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 29 848 932 "ident.ml" 29 848 933
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 29 848 935 "ident.ml" 29 848 954
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_java_name "ident.ml" 27 757 761 "ident.ml" 27 757 780
+)
+"ident.ml" 29 848 955 "ident.ml" 29 848 956
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 29 848 882 "ident.ml" 29 848 883
+)
+"ident.ml" 29 848 935 "ident.ml" 29 848 956
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 29 848 934 "ident.ml" 29 848 957
+type(
+  string list
+)
+"ident.ml" 29 848 904 "ident.ml" 29 848 958
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 29 848 886 "ident.ml" 29 848 958
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 30 959 963 "ident.ml" 30 959 997
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_qualified_stub_name "ident.ml" 31 1089 1089 "_none_" 1 0 -1
+)
+"ident.ml" 30 959 998 "ident.ml" 30 959 999
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 30 959 1002 "ident.ml" 30 959 1088
+)
+"ident.ml" 30 959 1002 "ident.ml" 30 959 1015
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 30 959 1016 "ident.ml" 30 959 1019
+type(
+  string
+)
+"ident.ml" 30 959 1022 "ident.ml" 30 959 1053
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_callback_package "ident.ml" 24 576 580 "ident.ml" 24 576 611
+)
+"ident.ml" 30 959 1054 "ident.ml" 30 959 1055
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 30 959 998 "ident.ml" 30 959 999
+)
+"ident.ml" 30 959 1021 "ident.ml" 30 959 1056
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 30 959 1057 "ident.ml" 30 959 1058
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 30 959 1060 "ident.ml" 30 959 1084
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_java_stub_name "ident.ml" 28 800 804 "ident.ml" 28 800 828
+)
+"ident.ml" 30 959 1085 "ident.ml" 30 959 1086
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 30 959 998 "ident.ml" 30 959 999
+)
+"ident.ml" 30 959 1060 "ident.ml" 30 959 1086
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 30 959 1059 "ident.ml" 30 959 1087
+type(
+  string list
+)
+"ident.ml" 30 959 1020 "ident.ml" 30 959 1088
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 30 959 1002 "ident.ml" 30 959 1088
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 31 1089 1093 "ident.ml" 31 1089 1117
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_signature "ident.ml" 32 1195 1195 "_none_" 1 0 -1
+)
+"ident.ml" 31 1089 1118 "ident.ml" 31 1089 1119
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 31 1089 1122 "ident.ml" 31 1089 1194
+)
+"ident.ml" 31 1089 1122 "ident.ml" 31 1089 1135
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 31 1089 1136 "ident.ml" 31 1089 1139
+type(
+  string
+)
+"ident.ml" 31 1089 1142 "ident.ml" 31 1089 1164
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 31 1089 1165 "ident.ml" 31 1089 1166
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 31 1089 1118 "ident.ml" 31 1089 1119
+)
+"ident.ml" 31 1089 1141 "ident.ml" 31 1089 1167
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 31 1089 1168 "ident.ml" 31 1089 1169
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 31 1089 1171 "ident.ml" 31 1089 1190
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_java_name "ident.ml" 27 757 761 "ident.ml" 27 757 780
+)
+"ident.ml" 31 1089 1191 "ident.ml" 31 1089 1192
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 31 1089 1118 "ident.ml" 31 1089 1119
+)
+"ident.ml" 31 1089 1171 "ident.ml" 31 1089 1192
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 31 1089 1170 "ident.ml" 31 1089 1193
+type(
+  string list
+)
+"ident.ml" 31 1089 1140 "ident.ml" 31 1089 1194
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 31 1089 1122 "ident.ml" 31 1089 1194
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 32 1195 1199 "ident.ml" 32 1195 1228
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_stub_signature "ident.ml" 33 1320 1320 "_none_" 1 0 -1
+)
+"ident.ml" 32 1195 1229 "ident.ml" 32 1195 1230
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 32 1195 1233 "ident.ml" 32 1195 1319
+)
+"ident.ml" 32 1195 1233 "ident.ml" 32 1195 1246
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 32 1195 1247 "ident.ml" 32 1195 1250
+type(
+  string
+)
+"ident.ml" 32 1195 1253 "ident.ml" 32 1195 1284
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_callback_package "ident.ml" 24 576 580 "ident.ml" 24 576 611
+)
+"ident.ml" 32 1195 1285 "ident.ml" 32 1195 1286
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 32 1195 1229 "ident.ml" 32 1195 1230
+)
+"ident.ml" 32 1195 1252 "ident.ml" 32 1195 1287
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 32 1195 1288 "ident.ml" 32 1195 1289
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 32 1195 1291 "ident.ml" 32 1195 1315
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_java_stub_name "ident.ml" 28 800 804 "ident.ml" 28 800 828
+)
+"ident.ml" 32 1195 1316 "ident.ml" 32 1195 1317
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 32 1195 1229 "ident.ml" 32 1195 1230
+)
+"ident.ml" 32 1195 1291 "ident.ml" 32 1195 1317
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 32 1195 1290 "ident.ml" 32 1195 1318
+type(
+  string list
+)
+"ident.ml" 32 1195 1251 "ident.ml" 32 1195 1319
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 32 1195 1233 "ident.ml" 32 1195 1319
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_name "ident.ml" 34 1359 1359 "_none_" 1 0 -1
+)
+"ident.ml" 33 1320 1342 "ident.ml" 33 1320 1343
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 33 1320 1346 "ident.ml" 33 1320 1358
+)
+"ident.ml" 33 1320 1346 "ident.ml" 33 1320 1347
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 33 1320 1342 "ident.ml" 33 1320 1343
+)
+"ident.ml" 33 1320 1346 "ident.ml" 33 1320 1358
+type(
+  string
+)
+"ident.ml" 34 1359 1363 "ident.ml" 34 1359 1385
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_stub_name "ident.ml" 35 1414 1414 "_none_" 1 0 -1
+)
+"ident.ml" 34 1359 1386 "ident.ml" 34 1359 1387
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 34 1359 1390 "ident.ml" 34 1359 1413
+)
+"ident.ml" 34 1359 1390 "ident.ml" 34 1359 1398
+type(
+  string
+)
+"ident.ml" 34 1359 1399 "ident.ml" 34 1359 1400
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 34 1359 1401 "ident.ml" 34 1359 1402
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 34 1359 1386 "ident.ml" 34 1359 1387
+)
+"ident.ml" 34 1359 1401 "ident.ml" 34 1359 1413
+type(
+  string
+)
+"ident.ml" 34 1359 1390 "ident.ml" 34 1359 1413
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 35 1414 1418 "ident.ml" 35 1414 1450
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_interface_init_name "ident.ml" 36 1495 1495 "_none_" 1 0 -1
+)
+"ident.ml" 35 1414 1451 "ident.ml" 35 1414 1452
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 35 1414 1455 "ident.ml" 35 1414 1493
+)
+"ident.ml" 35 1414 1455 "ident.ml" 35 1414 1466
+type(
+  string
+)
+"ident.ml" 35 1414 1467 "ident.ml" 35 1414 1468
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 35 1414 1469 "ident.ml" 35 1414 1491
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_stub_name "ident.ml" 34 1359 1363 "ident.ml" 34 1359 1385
+)
+"ident.ml" 35 1414 1492 "ident.ml" 35 1414 1493
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 35 1414 1451 "ident.ml" 35 1414 1452
+)
+"ident.ml" 35 1414 1469 "ident.ml" 35 1414 1493
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 35 1414 1455 "ident.ml" 35 1414 1493
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 36 1495 1499 "ident.ml" 36 1495 1525
+type(
+  clazz -> Loc.t
+)
+ident(
+  def get_class_ml_name_location "ident.ml" 38 1553 1553 "_none_" 1 0 -1
+)
+"ident.ml" 36 1495 1526 "ident.ml" 36 1495 1527
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 36 1495 1530 "ident.ml" 36 1495 1551
+)
+"ident.ml" 36 1495 1530 "ident.ml" 36 1495 1531
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 36 1495 1526 "ident.ml" 36 1495 1527
+)
+"ident.ml" 36 1495 1530 "ident.ml" 36 1495 1551
+type(
+  Loc.t
+)
+"ident.ml" 38 1553 1557 "ident.ml" 38 1553 1583
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_jni_type_name "ident.ml" 39 1618 1618 "_none_" 1 0 -1
+)
+"ident.ml" 38 1553 1584 "ident.ml" 38 1553 1585
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 38 1553 1588 "ident.ml" 38 1553 1617
+)
+"ident.ml" 38 1553 1588 "ident.ml" 38 1553 1595
+type(
+  string
+)
+"ident.ml" 38 1553 1596 "ident.ml" 38 1553 1597
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 38 1553 1598 "ident.ml" 38 1553 1615
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 38 1553 1616 "ident.ml" 38 1553 1617
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 38 1553 1584 "ident.ml" 38 1553 1585
+)
+"ident.ml" 38 1553 1598 "ident.ml" 38 1553 1617
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 38 1553 1588 "ident.ml" 38 1553 1617
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 39 1618 1622 "ident.ml" 39 1618 1647
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_wrapper_name "ident.ml" 40 1686 1686 "_none_" 1 0 -1
+)
+"ident.ml" 39 1618 1648 "ident.ml" 39 1618 1649
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 39 1618 1652 "ident.ml" 39 1618 1685
+)
+"ident.ml" 39 1618 1652 "ident.ml" 39 1618 1663
+type(
+  string
+)
+"ident.ml" 39 1618 1664 "ident.ml" 39 1618 1665
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 39 1618 1666 "ident.ml" 39 1618 1683
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 39 1618 1684 "ident.ml" 39 1618 1685
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 39 1618 1648 "ident.ml" 39 1618 1649
+)
+"ident.ml" 39 1618 1666 "ident.ml" 39 1618 1685
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 39 1618 1652 "ident.ml" 39 1618 1685
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 40 1686 1690 "ident.ml" 40 1686 1720
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_stub_wrapper_name "ident.ml" 42 1759 1759 "_none_" 1 0 -1
+)
+"ident.ml" 40 1686 1721 "ident.ml" 40 1686 1722
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 40 1686 1725 "ident.ml" 40 1686 1757
+)
+"ident.ml" 40 1686 1725 "ident.ml" 40 1686 1735
+type(
+  string
+)
+"ident.ml" 40 1686 1736 "ident.ml" 40 1686 1737
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 40 1686 1738 "ident.ml" 40 1686 1755
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 40 1686 1756 "ident.ml" 40 1686 1757
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 40 1686 1721 "ident.ml" 40 1686 1722
+)
+"ident.ml" 40 1686 1738 "ident.ml" 40 1686 1757
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 40 1686 1725 "ident.ml" 40 1686 1757
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 42 1759 1763 "ident.ml" 42 1759 1790
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_allocator_name "ident.ml" 43 1827 1827 "_none_" 1 0 -1
+)
+"ident.ml" 42 1759 1791 "ident.ml" 42 1759 1792
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 42 1759 1795 "ident.ml" 42 1759 1826
+)
+"ident.ml" 42 1759 1795 "ident.ml" 42 1759 1804
+type(
+  string
+)
+"ident.ml" 42 1759 1805 "ident.ml" 42 1759 1806
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 42 1759 1807 "ident.ml" 42 1759 1824
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 42 1759 1825 "ident.ml" 42 1759 1826
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 42 1759 1791 "ident.ml" 42 1759 1792
+)
+"ident.ml" 42 1759 1807 "ident.ml" 42 1759 1826
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 42 1759 1795 "ident.ml" 42 1759 1826
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 43 1827 1831 "ident.ml" 43 1827 1863
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_stub_allocator_name "ident.ml" 44 1905 1905 "_none_" 1 0 -1
+)
+"ident.ml" 43 1827 1864 "ident.ml" 43 1827 1865
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 43 1827 1868 "ident.ml" 43 1827 1904
+)
+"ident.ml" 43 1827 1868 "ident.ml" 43 1827 1877
+type(
+  string
+)
+"ident.ml" 43 1827 1878 "ident.ml" 43 1827 1879
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 43 1827 1880 "ident.ml" 43 1827 1902
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_stub_name "ident.ml" 34 1359 1363 "ident.ml" 34 1359 1385
+)
+"ident.ml" 43 1827 1903 "ident.ml" 43 1827 1904
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 43 1827 1864 "ident.ml" 43 1827 1865
+)
+"ident.ml" 43 1827 1880 "ident.ml" 43 1827 1904
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 43 1827 1868 "ident.ml" 43 1827 1904
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 44 1905 1909 "ident.ml" 44 1905 1946
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_jni_accessor_method_name "ident.ml" 46 1986 1986 "_none_" 1 0 -1
+)
+"ident.ml" 44 1905 1947 "ident.ml" 44 1905 1948
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 44 1905 1951 "ident.ml" 44 1905 1984
+)
+"ident.ml" 44 1905 1951 "ident.ml" 44 1905 1962
+type(
+  string
+)
+"ident.ml" 44 1905 1963 "ident.ml" 44 1905 1964
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 44 1905 1965 "ident.ml" 44 1905 1982
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 44 1905 1983 "ident.ml" 44 1905 1984
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 44 1905 1947 "ident.ml" 44 1905 1948
+)
+"ident.ml" 44 1905 1965 "ident.ml" 44 1905 1984
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 44 1905 1951 "ident.ml" 44 1905 1984
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 46 1986 1990 "ident.ml" 46 1986 2019
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_array_alloc_name "ident.ml" 47 2061 2061 "_none_" 1 0 -1
+)
+"ident.ml" 46 1986 2020 "ident.ml" 46 1986 2021
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 46 1986 2024 "ident.ml" 46 1986 2060
+)
+"ident.ml" 46 1986 2024 "ident.ml" 46 1986 2038
+type(
+  string
+)
+"ident.ml" 46 1986 2039 "ident.ml" 46 1986 2040
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 46 1986 2041 "ident.ml" 46 1986 2058
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 46 1986 2059 "ident.ml" 46 1986 2060
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 46 1986 2020 "ident.ml" 46 1986 2021
+)
+"ident.ml" 46 1986 2041 "ident.ml" 46 1986 2060
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 46 1986 2024 "ident.ml" 46 1986 2060
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 47 2061 2065 "ident.ml" 47 2061 2093
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_array_init_name "ident.ml" 49 2137 2137 "_none_" 1 0 -1
+)
+"ident.ml" 47 2061 2094 "ident.ml" 47 2061 2095
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 47 2061 2098 "ident.ml" 47 2061 2135
+)
+"ident.ml" 47 2061 2098 "ident.ml" 47 2061 2112
+type(
+  string
+)
+"ident.ml" 47 2061 2114 "ident.ml" 47 2061 2115
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 47 2061 2116 "ident.ml" 47 2061 2133
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 47 2061 2134 "ident.ml" 47 2061 2135
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 47 2061 2094 "ident.ml" 47 2061 2095
+)
+"ident.ml" 47 2061 2116 "ident.ml" 47 2061 2135
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 47 2061 2098 "ident.ml" 47 2061 2135
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 49 2137 2141 "ident.ml" 49 2137 2154
+type(
+  clazz -> clazz -> int
+)
+ident(
+  def compare_clazz "ident.ml" 52 2208 2208 "_none_" 1 0 -1
+)
+"ident.ml" 49 2137 2155 "ident.ml" 49 2137 2158
+type(
+  clazz
+)
+ident(
+  def id1 "ident.ml" 49 2137 2159 "ident.ml" 50 2166 2206
+)
+"ident.ml" 49 2137 2159 "ident.ml" 49 2137 2162
+type(
+  clazz
+)
+ident(
+  def id2 "ident.ml" 50 2166 2168 "ident.ml" 50 2166 2206
+)
+"ident.ml" 50 2166 2168 "ident.ml" 50 2166 2186
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"ident.ml" 50 2166 2187 "ident.ml" 50 2166 2190
+type(
+  clazz
+)
+ident(
+  int_ref id1 "ident.ml" 49 2137 2155 "ident.ml" 49 2137 2158
+)
+"ident.ml" 50 2166 2187 "ident.ml" 50 2166 2196
+type(
+  int
+)
+"ident.ml" 50 2166 2197 "ident.ml" 50 2166 2200
+type(
+  clazz
+)
+ident(
+  int_ref id2 "ident.ml" 49 2137 2159 "ident.ml" 49 2137 2162
+)
+"ident.ml" 50 2166 2197 "ident.ml" 50 2166 2206
+type(
+  int
+)
+"ident.ml" 50 2166 2168 "ident.ml" 50 2166 2206
+type(
+  int
+)
+"ident.ml" 61 2402 2406 "ident.ml" 61 2402 2426
+type(
+  mmethod -> string
+)
+ident(
+  def get_method_java_name "ident.ml" 62 2446 2446 "_none_" 1 0 -1
+)
+"ident.ml" 61 2402 2427 "ident.ml" 61 2402 2428
+type(
+  mmethod
+)
+ident(
+  def m "ident.ml" 61 2402 2431 "ident.ml" 61 2402 2445
+)
+"ident.ml" 61 2402 2431 "ident.ml" 61 2402 2432
+type(
+  mmethod
+)
+ident(
+  int_ref m "ident.ml" 61 2402 2427 "ident.ml" 61 2402 2428
+)
+"ident.ml" 61 2402 2431 "ident.ml" 61 2402 2445
+type(
+  string
+)
+"ident.ml" 62 2446 2450 "ident.ml" 62 2446 2468
+type(
+  mmethod -> string
+)
+ident(
+  def get_method_ml_name "ident.ml" 63 2486 2486 "_none_" 1 0 -1
+)
+"ident.ml" 62 2446 2469 "ident.ml" 62 2446 2470
+type(
+  mmethod
+)
+ident(
+  def m "ident.ml" 62 2446 2473 "ident.ml" 62 2446 2485
+)
+"ident.ml" 62 2446 2473 "ident.ml" 62 2446 2474
+type(
+  mmethod
+)
+ident(
+  int_ref m "ident.ml" 62 2446 2469 "ident.ml" 62 2446 2470
+)
+"ident.ml" 62 2446 2473 "ident.ml" 62 2446 2485
+type(
+  string
+)
+"ident.ml" 63 2486 2490 "ident.ml" 63 2486 2517
+type(
+  mmethod -> Loc.t
+)
+ident(
+  def get_method_ml_name_location "ident.ml" 64 2544 2544 "_none_" 1 0 -1
+)
+"ident.ml" 63 2486 2518 "ident.ml" 63 2486 2519
+type(
+  mmethod
+)
+ident(
+  def m "ident.ml" 63 2486 2522 "ident.ml" 63 2486 2543
+)
+"ident.ml" 63 2486 2522 "ident.ml" 63 2486 2523
+type(
+  mmethod
+)
+ident(
+  int_ref m "ident.ml" 63 2486 2518 "ident.ml" 63 2486 2519
+)
+"ident.ml" 63 2486 2522 "ident.ml" 63 2486 2543
+type(
+  Loc.t
+)
+"ident.ml" 64 2544 2548 "ident.ml" 64 2544 2571
+type(
+  mmethod -> string
+)
+ident(
+  def get_method_ml_stub_name "ident.ml" 66 2609 2609 "_none_" 1 0 -1
+)
+"ident.ml" 64 2544 2572 "ident.ml" 64 2544 2573
+type(
+  mmethod
+)
+ident(
+  def m "ident.ml" 64 2544 2576 "ident.ml" 64 2544 2607
+)
+"ident.ml" 64 2544 2576 "ident.ml" 64 2544 2584
+type(
+  string
+)
+"ident.ml" 64 2544 2585 "ident.ml" 64 2544 2586
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 64 2544 2587 "ident.ml" 64 2544 2605
+type(
+  mmethod -> string
+)
+ident(
+  int_ref get_method_ml_name "ident.ml" 62 2446 2450 "ident.ml" 62 2446 2468
+)
+"ident.ml" 64 2544 2606 "ident.ml" 64 2544 2607
+type(
+  mmethod
+)
+ident(
+  int_ref m "ident.ml" 64 2544 2572 "ident.ml" 64 2544 2573
+)
+"ident.ml" 64 2544 2587 "ident.ml" 64 2544 2607
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 64 2544 2576 "ident.ml" 64 2544 2607
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 66 2609 2613 "ident.ml" 66 2609 2636
+type(
+  mmethod -> string
+)
+ident(
+  def get_method_ml_init_name "ident.ml" 67 2673 2673 "_none_" 1 0 -1
+)
+"ident.ml" 66 2609 2637 "ident.ml" 66 2609 2638
+type(
+  mmethod
+)
+ident(
+  def m "ident.ml" 66 2609 2641 "ident.ml" 66 2609 2672
+)
+"ident.ml" 66 2609 2641 "ident.ml" 66 2609 2649
+type(
+  string
+)
+"ident.ml" 66 2609 2650 "ident.ml" 66 2609 2651
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 66 2609 2652 "ident.ml" 66 2609 2670
+type(
+  mmethod -> string
+)
+ident(
+  int_ref get_method_ml_name "ident.ml" 62 2446 2450 "ident.ml" 62 2446 2468
+)
+"ident.ml" 66 2609 2671 "ident.ml" 66 2609 2672
+type(
+  mmethod
+)
+ident(
+  int_ref m "ident.ml" 66 2609 2637 "ident.ml" 66 2609 2638
+)
+"ident.ml" 66 2609 2652 "ident.ml" 66 2609 2672
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 66 2609 2641 "ident.ml" 66 2609 2672
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 67 2673 2677 "ident.ml" 67 2673 2705
+type(
+  mmethod -> string
+)
+ident(
+  def get_method_ml_init_stub_name "ident.ml" 70 2749 2749 "_none_" 1 0 -1
+)
+"ident.ml" 67 2673 2706 "ident.ml" 67 2673 2707
+type(
+  mmethod
+)
+ident(
+  def m "ident.ml" 67 2673 2710 "ident.ml" 67 2673 2746
+)
+"ident.ml" 67 2673 2710 "ident.ml" 67 2673 2718
+type(
+  string
+)
+"ident.ml" 67 2673 2719 "ident.ml" 67 2673 2720
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 67 2673 2721 "ident.ml" 67 2673 2744
+type(
+  mmethod -> string
+)
+ident(
+  int_ref get_method_ml_stub_name "ident.ml" 64 2544 2548 "ident.ml" 64 2544 2571
+)
+"ident.ml" 67 2673 2745 "ident.ml" 67 2673 2746
+type(
+  mmethod
+)
+ident(
+  int_ref m "ident.ml" 67 2673 2706 "ident.ml" 67 2673 2707
+)
+"ident.ml" 67 2673 2721 "ident.ml" 67 2673 2746
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 67 2673 2710 "ident.ml" 67 2673 2746
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 70 2749 2753 "ident.ml" 70 2749 2767
+type(
+  mmethod -> mmethod -> int
+)
+ident(
+  def compare_method "ident.ml" 73 2827 2827 "_none_" 1 0 -1
+)
+"ident.ml" 70 2749 2768 "ident.ml" 70 2749 2771
+type(
+  mmethod
+)
+ident(
+  def id1 "ident.ml" 70 2749 2772 "ident.ml" 71 2779 2825
+)
+"ident.ml" 70 2749 2772 "ident.ml" 70 2749 2775
+type(
+  mmethod
+)
+ident(
+  def id2 "ident.ml" 71 2779 2781 "ident.ml" 71 2779 2825
+)
+"ident.ml" 71 2779 2781 "ident.ml" 71 2779 2799
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"ident.ml" 71 2779 2800 "ident.ml" 71 2779 2803
+type(
+  mmethod
+)
+ident(
+  int_ref id1 "ident.ml" 70 2749 2768 "ident.ml" 70 2749 2771
+)
+"ident.ml" 71 2779 2800 "ident.ml" 71 2779 2812
+type(
+  int
+)
+"ident.ml" 71 2779 2813 "ident.ml" 71 2779 2816
+type(
+  mmethod
+)
+ident(
+  int_ref id2 "ident.ml" 70 2749 2772 "ident.ml" 70 2749 2775
+)
+"ident.ml" 71 2779 2813 "ident.ml" 71 2779 2825
+type(
+  int
+)
+"ident.ml" 71 2779 2781 "ident.ml" 71 2779 2825
+type(
+  int
+)
+"ident.ml" 76 2848 2852 "ident.ml" 76 2848 2868
+type(
+  string list -> Idl.def -> clazz
+)
+ident(
+  def make_class_ident "ident.ml" 93 3451 3451 "_none_" 1 0 -1
+)
+"ident.ml" 77 2872 2878 "ident.ml" 77 2872 2883
+type(
+  int ref
+)
+ident(
+  def stamp "ident.ml" 78 2895 2897 "ident.ml" 91 3415 3449
+)
+"ident.ml" 77 2872 2886 "ident.ml" 77 2872 2889
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ident.ml" 77 2872 2890 "ident.ml" 77 2872 2891
+type(
+  int
+)
+"ident.ml" 77 2872 2886 "ident.ml" 77 2872 2891
+type(
+  int ref
+)
+"ident.ml" 78 2895 2901 "ident.ml" 78 2895 2908
+type(
+  string list
+)
+ident(
+  def package "ident.ml" 78 2895 2909 "ident.ml" 91 3415 3449
+)
+"ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+type(
+  Idl.def
+)
+ident(
+  def def "ident.ml" 79 2916 2920 "ident.ml" 91 3415 3449
+)
+"ident.ml" 79 2916 2924 "ident.ml" 79 2916 2926
+type(
+  int
+)
+ident(
+  def id "ident.ml" 79 2916 2939 "ident.ml" 91 3415 3449
+)
+"ident.ml" 79 2916 2929 "ident.ml" 79 2916 2930
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ident.ml" 79 2916 2930 "ident.ml" 79 2916 2935
+type(
+  int ref
+)
+ident(
+  int_ref stamp "ident.ml" 77 2872 2878 "ident.ml" 77 2872 2883
+)
+"ident.ml" 79 2916 2929 "ident.ml" 79 2916 2935
+type(
+  int
+)
+"ident.ml" 79 2916 2939 "ident.ml" 79 2916 2943
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"ident.ml" 79 2916 2944 "ident.ml" 79 2916 2949
+type(
+  int ref
+)
+ident(
+  int_ref stamp "ident.ml" 77 2872 2878 "ident.ml" 77 2872 2883
+)
+"ident.ml" 79 2916 2939 "ident.ml" 79 2916 2949
+type(
+  unit
+)
+"ident.ml" 80 2951 2959 "ident.ml" 80 2951 2968
+type(
+  string
+)
+ident(
+  def java_name "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+)
+"ident.ml" 80 2951 2971 "ident.ml" 80 2951 2974
+type(
+  Idl.def
+)
+ident(
+  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+)
+"ident.ml" 80 2951 2971 "ident.ml" 80 2951 2981
+type(
+  Idl.ident
+)
+"ident.ml" 80 2951 2971 "ident.ml" 80 2951 2989
+type(
+  string
+)
+"ident.ml" 81 2990 2998 "ident.ml" 81 2990 3005
+type(
+  string
+)
+ident(
+  def ml_name "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+)
+"ident.ml" 81 2990 3007 "ident.ml" 81 2990 3013
+type(
+  Loc.t
+)
+ident(
+  def ml_loc "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+)
+"ident.ml" 81 2990 3015 "ident.ml" 81 2990 3022
+type(
+  ml_kind
+)
+ident(
+  def ml_kind "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+)
+"ident.ml" 81 2990 2998 "ident.ml" 81 2990 3022
+type(
+  string * Loc.t * ml_kind
+)
+"ident.ml" 82 3026 3038 "ident.ml" 82 3026 3052
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  ext_ref Annot.get_name
+)
+"ident.ml" 82 3026 3053 "ident.ml" 82 3026 3056
+type(
+  Idl.def
+)
+ident(
+  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+)
+"ident.ml" 82 3026 3053 "ident.ml" 82 3026 3064
+type(
+  Idl.annotation list
+)
+"ident.ml" 82 3026 3038 "ident.ml" 82 3026 3064
+call(
+  stack
+)
+type(
+  Idl.ident option
+)
+"ident.ml" 83 3070 3078 "ident.ml" 83 3070 3082
+type(
+  Idl.ident option
+)
+"ident.ml" 83 3070 3086 "ident.ml" 83 3070 3089
+type(
+  string
+)
+"ident.ml" 83 3070 3089 "ident.ml" 83 3070 3090
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 83 3070 3090 "ident.ml" 83 3070 3093
+type(
+  Idl.def
+)
+ident(
+  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+)
+"ident.ml" 83 3070 3090 "ident.ml" 83 3070 3100
+type(
+  Idl.ident
+)
+"ident.ml" 83 3070 3090 "ident.ml" 83 3070 3108
+type(
+  string
+)
+"ident.ml" 83 3070 3086 "ident.ml" 83 3070 3108
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 83 3070 3110 "ident.ml" 83 3070 3113
+type(
+  Idl.def
+)
+ident(
+  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+)
+"ident.ml" 83 3070 3110 "ident.ml" 83 3070 3120
+type(
+  Idl.ident
+)
+"ident.ml" 83 3070 3110 "ident.ml" 83 3070 3132
+type(
+  Loc.t
+)
+"ident.ml" 83 3070 3134 "ident.ml" 83 3070 3143
+type(
+  ml_kind
+)
+"ident.ml" 83 3070 3086 "ident.ml" 83 3070 3143
+type(
+  string * Loc.t * ml_kind
+)
+"ident.ml" 84 3159 3172 "ident.ml" 84 3159 3178
+type(
+  Idl.ident
+)
+ident(
+  def mlname "ident.ml" 84 3159 3182 "ident.ml" 84 3159 3225
+)
+"ident.ml" 84 3159 3167 "ident.ml" 84 3159 3178
+type(
+  Idl.ident option
+)
+"ident.ml" 84 3159 3182 "ident.ml" 84 3159 3188
+type(
+  Idl.ident
+)
+ident(
+  int_ref mlname "ident.ml" 84 3159 3172 "ident.ml" 84 3159 3178
+)
+"ident.ml" 84 3159 3182 "ident.ml" 84 3159 3196
+type(
+  string
+)
+"ident.ml" 84 3159 3198 "ident.ml" 84 3159 3204
+type(
+  Idl.ident
+)
+ident(
+  int_ref mlname "ident.ml" 84 3159 3172 "ident.ml" 84 3159 3178
+)
+"ident.ml" 84 3159 3198 "ident.ml" 84 3159 3216
+type(
+  Loc.t
+)
+"ident.ml" 84 3159 3218 "ident.ml" 84 3159 3225
+type(
+  ml_kind
+)
+"ident.ml" 84 3159 3182 "ident.ml" 84 3159 3225
+type(
+  string * Loc.t * ml_kind
+)
+"ident.ml" 82 3026 3032 "ident.ml" 84 3159 3225
+type(
+  string * Loc.t * ml_kind
+)
+"ident.ml" 85 3229 3243 "ident.ml" 85 3229 3245
+type(
+  int
+)
+ident(
+  int_ref id "ident.ml" 79 2916 2924 "ident.ml" 79 2916 2926
+)
+"ident.ml" 86 3247 3268 "ident.ml" 86 3247 3271
+type(
+  Idl.def
+)
+ident(
+  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+)
+"ident.ml" 86 3247 3268 "ident.ml" 86 3247 3283
+type(
+  bool
+)
+"ident.ml" 87 3285 3309 "ident.ml" 87 3285 3316
+type(
+  string list
+)
+ident(
+  int_ref package "ident.ml" 78 2895 2901 "ident.ml" 78 2895 2908
+)
+"ident.ml" 88 3318 3339 "ident.ml" 88 3318 3348
+type(
+  string
+)
+ident(
+  int_ref java_name "ident.ml" 80 2951 2959 "ident.ml" 80 2951 2968
+)
+"ident.ml" 89 3350 3369 "ident.ml" 89 3350 3376
+type(
+  string
+)
+ident(
+  int_ref ml_name "ident.ml" 81 2990 2998 "ident.ml" 81 2990 3005
+)
+"ident.ml" 90 3379 3407 "ident.ml" 90 3379 3413
+type(
+  Loc.t
+)
+ident(
+  int_ref ml_loc "ident.ml" 81 2990 3007 "ident.ml" 81 2990 3013
+)
+"ident.ml" 91 3415 3439 "ident.ml" 91 3415 3446
+type(
+  ml_kind
+)
+ident(
+  int_ref ml_kind "ident.ml" 81 2990 3015 "ident.ml" 81 2990 3022
+)
+"ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+type(
+  clazz
+)
+"ident.ml" 80 2951 2955 "ident.ml" 91 3415 3449
+type(
+  clazz
+)
+"ident.ml" 79 2916 2939 "ident.ml" 91 3415 3449
+type(
+  clazz
+)
+"ident.ml" 79 2916 2920 "ident.ml" 91 3415 3449
+type(
+  clazz
+)
+"ident.ml" 78 2895 2897 "ident.ml" 91 3415 3449
+type(
+  string list -> Idl.def -> clazz
+)
+"ident.ml" 77 2872 2874 "ident.ml" 91 3415 3449
+type(
+  string list -> Idl.def -> clazz
+)
+"ident.ml" 96 3504 3512 "ident.ml" 96 3504 3519
+type(
+  'a -> 'a -> int
+)
+ident(
+  def compare "ident.ml" 96 3504 3557 "ident.ml" 97 3558 3563
+)
+"ident.ml" 96 3504 3520 "ident.ml" 96 3504 3523
+type(
+  'a
+)
+ident(
+  def id1 "ident.ml" 96 3504 3524 "ident.ml" 96 3504 3557
+)
+"ident.ml" 96 3504 3524 "ident.ml" 96 3504 3527
+type(
+  'a
+)
+ident(
+  def id2 "ident.ml" 96 3504 3531 "ident.ml" 96 3504 3557
+)
+"ident.ml" 96 3504 3531 "ident.ml" 96 3504 3549
+type(
+  'a -> 'a -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"ident.ml" 96 3504 3550 "ident.ml" 96 3504 3553
+type(
+  'a
+)
+ident(
+  int_ref id1 "ident.ml" 96 3504 3520 "ident.ml" 96 3504 3523
+)
+"ident.ml" 96 3504 3554 "ident.ml" 96 3504 3557
+type(
+  'a
+)
+ident(
+  int_ref id2 "ident.ml" 96 3504 3524 "ident.ml" 96 3504 3527
+)
+"ident.ml" 96 3504 3531 "ident.ml" 96 3504 3557
+type(
+  int
+)
+"ident.ml" 98 3564 3583 "ident.ml" 98 3564 3606
+call(
+  stack
+)
+"ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+type(
+  StringEnv.key -> int
+)
+ident(
+  def get_unique_id "ident.ml" 112 3838 3838 "_none_" 1 0 -1
+)
+"ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+type(
+  int StringEnv.t ref
+)
+ident(
+  def env "ident.ml" 104 3685 3687 "ident.ml" 110 3830 3833
+)
+"ident.ml" 102 3629 3641 "ident.ml" 102 3629 3644
+type(
+  int StringEnv.t -> int StringEnv.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ident.ml" 102 3629 3645 "ident.ml" 102 3629 3660
+type(
+  int StringEnv.t
+)
+ident(
+  ext_ref StringEnv.empty
+)
+"ident.ml" 102 3629 3641 "ident.ml" 102 3629 3660
+type(
+  int StringEnv.t ref
+)
+"ident.ml" 103 3662 3668 "ident.ml" 103 3662 3673
+type(
+  int ref
+)
+ident(
+  def stamp "ident.ml" 104 3685 3687 "ident.ml" 110 3830 3833
+)
+"ident.ml" 103 3662 3676 "ident.ml" 103 3662 3679
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ident.ml" 103 3662 3680 "ident.ml" 103 3662 3681
+type(
+  int
+)
+"ident.ml" 103 3662 3676 "ident.ml" 103 3662 3681
+type(
+  int ref
+)
+"ident.ml" 104 3685 3691 "ident.ml" 104 3685 3695
+type(
+  StringEnv.key
+)
+ident(
+  def name "ident.ml" 105 3699 3703 "ident.ml" 110 3830 3833
+)
+"ident.ml" 105 3699 3707 "ident.ml" 105 3699 3721
+type(
+  StringEnv.key -> int StringEnv.t -> int
+)
+ident(
+  ext_ref StringEnv.find
+)
+"ident.ml" 105 3699 3722 "ident.ml" 105 3699 3726
+type(
+  StringEnv.key
+)
+ident(
+  int_ref name "ident.ml" 104 3685 3691 "ident.ml" 104 3685 3695
+)
+"ident.ml" 105 3699 3727 "ident.ml" 105 3699 3728
+type(
+  int StringEnv.t ref -> int StringEnv.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ident.ml" 105 3699 3728 "ident.ml" 105 3699 3731
+type(
+  int StringEnv.t ref
+)
+ident(
+  int_ref env "ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+)
+"ident.ml" 105 3699 3727 "ident.ml" 105 3699 3731
+type(
+  int StringEnv.t
+)
+"ident.ml" 105 3699 3707 "ident.ml" 105 3699 3731
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 107 3741 3747 "ident.ml" 107 3741 3756
+type(
+  exn
+)
+"ident.ml" 108 3761 3766 "ident.ml" 108 3761 3768
+type(
+  int
+)
+ident(
+  def id "ident.ml" 108 3761 3781 "ident.ml" 110 3830 3833
+)
+"ident.ml" 108 3761 3771 "ident.ml" 108 3761 3772
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ident.ml" 108 3761 3772 "ident.ml" 108 3761 3777
+type(
+  int ref
+)
+ident(
+  int_ref stamp "ident.ml" 103 3662 3668 "ident.ml" 103 3662 3673
+)
+"ident.ml" 108 3761 3771 "ident.ml" 108 3761 3777
+type(
+  int
+)
+"ident.ml" 108 3761 3781 "ident.ml" 108 3761 3785
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"ident.ml" 108 3761 3786 "ident.ml" 108 3761 3791
+type(
+  int ref
+)
+ident(
+  int_ref stamp "ident.ml" 103 3662 3668 "ident.ml" 103 3662 3673
+)
+"ident.ml" 108 3761 3781 "ident.ml" 108 3761 3791
+type(
+  unit
+)
+"ident.ml" 109 3794 3795 "ident.ml" 109 3794 3798
+type(
+  int StringEnv.t ref
+)
+ident(
+  int_ref env "ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+)
+"ident.ml" 109 3794 3799 "ident.ml" 109 3794 3801
+type(
+  int StringEnv.t ref -> int StringEnv.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ident.ml" 109 3794 3802 "ident.ml" 109 3794 3815
+type(
+  StringEnv.key -> int -> int StringEnv.t -> int StringEnv.t
+)
+ident(
+  ext_ref StringEnv.add
+)
+"ident.ml" 109 3794 3816 "ident.ml" 109 3794 3820
+type(
+  StringEnv.key
+)
+ident(
+  int_ref name "ident.ml" 104 3685 3691 "ident.ml" 104 3685 3695
+)
+"ident.ml" 109 3794 3821 "ident.ml" 109 3794 3823
+type(
+  int
+)
+ident(
+  int_ref id "ident.ml" 108 3761 3766 "ident.ml" 108 3761 3768
+)
+"ident.ml" 109 3794 3824 "ident.ml" 109 3794 3825
+type(
+  int StringEnv.t ref -> int StringEnv.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ident.ml" 109 3794 3825 "ident.ml" 109 3794 3828
+type(
+  int StringEnv.t ref
+)
+ident(
+  int_ref env "ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+)
+"ident.ml" 109 3794 3824 "ident.ml" 109 3794 3828
+type(
+  int StringEnv.t
+)
+"ident.ml" 109 3794 3802 "ident.ml" 109 3794 3828
+call(
+  stack
+)
+type(
+  int StringEnv.t
+)
+"ident.ml" 109 3794 3795 "ident.ml" 109 3794 3828
+type(
+  unit
+)
+"ident.ml" 110 3830 3831 "ident.ml" 110 3830 3833
+type(
+  int
+)
+ident(
+  int_ref id "ident.ml" 108 3761 3766 "ident.ml" 108 3761 3768
+)
+"ident.ml" 109 3794 3795 "ident.ml" 110 3830 3833
+type(
+  int
+)
+"ident.ml" 108 3761 3781 "ident.ml" 110 3830 3833
+type(
+  int
+)
+"ident.ml" 108 3761 3762 "ident.ml" 110 3830 3833
+type(
+  int
+)
+"ident.ml" 105 3699 3703 "ident.ml" 110 3830 3833
+type(
+  int
+)
+"ident.ml" 104 3685 3687 "ident.ml" 110 3830 3833
+type(
+  StringEnv.key -> int
+)
+"ident.ml" 102 3629 3631 "ident.ml" 110 3830 3833
+type(
+  StringEnv.key -> int
+)
+"ident.ml" 112 3838 3842 "ident.ml" 112 3838 3861
+type(
+  clazz -> Idl.init -> mmethod
+)
+ident(
+  def make_init_method_id "ident.ml" 135 4579 4579 "_none_" 1 0 -1
+)
+"ident.ml" 112 3838 3862 "ident.ml" 112 3838 3870
+type(
+  clazz
+)
+ident(
+  def class_id "ident.ml" 112 3838 3871 "ident.ml" 133 4570 4577
+)
+"ident.ml" 112 3838 3871 "ident.ml" 112 3838 3875
+type(
+  Idl.init
+)
+ident(
+  def init "ident.ml" 113 3878 3880 "ident.ml" 133 4570 4577
+)
+"ident.ml" 113 3878 3886 "ident.ml" 113 3878 3900
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  ext_ref Annot.get_name
+)
+"ident.ml" 113 3878 3901 "ident.ml" 113 3878 3905
+type(
+  Idl.init
+)
+ident(
+  int_ref init "ident.ml" 112 3838 3871 "ident.ml" 112 3838 3875
+)
+"ident.ml" 113 3878 3901 "ident.ml" 113 3878 3913
+type(
+  Idl.annotation list
+)
+"ident.ml" 113 3878 3886 "ident.ml" 113 3878 3913
+call(
+  stack
+)
+type(
+  Idl.ident option
+)
+"ident.ml" 114 3919 3923 "ident.ml" 114 3919 3927
+type(
+  Idl.ident option
+)
+"ident.ml" 115 3932 3942 "ident.ml" 115 3932 3949
+type(
+  string
+)
+ident(
+  def ml_name "ident.ml" 117 4037 4043 "ident.ml" 122 4189 4196
+)
+"ident.ml" 115 3932 3952 "ident.ml" 115 3932 3969
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 115 3932 3970 "ident.ml" 115 3932 3978
+type(
+  clazz
+)
+ident(
+  int_ref class_id "ident.ml" 112 3838 3862 "ident.ml" 112 3838 3870
+)
+"ident.ml" 115 3932 3952 "ident.ml" 115 3932 3978
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 116 3979 3989 "ident.ml" 116 3979 3995
+type(
+  Loc.t
+)
+ident(
+  def ml_loc "ident.ml" 117 4037 4043 "ident.ml" 122 4189 4196
+)
+"ident.ml" 116 3979 3998 "ident.ml" 116 3979 4024
+type(
+  clazz -> Loc.t
+)
+ident(
+  int_ref get_class_ml_name_location "ident.ml" 36 1495 1499 "ident.ml" 36 1495 1525
+)
+"ident.ml" 116 3979 4025 "ident.ml" 116 3979 4033
+type(
+  clazz
+)
+ident(
+  int_ref class_id "ident.ml" 112 3838 3862 "ident.ml" 112 3838 3870
+)
+"ident.ml" 116 3979 3998 "ident.ml" 116 3979 4033
+call(
+  stack
+)
+type(
+  Loc.t
+)
+"ident.ml" 117 4037 4060 "ident.ml" 117 4037 4068
+type(
+  string
+)
+"ident.ml" 118 4070 4082 "ident.ml" 118 4070 4095
+type(
+  StringEnv.key -> int
+)
+ident(
+  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+)
+"ident.ml" 118 4070 4096 "ident.ml" 118 4070 4103
+type(
+  StringEnv.key
+)
+ident(
+  int_ref ml_name "ident.ml" 115 3932 3942 "ident.ml" 115 3932 3949
+)
+"ident.ml" 118 4070 4082 "ident.ml" 118 4070 4103
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 119 4105 4119 "ident.ml" 119 4105 4126
+type(
+  string
+)
+ident(
+  int_ref ml_name "ident.ml" 115 3932 3942 "ident.ml" 115 3932 3949
+)
+"ident.ml" 120 4128 4151 "ident.ml" 120 4128 4157
+type(
+  Loc.t
+)
+ident(
+  int_ref ml_loc "ident.ml" 116 3979 3989 "ident.ml" 116 3979 3995
+)
+"ident.ml" 121 4159 4178 "ident.ml" 121 4159 4187
+type(
+  ml_kind
+)
+"ident.ml" 117 4037 4043 "ident.ml" 122 4189 4196
+type(
+  mmethod
+)
+"ident.ml" 115 3932 3938 "ident.ml" 122 4189 4196
+type(
+  mmethod
+)
+"ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+type(
+  Idl.ident
+)
+ident(
+  def name "ident.ml" 124 4214 4220 "ident.ml" 133 4570 4577
+)
+"ident.ml" 123 4197 4201 "ident.ml" 123 4197 4210
+type(
+  Idl.ident option
+)
+"ident.ml" 124 4214 4224 "ident.ml" 124 4214 4231
+type(
+  string
+)
+ident(
+  def ml_name "ident.ml" 126 4287 4293 "ident.ml" 133 4570 4577
+)
+"ident.ml" 124 4214 4234 "ident.ml" 124 4214 4238
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+)
+"ident.ml" 124 4214 4234 "ident.ml" 124 4214 4246
+type(
+  string
+)
+"ident.ml" 125 4248 4258 "ident.ml" 125 4248 4264
+type(
+  Loc.t
+)
+ident(
+  def ml_loc "ident.ml" 126 4287 4293 "ident.ml" 133 4570 4577
+)
+"ident.ml" 125 4248 4267 "ident.ml" 125 4248 4271
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+)
+"ident.ml" 125 4248 4267 "ident.ml" 125 4248 4283
+type(
+  Loc.t
+)
+"ident.ml" 126 4287 4296 "ident.ml" 126 4287 4320
+type(
+  string -> bool
+)
+ident(
+  ext_ref Utilities.is_capitalized
+)
+"ident.ml" 126 4287 4321 "ident.ml" 126 4287 4325
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+)
+"ident.ml" 126 4287 4321 "ident.ml" 126 4287 4333
+type(
+  string
+)
+"ident.ml" 126 4287 4296 "ident.ml" 126 4287 4333
+call(
+  stack
+)
+type(
+  bool
+)
+"ident.ml" 127 4339 4340 "ident.ml" 127 4339 4345
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ident.ml" 127 4339 4374 "ident.ml" 127 4339 4378
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+)
+"ident.ml" 127 4339 4353 "ident.ml" 127 4339 4379
+type(
+  Error.t
+)
+"ident.ml" 127 4339 4346 "ident.ml" 127 4339 4380
+type(
+  exn
+)
+"ident.ml" 127 4339 4340 "ident.ml" 127 4339 4380
+type(
+  unit
+)
+"ident.ml" 126 4287 4293 "ident.ml" 127 4339 4380
+type(
+  unit
+)
+"ident.ml" 128 4420 4443 "ident.ml" 128 4420 4451
+type(
+  string
+)
+"ident.ml" 129 4453 4465 "ident.ml" 129 4453 4478
+type(
+  StringEnv.key -> int
+)
+ident(
+  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+)
+"ident.ml" 129 4453 4479 "ident.ml" 129 4453 4486
+type(
+  StringEnv.key
+)
+ident(
+  int_ref ml_name "ident.ml" 124 4214 4224 "ident.ml" 124 4214 4231
+)
+"ident.ml" 129 4453 4465 "ident.ml" 129 4453 4486
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 130 4488 4502 "ident.ml" 130 4488 4509
+type(
+  string
+)
+ident(
+  int_ref ml_name "ident.ml" 124 4214 4224 "ident.ml" 124 4214 4231
+)
+"ident.ml" 131 4511 4534 "ident.ml" 131 4511 4540
+type(
+  Loc.t
+)
+ident(
+  int_ref ml_loc "ident.ml" 125 4248 4258 "ident.ml" 125 4248 4264
+)
+"ident.ml" 132 4542 4561 "ident.ml" 132 4542 4568
+type(
+  ml_kind
+)
+"ident.ml" 128 4420 4426 "ident.ml" 133 4570 4577
+type(
+  mmethod
+)
+"ident.ml" 126 4287 4293 "ident.ml" 133 4570 4577
+type(
+  mmethod
+)
+"ident.ml" 124 4214 4220 "ident.ml" 133 4570 4577
+type(
+  mmethod
+)
+"ident.ml" 113 3878 3880 "ident.ml" 133 4570 4577
+type(
+  mmethod
+)
+"ident.ml" 135 4579 4583 "ident.ml" 135 4579 4603
+type(
+  static:bool -> clazz -> Idl.field -> mmethod option * mmethod
+)
+ident(
+  def make_field_method_id "ident.ml" 162 5655 5655 "_none_" 1 0 -1
+)
+"ident.ml" 135 4579 4605 "ident.ml" 135 4579 4611
+type(
+  bool
+)
+ident(
+  def static "ident.ml" 135 4579 4612 "ident.ml" 160 5646 5649
+)
+"ident.ml" 135 4579 4612 "ident.ml" 135 4579 4620
+type(
+  clazz
+)
+ident(
+  def class_id "ident.ml" 135 4579 4621 "ident.ml" 160 5646 5649
+)
+"ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+type(
+  Idl.field
+)
+ident(
+  def field "ident.ml" 136 4629 4631 "ident.ml" 160 5646 5649
+)
+"ident.ml" 136 4629 4635 "ident.ml" 136 4629 4642
+type(
+  string
+)
+ident(
+  def package "ident.ml" 137 4733 4735 "ident.ml" 160 5646 5649
+)
+"ident.ml" 136 4629 4645 "ident.ml" 136 4629 4658
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 136 4629 4659 "ident.ml" 136 4629 4662
+type(
+  string
+)
+"ident.ml" 136 4629 4665 "ident.ml" 136 4629 4687
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 136 4629 4688 "ident.ml" 136 4629 4696
+type(
+  clazz
+)
+ident(
+  int_ref class_id "ident.ml" 135 4579 4612 "ident.ml" 135 4579 4620
+)
+"ident.ml" 136 4629 4664 "ident.ml" 136 4629 4697
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 136 4629 4698 "ident.ml" 136 4629 4699
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 136 4629 4701 "ident.ml" 136 4629 4718
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 136 4629 4719 "ident.ml" 136 4629 4727
+type(
+  clazz
+)
+ident(
+  int_ref class_id "ident.ml" 135 4579 4612 "ident.ml" 135 4579 4620
+)
+"ident.ml" 136 4629 4701 "ident.ml" 136 4629 4727
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 136 4629 4700 "ident.ml" 136 4629 4728
+type(
+  string list
+)
+"ident.ml" 136 4629 4663 "ident.ml" 136 4629 4729
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 136 4629 4645 "ident.ml" 136 4629 4729
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 137 4733 4739 "ident.ml" 137 4733 4750
+type(
+  string
+)
+ident(
+  def ml_set_name "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+)
+"ident.ml" 137 4733 4752 "ident.ml" 137 4733 4763
+type(
+  string
+)
+ident(
+  def ml_get_name "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+)
+"ident.ml" 137 4733 4765 "ident.ml" 137 4733 4771
+type(
+  Loc.t
+)
+ident(
+  def ml_loc "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+)
+"ident.ml" 137 4733 4773 "ident.ml" 137 4733 4780
+type(
+  ml_kind
+)
+ident(
+  def ml_kind "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+)
+"ident.ml" 137 4733 4739 "ident.ml" 137 4733 4780
+type(
+  string * string * Loc.t * ml_kind
+)
+"ident.ml" 138 4784 4794 "ident.ml" 138 4784 4808
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  ext_ref Annot.get_name
+)
+"ident.ml" 138 4784 4809 "ident.ml" 138 4784 4814
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 138 4784 4809 "ident.ml" 138 4784 4822
+type(
+  Idl.annotation list
+)
+"ident.ml" 138 4784 4794 "ident.ml" 138 4784 4822
+call(
+  stack
+)
+type(
+  Idl.ident option
+)
+"ident.ml" 139 4828 4834 "ident.ml" 139 4828 4838
+type(
+  Idl.ident option
+)
+"ident.ml" 140 4842 4847 "ident.ml" 140 4842 4853
+type(
+  bool
+)
+ident(
+  int_ref static "ident.ml" 135 4579 4605 "ident.ml" 135 4579 4611
+)
+"ident.ml" 140 4842 4859 "ident.ml" 140 4842 4866
+type(
+  string
+)
+ident(
+  int_ref package "ident.ml" 136 4629 4635 "ident.ml" 136 4629 4642
+)
+"ident.ml" 140 4842 4866 "ident.ml" 140 4842 4867
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 140 4842 4867 "ident.ml" 140 4842 4875
+type(
+  string
+)
+"ident.ml" 140 4842 4875 "ident.ml" 140 4842 4876
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 140 4842 4876 "ident.ml" 140 4842 4881
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 140 4842 4876 "ident.ml" 140 4842 4888
+type(
+  Idl.ident
+)
+"ident.ml" 140 4842 4876 "ident.ml" 140 4842 4896
+type(
+  string
+)
+"ident.ml" 140 4842 4867 "ident.ml" 140 4842 4896
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 140 4842 4859 "ident.ml" 140 4842 4896
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 141 4913 4919 "ident.ml" 141 4913 4925
+type(
+  string
+)
+"ident.ml" 141 4913 4925 "ident.ml" 141 4913 4926
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 141 4913 4926 "ident.ml" 141 4913 4931
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 141 4913 4926 "ident.ml" 141 4913 4938
+type(
+  Idl.ident
+)
+"ident.ml" 141 4913 4926 "ident.ml" 141 4913 4946
+type(
+  string
+)
+"ident.ml" 141 4913 4919 "ident.ml" 141 4913 4946
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 140 4842 4843 "ident.ml" 141 4913 4962
+type(
+  string
+)
+"ident.ml" 142 4964 4969 "ident.ml" 142 4964 4975
+type(
+  bool
+)
+ident(
+  int_ref static "ident.ml" 135 4579 4605 "ident.ml" 135 4579 4611
+)
+"ident.ml" 142 4964 4981 "ident.ml" 142 4964 4988
+type(
+  string
+)
+ident(
+  int_ref package "ident.ml" 136 4629 4635 "ident.ml" 136 4629 4642
+)
+"ident.ml" 142 4964 4988 "ident.ml" 142 4964 4989
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 142 4964 4989 "ident.ml" 142 4964 4997
+type(
+  string
+)
+"ident.ml" 142 4964 4997 "ident.ml" 142 4964 4998
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 142 4964 4998 "ident.ml" 142 4964 5003
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 142 4964 4998 "ident.ml" 142 4964 5010
+type(
+  Idl.ident
+)
+"ident.ml" 142 4964 4998 "ident.ml" 142 4964 5018
+type(
+  string
+)
+"ident.ml" 142 4964 4989 "ident.ml" 142 4964 5018
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 142 4964 4981 "ident.ml" 142 4964 5018
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 143 5035 5041 "ident.ml" 143 5035 5047
+type(
+  string
+)
+"ident.ml" 143 5035 5047 "ident.ml" 143 5035 5048
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 143 5035 5048 "ident.ml" 143 5035 5053
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 143 5035 5048 "ident.ml" 143 5035 5060
+type(
+  Idl.ident
+)
+"ident.ml" 143 5035 5048 "ident.ml" 143 5035 5068
+type(
+  string
+)
+"ident.ml" 143 5035 5041 "ident.ml" 143 5035 5068
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 142 4964 4965 "ident.ml" 143 5035 5084
+type(
+  string
+)
+"ident.ml" 144 5086 5087 "ident.ml" 144 5086 5092
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 144 5086 5087 "ident.ml" 144 5086 5099
+type(
+  Idl.ident
+)
+"ident.ml" 144 5086 5087 "ident.ml" 144 5086 5111
+type(
+  Loc.t
+)
+"ident.ml" 144 5086 5113 "ident.ml" 144 5086 5122
+type(
+  ml_kind
+)
+"ident.ml" 140 4842 4843 "ident.ml" 144 5086 5122
+type(
+  string * string * Loc.t * ml_kind
+)
+"ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+type(
+  Idl.ident
+)
+ident(
+  def name "ident.ml" 145 5123 5142 "ident.ml" 145 5123 5209
+)
+"ident.ml" 145 5123 5129 "ident.ml" 145 5123 5138
+type(
+  Idl.ident option
+)
+"ident.ml" 145 5123 5142 "ident.ml" 145 5123 5148
+type(
+  string
+)
+"ident.ml" 145 5123 5148 "ident.ml" 145 5123 5149
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 145 5123 5149 "ident.ml" 145 5123 5153
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+)
+"ident.ml" 145 5123 5149 "ident.ml" 145 5123 5161
+type(
+  string
+)
+"ident.ml" 145 5123 5142 "ident.ml" 145 5123 5161
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 145 5123 5163 "ident.ml" 145 5123 5169
+type(
+  string
+)
+"ident.ml" 145 5123 5169 "ident.ml" 145 5123 5170
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 145 5123 5170 "ident.ml" 145 5123 5174
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+)
+"ident.ml" 145 5123 5170 "ident.ml" 145 5123 5182
+type(
+  string
+)
+"ident.ml" 145 5123 5163 "ident.ml" 145 5123 5182
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 145 5123 5184 "ident.ml" 145 5123 5188
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+)
+"ident.ml" 145 5123 5184 "ident.ml" 145 5123 5200
+type(
+  Loc.t
+)
+"ident.ml" 145 5123 5202 "ident.ml" 145 5123 5209
+type(
+  ml_kind
+)
+"ident.ml" 145 5123 5142 "ident.ml" 145 5123 5209
+type(
+  string * string * Loc.t * ml_kind
+)
+"ident.ml" 138 4784 4788 "ident.ml" 145 5123 5209
+type(
+  string * string * Loc.t * ml_kind
+)
+"ident.ml" 146 5213 5219 "ident.ml" 146 5213 5237
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_final
+)
+"ident.ml" 146 5213 5238 "ident.ml" 146 5213 5243
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 146 5213 5238 "ident.ml" 146 5213 5255
+type(
+  Idl.modifier list
+)
+"ident.ml" 146 5213 5219 "ident.ml" 146 5213 5255
+call(
+  stack
+)
+type(
+  bool
+)
+"ident.ml" 147 5261 5265 "ident.ml" 147 5261 5269
+type(
+  mmethod option
+)
+"ident.ml" 149 5277 5303 "ident.ml" 149 5277 5308
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 149 5277 5303 "ident.ml" 149 5277 5315
+type(
+  Idl.ident
+)
+"ident.ml" 149 5277 5303 "ident.ml" 149 5277 5323
+type(
+  string
+)
+"ident.ml" 150 5325 5340 "ident.ml" 150 5325 5353
+type(
+  StringEnv.key -> int
+)
+ident(
+  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+)
+"ident.ml" 150 5325 5354 "ident.ml" 150 5325 5365
+type(
+  StringEnv.key
+)
+ident(
+  int_ref ml_set_name "ident.ml" 137 4733 4739 "ident.ml" 137 4733 4750
+)
+"ident.ml" 150 5325 5340 "ident.ml" 150 5325 5365
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 151 5367 5384 "ident.ml" 151 5367 5395
+type(
+  string
+)
+ident(
+  int_ref ml_set_name "ident.ml" 137 4733 4739 "ident.ml" 137 4733 4750
+)
+"ident.ml" 152 5397 5423 "ident.ml" 152 5397 5429
+type(
+  Loc.t
+)
+ident(
+  int_ref ml_loc "ident.ml" 137 4733 4765 "ident.ml" 137 4733 4771
+)
+"ident.ml" 153 5431 5453 "ident.ml" 153 5431 5460
+type(
+  ml_kind
+)
+ident(
+  int_ref ml_kind "ident.ml" 137 4733 4773 "ident.ml" 137 4733 4780
+)
+"ident.ml" 149 5277 5286 "ident.ml" 154 5462 5465
+type(
+  mmethod
+)
+"ident.ml" 149 5277 5281 "ident.ml" 154 5462 5465
+type(
+  mmethod option
+)
+"ident.ml" 146 5213 5215 "ident.ml" 154 5462 5466
+type(
+  mmethod option
+)
+"ident.ml" 155 5468 5487 "ident.ml" 155 5468 5492
+type(
+  Idl.field
+)
+ident(
+  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+)
+"ident.ml" 155 5468 5487 "ident.ml" 155 5468 5499
+type(
+  Idl.ident
+)
+"ident.ml" 155 5468 5487 "ident.ml" 155 5468 5507
+type(
+  string
+)
+"ident.ml" 156 5509 5524 "ident.ml" 156 5509 5537
+type(
+  StringEnv.key -> int
+)
+ident(
+  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+)
+"ident.ml" 156 5509 5538 "ident.ml" 156 5509 5549
+type(
+  StringEnv.key
+)
+ident(
+  int_ref ml_get_name "ident.ml" 137 4733 4752 "ident.ml" 137 4733 4763
+)
+"ident.ml" 156 5509 5524 "ident.ml" 156 5509 5549
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 157 5551 5568 "ident.ml" 157 5551 5579
+type(
+  string
+)
+ident(
+  int_ref ml_get_name "ident.ml" 137 4733 4752 "ident.ml" 137 4733 4763
+)
+"ident.ml" 158 5581 5607 "ident.ml" 158 5581 5613
+type(
+  Loc.t
+)
+ident(
+  int_ref ml_loc "ident.ml" 137 4733 4765 "ident.ml" 137 4733 4771
+)
+"ident.ml" 159 5615 5637 "ident.ml" 159 5615 5644
+type(
+  ml_kind
+)
+ident(
+  int_ref ml_kind "ident.ml" 137 4733 4773 "ident.ml" 137 4733 4780
+)
+"ident.ml" 155 5468 5470 "ident.ml" 160 5646 5649
+type(
+  mmethod
+)
+"ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+type(
+  mmethod option * mmethod
+)
+"ident.ml" 137 4733 4735 "ident.ml" 160 5646 5649
+type(
+  mmethod option * mmethod
+)
+"ident.ml" 136 4629 4631 "ident.ml" 160 5646 5649
+type(
+  mmethod option * mmethod
+)
+"ident.ml" 162 5655 5659 "ident.ml" 162 5655 5673
+type(
+  static:bool -> clazz -> Idl.mmethod -> mmethod
+)
+ident(
+  def make_method_id "ident.ml" 190 6697 6704 "_none_" 1 0 -1
+)
+"ident.ml" 162 5655 5675 "ident.ml" 162 5655 5681
+type(
+  bool
+)
+ident(
+  def static "ident.ml" 162 5655 5682 "ident.ml" 190 6697 6704
+)
+"ident.ml" 162 5655 5682 "ident.ml" 162 5655 5690
+type(
+  clazz
+)
+ident(
+  def class_id "ident.ml" 162 5655 5691 "ident.ml" 190 6697 6704
+)
+"ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+type(
+  Idl.mmethod
+)
+ident(
+  def mmethod "ident.ml" 163 5701 5703 "ident.ml" 190 6697 6704
+)
+"ident.ml" 163 5701 5707 "ident.ml" 163 5701 5714
+type(
+  string
+)
+ident(
+  def package "ident.ml" 164 5805 5807 "ident.ml" 190 6697 6704
+)
+"ident.ml" 163 5701 5717 "ident.ml" 163 5701 5730
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 163 5701 5731 "ident.ml" 163 5701 5734
+type(
+  string
+)
+"ident.ml" 163 5701 5737 "ident.ml" 163 5701 5759
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 163 5701 5760 "ident.ml" 163 5701 5768
+type(
+  clazz
+)
+ident(
+  int_ref class_id "ident.ml" 162 5655 5682 "ident.ml" 162 5655 5690
+)
+"ident.ml" 163 5701 5736 "ident.ml" 163 5701 5769
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 163 5701 5770 "ident.ml" 163 5701 5771
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 163 5701 5773 "ident.ml" 163 5701 5790
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+)
+"ident.ml" 163 5701 5791 "ident.ml" 163 5701 5799
+type(
+  clazz
+)
+ident(
+  int_ref class_id "ident.ml" 162 5655 5682 "ident.ml" 162 5655 5690
+)
+"ident.ml" 163 5701 5773 "ident.ml" 163 5701 5799
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 163 5701 5772 "ident.ml" 163 5701 5800
+type(
+  string list
+)
+"ident.ml" 163 5701 5735 "ident.ml" 163 5701 5801
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 163 5701 5717 "ident.ml" 163 5701 5801
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 164 5805 5813 "ident.ml" 164 5805 5827
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  ext_ref Annot.get_name
+)
+"ident.ml" 164 5805 5828 "ident.ml" 164 5805 5835
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 164 5805 5828 "ident.ml" 164 5805 5843
+type(
+  Idl.annotation list
+)
+"ident.ml" 164 5805 5813 "ident.ml" 164 5805 5843
+call(
+  stack
+)
+type(
+  Idl.ident option
+)
+"ident.ml" 165 5849 5853 "ident.ml" 165 5849 5857
+type(
+  Idl.ident option
+)
+"ident.ml" 166 5862 5872 "ident.ml" 166 5862 5879
+type(
+  string
+)
+ident(
+  def ml_name "ident.ml" 173 6137 6143 "ident.ml" 178 6323 6330
+)
+"ident.ml" 167 5883 5887 "ident.ml" 167 5883 5893
+type(
+  bool
+)
+ident(
+  int_ref static "ident.ml" 162 5655 5675 "ident.ml" 162 5655 5681
+)
+"ident.ml" 167 5883 5899 "ident.ml" 167 5883 5906
+type(
+  string
+)
+ident(
+  int_ref package "ident.ml" 163 5701 5707 "ident.ml" 163 5701 5714
+)
+"ident.ml" 167 5883 5906 "ident.ml" 167 5883 5907
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 167 5883 5907 "ident.ml" 167 5883 5911
+type(
+  string
+)
+"ident.ml" 167 5883 5911 "ident.ml" 167 5883 5912
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ident.ml" 167 5883 5912 "ident.ml" 167 5883 5919
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 167 5883 5912 "ident.ml" 167 5883 5926
+type(
+  Idl.ident
+)
+"ident.ml" 167 5883 5912 "ident.ml" 167 5883 5934
+type(
+  string
+)
+"ident.ml" 167 5883 5907 "ident.ml" 167 5883 5934
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 167 5883 5899 "ident.ml" 167 5883 5934
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 169 5945 5951 "ident.ml" 169 5945 5975
+type(
+  string -> bool
+)
+ident(
+  ext_ref Utilities.is_capitalized
+)
+"ident.ml" 169 5945 5976 "ident.ml" 169 5945 5983
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 169 5945 5976 "ident.ml" 169 5945 5990
+type(
+  Idl.ident
+)
+"ident.ml" 169 5945 5976 "ident.ml" 169 5945 5998
+type(
+  string
+)
+"ident.ml" 169 5945 5951 "ident.ml" 169 5945 5998
+call(
+  stack
+)
+type(
+  bool
+)
+"ident.ml" 170 6004 6009 "ident.ml" 170 6004 6014
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ident.ml" 170 6004 6043 "ident.ml" 170 6004 6050
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 170 6004 6043 "ident.ml" 170 6004 6057
+type(
+  Idl.ident
+)
+"ident.ml" 170 6004 6022 "ident.ml" 170 6004 6058
+type(
+  Error.t
+)
+"ident.ml" 170 6004 6015 "ident.ml" 170 6004 6059
+type(
+  exn
+)
+"ident.ml" 170 6004 6009 "ident.ml" 170 6004 6059
+type(
+  string
+)
+"ident.ml" 172 6106 6111 "ident.ml" 172 6106 6118
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 172 6106 6111 "ident.ml" 172 6106 6125
+type(
+  Idl.ident
+)
+"ident.ml" 172 6106 6111 "ident.ml" 172 6106 6133
+type(
+  string
+)
+"ident.ml" 169 5945 5948 "ident.ml" 172 6106 6133
+type(
+  string
+)
+"ident.ml" 167 5883 5884 "ident.ml" 172 6106 6133
+type(
+  string
+)
+"ident.ml" 173 6137 6160 "ident.ml" 173 6137 6167
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 173 6137 6160 "ident.ml" 173 6137 6174
+type(
+  Idl.ident
+)
+"ident.ml" 173 6137 6160 "ident.ml" 173 6137 6182
+type(
+  string
+)
+"ident.ml" 174 6184 6196 "ident.ml" 174 6184 6209
+type(
+  StringEnv.key -> int
+)
+ident(
+  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+)
+"ident.ml" 174 6184 6210 "ident.ml" 174 6184 6217
+type(
+  StringEnv.key
+)
+ident(
+  int_ref ml_name "ident.ml" 166 5862 5872 "ident.ml" 166 5862 5879
+)
+"ident.ml" 174 6184 6196 "ident.ml" 174 6184 6217
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 175 6219 6233 "ident.ml" 175 6219 6240
+type(
+  string
+)
+ident(
+  int_ref ml_name "ident.ml" 166 5862 5872 "ident.ml" 166 5862 5879
+)
+"ident.ml" 176 6242 6265 "ident.ml" 176 6242 6272
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 176 6242 6265 "ident.ml" 176 6242 6279
+type(
+  Idl.ident
+)
+"ident.ml" 176 6242 6265 "ident.ml" 176 6242 6291
+type(
+  Loc.t
+)
+"ident.ml" 177 6293 6312 "ident.ml" 177 6293 6321
+type(
+  ml_kind
+)
+"ident.ml" 173 6137 6143 "ident.ml" 178 6323 6330
+type(
+  mmethod
+)
+"ident.ml" 166 5862 5868 "ident.ml" 178 6323 6330
+type(
+  mmethod
+)
+"ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+type(
+  Idl.ident
+)
+ident(
+  def name "ident.ml" 180 6348 6354 "ident.ml" 190 6697 6704
+)
+"ident.ml" 179 6331 6335 "ident.ml" 179 6331 6344
+type(
+  Idl.ident option
+)
+"ident.ml" 180 6348 6358 "ident.ml" 180 6348 6365
+type(
+  string
+)
+ident(
+  def ml_name "ident.ml" 185 6523 6529 "ident.ml" 190 6697 6704
+)
+"ident.ml" 181 6369 6373 "ident.ml" 181 6369 6397
+type(
+  string -> bool
+)
+ident(
+  ext_ref Utilities.is_capitalized
+)
+"ident.ml" 181 6369 6398 "ident.ml" 181 6369 6402
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+)
+"ident.ml" 181 6369 6398 "ident.ml" 181 6369 6410
+type(
+  string
+)
+"ident.ml" 181 6369 6373 "ident.ml" 181 6369 6410
+call(
+  stack
+)
+type(
+  bool
+)
+"ident.ml" 182 6416 6419 "ident.ml" 182 6416 6424
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ident.ml" 182 6416 6453 "ident.ml" 182 6416 6457
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+)
+"ident.ml" 182 6416 6432 "ident.ml" 182 6416 6458
+type(
+  Error.t
+)
+"ident.ml" 182 6416 6425 "ident.ml" 182 6416 6459
+type(
+  exn
+)
+"ident.ml" 182 6416 6419 "ident.ml" 182 6416 6459
+type(
+  string
+)
+"ident.ml" 184 6504 6507 "ident.ml" 184 6504 6511
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+)
+"ident.ml" 184 6504 6507 "ident.ml" 184 6504 6519
+type(
+  string
+)
+"ident.ml" 181 6369 6370 "ident.ml" 184 6504 6519
+type(
+  string
+)
+"ident.ml" 185 6523 6546 "ident.ml" 185 6523 6553
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+)
+"ident.ml" 185 6523 6546 "ident.ml" 185 6523 6560
+type(
+  Idl.ident
+)
+"ident.ml" 185 6523 6546 "ident.ml" 185 6523 6568
+type(
+  string
+)
+"ident.ml" 186 6570 6582 "ident.ml" 186 6570 6595
+type(
+  StringEnv.key -> int
+)
+ident(
+  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+)
+"ident.ml" 186 6570 6596 "ident.ml" 186 6570 6603
+type(
+  StringEnv.key
+)
+ident(
+  int_ref ml_name "ident.ml" 180 6348 6358 "ident.ml" 180 6348 6365
+)
+"ident.ml" 186 6570 6582 "ident.ml" 186 6570 6603
+call(
+  stack
+)
+type(
+  int
+)
+"ident.ml" 187 6605 6619 "ident.ml" 187 6605 6626
+type(
+  string
+)
+ident(
+  int_ref ml_name "ident.ml" 180 6348 6358 "ident.ml" 180 6348 6365
+)
+"ident.ml" 188 6628 6651 "ident.ml" 188 6628 6655
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+)
+"ident.ml" 188 6628 6651 "ident.ml" 188 6628 6667
+type(
+  Loc.t
+)
+"ident.ml" 189 6669 6688 "ident.ml" 189 6669 6695
+type(
+  ml_kind
+)
+"ident.ml" 185 6523 6529 "ident.ml" 190 6697 6704
+type(
+  mmethod
+)
+"ident.ml" 180 6348 6354 "ident.ml" 190 6697 6704
+type(
+  mmethod
+)
+"ident.ml" 164 5805 5807 "ident.ml" 190 6697 6704
+type(
+  mmethod
+)
+"ident.ml" 163 5701 5703 "ident.ml" 190 6697 6704
+type(
+  mmethod
+)

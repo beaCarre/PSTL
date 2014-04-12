@@ -1,0 +1,6252 @@
+"mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  def _loc "mlType.ml" 9 114 114 "_none_" 1 0 -1
+)
+"mlType.ml" 7 92 103 "mlType.ml" 7 92 112
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  ext_ref Camlp4.PreCast.Loc.ghost
+)
+"mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+type(
+  Cidl.typ -> string
+)
+ident(
+  def string_of_type "mlType.ml" 24 446 446 "_none_" 1 0 -1
+)
+"mlType.ml" 9 114 133 "mlType.ml" 9 114 134
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 10 137 139 "mlType.ml" 22 397 444
+)
+"mlType.ml" 10 137 145 "mlType.ml" 10 137 146
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 9 114 133 "mlType.ml" 9 114 134
+)
+"mlType.ml" 11 153 157 "mlType.ml" 11 153 165
+type(
+  Cidl.typ
+)
+"mlType.ml" 11 153 169 "mlType.ml" 11 153 178
+type(
+  string
+)
+"mlType.ml" 12 179 183 "mlType.ml" 12 179 188
+type(
+  Cidl.typ
+)
+"mlType.ml" 12 179 192 "mlType.ml" 12 179 198
+type(
+  string
+)
+"mlType.ml" 13 199 203 "mlType.ml" 13 199 208
+type(
+  Cidl.typ
+)
+"mlType.ml" 13 199 212 "mlType.ml" 13 199 218
+type(
+  string
+)
+"mlType.ml" 14 219 223 "mlType.ml" 14 219 229
+type(
+  Cidl.typ
+)
+"mlType.ml" 14 219 233 "mlType.ml" 14 219 240
+type(
+  string
+)
+"mlType.ml" 15 241 245 "mlType.ml" 15 241 249
+type(
+  Cidl.typ
+)
+"mlType.ml" 15 241 253 "mlType.ml" 15 241 258
+type(
+  string
+)
+"mlType.ml" 16 259 263 "mlType.ml" 16 259 271
+type(
+  Cidl.typ
+)
+"mlType.ml" 16 259 275 "mlType.ml" 16 259 284
+type(
+  string
+)
+"mlType.ml" 17 285 289 "mlType.ml" 17 285 294
+type(
+  Cidl.typ
+)
+"mlType.ml" 17 285 298 "mlType.ml" 17 285 304
+type(
+  string
+)
+"mlType.ml" 18 305 309 "mlType.ml" 18 305 315
+type(
+  Cidl.typ
+)
+"mlType.ml" 18 305 319 "mlType.ml" 18 305 326
+type(
+  string
+)
+"mlType.ml" 19 327 331 "mlType.ml" 19 327 338
+type(
+  Cidl.typ
+)
+"mlType.ml" 19 327 342 "mlType.ml" 19 327 350
+type(
+  string
+)
+"mlType.ml" 20 351 363 "mlType.ml" 20 351 364
+type(
+  Cidl.object_type
+)
+"mlType.ml" 20 351 355 "mlType.ml" 20 351 364
+type(
+  Cidl.typ
+)
+"mlType.ml" 20 351 368 "mlType.ml" 20 351 376
+type(
+  string
+)
+"mlType.ml" 21 377 381 "mlType.ml" 21 377 386
+type(
+  Cidl.typ
+)
+"mlType.ml" 21 377 390 "mlType.ml" 21 377 396
+type(
+  string
+)
+"mlType.ml" 22 397 411 "mlType.ml" 22 397 412
+type(
+  Ident.clazz
+)
+"mlType.ml" 22 397 401 "mlType.ml" 22 397 412
+type(
+  Cidl.typ
+)
+"mlType.ml" 22 397 416 "mlType.ml" 22 397 427
+type(
+  string -> string
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"mlType.ml" 22 397 428 "mlType.ml" 22 397 444
+type(
+  string
+)
+"mlType.ml" 22 397 416 "mlType.ml" 22 397 444
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 10 137 139 "mlType.ml" 22 397 444
+type(
+  string
+)
+"mlType.ml" 9 114 133 "mlType.ml" 22 397 444
+type(
+  Cidl.typ -> string
+)
+"mlType.ml" 24 446 450 "mlType.ml" 24 446 469
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  def constructor_of_type "mlType.ml" 41 839 839 "_none_" 1 0 -1
+)
+"mlType.ml" 24 446 470 "mlType.ml" 24 446 471
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 25 475 485 "mlType.ml" 25 475 485
+)
+"mlType.ml" 25 475 485 "mlType.ml" 25 475 485
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlType.ml" 26 486 496 "mlType.ml" 26 486 497
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 24 446 470 "mlType.ml" 24 446 471
+)
+"mlType.ml" 27 504 510 "mlType.ml" 27 504 518
+type(
+  Cidl.typ
+)
+"mlType.ml" 27 504 522 "mlType.ml" 27 504 531
+type(
+  string
+)
+"mlType.ml" 28 532 538 "mlType.ml" 28 532 543
+type(
+  Cidl.typ
+)
+"mlType.ml" 28 532 547 "mlType.ml" 28 532 553
+type(
+  string
+)
+"mlType.ml" 29 554 560 "mlType.ml" 29 554 565
+type(
+  Cidl.typ
+)
+"mlType.ml" 29 554 569 "mlType.ml" 29 554 575
+type(
+  string
+)
+"mlType.ml" 30 576 582 "mlType.ml" 30 576 588
+type(
+  Cidl.typ
+)
+"mlType.ml" 30 576 592 "mlType.ml" 30 576 599
+type(
+  string
+)
+"mlType.ml" 31 600 606 "mlType.ml" 31 600 610
+type(
+  Cidl.typ
+)
+"mlType.ml" 31 600 614 "mlType.ml" 31 600 619
+type(
+  string
+)
+"mlType.ml" 32 620 626 "mlType.ml" 32 620 634
+type(
+  Cidl.typ
+)
+"mlType.ml" 32 620 638 "mlType.ml" 32 620 647
+type(
+  string
+)
+"mlType.ml" 33 648 654 "mlType.ml" 33 648 659
+type(
+  Cidl.typ
+)
+"mlType.ml" 33 648 663 "mlType.ml" 33 648 669
+type(
+  string
+)
+"mlType.ml" 34 670 676 "mlType.ml" 34 670 682
+type(
+  Cidl.typ
+)
+"mlType.ml" 34 670 686 "mlType.ml" 34 670 693
+type(
+  string
+)
+"mlType.ml" 35 694 700 "mlType.ml" 35 694 707
+type(
+  Cidl.typ
+)
+"mlType.ml" 35 694 711 "mlType.ml" 35 694 719
+type(
+  string
+)
+"mlType.ml" 36 720 734 "mlType.ml" 36 720 735
+type(
+  Cidl.object_type
+)
+"mlType.ml" 36 720 726 "mlType.ml" 36 720 735
+type(
+  Cidl.typ
+)
+"mlType.ml" 36 720 739 "mlType.ml" 36 720 744
+type(
+  string
+)
+"mlType.ml" 37 745 761 "mlType.ml" 37 745 762
+type(
+  Ident.clazz
+)
+"mlType.ml" 37 745 751 "mlType.ml" 37 745 762
+type(
+  Cidl.typ
+)
+"mlType.ml" 37 745 766 "mlType.ml" 37 745 771
+type(
+  string
+)
+"mlType.ml" 38 772 778 "mlType.ml" 38 772 783
+type(
+  Cidl.typ
+)
+"mlType.ml" 38 772 787 "mlType.ml" 38 772 798
+type(
+  string -> string
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"mlType.ml" 38 772 799 "mlType.ml" 38 772 820
+type(
+  string
+)
+"mlType.ml" 38 772 787 "mlType.ml" 38 772 820
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 26 486 490 "mlType.ml" 38 772 820
+type(
+  string
+)
+"mlType.ml" 24 446 470 "mlType.ml" 39 830 835
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+"mlType.ml" 41 839 847 "mlType.ml" 41 839 869
+type(
+  Cidl.typ -> string
+)
+ident(
+  def java_signature_of_type "mlType.ml" 41 839 839 "_none_" 1 0 -1
+)
+"mlType.ml" 41 839 870 "mlType.ml" 41 839 871
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 42 875 877 "mlType.ml" 58 1306 1362
+)
+"mlType.ml" 42 875 883 "mlType.ml" 42 875 884
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 41 839 870 "mlType.ml" 41 839 871
+)
+"mlType.ml" 43 890 894 "mlType.ml" 43 890 899
+type(
+  Cidl.typ
+)
+"mlType.ml" 43 890 903 "mlType.ml" 43 890 906
+type(
+  string
+)
+"mlType.ml" 44 907 911 "mlType.ml" 44 907 919
+type(
+  Cidl.typ
+)
+"mlType.ml" 44 907 923 "mlType.ml" 44 907 926
+type(
+  string
+)
+"mlType.ml" 45 927 931 "mlType.ml" 45 927 936
+type(
+  Cidl.typ
+)
+"mlType.ml" 45 927 940 "mlType.ml" 45 927 943
+type(
+  string
+)
+"mlType.ml" 46 944 948 "mlType.ml" 46 944 953
+type(
+  Cidl.typ
+)
+"mlType.ml" 46 944 957 "mlType.ml" 46 944 960
+type(
+  string
+)
+"mlType.ml" 47 961 965 "mlType.ml" 47 961 971
+type(
+  Cidl.typ
+)
+"mlType.ml" 47 961 975 "mlType.ml" 47 961 978
+type(
+  string
+)
+"mlType.ml" 48 979 983 "mlType.ml" 48 979 991
+type(
+  Cidl.typ
+)
+"mlType.ml" 48 979 995 "mlType.ml" 48 979 998
+type(
+  string
+)
+"mlType.ml" 49 999 1003 "mlType.ml" 49 999 1007
+type(
+  Cidl.typ
+)
+"mlType.ml" 49 999 1011 "mlType.ml" 49 999 1014
+type(
+  string
+)
+"mlType.ml" 50 1015 1019 "mlType.ml" 50 1015 1024
+type(
+  Cidl.typ
+)
+"mlType.ml" 50 1015 1028 "mlType.ml" 50 1015 1031
+type(
+  string
+)
+"mlType.ml" 51 1032 1036 "mlType.ml" 51 1032 1042
+type(
+  Cidl.typ
+)
+"mlType.ml" 51 1032 1046 "mlType.ml" 51 1032 1049
+type(
+  string
+)
+"mlType.ml" 52 1050 1054 "mlType.ml" 52 1050 1061
+type(
+  Cidl.typ
+)
+"mlType.ml" 52 1050 1065 "mlType.ml" 52 1050 1068
+type(
+  string
+)
+"mlType.ml" 53 1069 1083 "mlType.ml" 53 1069 1084
+type(
+  Ident.clazz
+)
+"mlType.ml" 53 1069 1073 "mlType.ml" 53 1069 1084
+type(
+  Cidl.typ
+)
+"mlType.ml" 53 1069 1088 "mlType.ml" 53 1069 1123
+type(
+  string
+)
+"mlType.ml" 54 1124 1136 "mlType.ml" 54 1124 1140
+type(
+  Cidl.object_type
+)
+"mlType.ml" 54 1124 1128 "mlType.ml" 54 1124 1140
+type(
+  Cidl.typ
+)
+"mlType.ml" 54 1124 1144 "mlType.ml" 54 1124 1164
+type(
+  string
+)
+"mlType.ml" 55 1165 1177 "mlType.ml" 55 1165 1184
+type(
+  Cidl.object_type
+)
+"mlType.ml" 55 1165 1169 "mlType.ml" 55 1165 1184
+type(
+  Cidl.typ
+)
+"mlType.ml" 55 1165 1188 "mlType.ml" 55 1165 1208
+type(
+  string
+)
+"mlType.ml" 56 1209 1228 "mlType.ml" 56 1209 1230
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 56 1209 1235 "mlType.ml" 56 1209 1278
+)
+"mlType.ml" 56 1209 1222 "mlType.ml" 56 1209 1230
+type(
+  Cidl.object_type
+)
+"mlType.ml" 56 1209 1213 "mlType.ml" 56 1209 1231
+type(
+  Cidl.typ
+)
+"mlType.ml" 56 1209 1235 "mlType.ml" 56 1209 1238
+type(
+  string
+)
+"mlType.ml" 56 1209 1238 "mlType.ml" 56 1209 1239
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 56 1209 1240 "mlType.ml" 56 1209 1270
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_signature
+)
+"mlType.ml" 56 1209 1271 "mlType.ml" 56 1209 1273
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 56 1209 1228 "mlType.ml" 56 1209 1230
+)
+"mlType.ml" 56 1209 1240 "mlType.ml" 56 1209 1273
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 56 1209 1274 "mlType.ml" 56 1209 1275
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 56 1209 1275 "mlType.ml" 56 1209 1278
+type(
+  string
+)
+"mlType.ml" 56 1209 1239 "mlType.ml" 56 1209 1278
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 56 1209 1235 "mlType.ml" 56 1209 1278
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 57 1279 1303 "mlType.ml" 57 1279 1304
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 58 1306 1332 "mlType.ml" 58 1306 1362
+)
+"mlType.ml" 57 1279 1292 "mlType.ml" 57 1279 1304
+type(
+  Cidl.object_type
+)
+"mlType.ml" 57 1279 1283 "mlType.ml" 57 1279 1305
+type(
+  Cidl.typ
+)
+"mlType.ml" 58 1306 1326 "mlType.ml" 58 1306 1327
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 58 1306 1332 "mlType.ml" 58 1306 1362
+)
+"mlType.ml" 58 1306 1319 "mlType.ml" 58 1306 1327
+type(
+  Cidl.object_type
+)
+"mlType.ml" 58 1306 1310 "mlType.ml" 58 1306 1328
+type(
+  Cidl.typ
+)
+"mlType.ml" 57 1279 1283 "mlType.ml" 58 1306 1328
+type(
+  Cidl.typ
+)
+"mlType.ml" 58 1306 1332 "mlType.ml" 58 1306 1335
+type(
+  string
+)
+"mlType.ml" 58 1306 1335 "mlType.ml" 58 1306 1336
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 58 1306 1337 "mlType.ml" 58 1306 1359
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref java_signature_of_type "mlType.ml" 41 839 847 "mlType.ml" 41 839 869
+)
+"mlType.ml" 58 1306 1360 "mlType.ml" 58 1306 1361
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 57 1279 1303 "mlType.ml" 57 1279 1304
+)
+"mlType.ml" 58 1306 1337 "mlType.ml" 58 1306 1361
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 58 1306 1332 "mlType.ml" 58 1306 1362
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 42 875 877 "mlType.ml" 58 1306 1362
+type(
+  string
+)
+"mlType.ml" 41 839 870 "mlType.ml" 58 1306 1362
+type(
+  Cidl.typ -> string
+)
+"mlType.ml" 60 1364 1372 "mlType.ml" 60 1364 1393
+type(
+  Cidl.typ -> string
+)
+ident(
+  def idl_signature_of_type "mlType.ml" 60 1364 1364 "_none_" 1 0 -1
+)
+"mlType.ml" 60 1364 1394 "mlType.ml" 60 1364 1395
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 61 1399 1401 "mlType.ml" 77 1812 1868
+)
+"mlType.ml" 61 1399 1407 "mlType.ml" 61 1399 1408
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 60 1364 1394 "mlType.ml" 60 1364 1395
+)
+"mlType.ml" 62 1414 1418 "mlType.ml" 62 1414 1423
+type(
+  Cidl.typ
+)
+"mlType.ml" 62 1414 1427 "mlType.ml" 62 1414 1433
+type(
+  string
+)
+"mlType.ml" 63 1434 1438 "mlType.ml" 63 1434 1446
+type(
+  Cidl.typ
+)
+"mlType.ml" 63 1434 1450 "mlType.ml" 63 1434 1459
+type(
+  string
+)
+"mlType.ml" 64 1460 1464 "mlType.ml" 64 1460 1469
+type(
+  Cidl.typ
+)
+"mlType.ml" 64 1460 1473 "mlType.ml" 64 1460 1479
+type(
+  string
+)
+"mlType.ml" 65 1480 1484 "mlType.ml" 65 1480 1489
+type(
+  Cidl.typ
+)
+"mlType.ml" 65 1480 1493 "mlType.ml" 65 1480 1499
+type(
+  string
+)
+"mlType.ml" 66 1500 1504 "mlType.ml" 66 1500 1510
+type(
+  Cidl.typ
+)
+"mlType.ml" 66 1500 1514 "mlType.ml" 66 1500 1521
+type(
+  string
+)
+"mlType.ml" 67 1522 1526 "mlType.ml" 67 1522 1534
+type(
+  Cidl.typ
+)
+"mlType.ml" 67 1522 1538 "mlType.ml" 67 1522 1543
+type(
+  string
+)
+"mlType.ml" 68 1544 1548 "mlType.ml" 68 1544 1552
+type(
+  Cidl.typ
+)
+"mlType.ml" 68 1544 1556 "mlType.ml" 68 1544 1563
+type(
+  string
+)
+"mlType.ml" 69 1564 1568 "mlType.ml" 69 1564 1573
+type(
+  Cidl.typ
+)
+"mlType.ml" 69 1564 1577 "mlType.ml" 69 1564 1583
+type(
+  string
+)
+"mlType.ml" 70 1584 1588 "mlType.ml" 70 1584 1594
+type(
+  Cidl.typ
+)
+"mlType.ml" 70 1584 1598 "mlType.ml" 70 1584 1605
+type(
+  string
+)
+"mlType.ml" 71 1606 1610 "mlType.ml" 71 1606 1617
+type(
+  Cidl.typ
+)
+"mlType.ml" 71 1606 1621 "mlType.ml" 71 1606 1629
+type(
+  string
+)
+"mlType.ml" 72 1630 1644 "mlType.ml" 72 1630 1645
+type(
+  Ident.clazz
+)
+"mlType.ml" 72 1630 1634 "mlType.ml" 72 1630 1645
+type(
+  Cidl.typ
+)
+"mlType.ml" 72 1630 1649 "mlType.ml" 72 1630 1660
+type(
+  string
+)
+"mlType.ml" 73 1661 1673 "mlType.ml" 73 1661 1677
+type(
+  Cidl.object_type
+)
+"mlType.ml" 73 1661 1665 "mlType.ml" 73 1661 1677
+type(
+  Cidl.typ
+)
+"mlType.ml" 73 1661 1681 "mlType.ml" 73 1661 1687
+type(
+  string
+)
+"mlType.ml" 74 1688 1700 "mlType.ml" 74 1688 1707
+type(
+  Cidl.object_type
+)
+"mlType.ml" 74 1688 1692 "mlType.ml" 74 1688 1707
+type(
+  Cidl.typ
+)
+"mlType.ml" 74 1688 1711 "mlType.ml" 74 1688 1719
+type(
+  string
+)
+"mlType.ml" 75 1720 1739 "mlType.ml" 75 1720 1741
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 75 1720 1746 "mlType.ml" 75 1720 1784
+)
+"mlType.ml" 75 1720 1733 "mlType.ml" 75 1720 1741
+type(
+  Cidl.object_type
+)
+"mlType.ml" 75 1720 1724 "mlType.ml" 75 1720 1742
+type(
+  Cidl.typ
+)
+"mlType.ml" 75 1720 1746 "mlType.ml" 75 1720 1781
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"mlType.ml" 75 1720 1782 "mlType.ml" 75 1720 1784
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 75 1720 1739 "mlType.ml" 75 1720 1741
+)
+"mlType.ml" 75 1720 1746 "mlType.ml" 75 1720 1784
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 76 1785 1809 "mlType.ml" 76 1785 1810
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 77 1812 1838 "mlType.ml" 77 1812 1868
+)
+"mlType.ml" 76 1785 1798 "mlType.ml" 76 1785 1810
+type(
+  Cidl.object_type
+)
+"mlType.ml" 76 1785 1789 "mlType.ml" 76 1785 1811
+type(
+  Cidl.typ
+)
+"mlType.ml" 77 1812 1832 "mlType.ml" 77 1812 1833
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 77 1812 1838 "mlType.ml" 77 1812 1868
+)
+"mlType.ml" 77 1812 1825 "mlType.ml" 77 1812 1833
+type(
+  Cidl.object_type
+)
+"mlType.ml" 77 1812 1816 "mlType.ml" 77 1812 1834
+type(
+  Cidl.typ
+)
+"mlType.ml" 76 1785 1789 "mlType.ml" 77 1812 1834
+type(
+  Cidl.typ
+)
+"mlType.ml" 77 1812 1839 "mlType.ml" 77 1812 1860
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref idl_signature_of_type "mlType.ml" 60 1364 1372 "mlType.ml" 60 1364 1393
+)
+"mlType.ml" 77 1812 1861 "mlType.ml" 77 1812 1862
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 76 1785 1809 "mlType.ml" 76 1785 1810
+)
+"mlType.ml" 77 1812 1839 "mlType.ml" 77 1812 1862
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 77 1812 1863 "mlType.ml" 77 1812 1864
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 77 1812 1864 "mlType.ml" 77 1812 1868
+type(
+  string
+)
+"mlType.ml" 77 1812 1838 "mlType.ml" 77 1812 1868
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 61 1399 1401 "mlType.ml" 77 1812 1868
+type(
+  string
+)
+"mlType.ml" 60 1364 1394 "mlType.ml" 77 1812 1868
+type(
+  Cidl.typ -> string
+)
+"mlType.ml" 79 1875 1879 "mlType.ml" 79 1875 1893
+type(
+  Cidl.typ list -> Cidl.typ -> string
+)
+ident(
+  def java_signature "mlType.ml" 84 2031 2031 "_none_" 1 0 -1
+)
+"mlType.ml" 79 1875 1894 "mlType.ml" 79 1875 1898
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 79 1875 1899 "mlType.ml" 82 1996 2029
+)
+"mlType.ml" 79 1875 1899 "mlType.ml" 79 1875 1903
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlType.ml" 80 1907 1909 "mlType.ml" 82 1996 2029
+)
+"mlType.ml" 80 1907 1909 "mlType.ml" 80 1907 1923
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"mlType.ml" 80 1907 1924 "mlType.ml" 80 1907 1932
+type(
+  (string -> string -> string, unit, string) format
+)
+"mlType.ml" 81 1934 1939 "mlType.ml" 81 1934 1952
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"mlType.ml" 81 1934 1953 "mlType.ml" 81 1934 1955
+type(
+  string
+)
+"mlType.ml" 81 1934 1957 "mlType.ml" 81 1934 1965
+type(
+  (Cidl.typ -> string) -> Cidl.typ list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"mlType.ml" 81 1934 1966 "mlType.ml" 81 1934 1988
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref java_signature_of_type "mlType.ml" 41 839 847 "mlType.ml" 41 839 869
+)
+"mlType.ml" 81 1934 1989 "mlType.ml" 81 1934 1993
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 79 1875 1894 "mlType.ml" 79 1875 1898
+)
+"mlType.ml" 81 1934 1957 "mlType.ml" 81 1934 1993
+call(
+  stack
+)
+type(
+  string list
+)
+"mlType.ml" 81 1934 1939 "mlType.ml" 81 1934 1994
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 82 1996 2001 "mlType.ml" 82 1996 2023
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref java_signature_of_type "mlType.ml" 41 839 847 "mlType.ml" 41 839 869
+)
+"mlType.ml" 82 1996 2024 "mlType.ml" 82 1996 2028
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlType.ml" 79 1875 1899 "mlType.ml" 79 1875 1903
+)
+"mlType.ml" 82 1996 2001 "mlType.ml" 82 1996 2028
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 80 1907 1909 "mlType.ml" 82 1996 2029
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 79 1875 1899 "mlType.ml" 82 1996 2029
+type(
+  Cidl.typ -> string
+)
+"mlType.ml" 79 1875 1894 "mlType.ml" 82 1996 2029
+type(
+  Cidl.typ list -> Cidl.typ -> string
+)
+"mlType.ml" 84 2031 2035 "mlType.ml" 84 2031 2048
+type(
+  Cidl.typ list -> string
+)
+ident(
+  def idl_signature "mlType.ml" 87 2123 2123 "_none_" 1 0 -1
+)
+"mlType.ml" 84 2031 2049 "mlType.ml" 84 2031 2053
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 85 2058 2062 "mlType.ml" 85 2058 2117
+)
+"mlType.ml" 85 2058 2062 "mlType.ml" 85 2058 2075
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"mlType.ml" 85 2058 2076 "mlType.ml" 85 2058 2079
+type(
+  string
+)
+"mlType.ml" 85 2058 2081 "mlType.ml" 85 2058 2089
+type(
+  (Cidl.typ -> string) -> Cidl.typ list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"mlType.ml" 85 2058 2090 "mlType.ml" 85 2058 2111
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref idl_signature_of_type "mlType.ml" 60 1364 1372 "mlType.ml" 60 1364 1393
+)
+"mlType.ml" 85 2058 2112 "mlType.ml" 85 2058 2116
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 84 2031 2049 "mlType.ml" 84 2031 2053
+)
+"mlType.ml" 85 2058 2081 "mlType.ml" 85 2058 2116
+call(
+  stack
+)
+type(
+  string list
+)
+"mlType.ml" 85 2058 2062 "mlType.ml" 85 2058 2117
+call(
+  tail
+)
+type(
+  string
+)
+"mlType.ml" 84 2031 2049 "mlType.ml" 85 2058 2117
+type(
+  Cidl.typ list -> string
+)
+"mlType.ml" 87 2123 2131 "mlType.ml" 87 2123 2146
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def convert_to_java "mlType.ml" 87 2123 2123 "_none_" 1 0 -1
+)
+"mlType.ml" 87 2123 2147 "mlType.ml" 87 2123 2150
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 87 2123 2151 "mlType.ml" 111 3485 3495
+)
+"mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlType.ml" 88 2155 2157 "mlType.ml" 111 3485 3495
+)
+"mlType.ml" 88 2155 2163 "mlType.ml" 88 2155 2166
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 87 2123 2147 "mlType.ml" 87 2123 2150
+)
+"mlType.ml" 89 2172 2184 "mlType.ml" 89 2172 2191
+type(
+  Cidl.object_type
+)
+"mlType.ml" 89 2172 2176 "mlType.ml" 89 2172 2191
+type(
+  Cidl.typ
+)
+"mlType.ml" 89 2172 2202 "mlType.ml" 89 2172 2202
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 89 2172 2222 "mlType.ml" 89 2172 2223
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 90 2229 2248 "mlType.ml" 90 2229 2250
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 90 2229 2262 "mlType.ml" 90 2229 2262
+)
+"mlType.ml" 90 2229 2242 "mlType.ml" 90 2229 2250
+type(
+  Cidl.object_type
+)
+"mlType.ml" 90 2229 2233 "mlType.ml" 90 2229 2251
+type(
+  Cidl.typ
+)
+"mlType.ml" 90 2229 2262 "mlType.ml" 90 2229 2262
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 90 2229 2263 "mlType.ml" 90 2229 2264
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 90 2229 2262 "mlType.ml" 90 2229 2305
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_jni_accessor_method_name
+)
+"mlType.ml" 90 2229 2306 "mlType.ml" 90 2229 2308
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 90 2229 2248 "mlType.ml" 90 2229 2250
+)
+"mlType.ml" 90 2229 2262 "mlType.ml" 90 2229 2308
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 91 2325 2337 "mlType.ml" 91 2325 2341
+type(
+  Cidl.object_type
+)
+"mlType.ml" 91 2325 2329 "mlType.ml" 91 2325 2341
+type(
+  Cidl.typ
+)
+"mlType.ml" 91 2325 2352 "mlType.ml" 91 2325 2352
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 91 2325 2353 "mlType.ml" 91 2325 2354
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 92 2374 2398 "mlType.ml" 92 2374 2399
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 92 2374 2411 "mlType.ml" 92 2374 2411
+)
+"mlType.ml" 92 2374 2387 "mlType.ml" 92 2374 2399
+type(
+  Cidl.object_type
+)
+"mlType.ml" 92 2374 2378 "mlType.ml" 92 2374 2400
+type(
+  Cidl.typ
+)
+"mlType.ml" 92 2374 2411 "mlType.ml" 92 2374 2411
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 92 2374 2412 "mlType.ml" 92 2374 2413
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 93 2433 2453 "mlType.ml" 93 2433 2454
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 94 2460 2466 "mlType.ml" 109 3418 3433
+)
+"mlType.ml" 93 2433 2446 "mlType.ml" 93 2433 2454
+type(
+  Cidl.object_type
+)
+"mlType.ml" 93 2433 2437 "mlType.ml" 93 2433 2455
+type(
+  Cidl.typ
+)
+"mlType.ml" 94 2460 2470 "mlType.ml" 94 2460 2473
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def elt "mlType.ml" 95 2494 2500 "mlType.ml" 109 3418 3433
+)
+"mlType.ml" 94 2460 2483 "mlType.ml" 94 2460 2483
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 95 2494 2504 "mlType.ml" 95 2494 2513
+type(
+  string
+)
+ident(
+  def allocname "mlType.ml" 97 2674 2680 "mlType.ml" 109 3418 3433
+)
+"mlType.ml" 95 2494 2522 "mlType.ml" 95 2494 2523
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 93 2433 2453 "mlType.ml" 93 2433 2454
+)
+"mlType.ml" 95 2494 2529 "mlType.ml" 95 2494 2537
+type(
+  Cidl.typ
+)
+"mlType.ml" 95 2494 2541 "mlType.ml" 95 2494 2560
+type(
+  string
+)
+"mlType.ml" 95 2494 2563 "mlType.ml" 95 2494 2564
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 95 2494 2568 "mlType.ml" 95 2494 2606
+)
+"mlType.ml" 95 2494 2568 "mlType.ml" 95 2494 2578
+type(
+  string
+)
+"mlType.ml" 95 2494 2578 "mlType.ml" 95 2494 2579
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 95 2494 2580 "mlType.ml" 95 2494 2594
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref string_of_type "mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+)
+"mlType.ml" 95 2494 2595 "mlType.ml" 95 2494 2596
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 95 2494 2563 "mlType.ml" 95 2494 2564
+)
+"mlType.ml" 95 2494 2580 "mlType.ml" 95 2494 2596
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 95 2494 2597 "mlType.ml" 95 2494 2598
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 95 2494 2598 "mlType.ml" 95 2494 2606
+type(
+  string
+)
+"mlType.ml" 95 2494 2579 "mlType.ml" 95 2494 2606
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 95 2494 2568 "mlType.ml" 95 2494 2606
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 95 2494 2516 "mlType.ml" 95 2494 2606
+type(
+  string
+)
+"mlType.ml" 96 2608 2618 "mlType.ml" 96 2608 2621
+type(
+  string
+)
+ident(
+  def set "mlType.ml" 97 2674 2680 "mlType.ml" 109 3418 3433
+)
+"mlType.ml" 96 2608 2624 "mlType.ml" 96 2608 2634
+type(
+  string
+)
+"mlType.ml" 96 2608 2634 "mlType.ml" 96 2608 2635
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 96 2608 2636 "mlType.ml" 96 2608 2650
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref string_of_type "mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+)
+"mlType.ml" 96 2608 2651 "mlType.ml" 96 2608 2652
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 93 2433 2453 "mlType.ml" 93 2433 2454
+)
+"mlType.ml" 96 2608 2636 "mlType.ml" 96 2608 2652
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 96 2608 2653 "mlType.ml" 96 2608 2654
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 96 2608 2654 "mlType.ml" 96 2608 2670
+type(
+  string
+)
+"mlType.ml" 96 2608 2635 "mlType.ml" 96 2608 2670
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 96 2608 2624 "mlType.ml" 96 2608 2670
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 97 2674 2684 "mlType.ml" 97 2674 2689
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def alloc "mlType.ml" 103 3166 3179 "mlType.ml" 103 3166 3179
+)
+"mlType.ml" 97 2674 2698 "mlType.ml" 97 2674 2699
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 93 2433 2453 "mlType.ml" 93 2433 2454
+)
+"mlType.ml" 98 2705 2721 "mlType.ml" 98 2705 2725
+type(
+  Cidl.object_type
+)
+"mlType.ml" 98 2705 2713 "mlType.ml" 98 2705 2725
+type(
+  Cidl.typ
+)
+"mlType.ml" 98 2705 2736 "mlType.ml" 98 2705 2736
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 98 2705 2736 "mlType.ml" 98 2705 2745
+type(
+  string
+)
+ident(
+  int_ref allocname "mlType.ml" 95 2494 2504 "mlType.ml" 95 2494 2513
+)
+"mlType.ml" 99 2798 2821 "mlType.ml" 99 2798 2823
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 99 2798 2835 "mlType.ml" 99 2798 2835
+)
+"mlType.ml" 99 2798 2815 "mlType.ml" 99 2798 2823
+type(
+  Cidl.object_type
+)
+"mlType.ml" 99 2798 2806 "mlType.ml" 99 2798 2824
+type(
+  Cidl.typ
+)
+"mlType.ml" 99 2798 2835 "mlType.ml" 99 2798 2835
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 99 2798 2835 "mlType.ml" 99 2798 2844
+type(
+  string
+)
+ident(
+  int_ref allocname "mlType.ml" 95 2494 2504 "mlType.ml" 95 2494 2513
+)
+"mlType.ml" 99 2798 2835 "mlType.ml" 99 2798 2865
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_signature
+)
+"mlType.ml" 99 2798 2866 "mlType.ml" 99 2798 2868
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 99 2798 2821 "mlType.ml" 99 2798 2823
+)
+"mlType.ml" 99 2798 2835 "mlType.ml" 99 2798 2868
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 100 2919 2935 "mlType.ml" 100 2919 2942
+type(
+  Cidl.object_type
+)
+"mlType.ml" 100 2919 2927 "mlType.ml" 100 2919 2942
+type(
+  Cidl.typ
+)
+"mlType.ml" 100 2919 2953 "mlType.ml" 100 2919 2953
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 100 2919 2953 "mlType.ml" 100 2919 2962
+type(
+  string
+)
+ident(
+  int_ref allocname "mlType.ml" 95 2494 2504 "mlType.ml" 95 2494 2513
+)
+"mlType.ml" 101 3016 3040 "mlType.ml" 101 3016 3041
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 101 3016 3053 "mlType.ml" 101 3016 3053
+)
+"mlType.ml" 101 3016 3033 "mlType.ml" 101 3016 3041
+type(
+  Cidl.object_type
+)
+"mlType.ml" 101 3016 3024 "mlType.ml" 101 3016 3042
+type(
+  Cidl.typ
+)
+"mlType.ml" 101 3016 3053 "mlType.ml" 101 3016 3053
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 101 3016 3053 "mlType.ml" 101 3016 3062
+type(
+  string
+)
+ident(
+  int_ref allocname "mlType.ml" 95 2494 2504 "mlType.ml" 95 2494 2513
+)
+"mlType.ml" 102 3116 3124 "mlType.ml" 102 3116 3125
+type(
+  Cidl.typ
+)
+"mlType.ml" 102 3116 3136 "mlType.ml" 102 3116 3136
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 102 3116 3136 "mlType.ml" 102 3116 3145
+type(
+  string
+)
+ident(
+  int_ref allocname "mlType.ml" 95 2494 2504 "mlType.ml" 95 2494 2513
+)
+"mlType.ml" 97 2674 2692 "mlType.ml" 102 3116 3162
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 103 3166 3179 "mlType.ml" 103 3166 3179
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 103 3166 3179 "mlType.ml" 103 3166 3182
+type(
+  string
+)
+ident(
+  int_ref set "mlType.ml" 96 2608 2618 "mlType.ml" 96 2608 2621
+)
+"mlType.ml" 104 3181 3198 "mlType.ml" 104 3181 3199
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 106 3247 3263 "mlType.ml" 106 3247 3268
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref alloc "mlType.ml" 97 2674 2684 "mlType.ml" 97 2674 2689
+)
+"mlType.ml" 108 3287 3361 "mlType.ml" 108 3287 3376
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref convert_to_java "mlType.ml" 87 2123 2131 "mlType.ml" 87 2123 2146
+)
+"mlType.ml" 108 3287 3377 "mlType.ml" 108 3287 3378
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 93 2433 2453 "mlType.ml" 93 2433 2454
+)
+"mlType.ml" 108 3287 3379 "mlType.ml" 108 3287 3382
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref elt "mlType.ml" 94 2460 2470 "mlType.ml" 94 2460 2473
+)
+"mlType.ml" 108 3287 3361 "mlType.ml" 108 3287 3382
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 97 2674 2680 "mlType.ml" 109 3418 3433
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 95 2494 2500 "mlType.ml" 109 3418 3433
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 94 2460 2466 "mlType.ml" 109 3418 3433
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 110 3435 3449 "mlType.ml" 110 3435 3450
+type(
+  Ident.clazz
+)
+"mlType.ml" 110 3435 3439 "mlType.ml" 110 3435 3450
+type(
+  Cidl.typ
+)
+"mlType.ml" 110 3435 3461 "mlType.ml" 110 3435 3461
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 110 3435 3478 "mlType.ml" 110 3435 3479
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 111 3485 3489 "mlType.ml" 111 3485 3490
+type(
+  Cidl.typ
+)
+"mlType.ml" 111 3485 3494 "mlType.ml" 111 3485 3495
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 87 2123 2151 "mlType.ml" 87 2123 2152
+)
+"mlType.ml" 88 2155 2157 "mlType.ml" 111 3485 3495
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 87 2123 2151 "mlType.ml" 111 3485 3495
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 87 2123 2147 "mlType.ml" 111 3485 3495
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def ml_signature_of_type "mlType.ml" 113 3498 3498 "_none_" 1 0 -1
+)
+"mlType.ml" 113 3498 3527 "mlType.ml" 113 3498 3530
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 114 3533 3535 "mlType.ml" 130 4167 4230
+)
+"mlType.ml" 114 3533 3541 "mlType.ml" 114 3533 3544
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 113 3498 3527 "mlType.ml" 113 3498 3530
+)
+"mlType.ml" 115 3550 3554 "mlType.ml" 115 3550 3559
+type(
+  Cidl.typ
+)
+"mlType.ml" 115 3550 3570 "mlType.ml" 115 3550 3570
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 116 3579 3583 "mlType.ml" 116 3579 3591
+type(
+  Cidl.typ
+)
+"mlType.ml" 116 3579 3602 "mlType.ml" 116 3579 3602
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 117 3611 3615 "mlType.ml" 117 3611 3620
+type(
+  Cidl.typ
+)
+"mlType.ml" 117 3611 3631 "mlType.ml" 117 3611 3631
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 118 3639 3643 "mlType.ml" 118 3639 3648
+type(
+  Cidl.typ
+)
+"mlType.ml" 118 3639 3659 "mlType.ml" 118 3639 3659
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 119 3667 3671 "mlType.ml" 119 3667 3677
+type(
+  Cidl.typ
+)
+"mlType.ml" 119 3667 3688 "mlType.ml" 119 3667 3688
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 120 3696 3700 "mlType.ml" 120 3696 3704
+type(
+  Cidl.typ
+)
+"mlType.ml" 120 3696 3715 "mlType.ml" 120 3696 3715
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 121 3725 3729 "mlType.ml" 121 3725 3737
+type(
+  Cidl.typ
+)
+"mlType.ml" 121 3725 3748 "mlType.ml" 121 3725 3748
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 122 3756 3760 "mlType.ml" 122 3756 3765
+type(
+  Cidl.typ
+)
+"mlType.ml" 122 3756 3776 "mlType.ml" 122 3756 3776
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 123 3786 3790 "mlType.ml" 123 3786 3796
+type(
+  Cidl.typ
+)
+"mlType.ml" 123 3786 3807 "mlType.ml" 123 3786 3807
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 124 3817 3821 "mlType.ml" 124 3817 3828
+type(
+  Cidl.typ
+)
+"mlType.ml" 124 3817 3839 "mlType.ml" 124 3817 3839
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 125 3849 3861 "mlType.ml" 125 3849 3868
+type(
+  Cidl.object_type
+)
+"mlType.ml" 125 3849 3853 "mlType.ml" 125 3849 3868
+type(
+  Cidl.typ
+)
+"mlType.ml" 125 3849 3879 "mlType.ml" 125 3849 3879
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 126 3891 3903 "mlType.ml" 126 3891 3907
+type(
+  Cidl.object_type
+)
+"mlType.ml" 126 3891 3895 "mlType.ml" 126 3891 3907
+type(
+  Cidl.typ
+)
+"mlType.ml" 126 3891 3918 "mlType.ml" 126 3891 3918
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 127 3940 3964 "mlType.ml" 127 3940 3967
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 127 3940 3979 "mlType.ml" 127 3940 3979
+)
+"mlType.ml" 127 3940 3953 "mlType.ml" 127 3940 3967
+type(
+  Cidl.object_type
+)
+"mlType.ml" 127 3940 3944 "mlType.ml" 127 3940 3968
+type(
+  Cidl.typ
+)
+"mlType.ml" 127 3940 3979 "mlType.ml" 127 3940 3979
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 127 3940 3996 "mlType.ml" 127 3940 4016
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 127 3940 4017 "mlType.ml" 127 3940 4020
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 127 3940 3964 "mlType.ml" 127 3940 3967
+)
+"mlType.ml" 127 3940 3996 "mlType.ml" 127 3940 4020
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 128 4025 4045 "mlType.ml" 128 4025 4048
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 128 4025 4060 "mlType.ml" 128 4025 4060
+)
+"mlType.ml" 128 4025 4038 "mlType.ml" 128 4025 4048
+type(
+  Cidl.object_type
+)
+"mlType.ml" 128 4025 4029 "mlType.ml" 128 4025 4049
+type(
+  Cidl.typ
+)
+"mlType.ml" 128 4025 4060 "mlType.ml" 128 4025 4060
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 128 4025 4067 "mlType.ml" 128 4025 4087
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 128 4025 4088 "mlType.ml" 128 4025 4091
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 128 4025 4045 "mlType.ml" 128 4025 4048
+)
+"mlType.ml" 128 4025 4067 "mlType.ml" 128 4025 4091
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 129 4097 4116 "mlType.ml" 129 4097 4118
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 129 4097 4130 "mlType.ml" 129 4097 4130
+)
+"mlType.ml" 129 4097 4110 "mlType.ml" 129 4097 4118
+type(
+  Cidl.object_type
+)
+"mlType.ml" 129 4097 4101 "mlType.ml" 129 4097 4119
+type(
+  Cidl.typ
+)
+"mlType.ml" 129 4097 4130 "mlType.ml" 129 4097 4130
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 129 4097 4130 "mlType.ml" 129 4097 4153
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_name
+)
+"mlType.ml" 129 4097 4154 "mlType.ml" 129 4097 4156
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 129 4097 4116 "mlType.ml" 129 4097 4118
+)
+"mlType.ml" 129 4097 4130 "mlType.ml" 129 4097 4156
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 130 4167 4181 "mlType.ml" 130 4167 4183
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 130 4167 4194 "mlType.ml" 130 4167 4194
+)
+"mlType.ml" 130 4167 4171 "mlType.ml" 130 4167 4183
+type(
+  Cidl.typ
+)
+"mlType.ml" 130 4167 4194 "mlType.ml" 130 4167 4194
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 130 4167 4194 "mlType.ml" 130 4167 4217
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_name
+)
+"mlType.ml" 130 4167 4218 "mlType.ml" 130 4167 4220
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 130 4167 4181 "mlType.ml" 130 4167 4183
+)
+"mlType.ml" 130 4167 4194 "mlType.ml" 130 4167 4220
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 114 3533 3535 "mlType.ml" 130 4167 4230
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 113 3498 3527 "mlType.ml" 130 4167 4230
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 132 4232 4236 "mlType.ml" 132 4232 4248
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def ml_signature "mlType.ml" 141 4512 4512 "_none_" 1 0 -1
+)
+"mlType.ml" 132 4232 4249 "mlType.ml" 132 4232 4253
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 132 4232 4254 "mlType.ml" 139 4488 4509
+)
+"mlType.ml" 132 4232 4254 "mlType.ml" 132 4232 4258
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlType.ml" 133 4261 4263 "mlType.ml" 139 4488 4509
+)
+"mlType.ml" 133 4261 4271 "mlType.ml" 133 4261 4275
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def loop "mlType.ml" 133 4261 4263 "mlType.ml" 139 4488 4509
+)
+"mlType.ml" 133 4261 4276 "mlType.ml" 133 4261 4280
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 133 4261 4283 "mlType.ml" 135 4335 4405
+)
+"mlType.ml" 133 4261 4289 "mlType.ml" 133 4261 4293
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 133 4261 4276 "mlType.ml" 133 4261 4280
+)
+"mlType.ml" 134 4299 4303 "mlType.ml" 134 4299 4305
+type(
+  Cidl.typ list
+)
+"mlType.ml" 134 4299 4309 "mlType.ml" 134 4299 4329
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 134 4299 4330 "mlType.ml" 134 4299 4334
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlType.ml" 132 4232 4254 "mlType.ml" 132 4232 4258
+)
+"mlType.ml" 134 4299 4309 "mlType.ml" 134 4299 4334
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 135 4335 4339 "mlType.ml" 135 4335 4342
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 135 4335 4359 "mlType.ml" 135 4335 4359
+)
+"mlType.ml" 135 4335 4344 "mlType.ml" 135 4335 4348
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 135 4335 4359 "mlType.ml" 135 4335 4359
+)
+"mlType.ml" 135 4335 4339 "mlType.ml" 135 4335 4348
+type(
+  Cidl.typ list
+)
+"mlType.ml" 135 4335 4359 "mlType.ml" 135 4335 4359
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 135 4335 4361 "mlType.ml" 135 4335 4381
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 135 4335 4382 "mlType.ml" 135 4335 4385
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 135 4335 4339 "mlType.ml" 135 4335 4342
+)
+"mlType.ml" 135 4335 4361 "mlType.ml" 135 4335 4385
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 135 4335 4391 "mlType.ml" 135 4335 4395
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref loop "mlType.ml" 133 4261 4271 "mlType.ml" 133 4261 4275
+)
+"mlType.ml" 135 4335 4396 "mlType.ml" 135 4335 4400
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 135 4335 4344 "mlType.ml" 135 4335 4348
+)
+"mlType.ml" 135 4335 4391 "mlType.ml" 135 4335 4400
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 133 4261 4283 "mlType.ml" 135 4335 4405
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 133 4261 4276 "mlType.ml" 135 4335 4405
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 137 4412 4420 "mlType.ml" 137 4412 4424
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 132 4232 4249 "mlType.ml" 132 4232 4253
+)
+"mlType.ml" 138 4431 4435 "mlType.ml" 138 4431 4437
+type(
+  Cidl.typ list
+)
+"mlType.ml" 138 4431 4448 "mlType.ml" 138 4431 4448
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 138 4431 4457 "mlType.ml" 138 4431 4477
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 138 4431 4478 "mlType.ml" 138 4431 4482
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlType.ml" 132 4232 4254 "mlType.ml" 132 4232 4258
+)
+"mlType.ml" 138 4431 4457 "mlType.ml" 138 4431 4482
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 139 4488 4492 "mlType.ml" 139 4488 4496
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 139 4488 4500 "mlType.ml" 139 4488 4509
+)
+"mlType.ml" 139 4488 4500 "mlType.ml" 139 4488 4504
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref loop "mlType.ml" 133 4261 4271 "mlType.ml" 133 4261 4275
+)
+"mlType.ml" 139 4488 4505 "mlType.ml" 139 4488 4509
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 139 4488 4492 "mlType.ml" 139 4488 4496
+)
+"mlType.ml" 139 4488 4500 "mlType.ml" 139 4488 4509
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 137 4412 4414 "mlType.ml" 139 4488 4509
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 133 4261 4263 "mlType.ml" 139 4488 4509
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 132 4232 4254 "mlType.ml" 139 4488 4509
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 132 4232 4249 "mlType.ml" 139 4488 4509
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 141 4512 4520 "mlType.ml" 141 4512 4544
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def ml_jni_signature_of_type "mlType.ml" 141 4512 4512 "_none_" 1 0 -1
+)
+"mlType.ml" 141 4512 4545 "mlType.ml" 141 4512 4548
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 142 4551 4553 "mlType.ml" 154 4904 4942
+)
+"mlType.ml" 142 4551 4559 "mlType.ml" 142 4551 4562
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 141 4512 4545 "mlType.ml" 141 4512 4548
+)
+"mlType.ml" 143 4568 4572 "mlType.ml" 143 4568 4577
+type(
+  Cidl.typ
+)
+"mlType.ml" 143 4568 4588 "mlType.ml" 143 4568 4588
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 144 4597 4601 "mlType.ml" 144 4597 4609
+type(
+  Cidl.typ
+)
+"mlType.ml" 144 4597 4620 "mlType.ml" 144 4597 4620
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 145 4629 4633 "mlType.ml" 145 4629 4638
+type(
+  Cidl.typ
+)
+"mlType.ml" 145 4629 4649 "mlType.ml" 145 4629 4649
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 146 4657 4661 "mlType.ml" 146 4657 4666
+type(
+  Cidl.typ
+)
+"mlType.ml" 146 4657 4677 "mlType.ml" 146 4657 4677
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 147 4685 4689 "mlType.ml" 147 4685 4695
+type(
+  Cidl.typ
+)
+"mlType.ml" 147 4685 4706 "mlType.ml" 147 4685 4706
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 148 4714 4718 "mlType.ml" 148 4714 4722
+type(
+  Cidl.typ
+)
+"mlType.ml" 148 4714 4733 "mlType.ml" 148 4714 4733
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 149 4743 4747 "mlType.ml" 149 4743 4755
+type(
+  Cidl.typ
+)
+"mlType.ml" 149 4743 4766 "mlType.ml" 149 4743 4766
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 150 4774 4778 "mlType.ml" 150 4774 4783
+type(
+  Cidl.typ
+)
+"mlType.ml" 150 4774 4794 "mlType.ml" 150 4774 4794
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 151 4804 4808 "mlType.ml" 151 4804 4814
+type(
+  Cidl.typ
+)
+"mlType.ml" 151 4804 4825 "mlType.ml" 151 4804 4825
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 152 4835 4839 "mlType.ml" 152 4835 4846
+type(
+  Cidl.typ
+)
+"mlType.ml" 152 4835 4857 "mlType.ml" 152 4835 4857
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 153 4867 4879 "mlType.ml" 153 4867 4880
+type(
+  Cidl.object_type
+)
+"mlType.ml" 153 4867 4871 "mlType.ml" 153 4867 4880
+type(
+  Cidl.typ
+)
+"mlType.ml" 153 4867 4891 "mlType.ml" 153 4867 4891
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 154 4904 4918 "mlType.ml" 154 4904 4920
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 154 4904 4931 "mlType.ml" 154 4904 4931
+)
+"mlType.ml" 154 4904 4908 "mlType.ml" 154 4904 4920
+type(
+  Cidl.typ
+)
+"mlType.ml" 154 4904 4931 "mlType.ml" 154 4904 4931
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 142 4551 4553 "mlType.ml" 154 4904 4942
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 141 4512 4545 "mlType.ml" 154 4904 4942
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 156 4944 4948 "mlType.ml" 156 4944 4964
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def ml_jni_signature "mlType.ml" 164 5222 5222 "_none_" 1 0 -1
+)
+"mlType.ml" 156 4944 4965 "mlType.ml" 156 4944 4969
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 156 4944 4970 "mlType.ml" 161 5136 5147
+)
+"mlType.ml" 156 4944 4970 "mlType.ml" 156 4944 4974
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlType.ml" 157 4977 4979 "mlType.ml" 161 5136 5147
+)
+"mlType.ml" 157 4977 4987 "mlType.ml" 157 4977 4991
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def loop "mlType.ml" 157 4977 4979 "mlType.ml" 161 5136 5147
+)
+"mlType.ml" 157 4977 4992 "mlType.ml" 157 4977 4996
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 157 4977 4999 "mlType.ml" 159 5055 5129
+)
+"mlType.ml" 157 4977 5005 "mlType.ml" 157 4977 5009
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 157 4977 4992 "mlType.ml" 157 4977 4996
+)
+"mlType.ml" 158 5015 5019 "mlType.ml" 158 5015 5021
+type(
+  Cidl.typ list
+)
+"mlType.ml" 158 5015 5025 "mlType.ml" 158 5015 5049
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_jni_signature_of_type "mlType.ml" 141 4512 4520 "mlType.ml" 141 4512 4544
+)
+"mlType.ml" 158 5015 5050 "mlType.ml" 158 5015 5054
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlType.ml" 156 4944 4970 "mlType.ml" 156 4944 4974
+)
+"mlType.ml" 158 5015 5025 "mlType.ml" 158 5015 5054
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 159 5055 5059 "mlType.ml" 159 5055 5062
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 159 5055 5079 "mlType.ml" 159 5055 5079
+)
+"mlType.ml" 159 5055 5064 "mlType.ml" 159 5055 5068
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlType.ml" 159 5055 5079 "mlType.ml" 159 5055 5079
+)
+"mlType.ml" 159 5055 5059 "mlType.ml" 159 5055 5068
+type(
+  Cidl.typ list
+)
+"mlType.ml" 159 5055 5079 "mlType.ml" 159 5055 5079
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 159 5055 5081 "mlType.ml" 159 5055 5105
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_jni_signature_of_type "mlType.ml" 141 4512 4520 "mlType.ml" 141 4512 4544
+)
+"mlType.ml" 159 5055 5106 "mlType.ml" 159 5055 5109
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 159 5055 5059 "mlType.ml" 159 5055 5062
+)
+"mlType.ml" 159 5055 5081 "mlType.ml" 159 5055 5109
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 159 5055 5115 "mlType.ml" 159 5055 5119
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref loop "mlType.ml" 157 4977 4987 "mlType.ml" 157 4977 4991
+)
+"mlType.ml" 159 5055 5120 "mlType.ml" 159 5055 5124
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 159 5055 5064 "mlType.ml" 159 5055 5068
+)
+"mlType.ml" 159 5055 5115 "mlType.ml" 159 5055 5124
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 157 4977 4999 "mlType.ml" 159 5055 5129
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 157 4977 4992 "mlType.ml" 159 5055 5129
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 161 5136 5138 "mlType.ml" 161 5136 5142
+type(
+  Cidl.typ list -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref loop "mlType.ml" 157 4977 4987 "mlType.ml" 157 4977 4991
+)
+"mlType.ml" 161 5136 5143 "mlType.ml" 161 5136 5147
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlType.ml" 156 4944 4965 "mlType.ml" 156 4944 4969
+)
+"mlType.ml" 161 5136 5138 "mlType.ml" 161 5136 5147
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 157 4977 4979 "mlType.ml" 161 5136 5147
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 156 4944 4970 "mlType.ml" 161 5136 5147
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 156 4944 4965 "mlType.ml" 161 5136 5147
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 164 5222 5226 "mlType.ml" 164 5222 5244
+type(
+  Cidl.typ list ->
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def ml_class_signature "mlType.ml" 172 5468 5468 "_none_" 1 0 -1
+)
+"mlType.ml" 164 5222 5245 "mlType.ml" 164 5222 5250
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlType.ml" 164 5222 5251 "mlType.ml" 169 5425 5436
+)
+"mlType.ml" 164 5222 5251 "mlType.ml" 164 5222 5255
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def rtyp "mlType.ml" 165 5258 5260 "mlType.ml" 169 5425 5436
+)
+"mlType.ml" 165 5258 5266 "mlType.ml" 165 5258 5271
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlType.ml" 164 5222 5245 "mlType.ml" 164 5222 5250
+)
+"mlType.ml" 166 5277 5281 "mlType.ml" 166 5277 5283
+type(
+  Cidl.typ list
+)
+"mlType.ml" 166 5277 5300 "mlType.ml" 166 5277 5300
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 166 5277 5313 "mlType.ml" 166 5277 5317
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref rtyp "mlType.ml" 164 5222 5251 "mlType.ml" 164 5222 5255
+)
+"mlType.ml" 167 5323 5327 "mlType.ml" 167 5323 5332
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlType.ml" 167 5323 5336 "mlType.ml" 169 5425 5436
+)
+"mlType.ml" 167 5323 5336 "mlType.ml" 167 5323 5351
+type(
+  (Cidl.typ -> Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type) ->
+  Cidl.typ list ->
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlType.ml" 168 5352 5358 "mlType.ml" 168 5352 5362
+type(
+  Cidl.typ
+)
+ident(
+  def targ "mlType.ml" 168 5352 5363 "mlType.ml" 168 5352 5422
+)
+"mlType.ml" 168 5352 5363 "mlType.ml" 168 5352 5364
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def e "mlType.ml" 168 5352 5381 "mlType.ml" 168 5352 5381
+)
+"mlType.ml" 168 5352 5381 "mlType.ml" 168 5352 5381
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 168 5352 5384 "mlType.ml" 168 5352 5404
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 168 5352 5405 "mlType.ml" 168 5352 5409
+type(
+  Cidl.typ
+)
+ident(
+  int_ref targ "mlType.ml" 168 5352 5358 "mlType.ml" 168 5352 5362
+)
+"mlType.ml" 168 5352 5384 "mlType.ml" 168 5352 5409
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 168 5352 5417 "mlType.ml" 168 5352 5418
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref e "mlType.ml" 168 5352 5363 "mlType.ml" 168 5352 5364
+)
+"mlType.ml" 168 5352 5363 "mlType.ml" 168 5352 5422
+type(
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 168 5352 5358 "mlType.ml" 168 5352 5422
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 169 5425 5426 "mlType.ml" 169 5425 5431
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlType.ml" 167 5323 5327 "mlType.ml" 167 5323 5332
+)
+"mlType.ml" 169 5425 5432 "mlType.ml" 169 5425 5436
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref rtyp "mlType.ml" 164 5222 5251 "mlType.ml" 164 5222 5255
+)
+"mlType.ml" 167 5323 5336 "mlType.ml" 169 5425 5436
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 165 5258 5260 "mlType.ml" 169 5425 5436
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 164 5222 5251 "mlType.ml" 169 5425 5436
+type(
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 164 5222 5245 "mlType.ml" 169 5425 5436
+type(
+  Cidl.typ list ->
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+"mlType.ml" 172 5468 5472 "mlType.ml" 172 5468 5491
+type(
+  ('a -> Camlp4.PreCast.Ast.expr -> 'b) ->
+  (string * 'a) list -> (string * 'b) list
+)
+ident(
+  def get_args_convertion "mlType.ml" 179 5632 5632 "_none_" 1 0 -1
+)
+"mlType.ml" 172 5468 5492 "mlType.ml" 172 5468 5499
+type(
+  'a -> Camlp4.PreCast.Ast.expr -> 'b
+)
+ident(
+  def convert "mlType.ml" 172 5468 5500 "mlType.ml" 176 5581 5601
+)
+"mlType.ml" 172 5468 5500 "mlType.ml" 172 5468 5504
+type(
+  (string * 'a) list
+)
+ident(
+  def args "mlType.ml" 173 5507 5509 "mlType.ml" 176 5581 5601
+)
+"mlType.ml" 173 5507 5513 "mlType.ml" 173 5507 5517
+type(
+  string * 'a -> string * 'b
+)
+ident(
+  def make "mlType.ml" 176 5581 5583 "mlType.ml" 176 5581 5601
+)
+"mlType.ml" 173 5507 5519 "mlType.ml" 173 5507 5523
+type(
+  string
+)
+ident(
+  def narg "mlType.ml" 174 5532 5536 "mlType.ml" 174 5532 5575
+)
+"mlType.ml" 173 5507 5524 "mlType.ml" 173 5507 5528
+type(
+  'a
+)
+ident(
+  def targ "mlType.ml" 174 5532 5536 "mlType.ml" 174 5532 5575
+)
+"mlType.ml" 173 5507 5519 "mlType.ml" 173 5507 5528
+type(
+  string * 'a
+)
+"mlType.ml" 174 5532 5536 "mlType.ml" 174 5532 5540
+type(
+  string
+)
+ident(
+  int_ref narg "mlType.ml" 173 5507 5519 "mlType.ml" 173 5507 5523
+)
+"mlType.ml" 174 5532 5541 "mlType.ml" 174 5532 5548
+type(
+  'a -> Camlp4.PreCast.Ast.expr -> 'b
+)
+ident(
+  int_ref convert "mlType.ml" 172 5468 5492 "mlType.ml" 172 5468 5499
+)
+"mlType.ml" 174 5532 5549 "mlType.ml" 174 5532 5553
+type(
+  'a
+)
+ident(
+  int_ref targ "mlType.ml" 173 5507 5524 "mlType.ml" 173 5507 5528
+)
+"mlType.ml" 174 5532 5561 "mlType.ml" 174 5532 5561
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 174 5532 5561 "mlType.ml" 174 5532 5565
+type(
+  string
+)
+ident(
+  int_ref narg "mlType.ml" 173 5507 5519 "mlType.ml" 173 5507 5523
+)
+"mlType.ml" 174 5532 5541 "mlType.ml" 174 5532 5575
+call(
+  stack
+)
+type(
+  'b
+)
+"mlType.ml" 174 5532 5536 "mlType.ml" 174 5532 5575
+type(
+  string * 'b
+)
+"mlType.ml" 173 5507 5518 "mlType.ml" 174 5532 5575
+type(
+  string * 'a -> string * 'b
+)
+"mlType.ml" 176 5581 5583 "mlType.ml" 176 5581 5591
+type(
+  (string * 'a -> string * 'b) -> (string * 'a) list -> (string * 'b) list
+)
+ident(
+  ext_ref List.map
+)
+"mlType.ml" 176 5581 5592 "mlType.ml" 176 5581 5596
+type(
+  string * 'a -> string * 'b
+)
+ident(
+  int_ref make "mlType.ml" 173 5507 5513 "mlType.ml" 173 5507 5517
+)
+"mlType.ml" 176 5581 5597 "mlType.ml" 176 5581 5601
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref args "mlType.ml" 172 5468 5500 "mlType.ml" 172 5468 5504
+)
+"mlType.ml" 176 5581 5583 "mlType.ml" 176 5581 5601
+call(
+  tail
+)
+type(
+  (string * 'b) list
+)
+"mlType.ml" 173 5507 5509 "mlType.ml" 176 5581 5601
+type(
+  (string * 'b) list
+)
+"mlType.ml" 172 5468 5500 "mlType.ml" 176 5581 5601
+type(
+  (string * 'a) list -> (string * 'b) list
+)
+"mlType.ml" 172 5468 5492 "mlType.ml" 176 5581 5601
+type(
+  ('a -> Camlp4.PreCast.Ast.expr -> 'b) ->
+  (string * 'a) list -> (string * 'b) list
+)
+"mlType.ml" 179 5632 5636 "mlType.ml" 179 5632 5651
+type(
+  virtual_call:bool -> Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  def get_call_method "mlType.ml" 188 5816 5816 "_none_" 1 0 -1
+)
+"mlType.ml" 179 5632 5666 "mlType.ml" 179 5632 5671
+type(
+  Cidl.typ
+)
+ident(
+  def rtype "mlType.ml" 180 5675 5685 "mlType.ml" 180 5675 5685
+)
+"mlType.ml" 180 5675 5685 "mlType.ml" 180 5675 5685
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlType.ml" 181 5686 5690 "mlType.ml" 181 5686 5697
+type(
+  string
+)
+"mlType.ml" 181 5686 5697 "mlType.ml" 181 5686 5698
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 182 5699 5707 "mlType.ml" 182 5699 5710
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"mlType.ml" 182 5699 5711 "mlType.ml" 182 5699 5723
+type(
+  bool
+)
+ident(
+  int_ref virtual_call "mlType.ml" 179 5632 5652 "mlType.ml" 185 5807 5813
+)
+"mlType.ml" 182 5699 5707 "mlType.ml" 182 5699 5723
+type(
+  bool
+)
+"mlType.ml" 182 5699 5729 "mlType.ml" 182 5699 5742
+type(
+  string
+)
+"mlType.ml" 182 5699 5748 "mlType.ml" 182 5699 5750
+type(
+  string
+)
+"mlType.ml" 182 5699 5704 "mlType.ml" 182 5699 5750
+type(
+  string
+)
+"mlType.ml" 182 5699 5751 "mlType.ml" 182 5699 5752
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 183 5753 5758 "mlType.ml" 183 5753 5772
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref string_of_type "mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+)
+"mlType.ml" 183 5753 5773 "mlType.ml" 183 5753 5778
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtype "mlType.ml" 179 5632 5666 "mlType.ml" 179 5632 5671
+)
+"mlType.ml" 183 5753 5758 "mlType.ml" 183 5753 5778
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 183 5753 5779 "mlType.ml" 183 5753 5780
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 184 5781 5785 "mlType.ml" 184 5781 5794
+type(
+  string
+)
+"mlType.ml" 183 5753 5757 "mlType.ml" 184 5781 5794
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 182 5699 5703 "mlType.ml" 184 5781 5794
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 181 5686 5690 "mlType.ml" 184 5781 5794
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 179 5632 5666 "mlType.ml" 185 5807 5813
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+"mlType.ml" 179 5632 5652 "mlType.ml" 185 5807 5813
+type(
+  virtual_call:bool -> Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+type(
+  bool
+)
+ident(
+  def virtual_call "mlType.ml" 179 5632 5666 "mlType.ml" 185 5807 5813
+)
+"mlType.ml" 188 5816 5824 "mlType.ml" 188 5816 5841
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def convert_from_java "mlType.ml" 188 5816 5816 "_none_" 1 0 -1
+)
+"mlType.ml" 188 5816 5842 "mlType.ml" 188 5816 5845
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlType.ml" 188 5816 5846 "mlType.ml" 207 6816 6826
+)
+"mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def e "mlType.ml" 189 5850 5852 "mlType.ml" 207 6816 6826
+)
+"mlType.ml" 189 5850 5858 "mlType.ml" 189 5850 5861
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlType.ml" 188 5816 5842 "mlType.ml" 188 5816 5845
+)
+"mlType.ml" 190 5867 5879 "mlType.ml" 190 5867 5886
+type(
+  Cidl.object_type
+)
+"mlType.ml" 190 5867 5871 "mlType.ml" 190 5867 5886
+type(
+  Cidl.typ
+)
+"mlType.ml" 190 5867 5897 "mlType.ml" 190 5867 5897
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 190 5867 5919 "mlType.ml" 190 5867 5920
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+)
+"mlType.ml" 191 5926 5945 "mlType.ml" 191 5926 5947
+type(
+  Ident.clazz
+)
+ident(
+  def id "mlType.ml" 191 5926 5959 "mlType.ml" 191 5926 5959
+)
+"mlType.ml" 191 5926 5939 "mlType.ml" 191 5926 5947
+type(
+  Cidl.object_type
+)
+"mlType.ml" 191 5926 5930 "mlType.ml" 191 5926 5948
+type(
+  Cidl.typ
+)
+"mlType.ml" 191 5926 5959 "mlType.ml" 191 5926 5959
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 191 5926 5959 "mlType.ml" 191 5926 5982
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_name
+)
+"mlType.ml" 191 5926 5983 "mlType.ml" 191 5926 5985
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 191 5926 5945 "mlType.ml" 191 5926 5947
+)
+"mlType.ml" 191 5926 5959 "mlType.ml" 191 5926 5985
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 191 5926 5959 "mlType.ml" 191 5926 5990
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_ml_wrapper_name
+)
+"mlType.ml" 191 5926 5991 "mlType.ml" 191 5926 5993
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "mlType.ml" 191 5926 5945 "mlType.ml" 191 5926 5947
+)
+"mlType.ml" 191 5926 5959 "mlType.ml" 191 5926 5993
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 191 5926 6006 "mlType.ml" 191 5926 6007
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+)
+"mlType.ml" 192 6049 6061 "mlType.ml" 192 6049 6065
+type(
+  Cidl.object_type
+)
+"mlType.ml" 192 6049 6053 "mlType.ml" 192 6049 6065
+type(
+  Cidl.typ
+)
+"mlType.ml" 192 6049 6076 "mlType.ml" 192 6049 6076
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 192 6049 6099 "mlType.ml" 192 6049 6100
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+)
+"mlType.ml" 193 6127 6151 "mlType.ml" 193 6127 6152
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 194 6158 6164 "mlType.ml" 201 6504 6562
+)
+"mlType.ml" 193 6127 6140 "mlType.ml" 193 6127 6152
+type(
+  Cidl.object_type
+)
+"mlType.ml" 193 6127 6131 "mlType.ml" 193 6127 6153
+type(
+  Cidl.typ
+)
+"mlType.ml" 194 6158 6168 "mlType.ml" 194 6158 6174
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def jniobj "mlType.ml" 195 6206 6212 "mlType.ml" 201 6504 6562
+)
+"mlType.ml" 194 6158 6184 "mlType.ml" 194 6158 6184
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 194 6158 6184 "mlType.ml" 194 6158 6192
+type(
+  string
+)
+"mlType.ml" 195 6206 6216 "mlType.ml" 195 6206 6219
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def obj "mlType.ml" 196 6248 6261 "mlType.ml" 196 6248 6261
+)
+"mlType.ml" 195 6206 6229 "mlType.ml" 195 6206 6229
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 195 6206 6229 "mlType.ml" 195 6206 6234
+type(
+  string
+)
+"mlType.ml" 196 6248 6261 "mlType.ml" 196 6248 6261
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 196 6248 6261 "mlType.ml" 196 6248 6267
+type(
+  string
+)
+type(
+  string
+)
+"mlType.ml" 196 6248 6267 "mlType.ml" 196 6248 6268
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 196 6248 6269 "mlType.ml" 196 6248 6283
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref string_of_type "mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+)
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref string_of_type "mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+)
+"mlType.ml" 196 6248 6284 "mlType.ml" 196 6248 6285
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 193 6127 6151 "mlType.ml" 193 6127 6152
+)
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 193 6127 6151 "mlType.ml" 193 6127 6152
+)
+"mlType.ml" 196 6248 6269 "mlType.ml" 196 6248 6285
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"mlType.ml" 196 6248 6286 "mlType.ml" 196 6248 6287
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 196 6248 6288 "mlType.ml" 196 6248 6304
+type(
+  string
+)
+type(
+  string
+)
+"mlType.ml" 196 6248 6269 "mlType.ml" 196 6248 6304
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"mlType.ml" 196 6248 6261 "mlType.ml" 196 6248 6304
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"mlType.ml" 199 6406 6428 "mlType.ml" 199 6406 6445
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref convert_from_java "mlType.ml" 188 5816 5824 "mlType.ml" 188 5816 5841
+)
+"mlType.ml" 199 6406 6446 "mlType.ml" 199 6406 6447
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 193 6127 6151 "mlType.ml" 193 6127 6152
+)
+"mlType.ml" 199 6406 6448 "mlType.ml" 199 6406 6454
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref jniobj "mlType.ml" 194 6158 6168 "mlType.ml" 194 6158 6174
+)
+"mlType.ml" 199 6406 6428 "mlType.ml" 199 6406 6454
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 200 6460 6479 "mlType.ml" 200 6460 6494
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref convert_to_java "mlType.ml" 87 2123 2131 "mlType.ml" 87 2123 2146
+)
+"mlType.ml" 200 6460 6495 "mlType.ml" 200 6460 6496
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 193 6127 6151 "mlType.ml" 193 6127 6152
+)
+"mlType.ml" 200 6460 6497 "mlType.ml" 200 6460 6500
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref obj "mlType.ml" 195 6206 6216 "mlType.ml" 195 6206 6219
+)
+"mlType.ml" 200 6460 6479 "mlType.ml" 200 6460 6500
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 201 6504 6511 "mlType.ml" 201 6504 6512
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+)
+"mlType.ml" 201 6504 6533 "mlType.ml" 201 6504 6553
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref ml_signature_of_type "mlType.ml" 113 3498 3506 "mlType.ml" 113 3498 3526
+)
+"mlType.ml" 201 6504 6554 "mlType.ml" 201 6504 6555
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 193 6127 6151 "mlType.ml" 193 6127 6152
+)
+"mlType.ml" 201 6504 6533 "mlType.ml" 201 6504 6555
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlType.ml" 195 6206 6212 "mlType.ml" 201 6504 6562
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 194 6158 6164 "mlType.ml" 201 6504 6562
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 202 6563 6583 "mlType.ml" 202 6563 6584
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlType.ml" 203 6589 6595 "mlType.ml" 206 6727 6815
+)
+"mlType.ml" 202 6563 6576 "mlType.ml" 202 6563 6584
+type(
+  Cidl.object_type
+)
+"mlType.ml" 202 6563 6567 "mlType.ml" 202 6563 6585
+type(
+  Cidl.typ
+)
+"mlType.ml" 203 6589 6599 "mlType.ml" 203 6589 6602
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def elt "mlType.ml" 204 6684 6697 "mlType.ml" 204 6684 6697
+)
+"mlType.ml" 203 6589 6612 "mlType.ml" 203 6589 6612
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 203 6589 6612 "mlType.ml" 203 6589 6622
+type(
+  string
+)
+"mlType.ml" 203 6589 6622 "mlType.ml" 203 6589 6623
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 203 6589 6624 "mlType.ml" 203 6589 6638
+type(
+  Cidl.typ -> string
+)
+ident(
+  int_ref string_of_type "mlType.ml" 9 114 118 "mlType.ml" 9 114 132
+)
+"mlType.ml" 203 6589 6639 "mlType.ml" 203 6589 6640
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 202 6563 6583 "mlType.ml" 202 6563 6584
+)
+"mlType.ml" 203 6589 6624 "mlType.ml" 203 6589 6640
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 203 6589 6641 "mlType.ml" 203 6589 6642
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlType.ml" 203 6589 6643 "mlType.ml" 203 6589 6659
+type(
+  string
+)
+"mlType.ml" 203 6589 6624 "mlType.ml" 203 6589 6659
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 203 6589 6612 "mlType.ml" 203 6589 6659
+call(
+  stack
+)
+type(
+  string
+)
+"mlType.ml" 204 6684 6697 "mlType.ml" 204 6684 6697
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlType.ml" 7 92 96 "mlType.ml" 7 92 100
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 205 6699 6720 "mlType.ml" 205 6699 6721
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+)
+"mlType.ml" 206 6727 6786 "mlType.ml" 206 6727 6803
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref convert_from_java "mlType.ml" 188 5816 5824 "mlType.ml" 188 5816 5841
+)
+"mlType.ml" 206 6727 6804 "mlType.ml" 206 6727 6805
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlType.ml" 202 6563 6583 "mlType.ml" 202 6563 6584
+)
+"mlType.ml" 206 6727 6806 "mlType.ml" 206 6727 6809
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref elt "mlType.ml" 203 6589 6599 "mlType.ml" 203 6589 6602
+)
+"mlType.ml" 206 6727 6786 "mlType.ml" 206 6727 6809
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 203 6589 6595 "mlType.ml" 206 6727 6815
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 207 6816 6820 "mlType.ml" 207 6816 6821
+type(
+  Cidl.typ
+)
+"mlType.ml" 207 6816 6825 "mlType.ml" 207 6816 6826
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref e "mlType.ml" 188 5816 5846 "mlType.ml" 188 5816 5847
+)
+"mlType.ml" 189 5850 5852 "mlType.ml" 207 6816 6826
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 188 5816 5846 "mlType.ml" 207 6816 6826
+type(
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+"mlType.ml" 188 5816 5842 "mlType.ml" 207 6816 6826
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)

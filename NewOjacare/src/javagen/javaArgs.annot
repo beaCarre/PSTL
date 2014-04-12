@@ -1,0 +1,713 @@
+"javaArgs.ml" 6 89 93 "javaArgs.ml" 6 89 107
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  def output_convert "javaArgs.ml" 15 354 354 "_none_" 1 0 -1
+)
+"javaArgs.ml" 6 89 108 "javaArgs.ml" 6 89 111
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaArgs.ml" 6 89 112 "javaArgs.ml" 13 337 352
+)
+"javaArgs.ml" 6 89 112 "javaArgs.ml" 6 89 116
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaArgs.ml" 7 119 121 "javaArgs.ml" 13 337 352
+)
+"javaArgs.ml" 7 119 129 "javaArgs.ml" 7 119 133
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  def loop "javaArgs.ml" 7 119 121 "javaArgs.ml" 13 337 352
+)
+"javaArgs.ml" 7 119 134 "javaArgs.ml" 7 119 137
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaArgs.ml" 7 119 138 "javaArgs.ml" 11 317 331
+)
+"javaArgs.ml" 7 119 138 "javaArgs.ml" 7 119 142
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaArgs.ml" 8 146 150 "javaArgs.ml" 11 317 331
+)
+"javaArgs.ml" 8 146 156 "javaArgs.ml" 8 146 160
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaArgs.ml" 7 119 138 "javaArgs.ml" 7 119 142
+)
+"javaArgs.ml" 9 166 173 "javaArgs.ml" 9 166 176
+type(
+  string * Cidl.typ
+)
+ident(
+  def arg "javaArgs.ml" 9 166 181 "javaArgs.ml" 9 166 231
+)
+"javaArgs.ml" 9 166 172 "javaArgs.ml" 9 166 177
+type(
+  (string * Cidl.typ) list
+)
+"javaArgs.ml" 9 166 181 "javaArgs.ml" 9 166 188
+type(
+  Format.formatter ->
+  ((Format.formatter -> string * Cidl.typ -> unit) ->
+   string * Cidl.typ -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> string * Cidl.typ -> unit) ->
+  string * Cidl.typ -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaArgs.ml" 9 166 189 "javaArgs.ml" 9 166 192
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 7 119 134 "javaArgs.ml" 7 119 137
+)
+"javaArgs.ml" 9 166 193 "javaArgs.ml" 9 166 197
+type(
+  ((Format.formatter -> string * Cidl.typ -> unit) ->
+   string * Cidl.typ -> unit, Format.formatter, unit)
+  format
+)
+"javaArgs.ml" 9 166 198 "javaArgs.ml" 9 166 227
+type(
+  Format.formatter -> string * Cidl.typ -> unit
+)
+ident(
+  ext_ref JavaType.output_convert_to_ml
+)
+"javaArgs.ml" 9 166 228 "javaArgs.ml" 9 166 231
+type(
+  string * Cidl.typ
+)
+ident(
+  int_ref arg "javaArgs.ml" 9 166 173 "javaArgs.ml" 9 166 176
+)
+"javaArgs.ml" 9 166 181 "javaArgs.ml" 9 166 231
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 10 232 238 "javaArgs.ml" 10 232 241
+type(
+  string * Cidl.typ
+)
+ident(
+  def arg "javaArgs.ml" 10 232 251 "javaArgs.ml" 10 232 316
+)
+"javaArgs.ml" 10 232 243 "javaArgs.ml" 10 232 247
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaArgs.ml" 10 232 251 "javaArgs.ml" 10 232 316
+)
+"javaArgs.ml" 10 232 238 "javaArgs.ml" 10 232 247
+type(
+  (string * Cidl.typ) list
+)
+"javaArgs.ml" 10 232 251 "javaArgs.ml" 10 232 258
+type(
+  Format.formatter ->
+  ((Format.formatter -> string * Cidl.typ -> unit) ->
+   string * Cidl.typ ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> string * Cidl.typ -> unit) ->
+  string * Cidl.typ ->
+  (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+  (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaArgs.ml" 10 232 259 "javaArgs.ml" 10 232 262
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 7 119 134 "javaArgs.ml" 7 119 137
+)
+"javaArgs.ml" 10 232 263 "javaArgs.ml" 10 232 272
+type(
+  ((Format.formatter -> string * Cidl.typ -> unit) ->
+   string * Cidl.typ ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format
+)
+"javaArgs.ml" 10 232 273 "javaArgs.ml" 10 232 302
+type(
+  Format.formatter -> string * Cidl.typ -> unit
+)
+ident(
+  ext_ref JavaType.output_convert_to_ml
+)
+"javaArgs.ml" 10 232 303 "javaArgs.ml" 10 232 306
+type(
+  string * Cidl.typ
+)
+ident(
+  int_ref arg "javaArgs.ml" 10 232 238 "javaArgs.ml" 10 232 241
+)
+"javaArgs.ml" 10 232 307 "javaArgs.ml" 10 232 311
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  int_ref loop "javaArgs.ml" 7 119 129 "javaArgs.ml" 7 119 133
+)
+"javaArgs.ml" 10 232 312 "javaArgs.ml" 10 232 316
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaArgs.ml" 10 232 243 "javaArgs.ml" 10 232 247
+)
+"javaArgs.ml" 10 232 251 "javaArgs.ml" 10 232 316
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 11 317 323 "javaArgs.ml" 11 317 325
+type(
+  (string * Cidl.typ) list
+)
+"javaArgs.ml" 11 317 329 "javaArgs.ml" 11 317 331
+type(
+  unit
+)
+"javaArgs.ml" 8 146 150 "javaArgs.ml" 11 317 331
+type(
+  unit
+)
+"javaArgs.ml" 13 337 339 "javaArgs.ml" 13 337 343
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  int_ref loop "javaArgs.ml" 7 119 129 "javaArgs.ml" 7 119 133
+)
+"javaArgs.ml" 13 337 344 "javaArgs.ml" 13 337 347
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 6 89 108 "javaArgs.ml" 6 89 111
+)
+"javaArgs.ml" 13 337 348 "javaArgs.ml" 13 337 352
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaArgs.ml" 6 89 112 "javaArgs.ml" 6 89 116
+)
+"javaArgs.ml" 13 337 339 "javaArgs.ml" 13 337 352
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 7 119 121 "javaArgs.ml" 13 337 352
+type(
+  unit
+)
+"javaArgs.ml" 15 354 358 "javaArgs.ml" 15 354 369
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  def output_call "javaArgs.ml" 25 572 572 "_none_" 1 0 -1
+)
+"javaArgs.ml" 15 354 370 "javaArgs.ml" 15 354 373
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaArgs.ml" 15 354 374 "javaArgs.ml" 22 548 564
+)
+"javaArgs.ml" 15 354 374 "javaArgs.ml" 15 354 379
+type(
+  string list
+)
+ident(
+  def nargs "javaArgs.ml" 16 382 384 "javaArgs.ml" 22 548 564
+)
+"javaArgs.ml" 16 382 392 "javaArgs.ml" 16 382 396
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  def loop "javaArgs.ml" 16 382 384 "javaArgs.ml" 22 548 564
+)
+"javaArgs.ml" 16 382 397 "javaArgs.ml" 16 382 400
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaArgs.ml" 16 382 401 "javaArgs.ml" 20 528 542
+)
+"javaArgs.ml" 16 382 401 "javaArgs.ml" 16 382 406
+type(
+  string list
+)
+ident(
+  def nargs "javaArgs.ml" 17 410 414 "javaArgs.ml" 20 528 542
+)
+"javaArgs.ml" 17 410 420 "javaArgs.ml" 17 410 425
+type(
+  string list
+)
+ident(
+  int_ref nargs "javaArgs.ml" 16 382 401 "javaArgs.ml" 16 382 406
+)
+"javaArgs.ml" 18 431 438 "javaArgs.ml" 18 431 442
+type(
+  string
+)
+ident(
+  def narg "javaArgs.ml" 18 431 447 "javaArgs.ml" 18 431 468
+)
+"javaArgs.ml" 18 431 437 "javaArgs.ml" 18 431 443
+type(
+  string list
+)
+"javaArgs.ml" 18 431 447 "javaArgs.ml" 18 431 454
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaArgs.ml" 18 431 455 "javaArgs.ml" 18 431 458
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 16 382 397 "javaArgs.ml" 16 382 400
+)
+"javaArgs.ml" 18 431 459 "javaArgs.ml" 18 431 463
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaArgs.ml" 18 431 464 "javaArgs.ml" 18 431 468
+type(
+  string
+)
+ident(
+  int_ref narg "javaArgs.ml" 18 431 438 "javaArgs.ml" 18 431 442
+)
+"javaArgs.ml" 18 431 447 "javaArgs.ml" 18 431 468
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 19 469 475 "javaArgs.ml" 19 469 479
+type(
+  string
+)
+ident(
+  def narg "javaArgs.ml" 19 469 490 "javaArgs.ml" 19 469 527
+)
+"javaArgs.ml" 19 469 481 "javaArgs.ml" 19 469 486
+type(
+  string list
+)
+ident(
+  def nargs "javaArgs.ml" 19 469 490 "javaArgs.ml" 19 469 527
+)
+"javaArgs.ml" 19 469 475 "javaArgs.ml" 19 469 486
+type(
+  string list
+)
+"javaArgs.ml" 19 469 490 "javaArgs.ml" 19 469 497
+type(
+  Format.formatter ->
+  (string -> (Format.formatter -> string list -> unit) -> string list -> unit,
+   Format.formatter, unit)
+  format ->
+  string -> (Format.formatter -> string list -> unit) -> string list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaArgs.ml" 19 469 498 "javaArgs.ml" 19 469 501
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 16 382 397 "javaArgs.ml" 16 382 400
+)
+"javaArgs.ml" 19 469 502 "javaArgs.ml" 19 469 511
+type(
+  (string -> (Format.formatter -> string list -> unit) -> string list -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaArgs.ml" 19 469 512 "javaArgs.ml" 19 469 516
+type(
+  string
+)
+ident(
+  int_ref narg "javaArgs.ml" 19 469 475 "javaArgs.ml" 19 469 479
+)
+"javaArgs.ml" 19 469 517 "javaArgs.ml" 19 469 521
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  int_ref loop "javaArgs.ml" 16 382 392 "javaArgs.ml" 16 382 396
+)
+"javaArgs.ml" 19 469 522 "javaArgs.ml" 19 469 527
+type(
+  string list
+)
+ident(
+  int_ref nargs "javaArgs.ml" 19 469 481 "javaArgs.ml" 19 469 486
+)
+"javaArgs.ml" 19 469 490 "javaArgs.ml" 19 469 527
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 20 528 534 "javaArgs.ml" 20 528 536
+type(
+  string list
+)
+"javaArgs.ml" 20 528 540 "javaArgs.ml" 20 528 542
+type(
+  unit
+)
+"javaArgs.ml" 17 410 414 "javaArgs.ml" 20 528 542
+type(
+  unit
+)
+"javaArgs.ml" 22 548 550 "javaArgs.ml" 22 548 554
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  int_ref loop "javaArgs.ml" 16 382 392 "javaArgs.ml" 16 382 396
+)
+"javaArgs.ml" 22 548 555 "javaArgs.ml" 22 548 558
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 15 354 370 "javaArgs.ml" 15 354 373
+)
+"javaArgs.ml" 22 548 559 "javaArgs.ml" 22 548 564
+type(
+  string list
+)
+ident(
+  int_ref nargs "javaArgs.ml" 15 354 374 "javaArgs.ml" 15 354 379
+)
+"javaArgs.ml" 22 548 550 "javaArgs.ml" 22 548 564
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 16 382 384 "javaArgs.ml" 22 548 564
+type(
+  unit
+)
+"javaArgs.ml" 25 572 576 "javaArgs.ml" 25 572 582
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  def output "javaArgs.ml" 31 782 797 "_none_" 1 0 -1
+)
+"javaArgs.ml" 25 572 583 "javaArgs.ml" 25 572 586
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaArgs.ml" 25 572 587 "javaArgs.ml" 31 782 797
+)
+"javaArgs.ml" 25 572 587 "javaArgs.ml" 25 572 591
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaArgs.ml" 26 594 596 "javaArgs.ml" 31 782 797
+)
+"javaArgs.ml" 26 594 604 "javaArgs.ml" 26 594 608
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  def loop "javaArgs.ml" 26 594 596 "javaArgs.ml" 31 782 797
+)
+"javaArgs.ml" 26 594 609 "javaArgs.ml" 26 594 612
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaArgs.ml" 26 594 613 "javaArgs.ml" 29 764 776
+)
+"javaArgs.ml" 26 594 613 "javaArgs.ml" 26 594 617
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaArgs.ml" 26 594 620 "javaArgs.ml" 29 764 776
+)
+"javaArgs.ml" 26 594 626 "javaArgs.ml" 26 594 630
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaArgs.ml" 26 594 613 "javaArgs.ml" 26 594 617
+)
+"javaArgs.ml" 27 637 642 "javaArgs.ml" 27 637 643
+type(
+  string
+)
+ident(
+  def n "javaArgs.ml" 27 637 650 "javaArgs.ml" 27 637 689
+)
+"javaArgs.ml" 27 637 644 "javaArgs.ml" 27 637 645
+type(
+  Cidl.typ
+)
+ident(
+  def t "javaArgs.ml" 27 637 650 "javaArgs.ml" 27 637 689
+)
+"javaArgs.ml" 27 637 642 "javaArgs.ml" 27 637 645
+type(
+  string * Cidl.typ
+)
+"javaArgs.ml" 27 637 641 "javaArgs.ml" 27 637 646
+type(
+  (string * Cidl.typ) list
+)
+"javaArgs.ml" 27 637 650 "javaArgs.ml" 27 637 657
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> string -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaArgs.ml" 27 637 658 "javaArgs.ml" 27 637 661
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 26 594 609 "javaArgs.ml" 26 594 612
+)
+"javaArgs.ml" 27 637 662 "javaArgs.ml" 27 637 669
+type(
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> string -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaArgs.ml" 27 637 670 "javaArgs.ml" 27 637 685
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  ext_ref JavaType.output
+)
+"javaArgs.ml" 27 637 686 "javaArgs.ml" 27 637 687
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "javaArgs.ml" 27 637 644 "javaArgs.ml" 27 637 645
+)
+"javaArgs.ml" 27 637 688 "javaArgs.ml" 27 637 689
+type(
+  string
+)
+ident(
+  int_ref n "javaArgs.ml" 27 637 642 "javaArgs.ml" 27 637 643
+)
+"javaArgs.ml" 27 637 650 "javaArgs.ml" 27 637 689
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 28 690 695 "javaArgs.ml" 28 690 696
+type(
+  string
+)
+ident(
+  def n "javaArgs.ml" 28 690 709 "javaArgs.ml" 28 690 763
+)
+"javaArgs.ml" 28 690 697 "javaArgs.ml" 28 690 698
+type(
+  Cidl.typ
+)
+ident(
+  def t "javaArgs.ml" 28 690 709 "javaArgs.ml" 28 690 763
+)
+"javaArgs.ml" 28 690 694 "javaArgs.ml" 28 690 699
+type(
+  string * Cidl.typ
+)
+"javaArgs.ml" 28 690 701 "javaArgs.ml" 28 690 705
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaArgs.ml" 28 690 709 "javaArgs.ml" 28 690 763
+)
+"javaArgs.ml" 28 690 694 "javaArgs.ml" 28 690 705
+type(
+  (string * Cidl.typ) list
+)
+"javaArgs.ml" 28 690 709 "javaArgs.ml" 28 690 716
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) ->
+   Cidl.typ ->
+   string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Cidl.typ -> unit) ->
+  Cidl.typ ->
+  string ->
+  (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+  (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaArgs.ml" 28 690 717 "javaArgs.ml" 28 690 720
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 26 594 609 "javaArgs.ml" 26 594 612
+)
+"javaArgs.ml" 28 690 721 "javaArgs.ml" 28 690 733
+type(
+  ((Format.formatter -> Cidl.typ -> unit) ->
+   Cidl.typ ->
+   string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format
+)
+"javaArgs.ml" 28 690 734 "javaArgs.ml" 28 690 749
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  ext_ref JavaType.output
+)
+"javaArgs.ml" 28 690 750 "javaArgs.ml" 28 690 751
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "javaArgs.ml" 28 690 697 "javaArgs.ml" 28 690 698
+)
+"javaArgs.ml" 28 690 752 "javaArgs.ml" 28 690 753
+type(
+  string
+)
+ident(
+  int_ref n "javaArgs.ml" 28 690 695 "javaArgs.ml" 28 690 696
+)
+"javaArgs.ml" 28 690 754 "javaArgs.ml" 28 690 758
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  int_ref loop "javaArgs.ml" 26 594 604 "javaArgs.ml" 26 594 608
+)
+"javaArgs.ml" 28 690 759 "javaArgs.ml" 28 690 763
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaArgs.ml" 28 690 701 "javaArgs.ml" 28 690 705
+)
+"javaArgs.ml" 28 690 709 "javaArgs.ml" 28 690 763
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 29 764 768 "javaArgs.ml" 29 764 770
+type(
+  (string * Cidl.typ) list
+)
+"javaArgs.ml" 29 764 774 "javaArgs.ml" 29 764 776
+type(
+  unit
+)
+"javaArgs.ml" 26 594 620 "javaArgs.ml" 29 764 776
+type(
+  unit
+)
+"javaArgs.ml" 31 782 784 "javaArgs.ml" 31 782 788
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  int_ref loop "javaArgs.ml" 26 594 604 "javaArgs.ml" 26 594 608
+)
+"javaArgs.ml" 31 782 789 "javaArgs.ml" 31 782 792
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaArgs.ml" 25 572 583 "javaArgs.ml" 25 572 586
+)
+"javaArgs.ml" 31 782 793 "javaArgs.ml" 31 782 797
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaArgs.ml" 25 572 587 "javaArgs.ml" 25 572 591
+)
+"javaArgs.ml" 31 782 784 "javaArgs.ml" 31 782 797
+call(
+  tail
+)
+type(
+  unit
+)
+"javaArgs.ml" 26 594 596 "javaArgs.ml" 31 782 797
+type(
+  unit
+)

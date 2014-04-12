@@ -1,0 +1,931 @@
+"javaClass.ml" 6 86 90 "javaClass.ml" 6 86 96
+type(
+  Format.formatter -> Cidl.clazz -> unit
+)
+ident(
+  def output "javaClass.ml" 41 1333 1333 "_none_" 1 0 -1
+)
+"javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaClass.ml" 6 86 101 "javaClass.ml" 39 1312 1331
+)
+"javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+type(
+  Cidl.clazz
+)
+ident(
+  def clazz "javaClass.ml" 7 110 112 "javaClass.ml" 39 1312 1331
+)
+"javaClass.ml" 7 110 116 "javaClass.ml" 7 110 123
+type(
+  string
+)
+ident(
+  def package "javaClass.ml" 12 327 329 "javaClass.ml" 39 1312 1331
+)
+"javaClass.ml" 7 110 126 "javaClass.ml" 7 110 168
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_callback_package_name
+)
+"javaClass.ml" 7 110 169 "javaClass.ml" 7 110 174
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 7 110 169 "javaClass.ml" 7 110 183
+type(
+  Ident.clazz
+)
+"javaClass.ml" 7 110 126 "javaClass.ml" 7 110 183
+call(
+  stack
+)
+type(
+  string
+)
+"javaClass.ml" 8 184 190 "javaClass.ml" 8 184 203
+type(
+  string
+)
+ident(
+  def java_stubname "javaClass.ml" 12 327 329 "javaClass.ml" 39 1312 1331
+)
+"javaClass.ml" 8 184 206 "javaClass.ml" 8 184 236
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_stub_name
+)
+"javaClass.ml" 8 184 237 "javaClass.ml" 8 184 242
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 8 184 237 "javaClass.ml" 8 184 251
+type(
+  Ident.clazz
+)
+"javaClass.ml" 8 184 206 "javaClass.ml" 8 184 251
+call(
+  stack
+)
+type(
+  string
+)
+"javaClass.ml" 9 252 258 "javaClass.ml" 9 252 267
+type(
+  string
+)
+ident(
+  def java_name "javaClass.ml" 12 327 329 "javaClass.ml" 39 1312 1331
+)
+"javaClass.ml" 9 252 270 "javaClass.ml" 9 252 305
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"javaClass.ml" 9 252 306 "javaClass.ml" 9 252 311
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 9 252 306 "javaClass.ml" 9 252 320
+type(
+  Ident.clazz
+)
+"javaClass.ml" 9 252 270 "javaClass.ml" 9 252 320
+call(
+  stack
+)
+type(
+  string
+)
+"javaClass.ml" 12 327 329 "javaClass.ml" 12 327 336
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 12 327 337 "javaClass.ml" 12 327 340
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 12 327 341 "javaClass.ml" 12 327 356
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"javaClass.ml" 12 327 357 "javaClass.ml" 12 327 364
+type(
+  string
+)
+ident(
+  int_ref package "javaClass.ml" 7 110 116 "javaClass.ml" 7 110 123
+)
+"javaClass.ml" 12 327 329 "javaClass.ml" 12 327 364
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 13 366 368 "javaClass.ml" 13 366 375
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 13 366 376 "javaClass.ml" 13 366 379
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 13 366 380 "javaClass.ml" 13 366 418
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaClass.ml" 13 366 368 "javaClass.ml" 13 366 418
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 15 423 428 "javaClass.ml" 15 423 446
+type(
+  Ident.clazz -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"javaClass.ml" 15 423 447 "javaClass.ml" 15 423 452
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 15 423 447 "javaClass.ml" 15 423 461
+type(
+  Ident.clazz
+)
+"javaClass.ml" 15 423 428 "javaClass.ml" 15 423 461
+call(
+  stack
+)
+type(
+  bool
+)
+"javaClass.ml" 16 467 471 "javaClass.ml" 16 467 478
+type(
+  Format.formatter ->
+  (string -> string -> unit, Format.formatter, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 16 467 479 "javaClass.ml" 16 467 482
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 16 467 483 "javaClass.ml" 16 467 520
+type(
+  (string -> string -> unit, Format.formatter, unit) format
+)
+"javaClass.ml" 16 467 521 "javaClass.ml" 16 467 534
+type(
+  string
+)
+ident(
+  int_ref java_stubname "javaClass.ml" 8 184 190 "javaClass.ml" 8 184 203
+)
+"javaClass.ml" 16 467 535 "javaClass.ml" 16 467 544
+type(
+  string
+)
+ident(
+  int_ref java_name "javaClass.ml" 9 252 258 "javaClass.ml" 9 252 267
+)
+"javaClass.ml" 16 467 471 "javaClass.ml" 16 467 544
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 18 558 566 "javaClass.ml" 18 558 574
+type(
+  bool
+)
+ident(
+  def abstract "javaClass.ml" 19 598 602 "javaClass.ml" 19 598 706
+)
+"javaClass.ml" 18 558 577 "javaClass.ml" 18 558 582
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 18 558 577 "javaClass.ml" 18 558 594
+type(
+  bool
+)
+"javaClass.ml" 19 598 602 "javaClass.ml" 19 598 609
+type(
+  Format.formatter ->
+  (string -> string -> string -> unit, Format.formatter, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 19 598 610 "javaClass.ml" 19 598 613
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 19 598 614 "javaClass.ml" 19 598 643
+type(
+  (string -> string -> string -> unit, Format.formatter, unit) format
+)
+"javaClass.ml" 19 598 648 "javaClass.ml" 19 598 656
+type(
+  bool
+)
+ident(
+  int_ref abstract "javaClass.ml" 18 558 566 "javaClass.ml" 18 558 574
+)
+"javaClass.ml" 19 598 662 "javaClass.ml" 19 598 673
+type(
+  string
+)
+"javaClass.ml" 19 598 679 "javaClass.ml" 19 598 681
+type(
+  string
+)
+"javaClass.ml" 19 598 644 "javaClass.ml" 19 598 682
+type(
+  string
+)
+"javaClass.ml" 19 598 683 "javaClass.ml" 19 598 696
+type(
+  string
+)
+ident(
+  int_ref java_stubname "javaClass.ml" 8 184 190 "javaClass.ml" 8 184 203
+)
+"javaClass.ml" 19 598 697 "javaClass.ml" 19 598 706
+type(
+  string
+)
+ident(
+  int_ref java_name "javaClass.ml" 9 252 258 "javaClass.ml" 9 252 267
+)
+"javaClass.ml" 19 598 602 "javaClass.ml" 19 598 706
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 17 545 552 "javaClass.ml" 20 707 712
+type(
+  unit
+)
+"javaClass.ml" 15 423 425 "javaClass.ml" 20 707 712
+type(
+  unit
+)
+"javaClass.ml" 26 889 891 "javaClass.ml" 26 889 898
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 26 889 899 "javaClass.ml" 26 889 902
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 26 889 903 "javaClass.ml" 26 889 929
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaClass.ml" 26 889 891 "javaClass.ml" 26 889 929
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 28 932 937 "javaClass.ml" 28 932 955
+type(
+  Ident.clazz -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"javaClass.ml" 28 932 956 "javaClass.ml" 28 932 961
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 28 932 956 "javaClass.ml" 28 932 970
+type(
+  Ident.clazz
+)
+"javaClass.ml" 28 932 937 "javaClass.ml" 28 932 970
+call(
+  stack
+)
+type(
+  bool
+)
+"javaClass.ml" 29 982 986 "javaClass.ml" 29 982 993
+type(
+  Format.formatter ->
+  (string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+  (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 29 982 994 "javaClass.ml" 29 982 997
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 29 982 998 "javaClass.ml" 29 982 1019
+type(
+  (string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format
+)
+"javaClass.ml" 29 982 1021 "javaClass.ml" 29 982 1046
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_name
+)
+"javaClass.ml" 29 982 1047 "javaClass.ml" 29 982 1052
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 29 982 1047 "javaClass.ml" 29 982 1061
+type(
+  Ident.clazz
+)
+"javaClass.ml" 29 982 1020 "javaClass.ml" 29 982 1062
+call(
+  stack
+)
+type(
+  string
+)
+"javaClass.ml" 29 982 1063 "javaClass.ml" 29 982 1078
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref JavaArgs.output
+)
+"javaClass.ml" 29 982 1081 "javaClass.ml" 29 982 1085
+type(
+  string
+)
+"javaClass.ml" 29 982 1096 "javaClass.ml" 29 982 1101
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 29 982 1096 "javaClass.ml" 29 982 1110
+type(
+  Ident.clazz
+)
+"javaClass.ml" 29 982 1086 "javaClass.ml" 29 982 1110
+type(
+  Cidl.typ
+)
+"javaClass.ml" 29 982 1080 "javaClass.ml" 29 982 1111
+type(
+  string * Cidl.typ
+)
+"javaClass.ml" 29 982 1079 "javaClass.ml" 29 982 1112
+type(
+  (string * Cidl.typ) list
+)
+"javaClass.ml" 29 982 986 "javaClass.ml" 29 982 1112
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 31 1115 1119 "javaClass.ml" 31 1115 1126
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 31 1115 1127 "javaClass.ml" 31 1115 1130
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 31 1115 1131 "javaClass.ml" 31 1115 1153
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaClass.ml" 31 1115 1119 "javaClass.ml" 31 1115 1153
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 33 1156 1160 "javaClass.ml" 33 1156 1167
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 33 1156 1168 "javaClass.ml" 33 1156 1171
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 33 1156 1172 "javaClass.ml" 33 1156 1181
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaClass.ml" 33 1156 1160 "javaClass.ml" 33 1156 1181
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 31 1115 1119 "javaClass.ml" 33 1156 1181
+type(
+  unit
+)
+"javaClass.ml" 28 932 976 "javaClass.ml" 34 1182 1187
+type(
+  unit
+)
+"javaClass.ml" 36 1198 1202 "javaClass.ml" 36 1198 1211
+type(
+  (Cidl.init -> unit) -> Cidl.init list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"javaClass.ml" 36 1198 1213 "javaClass.ml" 36 1198 1228
+type(
+  Format.formatter -> Cidl.init -> unit
+)
+ident(
+  ext_ref JavaInit.output
+)
+"javaClass.ml" 36 1198 1229 "javaClass.ml" 36 1198 1232
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 36 1198 1212 "javaClass.ml" 36 1198 1233
+call(
+  stack
+)
+type(
+  Cidl.init -> unit
+)
+"javaClass.ml" 36 1198 1234 "javaClass.ml" 36 1198 1239
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 36 1198 1234 "javaClass.ml" 36 1198 1248
+type(
+  Cidl.init list
+)
+"javaClass.ml" 36 1198 1202 "javaClass.ml" 36 1198 1248
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 28 932 934 "javaClass.ml" 36 1198 1248
+type(
+  unit
+)
+"javaClass.ml" 37 1250 1252 "javaClass.ml" 37 1250 1261
+type(
+  (Cidl.mmethod -> unit) -> Cidl.mmethod list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"javaClass.ml" 37 1250 1263 "javaClass.ml" 37 1250 1280
+type(
+  Format.formatter -> Cidl.mmethod -> unit
+)
+ident(
+  ext_ref JavaMethod.output
+)
+"javaClass.ml" 37 1250 1281 "javaClass.ml" 37 1250 1284
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 37 1250 1262 "javaClass.ml" 37 1250 1285
+call(
+  stack
+)
+type(
+  Cidl.mmethod -> unit
+)
+"javaClass.ml" 37 1250 1286 "javaClass.ml" 37 1250 1291
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 6 86 101 "javaClass.ml" 6 86 106
+)
+"javaClass.ml" 37 1250 1286 "javaClass.ml" 37 1250 1309
+type(
+  Cidl.mmethod list
+)
+"javaClass.ml" 37 1250 1252 "javaClass.ml" 37 1250 1309
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 39 1312 1314 "javaClass.ml" 39 1312 1321
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 39 1312 1322 "javaClass.ml" 39 1312 1325
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 6 86 97 "javaClass.ml" 6 86 100
+)
+"javaClass.ml" 39 1312 1326 "javaClass.ml" 39 1312 1331
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaClass.ml" 39 1312 1314 "javaClass.ml" 39 1312 1331
+call(
+  tail
+)
+type(
+  unit
+)
+"javaClass.ml" 37 1250 1252 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 28 932 934 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 26 889 891 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 15 423 425 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 13 366 368 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 12 327 329 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 7 110 112 "javaClass.ml" 39 1312 1331
+type(
+  unit
+)
+"javaClass.ml" 41 1333 1337 "javaClass.ml" 41 1333 1353
+type(
+  Cidl.clazz -> unit
+)
+ident(
+  def create_stub_file "javaClass.ml" 48 1649 1668 "_none_" 1 0 -1
+)
+"javaClass.ml" 41 1333 1354 "javaClass.ml" 41 1333 1359
+type(
+  Cidl.clazz
+)
+ident(
+  def clazz "javaClass.ml" 42 1363 1365 "javaClass.ml" 48 1649 1668
+)
+"javaClass.ml" 42 1363 1369 "javaClass.ml" 42 1363 1376
+type(
+  string list
+)
+ident(
+  def package "javaClass.ml" 44 1494 1496 "javaClass.ml" 48 1649 1668
+)
+"javaClass.ml" 42 1363 1379 "javaClass.ml" 42 1363 1416
+type(
+  Ident.clazz -> string list
+)
+ident(
+  ext_ref Ident.get_class_java_callback_package
+)
+"javaClass.ml" 42 1363 1417 "javaClass.ml" 42 1363 1422
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 41 1333 1354 "javaClass.ml" 41 1333 1359
+)
+"javaClass.ml" 42 1363 1417 "javaClass.ml" 42 1363 1431
+type(
+  Ident.clazz
+)
+"javaClass.ml" 42 1363 1379 "javaClass.ml" 42 1363 1431
+call(
+  stack
+)
+type(
+  string list
+)
+"javaClass.ml" 43 1432 1438 "javaClass.ml" 43 1432 1442
+type(
+  string
+)
+ident(
+  def name "javaClass.ml" 44 1494 1496 "javaClass.ml" 48 1649 1668
+)
+"javaClass.ml" 43 1432 1445 "javaClass.ml" 43 1432 1475
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_stub_name
+)
+"javaClass.ml" 43 1432 1476 "javaClass.ml" 43 1432 1481
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 41 1333 1354 "javaClass.ml" 41 1333 1359
+)
+"javaClass.ml" 43 1432 1476 "javaClass.ml" 43 1432 1490
+type(
+  Ident.clazz
+)
+"javaClass.ml" 43 1432 1445 "javaClass.ml" 43 1432 1490
+call(
+  stack
+)
+type(
+  string
+)
+"javaClass.ml" 44 1494 1500 "javaClass.ml" 44 1494 1507
+type(
+  out_channel
+)
+ident(
+  def outchan "javaClass.ml" 45 1561 1563 "javaClass.ml" 48 1649 1668
+)
+"javaClass.ml" 44 1494 1510 "javaClass.ml" 44 1494 1534
+type(
+  string list -> string -> out_channel
+)
+ident(
+  ext_ref Filesystem.safe_open_out
+)
+"javaClass.ml" 44 1494 1535 "javaClass.ml" 44 1494 1542
+type(
+  string list
+)
+ident(
+  int_ref package "javaClass.ml" 42 1363 1369 "javaClass.ml" 42 1363 1376
+)
+"javaClass.ml" 44 1494 1544 "javaClass.ml" 44 1494 1548
+type(
+  string
+)
+ident(
+  int_ref name "javaClass.ml" 43 1432 1438 "javaClass.ml" 43 1432 1442
+)
+"javaClass.ml" 44 1494 1548 "javaClass.ml" 44 1494 1549
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"javaClass.ml" 44 1494 1549 "javaClass.ml" 44 1494 1556
+type(
+  string
+)
+"javaClass.ml" 44 1494 1543 "javaClass.ml" 44 1494 1557
+call(
+  stack
+)
+type(
+  string
+)
+"javaClass.ml" 44 1494 1510 "javaClass.ml" 44 1494 1557
+call(
+  stack
+)
+type(
+  out_channel
+)
+"javaClass.ml" 45 1561 1567 "javaClass.ml" 45 1561 1570
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaClass.ml" 46 1609 1611 "javaClass.ml" 48 1649 1668
+)
+"javaClass.ml" 45 1561 1573 "javaClass.ml" 45 1561 1597
+type(
+  out_channel -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_out_channel
+)
+"javaClass.ml" 45 1561 1598 "javaClass.ml" 45 1561 1605
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "javaClass.ml" 44 1494 1500 "javaClass.ml" 44 1494 1507
+)
+"javaClass.ml" 45 1561 1573 "javaClass.ml" 45 1561 1605
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"javaClass.ml" 46 1609 1611 "javaClass.ml" 46 1609 1617
+type(
+  Format.formatter -> Cidl.clazz -> unit
+)
+ident(
+  int_ref output "javaClass.ml" 6 86 90 "javaClass.ml" 6 86 96
+)
+"javaClass.ml" 46 1609 1618 "javaClass.ml" 46 1609 1621
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 45 1561 1567 "javaClass.ml" 45 1561 1570
+)
+"javaClass.ml" 46 1609 1622 "javaClass.ml" 46 1609 1627
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "javaClass.ml" 41 1333 1354 "javaClass.ml" 41 1333 1359
+)
+"javaClass.ml" 46 1609 1611 "javaClass.ml" 46 1609 1627
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 47 1629 1631 "javaClass.ml" 47 1629 1638
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaClass.ml" 47 1629 1639 "javaClass.ml" 47 1629 1642
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaClass.ml" 45 1561 1567 "javaClass.ml" 45 1561 1570
+)
+"javaClass.ml" 47 1629 1643 "javaClass.ml" 47 1629 1647
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaClass.ml" 47 1629 1631 "javaClass.ml" 47 1629 1647
+call(
+  stack
+)
+type(
+  unit
+)
+"javaClass.ml" 48 1649 1651 "javaClass.ml" 48 1649 1660
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"javaClass.ml" 48 1649 1661 "javaClass.ml" 48 1649 1668
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "javaClass.ml" 44 1494 1500 "javaClass.ml" 44 1494 1507
+)
+"javaClass.ml" 48 1649 1651 "javaClass.ml" 48 1649 1668
+call(
+  tail
+)
+type(
+  unit
+)
+"javaClass.ml" 47 1629 1631 "javaClass.ml" 48 1649 1668
+type(
+  unit
+)
+"javaClass.ml" 46 1609 1611 "javaClass.ml" 48 1649 1668
+type(
+  unit
+)
+"javaClass.ml" 45 1561 1563 "javaClass.ml" 48 1649 1668
+type(
+  unit
+)
+"javaClass.ml" 44 1494 1496 "javaClass.ml" 48 1649 1668
+type(
+  unit
+)
+"javaClass.ml" 42 1363 1365 "javaClass.ml" 48 1649 1668
+type(
+  unit
+)

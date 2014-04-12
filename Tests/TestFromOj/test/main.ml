@@ -39,7 +39,7 @@ let pc = new colored_point 1 3 "cyan";;
 display "OK\n";;
 
 display "Creation d'un point colore pc2 = (2,3) blue : ";;
-let pc2 = new colored_point 1 3 "blue";;
+let pc2 = new colored_point 2 3 "blue";;
 display "OK\n";;
 
 display "Envoi pc#display : ";;
@@ -50,3 +50,9 @@ pc2#display ();;
 
 display "Envoi pc2#getColor : ";;
 let s = pc2#getColor () in print_string s; print_newline ();;
+
+display "eq pc2 pc ? :";;
+let r = (pc2#eq_colored_point pc) in print_string (if r then "true" else "false");print_newline ();;
+
+display "Envoi pc2#distance : ";;
+let d = pc2#distance () in print_float d; print_newline ();;

@@ -1,0 +1,1058 @@
+"javaMethod.ml" 6 91 95 "javaMethod.ml" 6 91 118
+type(
+  string -> string
+)
+ident(
+  def get_method_java_id_name "javaMethod.ml" 9 143 143 "_none_" 1 0 -1
+)
+"javaMethod.ml" 6 91 119 "javaMethod.ml" 6 91 123
+type(
+  string
+)
+ident(
+  def name "javaMethod.ml" 7 126 128 "javaMethod.ml" 7 126 141
+)
+"javaMethod.ml" 7 126 128 "javaMethod.ml" 7 126 136
+type(
+  string
+)
+"javaMethod.ml" 7 126 136 "javaMethod.ml" 7 126 137
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"javaMethod.ml" 7 126 137 "javaMethod.ml" 7 126 141
+type(
+  string
+)
+ident(
+  int_ref name "javaMethod.ml" 6 91 119 "javaMethod.ml" 6 91 123
+)
+"javaMethod.ml" 7 126 128 "javaMethod.ml" 7 126 141
+call(
+  tail
+)
+type(
+  string
+)
+"javaMethod.ml" 9 143 147 "javaMethod.ml" 9 143 158
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  def output_call "javaMethod.ml" 24 822 822 "_none_" 1 0 -1
+)
+"javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaMethod.ml" 9 143 163 "javaMethod.ml" 22 763 820
+)
+"javaMethod.ml" 9 143 163 "javaMethod.ml" 9 143 166
+type(
+  Cidl.typ
+)
+ident(
+  def typ "javaMethod.ml" 10 169 171 "javaMethod.ml" 22 763 820
+)
+"javaMethod.ml" 10 169 177 "javaMethod.ml" 10 169 180
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "javaMethod.ml" 9 143 163 "javaMethod.ml" 9 143 166
+)
+"javaMethod.ml" 11 186 192 "javaMethod.ml" 11 186 200
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 11 186 204 "javaMethod.ml" 11 186 211
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 11 186 212 "javaMethod.ml" 11 186 215
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 11 186 216 "javaMethod.ml" 11 186 239
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 11 186 204 "javaMethod.ml" 11 186 239
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 12 240 246 "javaMethod.ml" 12 240 251
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 12 240 255 "javaMethod.ml" 12 240 262
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 12 240 263 "javaMethod.ml" 12 240 266
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 12 240 267 "javaMethod.ml" 12 240 287
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 12 240 255 "javaMethod.ml" 12 240 287
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 13 288 294 "javaMethod.ml" 13 288 299
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 13 288 303 "javaMethod.ml" 13 288 310
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 13 288 311 "javaMethod.ml" 13 288 314
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 13 288 315 "javaMethod.ml" 13 288 335
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 13 288 303 "javaMethod.ml" 13 288 335
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 14 336 342 "javaMethod.ml" 14 336 348
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 14 336 352 "javaMethod.ml" 14 336 359
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 14 336 360 "javaMethod.ml" 14 336 363
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 14 336 364 "javaMethod.ml" 14 336 385
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 14 336 352 "javaMethod.ml" 14 336 385
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 15 386 392 "javaMethod.ml" 15 386 396
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 15 386 400 "javaMethod.ml" 15 386 407
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 15 386 408 "javaMethod.ml" 15 386 411
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 15 386 412 "javaMethod.ml" 15 386 431
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 15 386 400 "javaMethod.ml" 15 386 431
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 16 432 438 "javaMethod.ml" 16 432 446
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 16 432 450 "javaMethod.ml" 16 432 457
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 16 432 458 "javaMethod.ml" 16 432 461
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 16 432 462 "javaMethod.ml" 16 432 485
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 16 432 450 "javaMethod.ml" 16 432 485
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 17 486 492 "javaMethod.ml" 17 486 497
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 17 486 501 "javaMethod.ml" 17 486 508
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 17 486 509 "javaMethod.ml" 17 486 512
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 17 486 513 "javaMethod.ml" 17 486 533
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 17 486 501 "javaMethod.ml" 17 486 533
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 18 534 540 "javaMethod.ml" 18 534 546
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 18 534 550 "javaMethod.ml" 18 534 557
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 18 534 558 "javaMethod.ml" 18 534 561
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 18 534 562 "javaMethod.ml" 18 534 583
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 18 534 550 "javaMethod.ml" 18 534 583
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 19 584 590 "javaMethod.ml" 19 584 597
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 19 584 601 "javaMethod.ml" 19 584 608
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 19 584 609 "javaMethod.ml" 19 584 612
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 19 584 613 "javaMethod.ml" 19 584 635
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 19 584 601 "javaMethod.ml" 19 584 635
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 20 636 650 "javaMethod.ml" 20 636 651
+type(
+  Cidl.object_type
+)
+"javaMethod.ml" 20 636 642 "javaMethod.ml" 20 636 651
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 20 636 655 "javaMethod.ml" 20 636 658
+ident(
+  def typ "javaMethod.ml" 20 636 662 "javaMethod.ml" 20 636 721
+)
+"javaMethod.ml" 20 636 642 "javaMethod.ml" 20 636 658
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 20 636 662 "javaMethod.ml" 20 636 669
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 20 636 670 "javaMethod.ml" 20 636 673
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 20 636 674 "javaMethod.ml" 20 636 701
+type(
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaMethod.ml" 20 636 702 "javaMethod.ml" 20 636 717
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  ext_ref JavaType.output
+)
+"javaMethod.ml" 20 636 718 "javaMethod.ml" 20 636 721
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "javaMethod.ml" 20 636 642 "javaMethod.ml" 20 636 658
+)
+"javaMethod.ml" 20 636 662 "javaMethod.ml" 20 636 721
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 21 722 728 "javaMethod.ml" 21 722 733
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 21 722 737 "javaMethod.ml" 21 722 744
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 21 722 745 "javaMethod.ml" 21 722 748
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 9 143 159 "javaMethod.ml" 9 143 162
+)
+"javaMethod.ml" 21 722 749 "javaMethod.ml" 21 722 762
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 21 722 737 "javaMethod.ml" 21 722 762
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 22 763 779 "javaMethod.ml" 22 763 780
+type(
+  Ident.clazz
+)
+"javaMethod.ml" 22 763 769 "javaMethod.ml" 22 763 780
+type(
+  Cidl.typ
+)
+"javaMethod.ml" 22 763 784 "javaMethod.ml" 22 763 795
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"javaMethod.ml" 22 763 796 "javaMethod.ml" 22 763 820
+type(
+  string
+)
+"javaMethod.ml" 22 763 784 "javaMethod.ml" 22 763 820
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 10 169 171 "javaMethod.ml" 22 763 820
+type(
+  unit
+)
+"javaMethod.ml" 24 822 826 "javaMethod.ml" 24 822 832
+type(
+  Format.formatter -> Cidl.mmethod -> unit
+)
+ident(
+  def output "javaMethod.ml" 56 1807 1818 "_none_" 1 0 -1
+)
+"javaMethod.ml" 24 822 833 "javaMethod.ml" 24 822 836
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaMethod.ml" 24 822 837 "javaMethod.ml" 56 1807 1818
+)
+"javaMethod.ml" 24 822 837 "javaMethod.ml" 24 822 838
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "javaMethod.ml" 25 841 843 "javaMethod.ml" 56 1807 1818
+)
+"javaMethod.ml" 25 841 847 "javaMethod.ml" 25 841 854
+type(
+  string
+)
+ident(
+  def ml_name "javaMethod.ml" 29 1015 1017 "javaMethod.ml" 56 1807 1818
+)
+"javaMethod.ml" 25 841 857 "javaMethod.ml" 25 841 881
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"javaMethod.ml" 25 841 882 "javaMethod.ml" 25 841 883
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "javaMethod.ml" 24 822 837 "javaMethod.ml" 24 822 838
+)
+"javaMethod.ml" 25 841 882 "javaMethod.ml" 25 841 892
+type(
+  Ident.mmethod
+)
+"javaMethod.ml" 25 841 857 "javaMethod.ml" 25 841 892
+call(
+  stack
+)
+type(
+  string
+)
+"javaMethod.ml" 26 893 899 "javaMethod.ml" 26 893 908
+type(
+  string
+)
+ident(
+  def java_name "javaMethod.ml" 29 1015 1017 "javaMethod.ml" 56 1807 1818
+)
+"javaMethod.ml" 26 893 911 "javaMethod.ml" 26 893 937
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_java_name
+)
+"javaMethod.ml" 26 893 938 "javaMethod.ml" 26 893 939
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "javaMethod.ml" 24 822 837 "javaMethod.ml" 24 822 838
+)
+"javaMethod.ml" 26 893 938 "javaMethod.ml" 26 893 948
+type(
+  Ident.mmethod
+)
+"javaMethod.ml" 26 893 911 "javaMethod.ml" 26 893 948
+call(
+  stack
+)
+type(
+  string
+)
+"javaMethod.ml" 27 949 955 "javaMethod.ml" 27 949 967
+type(
+  string
+)
+ident(
+  def ml_stub_name "javaMethod.ml" 29 1015 1017 "javaMethod.ml" 56 1807 1818
+)
+"javaMethod.ml" 27 949 970 "javaMethod.ml" 27 949 999
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_stub_name
+)
+"javaMethod.ml" 27 949 1000 "javaMethod.ml" 27 949 1001
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "javaMethod.ml" 24 822 837 "javaMethod.ml" 24 822 838
+)
+"javaMethod.ml" 27 949 1000 "javaMethod.ml" 27 949 1010
+type(
+  Ident.mmethod
+)
+"javaMethod.ml" 27 949 970 "javaMethod.ml" 27 949 1010
+call(
+  stack
+)
+type(
+  string
+)
+"javaMethod.ml" 29 1015 1023 "javaMethod.ml" 29 1015 1024
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "javaMethod.ml" 24 822 837 "javaMethod.ml" 24 822 838
+)
+"javaMethod.ml" 29 1015 1023 "javaMethod.ml" 29 1015 1032
+type(
+  Cidl.mmethod_desc
+)
+"javaMethod.ml" 30 1038 1051 "javaMethod.ml" 30 1038 1059
+type(
+  bool
+)
+ident(
+  def abstract "javaMethod.ml" 32 1077 1083 "javaMethod.ml" 55 1779 1806
+)
+"javaMethod.ml" 30 1038 1061 "javaMethod.ml" 30 1038 1065
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "javaMethod.ml" 32 1077 1083 "javaMethod.ml" 55 1779 1806
+)
+"javaMethod.ml" 30 1038 1067 "javaMethod.ml" 30 1038 1071
+type(
+  Cidl.typ list
+)
+ident(
+  def args "javaMethod.ml" 32 1077 1083 "javaMethod.ml" 55 1779 1806
+)
+"javaMethod.ml" 30 1038 1042 "javaMethod.ml" 30 1038 1072
+type(
+  Cidl.mmethod_desc
+)
+"javaMethod.ml" 32 1077 1087 "javaMethod.ml" 32 1077 1090
+type(
+  string
+)
+ident(
+  def mid "javaMethod.ml" 34 1135 1141 "javaMethod.ml" 55 1779 1806
+)
+"javaMethod.ml" 32 1077 1093 "javaMethod.ml" 32 1077 1116
+type(
+  string -> string
+)
+ident(
+  int_ref get_method_java_id_name "javaMethod.ml" 6 91 95 "javaMethod.ml" 6 91 118
+)
+"javaMethod.ml" 32 1077 1117 "javaMethod.ml" 32 1077 1124
+type(
+  string
+)
+ident(
+  int_ref ml_name "javaMethod.ml" 25 841 847 "javaMethod.ml" 25 841 854
+)
+"javaMethod.ml" 32 1077 1093 "javaMethod.ml" 32 1077 1124
+call(
+  stack
+)
+type(
+  string
+)
+"javaMethod.ml" 34 1135 1145 "javaMethod.ml" 34 1135 1149
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaMethod.ml" 39 1322 1328 "javaMethod.ml" 55 1779 1806
+)
+"javaMethod.ml" 34 1135 1152 "javaMethod.ml" 34 1135 1161
+type(
+  (int -> Cidl.typ -> string * Cidl.typ) ->
+  int list -> Cidl.typ list -> (string * Cidl.typ) list
+)
+ident(
+  ext_ref List.map2
+)
+"javaMethod.ml" 34 1135 1167 "javaMethod.ml" 34 1135 1168
+type(
+  int
+)
+ident(
+  def i "javaMethod.ml" 34 1135 1169 "javaMethod.ml" 34 1135 1197
+)
+"javaMethod.ml" 34 1135 1169 "javaMethod.ml" 34 1135 1170
+type(
+  Cidl.typ
+)
+ident(
+  def t "javaMethod.ml" 34 1135 1174 "javaMethod.ml" 34 1135 1197
+)
+"javaMethod.ml" 34 1135 1174 "javaMethod.ml" 34 1135 1178
+type(
+  string
+)
+"javaMethod.ml" 34 1135 1178 "javaMethod.ml" 34 1135 1179
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"javaMethod.ml" 34 1135 1179 "javaMethod.ml" 34 1135 1192
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"javaMethod.ml" 34 1135 1193 "javaMethod.ml" 34 1135 1194
+type(
+  int
+)
+ident(
+  int_ref i "javaMethod.ml" 34 1135 1167 "javaMethod.ml" 34 1135 1168
+)
+"javaMethod.ml" 34 1135 1179 "javaMethod.ml" 34 1135 1194
+call(
+  stack
+)
+type(
+  string
+)
+"javaMethod.ml" 34 1135 1174 "javaMethod.ml" 34 1135 1194
+call(
+  stack
+)
+type(
+  string
+)
+"javaMethod.ml" 34 1135 1196 "javaMethod.ml" 34 1135 1197
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "javaMethod.ml" 34 1135 1169 "javaMethod.ml" 34 1135 1170
+)
+"javaMethod.ml" 34 1135 1174 "javaMethod.ml" 34 1135 1197
+type(
+  string * Cidl.typ
+)
+"javaMethod.ml" 34 1135 1162 "javaMethod.ml" 34 1135 1198
+type(
+  int -> Cidl.typ -> string * Cidl.typ
+)
+"javaMethod.ml" 35 1200 1204 "javaMethod.ml" 35 1200 1222
+type(
+  int -> int -> int list
+)
+ident(
+  ext_ref Utilities.interval
+)
+"javaMethod.ml" 35 1200 1223 "javaMethod.ml" 35 1200 1224
+type(
+  int
+)
+"javaMethod.ml" 35 1200 1226 "javaMethod.ml" 35 1200 1237
+type(
+  Cidl.typ list -> int
+)
+ident(
+  ext_ref List.length
+)
+"javaMethod.ml" 35 1200 1238 "javaMethod.ml" 35 1200 1242
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "javaMethod.ml" 30 1038 1067 "javaMethod.ml" 30 1038 1071
+)
+"javaMethod.ml" 35 1200 1225 "javaMethod.ml" 35 1200 1243
+call(
+  stack
+)
+type(
+  int
+)
+"javaMethod.ml" 35 1200 1203 "javaMethod.ml" 35 1200 1244
+call(
+  stack
+)
+type(
+  int list
+)
+"javaMethod.ml" 35 1200 1245 "javaMethod.ml" 35 1200 1249
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "javaMethod.ml" 30 1038 1067 "javaMethod.ml" 30 1038 1071
+)
+"javaMethod.ml" 34 1135 1152 "javaMethod.ml" 35 1200 1249
+call(
+  stack
+)
+type(
+  (string * Cidl.typ) list
+)
+"javaMethod.ml" 36 1251 1261 "javaMethod.ml" 36 1251 1266
+type(
+  Cidl.typ
+)
+ident(
+  def rtype "javaMethod.ml" 39 1322 1328 "javaMethod.ml" 55 1779 1806
+)
+"javaMethod.ml" 36 1251 1269 "javaMethod.ml" 36 1251 1273
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "javaMethod.ml" 30 1038 1061 "javaMethod.ml" 30 1038 1065
+)
+"javaMethod.ml" 39 1322 1328 "javaMethod.ml" 39 1322 1335
+type(
+  Format.formatter ->
+  (string -> string -> unit, Format.formatter, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 39 1322 1336 "javaMethod.ml" 39 1322 1339
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 24 822 833 "javaMethod.ml" 24 822 836
+)
+"javaMethod.ml" 39 1322 1340 "javaMethod.ml" 39 1322 1404
+type(
+  (string -> string -> unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 39 1322 1405 "javaMethod.ml" 39 1322 1408
+type(
+  string
+)
+ident(
+  int_ref mid "javaMethod.ml" 32 1077 1087 "javaMethod.ml" 32 1077 1090
+)
+"javaMethod.ml" 39 1322 1409 "javaMethod.ml" 39 1322 1421
+type(
+  string
+)
+ident(
+  int_ref ml_stub_name "javaMethod.ml" 27 949 955 "javaMethod.ml" 27 949 967
+)
+"javaMethod.ml" 39 1322 1328 "javaMethod.ml" 39 1322 1421
+call(
+  stack
+)
+type(
+  unit
+)
+"javaMethod.ml" 42 1460 1466 "javaMethod.ml" 42 1460 1473
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) ->
+   Cidl.typ ->
+   string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Cidl.typ -> unit) ->
+  Cidl.typ ->
+  string ->
+  (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+  (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 42 1460 1474 "javaMethod.ml" 42 1460 1477
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 24 822 833 "javaMethod.ml" 24 822 836
+)
+"javaMethod.ml" 42 1460 1478 "javaMethod.ml" 42 1460 1502
+type(
+  ((Format.formatter -> Cidl.typ -> unit) ->
+   Cidl.typ ->
+   string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format
+)
+"javaMethod.ml" 43 1504 1505 "javaMethod.ml" 43 1504 1520
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  ext_ref JavaType.output
+)
+"javaMethod.ml" 43 1504 1521 "javaMethod.ml" 43 1504 1526
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtype "javaMethod.ml" 36 1251 1261 "javaMethod.ml" 36 1251 1266
+)
+"javaMethod.ml" 44 1528 1529 "javaMethod.ml" 44 1528 1538
+type(
+  string
+)
+ident(
+  int_ref java_name "javaMethod.ml" 26 893 899 "javaMethod.ml" 26 893 908
+)
+"javaMethod.ml" 45 1540 1541 "javaMethod.ml" 45 1540 1556
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref JavaArgs.output
+)
+"javaMethod.ml" 45 1540 1557 "javaMethod.ml" 45 1540 1561
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaMethod.ml" 34 1135 1145 "javaMethod.ml" 34 1135 1149
+)
+"javaMethod.ml" 42 1460 1466 "javaMethod.ml" 45 1540 1561
+call(
+  stack
+)
+type(
+  unit
+)
+"javaMethod.ml" 48 1604 1610 "javaMethod.ml" 48 1604 1617
+type(
+  Format.formatter ->
+  ((Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+  (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 48 1604 1618 "javaMethod.ml" 48 1604 1621
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 24 822 833 "javaMethod.ml" 24 822 836
+)
+"javaMethod.ml" 48 1604 1622 "javaMethod.ml" 48 1604 1652
+type(
+  ((Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format
+)
+"javaMethod.ml" 48 1604 1653 "javaMethod.ml" 48 1604 1676
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref JavaArgs.output_convert
+)
+"javaMethod.ml" 48 1604 1677 "javaMethod.ml" 48 1604 1681
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaMethod.ml" 34 1135 1145 "javaMethod.ml" 34 1135 1149
+)
+"javaMethod.ml" 48 1604 1610 "javaMethod.ml" 48 1604 1681
+call(
+  stack
+)
+type(
+  unit
+)
+"javaMethod.ml" 51 1708 1714 "javaMethod.ml" 51 1708 1721
+type(
+  Format.formatter ->
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> string -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 51 1708 1722 "javaMethod.ml" 51 1708 1725
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 24 822 833 "javaMethod.ml" 24 822 836
+)
+"javaMethod.ml" 51 1708 1726 "javaMethod.ml" 51 1708 1746
+type(
+  ((Format.formatter -> Cidl.typ -> unit) -> Cidl.typ -> string -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaMethod.ml" 52 1747 1748 "javaMethod.ml" 52 1747 1759
+type(
+  Format.formatter -> Cidl.typ -> unit
+)
+ident(
+  int_ref output_call "javaMethod.ml" 9 143 147 "javaMethod.ml" 9 143 158
+)
+"javaMethod.ml" 52 1747 1760 "javaMethod.ml" 52 1747 1765
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtype "javaMethod.ml" 36 1251 1261 "javaMethod.ml" 36 1251 1266
+)
+"javaMethod.ml" 53 1766 1767 "javaMethod.ml" 53 1766 1770
+type(
+  string
+)
+ident(
+  int_ref mid "javaMethod.ml" 32 1077 1087 "javaMethod.ml" 32 1077 1090
+)
+"javaMethod.ml" 51 1708 1714 "javaMethod.ml" 53 1766 1770
+call(
+  stack
+)
+type(
+  unit
+)
+"javaMethod.ml" 55 1779 1785 "javaMethod.ml" 55 1779 1792
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaMethod.ml" 55 1779 1793 "javaMethod.ml" 55 1779 1796
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaMethod.ml" 24 822 833 "javaMethod.ml" 24 822 836
+)
+"javaMethod.ml" 55 1779 1797 "javaMethod.ml" 55 1779 1806
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaMethod.ml" 55 1779 1785 "javaMethod.ml" 55 1779 1806
+call(
+  tail
+)
+type(
+  unit
+)
+"javaMethod.ml" 51 1708 1714 "javaMethod.ml" 55 1779 1806
+type(
+  unit
+)
+"javaMethod.ml" 48 1604 1610 "javaMethod.ml" 55 1779 1806
+type(
+  unit
+)
+"javaMethod.ml" 42 1460 1466 "javaMethod.ml" 55 1779 1806
+type(
+  unit
+)
+"javaMethod.ml" 39 1322 1328 "javaMethod.ml" 55 1779 1806
+type(
+  unit
+)
+"javaMethod.ml" 34 1135 1141 "javaMethod.ml" 55 1779 1806
+type(
+  unit
+)
+"javaMethod.ml" 32 1077 1083 "javaMethod.ml" 55 1779 1806
+type(
+  unit
+)
+"javaMethod.ml" 56 1807 1811 "javaMethod.ml" 56 1807 1812
+type(
+  Cidl.mmethod_desc
+)
+"javaMethod.ml" 56 1807 1816 "javaMethod.ml" 56 1807 1818
+type(
+  unit
+)
+"javaMethod.ml" 29 1015 1017 "javaMethod.ml" 56 1807 1818
+type(
+  unit
+)
+"javaMethod.ml" 25 841 843 "javaMethod.ml" 56 1807 1818
+type(
+  unit
+)

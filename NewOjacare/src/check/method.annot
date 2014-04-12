@@ -1,0 +1,886 @@
+"method.ml" 7 92 96 "method.ml" 7 92 111
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz ->
+  Idl.mmethod ->
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env ->
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def convert_dynamic "method.ml" 26 765 765 "_none_" 1 0 -1
+)
+"method.ml" 7 92 112 "method.ml" 7 92 119
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "method.ml" 7 92 120 "method.ml" 24 738 763
+)
+"method.ml" 7 92 120 "method.ml" 7 92 128
+type(
+  Ident.clazz
+)
+ident(
+  def class_id "method.ml" 7 92 129 "method.ml" 24 738 763
+)
+"method.ml" 7 92 129 "method.ml" 7 92 136
+type(
+  Idl.mmethod
+)
+ident(
+  def mmethod "method.ml" 7 92 137 "method.ml" 24 738 763
+)
+"method.ml" 7 92 138 "method.ml" 7 92 141
+type(
+  Cidl.mmethod list
+)
+ident(
+  def acc "method.ml" 8 156 158 "method.ml" 24 738 763
+)
+"method.ml" 7 92 142 "method.ml" 7 92 152
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "method.ml" 8 156 158 "method.ml" 24 738 763
+)
+"method.ml" 7 92 137 "method.ml" 7 92 153
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 8 156 161 "method.ml" 8 156 180
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_static
+)
+"method.ml" 8 156 181 "method.ml" 8 156 188
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 7 92 129 "method.ml" 7 92 136
+)
+"method.ml" 8 156 181 "method.ml" 8 156 200
+type(
+  Idl.modifier list
+)
+"method.ml" 8 156 161 "method.ml" 8 156 200
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 9 206 211 "method.ml" 9 206 214
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "method.ml" 7 92 138 "method.ml" 7 92 141
+)
+"method.ml" 9 206 215 "method.ml" 9 206 225
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "method.ml" 7 92 142 "method.ml" 7 92 152
+)
+"method.ml" 9 206 210 "method.ml" 9 206 226
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 12 236 244 "method.ml" 12 236 252
+type(
+  bool
+)
+ident(
+  def abstract "method.ml" 16 482 486 "method.ml" 24 738 763
+)
+"method.ml" 12 236 255 "method.ml" 12 236 273
+type(
+  Ident.clazz -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"method.ml" 12 236 274 "method.ml" 12 236 282
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "method.ml" 7 92 120 "method.ml" 7 92 128
+)
+"method.ml" 12 236 255 "method.ml" 12 236 282
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 12 236 283 "method.ml" 12 236 285
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"method.ml" 12 236 286 "method.ml" 12 236 307
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_abstract
+)
+"method.ml" 12 236 308 "method.ml" 12 236 315
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 7 92 129 "method.ml" 7 92 136
+)
+"method.ml" 12 236 308 "method.ml" 12 236 327
+type(
+  Idl.modifier list
+)
+"method.ml" 12 236 286 "method.ml" 12 236 327
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 12 236 255 "method.ml" 12 236 327
+type(
+  bool
+)
+"method.ml" 13 329 337 "method.ml" 13 329 341
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "method.ml" 16 482 486 "method.ml" 24 738 763
+)
+"method.ml" 13 329 344 "method.ml" 13 329 356
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  ext_ref Type.convert
+)
+"method.ml" 13 329 357 "method.ml" 13 329 364
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "method.ml" 7 92 112 "method.ml" 7 92 119
+)
+"method.ml" 13 329 366 "method.ml" 13 329 382
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  ext_ref Annot.have_array
+)
+"method.ml" 13 329 383 "method.ml" 13 329 390
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 7 92 129 "method.ml" 7 92 136
+)
+"method.ml" 13 329 383 "method.ml" 13 329 398
+type(
+  Idl.annotation list
+)
+"method.ml" 13 329 365 "method.ml" 13 329 399
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 13 329 400 "method.ml" 13 329 407
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 7 92 129 "method.ml" 7 92 136
+)
+"method.ml" 13 329 400 "method.ml" 13 329 421
+type(
+  Idl.typ
+)
+"method.ml" 13 329 344 "method.ml" 13 329 421
+call(
+  stack
+)
+type(
+  Cidl.typ
+)
+"method.ml" 14 422 430 "method.ml" 14 422 434
+type(
+  Cidl.typ list
+)
+ident(
+  def args "method.ml" 16 482 486 "method.ml" 24 738 763
+)
+"method.ml" 14 422 437 "method.ml" 14 422 454
+type(
+  string list * Env_idl.clazz_env -> Idl.arg list -> Cidl.typ list
+)
+ident(
+  ext_ref Type.convert_args
+)
+"method.ml" 14 422 455 "method.ml" 14 422 462
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "method.ml" 7 92 112 "method.ml" 7 92 119
+)
+"method.ml" 14 422 463 "method.ml" 14 422 470
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 7 92 129 "method.ml" 7 92 136
+)
+"method.ml" 14 422 463 "method.ml" 14 422 477
+type(
+  Idl.arg list
+)
+"method.ml" 14 422 437 "method.ml" 14 422 477
+call(
+  stack
+)
+type(
+  Cidl.typ list
+)
+"method.ml" 16 482 490 "method.ml" 16 482 492
+type(
+  Ident.mmethod
+)
+ident(
+  def id "method.ml" 18 555 559 "method.ml" 24 738 763
+)
+"method.ml" 16 482 495 "method.ml" 16 482 515
+type(
+  static:bool -> Ident.clazz -> Idl.mmethod -> Ident.mmethod
+)
+ident(
+  ext_ref Ident.make_method_id
+)
+"method.ml" 16 482 524 "method.ml" 16 482 529
+type(
+  bool
+)
+"method.ml" 16 482 530 "method.ml" 16 482 538
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "method.ml" 7 92 120 "method.ml" 7 92 128
+)
+"method.ml" 16 482 539 "method.ml" 16 482 546
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 7 92 129 "method.ml" 7 92 136
+)
+"method.ml" 16 482 495 "method.ml" 16 482 546
+call(
+  stack
+)
+type(
+  Ident.mmethod
+)
+"method.ml" 18 555 563 "method.ml" 18 555 567
+type(
+  Cidl.mmethod
+)
+ident(
+  def self "method.ml" 23 677 681 "method.ml" 24 738 763
+)
+"method.ml" 19 572 589 "method.ml" 19 572 597
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "method.ml" 7 92 120 "method.ml" 7 92 128
+)
+"method.ml" 20 599 616 "method.ml" 20 599 618
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref id "method.ml" 16 482 490 "method.ml" 16 482 492
+)
+"method.ml" 21 620 645 "method.ml" 21 620 653
+type(
+  bool
+)
+ident(
+  int_ref abstract "method.ml" 12 236 244 "method.ml" 12 236 252
+)
+"method.ml" 21 620 655 "method.ml" 21 620 659
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "method.ml" 13 329 337 "method.ml" 13 329 341
+)
+"method.ml" 21 620 661 "method.ml" 21 620 665
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "method.ml" 14 422 430 "method.ml" 14 422 434
+)
+"method.ml" 21 620 636 "method.ml" 21 620 666
+type(
+  Cidl.mmethod_desc
+)
+"method.ml" 18 555 570 "method.ml" 22 668 673
+type(
+  Cidl.mmethod
+)
+"method.ml" 23 677 685 "method.ml" 23 677 695
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "method.ml" 24 738 742 "method.ml" 24 738 763
+)
+"method.ml" 23 677 698 "method.ml" 23 677 718
+type(
+  Cidl.mmethod ->
+  Cidl.mmethod Env_ident.mmethod_env -> Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  ext_ref Env_ident.add_method
+)
+"method.ml" 23 677 719 "method.ml" 23 677 723
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref self "method.ml" 18 555 563 "method.ml" 18 555 567
+)
+"method.ml" 23 677 724 "method.ml" 23 677 734
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "method.ml" 7 92 142 "method.ml" 7 92 152
+)
+"method.ml" 23 677 698 "method.ml" 23 677 734
+call(
+  stack
+)
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 24 738 742 "method.ml" 24 738 746
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref self "method.ml" 18 555 563 "method.ml" 18 555 567
+)
+"method.ml" 24 738 748 "method.ml" 24 738 751
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "method.ml" 7 92 138 "method.ml" 7 92 141
+)
+"method.ml" 24 738 742 "method.ml" 24 738 751
+type(
+  Cidl.mmethod list
+)
+"method.ml" 24 738 753 "method.ml" 24 738 763
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "method.ml" 23 677 685 "method.ml" 23 677 695
+)
+"method.ml" 24 738 742 "method.ml" 24 738 763
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 23 677 681 "method.ml" 24 738 763
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 18 555 559 "method.ml" 24 738 763
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 16 482 486 "method.ml" 24 738 763
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 12 236 240 "method.ml" 24 738 763
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 8 156 158 "method.ml" 24 738 763
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"method.ml" 26 765 769 "method.ml" 26 765 783
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz -> Idl.mmethod -> Cidl.mmethod list -> Cidl.mmethod list
+)
+ident(
+  def convert_static "method.ml" 44 1351 1351 "_none_" 1 0 -1
+)
+"method.ml" 26 765 784 "method.ml" 26 765 791
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "method.ml" 26 765 792 "method.ml" 42 1335 1347
+)
+"method.ml" 26 765 792 "method.ml" 26 765 800
+type(
+  Ident.clazz
+)
+ident(
+  def class_id "method.ml" 26 765 801 "method.ml" 42 1335 1347
+)
+"method.ml" 26 765 801 "method.ml" 26 765 808
+type(
+  Idl.mmethod
+)
+ident(
+  def mmethod "method.ml" 26 765 809 "method.ml" 42 1335 1347
+)
+"method.ml" 26 765 809 "method.ml" 26 765 812
+type(
+  Cidl.mmethod list
+)
+ident(
+  def acc "method.ml" 27 815 817 "method.ml" 42 1335 1347
+)
+"method.ml" 27 815 820 "method.ml" 27 815 823
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"method.ml" 27 815 825 "method.ml" 27 815 844
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_static
+)
+"method.ml" 27 815 845 "method.ml" 27 815 852
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 27 815 845 "method.ml" 27 815 864
+type(
+  Idl.modifier list
+)
+"method.ml" 27 815 824 "method.ml" 27 815 865
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 27 815 820 "method.ml" 27 815 865
+type(
+  bool
+)
+"method.ml" 28 871 875 "method.ml" 28 871 878
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "method.ml" 26 765 809 "method.ml" 26 765 812
+)
+"method.ml" 31 891 899 "method.ml" 31 891 903
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "method.ml" 34 1047 1051 "method.ml" 42 1335 1347
+)
+"method.ml" 31 891 906 "method.ml" 31 891 918
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  ext_ref Type.convert
+)
+"method.ml" 31 891 919 "method.ml" 31 891 926
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "method.ml" 26 765 784 "method.ml" 26 765 791
+)
+"method.ml" 31 891 928 "method.ml" 31 891 944
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  ext_ref Annot.have_array
+)
+"method.ml" 31 891 945 "method.ml" 31 891 952
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 31 891 945 "method.ml" 31 891 960
+type(
+  Idl.annotation list
+)
+"method.ml" 31 891 927 "method.ml" 31 891 961
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 31 891 962 "method.ml" 31 891 969
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 31 891 962 "method.ml" 31 891 983
+type(
+  Idl.typ
+)
+"method.ml" 31 891 906 "method.ml" 31 891 983
+call(
+  stack
+)
+type(
+  Cidl.typ
+)
+"method.ml" 32 984 992 "method.ml" 32 984 996
+type(
+  Cidl.typ list
+)
+ident(
+  def args "method.ml" 34 1047 1051 "method.ml" 42 1335 1347
+)
+"method.ml" 32 984 999 "method.ml" 32 984 1016
+type(
+  string list * Env_idl.clazz_env -> Idl.arg list -> Cidl.typ list
+)
+ident(
+  ext_ref Type.convert_args
+)
+"method.ml" 32 984 1017 "method.ml" 32 984 1024
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "method.ml" 26 765 784 "method.ml" 26 765 791
+)
+"method.ml" 32 984 1025 "method.ml" 32 984 1032
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 32 984 1025 "method.ml" 32 984 1039
+type(
+  Idl.arg list
+)
+"method.ml" 32 984 999 "method.ml" 32 984 1039
+call(
+  stack
+)
+type(
+  Cidl.typ list
+)
+"method.ml" 34 1047 1054 "method.ml" 34 1047 1075
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_abstract
+)
+"method.ml" 34 1047 1076 "method.ml" 34 1047 1083
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 34 1047 1076 "method.ml" 34 1047 1095
+type(
+  Idl.modifier list
+)
+"method.ml" 34 1047 1054 "method.ml" 34 1047 1095
+call(
+  stack
+)
+type(
+  bool
+)
+"method.ml" 35 1101 1107 "method.ml" 35 1101 1112
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"method.ml" 35 1101 1144 "method.ml" 35 1101 1151
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 35 1101 1144 "method.ml" 35 1101 1162
+type(
+  Loc.t
+)
+"method.ml" 35 1101 1120 "method.ml" 35 1101 1163
+type(
+  Error.t
+)
+"method.ml" 35 1101 1113 "method.ml" 35 1101 1164
+type(
+  exn
+)
+"method.ml" 35 1101 1107 "method.ml" 35 1101 1164
+type(
+  unit
+)
+"method.ml" 34 1047 1051 "method.ml" 35 1101 1164
+type(
+  unit
+)
+"method.ml" 37 1171 1179 "method.ml" 37 1171 1181
+type(
+  Ident.mmethod
+)
+ident(
+  def id "method.ml" 39 1243 1247 "method.ml" 42 1335 1347
+)
+"method.ml" 37 1171 1184 "method.ml" 37 1171 1204
+type(
+  static:bool -> Ident.clazz -> Idl.mmethod -> Ident.mmethod
+)
+ident(
+  ext_ref Ident.make_method_id
+)
+"method.ml" 37 1171 1213 "method.ml" 37 1171 1217
+type(
+  bool
+)
+"method.ml" 37 1171 1218 "method.ml" 37 1171 1226
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "method.ml" 26 765 792 "method.ml" 26 765 800
+)
+"method.ml" 37 1171 1227 "method.ml" 37 1171 1234
+type(
+  Idl.mmethod
+)
+ident(
+  int_ref mmethod "method.ml" 26 765 801 "method.ml" 26 765 808
+)
+"method.ml" 37 1171 1184 "method.ml" 37 1171 1234
+call(
+  stack
+)
+type(
+  Ident.mmethod
+)
+"method.ml" 39 1243 1260 "method.ml" 39 1243 1268
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "method.ml" 26 765 792 "method.ml" 26 765 800
+)
+"method.ml" 40 1270 1287 "method.ml" 40 1270 1289
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref id "method.ml" 37 1171 1179 "method.ml" 37 1171 1181
+)
+"method.ml" 41 1291 1316 "method.ml" 41 1291 1321
+type(
+  bool
+)
+"method.ml" 41 1291 1323 "method.ml" 41 1291 1327
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "method.ml" 31 891 899 "method.ml" 31 891 903
+)
+"method.ml" 41 1291 1329 "method.ml" 41 1291 1333
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "method.ml" 32 984 992 "method.ml" 32 984 996
+)
+"method.ml" 41 1291 1307 "method.ml" 41 1291 1334
+type(
+  Cidl.mmethod_desc
+)
+"method.ml" 39 1243 1247 "method.ml" 42 1335 1340
+type(
+  Cidl.mmethod
+)
+"method.ml" 42 1335 1344 "method.ml" 42 1335 1347
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "method.ml" 26 765 809 "method.ml" 26 765 812
+)
+"method.ml" 39 1243 1247 "method.ml" 42 1335 1347
+type(
+  Cidl.mmethod list
+)
+"method.ml" 37 1171 1175 "method.ml" 42 1335 1347
+type(
+  Cidl.mmethod list
+)
+"method.ml" 34 1047 1051 "method.ml" 42 1335 1347
+type(
+  Cidl.mmethod list
+)
+"method.ml" 31 891 895 "method.ml" 42 1335 1347
+type(
+  Cidl.mmethod list
+)
+"method.ml" 27 815 817 "method.ml" 42 1335 1347
+type(
+  Cidl.mmethod list
+)
+"method.ml" 44 1351 1355 "method.ml" 44 1351 1366
+type(
+  Cidl.mmethod -> bool
+)
+ident(
+  def is_abstract "method.ml" 48 1437 1437 "_none_" 1 0 -1
+)
+"method.ml" 44 1351 1367 "method.ml" 44 1351 1368
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "method.ml" 44 1351 1371 "method.ml" 46 1417 1431
+)
+"method.ml" 44 1351 1377 "method.ml" 44 1351 1378
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "method.ml" 44 1351 1367 "method.ml" 44 1351 1368
+)
+"method.ml" 44 1351 1377 "method.ml" 44 1351 1386
+type(
+  Cidl.mmethod_desc
+)
+"method.ml" 45 1392 1405 "method.ml" 45 1392 1406
+type(
+  bool
+)
+ident(
+  def b "method.ml" 45 1392 1415 "method.ml" 45 1392 1416
+)
+"method.ml" 45 1392 1407 "method.ml" 45 1392 1408
+type(
+  Cidl.typ
+)
+"method.ml" 45 1392 1409 "method.ml" 45 1392 1410
+type(
+  Cidl.typ list
+)
+"method.ml" 45 1392 1396 "method.ml" 45 1392 1411
+type(
+  Cidl.mmethod_desc
+)
+"method.ml" 45 1392 1415 "method.ml" 45 1392 1416
+type(
+  bool
+)
+ident(
+  int_ref b "method.ml" 45 1392 1405 "method.ml" 45 1392 1406
+)
+"method.ml" 46 1417 1421 "method.ml" 46 1417 1422
+type(
+  Cidl.mmethod_desc
+)
+"method.ml" 46 1417 1426 "method.ml" 46 1417 1431
+type(
+  bool
+)
+"method.ml" 44 1351 1371 "method.ml" 46 1417 1431
+type(
+  bool
+)
+"method.ml" 48 1437 1441 "method.ml" 48 1437 1454
+type(
+  Cidl.mmethod list -> bool
+)
+ident(
+  def have_abstract "method.ml" 49 1470 1508 "_none_" 1 0 -1
+)
+"method.ml" 48 1437 1455 "method.ml" 48 1437 1467
+type(
+  Cidl.mmethod list
+)
+ident(
+  def mmethod_list "method.ml" 49 1470 1472 "method.ml" 49 1470 1508
+)
+"method.ml" 49 1470 1472 "method.ml" 49 1470 1483
+type(
+  (Cidl.mmethod -> bool) -> Cidl.mmethod list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"method.ml" 49 1470 1484 "method.ml" 49 1470 1495
+type(
+  Cidl.mmethod -> bool
+)
+ident(
+  int_ref is_abstract "method.ml" 44 1351 1355 "method.ml" 44 1351 1366
+)
+"method.ml" 49 1470 1496 "method.ml" 49 1470 1508
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref mmethod_list "method.ml" 48 1437 1455 "method.ml" 48 1437 1467
+)
+"method.ml" 49 1470 1472 "method.ml" 49 1470 1508
+call(
+  tail
+)
+type(
+  bool
+)

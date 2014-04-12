@@ -1,0 +1,423 @@
+"idl_check.ml" 6 90 94 "idl_check.ml" 6 90 107
+type(
+  Env_idl.clazz_env -> Env_ident.t -> Idl.package -> Env_ident.t
+)
+ident(
+  def check_package "idl_check.ml" 9 211 211 "_none_" 1 0 -1
+)
+"idl_check.ml" 6 90 108 "idl_check.ml" 6 90 115
+type(
+  Env_idl.clazz_env
+)
+ident(
+  def env_idl "idl_check.ml" 6 90 116 "idl_check.ml" 7 130 204
+)
+"idl_check.ml" 6 90 116 "idl_check.ml" 6 90 119
+type(
+  Env_ident.t
+)
+ident(
+  def acc "idl_check.ml" 6 90 120 "idl_check.ml" 7 130 204
+)
+"idl_check.ml" 6 90 120 "idl_check.ml" 6 90 127
+type(
+  Idl.package
+)
+ident(
+  def package "idl_check.ml" 7 130 132 "idl_check.ml" 7 130 204
+)
+"idl_check.ml" 7 130 132 "idl_check.ml" 7 130 146
+type(
+  (Env_ident.t -> Idl.def -> Env_ident.t) ->
+  Env_ident.t -> Idl.def list -> Env_ident.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"idl_check.ml" 7 130 148 "idl_check.ml" 7 130 159
+type(
+  string list * Env_idl.clazz_env -> Env_ident.t -> Idl.def -> Env_ident.t
+)
+ident(
+  ext_ref Def.convert
+)
+"idl_check.ml" 7 130 161 "idl_check.ml" 7 130 168
+type(
+  Idl.package
+)
+ident(
+  int_ref package "idl_check.ml" 6 90 120 "idl_check.ml" 6 90 127
+)
+"idl_check.ml" 7 130 161 "idl_check.ml" 7 130 175
+type(
+  string list
+)
+"idl_check.ml" 7 130 176 "idl_check.ml" 7 130 183
+type(
+  Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "idl_check.ml" 6 90 108 "idl_check.ml" 6 90 115
+)
+"idl_check.ml" 7 130 160 "idl_check.ml" 7 130 184
+type(
+  string list * Env_idl.clazz_env
+)
+"idl_check.ml" 7 130 147 "idl_check.ml" 7 130 185
+call(
+  stack
+)
+type(
+  Env_ident.t -> Idl.def -> Env_ident.t
+)
+"idl_check.ml" 7 130 186 "idl_check.ml" 7 130 189
+type(
+  Env_ident.t
+)
+ident(
+  int_ref acc "idl_check.ml" 6 90 116 "idl_check.ml" 6 90 119
+)
+"idl_check.ml" 7 130 190 "idl_check.ml" 7 130 197
+type(
+  Idl.package
+)
+ident(
+  int_ref package "idl_check.ml" 6 90 120 "idl_check.ml" 6 90 127
+)
+"idl_check.ml" 7 130 190 "idl_check.ml" 7 130 204
+type(
+  Idl.def list
+)
+"idl_check.ml" 7 130 132 "idl_check.ml" 7 130 204
+call(
+  tail
+)
+type(
+  Env_ident.t
+)
+"idl_check.ml" 9 211 215 "idl_check.ml" 9 211 219
+type(
+  string -> Idl.file -> Cidl.clazz list
+)
+ident(
+  def main "idl_check.ml" 23 623 635 "_none_" 1 0 -1
+)
+"idl_check.ml" 9 211 220 "idl_check.ml" 9 211 228
+type(
+  string
+)
+ident(
+  def filename "idl_check.ml" 9 211 229 "idl_check.ml" 23 623 635
+)
+"idl_check.ml" 9 211 229 "idl_check.ml" 9 211 233
+type(
+  Idl.file
+)
+ident(
+  def file "idl_check.ml" 10 236 238 "idl_check.ml" 23 623 635
+)
+"idl_check.ml" 11 242 250 "idl_check.ml" 11 242 257
+type(
+  Env_idl.clazz_env
+)
+ident(
+  def env_idl "idl_check.ml" 12 309 313 "idl_check.ml" 13 386 415
+)
+"idl_check.ml" 11 242 260 "idl_check.ml" 11 242 276
+type(
+  Idl.file -> Env_idl.clazz_env -> Env_idl.clazz_env
+)
+ident(
+  ext_ref Env_idl.add_file
+)
+"idl_check.ml" 11 242 277 "idl_check.ml" 11 242 281
+type(
+  Idl.file
+)
+ident(
+  int_ref file "idl_check.ml" 9 211 229 "idl_check.ml" 9 211 233
+)
+"idl_check.ml" 11 242 282 "idl_check.ml" 11 242 305
+type(
+  Env_idl.clazz_env
+)
+ident(
+  ext_ref Env_idl.empty_clazz_env
+)
+"idl_check.ml" 11 242 260 "idl_check.ml" 11 242 305
+call(
+  stack
+)
+type(
+  Env_idl.clazz_env
+)
+"idl_check.ml" 12 309 317 "idl_check.ml" 12 309 320
+type(
+  Env_ident.t
+)
+ident(
+  def env "idl_check.ml" 13 386 390 "idl_check.ml" 13 386 415
+)
+"idl_check.ml" 12 309 323 "idl_check.ml" 12 309 337
+type(
+  (Env_ident.t -> Idl.package -> Env_ident.t) ->
+  Env_ident.t -> Idl.file -> Env_ident.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"idl_check.ml" 12 309 339 "idl_check.ml" 12 309 352
+type(
+  Env_idl.clazz_env -> Env_ident.t -> Idl.package -> Env_ident.t
+)
+ident(
+  int_ref check_package "idl_check.ml" 6 90 94 "idl_check.ml" 6 90 107
+)
+"idl_check.ml" 12 309 353 "idl_check.ml" 12 309 360
+type(
+  Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "idl_check.ml" 11 242 250 "idl_check.ml" 11 242 257
+)
+"idl_check.ml" 12 309 338 "idl_check.ml" 12 309 361
+call(
+  stack
+)
+type(
+  Env_ident.t -> Idl.package -> Env_ident.t
+)
+"idl_check.ml" 12 309 362 "idl_check.ml" 12 309 377
+type(
+  Env_ident.t
+)
+ident(
+  ext_ref Env_ident.empty
+)
+"idl_check.ml" 12 309 378 "idl_check.ml" 12 309 382
+type(
+  Idl.file
+)
+ident(
+  int_ref file "idl_check.ml" 9 211 229 "idl_check.ml" 9 211 233
+)
+"idl_check.ml" 12 309 323 "idl_check.ml" 12 309 382
+call(
+  stack
+)
+type(
+  Env_ident.t
+)
+"idl_check.ml" 13 386 390 "idl_check.ml" 13 386 411
+type(
+  Env_ident.t -> Cidl.clazz list
+)
+ident(
+  ext_ref Env_ident.env_to_list
+)
+"idl_check.ml" 13 386 412 "idl_check.ml" 13 386 415
+type(
+  Env_ident.t
+)
+ident(
+  int_ref env "idl_check.ml" 12 309 317 "idl_check.ml" 12 309 320
+)
+"idl_check.ml" 13 386 390 "idl_check.ml" 13 386 415
+call(
+  stack
+)
+type(
+  Cidl.clazz list
+)
+"idl_check.ml" 12 309 313 "idl_check.ml" 13 386 415
+type(
+  Cidl.clazz list
+)
+"idl_check.ml" 11 242 246 "idl_check.ml" 13 386 415
+type(
+  Cidl.clazz list
+)
+"idl_check.ml" 15 423 433 "idl_check.ml" 15 423 436
+type(
+  Error.t
+)
+ident(
+  def err "idl_check.ml" 16 441 447 "idl_check.ml" 23 623 635
+)
+"idl_check.ml" 15 423 427 "idl_check.ml" 15 423 436
+type(
+  exn
+)
+"idl_check.ml" 16 441 451 "idl_check.ml" 16 441 454
+type(
+  Loc.t option
+)
+ident(
+  def loc "idl_check.ml" 17 472 478 "idl_check.ml" 23 623 635
+)
+"idl_check.ml" 16 441 457 "idl_check.ml" 16 441 464
+type(
+  Error.t -> Loc.t option
+)
+ident(
+  ext_ref Error.explain
+)
+"idl_check.ml" 16 441 465 "idl_check.ml" 16 441 468
+type(
+  Error.t
+)
+ident(
+  int_ref err "idl_check.ml" 15 423 433 "idl_check.ml" 15 423 436
+)
+"idl_check.ml" 16 441 457 "idl_check.ml" 16 441 468
+call(
+  stack
+)
+type(
+  Loc.t option
+)
+"idl_check.ml" 17 472 485 "idl_check.ml" 17 472 488
+type(
+  Loc.t option
+)
+ident(
+  int_ref loc "idl_check.ml" 16 441 451 "idl_check.ml" 16 441 454
+)
+"idl_check.ml" 18 494 502 "idl_check.ml" 18 494 506
+type(
+  Loc.t option
+)
+"idl_check.ml" 18 494 510 "idl_check.ml" 18 494 512
+type(
+  unit
+)
+"idl_check.ml" 19 513 526 "idl_check.ml" 19 513 529
+type(
+  Loc.t
+)
+ident(
+  def loc "idl_check.ml" 20 534 537 "idl_check.ml" 22 602 620
+)
+"idl_check.ml" 19 513 521 "idl_check.ml" 19 513 529
+type(
+  Loc.t option
+)
+"idl_check.ml" 20 534 541 "idl_check.ml" 20 534 547
+type(
+  in_channel
+)
+ident(
+  def inchan "idl_check.ml" 21 570 573 "idl_check.ml" 22 602 620
+)
+"idl_check.ml" 20 534 550 "idl_check.ml" 20 534 557
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"idl_check.ml" 20 534 558 "idl_check.ml" 20 534 566
+type(
+  string
+)
+ident(
+  int_ref filename "idl_check.ml" 9 211 220 "idl_check.ml" 9 211 228
+)
+"idl_check.ml" 20 534 550 "idl_check.ml" 20 534 566
+call(
+  stack
+)
+type(
+  in_channel
+)
+"idl_check.ml" 21 570 573 "idl_check.ml" 21 570 589
+type(
+  in_channel -> Loc.t -> unit
+)
+ident(
+  ext_ref Loc.print_source
+)
+"idl_check.ml" 21 570 590 "idl_check.ml" 21 570 596
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_check.ml" 20 534 541 "idl_check.ml" 20 534 547
+)
+"idl_check.ml" 21 570 597 "idl_check.ml" 21 570 600
+type(
+  Loc.t
+)
+ident(
+  int_ref loc "idl_check.ml" 19 513 526 "idl_check.ml" 19 513 529
+)
+"idl_check.ml" 21 570 573 "idl_check.ml" 21 570 600
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_check.ml" 22 602 605 "idl_check.ml" 22 602 613
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"idl_check.ml" 22 602 614 "idl_check.ml" 22 602 620
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_check.ml" 20 534 541 "idl_check.ml" 20 534 547
+)
+"idl_check.ml" 22 602 605 "idl_check.ml" 22 602 620
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_check.ml" 21 570 573 "idl_check.ml" 22 602 620
+type(
+  unit
+)
+"idl_check.ml" 20 534 537 "idl_check.ml" 22 602 620
+type(
+  unit
+)
+"idl_check.ml" 17 472 478 "idl_check.ml" 22 602 621
+type(
+  unit
+)
+"idl_check.ml" 23 623 629 "idl_check.ml" 23 623 633
+type(
+  int -> Cidl.clazz list
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"idl_check.ml" 23 623 634 "idl_check.ml" 23 623 635
+type(
+  int
+)
+"idl_check.ml" 23 623 629 "idl_check.ml" 23 623 635
+call(
+  tail
+)
+type(
+  Cidl.clazz list
+)
+"idl_check.ml" 17 472 478 "idl_check.ml" 23 623 635
+type(
+  Cidl.clazz list
+)
+"idl_check.ml" 16 441 447 "idl_check.ml" 23 623 635
+type(
+  Cidl.clazz list
+)
+"idl_check.ml" 10 236 238 "idl_check.ml" 23 623 635
+type(
+  Cidl.clazz list
+)

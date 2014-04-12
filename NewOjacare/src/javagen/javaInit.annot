@@ -1,0 +1,417 @@
+"javaInit.ml" 6 89 93 "javaInit.ml" 6 89 99
+type(
+  Format.formatter -> Cidl.init -> unit
+)
+ident(
+  def output "javaInit.ml" 19 562 585 "_none_" 1 0 -1
+)
+"javaInit.ml" 6 89 100 "javaInit.ml" 6 89 103
+type(
+  Format.formatter
+)
+ident(
+  def ppf "javaInit.ml" 6 89 104 "javaInit.ml" 19 562 585
+)
+"javaInit.ml" 6 89 104 "javaInit.ml" 6 89 108
+type(
+  Cidl.init
+)
+ident(
+  def init "javaInit.ml" 7 111 113 "javaInit.ml" 19 562 585
+)
+"javaInit.ml" 7 111 117 "javaInit.ml" 7 111 126
+type(
+  string
+)
+ident(
+  def java_name "javaInit.ml" 10 207 209 "javaInit.ml" 19 562 585
+)
+"javaInit.ml" 7 111 129 "javaInit.ml" 7 111 159
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_stub_name
+)
+"javaInit.ml" 7 111 160 "javaInit.ml" 7 111 164
+type(
+  Cidl.init
+)
+ident(
+  int_ref init "javaInit.ml" 6 89 104 "javaInit.ml" 6 89 108
+)
+"javaInit.ml" 7 111 160 "javaInit.ml" 7 111 174
+type(
+  Ident.clazz
+)
+"javaInit.ml" 7 111 129 "javaInit.ml" 7 111 174
+call(
+  stack
+)
+type(
+  string
+)
+"javaInit.ml" 8 175 181 "javaInit.ml" 8 175 186
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "javaInit.ml" 10 207 209 "javaInit.ml" 19 562 585
+)
+"javaInit.ml" 8 175 189 "javaInit.ml" 8 175 193
+type(
+  Cidl.init
+)
+ident(
+  int_ref init "javaInit.ml" 6 89 104 "javaInit.ml" 6 89 108
+)
+"javaInit.ml" 8 175 189 "javaInit.ml" 8 175 202
+type(
+  Cidl.typ list
+)
+"javaInit.ml" 10 207 213 "javaInit.ml" 10 207 218
+type(
+  string list
+)
+ident(
+  def nargs "javaInit.ml" 12 315 317 "javaInit.ml" 19 562 585
+)
+"javaInit.ml" 10 207 221 "javaInit.ml" 10 207 229
+type(
+  (int -> string) -> int list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"javaInit.ml" 10 207 235 "javaInit.ml" 10 207 236
+type(
+  int
+)
+ident(
+  def i "javaInit.ml" 10 207 240 "javaInit.ml" 10 207 260
+)
+"javaInit.ml" 10 207 240 "javaInit.ml" 10 207 244
+type(
+  string
+)
+"javaInit.ml" 10 207 244 "javaInit.ml" 10 207 245
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"javaInit.ml" 10 207 245 "javaInit.ml" 10 207 258
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"javaInit.ml" 10 207 259 "javaInit.ml" 10 207 260
+type(
+  int
+)
+ident(
+  int_ref i "javaInit.ml" 10 207 235 "javaInit.ml" 10 207 236
+)
+"javaInit.ml" 10 207 245 "javaInit.ml" 10 207 260
+call(
+  stack
+)
+type(
+  string
+)
+"javaInit.ml" 10 207 240 "javaInit.ml" 10 207 260
+call(
+  tail
+)
+type(
+  string
+)
+"javaInit.ml" 10 207 230 "javaInit.ml" 10 207 261
+type(
+  int -> string
+)
+"javaInit.ml" 11 263 270 "javaInit.ml" 11 263 288
+type(
+  int -> int -> int list
+)
+ident(
+  ext_ref Utilities.interval
+)
+"javaInit.ml" 11 263 289 "javaInit.ml" 11 263 290
+type(
+  int
+)
+"javaInit.ml" 11 263 292 "javaInit.ml" 11 263 303
+type(
+  Cidl.typ list -> int
+)
+ident(
+  ext_ref List.length
+)
+"javaInit.ml" 11 263 304 "javaInit.ml" 11 263 309
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "javaInit.ml" 8 175 181 "javaInit.ml" 8 175 186
+)
+"javaInit.ml" 11 263 291 "javaInit.ml" 11 263 310
+call(
+  stack
+)
+type(
+  int
+)
+"javaInit.ml" 11 263 269 "javaInit.ml" 11 263 311
+call(
+  stack
+)
+type(
+  int list
+)
+"javaInit.ml" 10 207 221 "javaInit.ml" 11 263 311
+call(
+  stack
+)
+type(
+  string list
+)
+"javaInit.ml" 12 315 321 "javaInit.ml" 12 315 325
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "javaInit.ml" 14 357 359 "javaInit.ml" 19 562 585
+)
+"javaInit.ml" 12 315 328 "javaInit.ml" 12 315 340
+type(
+  string list -> Cidl.typ list -> (string * Cidl.typ) list
+)
+ident(
+  ext_ref List.combine
+)
+"javaInit.ml" 12 315 341 "javaInit.ml" 12 315 346
+type(
+  string list
+)
+ident(
+  int_ref nargs "javaInit.ml" 10 207 213 "javaInit.ml" 10 207 218
+)
+"javaInit.ml" 12 315 347 "javaInit.ml" 12 315 352
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "javaInit.ml" 8 175 181 "javaInit.ml" 8 175 186
+)
+"javaInit.ml" 12 315 328 "javaInit.ml" 12 315 352
+call(
+  stack
+)
+type(
+  (string * Cidl.typ) list
+)
+"javaInit.ml" 14 357 359 "javaInit.ml" 14 357 366
+type(
+  Format.formatter ->
+  (string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+  (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaInit.ml" 14 357 367 "javaInit.ml" 14 357 370
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaInit.ml" 6 89 100 "javaInit.ml" 6 89 103
+)
+"javaInit.ml" 14 357 371 "javaInit.ml" 14 357 392
+type(
+  (string ->
+   (Format.formatter -> (string * Cidl.typ) list -> unit) ->
+   (string * Cidl.typ) list -> unit, Format.formatter, unit)
+  format
+)
+"javaInit.ml" 14 357 393 "javaInit.ml" 14 357 402
+type(
+  string
+)
+ident(
+  int_ref java_name "javaInit.ml" 7 111 117 "javaInit.ml" 7 111 126
+)
+"javaInit.ml" 14 357 403 "javaInit.ml" 14 357 418
+type(
+  Format.formatter -> (string * Cidl.typ) list -> unit
+)
+ident(
+  ext_ref JavaArgs.output
+)
+"javaInit.ml" 14 357 421 "javaInit.ml" 14 357 425
+type(
+  string
+)
+"javaInit.ml" 14 357 436 "javaInit.ml" 14 357 440
+type(
+  Cidl.init
+)
+ident(
+  int_ref init "javaInit.ml" 6 89 104 "javaInit.ml" 6 89 108
+)
+"javaInit.ml" 14 357 436 "javaInit.ml" 14 357 450
+type(
+  Ident.clazz
+)
+"javaInit.ml" 14 357 426 "javaInit.ml" 14 357 450
+type(
+  Cidl.typ
+)
+"javaInit.ml" 14 357 420 "javaInit.ml" 14 357 451
+type(
+  string * Cidl.typ
+)
+"javaInit.ml" 14 357 453 "javaInit.ml" 14 357 457
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "javaInit.ml" 12 315 321 "javaInit.ml" 12 315 325
+)
+"javaInit.ml" 14 357 419 "javaInit.ml" 14 357 458
+type(
+  (string * Cidl.typ) list
+)
+"javaInit.ml" 14 357 359 "javaInit.ml" 14 357 458
+call(
+  stack
+)
+type(
+  unit
+)
+"javaInit.ml" 16 461 463 "javaInit.ml" 16 461 470
+type(
+  Format.formatter ->
+  ((Format.formatter -> string list -> unit) -> string list -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> string list -> unit) -> string list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaInit.ml" 16 461 471 "javaInit.ml" 16 461 474
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaInit.ml" 6 89 100 "javaInit.ml" 6 89 103
+)
+"javaInit.ml" 16 461 475 "javaInit.ml" 16 461 494
+type(
+  ((Format.formatter -> string list -> unit) -> string list -> unit,
+   Format.formatter, unit)
+  format
+)
+"javaInit.ml" 16 461 495 "javaInit.ml" 16 461 515
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  ext_ref JavaArgs.output_call
+)
+"javaInit.ml" 16 461 516 "javaInit.ml" 16 461 521
+type(
+  string list
+)
+ident(
+  int_ref nargs "javaInit.ml" 10 207 213 "javaInit.ml" 10 207 218
+)
+"javaInit.ml" 16 461 463 "javaInit.ml" 16 461 521
+call(
+  stack
+)
+type(
+  unit
+)
+"javaInit.ml" 17 523 525 "javaInit.ml" 17 523 532
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaInit.ml" 17 523 533 "javaInit.ml" 17 523 536
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaInit.ml" 6 89 100 "javaInit.ml" 6 89 103
+)
+"javaInit.ml" 17 523 537 "javaInit.ml" 17 523 559
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaInit.ml" 17 523 525 "javaInit.ml" 17 523 559
+call(
+  stack
+)
+type(
+  unit
+)
+"javaInit.ml" 19 562 564 "javaInit.ml" 19 562 571
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"javaInit.ml" 19 562 572 "javaInit.ml" 19 562 575
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "javaInit.ml" 6 89 100 "javaInit.ml" 6 89 103
+)
+"javaInit.ml" 19 562 576 "javaInit.ml" 19 562 585
+type(
+  (unit, Format.formatter, unit) format
+)
+"javaInit.ml" 19 562 564 "javaInit.ml" 19 562 585
+call(
+  tail
+)
+type(
+  unit
+)
+"javaInit.ml" 17 523 525 "javaInit.ml" 19 562 585
+type(
+  unit
+)
+"javaInit.ml" 16 461 463 "javaInit.ml" 19 562 585
+type(
+  unit
+)
+"javaInit.ml" 14 357 359 "javaInit.ml" 19 562 585
+type(
+  unit
+)
+"javaInit.ml" 12 315 317 "javaInit.ml" 19 562 585
+type(
+  unit
+)
+"javaInit.ml" 10 207 209 "javaInit.ml" 19 562 585
+type(
+  unit
+)
+"javaInit.ml" 7 111 113 "javaInit.ml" 19 562 585
+type(
+  unit
+)

@@ -1,0 +1,464 @@
+"type.ml" 8 94 102 "type.ml" 8 94 109
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  def convert "type.ml" 8 94 94 "_none_" 1 0 -1
+)
+"type.ml" 8 94 110 "type.ml" 8 94 117
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "type.ml" 8 94 118 "type.ml" 32 706 730
+)
+"type.ml" 8 94 118 "type.ml" 8 94 127
+type(
+  bool
+)
+ident(
+  def camlarray "type.ml" 8 94 128 "type.ml" 32 706 730
+)
+"type.ml" 8 94 128 "type.ml" 8 94 129
+type(
+  Idl.typ
+)
+ident(
+  def t "type.ml" 9 133 135 "type.ml" 32 706 730
+)
+"type.ml" 9 133 141 "type.ml" 9 133 142
+type(
+  Idl.typ
+)
+ident(
+  int_ref t "type.ml" 8 94 128 "type.ml" 8 94 129
+)
+"type.ml" 9 133 141 "type.ml" 9 133 149
+type(
+  Idl.type_desc
+)
+"type.ml" 10 155 159 "type.ml" 10 155 164
+type(
+  Idl.type_desc
+)
+"type.ml" 10 155 168 "type.ml" 10 155 173
+type(
+  Cidl.typ
+)
+"type.ml" 11 174 178 "type.ml" 11 174 186
+type(
+  Idl.type_desc
+)
+"type.ml" 11 174 190 "type.ml" 11 174 198
+type(
+  Cidl.typ
+)
+"type.ml" 12 199 203 "type.ml" 12 199 208
+type(
+  Idl.type_desc
+)
+"type.ml" 12 199 212 "type.ml" 12 199 217
+type(
+  Cidl.typ
+)
+"type.ml" 13 218 222 "type.ml" 13 218 228
+type(
+  Idl.type_desc
+)
+"type.ml" 13 218 232 "type.ml" 13 218 238
+type(
+  Cidl.typ
+)
+"type.ml" 14 239 243 "type.ml" 14 239 251
+type(
+  Idl.type_desc
+)
+"type.ml" 14 239 255 "type.ml" 14 239 263
+type(
+  Cidl.typ
+)
+"type.ml" 15 264 268 "type.ml" 15 264 272
+type(
+  Idl.type_desc
+)
+"type.ml" 15 264 276 "type.ml" 15 264 280
+type(
+  Cidl.typ
+)
+"type.ml" 16 281 285 "type.ml" 16 281 290
+type(
+  Idl.type_desc
+)
+"type.ml" 16 281 294 "type.ml" 16 281 299
+type(
+  Cidl.typ
+)
+"type.ml" 17 300 304 "type.ml" 17 300 310
+type(
+  Idl.type_desc
+)
+"type.ml" 17 300 314 "type.ml" 17 300 320
+type(
+  Cidl.typ
+)
+"type.ml" 18 321 325 "type.ml" 18 321 332
+type(
+  Idl.type_desc
+)
+"type.ml" 18 321 336 "type.ml" 18 321 343
+type(
+  Cidl.typ
+)
+"type.ml" 19 344 348 "type.ml" 19 344 353
+type(
+  Idl.type_desc
+)
+"type.ml" 19 344 357 "type.ml" 19 344 362
+type(
+  Cidl.typ
+)
+"type.ml" 20 363 367 "type.ml" 20 363 374
+type(
+  Idl.type_desc
+)
+"type.ml" 20 363 386 "type.ml" 20 363 393
+type(
+  Cidl.object_type
+)
+"type.ml" 20 363 378 "type.ml" 20 363 393
+type(
+  Cidl.typ
+)
+"type.ml" 21 394 405 "type.ml" 21 394 406
+type(
+  Idl.typ
+)
+ident(
+  def t "type.ml" 22 411 417 "type.ml" 25 494 545
+)
+"type.ml" 21 394 398 "type.ml" 21 394 406
+type(
+  Idl.type_desc
+)
+"type.ml" 22 411 420 "type.ml" 22 411 429
+type(
+  bool
+)
+ident(
+  int_ref camlarray "type.ml" 8 94 118 "type.ml" 8 94 127
+)
+"type.ml" 23 435 453 "type.ml" 23 435 460
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  int_ref convert "type.ml" 8 94 102 "type.ml" 8 94 109
+)
+"type.ml" 23 435 461 "type.ml" 23 435 468
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "type.ml" 8 94 110 "type.ml" 8 94 117
+)
+"type.ml" 23 435 469 "type.ml" 23 435 478
+type(
+  bool
+)
+ident(
+  int_ref camlarray "type.ml" 8 94 118 "type.ml" 8 94 127
+)
+"type.ml" 23 435 479 "type.ml" 23 435 480
+type(
+  Idl.typ
+)
+ident(
+  int_ref t "type.ml" 21 394 405 "type.ml" 21 394 406
+)
+"type.ml" 23 435 452 "type.ml" 23 435 481
+call(
+  stack
+)
+type(
+  Cidl.typ
+)
+"type.ml" 23 435 444 "type.ml" 23 435 482
+type(
+  Cidl.object_type
+)
+"type.ml" 23 435 436 "type.ml" 23 435 482
+type(
+  Cidl.typ
+)
+"type.ml" 25 494 516 "type.ml" 25 494 523
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  int_ref convert "type.ml" 8 94 102 "type.ml" 8 94 109
+)
+"type.ml" 25 494 524 "type.ml" 25 494 531
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "type.ml" 8 94 110 "type.ml" 8 94 117
+)
+"type.ml" 25 494 532 "type.ml" 25 494 541
+type(
+  bool
+)
+ident(
+  int_ref camlarray "type.ml" 8 94 118 "type.ml" 8 94 127
+)
+"type.ml" 25 494 542 "type.ml" 25 494 543
+type(
+  Idl.typ
+)
+ident(
+  int_ref t "type.ml" 21 394 405 "type.ml" 21 394 406
+)
+"type.ml" 25 494 515 "type.ml" 25 494 544
+call(
+  stack
+)
+type(
+  Cidl.typ
+)
+"type.ml" 25 494 503 "type.ml" 25 494 545
+type(
+  Cidl.object_type
+)
+"type.ml" 25 494 495 "type.ml" 25 494 545
+type(
+  Cidl.typ
+)
+"type.ml" 22 411 417 "type.ml" 25 494 545
+type(
+  Cidl.typ
+)
+"type.ml" 26 546 558 "type.ml" 26 546 562
+type(
+  Idl.qident
+)
+ident(
+  def name "type.ml" 27 566 572 "type.ml" 31 678 705
+)
+"type.ml" 26 546 550 "type.ml" 26 546 562
+type(
+  Idl.type_desc
+)
+"type.ml" 27 566 576 "type.ml" 27 566 578
+type(
+  Ident.clazz
+)
+ident(
+  def id "type.ml" 31 678 687 "type.ml" 31 678 705
+)
+"type.ml" 28 582 587 "type.ml" 28 582 605
+type(
+  string list * Env_idl.clazz_env -> Idl.qident -> Ident.clazz
+)
+ident(
+  ext_ref Env_idl.find_class
+)
+"type.ml" 28 582 606 "type.ml" 28 582 613
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "type.ml" 8 94 110 "type.ml" 8 94 117
+)
+"type.ml" 28 582 614 "type.ml" 28 582 618
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "type.ml" 26 546 558 "type.ml" 26 546 562
+)
+"type.ml" 28 582 587 "type.ml" 28 582 618
+call(
+  stack
+)
+type(
+  Ident.clazz
+)
+"type.ml" 30 626 629 "type.ml" 30 626 638
+type(
+  exn
+)
+"type.ml" 30 626 642 "type.ml" 30 626 647
+type(
+  exn -> Ident.clazz
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"type.ml" 30 626 671 "type.ml" 30 626 675
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "type.ml" 26 546 558 "type.ml" 26 546 562
+)
+"type.ml" 30 626 655 "type.ml" 30 626 676
+type(
+  Error.t
+)
+"type.ml" 30 626 648 "type.ml" 30 626 677
+type(
+  exn
+)
+"type.ml" 30 626 642 "type.ml" 30 626 677
+type(
+  Ident.clazz
+)
+"type.ml" 28 582 583 "type.ml" 30 626 677
+type(
+  Ident.clazz
+)
+"type.ml" 31 678 702 "type.ml" 31 678 704
+type(
+  Ident.clazz
+)
+ident(
+  int_ref id "type.ml" 27 566 576 "type.ml" 27 566 578
+)
+"type.ml" 31 678 695 "type.ml" 31 678 705
+type(
+  Cidl.object_type
+)
+"type.ml" 31 678 687 "type.ml" 31 678 705
+type(
+  Cidl.typ
+)
+"type.ml" 27 566 572 "type.ml" 31 678 705
+type(
+  Cidl.typ
+)
+"type.ml" 32 706 710 "type.ml" 32 706 714
+type(
+  Idl.type_desc
+)
+"type.ml" 32 706 726 "type.ml" 32 706 730
+type(
+  Cidl.object_type
+)
+"type.ml" 32 706 718 "type.ml" 32 706 730
+type(
+  Cidl.typ
+)
+"type.ml" 9 133 135 "type.ml" 32 706 730
+type(
+  Cidl.typ
+)
+"type.ml" 34 733 737 "type.ml" 34 733 749
+type(
+  string list * Env_idl.clazz_env -> Idl.arg list -> Cidl.typ list
+)
+ident(
+  def convert_args "type.ml" 35 766 856 "_none_" 1 0 -1
+)
+"type.ml" 34 733 750 "type.ml" 34 733 757
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "type.ml" 34 733 758 "type.ml" 35 766 856
+)
+"type.ml" 34 733 758 "type.ml" 34 733 762
+type(
+  Idl.arg list
+)
+ident(
+  def args "type.ml" 35 766 768 "type.ml" 35 766 856
+)
+"type.ml" 35 766 768 "type.ml" 35 766 776
+type(
+  (Idl.arg -> Cidl.typ) -> Idl.arg list -> Cidl.typ list
+)
+ident(
+  ext_ref List.map
+)
+"type.ml" 35 766 782 "type.ml" 35 766 785
+type(
+  Idl.arg
+)
+ident(
+  def arg "type.ml" 35 766 789 "type.ml" 35 766 850
+)
+"type.ml" 35 766 789 "type.ml" 35 766 796
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  int_ref convert "type.ml" 8 94 102 "type.ml" 8 94 109
+)
+"type.ml" 35 766 797 "type.ml" 35 766 804
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "type.ml" 34 733 750 "type.ml" 34 733 757
+)
+"type.ml" 35 766 806 "type.ml" 35 766 822
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  ext_ref Annot.have_array
+)
+"type.ml" 35 766 823 "type.ml" 35 766 826
+type(
+  Idl.arg
+)
+ident(
+  int_ref arg "type.ml" 35 766 782 "type.ml" 35 766 785
+)
+"type.ml" 35 766 823 "type.ml" 35 766 836
+type(
+  Idl.annotation list
+)
+"type.ml" 35 766 805 "type.ml" 35 766 837
+call(
+  stack
+)
+type(
+  bool
+)
+"type.ml" 35 766 838 "type.ml" 35 766 841
+type(
+  Idl.arg
+)
+ident(
+  int_ref arg "type.ml" 35 766 782 "type.ml" 35 766 785
+)
+"type.ml" 35 766 838 "type.ml" 35 766 850
+type(
+  Idl.typ
+)
+"type.ml" 35 766 789 "type.ml" 35 766 850
+call(
+  tail
+)
+type(
+  Cidl.typ
+)
+"type.ml" 35 766 777 "type.ml" 35 766 851
+type(
+  Idl.arg -> Cidl.typ
+)
+"type.ml" 35 766 852 "type.ml" 35 766 856
+type(
+  Idl.arg list
+)
+ident(
+  int_ref args "type.ml" 34 733 758 "type.ml" 34 733 762
+)
+"type.ml" 35 766 768 "type.ml" 35 766 856
+call(
+  tail
+)
+type(
+  Cidl.typ list
+)

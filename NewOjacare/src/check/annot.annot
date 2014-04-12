@@ -1,0 +1,428 @@
+"annot.ml" 5 73 77 "annot.ml" 5 73 85
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  def get_name "annot.ml" 14 249 249 "_none_" 1 0 -1
+)
+"annot.ml" 5 73 86 "annot.ml" 5 73 93
+type(
+  Idl.annotation list
+)
+ident(
+  def annot_l "annot.ml" 6 97 99 "annot.ml" 12 230 247
+)
+"annot.ml" 6 97 107 "annot.ml" 6 97 111
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  def loop "annot.ml" 6 97 99 "annot.ml" 12 230 247
+)
+"annot.ml" 6 97 112 "annot.ml" 6 97 113
+type(
+  Idl.annotation list
+)
+ident(
+  def l "annot.ml" 7 116 120 "annot.ml" 11 213 229
+)
+"annot.ml" 7 116 126 "annot.ml" 7 116 127
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref l "annot.ml" 6 97 112 "annot.ml" 6 97 113
+)
+"annot.ml" 8 133 139 "annot.ml" 8 133 140
+type(
+  Idl.annotation
+)
+ident(
+  def a "annot.ml" 8 133 147 "annot.ml" 10 189 212
+)
+"annot.ml" 8 133 142 "annot.ml" 8 133 143
+type(
+  Idl.annotation list
+)
+ident(
+  def l "annot.ml" 8 133 147 "annot.ml" 10 189 212
+)
+"annot.ml" 8 133 139 "annot.ml" 8 133 143
+type(
+  Idl.annotation list
+)
+"annot.ml" 8 133 154 "annot.ml" 8 133 155
+type(
+  Idl.annotation
+)
+ident(
+  int_ref a "annot.ml" 8 133 139 "annot.ml" 8 133 140
+)
+"annot.ml" 8 133 154 "annot.ml" 8 133 163
+type(
+  Idl.ann_desc
+)
+"annot.ml" 9 170 177 "annot.ml" 9 170 178
+type(
+  Idl.ident
+)
+ident(
+  def s "annot.ml" 9 170 182 "annot.ml" 9 170 188
+)
+"annot.ml" 9 170 171 "annot.ml" 9 170 178
+type(
+  Idl.ann_desc
+)
+"annot.ml" 9 170 187 "annot.ml" 9 170 188
+type(
+  Idl.ident
+)
+ident(
+  int_ref s "annot.ml" 9 170 177 "annot.ml" 9 170 178
+)
+"annot.ml" 9 170 182 "annot.ml" 9 170 188
+type(
+  Idl.ident option
+)
+"annot.ml" 10 189 198 "annot.ml" 10 189 199
+type(
+  Idl.ann_desc
+)
+"annot.ml" 10 189 203 "annot.ml" 10 189 207
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  int_ref loop "annot.ml" 6 97 107 "annot.ml" 6 97 111
+)
+"annot.ml" 10 189 208 "annot.ml" 10 189 209
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref l "annot.ml" 8 133 142 "annot.ml" 8 133 143
+)
+"annot.ml" 10 189 203 "annot.ml" 10 189 209
+call(
+  tail
+)
+type(
+  Idl.ident option
+)
+"annot.ml" 8 133 147 "annot.ml" 10 189 212
+type(
+  Idl.ident option
+)
+"annot.ml" 11 213 219 "annot.ml" 11 213 221
+type(
+  Idl.annotation list
+)
+"annot.ml" 11 213 225 "annot.ml" 11 213 229
+type(
+  Idl.ident option
+)
+"annot.ml" 7 116 120 "annot.ml" 11 213 229
+type(
+  Idl.ident option
+)
+"annot.ml" 12 230 235 "annot.ml" 12 230 239
+type(
+  Idl.annotation list -> Idl.ident option
+)
+ident(
+  int_ref loop "annot.ml" 6 97 107 "annot.ml" 6 97 111
+)
+"annot.ml" 12 230 240 "annot.ml" 12 230 247
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref annot_l "annot.ml" 5 73 86 "annot.ml" 5 73 93
+)
+"annot.ml" 12 230 235 "annot.ml" 12 230 247
+call(
+  tail
+)
+type(
+  Idl.ident option
+)
+"annot.ml" 6 97 99 "annot.ml" 12 230 247
+type(
+  Idl.ident option
+)
+"annot.ml" 14 249 253 "annot.ml" 14 249 264
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  def is_callback "annot.ml" 23 428 428 "_none_" 1 0 -1
+)
+"annot.ml" 14 249 265 "annot.ml" 14 249 272
+type(
+  Idl.annotation list
+)
+ident(
+  def annot_l "annot.ml" 15 276 278 "annot.ml" 21 409 426
+)
+"annot.ml" 15 276 286 "annot.ml" 15 276 290
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  def loop "annot.ml" 15 276 278 "annot.ml" 21 409 426
+)
+"annot.ml" 15 276 291 "annot.ml" 15 276 292
+type(
+  Idl.annotation list
+)
+ident(
+  def l "annot.ml" 16 295 299 "annot.ml" 20 391 408
+)
+"annot.ml" 16 295 305 "annot.ml" 16 295 306
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref l "annot.ml" 15 276 291 "annot.ml" 15 276 292
+)
+"annot.ml" 17 312 318 "annot.ml" 17 312 319
+type(
+  Idl.annotation
+)
+ident(
+  def a "annot.ml" 17 312 326 "annot.ml" 19 368 390
+)
+"annot.ml" 17 312 321 "annot.ml" 17 312 322
+type(
+  Idl.annotation list
+)
+ident(
+  def l "annot.ml" 17 312 326 "annot.ml" 19 368 390
+)
+"annot.ml" 17 312 318 "annot.ml" 17 312 322
+type(
+  Idl.annotation list
+)
+"annot.ml" 17 312 333 "annot.ml" 17 312 334
+type(
+  Idl.annotation
+)
+ident(
+  int_ref a "annot.ml" 17 312 318 "annot.ml" 17 312 319
+)
+"annot.ml" 17 312 333 "annot.ml" 17 312 342
+type(
+  Idl.ann_desc
+)
+"annot.ml" 18 349 350 "annot.ml" 18 349 359
+type(
+  Idl.ann_desc
+)
+"annot.ml" 18 349 363 "annot.ml" 18 349 367
+type(
+  bool
+)
+"annot.ml" 19 368 377 "annot.ml" 19 368 378
+type(
+  Idl.ann_desc
+)
+"annot.ml" 19 368 382 "annot.ml" 19 368 386
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  int_ref loop "annot.ml" 15 276 286 "annot.ml" 15 276 290
+)
+"annot.ml" 19 368 387 "annot.ml" 19 368 388
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref l "annot.ml" 17 312 321 "annot.ml" 17 312 322
+)
+"annot.ml" 19 368 382 "annot.ml" 19 368 388
+call(
+  tail
+)
+type(
+  bool
+)
+"annot.ml" 17 312 326 "annot.ml" 19 368 390
+type(
+  bool
+)
+"annot.ml" 20 391 397 "annot.ml" 20 391 399
+type(
+  Idl.annotation list
+)
+"annot.ml" 20 391 403 "annot.ml" 20 391 408
+type(
+  bool
+)
+"annot.ml" 16 295 299 "annot.ml" 20 391 408
+type(
+  bool
+)
+"annot.ml" 21 409 414 "annot.ml" 21 409 418
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  int_ref loop "annot.ml" 15 276 286 "annot.ml" 15 276 290
+)
+"annot.ml" 21 409 419 "annot.ml" 21 409 426
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref annot_l "annot.ml" 14 249 265 "annot.ml" 14 249 272
+)
+"annot.ml" 21 409 414 "annot.ml" 21 409 426
+call(
+  tail
+)
+type(
+  bool
+)
+"annot.ml" 15 276 278 "annot.ml" 21 409 426
+type(
+  bool
+)
+"annot.ml" 23 428 432 "annot.ml" 23 428 442
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  def have_array "annot.ml" 30 589 606 "_none_" 1 0 -1
+)
+"annot.ml" 23 428 443 "annot.ml" 23 428 450
+type(
+  Idl.annotation list
+)
+ident(
+  def annot_l "annot.ml" 24 454 456 "annot.ml" 30 589 606
+)
+"annot.ml" 24 454 464 "annot.ml" 24 454 468
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  def loop "annot.ml" 24 454 456 "annot.ml" 30 589 606
+)
+"annot.ml" 24 454 469 "annot.ml" 24 454 470
+type(
+  Idl.annotation list
+)
+ident(
+  def l "annot.ml" 25 473 477 "annot.ml" 29 571 588
+)
+"annot.ml" 25 473 483 "annot.ml" 25 473 484
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref l "annot.ml" 24 454 469 "annot.ml" 24 454 470
+)
+"annot.ml" 26 490 496 "annot.ml" 26 490 497
+type(
+  Idl.annotation
+)
+ident(
+  def a "annot.ml" 26 490 504 "annot.ml" 28 547 570
+)
+"annot.ml" 26 490 499 "annot.ml" 26 490 500
+type(
+  Idl.annotation list
+)
+ident(
+  def l "annot.ml" 26 490 504 "annot.ml" 28 547 570
+)
+"annot.ml" 26 490 496 "annot.ml" 26 490 500
+type(
+  Idl.annotation list
+)
+"annot.ml" 26 490 511 "annot.ml" 26 490 512
+type(
+  Idl.annotation
+)
+ident(
+  int_ref a "annot.ml" 26 490 496 "annot.ml" 26 490 497
+)
+"annot.ml" 26 490 511 "annot.ml" 26 490 520
+type(
+  Idl.ann_desc
+)
+"annot.ml" 27 527 528 "annot.ml" 27 527 538
+type(
+  Idl.ann_desc
+)
+"annot.ml" 27 527 542 "annot.ml" 27 527 546
+type(
+  bool
+)
+"annot.ml" 28 547 556 "annot.ml" 28 547 557
+type(
+  Idl.ann_desc
+)
+"annot.ml" 28 547 561 "annot.ml" 28 547 565
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  int_ref loop "annot.ml" 24 454 464 "annot.ml" 24 454 468
+)
+"annot.ml" 28 547 566 "annot.ml" 28 547 567
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref l "annot.ml" 26 490 499 "annot.ml" 26 490 500
+)
+"annot.ml" 28 547 561 "annot.ml" 28 547 567
+call(
+  tail
+)
+type(
+  bool
+)
+"annot.ml" 26 490 504 "annot.ml" 28 547 570
+type(
+  bool
+)
+"annot.ml" 29 571 577 "annot.ml" 29 571 579
+type(
+  Idl.annotation list
+)
+"annot.ml" 29 571 583 "annot.ml" 29 571 588
+type(
+  bool
+)
+"annot.ml" 25 473 477 "annot.ml" 29 571 588
+type(
+  bool
+)
+"annot.ml" 30 589 594 "annot.ml" 30 589 598
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  int_ref loop "annot.ml" 24 454 464 "annot.ml" 24 454 468
+)
+"annot.ml" 30 589 599 "annot.ml" 30 589 606
+type(
+  Idl.annotation list
+)
+ident(
+  int_ref annot_l "annot.ml" 23 428 443 "annot.ml" 23 428 450
+)
+"annot.ml" 30 589 594 "annot.ml" 30 589 606
+call(
+  tail
+)
+type(
+  bool
+)
+"annot.ml" 24 454 456 "annot.ml" 30 589 606
+type(
+  bool
+)

@@ -40,7 +40,7 @@ let pc = new colored_point 1 3 "cyan";;
 display "OK\n";;
 
 display "Creation d'un point colore pc2 = (2,3) blue : ";;
-let pc2 = new colored_point 1 3 "blue";;
+let pc2 = new colored_point 2 3 "blue";;
 display "OK\n";;
 
 display "Envoi pc#display : ";;

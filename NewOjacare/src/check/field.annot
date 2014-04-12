@@ -1,0 +1,940 @@
+"field.ml" 7 91 95 "field.ml" 7 91 110
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz ->
+  Idl.field ->
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env ->
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def convert_dynamic "field.ml" 31 903 903 "_none_" 1 0 -1
+)
+"field.ml" 7 91 111 "field.ml" 7 91 118
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "field.ml" 7 91 119 "field.ml" 29 873 901
+)
+"field.ml" 7 91 119 "field.ml" 7 91 127
+type(
+  Ident.clazz
+)
+ident(
+  def class_id "field.ml" 7 91 128 "field.ml" 29 873 901
+)
+"field.ml" 7 91 128 "field.ml" 7 91 133
+type(
+  Idl.field
+)
+ident(
+  def field "field.ml" 7 91 134 "field.ml" 29 873 901
+)
+"field.ml" 7 91 135 "field.ml" 7 91 138
+type(
+  Cidl.mmethod list
+)
+ident(
+  def acc "field.ml" 8 153 155 "field.ml" 29 873 901
+)
+"field.ml" 7 91 139 "field.ml" 7 91 149
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "field.ml" 8 153 155 "field.ml" 29 873 901
+)
+"field.ml" 7 91 134 "field.ml" 7 91 150
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 8 153 158 "field.ml" 8 153 177
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_static
+)
+"field.ml" 8 153 178 "field.ml" 8 153 183
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 7 91 128 "field.ml" 7 91 133
+)
+"field.ml" 8 153 178 "field.ml" 8 153 195
+type(
+  Idl.modifier list
+)
+"field.ml" 8 153 158 "field.ml" 8 153 195
+call(
+  stack
+)
+type(
+  bool
+)
+"field.ml" 9 201 206 "field.ml" 9 201 209
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 7 91 135 "field.ml" 7 91 138
+)
+"field.ml" 9 201 210 "field.ml" 9 201 220
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "field.ml" 7 91 139 "field.ml" 7 91 149
+)
+"field.ml" 9 201 205 "field.ml" 9 201 221
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 11 230 238 "field.ml" 11 230 244
+type(
+  Ident.mmethod option
+)
+ident(
+  def set_id "field.ml" 12 314 318 "field.ml" 29 873 901
+)
+"field.ml" 11 230 246 "field.ml" 11 230 252
+type(
+  Ident.mmethod
+)
+ident(
+  def get_id "field.ml" 12 314 318 "field.ml" 29 873 901
+)
+"field.ml" 11 230 238 "field.ml" 11 230 252
+type(
+  Ident.mmethod option * Ident.mmethod
+)
+"field.ml" 11 230 255 "field.ml" 11 230 281
+type(
+  static:bool ->
+  Ident.clazz -> Idl.field -> Ident.mmethod option * Ident.mmethod
+)
+ident(
+  ext_ref Ident.make_field_method_id
+)
+"field.ml" 11 230 290 "field.ml" 11 230 295
+type(
+  bool
+)
+"field.ml" 11 230 296 "field.ml" 11 230 304
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 7 91 119 "field.ml" 7 91 127
+)
+"field.ml" 11 230 305 "field.ml" 11 230 310
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 7 91 128 "field.ml" 7 91 133
+)
+"field.ml" 11 230 255 "field.ml" 11 230 310
+call(
+  stack
+)
+type(
+  Ident.mmethod option * Ident.mmethod
+)
+"field.ml" 12 314 322 "field.ml" 12 314 326
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "field.ml" 14 400 404 "field.ml" 29 873 901
+)
+"field.ml" 12 314 329 "field.ml" 12 314 341
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  ext_ref Type.convert
+)
+"field.ml" 12 314 342 "field.ml" 12 314 349
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "field.ml" 7 91 111 "field.ml" 7 91 118
+)
+"field.ml" 12 314 351 "field.ml" 12 314 367
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  ext_ref Annot.have_array
+)
+"field.ml" 12 314 368 "field.ml" 12 314 373
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 7 91 128 "field.ml" 7 91 133
+)
+"field.ml" 12 314 368 "field.ml" 12 314 381
+type(
+  Idl.annotation list
+)
+"field.ml" 12 314 350 "field.ml" 12 314 382
+call(
+  stack
+)
+type(
+  bool
+)
+"field.ml" 12 314 383 "field.ml" 12 314 388
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 7 91 128 "field.ml" 7 91 133
+)
+"field.ml" 12 314 383 "field.ml" 12 314 395
+type(
+  Idl.typ
+)
+"field.ml" 12 314 329 "field.ml" 12 314 395
+call(
+  stack
+)
+type(
+  Cidl.typ
+)
+"field.ml" 14 400 408 "field.ml" 14 400 411
+type(
+  Cidl.mmethod list
+)
+ident(
+  def acc "field.ml" 25 709 713 "field.ml" 29 873 901
+)
+"field.ml" 14 400 413 "field.ml" 14 400 423
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "field.ml" 25 709 713 "field.ml" 29 873 901
+)
+"field.ml" 14 400 408 "field.ml" 14 400 423
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 15 427 439 "field.ml" 15 427 445
+type(
+  Ident.mmethod option
+)
+ident(
+  int_ref set_id "field.ml" 11 230 238 "field.ml" 11 230 244
+)
+"field.ml" 16 451 459 "field.ml" 16 451 463
+type(
+  Ident.mmethod option
+)
+"field.ml" 16 451 467 "field.ml" 16 451 470
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 7 91 135 "field.ml" 7 91 138
+)
+"field.ml" 16 451 472 "field.ml" 16 451 482
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "field.ml" 7 91 139 "field.ml" 7 91 149
+)
+"field.ml" 16 451 467 "field.ml" 16 451 482
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 17 483 496 "field.ml" 17 483 502
+type(
+  Ident.mmethod
+)
+ident(
+  def set_id "field.ml" 18 507 514 "field.ml" 22 672 700
+)
+"field.ml" 17 483 491 "field.ml" 17 483 502
+type(
+  Ident.mmethod option
+)
+"field.ml" 18 507 518 "field.ml" 18 507 526
+type(
+  Cidl.mmethod
+)
+ident(
+  def self_set "field.ml" 21 608 611 "field.ml" 22 672 700
+)
+"field.ml" 18 507 542 "field.ml" 18 507 550
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 7 91 119 "field.ml" 7 91 127
+)
+"field.ml" 19 552 569 "field.ml" 19 552 575
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref set_id "field.ml" 17 483 496 "field.ml" 17 483 502
+)
+"field.ml" 20 577 598 "field.ml" 20 577 602
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "field.ml" 12 314 322 "field.ml" 12 314 326
+)
+"field.ml" 20 577 593 "field.ml" 20 577 602
+type(
+  Cidl.mmethod_desc
+)
+"field.ml" 18 507 529 "field.ml" 20 577 604
+type(
+  Cidl.mmethod
+)
+"field.ml" 21 608 615 "field.ml" 21 608 625
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "field.ml" 22 672 675 "field.ml" 22 672 700
+)
+"field.ml" 21 608 628 "field.ml" 21 608 648
+type(
+  Cidl.mmethod ->
+  Cidl.mmethod Env_ident.mmethod_env -> Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  ext_ref Env_ident.add_method
+)
+"field.ml" 21 608 649 "field.ml" 21 608 657
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref self_set "field.ml" 18 507 518 "field.ml" 18 507 526
+)
+"field.ml" 21 608 658 "field.ml" 21 608 668
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "field.ml" 7 91 139 "field.ml" 7 91 149
+)
+"field.ml" 21 608 628 "field.ml" 21 608 668
+call(
+  stack
+)
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 22 672 675 "field.ml" 22 672 683
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref self_set "field.ml" 18 507 518 "field.ml" 18 507 526
+)
+"field.ml" 22 672 685 "field.ml" 22 672 688
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 7 91 135 "field.ml" 7 91 138
+)
+"field.ml" 22 672 675 "field.ml" 22 672 688
+type(
+  Cidl.mmethod list
+)
+"field.ml" 22 672 690 "field.ml" 22 672 700
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "field.ml" 21 608 615 "field.ml" 21 608 625
+)
+"field.ml" 22 672 675 "field.ml" 22 672 700
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 21 608 611 "field.ml" 22 672 700
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 18 507 514 "field.ml" 22 672 700
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 15 427 433 "field.ml" 22 672 700
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 25 709 717 "field.ml" 25 709 725
+type(
+  Cidl.mmethod
+)
+ident(
+  def self_get "field.ml" 28 809 812 "field.ml" 29 873 901
+)
+"field.ml" 25 709 741 "field.ml" 25 709 749
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 7 91 119 "field.ml" 7 91 127
+)
+"field.ml" 26 751 769 "field.ml" 26 751 775
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref get_id "field.ml" 11 230 246 "field.ml" 11 230 252
+)
+"field.ml" 27 777 799 "field.ml" 27 777 803
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "field.ml" 12 314 322 "field.ml" 12 314 326
+)
+"field.ml" 27 777 794 "field.ml" 27 777 803
+type(
+  Cidl.mmethod_desc
+)
+"field.ml" 25 709 728 "field.ml" 27 777 805
+type(
+  Cidl.mmethod
+)
+"field.ml" 28 809 816 "field.ml" 28 809 826
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  def env_method "field.ml" 29 873 876 "field.ml" 29 873 901
+)
+"field.ml" 28 809 829 "field.ml" 28 809 849
+type(
+  Cidl.mmethod ->
+  Cidl.mmethod Env_ident.mmethod_env -> Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  ext_ref Env_ident.add_method
+)
+"field.ml" 28 809 850 "field.ml" 28 809 858
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref self_get "field.ml" 25 709 717 "field.ml" 25 709 725
+)
+"field.ml" 28 809 859 "field.ml" 28 809 869
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "field.ml" 14 400 413 "field.ml" 14 400 423
+)
+"field.ml" 28 809 829 "field.ml" 28 809 869
+call(
+  stack
+)
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 29 873 876 "field.ml" 29 873 884
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref self_get "field.ml" 25 709 717 "field.ml" 25 709 725
+)
+"field.ml" 29 873 886 "field.ml" 29 873 889
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 14 400 408 "field.ml" 14 400 411
+)
+"field.ml" 29 873 876 "field.ml" 29 873 889
+type(
+  Cidl.mmethod list
+)
+"field.ml" 29 873 891 "field.ml" 29 873 901
+type(
+  Cidl.mmethod Env_ident.mmethod_env
+)
+ident(
+  int_ref env_method "field.ml" 28 809 816 "field.ml" 28 809 826
+)
+"field.ml" 29 873 876 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 28 809 812 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 25 709 713 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 14 400 404 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 12 314 318 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 11 230 234 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 8 153 155 "field.ml" 29 873 901
+type(
+  Cidl.mmethod list * Cidl.mmethod Env_ident.mmethod_env
+)
+"field.ml" 31 903 907 "field.ml" 31 903 921
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz -> Idl.field -> Cidl.mmethod list -> Cidl.mmethod list
+)
+ident(
+  def convert_static "field.ml" 52 1569 1603 "_none_" 1 0 -1
+)
+"field.ml" 31 903 922 "field.ml" 31 903 929
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "field.ml" 31 903 930 "field.ml" 52 1569 1603
+)
+"field.ml" 31 903 930 "field.ml" 31 903 938
+type(
+  Ident.clazz
+)
+ident(
+  def class_id "field.ml" 31 903 939 "field.ml" 52 1569 1603
+)
+"field.ml" 31 903 939 "field.ml" 31 903 944
+type(
+  Idl.field
+)
+ident(
+  def field "field.ml" 31 903 945 "field.ml" 52 1569 1603
+)
+"field.ml" 31 903 945 "field.ml" 31 903 948
+type(
+  Cidl.mmethod list
+)
+ident(
+  def acc "field.ml" 32 951 953 "field.ml" 52 1569 1603
+)
+"field.ml" 32 951 956 "field.ml" 32 951 959
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"field.ml" 32 951 961 "field.ml" 32 951 979
+type(
+  Ident.clazz -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"field.ml" 32 951 980 "field.ml" 32 951 988
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 31 903 930 "field.ml" 31 903 938
+)
+"field.ml" 32 951 960 "field.ml" 32 951 989
+call(
+  stack
+)
+type(
+  bool
+)
+"field.ml" 32 951 956 "field.ml" 32 951 989
+type(
+  bool
+)
+"field.ml" 32 951 990 "field.ml" 32 951 992
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"field.ml" 32 951 993 "field.ml" 32 951 996
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"field.ml" 32 951 998 "field.ml" 32 951 1017
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_static
+)
+"field.ml" 32 951 1018 "field.ml" 32 951 1023
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 31 903 939 "field.ml" 31 903 944
+)
+"field.ml" 32 951 1018 "field.ml" 32 951 1035
+type(
+  Idl.modifier list
+)
+"field.ml" 32 951 997 "field.ml" 32 951 1036
+call(
+  stack
+)
+type(
+  bool
+)
+"field.ml" 32 951 993 "field.ml" 32 951 1036
+type(
+  bool
+)
+"field.ml" 32 951 956 "field.ml" 32 951 1036
+type(
+  bool
+)
+"field.ml" 33 1042 1046 "field.ml" 33 1042 1049
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 31 903 945 "field.ml" 31 903 948
+)
+"field.ml" 36 1062 1070 "field.ml" 36 1062 1076
+type(
+  Ident.mmethod option
+)
+ident(
+  def set_id "field.ml" 37 1145 1149 "field.ml" 52 1569 1603
+)
+"field.ml" 36 1062 1078 "field.ml" 36 1062 1084
+type(
+  Ident.mmethod
+)
+ident(
+  def get_id "field.ml" 37 1145 1149 "field.ml" 52 1569 1603
+)
+"field.ml" 36 1062 1070 "field.ml" 36 1062 1084
+type(
+  Ident.mmethod option * Ident.mmethod
+)
+"field.ml" 36 1062 1087 "field.ml" 36 1062 1113
+type(
+  static:bool ->
+  Ident.clazz -> Idl.field -> Ident.mmethod option * Ident.mmethod
+)
+ident(
+  ext_ref Ident.make_field_method_id
+)
+"field.ml" 36 1062 1122 "field.ml" 36 1062 1126
+type(
+  bool
+)
+"field.ml" 36 1062 1127 "field.ml" 36 1062 1135
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 31 903 930 "field.ml" 31 903 938
+)
+"field.ml" 36 1062 1136 "field.ml" 36 1062 1141
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 31 903 939 "field.ml" 31 903 944
+)
+"field.ml" 36 1062 1087 "field.ml" 36 1062 1141
+call(
+  stack
+)
+type(
+  Ident.mmethod option * Ident.mmethod
+)
+"field.ml" 37 1145 1153 "field.ml" 37 1145 1157
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "field.ml" 39 1231 1235 "field.ml" 52 1569 1603
+)
+"field.ml" 37 1145 1160 "field.ml" 37 1145 1172
+type(
+  string list * Env_idl.clazz_env -> bool -> Idl.typ -> Cidl.typ
+)
+ident(
+  ext_ref Type.convert
+)
+"field.ml" 37 1145 1173 "field.ml" 37 1145 1180
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "field.ml" 31 903 922 "field.ml" 31 903 929
+)
+"field.ml" 37 1145 1182 "field.ml" 37 1145 1198
+type(
+  Idl.annotation list -> bool
+)
+ident(
+  ext_ref Annot.have_array
+)
+"field.ml" 37 1145 1199 "field.ml" 37 1145 1204
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 31 903 939 "field.ml" 31 903 944
+)
+"field.ml" 37 1145 1199 "field.ml" 37 1145 1212
+type(
+  Idl.annotation list
+)
+"field.ml" 37 1145 1181 "field.ml" 37 1145 1213
+call(
+  stack
+)
+type(
+  bool
+)
+"field.ml" 37 1145 1214 "field.ml" 37 1145 1219
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 31 903 939 "field.ml" 31 903 944
+)
+"field.ml" 37 1145 1214 "field.ml" 37 1145 1226
+type(
+  Idl.typ
+)
+"field.ml" 37 1145 1160 "field.ml" 37 1145 1226
+call(
+  stack
+)
+type(
+  Cidl.typ
+)
+"field.ml" 39 1231 1238 "field.ml" 39 1231 1259
+type(
+  Idl.modifier list -> bool
+)
+ident(
+  ext_ref Modifiers.is_abstract
+)
+"field.ml" 39 1231 1260 "field.ml" 39 1231 1265
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 31 903 939 "field.ml" 31 903 944
+)
+"field.ml" 39 1231 1260 "field.ml" 39 1231 1277
+type(
+  Idl.modifier list
+)
+"field.ml" 39 1231 1238 "field.ml" 39 1231 1277
+call(
+  stack
+)
+type(
+  bool
+)
+"field.ml" 40 1283 1289 "field.ml" 40 1283 1294
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"field.ml" 40 1283 1325 "field.ml" 40 1283 1330
+type(
+  Idl.field
+)
+ident(
+  int_ref field "field.ml" 31 903 939 "field.ml" 31 903 944
+)
+"field.ml" 40 1283 1325 "field.ml" 40 1283 1341
+type(
+  Loc.t
+)
+"field.ml" 40 1283 1302 "field.ml" 40 1283 1342
+type(
+  Error.t
+)
+"field.ml" 40 1283 1295 "field.ml" 40 1283 1343
+type(
+  exn
+)
+"field.ml" 40 1283 1289 "field.ml" 40 1283 1343
+type(
+  unit
+)
+"field.ml" 39 1231 1235 "field.ml" 40 1283 1343
+type(
+  unit
+)
+"field.ml" 42 1350 1358 "field.ml" 42 1350 1361
+type(
+  Cidl.mmethod list
+)
+ident(
+  def acc "field.ml" 50 1517 1521 "field.ml" 52 1569 1603
+)
+"field.ml" 44 1366 1378 "field.ml" 44 1366 1384
+type(
+  Ident.mmethod option
+)
+ident(
+  int_ref set_id "field.ml" 36 1062 1070 "field.ml" 36 1062 1076
+)
+"field.ml" 45 1390 1398 "field.ml" 45 1390 1402
+type(
+  Ident.mmethod option
+)
+"field.ml" 45 1390 1406 "field.ml" 45 1390 1409
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 31 903 945 "field.ml" 31 903 948
+)
+"field.ml" 46 1410 1423 "field.ml" 46 1410 1429
+type(
+  Ident.mmethod
+)
+ident(
+  def set_id "field.ml" 46 1410 1432 "field.ml" 48 1477 1508
+)
+"field.ml" 46 1410 1418 "field.ml" 46 1410 1429
+type(
+  Ident.mmethod option
+)
+"field.ml" 46 1410 1445 "field.ml" 46 1410 1453
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 31 903 930 "field.ml" 31 903 938
+)
+"field.ml" 47 1455 1469 "field.ml" 47 1455 1475
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref set_id "field.ml" 46 1410 1423 "field.ml" 46 1410 1429
+)
+"field.ml" 48 1477 1495 "field.ml" 48 1477 1499
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "field.ml" 37 1145 1153 "field.ml" 37 1145 1157
+)
+"field.ml" 48 1477 1490 "field.ml" 48 1477 1499
+type(
+  Cidl.mmethod_desc
+)
+"field.ml" 46 1410 1432 "field.ml" 48 1477 1501
+type(
+  Cidl.mmethod
+)
+"field.ml" 48 1477 1505 "field.ml" 48 1477 1508
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 31 903 945 "field.ml" 31 903 948
+)
+"field.ml" 46 1410 1432 "field.ml" 48 1477 1508
+type(
+  Cidl.mmethod list
+)
+"field.ml" 44 1366 1372 "field.ml" 48 1477 1508
+type(
+  Cidl.mmethod list
+)
+"field.ml" 50 1517 1534 "field.ml" 50 1517 1542
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "field.ml" 31 903 930 "field.ml" 31 903 938
+)
+"field.ml" 51 1544 1561 "field.ml" 51 1544 1567
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref get_id "field.ml" 36 1062 1078 "field.ml" 36 1062 1084
+)
+"field.ml" 52 1569 1590 "field.ml" 52 1569 1594
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "field.ml" 37 1145 1153 "field.ml" 37 1145 1157
+)
+"field.ml" 52 1569 1585 "field.ml" 52 1569 1594
+type(
+  Cidl.mmethod_desc
+)
+"field.ml" 50 1517 1521 "field.ml" 52 1569 1596
+type(
+  Cidl.mmethod
+)
+"field.ml" 52 1569 1600 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref acc "field.ml" 42 1350 1358 "field.ml" 42 1350 1361
+)
+"field.ml" 50 1517 1521 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)
+"field.ml" 42 1350 1354 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)
+"field.ml" 39 1231 1235 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)
+"field.ml" 37 1145 1149 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)
+"field.ml" 36 1062 1066 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)
+"field.ml" 32 951 953 "field.ml" 52 1569 1603
+type(
+  Cidl.mmethod list
+)

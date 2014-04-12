@@ -1,0 +1,471 @@
+"filesystem.ml" 3 68 72 "filesystem.ml" 3 68 80
+type(
+  string list -> string -> string
+)
+ident(
+  def filename "filesystem.ml" 10 251 251 "_none_" 1 0 -1
+)
+"filesystem.ml" 3 68 81 "filesystem.ml" 3 68 84
+type(
+  string list
+)
+ident(
+  def dir "filesystem.ml" 3 68 85 "filesystem.ml" 8 190 249
+)
+"filesystem.ml" 3 68 85 "filesystem.ml" 3 68 89
+type(
+  string
+)
+ident(
+  def name "filesystem.ml" 4 92 94 "filesystem.ml" 8 190 249
+)
+"filesystem.ml" 4 92 102 "filesystem.ml" 4 92 106
+type(
+  string -> string list -> string
+)
+ident(
+  def loop "filesystem.ml" 4 92 94 "filesystem.ml" 8 190 249
+)
+"filesystem.ml" 4 92 107 "filesystem.ml" 4 92 110
+type(
+  string
+)
+ident(
+  def acc "filesystem.ml" 4 92 111 "filesystem.ml" 6 142 184
+)
+"filesystem.ml" 4 92 111 "filesystem.ml" 4 92 112
+type(
+  string list
+)
+ident(
+  def l "filesystem.ml" 4 92 115 "filesystem.ml" 6 142 184
+)
+"filesystem.ml" 4 92 121 "filesystem.ml" 4 92 122
+type(
+  string list
+)
+ident(
+  int_ref l "filesystem.ml" 4 92 111 "filesystem.ml" 4 92 112
+)
+"filesystem.ml" 5 128 132 "filesystem.ml" 5 128 134
+type(
+  string list
+)
+"filesystem.ml" 5 128 138 "filesystem.ml" 5 128 141
+type(
+  string
+)
+ident(
+  int_ref acc "filesystem.ml" 4 92 107 "filesystem.ml" 4 92 110
+)
+"filesystem.ml" 6 142 146 "filesystem.ml" 6 142 147
+type(
+  string
+)
+ident(
+  def n "filesystem.ml" 6 142 154 "filesystem.ml" 6 142 184
+)
+"filesystem.ml" 6 142 149 "filesystem.ml" 6 142 150
+type(
+  string list
+)
+ident(
+  def l "filesystem.ml" 6 142 154 "filesystem.ml" 6 142 184
+)
+"filesystem.ml" 6 142 146 "filesystem.ml" 6 142 150
+type(
+  string list
+)
+"filesystem.ml" 6 142 154 "filesystem.ml" 6 142 158
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref loop "filesystem.ml" 4 92 102 "filesystem.ml" 4 92 106
+)
+"filesystem.ml" 6 142 160 "filesystem.ml" 6 142 175
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"filesystem.ml" 6 142 176 "filesystem.ml" 6 142 179
+type(
+  string
+)
+ident(
+  int_ref acc "filesystem.ml" 4 92 107 "filesystem.ml" 4 92 110
+)
+"filesystem.ml" 6 142 180 "filesystem.ml" 6 142 181
+type(
+  string
+)
+ident(
+  int_ref n "filesystem.ml" 6 142 146 "filesystem.ml" 6 142 147
+)
+"filesystem.ml" 6 142 159 "filesystem.ml" 6 142 182
+call(
+  stack
+)
+type(
+  string
+)
+"filesystem.ml" 6 142 183 "filesystem.ml" 6 142 184
+type(
+  string list
+)
+ident(
+  int_ref l "filesystem.ml" 6 142 149 "filesystem.ml" 6 142 150
+)
+"filesystem.ml" 6 142 154 "filesystem.ml" 6 142 184
+call(
+  tail
+)
+type(
+  string
+)
+"filesystem.ml" 4 92 115 "filesystem.ml" 6 142 184
+type(
+  string
+)
+"filesystem.ml" 8 190 192 "filesystem.ml" 8 190 207
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"filesystem.ml" 8 190 209 "filesystem.ml" 8 190 213
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref loop "filesystem.ml" 4 92 102 "filesystem.ml" 4 92 106
+)
+"filesystem.ml" 8 190 214 "filesystem.ml" 8 190 239
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"filesystem.ml" 8 190 240 "filesystem.ml" 8 190 243
+type(
+  string list
+)
+ident(
+  int_ref dir "filesystem.ml" 3 68 81 "filesystem.ml" 3 68 84
+)
+"filesystem.ml" 8 190 208 "filesystem.ml" 8 190 244
+call(
+  stack
+)
+type(
+  string
+)
+"filesystem.ml" 8 190 245 "filesystem.ml" 8 190 249
+type(
+  string
+)
+ident(
+  int_ref name "filesystem.ml" 3 68 85 "filesystem.ml" 3 68 89
+)
+"filesystem.ml" 8 190 192 "filesystem.ml" 8 190 249
+call(
+  tail
+)
+type(
+  string
+)
+"filesystem.ml" 4 92 94 "filesystem.ml" 8 190 249
+type(
+  string
+)
+"filesystem.ml" 10 251 255 "filesystem.ml" 10 251 268
+type(
+  string list -> string -> out_channel
+)
+ident(
+  def safe_open_out "filesystem.ml" 20 572 591 "_none_" 1 0 -1
+)
+"filesystem.ml" 10 251 269 "filesystem.ml" 10 251 272
+type(
+  string list
+)
+ident(
+  def dir "filesystem.ml" 10 251 273 "filesystem.ml" 20 572 591
+)
+"filesystem.ml" 10 251 273 "filesystem.ml" 10 251 277
+type(
+  string
+)
+ident(
+  def name "filesystem.ml" 11 280 282 "filesystem.ml" 20 572 591
+)
+"filesystem.ml" 11 280 290 "filesystem.ml" 11 280 294
+type(
+  string -> string list -> string
+)
+ident(
+  def loop "filesystem.ml" 11 280 282 "filesystem.ml" 20 572 591
+)
+"filesystem.ml" 11 280 295 "filesystem.ml" 11 280 298
+type(
+  string
+)
+ident(
+  def acc "filesystem.ml" 11 280 299 "filesystem.ml" 17 472 488
+)
+"filesystem.ml" 11 280 299 "filesystem.ml" 11 280 300
+type(
+  string list
+)
+ident(
+  def l "filesystem.ml" 11 280 303 "filesystem.ml" 17 472 488
+)
+"filesystem.ml" 11 280 309 "filesystem.ml" 11 280 310
+type(
+  string list
+)
+ident(
+  int_ref l "filesystem.ml" 11 280 299 "filesystem.ml" 11 280 300
+)
+"filesystem.ml" 12 316 320 "filesystem.ml" 12 316 322
+type(
+  string list
+)
+"filesystem.ml" 12 316 326 "filesystem.ml" 12 316 329
+type(
+  string
+)
+ident(
+  int_ref acc "filesystem.ml" 11 280 295 "filesystem.ml" 11 280 298
+)
+"filesystem.ml" 13 330 334 "filesystem.ml" 13 330 335
+type(
+  string
+)
+ident(
+  def n "filesystem.ml" 14 343 349 "filesystem.ml" 17 472 488
+)
+"filesystem.ml" 13 330 337 "filesystem.ml" 13 330 338
+type(
+  string list
+)
+ident(
+  def l "filesystem.ml" 14 343 349 "filesystem.ml" 17 472 488
+)
+"filesystem.ml" 13 330 334 "filesystem.ml" 13 330 338
+type(
+  string list
+)
+"filesystem.ml" 14 343 353 "filesystem.ml" 14 343 356
+type(
+  string
+)
+ident(
+  def acc "filesystem.ml" 15 384 390 "filesystem.ml" 17 472 488
+)
+"filesystem.ml" 14 343 359 "filesystem.ml" 14 343 374
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"filesystem.ml" 14 343 375 "filesystem.ml" 14 343 378
+type(
+  string
+)
+ident(
+  int_ref acc "filesystem.ml" 11 280 295 "filesystem.ml" 11 280 298
+)
+"filesystem.ml" 14 343 379 "filesystem.ml" 14 343 380
+type(
+  string
+)
+ident(
+  int_ref n "filesystem.ml" 13 330 334 "filesystem.ml" 13 330 335
+)
+"filesystem.ml" 14 343 359 "filesystem.ml" 14 343 380
+call(
+  stack
+)
+type(
+  string
+)
+"filesystem.ml" 15 384 395 "filesystem.ml" 15 384 405
+type(
+  string -> Unix.file_perm -> unit
+)
+ident(
+  ext_ref Unix.mkdir
+)
+"filesystem.ml" 15 384 406 "filesystem.ml" 15 384 409
+type(
+  string
+)
+ident(
+  int_ref acc "filesystem.ml" 14 343 353 "filesystem.ml" 14 343 356
+)
+"filesystem.ml" 15 384 410 "filesystem.ml" 15 384 415
+type(
+  Unix.file_perm
+)
+"filesystem.ml" 15 384 395 "filesystem.ml" 15 384 415
+call(
+  stack
+)
+type(
+  unit
+)
+"filesystem.ml" 16 422 447 "filesystem.ml" 16 422 458
+type(
+  Unix.error
+)
+"filesystem.ml" 16 422 459 "filesystem.ml" 16 422 460
+type(
+  string
+)
+"filesystem.ml" 16 422 461 "filesystem.ml" 16 422 462
+type(
+  string
+)
+"filesystem.ml" 16 422 430 "filesystem.ml" 16 422 463
+type(
+  exn
+)
+"filesystem.ml" 16 422 467 "filesystem.ml" 16 422 469
+type(
+  unit
+)
+"filesystem.ml" 15 384 390 "filesystem.ml" 16 422 470
+type(
+  unit
+)
+"filesystem.ml" 17 472 478 "filesystem.ml" 17 472 482
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref loop "filesystem.ml" 11 280 290 "filesystem.ml" 11 280 294
+)
+"filesystem.ml" 17 472 483 "filesystem.ml" 17 472 486
+type(
+  string
+)
+ident(
+  int_ref acc "filesystem.ml" 14 343 353 "filesystem.ml" 14 343 356
+)
+"filesystem.ml" 17 472 487 "filesystem.ml" 17 472 488
+type(
+  string list
+)
+ident(
+  int_ref l "filesystem.ml" 13 330 337 "filesystem.ml" 13 330 338
+)
+"filesystem.ml" 17 472 478 "filesystem.ml" 17 472 488
+call(
+  tail
+)
+type(
+  string
+)
+"filesystem.ml" 15 384 390 "filesystem.ml" 17 472 488
+type(
+  string
+)
+"filesystem.ml" 14 343 349 "filesystem.ml" 17 472 488
+type(
+  string
+)
+"filesystem.ml" 11 280 303 "filesystem.ml" 17 472 488
+type(
+  string
+)
+"filesystem.ml" 19 494 500 "filesystem.ml" 19 494 508
+type(
+  string
+)
+ident(
+  def filename "filesystem.ml" 20 572 574 "filesystem.ml" 20 572 591
+)
+"filesystem.ml" 19 494 511 "filesystem.ml" 19 494 526
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"filesystem.ml" 19 494 528 "filesystem.ml" 19 494 532
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref loop "filesystem.ml" 11 280 290 "filesystem.ml" 11 280 294
+)
+"filesystem.ml" 19 494 533 "filesystem.ml" 19 494 558
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"filesystem.ml" 19 494 559 "filesystem.ml" 19 494 562
+type(
+  string list
+)
+ident(
+  int_ref dir "filesystem.ml" 10 251 269 "filesystem.ml" 10 251 272
+)
+"filesystem.ml" 19 494 527 "filesystem.ml" 19 494 563
+call(
+  stack
+)
+type(
+  string
+)
+"filesystem.ml" 19 494 564 "filesystem.ml" 19 494 568
+type(
+  string
+)
+ident(
+  int_ref name "filesystem.ml" 10 251 273 "filesystem.ml" 10 251 277
+)
+"filesystem.ml" 19 494 511 "filesystem.ml" 19 494 568
+call(
+  stack
+)
+type(
+  string
+)
+"filesystem.ml" 20 572 574 "filesystem.ml" 20 572 582
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"filesystem.ml" 20 572 583 "filesystem.ml" 20 572 591
+type(
+  string
+)
+ident(
+  int_ref filename "filesystem.ml" 19 494 500 "filesystem.ml" 19 494 508
+)
+"filesystem.ml" 20 572 574 "filesystem.ml" 20 572 591
+call(
+  tail
+)
+type(
+  out_channel
+)
+"filesystem.ml" 19 494 496 "filesystem.ml" 20 572 591
+type(
+  out_channel
+)
+"filesystem.ml" 11 280 282 "filesystem.ml" 20 572 591
+type(
+  out_channel
+)

@@ -1,0 +1,726 @@
+"p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  def _loc "p4helper.ml" 7 133 133 "_none_" 1 0 -1
+)
+"p4helper.ml" 3 21 32 "p4helper.ml" 3 21 41
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  ext_ref Camlp4.PreCast.Loc.ghost
+)
+"p4helper.ml" 7 133 137 "p4helper.ml" 7 133 146
+type(
+  Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  def str_items "p4helper.ml" 11 297 297 "_none_" 1 0 -1
+)
+"p4helper.ml" 7 133 147 "p4helper.ml" 7 133 152
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  def items "p4helper.ml" 7 133 155 "p4helper.ml" 9 206 295
+)
+"p4helper.ml" 7 133 161 "p4helper.ml" 7 133 169
+type(
+  Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  ext_ref List.rev
+)
+"p4helper.ml" 7 133 170 "p4helper.ml" 7 133 175
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  int_ref items "p4helper.ml" 7 133 147 "p4helper.ml" 7 133 152
+)
+"p4helper.ml" 7 133 161 "p4helper.ml" 7 133 175
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"p4helper.ml" 8 181 185 "p4helper.ml" 8 181 187
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"p4helper.ml" 8 181 202 "p4helper.ml" 8 181 202
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 9 206 210 "p4helper.ml" 9 206 214
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+ident(
+  def last "p4helper.ml" 9 206 225 "p4helper.ml" 9 206 295
+)
+"p4helper.ml" 9 206 216 "p4helper.ml" 9 206 221
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  def items "p4helper.ml" 9 206 225 "p4helper.ml" 9 206 295
+)
+"p4helper.ml" 9 206 210 "p4helper.ml" 9 206 221
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"p4helper.ml" 9 206 225 "p4helper.ml" 9 206 239
+type(
+  (Camlp4.PreCast.Ast.str_item ->
+   Camlp4.PreCast.Ast.str_item -> Camlp4.PreCast.Ast.str_item) ->
+  Camlp4.PreCast.Ast.str_item ->
+  Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  ext_ref List.fold_left
+)
+"p4helper.ml" 9 206 245 "p4helper.ml" 9 206 247
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+ident(
+  def st "p4helper.ml" 9 206 248 "p4helper.ml" 9 206 283
+)
+"p4helper.ml" 9 206 248 "p4helper.ml" 9 206 252
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+ident(
+  def item "p4helper.ml" 9 206 267 "p4helper.ml" 9 206 267
+)
+"p4helper.ml" 9 206 267 "p4helper.ml" 9 206 267
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 9 206 268 "p4helper.ml" 9 206 272
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+ident(
+  int_ref item "p4helper.ml" 9 206 248 "p4helper.ml" 9 206 252
+)
+"p4helper.ml" 9 206 276 "p4helper.ml" 9 206 278
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+ident(
+  int_ref st "p4helper.ml" 9 206 245 "p4helper.ml" 9 206 247
+)
+"p4helper.ml" 9 206 248 "p4helper.ml" 9 206 283
+type(
+  Camlp4.PreCast.Ast.str_item -> Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 9 206 245 "p4helper.ml" 9 206 283
+type(
+  Camlp4.PreCast.Ast.str_item ->
+  Camlp4.PreCast.Ast.str_item -> Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 9 206 285 "p4helper.ml" 9 206 289
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+ident(
+  int_ref last "p4helper.ml" 9 206 210 "p4helper.ml" 9 206 214
+)
+"p4helper.ml" 9 206 290 "p4helper.ml" 9 206 295
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  int_ref items "p4helper.ml" 9 206 216 "p4helper.ml" 9 206 221
+)
+"p4helper.ml" 9 206 225 "p4helper.ml" 9 206 295
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 7 133 155 "p4helper.ml" 9 206 295
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 7 133 147 "p4helper.ml" 9 206 295
+type(
+  Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
+)
+"p4helper.ml" 11 297 301 "p4helper.ml" 11 297 310
+type(
+  Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  def sig_items "p4helper.ml" 15 461 461 "_none_" 1 0 -1
+)
+"p4helper.ml" 11 297 311 "p4helper.ml" 11 297 316
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  def items "p4helper.ml" 11 297 319 "p4helper.ml" 13 370 459
+)
+"p4helper.ml" 11 297 325 "p4helper.ml" 11 297 333
+type(
+  Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  ext_ref List.rev
+)
+"p4helper.ml" 11 297 334 "p4helper.ml" 11 297 339
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  int_ref items "p4helper.ml" 11 297 311 "p4helper.ml" 11 297 316
+)
+"p4helper.ml" 11 297 325 "p4helper.ml" 11 297 339
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"p4helper.ml" 12 345 349 "p4helper.ml" 12 345 351
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"p4helper.ml" 12 345 366 "p4helper.ml" 12 345 366
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 13 370 374 "p4helper.ml" 13 370 378
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  def last "p4helper.ml" 13 370 389 "p4helper.ml" 13 370 459
+)
+"p4helper.ml" 13 370 380 "p4helper.ml" 13 370 385
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  def items "p4helper.ml" 13 370 389 "p4helper.ml" 13 370 459
+)
+"p4helper.ml" 13 370 374 "p4helper.ml" 13 370 385
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"p4helper.ml" 13 370 389 "p4helper.ml" 13 370 403
+type(
+  (Camlp4.PreCast.Ast.sig_item ->
+   Camlp4.PreCast.Ast.sig_item -> Camlp4.PreCast.Ast.sig_item) ->
+  Camlp4.PreCast.Ast.sig_item ->
+  Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  ext_ref List.fold_left
+)
+"p4helper.ml" 13 370 409 "p4helper.ml" 13 370 411
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  def st "p4helper.ml" 13 370 412 "p4helper.ml" 13 370 447
+)
+"p4helper.ml" 13 370 412 "p4helper.ml" 13 370 416
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  def item "p4helper.ml" 13 370 431 "p4helper.ml" 13 370 431
+)
+"p4helper.ml" 13 370 431 "p4helper.ml" 13 370 431
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 13 370 432 "p4helper.ml" 13 370 436
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  int_ref item "p4helper.ml" 13 370 412 "p4helper.ml" 13 370 416
+)
+"p4helper.ml" 13 370 440 "p4helper.ml" 13 370 442
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  int_ref st "p4helper.ml" 13 370 409 "p4helper.ml" 13 370 411
+)
+"p4helper.ml" 13 370 412 "p4helper.ml" 13 370 447
+type(
+  Camlp4.PreCast.Ast.sig_item -> Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 13 370 409 "p4helper.ml" 13 370 447
+type(
+  Camlp4.PreCast.Ast.sig_item ->
+  Camlp4.PreCast.Ast.sig_item -> Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 13 370 449 "p4helper.ml" 13 370 453
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  int_ref last "p4helper.ml" 13 370 374 "p4helper.ml" 13 370 378
+)
+"p4helper.ml" 13 370 454 "p4helper.ml" 13 370 459
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  int_ref items "p4helper.ml" 13 370 380 "p4helper.ml" 13 370 385
+)
+"p4helper.ml" 13 370 389 "p4helper.ml" 13 370 459
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 11 297 319 "p4helper.ml" 13 370 459
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 11 297 311 "p4helper.ml" 13 370 459
+type(
+  Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
+)
+"p4helper.ml" 15 461 465 "p4helper.ml" 15 461 476
+type(
+  Camlp4.PreCast.Ast.class_type list -> Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def class_types "p4helper.ml" 19 634 634 "_none_" 1 0 -1
+)
+"p4helper.ml" 15 461 477 "p4helper.ml" 15 461 482
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+ident(
+  def items "p4helper.ml" 15 461 485 "p4helper.ml" 17 538 632
+)
+"p4helper.ml" 15 461 491 "p4helper.ml" 15 461 499
+type(
+  Camlp4.PreCast.Ast.class_type list -> Camlp4.PreCast.Ast.class_type list
+)
+ident(
+  ext_ref List.rev
+)
+"p4helper.ml" 15 461 500 "p4helper.ml" 15 461 505
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+ident(
+  int_ref items "p4helper.ml" 15 461 477 "p4helper.ml" 15 461 482
+)
+"p4helper.ml" 15 461 491 "p4helper.ml" 15 461 505
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+"p4helper.ml" 16 511 515 "p4helper.ml" 16 511 517
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+"p4helper.ml" 16 511 534 "p4helper.ml" 16 511 534
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 17 538 542 "p4helper.ml" 17 538 546
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def last "p4helper.ml" 17 538 557 "p4helper.ml" 17 538 632
+)
+"p4helper.ml" 17 538 548 "p4helper.ml" 17 538 553
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+ident(
+  def items "p4helper.ml" 17 538 557 "p4helper.ml" 17 538 632
+)
+"p4helper.ml" 17 538 542 "p4helper.ml" 17 538 553
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+"p4helper.ml" 17 538 557 "p4helper.ml" 17 538 571
+type(
+  (Camlp4.PreCast.Ast.class_type ->
+   Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type) ->
+  Camlp4.PreCast.Ast.class_type ->
+  Camlp4.PreCast.Ast.class_type list -> Camlp4.PreCast.Ast.class_type
+)
+ident(
+  ext_ref List.fold_left
+)
+"p4helper.ml" 17 538 577 "p4helper.ml" 17 538 579
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def st "p4helper.ml" 17 538 580 "p4helper.ml" 17 538 620
+)
+"p4helper.ml" 17 538 580 "p4helper.ml" 17 538 584
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  def item "p4helper.ml" 17 538 601 "p4helper.ml" 17 538 601
+)
+"p4helper.ml" 17 538 601 "p4helper.ml" 17 538 601
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 17 538 602 "p4helper.ml" 17 538 606
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref item "p4helper.ml" 17 538 580 "p4helper.ml" 17 538 584
+)
+"p4helper.ml" 17 538 613 "p4helper.ml" 17 538 615
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref st "p4helper.ml" 17 538 577 "p4helper.ml" 17 538 579
+)
+"p4helper.ml" 17 538 580 "p4helper.ml" 17 538 620
+type(
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 17 538 577 "p4helper.ml" 17 538 620
+type(
+  Camlp4.PreCast.Ast.class_type ->
+  Camlp4.PreCast.Ast.class_type -> Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 17 538 622 "p4helper.ml" 17 538 626
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+ident(
+  int_ref last "p4helper.ml" 17 538 542 "p4helper.ml" 17 538 546
+)
+"p4helper.ml" 17 538 627 "p4helper.ml" 17 538 632
+type(
+  Camlp4.PreCast.Ast.class_type list
+)
+ident(
+  int_ref items "p4helper.ml" 17 538 548 "p4helper.ml" 17 538 553
+)
+"p4helper.ml" 17 538 557 "p4helper.ml" 17 538 632
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 15 461 485 "p4helper.ml" 17 538 632
+type(
+  Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 15 461 477 "p4helper.ml" 17 538 632
+type(
+  Camlp4.PreCast.Ast.class_type list -> Camlp4.PreCast.Ast.class_type
+)
+"p4helper.ml" 19 634 638 "p4helper.ml" 19 634 649
+type(
+  Camlp4.PreCast.Ast.class_expr list -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def class_exprs "p4helper.ml" 24 856 856 "_none_" 1 0 -1
+)
+"p4helper.ml" 19 634 650 "p4helper.ml" 19 634 655
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+ident(
+  def items "p4helper.ml" 19 634 658 "p4helper.ml" 21 711 805
+)
+"p4helper.ml" 19 634 664 "p4helper.ml" 19 634 672
+type(
+  Camlp4.PreCast.Ast.class_expr list -> Camlp4.PreCast.Ast.class_expr list
+)
+ident(
+  ext_ref List.rev
+)
+"p4helper.ml" 19 634 673 "p4helper.ml" 19 634 678
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+ident(
+  int_ref items "p4helper.ml" 19 634 650 "p4helper.ml" 19 634 655
+)
+"p4helper.ml" 19 634 664 "p4helper.ml" 19 634 678
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+"p4helper.ml" 20 684 688 "p4helper.ml" 20 684 690
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+"p4helper.ml" 20 684 707 "p4helper.ml" 20 684 707
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 21 711 715 "p4helper.ml" 21 711 719
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def last "p4helper.ml" 21 711 730 "p4helper.ml" 21 711 805
+)
+"p4helper.ml" 21 711 721 "p4helper.ml" 21 711 726
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+ident(
+  def items "p4helper.ml" 21 711 730 "p4helper.ml" 21 711 805
+)
+"p4helper.ml" 21 711 715 "p4helper.ml" 21 711 726
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+"p4helper.ml" 21 711 730 "p4helper.ml" 21 711 744
+type(
+  (Camlp4.PreCast.Ast.class_expr ->
+   Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr) ->
+  Camlp4.PreCast.Ast.class_expr ->
+  Camlp4.PreCast.Ast.class_expr list -> Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  ext_ref List.fold_left
+)
+"p4helper.ml" 21 711 750 "p4helper.ml" 21 711 752
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def st "p4helper.ml" 21 711 753 "p4helper.ml" 21 711 793
+)
+"p4helper.ml" 21 711 753 "p4helper.ml" 21 711 757
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  def item "p4helper.ml" 21 711 774 "p4helper.ml" 21 711 774
+)
+"p4helper.ml" 21 711 774 "p4helper.ml" 21 711 774
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 21 711 775 "p4helper.ml" 21 711 779
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref item "p4helper.ml" 21 711 753 "p4helper.ml" 21 711 757
+)
+"p4helper.ml" 21 711 786 "p4helper.ml" 21 711 788
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref st "p4helper.ml" 21 711 750 "p4helper.ml" 21 711 752
+)
+"p4helper.ml" 21 711 753 "p4helper.ml" 21 711 793
+type(
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 21 711 750 "p4helper.ml" 21 711 793
+type(
+  Camlp4.PreCast.Ast.class_expr ->
+  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 21 711 795 "p4helper.ml" 21 711 799
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+ident(
+  int_ref last "p4helper.ml" 21 711 715 "p4helper.ml" 21 711 719
+)
+"p4helper.ml" 21 711 800 "p4helper.ml" 21 711 805
+type(
+  Camlp4.PreCast.Ast.class_expr list
+)
+ident(
+  int_ref items "p4helper.ml" 21 711 721 "p4helper.ml" 21 711 726
+)
+"p4helper.ml" 21 711 730 "p4helper.ml" 21 711 805
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 19 634 658 "p4helper.ml" 21 711 805
+type(
+  Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 19 634 650 "p4helper.ml" 21 711 805
+type(
+  Camlp4.PreCast.Ast.class_expr list -> Camlp4.PreCast.Ast.class_expr
+)
+"p4helper.ml" 24 856 860 "p4helper.ml" 24 856 863
+type(
+  string -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  def jni "p4helper.ml" 25 893 893 "_none_" 1 0 -1
+)
+"p4helper.ml" 24 856 864 "p4helper.ml" 24 856 865
+type(
+  string
+)
+ident(
+  def s "p4helper.ml" 24 856 876 "p4helper.ml" 24 856 876
+)
+"p4helper.ml" 24 856 876 "p4helper.ml" 24 856 876
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"p4helper.ml" 24 856 876 "p4helper.ml" 24 856 877
+type(
+  string
+)
+ident(
+  int_ref s "p4helper.ml" 24 856 864 "p4helper.ml" 24 856 865
+)
+"p4helper.ml" 24 856 864 "p4helper.ml" 24 856 892
+type(
+  string -> Camlp4.PreCast.Ast.ident
+)
+"p4helper.ml" 25 893 897 "p4helper.ml" 25 893 905
+type(
+  string -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  def expr_lid "p4helper.ml" 25 893 928 "_none_" 1 0 -1
+)
+"p4helper.ml" 25 893 906 "p4helper.ml" 25 893 907
+type(
+  string
+)
+ident(
+  def s "p4helper.ml" 25 893 917 "p4helper.ml" 25 893 917
+)
+"p4helper.ml" 25 893 917 "p4helper.ml" 25 893 917
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "p4helper.ml" 3 21 25 "p4helper.ml" 3 21 29
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"p4helper.ml" 25 893 917 "p4helper.ml" 25 893 918
+type(
+  string
+)
+ident(
+  int_ref s "p4helper.ml" 25 893 906 "p4helper.ml" 25 893 907
+)
+"p4helper.ml" 25 893 906 "p4helper.ml" 25 893 928
+type(
+  string -> Camlp4.PreCast.Ast.expr
+)

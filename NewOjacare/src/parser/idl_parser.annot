@@ -1,0 +1,594 @@
+"idl_parser.ml" 5 87 91 "idl_parser.ml" 5 87 100
+type(
+  string -> Idl.file
+)
+ident(
+  def from_file "idl_parser.ml" 29 709 788 "_none_" 1 0 -1
+)
+"idl_parser.ml" 5 87 101 "idl_parser.ml" 5 87 105
+type(
+  string
+)
+ident(
+  def name "idl_parser.ml" 6 108 110 "idl_parser.ml" 29 709 788
+)
+"idl_parser.ml" 7 114 122 "idl_parser.ml" 7 114 128
+type(
+  in_channel
+)
+ident(
+  def inchan "idl_parser.ml" 8 147 151 "idl_parser.ml" 26 693 700
+)
+"idl_parser.ml" 7 114 131 "idl_parser.ml" 7 114 138
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"idl_parser.ml" 7 114 139 "idl_parser.ml" 7 114 143
+type(
+  string
+)
+ident(
+  int_ref name "idl_parser.ml" 5 87 101 "idl_parser.ml" 5 87 105
+)
+"idl_parser.ml" 7 114 131 "idl_parser.ml" 7 114 143
+call(
+  stack
+)
+type(
+  in_channel
+)
+"idl_parser.ml" 8 147 155 "idl_parser.ml" 8 147 161
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "idl_parser.ml" 9 194 198 "idl_parser.ml" 26 693 700
+)
+"idl_parser.ml" 8 147 164 "idl_parser.ml" 8 147 183
+type(
+  in_channel -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_channel
+)
+"idl_parser.ml" 8 147 184 "idl_parser.ml" 8 147 190
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_parser.ml" 7 114 122 "idl_parser.ml" 7 114 128
+)
+"idl_parser.ml" 8 147 164 "idl_parser.ml" 8 147 190
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"idl_parser.ml" 10 202 212 "idl_parser.ml" 10 202 215
+type(
+  Idl.file
+)
+ident(
+  def ast "idl_parser.ml" 11 256 262 "idl_parser.ml" 11 256 282
+)
+"idl_parser.ml" 10 202 218 "idl_parser.ml" 10 202 233
+type(
+  (Lexing.lexbuf -> Parser.token) -> Lexing.lexbuf -> Idl.file
+)
+ident(
+  ext_ref Parser.idl_file
+)
+"idl_parser.ml" 10 202 234 "idl_parser.ml" 10 202 245
+type(
+  Lexing.lexbuf -> Parser.token
+)
+ident(
+  ext_ref Lexer.token
+)
+"idl_parser.ml" 10 202 246 "idl_parser.ml" 10 202 252
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "idl_parser.ml" 8 147 155 "idl_parser.ml" 8 147 161
+)
+"idl_parser.ml" 10 202 218 "idl_parser.ml" 10 202 252
+call(
+  stack
+)
+type(
+  Idl.file
+)
+"idl_parser.ml" 11 256 262 "idl_parser.ml" 11 256 270
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"idl_parser.ml" 11 256 271 "idl_parser.ml" 11 256 277
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_parser.ml" 7 114 122 "idl_parser.ml" 7 114 128
+)
+"idl_parser.ml" 11 256 262 "idl_parser.ml" 11 256 277
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 11 256 279 "idl_parser.ml" 11 256 282
+type(
+  Idl.file
+)
+ident(
+  int_ref ast "idl_parser.ml" 10 202 212 "idl_parser.ml" 10 202 215
+)
+"idl_parser.ml" 11 256 262 "idl_parser.ml" 11 256 282
+type(
+  Idl.file
+)
+"idl_parser.ml" 10 202 208 "idl_parser.ml" 11 256 282
+type(
+  Idl.file
+)
+"idl_parser.ml" 13 292 311 "idl_parser.ml" 13 292 314
+type(
+  Syntax_error.t
+)
+ident(
+  def err "idl_parser.ml" 14 318 319 "idl_parser.ml" 21 494 501
+)
+"idl_parser.ml" 13 292 298 "idl_parser.ml" 13 292 314
+type(
+  exn
+)
+"idl_parser.ml" 14 318 319 "idl_parser.ml" 14 318 331
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"idl_parser.ml" 14 318 332 "idl_parser.ml" 14 318 352
+type(
+  string
+)
+"idl_parser.ml" 14 318 319 "idl_parser.ml" 14 318 352
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 14 318 354 "idl_parser.ml" 14 318 367
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"idl_parser.ml" 14 318 368 "idl_parser.ml" 14 318 370
+type(
+  unit
+)
+"idl_parser.ml" 14 318 354 "idl_parser.ml" 14 318 370
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 15 372 377 "idl_parser.ml" 15 372 380
+type(
+  Loc.t option
+)
+ident(
+  def loc "idl_parser.ml" 16 398 399 "idl_parser.ml" 21 494 501
+)
+"idl_parser.ml" 15 372 383 "idl_parser.ml" 15 372 390
+type(
+  Syntax_error.t -> Loc.t option
+)
+ident(
+  ext_ref Syntax_error.explain
+)
+"idl_parser.ml" 15 372 391 "idl_parser.ml" 15 372 394
+type(
+  Syntax_error.t
+)
+ident(
+  int_ref err "idl_parser.ml" 13 292 311 "idl_parser.ml" 13 292 314
+)
+"idl_parser.ml" 15 372 383 "idl_parser.ml" 15 372 394
+call(
+  stack
+)
+type(
+  Loc.t option
+)
+"idl_parser.ml" 16 398 406 "idl_parser.ml" 16 398 409
+type(
+  Loc.t option
+)
+ident(
+  int_ref loc "idl_parser.ml" 15 372 377 "idl_parser.ml" 15 372 380
+)
+"idl_parser.ml" 17 415 418 "idl_parser.ml" 17 415 422
+type(
+  Loc.t option
+)
+"idl_parser.ml" 17 415 426 "idl_parser.ml" 17 415 428
+type(
+  unit
+)
+"idl_parser.ml" 18 429 437 "idl_parser.ml" 18 429 440
+type(
+  Loc.t
+)
+ident(
+  def loc "idl_parser.ml" 18 429 444 "idl_parser.ml" 18 429 471
+)
+"idl_parser.ml" 18 429 432 "idl_parser.ml" 18 429 440
+type(
+  Loc.t option
+)
+"idl_parser.ml" 18 429 444 "idl_parser.ml" 18 429 460
+type(
+  in_channel -> Loc.t -> unit
+)
+ident(
+  ext_ref Loc.print_source
+)
+"idl_parser.ml" 18 429 461 "idl_parser.ml" 18 429 467
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_parser.ml" 7 114 122 "idl_parser.ml" 7 114 128
+)
+"idl_parser.ml" 18 429 468 "idl_parser.ml" 18 429 471
+type(
+  Loc.t
+)
+ident(
+  int_ref loc "idl_parser.ml" 18 429 437 "idl_parser.ml" 18 429 440
+)
+"idl_parser.ml" 18 429 444 "idl_parser.ml" 18 429 471
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 16 398 399 "idl_parser.ml" 19 472 474
+type(
+  unit
+)
+"idl_parser.ml" 20 476 477 "idl_parser.ml" 20 476 485
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"idl_parser.ml" 20 476 486 "idl_parser.ml" 20 476 492
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_parser.ml" 7 114 122 "idl_parser.ml" 7 114 128
+)
+"idl_parser.ml" 20 476 477 "idl_parser.ml" 20 476 492
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 21 494 495 "idl_parser.ml" 21 494 499
+type(
+  int -> Idl.file
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"idl_parser.ml" 21 494 500 "idl_parser.ml" 21 494 501
+type(
+  int
+)
+"idl_parser.ml" 21 494 495 "idl_parser.ml" 21 494 501
+call(
+  stack
+)
+type(
+  Idl.file
+)
+"idl_parser.ml" 20 476 477 "idl_parser.ml" 21 494 501
+type(
+  Idl.file
+)
+"idl_parser.ml" 16 398 399 "idl_parser.ml" 21 494 501
+type(
+  Idl.file
+)
+"idl_parser.ml" 15 372 373 "idl_parser.ml" 21 494 501
+type(
+  Idl.file
+)
+"idl_parser.ml" 14 318 354 "idl_parser.ml" 21 494 501
+type(
+  Idl.file
+)
+"idl_parser.ml" 14 318 319 "idl_parser.ml" 21 494 501
+type(
+  Idl.file
+)
+"idl_parser.ml" 22 502 508 "idl_parser.ml" 22 502 527
+type(
+  exn
+)
+"idl_parser.ml" 23 532 533 "idl_parser.ml" 23 532 545
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"idl_parser.ml" 23 532 546 "idl_parser.ml" 23 532 566
+type(
+  string
+)
+"idl_parser.ml" 23 532 533 "idl_parser.ml" 23 532 566
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 23 532 568 "idl_parser.ml" 23 532 581
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"idl_parser.ml" 23 532 582 "idl_parser.ml" 23 532 584
+type(
+  unit
+)
+"idl_parser.ml" 23 532 568 "idl_parser.ml" 23 532 584
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 24 586 591 "idl_parser.ml" 24 586 594
+type(
+  Loc.t
+)
+ident(
+  def loc "idl_parser.ml" 25 663 664 "idl_parser.ml" 26 693 700
+)
+"idl_parser.ml" 24 586 606 "idl_parser.ml" 24 586 625
+type(
+  Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.lexeme_start
+)
+"idl_parser.ml" 24 586 626 "idl_parser.ml" 24 586 632
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "idl_parser.ml" 8 147 155 "idl_parser.ml" 8 147 161
+)
+"idl_parser.ml" 24 586 606 "idl_parser.ml" 24 586 632
+call(
+  stack
+)
+type(
+  int
+)
+"idl_parser.ml" 24 586 634 "idl_parser.ml" 24 586 651
+type(
+  Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.lexeme_end
+)
+"idl_parser.ml" 24 586 652 "idl_parser.ml" 24 586 658
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "idl_parser.ml" 8 147 155 "idl_parser.ml" 8 147 161
+)
+"idl_parser.ml" 24 586 634 "idl_parser.ml" 24 586 658
+call(
+  stack
+)
+type(
+  int
+)
+"idl_parser.ml" 24 586 597 "idl_parser.ml" 24 586 659
+type(
+  Loc.t
+)
+"idl_parser.ml" 25 663 664 "idl_parser.ml" 25 663 680
+type(
+  in_channel -> Loc.t -> unit
+)
+ident(
+  ext_ref Loc.print_source
+)
+"idl_parser.ml" 25 663 681 "idl_parser.ml" 25 663 687
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "idl_parser.ml" 7 114 122 "idl_parser.ml" 7 114 128
+)
+"idl_parser.ml" 25 663 688 "idl_parser.ml" 25 663 691
+type(
+  Loc.t
+)
+ident(
+  int_ref loc "idl_parser.ml" 24 586 591 "idl_parser.ml" 24 586 594
+)
+"idl_parser.ml" 25 663 664 "idl_parser.ml" 25 663 691
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 26 693 694 "idl_parser.ml" 26 693 698
+type(
+  int -> Idl.file
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"idl_parser.ml" 26 693 699 "idl_parser.ml" 26 693 700
+type(
+  int
+)
+"idl_parser.ml" 26 693 694 "idl_parser.ml" 26 693 700
+call(
+  stack
+)
+type(
+  Idl.file
+)
+"idl_parser.ml" 25 663 664 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 24 586 587 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 23 532 568 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 23 532 533 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 9 194 198 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 8 147 151 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 7 114 118 "idl_parser.ml" 26 693 700
+type(
+  Idl.file
+)
+"idl_parser.ml" 29 709 723 "idl_parser.ml" 29 709 726
+type(
+  string
+)
+ident(
+  def str "idl_parser.ml" 29 709 730 "idl_parser.ml" 29 709 788
+)
+"idl_parser.ml" 29 709 713 "idl_parser.ml" 29 709 726
+type(
+  exn
+)
+"idl_parser.ml" 29 709 730 "idl_parser.ml" 29 709 743
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"idl_parser.ml" 29 709 744 "idl_parser.ml" 29 709 750
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"idl_parser.ml" 29 709 751 "idl_parser.ml" 29 709 754
+type(
+  string
+)
+ident(
+  int_ref str "idl_parser.ml" 29 709 723 "idl_parser.ml" 29 709 726
+)
+"idl_parser.ml" 29 709 730 "idl_parser.ml" 29 709 754
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 29 709 756 "idl_parser.ml" 29 709 767
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"idl_parser.ml" 29 709 768 "idl_parser.ml" 29 709 774
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"idl_parser.ml" 29 709 775 "idl_parser.ml" 29 709 779
+type(
+  char
+)
+"idl_parser.ml" 29 709 756 "idl_parser.ml" 29 709 779
+call(
+  stack
+)
+type(
+  unit
+)
+"idl_parser.ml" 29 709 781 "idl_parser.ml" 29 709 785
+type(
+  int -> Idl.file
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"idl_parser.ml" 29 709 786 "idl_parser.ml" 29 709 787
+type(
+  int
+)
+"idl_parser.ml" 29 709 781 "idl_parser.ml" 29 709 788
+call(
+  tail
+)
+type(
+  Idl.file
+)
+"idl_parser.ml" 29 709 756 "idl_parser.ml" 29 709 788
+type(
+  Idl.file
+)
+"idl_parser.ml" 29 709 730 "idl_parser.ml" 29 709 788
+type(
+  Idl.file
+)
+"idl_parser.ml" 6 108 110 "idl_parser.ml" 29 709 788
+type(
+  Idl.file
+)

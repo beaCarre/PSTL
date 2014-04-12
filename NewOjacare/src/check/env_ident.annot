@@ -1,0 +1,2151 @@
+"env_ident.ml" 6 125 133 "env_ident.ml" 6 125 140
+type(
+  Ident.clazz -> Ident.clazz -> int
+)
+ident(
+  def compare "env_ident.ml" 6 125 162 "env_ident.ml" 7 163 168
+)
+"env_ident.ml" 6 125 143 "env_ident.ml" 6 125 162
+type(
+  Ident.clazz -> Ident.clazz -> int
+)
+ident(
+  ext_ref Ident.compare_clazz
+)
+"env_ident.ml" 8 169 192 "env_ident.ml" 8 169 219
+call(
+  stack
+)
+"env_ident.ml" 12 260 264 "env_ident.ml" 12 260 269
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  def empty "env_ident.ml" 14 293 293 "_none_" 1 0 -1
+)
+"env_ident.ml" 12 260 272 "env_ident.ml" 12 260 291
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  ext_ref ClassIdentEnv.empty
+)
+"env_ident.ml" 14 293 297 "env_ident.ml" 14 293 310
+type(
+  'a ClassIdentEnv.t -> ClassIdentEnv.key -> 'a -> 'a ClassIdentEnv.t
+)
+ident(
+  def add_interface "env_ident.ml" 18 435 435 "_none_" 1 0 -1
+)
+"env_ident.ml" 14 293 311 "env_ident.ml" 14 293 314
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 14 293 315 "env_ident.ml" 16 401 433
+)
+"env_ident.ml" 14 293 315 "env_ident.ml" 14 293 317
+type(
+  ClassIdentEnv.key
+)
+ident(
+  def id "env_ident.ml" 14 293 318 "env_ident.ml" 16 401 433
+)
+"env_ident.ml" 14 293 318 "env_ident.ml" 14 293 323
+type(
+  'a
+)
+ident(
+  def clazz "env_ident.ml" 15 327 329 "env_ident.ml" 16 401 433
+)
+"env_ident.ml" 15 327 332 "env_ident.ml" 15 327 335
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"env_ident.ml" 15 327 337 "env_ident.ml" 15 327 355
+type(
+  ClassIdentEnv.key -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"env_ident.ml" 15 327 356 "env_ident.ml" 15 327 358
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 14 293 315 "env_ident.ml" 14 293 317
+)
+"env_ident.ml" 15 327 336 "env_ident.ml" 15 327 359
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 15 327 332 "env_ident.ml" 15 327 359
+type(
+  bool
+)
+"env_ident.ml" 15 327 365 "env_ident.ml" 15 327 373
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"env_ident.ml" 15 327 374 "env_ident.ml" 15 327 399
+type(
+  string
+)
+"env_ident.ml" 15 327 365 "env_ident.ml" 15 327 399
+call(
+  stack
+)
+type(
+  unit
+)
+"env_ident.ml" 15 327 329 "env_ident.ml" 15 327 399
+type(
+  unit
+)
+"env_ident.ml" 16 401 403 "env_ident.ml" 16 401 420
+type(
+  ClassIdentEnv.key -> 'a -> 'a ClassIdentEnv.t -> 'a ClassIdentEnv.t
+)
+ident(
+  ext_ref ClassIdentEnv.add
+)
+"env_ident.ml" 16 401 421 "env_ident.ml" 16 401 423
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 14 293 315 "env_ident.ml" 14 293 317
+)
+"env_ident.ml" 16 401 424 "env_ident.ml" 16 401 429
+type(
+  'a
+)
+ident(
+  int_ref clazz "env_ident.ml" 14 293 318 "env_ident.ml" 14 293 323
+)
+"env_ident.ml" 16 401 430 "env_ident.ml" 16 401 433
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 14 293 311 "env_ident.ml" 14 293 314
+)
+"env_ident.ml" 16 401 403 "env_ident.ml" 16 401 433
+call(
+  tail
+)
+type(
+  'a ClassIdentEnv.t
+)
+"env_ident.ml" 15 327 329 "env_ident.ml" 16 401 433
+type(
+  'a ClassIdentEnv.t
+)
+"env_ident.ml" 18 435 439 "env_ident.ml" 18 435 453
+type(
+  'a ClassIdentEnv.t -> ClassIdentEnv.key -> 'a
+)
+ident(
+  def find_interface "env_ident.ml" 21 545 545 "_none_" 1 0 -1
+)
+"env_ident.ml" 18 435 454 "env_ident.ml" 18 435 457
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 18 435 458 "env_ident.ml" 19 516 543
+)
+"env_ident.ml" 18 435 458 "env_ident.ml" 18 435 460
+type(
+  ClassIdentEnv.key
+)
+ident(
+  def id "env_ident.ml" 18 435 463 "env_ident.ml" 19 516 543
+)
+"env_ident.ml" 18 435 466 "env_ident.ml" 18 435 469
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"env_ident.ml" 18 435 471 "env_ident.ml" 18 435 489
+type(
+  ClassIdentEnv.key -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"env_ident.ml" 18 435 490 "env_ident.ml" 18 435 492
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 18 435 458 "env_ident.ml" 18 435 460
+)
+"env_ident.ml" 18 435 470 "env_ident.ml" 18 435 493
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 18 435 466 "env_ident.ml" 18 435 493
+type(
+  bool
+)
+"env_ident.ml" 18 435 499 "env_ident.ml" 18 435 504
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"env_ident.ml" 18 435 505 "env_ident.ml" 18 435 514
+type(
+  exn
+)
+"env_ident.ml" 18 435 499 "env_ident.ml" 18 435 514
+type(
+  unit
+)
+"env_ident.ml" 18 435 463 "env_ident.ml" 18 435 514
+type(
+  unit
+)
+"env_ident.ml" 19 516 518 "env_ident.ml" 19 516 536
+type(
+  ClassIdentEnv.key -> 'a ClassIdentEnv.t -> 'a
+)
+ident(
+  ext_ref ClassIdentEnv.find
+)
+"env_ident.ml" 19 516 537 "env_ident.ml" 19 516 539
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 18 435 458 "env_ident.ml" 18 435 460
+)
+"env_ident.ml" 19 516 540 "env_ident.ml" 19 516 543
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 18 435 454 "env_ident.ml" 18 435 457
+)
+"env_ident.ml" 19 516 518 "env_ident.ml" 19 516 543
+call(
+  tail
+)
+type(
+  'a
+)
+"env_ident.ml" 18 435 463 "env_ident.ml" 19 516 543
+type(
+  'a
+)
+"env_ident.ml" 21 545 549 "env_ident.ml" 21 545 558
+type(
+  'a ClassIdentEnv.t -> ClassIdentEnv.key -> 'a -> 'a ClassIdentEnv.t
+)
+ident(
+  def add_class "env_ident.ml" 23 677 677 "_none_" 1 0 -1
+)
+"env_ident.ml" 21 545 559 "env_ident.ml" 21 545 562
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 21 545 563 "env_ident.ml" 22 640 676
+)
+"env_ident.ml" 21 545 563 "env_ident.ml" 21 545 565
+type(
+  ClassIdentEnv.key
+)
+ident(
+  def id "env_ident.ml" 21 545 566 "env_ident.ml" 22 640 676
+)
+"env_ident.ml" 21 545 566 "env_ident.ml" 21 545 575
+type(
+  'a
+)
+ident(
+  def interface "env_ident.ml" 21 545 578 "env_ident.ml" 22 640 676
+)
+"env_ident.ml" 21 545 581 "env_ident.ml" 21 545 599
+type(
+  ClassIdentEnv.key -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"env_ident.ml" 21 545 600 "env_ident.ml" 21 545 602
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 21 545 563 "env_ident.ml" 21 545 565
+)
+"env_ident.ml" 21 545 581 "env_ident.ml" 21 545 602
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 21 545 608 "env_ident.ml" 21 545 616
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"env_ident.ml" 21 545 617 "env_ident.ml" 21 545 638
+type(
+  string
+)
+"env_ident.ml" 21 545 608 "env_ident.ml" 21 545 638
+call(
+  stack
+)
+type(
+  unit
+)
+"env_ident.ml" 21 545 578 "env_ident.ml" 21 545 638
+type(
+  unit
+)
+"env_ident.ml" 22 640 642 "env_ident.ml" 22 640 659
+type(
+  ClassIdentEnv.key -> 'a -> 'a ClassIdentEnv.t -> 'a ClassIdentEnv.t
+)
+ident(
+  ext_ref ClassIdentEnv.add
+)
+"env_ident.ml" 22 640 660 "env_ident.ml" 22 640 662
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 21 545 563 "env_ident.ml" 21 545 565
+)
+"env_ident.ml" 22 640 663 "env_ident.ml" 22 640 672
+type(
+  'a
+)
+ident(
+  int_ref interface "env_ident.ml" 21 545 566 "env_ident.ml" 21 545 575
+)
+"env_ident.ml" 22 640 673 "env_ident.ml" 22 640 676
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 21 545 559 "env_ident.ml" 21 545 562
+)
+"env_ident.ml" 22 640 642 "env_ident.ml" 22 640 676
+call(
+  tail
+)
+type(
+  'a ClassIdentEnv.t
+)
+"env_ident.ml" 21 545 578 "env_ident.ml" 22 640 676
+type(
+  'a ClassIdentEnv.t
+)
+"env_ident.ml" 23 677 681 "env_ident.ml" 23 677 691
+type(
+  'a ClassIdentEnv.t -> ClassIdentEnv.key -> 'a
+)
+ident(
+  def find_class "env_ident.ml" 26 777 777 "_none_" 1 0 -1
+)
+"env_ident.ml" 23 677 692 "env_ident.ml" 23 677 695
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 23 677 696 "env_ident.ml" 24 748 775
+)
+"env_ident.ml" 23 677 696 "env_ident.ml" 23 677 698
+type(
+  ClassIdentEnv.key
+)
+ident(
+  def id "env_ident.ml" 23 677 701 "env_ident.ml" 24 748 775
+)
+"env_ident.ml" 23 677 704 "env_ident.ml" 23 677 722
+type(
+  ClassIdentEnv.key -> bool
+)
+ident(
+  ext_ref Ident.is_interface
+)
+"env_ident.ml" 23 677 723 "env_ident.ml" 23 677 725
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 23 677 696 "env_ident.ml" 23 677 698
+)
+"env_ident.ml" 23 677 704 "env_ident.ml" 23 677 725
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 23 677 731 "env_ident.ml" 23 677 736
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"env_ident.ml" 23 677 737 "env_ident.ml" 23 677 746
+type(
+  exn
+)
+"env_ident.ml" 23 677 731 "env_ident.ml" 23 677 746
+type(
+  unit
+)
+"env_ident.ml" 23 677 701 "env_ident.ml" 23 677 746
+type(
+  unit
+)
+"env_ident.ml" 24 748 750 "env_ident.ml" 24 748 768
+type(
+  ClassIdentEnv.key -> 'a ClassIdentEnv.t -> 'a
+)
+ident(
+  ext_ref ClassIdentEnv.find
+)
+"env_ident.ml" 24 748 769 "env_ident.ml" 24 748 771
+type(
+  ClassIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 23 677 696 "env_ident.ml" 23 677 698
+)
+"env_ident.ml" 24 748 772 "env_ident.ml" 24 748 775
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 23 677 692 "env_ident.ml" 23 677 695
+)
+"env_ident.ml" 24 748 750 "env_ident.ml" 24 748 775
+call(
+  tail
+)
+type(
+  'a
+)
+"env_ident.ml" 23 677 701 "env_ident.ml" 24 748 775
+type(
+  'a
+)
+"env_ident.ml" 26 777 781 "env_ident.ml" 26 777 794
+type(
+  Cidl.clazz list -> Cidl.clazz ClassIdentEnv.t -> Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  def add_from_list "env_ident.ml" 27 883 883 "_none_" 1 0 -1
+)
+"env_ident.ml" 26 777 795 "env_ident.ml" 26 777 796
+type(
+  Cidl.clazz list
+)
+ident(
+  def l "env_ident.ml" 26 777 797 "env_ident.ml" 26 777 882
+)
+"env_ident.ml" 26 777 797 "env_ident.ml" 26 777 800
+type(
+  Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 26 777 803 "env_ident.ml" 26 777 882
+)
+"env_ident.ml" 26 777 803 "env_ident.ml" 26 777 818
+type(
+  (Cidl.clazz -> Cidl.clazz ClassIdentEnv.t -> Cidl.clazz ClassIdentEnv.t) ->
+  Cidl.clazz list -> Cidl.clazz ClassIdentEnv.t -> Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"env_ident.ml" 26 777 824 "env_ident.ml" 26 777 826
+type(
+  Cidl.clazz
+)
+ident(
+  def cl "env_ident.ml" 26 777 827 "env_ident.ml" 26 777 875
+)
+"env_ident.ml" 26 777 827 "env_ident.ml" 26 777 830
+type(
+  Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 26 777 834 "env_ident.ml" 26 777 875
+)
+"env_ident.ml" 26 777 834 "env_ident.ml" 26 777 851
+type(
+  ClassIdentEnv.key ->
+  Cidl.clazz -> Cidl.clazz ClassIdentEnv.t -> Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  ext_ref ClassIdentEnv.add
+)
+"env_ident.ml" 26 777 852 "env_ident.ml" 26 777 854
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "env_ident.ml" 26 777 824 "env_ident.ml" 26 777 826
+)
+"env_ident.ml" 26 777 852 "env_ident.ml" 26 777 868
+type(
+  ClassIdentEnv.key
+)
+"env_ident.ml" 26 777 869 "env_ident.ml" 26 777 871
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "env_ident.ml" 26 777 824 "env_ident.ml" 26 777 826
+)
+"env_ident.ml" 26 777 872 "env_ident.ml" 26 777 875
+type(
+  Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 26 777 827 "env_ident.ml" 26 777 830
+)
+"env_ident.ml" 26 777 834 "env_ident.ml" 26 777 875
+call(
+  tail
+)
+type(
+  Cidl.clazz ClassIdentEnv.t
+)
+"env_ident.ml" 26 777 819 "env_ident.ml" 26 777 876
+type(
+  Cidl.clazz -> Cidl.clazz ClassIdentEnv.t -> Cidl.clazz ClassIdentEnv.t
+)
+"env_ident.ml" 26 777 877 "env_ident.ml" 26 777 878
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref l "env_ident.ml" 26 777 795 "env_ident.ml" 26 777 796
+)
+"env_ident.ml" 26 777 879 "env_ident.ml" 26 777 882
+type(
+  Cidl.clazz ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 26 777 797 "env_ident.ml" 26 777 800
+)
+"env_ident.ml" 26 777 803 "env_ident.ml" 26 777 882
+call(
+  tail
+)
+type(
+  Cidl.clazz ClassIdentEnv.t
+)
+"env_ident.ml" 27 883 887 "env_ident.ml" 27 883 898
+type(
+  'a ClassIdentEnv.t -> 'a list
+)
+ident(
+  def env_to_list "env_ident.ml" 29 978 978 "_none_" 1 0 -1
+)
+"env_ident.ml" 27 883 899 "env_ident.ml" 27 883 902
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 27 883 905 "env_ident.ml" 27 883 976
+)
+"env_ident.ml" 27 883 905 "env_ident.ml" 27 883 913
+type(
+  'a list -> 'a list
+)
+ident(
+  ext_ref List.rev
+)
+"env_ident.ml" 27 883 915 "env_ident.ml" 27 883 933
+type(
+  (ClassIdentEnv.key -> 'a -> 'a list -> 'a list) ->
+  'a ClassIdentEnv.t -> 'a list -> 'a list
+)
+ident(
+  ext_ref ClassIdentEnv.fold
+)
+"env_ident.ml" 27 883 939 "env_ident.ml" 27 883 941
+type(
+  ClassIdentEnv.key
+)
+ident(
+  def id "env_ident.ml" 27 883 942 "env_ident.ml" 27 883 967
+)
+"env_ident.ml" 27 883 942 "env_ident.ml" 27 883 947
+type(
+  'a
+)
+ident(
+  def clazz "env_ident.ml" 27 883 948 "env_ident.ml" 27 883 967
+)
+"env_ident.ml" 27 883 948 "env_ident.ml" 27 883 951
+type(
+  'a list
+)
+ident(
+  def acc "env_ident.ml" 27 883 955 "env_ident.ml" 27 883 967
+)
+"env_ident.ml" 27 883 955 "env_ident.ml" 27 883 960
+type(
+  'a
+)
+ident(
+  int_ref clazz "env_ident.ml" 27 883 942 "env_ident.ml" 27 883 947
+)
+"env_ident.ml" 27 883 964 "env_ident.ml" 27 883 967
+type(
+  'a list
+)
+ident(
+  int_ref acc "env_ident.ml" 27 883 948 "env_ident.ml" 27 883 951
+)
+"env_ident.ml" 27 883 955 "env_ident.ml" 27 883 967
+type(
+  'a list
+)
+"env_ident.ml" 27 883 934 "env_ident.ml" 27 883 968
+type(
+  ClassIdentEnv.key -> 'a -> 'a list -> 'a list
+)
+"env_ident.ml" 27 883 969 "env_ident.ml" 27 883 972
+type(
+  'a ClassIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 27 883 899 "env_ident.ml" 27 883 902
+)
+"env_ident.ml" 27 883 973 "env_ident.ml" 27 883 975
+type(
+  'a list
+)
+"env_ident.ml" 27 883 914 "env_ident.ml" 27 883 976
+call(
+  stack
+)
+type(
+  'a list
+)
+"env_ident.ml" 27 883 905 "env_ident.ml" 27 883 976
+call(
+  tail
+)
+type(
+  'a list
+)
+"env_ident.ml" 32 1043 1051 "env_ident.ml" 32 1043 1058
+type(
+  Ident.mmethod -> Ident.mmethod -> int
+)
+ident(
+  def compare "env_ident.ml" 32 1043 1081 "env_ident.ml" 33 1083 1088
+)
+"env_ident.ml" 32 1043 1061 "env_ident.ml" 32 1043 1081
+type(
+  Ident.mmethod -> Ident.mmethod -> int
+)
+ident(
+  ext_ref Ident.compare_method
+)
+"env_ident.ml" 34 1089 1113 "env_ident.ml" 34 1089 1141
+call(
+  stack
+)
+"env_ident.ml" 41 1208 1212 "env_ident.ml" 41 1208 1228
+type(
+  'a MethodIdentEnv.t
+)
+ident(
+  def empty_method_env "env_ident.ml" 43 1257 1257 "_none_" 1 0 -1
+)
+"env_ident.ml" 41 1208 1231 "env_ident.ml" 41 1208 1251
+type(
+  'a MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.empty
+)
+"env_ident.ml" 43 1257 1261 "env_ident.ml" 43 1257 1283
+type(
+  Cidl.mmethod -> Cidl.mmethod -> bool
+)
+ident(
+  def are_methods_compatible "env_ident.ml" 50 1574 1574 "_none_" 1 0 -1
+)
+"env_ident.ml" 43 1257 1284 "env_ident.ml" 43 1257 1286
+type(
+  Cidl.mmethod
+)
+ident(
+  def m1 "env_ident.ml" 43 1257 1287 "env_ident.ml" 48 1486 1572
+)
+"env_ident.ml" 43 1257 1287 "env_ident.ml" 43 1257 1289
+type(
+  Cidl.mmethod
+)
+ident(
+  def m2 "env_ident.ml" 44 1293 1294 "env_ident.ml" 48 1486 1572
+)
+"env_ident.ml" 44 1293 1302 "env_ident.ml" 44 1293 1304
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m1 "env_ident.ml" 43 1257 1284 "env_ident.ml" 43 1257 1286
+)
+"env_ident.ml" 44 1293 1302 "env_ident.ml" 44 1293 1312
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 44 1293 1314 "env_ident.ml" 44 1293 1316
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m2 "env_ident.ml" 43 1257 1287 "env_ident.ml" 43 1257 1289
+)
+"env_ident.ml" 44 1293 1314 "env_ident.ml" 44 1293 1324
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 44 1293 1302 "env_ident.ml" 44 1293 1324
+type(
+  Cidl.mmethod_desc * Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1339 "env_ident.ml" 45 1330 1341
+type(
+  Cidl.typ
+)
+ident(
+  def t1 "env_ident.ml" 45 1330 1376 "env_ident.ml" 45 1330 1383
+)
+"env_ident.ml" 45 1330 1334 "env_ident.ml" 45 1330 1341
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1349 "env_ident.ml" 45 1330 1351
+type(
+  Cidl.typ
+)
+ident(
+  def t2 "env_ident.ml" 45 1330 1376 "env_ident.ml" 45 1330 1383
+)
+"env_ident.ml" 45 1330 1344 "env_ident.ml" 45 1330 1351
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1334 "env_ident.ml" 45 1330 1351
+type(
+  Cidl.mmethod_desc * Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1359 "env_ident.ml" 45 1330 1361
+type(
+  Cidl.typ
+)
+ident(
+  def t1 "env_ident.ml" 45 1330 1376 "env_ident.ml" 45 1330 1383
+)
+"env_ident.ml" 45 1330 1354 "env_ident.ml" 45 1330 1361
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1369 "env_ident.ml" 45 1330 1371
+type(
+  Cidl.typ
+)
+ident(
+  def t2 "env_ident.ml" 45 1330 1376 "env_ident.ml" 45 1330 1383
+)
+"env_ident.ml" 45 1330 1364 "env_ident.ml" 45 1330 1371
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1354 "env_ident.ml" 45 1330 1371
+type(
+  Cidl.mmethod_desc * Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1334 "env_ident.ml" 45 1330 1371
+type(
+  Cidl.mmethod_desc * Cidl.mmethod_desc
+)
+"env_ident.ml" 45 1330 1376 "env_ident.ml" 45 1330 1378
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t1 "env_ident.ml" 45 1330 1339 "env_ident.ml" 45 1330 1341
+)
+"env_ident.ml" 45 1330 1379 "env_ident.ml" 45 1330 1380
+type(
+  Cidl.typ -> Cidl.typ -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"env_ident.ml" 45 1330 1381 "env_ident.ml" 45 1330 1383
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t2 "env_ident.ml" 45 1330 1349 "env_ident.ml" 45 1330 1351
+)
+"env_ident.ml" 45 1330 1376 "env_ident.ml" 45 1330 1383
+type(
+  bool
+)
+"env_ident.ml" 46 1384 1397 "env_ident.ml" 46 1384 1398
+type(
+  bool
+)
+"env_ident.ml" 46 1384 1400 "env_ident.ml" 46 1384 1403
+type(
+  Cidl.typ
+)
+ident(
+  def rt1 "env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1466
+)
+"env_ident.ml" 46 1384 1405 "env_ident.ml" 46 1384 1410
+type(
+  Cidl.typ list
+)
+ident(
+  def args1 "env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1466
+)
+"env_ident.ml" 46 1384 1388 "env_ident.ml" 46 1384 1411
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 46 1384 1422 "env_ident.ml" 46 1384 1423
+type(
+  bool
+)
+"env_ident.ml" 46 1384 1425 "env_ident.ml" 46 1384 1428
+type(
+  Cidl.typ
+)
+ident(
+  def rt2 "env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1466
+)
+"env_ident.ml" 46 1384 1430 "env_ident.ml" 46 1384 1435
+type(
+  Cidl.typ list
+)
+ident(
+  def args2 "env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1466
+)
+"env_ident.ml" 46 1384 1413 "env_ident.ml" 46 1384 1436
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 46 1384 1388 "env_ident.ml" 46 1384 1436
+type(
+  Cidl.mmethod_desc * Cidl.mmethod_desc
+)
+"env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1443
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rt1 "env_ident.ml" 46 1384 1400 "env_ident.ml" 46 1384 1403
+)
+"env_ident.ml" 46 1384 1444 "env_ident.ml" 46 1384 1445
+type(
+  Cidl.typ -> Cidl.typ -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"env_ident.ml" 46 1384 1446 "env_ident.ml" 46 1384 1449
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rt2 "env_ident.ml" 46 1384 1425 "env_ident.ml" 46 1384 1428
+)
+"env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1449
+type(
+  bool
+)
+"env_ident.ml" 46 1384 1450 "env_ident.ml" 46 1384 1452
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"env_ident.ml" 46 1384 1453 "env_ident.ml" 46 1384 1458
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args1 "env_ident.ml" 46 1384 1405 "env_ident.ml" 46 1384 1410
+)
+"env_ident.ml" 46 1384 1459 "env_ident.ml" 46 1384 1460
+type(
+  Cidl.typ list -> Cidl.typ list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"env_ident.ml" 46 1384 1461 "env_ident.ml" 46 1384 1466
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args2 "env_ident.ml" 46 1384 1430 "env_ident.ml" 46 1384 1435
+)
+"env_ident.ml" 46 1384 1453 "env_ident.ml" 46 1384 1466
+type(
+  bool
+)
+"env_ident.ml" 46 1384 1440 "env_ident.ml" 46 1384 1466
+type(
+  bool
+)
+"env_ident.ml" 47 1467 1471 "env_ident.ml" 47 1467 1472
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 47 1467 1474 "env_ident.ml" 47 1467 1475
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 47 1467 1471 "env_ident.ml" 47 1467 1475
+type(
+  Cidl.mmethod_desc * Cidl.mmethod_desc
+)
+"env_ident.ml" 47 1467 1479 "env_ident.ml" 47 1467 1484
+type(
+  bool
+)
+"env_ident.ml" 44 1293 1294 "env_ident.ml" 47 1467 1485
+type(
+  bool
+)
+"env_ident.ml" 48 1486 1490 "env_ident.ml" 48 1486 1492
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"env_ident.ml" 48 1486 1493 "env_ident.ml" 48 1486 1519
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_java_name
+)
+"env_ident.ml" 48 1486 1520 "env_ident.ml" 48 1486 1522
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m1 "env_ident.ml" 43 1257 1284 "env_ident.ml" 43 1257 1286
+)
+"env_ident.ml" 48 1486 1520 "env_ident.ml" 48 1486 1531
+type(
+  Ident.mmethod
+)
+"env_ident.ml" 48 1486 1493 "env_ident.ml" 48 1486 1531
+call(
+  stack
+)
+type(
+  string
+)
+"env_ident.ml" 48 1486 1532 "env_ident.ml" 48 1486 1533
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"env_ident.ml" 48 1486 1534 "env_ident.ml" 48 1486 1560
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_java_name
+)
+"env_ident.ml" 48 1486 1561 "env_ident.ml" 48 1486 1563
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m2 "env_ident.ml" 43 1257 1287 "env_ident.ml" 43 1257 1289
+)
+"env_ident.ml" 48 1486 1561 "env_ident.ml" 48 1486 1572
+type(
+  Ident.mmethod
+)
+"env_ident.ml" 48 1486 1534 "env_ident.ml" 48 1486 1572
+call(
+  stack
+)
+type(
+  string
+)
+"env_ident.ml" 48 1486 1493 "env_ident.ml" 48 1486 1572
+type(
+  bool
+)
+"env_ident.ml" 44 1293 1294 "env_ident.ml" 48 1486 1572
+type(
+  bool
+)
+"env_ident.ml" 50 1574 1578 "env_ident.ml" 50 1574 1588
+type(
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def add_method "env_ident.ml" 62 1970 1970 "_none_" 1 0 -1
+)
+"env_ident.ml" 50 1574 1589 "env_ident.ml" 50 1574 1596
+type(
+  Cidl.mmethod
+)
+ident(
+  def mmethod "env_ident.ml" 50 1574 1597 "env_ident.ml" 59 1932 1967
+)
+"env_ident.ml" 50 1574 1597 "env_ident.ml" 50 1574 1600
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 51 1603 1605 "env_ident.ml" 59 1932 1967
+)
+"env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+type(
+  Ident.mmethod
+)
+ident(
+  def id "env_ident.ml" 52 1634 1636 "env_ident.ml" 59 1932 1967
+)
+"env_ident.ml" 51 1603 1614 "env_ident.ml" 51 1603 1621
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 50 1574 1589 "env_ident.ml" 50 1574 1596
+)
+"env_ident.ml" 51 1603 1614 "env_ident.ml" 51 1603 1630
+type(
+  Ident.mmethod
+)
+"env_ident.ml" 52 1634 1640 "env_ident.ml" 52 1634 1643
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 59 1932 1934 "env_ident.ml" 59 1932 1967
+)
+"env_ident.ml" 53 1647 1654 "env_ident.ml" 53 1647 1672
+type(
+  MethodIdentEnv.key -> Cidl.mmethod MethodIdentEnv.t -> bool
+)
+ident(
+  ext_ref MethodIdentEnv.mem
+)
+"env_ident.ml" 53 1647 1673 "env_ident.ml" 53 1647 1675
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+)
+"env_ident.ml" 53 1647 1676 "env_ident.ml" 53 1647 1679
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 50 1574 1597 "env_ident.ml" 50 1574 1600
+)
+"env_ident.ml" 53 1647 1654 "env_ident.ml" 53 1647 1679
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 54 1686 1695 "env_ident.ml" 54 1686 1698
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"env_ident.ml" 54 1686 1700 "env_ident.ml" 54 1686 1722
+type(
+  Cidl.mmethod -> Cidl.mmethod -> bool
+)
+ident(
+  int_ref are_methods_compatible "env_ident.ml" 43 1257 1261 "env_ident.ml" 43 1257 1283
+)
+"env_ident.ml" 54 1686 1724 "env_ident.ml" 54 1686 1743
+type(
+  MethodIdentEnv.key -> Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod
+)
+ident(
+  ext_ref MethodIdentEnv.find
+)
+"env_ident.ml" 54 1686 1744 "env_ident.ml" 54 1686 1746
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+)
+"env_ident.ml" 54 1686 1747 "env_ident.ml" 54 1686 1750
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 50 1574 1597 "env_ident.ml" 50 1574 1600
+)
+"env_ident.ml" 54 1686 1723 "env_ident.ml" 54 1686 1751
+call(
+  stack
+)
+type(
+  Cidl.mmethod
+)
+"env_ident.ml" 54 1686 1752 "env_ident.ml" 54 1686 1759
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 50 1574 1589 "env_ident.ml" 50 1574 1596
+)
+"env_ident.ml" 54 1686 1699 "env_ident.ml" 54 1686 1760
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 54 1686 1695 "env_ident.ml" 54 1686 1760
+type(
+  bool
+)
+"env_ident.ml" 55 1766 1767 "env_ident.ml" 55 1766 1772
+type(
+  exn -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"env_ident.ml" 55 1766 1805 "env_ident.ml" 55 1766 1829
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"env_ident.ml" 55 1766 1830 "env_ident.ml" 55 1766 1832
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref id "env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+)
+"env_ident.ml" 55 1766 1805 "env_ident.ml" 55 1766 1832
+call(
+  stack
+)
+type(
+  string
+)
+"env_ident.ml" 55 1766 1835 "env_ident.ml" 55 1766 1868
+type(
+  Ident.mmethod -> Loc.t
+)
+ident(
+  ext_ref Ident.get_method_ml_name_location
+)
+"env_ident.ml" 55 1766 1869 "env_ident.ml" 55 1766 1871
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref id "env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+)
+"env_ident.ml" 55 1766 1835 "env_ident.ml" 55 1766 1871
+call(
+  stack
+)
+type(
+  Loc.t
+)
+"env_ident.ml" 55 1766 1780 "env_ident.ml" 55 1766 1873
+type(
+  Error.t
+)
+"env_ident.ml" 55 1766 1773 "env_ident.ml" 55 1766 1874
+type(
+  exn
+)
+"env_ident.ml" 55 1766 1767 "env_ident.ml" 55 1766 1874
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 57 1886 1887 "env_ident.ml" 57 1886 1908
+type(
+  MethodIdentEnv.key ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.remove
+)
+"env_ident.ml" 57 1886 1909 "env_ident.ml" 57 1886 1911
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+)
+"env_ident.ml" 57 1886 1912 "env_ident.ml" 57 1886 1915
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 50 1574 1597 "env_ident.ml" 50 1574 1600
+)
+"env_ident.ml" 57 1886 1887 "env_ident.ml" 57 1886 1915
+call(
+  stack
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 54 1686 1692 "env_ident.ml" 57 1886 1915
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 58 1916 1925 "env_ident.ml" 58 1916 1928
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 50 1574 1597 "env_ident.ml" 50 1574 1600
+)
+"env_ident.ml" 53 1647 1651 "env_ident.ml" 58 1916 1928
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 59 1932 1934 "env_ident.ml" 59 1932 1952
+type(
+  MethodIdentEnv.key ->
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.add
+)
+"env_ident.ml" 59 1932 1953 "env_ident.ml" 59 1932 1955
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 51 1603 1609 "env_ident.ml" 51 1603 1611
+)
+"env_ident.ml" 59 1932 1956 "env_ident.ml" 59 1932 1963
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 50 1574 1589 "env_ident.ml" 50 1574 1596
+)
+"env_ident.ml" 59 1932 1964 "env_ident.ml" 59 1932 1967
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 52 1634 1640 "env_ident.ml" 52 1634 1643
+)
+"env_ident.ml" 59 1932 1934 "env_ident.ml" 59 1932 1967
+call(
+  tail
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 52 1634 1636 "env_ident.ml" 59 1932 1967
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 51 1603 1605 "env_ident.ml" 59 1932 1967
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 62 1970 1974 "env_ident.ml" 62 1970 1987
+type(
+  Cidl.mmethod -> Cidl.mmethod
+)
+ident(
+  def make_concrete "env_ident.ml" 68 2130 2130 "_none_" 1 0 -1
+)
+"env_ident.ml" 62 1970 1988 "env_ident.ml" 62 1970 1995
+type(
+  Cidl.mmethod
+)
+ident(
+  def mmethod "env_ident.ml" 63 1999 2000 "env_ident.ml" 66 2115 2128
+)
+"env_ident.ml" 63 1999 2002 "env_ident.ml" 63 1999 2009
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 62 1970 1988 "env_ident.ml" 62 1970 1995
+)
+"env_ident.ml" 64 2016 2035 "env_ident.ml" 64 2016 2042
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 62 1970 1988 "env_ident.ml" 62 1970 1995
+)
+"env_ident.ml" 64 2016 2035 "env_ident.ml" 64 2016 2050
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 65 2056 2070 "env_ident.ml" 65 2056 2071
+type(
+  bool
+)
+"env_ident.ml" 65 2056 2073 "env_ident.ml" 65 2056 2077
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "env_ident.ml" 65 2056 2088 "env_ident.ml" 65 2056 2114
+)
+"env_ident.ml" 65 2056 2079 "env_ident.ml" 65 2056 2083
+type(
+  Cidl.typ list
+)
+ident(
+  def args "env_ident.ml" 65 2056 2088 "env_ident.ml" 65 2056 2114
+)
+"env_ident.ml" 65 2056 2061 "env_ident.ml" 65 2056 2084
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 65 2056 2096 "env_ident.ml" 65 2056 2101
+type(
+  bool
+)
+"env_ident.ml" 65 2056 2103 "env_ident.ml" 65 2056 2107
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "env_ident.ml" 65 2056 2073 "env_ident.ml" 65 2056 2077
+)
+"env_ident.ml" 65 2056 2109 "env_ident.ml" 65 2056 2113
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "env_ident.ml" 65 2056 2079 "env_ident.ml" 65 2056 2083
+)
+"env_ident.ml" 65 2056 2088 "env_ident.ml" 65 2056 2114
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 66 2115 2120 "env_ident.ml" 66 2115 2121
+type(
+  Cidl.mmethod_desc
+)
+ident(
+  def d "env_ident.ml" 66 2115 2125 "env_ident.ml" 66 2115 2126
+)
+"env_ident.ml" 66 2115 2125 "env_ident.ml" 66 2115 2126
+type(
+  Cidl.mmethod_desc
+)
+ident(
+  int_ref d "env_ident.ml" 66 2115 2120 "env_ident.ml" 66 2115 2121
+)
+"env_ident.ml" 64 2016 2029 "env_ident.ml" 66 2115 2126
+type(
+  Cidl.mmethod_desc
+)
+"env_ident.ml" 63 1999 2000 "env_ident.ml" 66 2115 2128
+type(
+  Cidl.mmethod
+)
+"env_ident.ml" 68 2130 2134 "env_ident.ml" 68 2130 2154
+type(
+  bool ->
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def add_inherited_method "env_ident.ml" 82 2633 2633 "_none_" 1 0 -1
+)
+"env_ident.ml" 68 2130 2155 "env_ident.ml" 68 2130 2163
+type(
+  bool
+)
+ident(
+  def concrete "env_ident.ml" 68 2130 2164 "env_ident.ml" 80 2590 2627
+)
+"env_ident.ml" 68 2130 2164 "env_ident.ml" 68 2130 2171
+type(
+  Cidl.mmethod
+)
+ident(
+  def mmethod "env_ident.ml" 68 2130 2172 "env_ident.ml" 80 2590 2627
+)
+"env_ident.ml" 68 2130 2172 "env_ident.ml" 68 2130 2175
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 69 2178 2180 "env_ident.ml" 80 2590 2627
+)
+"env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+type(
+  Ident.mmethod
+)
+ident(
+  def id "env_ident.ml" 70 2209 2211 "env_ident.ml" 80 2590 2627
+)
+"env_ident.ml" 69 2178 2189 "env_ident.ml" 69 2178 2196
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 68 2130 2164 "env_ident.ml" 68 2130 2171
+)
+"env_ident.ml" 69 2178 2189 "env_ident.ml" 69 2178 2205
+type(
+  Ident.mmethod
+)
+"env_ident.ml" 70 2209 2215 "env_ident.ml" 70 2209 2218
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 77 2510 2512 "env_ident.ml" 80 2590 2627
+)
+"env_ident.ml" 71 2222 2229 "env_ident.ml" 71 2222 2247
+type(
+  MethodIdentEnv.key -> Cidl.mmethod MethodIdentEnv.t -> bool
+)
+ident(
+  ext_ref MethodIdentEnv.mem
+)
+"env_ident.ml" 71 2222 2248 "env_ident.ml" 71 2222 2250
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 71 2222 2251 "env_ident.ml" 71 2222 2254
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 68 2130 2172 "env_ident.ml" 68 2130 2175
+)
+"env_ident.ml" 71 2222 2229 "env_ident.ml" 71 2222 2254
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 72 2261 2270 "env_ident.ml" 72 2261 2273
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"env_ident.ml" 72 2261 2275 "env_ident.ml" 72 2261 2297
+type(
+  Cidl.mmethod -> Cidl.mmethod -> bool
+)
+ident(
+  int_ref are_methods_compatible "env_ident.ml" 43 1257 1261 "env_ident.ml" 43 1257 1283
+)
+"env_ident.ml" 72 2261 2299 "env_ident.ml" 72 2261 2318
+type(
+  MethodIdentEnv.key -> Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod
+)
+ident(
+  ext_ref MethodIdentEnv.find
+)
+"env_ident.ml" 72 2261 2319 "env_ident.ml" 72 2261 2321
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 72 2261 2322 "env_ident.ml" 72 2261 2325
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 68 2130 2172 "env_ident.ml" 68 2130 2175
+)
+"env_ident.ml" 72 2261 2298 "env_ident.ml" 72 2261 2326
+call(
+  stack
+)
+type(
+  Cidl.mmethod
+)
+"env_ident.ml" 72 2261 2327 "env_ident.ml" 72 2261 2334
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 68 2130 2164 "env_ident.ml" 68 2130 2171
+)
+"env_ident.ml" 72 2261 2274 "env_ident.ml" 72 2261 2335
+call(
+  stack
+)
+type(
+  bool
+)
+"env_ident.ml" 72 2261 2270 "env_ident.ml" 72 2261 2335
+type(
+  bool
+)
+"env_ident.ml" 73 2341 2342 "env_ident.ml" 73 2341 2347
+type(
+  exn -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"env_ident.ml" 73 2341 2380 "env_ident.ml" 73 2341 2404
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"env_ident.ml" 73 2341 2405 "env_ident.ml" 73 2341 2407
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 73 2341 2380 "env_ident.ml" 73 2341 2407
+call(
+  stack
+)
+type(
+  string
+)
+"env_ident.ml" 73 2341 2409 "env_ident.ml" 73 2341 2442
+type(
+  Ident.mmethod -> Loc.t
+)
+ident(
+  ext_ref Ident.get_method_ml_name_location
+)
+"env_ident.ml" 73 2341 2443 "env_ident.ml" 73 2341 2445
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 73 2341 2409 "env_ident.ml" 73 2341 2445
+call(
+  stack
+)
+type(
+  Loc.t
+)
+"env_ident.ml" 73 2341 2355 "env_ident.ml" 73 2341 2447
+type(
+  Error.t
+)
+"env_ident.ml" 73 2341 2348 "env_ident.ml" 73 2341 2448
+type(
+  exn
+)
+"env_ident.ml" 73 2341 2342 "env_ident.ml" 73 2341 2448
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 75 2460 2461 "env_ident.ml" 75 2460 2482
+type(
+  MethodIdentEnv.key ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.remove
+)
+"env_ident.ml" 75 2460 2483 "env_ident.ml" 75 2460 2485
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 75 2460 2486 "env_ident.ml" 75 2460 2489
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 68 2130 2172 "env_ident.ml" 68 2130 2175
+)
+"env_ident.ml" 75 2460 2461 "env_ident.ml" 75 2460 2489
+call(
+  stack
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 72 2261 2267 "env_ident.ml" 75 2460 2489
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 76 2490 2499 "env_ident.ml" 76 2490 2502
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 68 2130 2172 "env_ident.ml" 68 2130 2175
+)
+"env_ident.ml" 71 2222 2226 "env_ident.ml" 76 2490 2502
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 77 2510 2515 "env_ident.ml" 77 2510 2523
+type(
+  bool
+)
+ident(
+  int_ref concrete "env_ident.ml" 68 2130 2155 "env_ident.ml" 68 2130 2163
+)
+"env_ident.ml" 78 2529 2533 "env_ident.ml" 78 2529 2551
+type(
+  MethodIdentEnv.key ->
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.add
+)
+"env_ident.ml" 78 2529 2552 "env_ident.ml" 78 2529 2554
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 78 2529 2556 "env_ident.ml" 78 2529 2569
+type(
+  Cidl.mmethod -> Cidl.mmethod
+)
+ident(
+  int_ref make_concrete "env_ident.ml" 62 1970 1974 "env_ident.ml" 62 1970 1987
+)
+"env_ident.ml" 78 2529 2570 "env_ident.ml" 78 2529 2577
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 68 2130 2164 "env_ident.ml" 68 2130 2171
+)
+"env_ident.ml" 78 2529 2555 "env_ident.ml" 78 2529 2578
+call(
+  stack
+)
+type(
+  Cidl.mmethod
+)
+"env_ident.ml" 78 2529 2579 "env_ident.ml" 78 2529 2582
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 70 2209 2215 "env_ident.ml" 70 2209 2218
+)
+"env_ident.ml" 78 2529 2533 "env_ident.ml" 78 2529 2582
+call(
+  tail
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 80 2590 2594 "env_ident.ml" 80 2590 2612
+type(
+  MethodIdentEnv.key ->
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.add
+)
+"env_ident.ml" 80 2590 2613 "env_ident.ml" 80 2590 2615
+type(
+  MethodIdentEnv.key
+)
+ident(
+  int_ref id "env_ident.ml" 69 2178 2184 "env_ident.ml" 69 2178 2186
+)
+"env_ident.ml" 80 2590 2616 "env_ident.ml" 80 2590 2623
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref mmethod "env_ident.ml" 68 2130 2164 "env_ident.ml" 68 2130 2171
+)
+"env_ident.ml" 80 2590 2624 "env_ident.ml" 80 2590 2627
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 70 2209 2215 "env_ident.ml" 70 2209 2218
+)
+"env_ident.ml" 80 2590 2594 "env_ident.ml" 80 2590 2627
+call(
+  tail
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 77 2510 2512 "env_ident.ml" 80 2590 2627
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 70 2209 2211 "env_ident.ml" 80 2590 2627
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 69 2178 2180 "env_ident.ml" 80 2590 2627
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 82 2633 2637 "env_ident.ml" 82 2633 2654
+type(
+  ?concrete:bool ->
+  Cidl.clazz list -> Cidl.clazz option -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def create_method_env "env_ident.ml" 90 3020 3020 "_none_" 1 0 -1
+)
+"env_ident.ml" 82 2633 2657 "env_ident.ml" 82 2633 2665
+type(
+  bool
+)
+"env_ident.ml" 82 2633 2666 "env_ident.ml" 82 2633 2671
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "env_ident.ml" 82 2633 2666 "env_ident.ml" 82 2633 2671
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"env_ident.ml" 82 2633 2673 "env_ident.ml" 82 2633 2683
+type(
+  Cidl.clazz list
+)
+ident(
+  def interfaces "env_ident.ml" 82 2633 2684 "env_ident.ml" 88 3015 3018
+)
+"env_ident.ml" 82 2633 2684 "env_ident.ml" 82 2633 2689
+type(
+  Cidl.clazz option
+)
+ident(
+  def super "env_ident.ml" 83 2692 2694 "env_ident.ml" 88 3015 3018
+)
+"env_ident.ml" 83 2692 2698 "env_ident.ml" 83 2692 2701
+type(
+  'a MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 84 2728 2730 "env_ident.ml" 88 3015 3018
+)
+"env_ident.ml" 83 2692 2704 "env_ident.ml" 83 2692 2724
+type(
+  'a MethodIdentEnv.t
+)
+ident(
+  ext_ref MethodIdentEnv.empty
+)
+"env_ident.ml" 84 2728 2734 "env_ident.ml" 84 2728 2737
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 87 2867 2869 "env_ident.ml" 88 3015 3018
+)
+"env_ident.ml" 84 2728 2746 "env_ident.ml" 84 2728 2751
+type(
+  Cidl.clazz option
+)
+ident(
+  int_ref super "env_ident.ml" 82 2633 2684 "env_ident.ml" 82 2633 2689
+)
+"env_ident.ml" 85 2757 2761 "env_ident.ml" 85 2757 2765
+type(
+  Cidl.clazz option
+)
+"env_ident.ml" 85 2757 2769 "env_ident.ml" 85 2757 2772
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 83 2692 2698 "env_ident.ml" 83 2692 2701
+)
+"env_ident.ml" 86 2773 2782 "env_ident.ml" 86 2773 2787
+type(
+  Cidl.clazz
+)
+ident(
+  def super "env_ident.ml" 86 2773 2791 "env_ident.ml" 86 2773 2863
+)
+"env_ident.ml" 86 2773 2777 "env_ident.ml" 86 2773 2787
+type(
+  Cidl.clazz option
+)
+"env_ident.ml" 86 2773 2791 "env_ident.ml" 86 2773 2806
+type(
+  (Cidl.mmethod ->
+   Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t) ->
+  Cidl.mmethod list ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"env_ident.ml" 86 2773 2808 "env_ident.ml" 86 2773 2828
+type(
+  bool ->
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref add_inherited_method "env_ident.ml" 68 2130 2134 "env_ident.ml" 68 2130 2154
+)
+"env_ident.ml" 86 2773 2829 "env_ident.ml" 86 2773 2834
+type(
+  bool
+)
+"env_ident.ml" 86 2773 2807 "env_ident.ml" 86 2773 2835
+call(
+  stack
+)
+type(
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 86 2773 2836 "env_ident.ml" 86 2773 2841
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref super "env_ident.ml" 86 2773 2782 "env_ident.ml" 86 2773 2787
+)
+"env_ident.ml" 86 2773 2836 "env_ident.ml" 86 2773 2859
+type(
+  Cidl.mmethod list
+)
+"env_ident.ml" 86 2773 2860 "env_ident.ml" 86 2773 2863
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 83 2692 2698 "env_ident.ml" 83 2692 2701
+)
+"env_ident.ml" 86 2773 2791 "env_ident.ml" 86 2773 2863
+call(
+  stack
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 84 2728 2740 "env_ident.ml" 86 2773 2863
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 87 2867 2873 "env_ident.ml" 87 2867 2876
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 88 3015 3015 "env_ident.ml" 88 3015 3018
+)
+"env_ident.ml" 87 2867 2879 "env_ident.ml" 87 2867 2893
+type(
+  (Cidl.mmethod MethodIdentEnv.t ->
+   Cidl.clazz -> Cidl.mmethod MethodIdentEnv.t) ->
+  Cidl.mmethod MethodIdentEnv.t ->
+  Cidl.clazz list -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"env_ident.ml" 87 2867 2899 "env_ident.ml" 87 2867 2902
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 87 2867 2903 "env_ident.ml" 87 2867 2995
+)
+"env_ident.ml" 87 2867 2903 "env_ident.ml" 87 2867 2912
+type(
+  Cidl.clazz
+)
+ident(
+  def interface "env_ident.ml" 87 2867 2916 "env_ident.ml" 87 2867 2995
+)
+"env_ident.ml" 87 2867 2916 "env_ident.ml" 87 2867 2931
+type(
+  (Cidl.mmethod ->
+   Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t) ->
+  Cidl.mmethod list ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"env_ident.ml" 87 2867 2933 "env_ident.ml" 87 2867 2953
+type(
+  bool ->
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref add_inherited_method "env_ident.ml" 68 2130 2134 "env_ident.ml" 68 2130 2154
+)
+"env_ident.ml" 87 2867 2954 "env_ident.ml" 87 2867 2962
+type(
+  bool
+)
+ident(
+  int_ref concrete "env_ident.ml" 82 2633 2657 "env_ident.ml" 82 2633 2665
+)
+"env_ident.ml" 87 2867 2932 "env_ident.ml" 87 2867 2963
+call(
+  stack
+)
+type(
+  Cidl.mmethod ->
+  Cidl.mmethod MethodIdentEnv.t -> Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 87 2867 2964 "env_ident.ml" 87 2867 2973
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref interface "env_ident.ml" 87 2867 2903 "env_ident.ml" 87 2867 2912
+)
+"env_ident.ml" 87 2867 2964 "env_ident.ml" 87 2867 2991
+type(
+  Cidl.mmethod list
+)
+"env_ident.ml" 87 2867 2992 "env_ident.ml" 87 2867 2995
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 87 2867 2899 "env_ident.ml" 87 2867 2902
+)
+"env_ident.ml" 87 2867 2916 "env_ident.ml" 87 2867 2995
+call(
+  tail
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 87 2867 2894 "env_ident.ml" 87 2867 2996
+type(
+  Cidl.mmethod MethodIdentEnv.t ->
+  Cidl.clazz -> Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 87 2867 2997 "env_ident.ml" 87 2867 3000
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 84 2728 2734 "env_ident.ml" 84 2728 2737
+)
+"env_ident.ml" 87 2867 3001 "env_ident.ml" 87 2867 3011
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref interfaces "env_ident.ml" 82 2633 2673 "env_ident.ml" 82 2633 2683
+)
+"env_ident.ml" 87 2867 2879 "env_ident.ml" 87 2867 3011
+call(
+  tail
+)
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 88 3015 3015 "env_ident.ml" 88 3015 3018
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 87 2867 2873 "env_ident.ml" 87 2867 2876
+)
+"env_ident.ml" 87 2867 2869 "env_ident.ml" 88 3015 3018
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 84 2728 2730 "env_ident.ml" 88 3015 3018
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 83 2692 2694 "env_ident.ml" 88 3015 3018
+type(
+  Cidl.mmethod MethodIdentEnv.t
+)
+"env_ident.ml" 90 3020 3024 "env_ident.ml" 90 3020 3043
+type(
+  'a MethodIdentEnv.t -> 'a list
+)
+ident(
+  def mmethod_env_to_list "env_ident.ml" 91 3051 3115 "_none_" 1 0 -1
+)
+"env_ident.ml" 90 3020 3044 "env_ident.ml" 90 3020 3047
+type(
+  'a MethodIdentEnv.t
+)
+ident(
+  def env "env_ident.ml" 91 3051 3053 "env_ident.ml" 91 3051 3115
+)
+"env_ident.ml" 91 3051 3053 "env_ident.ml" 91 3051 3061
+type(
+  'a list -> 'a list
+)
+ident(
+  ext_ref List.rev
+)
+"env_ident.ml" 91 3051 3063 "env_ident.ml" 91 3051 3082
+type(
+  (MethodIdentEnv.key -> 'a -> 'a list -> 'a list) ->
+  'a MethodIdentEnv.t -> 'a list -> 'a list
+)
+ident(
+  ext_ref MethodIdentEnv.fold
+)
+"env_ident.ml" 91 3051 3088 "env_ident.ml" 91 3051 3090
+type(
+  MethodIdentEnv.key
+)
+ident(
+  def id "env_ident.ml" 91 3051 3091 "env_ident.ml" 91 3051 3106
+)
+"env_ident.ml" 91 3051 3091 "env_ident.ml" 91 3051 3092
+type(
+  'a
+)
+ident(
+  def e "env_ident.ml" 91 3051 3093 "env_ident.ml" 91 3051 3106
+)
+"env_ident.ml" 91 3051 3093 "env_ident.ml" 91 3051 3096
+type(
+  'a list
+)
+ident(
+  def acc "env_ident.ml" 91 3051 3100 "env_ident.ml" 91 3051 3106
+)
+"env_ident.ml" 91 3051 3100 "env_ident.ml" 91 3051 3101
+type(
+  'a
+)
+ident(
+  int_ref e "env_ident.ml" 91 3051 3091 "env_ident.ml" 91 3051 3092
+)
+"env_ident.ml" 91 3051 3103 "env_ident.ml" 91 3051 3106
+type(
+  'a list
+)
+ident(
+  int_ref acc "env_ident.ml" 91 3051 3093 "env_ident.ml" 91 3051 3096
+)
+"env_ident.ml" 91 3051 3100 "env_ident.ml" 91 3051 3106
+type(
+  'a list
+)
+"env_ident.ml" 91 3051 3083 "env_ident.ml" 91 3051 3107
+type(
+  MethodIdentEnv.key -> 'a -> 'a list -> 'a list
+)
+"env_ident.ml" 91 3051 3108 "env_ident.ml" 91 3051 3111
+type(
+  'a MethodIdentEnv.t
+)
+ident(
+  int_ref env "env_ident.ml" 90 3020 3044 "env_ident.ml" 90 3020 3047
+)
+"env_ident.ml" 91 3051 3112 "env_ident.ml" 91 3051 3114
+type(
+  'a list
+)
+"env_ident.ml" 91 3051 3062 "env_ident.ml" 91 3051 3115
+call(
+  stack
+)
+type(
+  'a list
+)
+"env_ident.ml" 91 3051 3053 "env_ident.ml" 91 3051 3115
+call(
+  tail
+)
+type(
+  'a list
+)

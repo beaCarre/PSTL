@@ -1,0 +1,82 @@
+"idl_javagen.ml" 6 92 96 "idl_javagen.ml" 6 92 113
+type(
+  Cidl.clazz list -> unit
+)
+ident(
+  def create_stub_files "idl_javagen.ml" 7 121 211 "_none_" 1 0 -1
+)
+"idl_javagen.ml" 6 92 114 "idl_javagen.ml" 6 92 118
+type(
+  Cidl.clazz list
+)
+ident(
+  def file "idl_javagen.ml" 7 121 123 "idl_javagen.ml" 7 121 211
+)
+"idl_javagen.ml" 7 121 123 "idl_javagen.ml" 7 121 132
+type(
+  (Cidl.clazz -> unit) -> Cidl.clazz list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"idl_javagen.ml" 7 121 138 "idl_javagen.ml" 7 121 143
+type(
+  Cidl.clazz
+)
+ident(
+  def clazz "idl_javagen.ml" 7 121 147 "idl_javagen.ml" 7 121 205
+)
+"idl_javagen.ml" 7 121 150 "idl_javagen.ml" 7 121 155
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "idl_javagen.ml" 7 121 138 "idl_javagen.ml" 7 121 143
+)
+"idl_javagen.ml" 7 121 150 "idl_javagen.ml" 7 121 167
+type(
+  bool
+)
+"idl_javagen.ml" 7 121 173 "idl_javagen.ml" 7 121 199
+type(
+  Cidl.clazz -> unit
+)
+ident(
+  ext_ref JavaClass.create_stub_file
+)
+"idl_javagen.ml" 7 121 200 "idl_javagen.ml" 7 121 205
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref clazz "idl_javagen.ml" 7 121 138 "idl_javagen.ml" 7 121 143
+)
+"idl_javagen.ml" 7 121 173 "idl_javagen.ml" 7 121 205
+call(
+  tail
+)
+type(
+  unit
+)
+"idl_javagen.ml" 7 121 147 "idl_javagen.ml" 7 121 205
+type(
+  unit
+)
+"idl_javagen.ml" 7 121 133 "idl_javagen.ml" 7 121 206
+type(
+  Cidl.clazz -> unit
+)
+"idl_javagen.ml" 7 121 207 "idl_javagen.ml" 7 121 211
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref file "idl_javagen.ml" 6 92 114 "idl_javagen.ml" 6 92 118
+)
+"idl_javagen.ml" 7 121 123 "idl_javagen.ml" 7 121 211
+call(
+  tail
+)
+type(
+  unit
+)

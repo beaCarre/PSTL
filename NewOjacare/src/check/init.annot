@@ -1,0 +1,213 @@
+"init.ml" 7 93 97 "init.ml" 7 93 109
+type(
+  string list * Env_idl.clazz_env -> Ident.clazz -> Idl.init -> Cidl.init
+)
+ident(
+  def convert_init "init.ml" 17 331 331 "_none_" 1 0 -1
+)
+"init.ml" 7 93 110 "init.ml" 7 93 117
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "init.ml" 7 93 118 "init.ml" 15 325 328
+)
+"init.ml" 7 93 118 "init.ml" 7 93 126
+type(
+  Ident.clazz
+)
+ident(
+  def class_id "init.ml" 7 93 127 "init.ml" 15 325 328
+)
+"init.ml" 7 93 127 "init.ml" 7 93 131
+type(
+  Idl.init
+)
+ident(
+  def init "init.ml" 9 135 137 "init.ml" 15 325 328
+)
+"init.ml" 9 135 141 "init.ml" 9 135 150
+type(
+  Ident.mmethod
+)
+ident(
+  def method_id "init.ml" 10 196 198 "init.ml" 15 325 328
+)
+"init.ml" 9 135 153 "init.ml" 9 135 178
+type(
+  Ident.clazz -> Idl.init -> Ident.mmethod
+)
+ident(
+  ext_ref Ident.make_init_method_id
+)
+"init.ml" 9 135 179 "init.ml" 9 135 187
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "init.ml" 7 93 118 "init.ml" 7 93 126
+)
+"init.ml" 9 135 188 "init.ml" 9 135 192
+type(
+  Idl.init
+)
+ident(
+  int_ref init "init.ml" 7 93 127 "init.ml" 7 93 131
+)
+"init.ml" 9 135 153 "init.ml" 9 135 192
+call(
+  stack
+)
+type(
+  Ident.mmethod
+)
+"init.ml" 10 196 202 "init.ml" 10 196 206
+type(
+  Cidl.typ list
+)
+ident(
+  def args "init.ml" 12 251 253 "init.ml" 15 325 328
+)
+"init.ml" 10 196 209 "init.ml" 10 196 226
+type(
+  string list * Env_idl.clazz_env -> Idl.arg list -> Cidl.typ list
+)
+ident(
+  ext_ref Type.convert_args
+)
+"init.ml" 10 196 227 "init.ml" 10 196 234
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "init.ml" 7 93 110 "init.ml" 7 93 117
+)
+"init.ml" 10 196 235 "init.ml" 10 196 239
+type(
+  Idl.init
+)
+ident(
+  int_ref init "init.ml" 7 93 127 "init.ml" 7 93 131
+)
+"init.ml" 10 196 235 "init.ml" 10 196 246
+type(
+  Idl.arg list
+)
+"init.ml" 10 196 209 "init.ml" 10 196 246
+call(
+  stack
+)
+type(
+  Cidl.typ list
+)
+"init.ml" 12 251 267 "init.ml" 12 251 276
+type(
+  Ident.mmethod
+)
+ident(
+  int_ref method_id "init.ml" 9 135 141 "init.ml" 9 135 150
+)
+"init.ml" 13 278 294 "init.ml" 13 278 302
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "init.ml" 7 93 118 "init.ml" 7 93 126
+)
+"init.ml" 14 304 319 "init.ml" 14 304 323
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "init.ml" 10 196 202 "init.ml" 10 196 206
+)
+"init.ml" 12 251 253 "init.ml" 15 325 328
+type(
+  Cidl.init
+)
+"init.ml" 10 196 198 "init.ml" 15 325 328
+type(
+  Cidl.init
+)
+"init.ml" 9 135 137 "init.ml" 15 325 328
+type(
+  Cidl.init
+)
+"init.ml" 17 331 335 "init.ml" 17 331 342
+type(
+  string list * Env_idl.clazz_env ->
+  Ident.clazz -> Idl.init list -> Cidl.init list
+)
+ident(
+  def convert "init.ml" 18 372 424 "_none_" 1 0 -1
+)
+"init.ml" 17 331 343 "init.ml" 17 331 350
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  def env_idl "init.ml" 17 331 351 "init.ml" 18 372 424
+)
+"init.ml" 17 331 351 "init.ml" 17 331 359
+type(
+  Ident.clazz
+)
+ident(
+  def class_id "init.ml" 17 331 360 "init.ml" 18 372 424
+)
+"init.ml" 17 331 360 "init.ml" 17 331 369
+type(
+  Idl.init list
+)
+ident(
+  def init_list "init.ml" 18 372 374 "init.ml" 18 372 424
+)
+"init.ml" 18 372 374 "init.ml" 18 372 382
+type(
+  (Idl.init -> Cidl.init) -> Idl.init list -> Cidl.init list
+)
+ident(
+  ext_ref List.map
+)
+"init.ml" 18 372 384 "init.ml" 18 372 396
+type(
+  string list * Env_idl.clazz_env -> Ident.clazz -> Idl.init -> Cidl.init
+)
+ident(
+  int_ref convert_init "init.ml" 7 93 97 "init.ml" 7 93 109
+)
+"init.ml" 18 372 397 "init.ml" 18 372 404
+type(
+  string list * Env_idl.clazz_env
+)
+ident(
+  int_ref env_idl "init.ml" 17 331 343 "init.ml" 17 331 350
+)
+"init.ml" 18 372 405 "init.ml" 18 372 413
+type(
+  Ident.clazz
+)
+ident(
+  int_ref class_id "init.ml" 17 331 351 "init.ml" 17 331 359
+)
+"init.ml" 18 372 383 "init.ml" 18 372 414
+call(
+  stack
+)
+type(
+  Idl.init -> Cidl.init
+)
+"init.ml" 18 372 415 "init.ml" 18 372 424
+type(
+  Idl.init list
+)
+ident(
+  int_ref init_list "init.ml" 17 331 360 "init.ml" 17 331 369
+)
+"init.ml" 18 372 374 "init.ml" 18 372 424
+call(
+  tail
+)
+type(
+  Cidl.init list
+)

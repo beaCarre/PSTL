@@ -1,0 +1,715 @@
+"env_idl.ml" 8 140 148 "env_idl.ml" 8 140 155
+type(
+  'a * Idl.ident -> 'a * Idl.ident -> int
+)
+ident(
+  def compare "env_idl.ml" 11 292 306 "env_idl.ml" 12 307 312
+)
+"env_idl.ml" 8 140 156 "env_idl.ml" 8 140 159
+type(
+  'a * Idl.ident
+)
+ident(
+  def id1 "env_idl.ml" 8 140 160 "env_idl.ml" 11 292 306
+)
+"env_idl.ml" 8 140 160 "env_idl.ml" 8 140 163
+type(
+  'a * Idl.ident
+)
+ident(
+  def id2 "env_idl.ml" 9 167 173 "env_idl.ml" 11 292 306
+)
+"env_idl.ml" 9 167 179 "env_idl.ml" 9 167 197
+type(
+  'a -> 'a -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"env_idl.ml" 9 167 199 "env_idl.ml" 9 167 202
+type(
+  'a * Idl.ident -> 'a
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"env_idl.ml" 9 167 203 "env_idl.ml" 9 167 206
+type(
+  'a * Idl.ident
+)
+ident(
+  int_ref id1 "env_idl.ml" 8 140 156 "env_idl.ml" 8 140 159
+)
+"env_idl.ml" 9 167 198 "env_idl.ml" 9 167 207
+type(
+  'a
+)
+"env_idl.ml" 9 167 209 "env_idl.ml" 9 167 212
+type(
+  'a * Idl.ident -> 'a
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"env_idl.ml" 9 167 213 "env_idl.ml" 9 167 216
+type(
+  'a * Idl.ident
+)
+ident(
+  int_ref id2 "env_idl.ml" 8 140 160 "env_idl.ml" 8 140 163
+)
+"env_idl.ml" 9 167 208 "env_idl.ml" 9 167 217
+type(
+  'a
+)
+"env_idl.ml" 9 167 179 "env_idl.ml" 9 167 217
+type(
+  int
+)
+"env_idl.ml" 10 223 224 "env_idl.ml" 10 223 225
+type(
+  int
+)
+"env_idl.ml" 10 223 229 "env_idl.ml" 10 223 247
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"env_idl.ml" 10 223 249 "env_idl.ml" 10 223 252
+type(
+  'a * Idl.ident -> Idl.ident
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"env_idl.ml" 10 223 253 "env_idl.ml" 10 223 256
+type(
+  'a * Idl.ident
+)
+ident(
+  int_ref id1 "env_idl.ml" 8 140 156 "env_idl.ml" 8 140 159
+)
+"env_idl.ml" 10 223 248 "env_idl.ml" 10 223 257
+type(
+  Idl.ident
+)
+"env_idl.ml" 10 223 248 "env_idl.ml" 10 223 269
+type(
+  string
+)
+"env_idl.ml" 10 223 271 "env_idl.ml" 10 223 274
+type(
+  'a * Idl.ident -> Idl.ident
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"env_idl.ml" 10 223 275 "env_idl.ml" 10 223 278
+type(
+  'a * Idl.ident
+)
+ident(
+  int_ref id2 "env_idl.ml" 8 140 160 "env_idl.ml" 8 140 163
+)
+"env_idl.ml" 10 223 270 "env_idl.ml" 10 223 279
+type(
+  Idl.ident
+)
+"env_idl.ml" 10 223 270 "env_idl.ml" 10 223 291
+type(
+  string
+)
+"env_idl.ml" 10 223 229 "env_idl.ml" 10 223 291
+type(
+  int
+)
+"env_idl.ml" 11 292 300 "env_idl.ml" 11 292 301
+type(
+  int
+)
+ident(
+  def i "env_idl.ml" 11 292 305 "env_idl.ml" 11 292 306
+)
+"env_idl.ml" 11 292 305 "env_idl.ml" 11 292 306
+type(
+  int
+)
+ident(
+  int_ref i "env_idl.ml" 11 292 300 "env_idl.ml" 11 292 301
+)
+"env_idl.ml" 9 167 173 "env_idl.ml" 11 292 306
+type(
+  int
+)
+"env_idl.ml" 13 313 334 "env_idl.ml" 13 313 359
+call(
+  stack
+)
+"env_idl.ml" 16 404 408 "env_idl.ml" 16 404 423
+type(
+  'a ClassIdlEnv.t
+)
+ident(
+  def empty_clazz_env "env_idl.ml" 18 445 445 "_none_" 1 0 -1
+)
+"env_idl.ml" 16 404 426 "env_idl.ml" 16 404 443
+type(
+  'a ClassIdlEnv.t
+)
+ident(
+  ext_ref ClassIdlEnv.empty
+)
+"env_idl.ml" 18 445 449 "env_idl.ml" 18 445 466
+type(
+  string list * 'a ClassIdlEnv.t -> Idl.ident -> 'a
+)
+ident(
+  def find_class_simple "env_idl.ml" 21 557 557 "_none_" 1 0 -1
+)
+"env_idl.ml" 18 445 468 "env_idl.ml" 18 445 483
+type(
+  string list
+)
+ident(
+  def current_package "env_idl.ml" 18 445 495 "env_idl.ml" 19 503 555
+)
+"env_idl.ml" 18 445 484 "env_idl.ml" 18 445 493
+type(
+  'a ClassIdlEnv.t
+)
+ident(
+  def env_class "env_idl.ml" 18 445 495 "env_idl.ml" 19 503 555
+)
+"env_idl.ml" 18 445 467 "env_idl.ml" 18 445 494
+type(
+  string list * 'a ClassIdlEnv.t
+)
+"env_idl.ml" 18 445 495 "env_idl.ml" 18 445 499
+type(
+  Idl.ident
+)
+ident(
+  def name "env_idl.ml" 19 503 506 "env_idl.ml" 19 503 555
+)
+"env_idl.ml" 19 503 506 "env_idl.ml" 19 503 522
+type(
+  ClassIdlEnv.key -> 'a ClassIdlEnv.t -> 'a
+)
+ident(
+  ext_ref ClassIdlEnv.find
+)
+"env_idl.ml" 19 503 524 "env_idl.ml" 19 503 539
+type(
+  string list
+)
+ident(
+  int_ref current_package "env_idl.ml" 18 445 468 "env_idl.ml" 18 445 483
+)
+"env_idl.ml" 19 503 540 "env_idl.ml" 19 503 544
+type(
+  Idl.ident
+)
+ident(
+  int_ref name "env_idl.ml" 18 445 495 "env_idl.ml" 18 445 499
+)
+"env_idl.ml" 19 503 523 "env_idl.ml" 19 503 545
+type(
+  ClassIdlEnv.key
+)
+"env_idl.ml" 19 503 546 "env_idl.ml" 19 503 555
+type(
+  'a ClassIdlEnv.t
+)
+ident(
+  int_ref env_class "env_idl.ml" 18 445 484 "env_idl.ml" 18 445 493
+)
+"env_idl.ml" 19 503 506 "env_idl.ml" 19 503 555
+call(
+  tail
+)
+type(
+  'a
+)
+"env_idl.ml" 21 557 561 "env_idl.ml" 21 557 571
+type(
+  string list * 'a ClassIdlEnv.t -> Idl.qident -> 'a
+)
+ident(
+  def find_class "env_idl.ml" 27 751 751 "_none_" 1 0 -1
+)
+"env_idl.ml" 21 557 573 "env_idl.ml" 21 557 588
+type(
+  string list
+)
+ident(
+  def current_package "env_idl.ml" 21 557 600 "env_idl.ml" 25 692 749
+)
+"env_idl.ml" 21 557 589 "env_idl.ml" 21 557 598
+type(
+  'a ClassIdlEnv.t
+)
+ident(
+  def env_class "env_idl.ml" 21 557 600 "env_idl.ml" 25 692 749
+)
+"env_idl.ml" 21 557 572 "env_idl.ml" 21 557 599
+type(
+  string list * 'a ClassIdlEnv.t
+)
+"env_idl.ml" 21 557 600 "env_idl.ml" 21 557 604
+type(
+  Idl.qident
+)
+ident(
+  def name "env_idl.ml" 22 608 610 "env_idl.ml" 25 692 749
+)
+"env_idl.ml" 22 608 616 "env_idl.ml" 22 608 631
+type(
+  string list
+)
+ident(
+  int_ref current_package "env_idl.ml" 21 557 573 "env_idl.ml" 21 557 588
+)
+"env_idl.ml" 22 608 633 "env_idl.ml" 22 608 637
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "env_idl.ml" 21 557 600 "env_idl.ml" 21 557 604
+)
+"env_idl.ml" 22 608 633 "env_idl.ml" 22 608 653
+type(
+  string list
+)
+"env_idl.ml" 22 608 616 "env_idl.ml" 22 608 653
+type(
+  string list * string list
+)
+"env_idl.ml" 23 659 663 "env_idl.ml" 23 659 670
+type(
+  string list
+)
+ident(
+  def package "env_idl.ml" 25 692 695 "env_idl.ml" 25 692 749
+)
+"env_idl.ml" 23 659 671 "env_idl.ml" 23 659 673
+type(
+  string list
+)
+"env_idl.ml" 23 659 663 "env_idl.ml" 23 659 673
+type(
+  string list * string list
+)
+"env_idl.ml" 24 674 678 "env_idl.ml" 24 674 679
+type(
+  string list
+)
+"env_idl.ml" 24 674 680 "env_idl.ml" 24 674 687
+type(
+  string list
+)
+ident(
+  def package "env_idl.ml" 25 692 695 "env_idl.ml" 25 692 749
+)
+"env_idl.ml" 24 674 678 "env_idl.ml" 24 674 687
+type(
+  string list * string list
+)
+"env_idl.ml" 23 659 663 "env_idl.ml" 24 674 687
+type(
+  string list * string list
+)
+"env_idl.ml" 25 692 695 "env_idl.ml" 25 692 711
+type(
+  ClassIdlEnv.key -> 'a ClassIdlEnv.t -> 'a
+)
+ident(
+  ext_ref ClassIdlEnv.find
+)
+"env_idl.ml" 25 692 713 "env_idl.ml" 25 692 720
+type(
+  string list
+)
+ident(
+  int_ref package "env_idl.ml" 23 659 663 "env_idl.ml" 23 659 670
+)
+"env_idl.ml" 25 692 721 "env_idl.ml" 25 692 725
+type(
+  Idl.qident
+)
+ident(
+  int_ref name "env_idl.ml" 21 557 600 "env_idl.ml" 21 557 604
+)
+"env_idl.ml" 25 692 721 "env_idl.ml" 25 692 738
+type(
+  Idl.ident
+)
+"env_idl.ml" 25 692 712 "env_idl.ml" 25 692 739
+type(
+  ClassIdlEnv.key
+)
+"env_idl.ml" 25 692 740 "env_idl.ml" 25 692 749
+type(
+  'a ClassIdlEnv.t
+)
+ident(
+  int_ref env_class "env_idl.ml" 21 557 589 "env_idl.ml" 21 557 598
+)
+"env_idl.ml" 25 692 695 "env_idl.ml" 25 692 749
+call(
+  tail
+)
+type(
+  'a
+)
+"env_idl.ml" 22 608 610 "env_idl.ml" 25 692 749
+type(
+  'a
+)
+"env_idl.ml" 30 772 776 "env_idl.ml" 30 772 779
+type(
+  ClassIdlEnv.key -> 'a -> 'a ClassIdlEnv.t -> 'a ClassIdlEnv.t
+)
+ident(
+  def add "env_idl.ml" 31 798 798 "_none_" 1 0 -1
+)
+"env_idl.ml" 30 772 782 "env_idl.ml" 30 772 797
+type(
+  ClassIdlEnv.key -> 'a -> 'a ClassIdlEnv.t -> 'a ClassIdlEnv.t
+)
+ident(
+  ext_ref ClassIdlEnv.add
+)
+"env_idl.ml" 31 798 802 "env_idl.ml" 31 798 805
+type(
+  ClassIdlEnv.key -> 'a ClassIdlEnv.t -> bool
+)
+ident(
+  def mem "env_idl.ml" 33 825 825 "_none_" 1 0 -1
+)
+"env_idl.ml" 31 798 808 "env_idl.ml" 31 798 823
+type(
+  ClassIdlEnv.key -> 'a ClassIdlEnv.t -> bool
+)
+ident(
+  ext_ref ClassIdlEnv.mem
+)
+"env_idl.ml" 33 825 829 "env_idl.ml" 33 825 836
+type(
+  string list ->
+  Ident.clazz ClassIdlEnv.t -> Idl.def -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  def add_def "env_idl.ml" 39 1026 1026 "_none_" 1 0 -1
+)
+"env_idl.ml" 33 825 837 "env_idl.ml" 33 825 844
+type(
+  string list
+)
+ident(
+  def package "env_idl.ml" 33 825 845 "env_idl.ml" 37 970 1024
+)
+"env_idl.ml" 33 825 845 "env_idl.ml" 33 825 848
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  def env "env_idl.ml" 33 825 849 "env_idl.ml" 37 970 1024
+)
+"env_idl.ml" 33 825 849 "env_idl.ml" 33 825 852
+type(
+  Idl.def
+)
+ident(
+  def def "env_idl.ml" 34 855 857 "env_idl.ml" 37 970 1024
+)
+"env_idl.ml" 34 855 861 "env_idl.ml" 34 855 869
+type(
+  string list * Idl.ident
+)
+ident(
+  def idl_name "env_idl.ml" 35 895 897 "env_idl.ml" 37 970 1024
+)
+"env_idl.ml" 34 855 872 "env_idl.ml" 34 855 879
+type(
+  string list
+)
+ident(
+  int_ref package "env_idl.ml" 33 825 837 "env_idl.ml" 33 825 844
+)
+"env_idl.ml" 34 855 881 "env_idl.ml" 34 855 884
+type(
+  Idl.def
+)
+ident(
+  int_ref def "env_idl.ml" 33 825 849 "env_idl.ml" 33 825 852
+)
+"env_idl.ml" 34 855 881 "env_idl.ml" 34 855 891
+type(
+  Idl.ident
+)
+"env_idl.ml" 34 855 872 "env_idl.ml" 34 855 891
+type(
+  string list * Idl.ident
+)
+"env_idl.ml" 35 895 900 "env_idl.ml" 35 895 903
+type(
+  ClassIdlEnv.key -> Ident.clazz ClassIdlEnv.t -> bool
+)
+ident(
+  int_ref mem "env_idl.ml" 31 798 802 "env_idl.ml" 31 798 805
+)
+"env_idl.ml" 35 895 904 "env_idl.ml" 35 895 912
+type(
+  ClassIdlEnv.key
+)
+ident(
+  int_ref idl_name "env_idl.ml" 34 855 861 "env_idl.ml" 34 855 869
+)
+"env_idl.ml" 35 895 913 "env_idl.ml" 35 895 916
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref env "env_idl.ml" 33 825 845 "env_idl.ml" 33 825 848
+)
+"env_idl.ml" 35 895 900 "env_idl.ml" 35 895 916
+call(
+  stack
+)
+type(
+  bool
+)
+"env_idl.ml" 36 922 926 "env_idl.ml" 36 922 931
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"env_idl.ml" 36 922 958 "env_idl.ml" 36 922 966
+type(
+  string list * Idl.ident
+)
+ident(
+  int_ref idl_name "env_idl.ml" 34 855 861 "env_idl.ml" 34 855 869
+)
+"env_idl.ml" 36 922 939 "env_idl.ml" 36 922 967
+type(
+  Error.t
+)
+"env_idl.ml" 36 922 932 "env_idl.ml" 36 922 968
+type(
+  exn
+)
+"env_idl.ml" 36 922 926 "env_idl.ml" 36 922 968
+type(
+  unit
+)
+"env_idl.ml" 35 895 897 "env_idl.ml" 36 922 968
+type(
+  unit
+)
+"env_idl.ml" 37 970 972 "env_idl.ml" 37 970 975
+type(
+  ClassIdlEnv.key ->
+  Ident.clazz -> Ident.clazz ClassIdlEnv.t -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref add "env_idl.ml" 30 772 776 "env_idl.ml" 30 772 779
+)
+"env_idl.ml" 37 970 976 "env_idl.ml" 37 970 984
+type(
+  ClassIdlEnv.key
+)
+ident(
+  int_ref idl_name "env_idl.ml" 34 855 861 "env_idl.ml" 34 855 869
+)
+"env_idl.ml" 37 970 986 "env_idl.ml" 37 970 1008
+type(
+  string list -> Idl.def -> Ident.clazz
+)
+ident(
+  ext_ref Ident.make_class_ident
+)
+"env_idl.ml" 37 970 1009 "env_idl.ml" 37 970 1016
+type(
+  string list
+)
+ident(
+  int_ref package "env_idl.ml" 33 825 837 "env_idl.ml" 33 825 844
+)
+"env_idl.ml" 37 970 1017 "env_idl.ml" 37 970 1020
+type(
+  Idl.def
+)
+ident(
+  int_ref def "env_idl.ml" 33 825 849 "env_idl.ml" 33 825 852
+)
+"env_idl.ml" 37 970 985 "env_idl.ml" 37 970 1021
+call(
+  stack
+)
+type(
+  Ident.clazz
+)
+"env_idl.ml" 37 970 1021 "env_idl.ml" 37 970 1024
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref env "env_idl.ml" 33 825 845 "env_idl.ml" 33 825 848
+)
+"env_idl.ml" 37 970 972 "env_idl.ml" 37 970 1024
+call(
+  tail
+)
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+"env_idl.ml" 35 895 897 "env_idl.ml" 37 970 1024
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+"env_idl.ml" 34 855 857 "env_idl.ml" 37 970 1024
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+"env_idl.ml" 39 1026 1030 "env_idl.ml" 39 1026 1041
+type(
+  Ident.clazz ClassIdlEnv.t -> Idl.package -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  def add_package "env_idl.ml" 42 1119 1119 "_none_" 1 0 -1
+)
+"env_idl.ml" 39 1026 1042 "env_idl.ml" 39 1026 1045
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  def env "env_idl.ml" 39 1026 1046 "env_idl.ml" 40 1056 1116
+)
+"env_idl.ml" 39 1026 1046 "env_idl.ml" 39 1026 1053
+type(
+  Idl.package
+)
+ident(
+  def package "env_idl.ml" 40 1056 1058 "env_idl.ml" 40 1056 1116
+)
+"env_idl.ml" 40 1056 1058 "env_idl.ml" 40 1056 1072
+type(
+  (Ident.clazz ClassIdlEnv.t -> Idl.def -> Ident.clazz ClassIdlEnv.t) ->
+  Ident.clazz ClassIdlEnv.t -> Idl.def list -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"env_idl.ml" 40 1056 1074 "env_idl.ml" 40 1056 1081
+type(
+  string list ->
+  Ident.clazz ClassIdlEnv.t -> Idl.def -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref add_def "env_idl.ml" 33 825 829 "env_idl.ml" 33 825 836
+)
+"env_idl.ml" 40 1056 1082 "env_idl.ml" 40 1056 1089
+type(
+  Idl.package
+)
+ident(
+  int_ref package "env_idl.ml" 39 1026 1046 "env_idl.ml" 39 1026 1053
+)
+"env_idl.ml" 40 1056 1082 "env_idl.ml" 40 1056 1096
+type(
+  string list
+)
+"env_idl.ml" 40 1056 1073 "env_idl.ml" 40 1056 1097
+call(
+  stack
+)
+type(
+  Ident.clazz ClassIdlEnv.t -> Idl.def -> Ident.clazz ClassIdlEnv.t
+)
+"env_idl.ml" 40 1056 1098 "env_idl.ml" 40 1056 1101
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref env "env_idl.ml" 39 1026 1042 "env_idl.ml" 39 1026 1045
+)
+"env_idl.ml" 40 1056 1102 "env_idl.ml" 40 1056 1109
+type(
+  Idl.package
+)
+ident(
+  int_ref package "env_idl.ml" 39 1026 1046 "env_idl.ml" 39 1026 1053
+)
+"env_idl.ml" 40 1056 1102 "env_idl.ml" 40 1056 1116
+type(
+  Idl.def list
+)
+"env_idl.ml" 40 1056 1058 "env_idl.ml" 40 1056 1116
+call(
+  tail
+)
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+"env_idl.ml" 42 1119 1123 "env_idl.ml" 42 1119 1131
+type(
+  Idl.package list -> Ident.clazz ClassIdlEnv.t -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  def add_file "env_idl.ml" 43 1144 1181 "_none_" 1 0 -1
+)
+"env_idl.ml" 42 1119 1132 "env_idl.ml" 42 1119 1136
+type(
+  Idl.package list
+)
+ident(
+  def file "env_idl.ml" 42 1119 1137 "env_idl.ml" 43 1144 1181
+)
+"env_idl.ml" 42 1119 1137 "env_idl.ml" 42 1119 1140
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  def env "env_idl.ml" 43 1144 1146 "env_idl.ml" 43 1144 1181
+)
+"env_idl.ml" 43 1144 1146 "env_idl.ml" 43 1144 1160
+type(
+  (Ident.clazz ClassIdlEnv.t -> Idl.package -> Ident.clazz ClassIdlEnv.t) ->
+  Ident.clazz ClassIdlEnv.t -> Idl.package list -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"env_idl.ml" 43 1144 1161 "env_idl.ml" 43 1144 1172
+type(
+  Ident.clazz ClassIdlEnv.t -> Idl.package -> Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref add_package "env_idl.ml" 39 1026 1030 "env_idl.ml" 39 1026 1041
+)
+"env_idl.ml" 43 1144 1173 "env_idl.ml" 43 1144 1176
+type(
+  Ident.clazz ClassIdlEnv.t
+)
+ident(
+  int_ref env "env_idl.ml" 42 1119 1137 "env_idl.ml" 42 1119 1140
+)
+"env_idl.ml" 43 1144 1177 "env_idl.ml" 43 1144 1181
+type(
+  Idl.package list
+)
+ident(
+  int_ref file "env_idl.ml" 42 1119 1132 "env_idl.ml" 42 1119 1136
+)
+"env_idl.ml" 43 1144 1146 "env_idl.ml" 43 1144 1181
+call(
+  tail
+)
+type(
+  Ident.clazz ClassIdlEnv.t
+)
