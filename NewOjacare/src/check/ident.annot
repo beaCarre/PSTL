@@ -241,7 +241,7 @@ type(
   clazz -> string
 )
 ident(
-  def get_class_java_stub_name "ident.ml" 29 848 848 "_none_" 1 0 -1
+  def get_class_java_stub_name "ident.ml" 30 849 849 "_none_" 1 0 -1
 )
 "ident.ml" 28 800 829 "ident.ml" 28 800 830
 type(
@@ -261,3409 +261,3554 @@ ident(
 type(
   string
 )
-"ident.ml" 29 848 852 "ident.ml" 29 848 881
+"ident.ml" 30 849 853 "ident.ml" 30 849 875
 type(
   clazz -> string
 )
 ident(
-  def get_class_java_qualified_name "ident.ml" 30 959 959 "_none_" 1 0 -1
+  def get_class_java_oj_name "ident.ml" 31 954 954 "_none_" 1 0 -1
 )
-"ident.ml" 29 848 882 "ident.ml" 29 848 883
+"ident.ml" 30 849 876 "ident.ml" 30 849 877
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 29 848 886 "ident.ml" 29 848 958
+  def c "ident.ml" 30 849 881 "ident.ml" 30 849 953
 )
-"ident.ml" 29 848 886 "ident.ml" 29 848 899
+"ident.ml" 30 849 881 "ident.ml" 30 849 894
 type(
   string -> string list -> string
 )
 ident(
   ext_ref String.concat
 )
-"ident.ml" 29 848 900 "ident.ml" 29 848 903
+"ident.ml" 30 849 895 "ident.ml" 30 849 898
 type(
   string
 )
-"ident.ml" 29 848 906 "ident.ml" 29 848 928
+"ident.ml" 30 849 901 "ident.ml" 30 849 923
 type(
   clazz -> string list
 )
 ident(
   int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
 )
-"ident.ml" 29 848 929 "ident.ml" 29 848 930
+"ident.ml" 30 849 924 "ident.ml" 30 849 925
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 29 848 882 "ident.ml" 29 848 883
+  int_ref c "ident.ml" 30 849 876 "ident.ml" 30 849 877
 )
-"ident.ml" 29 848 905 "ident.ml" 29 848 931
+"ident.ml" 30 849 900 "ident.ml" 30 849 926
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 29 848 932 "ident.ml" 29 848 933
+"ident.ml" 30 849 927 "ident.ml" 30 849 928
 type(
   string list -> string list -> string list
 )
 ident(
   ext_ref Pervasives.( @ )
 )
-"ident.ml" 29 848 935 "ident.ml" 29 848 954
+"ident.ml" 30 849 930 "ident.ml" 30 849 949
 type(
   clazz -> string
 )
 ident(
   int_ref get_class_java_name "ident.ml" 27 757 761 "ident.ml" 27 757 780
 )
-"ident.ml" 29 848 955 "ident.ml" 29 848 956
+"ident.ml" 30 849 950 "ident.ml" 30 849 951
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 29 848 882 "ident.ml" 29 848 883
+  int_ref c "ident.ml" 30 849 876 "ident.ml" 30 849 877
 )
-"ident.ml" 29 848 935 "ident.ml" 29 848 956
+"ident.ml" 30 849 930 "ident.ml" 30 849 951
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 29 848 934 "ident.ml" 29 848 957
+"ident.ml" 30 849 929 "ident.ml" 30 849 952
 type(
   string list
 )
-"ident.ml" 29 848 904 "ident.ml" 29 848 958
+"ident.ml" 30 849 899 "ident.ml" 30 849 953
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 29 848 886 "ident.ml" 29 848 958
+"ident.ml" 30 849 881 "ident.ml" 30 849 953
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 30 959 963 "ident.ml" 30 959 997
+"ident.ml" 31 954 958 "ident.ml" 31 954 986
 type(
   clazz -> string
 )
 ident(
-  def get_class_java_qualified_stub_name "ident.ml" 31 1089 1089 "_none_" 1 0 -1
+  def get_class_java_instance_name "ident.ml" 32 1036 1036 "_none_" 1 0 -1
 )
-"ident.ml" 30 959 998 "ident.ml" 30 959 999
+"ident.ml" 31 954 987 "ident.ml" 31 954 988
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 30 959 1002 "ident.ml" 30 959 1088
+  def c "ident.ml" 31 954 991 "ident.ml" 31 954 1035
 )
-"ident.ml" 30 959 1002 "ident.ml" 30 959 1015
-type(
-  string -> string list -> string
-)
-ident(
-  ext_ref String.concat
-)
-"ident.ml" 30 959 1016 "ident.ml" 30 959 1019
-type(
-  string
-)
-"ident.ml" 30 959 1022 "ident.ml" 30 959 1053
-type(
-  clazz -> string list
-)
-ident(
-  int_ref get_class_java_callback_package "ident.ml" 24 576 580 "ident.ml" 24 576 611
-)
-"ident.ml" 30 959 1054 "ident.ml" 30 959 1055
-type(
-  clazz
-)
-ident(
-  int_ref c "ident.ml" 30 959 998 "ident.ml" 30 959 999
-)
-"ident.ml" 30 959 1021 "ident.ml" 30 959 1056
-call(
-  stack
-)
-type(
-  string list
-)
-"ident.ml" 30 959 1057 "ident.ml" 30 959 1058
-type(
-  string list -> string list -> string list
-)
-ident(
-  ext_ref Pervasives.( @ )
-)
-"ident.ml" 30 959 1060 "ident.ml" 30 959 1084
+"ident.ml" 31 954 992 "ident.ml" 31 954 1014
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_java_stub_name "ident.ml" 28 800 804 "ident.ml" 28 800 828
+  int_ref get_class_java_oj_name "ident.ml" 30 849 853 "ident.ml" 30 849 875
 )
-"ident.ml" 30 959 1085 "ident.ml" 30 959 1086
+"ident.ml" 31 954 1015 "ident.ml" 31 954 1016
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 30 959 998 "ident.ml" 30 959 999
+  int_ref c "ident.ml" 31 954 987 "ident.ml" 31 954 988
 )
-"ident.ml" 30 959 1060 "ident.ml" 30 959 1086
+"ident.ml" 31 954 991 "ident.ml" 31 954 1017
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 30 959 1059 "ident.ml" 30 959 1087
+"ident.ml" 31 954 1018 "ident.ml" 31 954 1019
 type(
-  string list
+  string -> string -> string
 )
-"ident.ml" 30 959 1020 "ident.ml" 30 959 1088
-call(
-  stack
+ident(
+  ext_ref Pervasives.( ^ )
 )
+"ident.ml" 31 954 1019 "ident.ml" 31 954 1035
 type(
-  string list
+  string
 )
-"ident.ml" 30 959 1002 "ident.ml" 30 959 1088
+"ident.ml" 31 954 991 "ident.ml" 31 954 1035
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 31 1089 1093 "ident.ml" 31 1089 1117
+"ident.ml" 32 1036 1040 "ident.ml" 32 1036 1069
 type(
   clazz -> string
 )
 ident(
-  def get_class_java_signature "ident.ml" 32 1195 1195 "_none_" 1 0 -1
+  def get_class_java_qualified_name "ident.ml" 33 1147 1147 "_none_" 1 0 -1
 )
-"ident.ml" 31 1089 1118 "ident.ml" 31 1089 1119
+"ident.ml" 32 1036 1070 "ident.ml" 32 1036 1071
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 31 1089 1122 "ident.ml" 31 1089 1194
+  def c "ident.ml" 32 1036 1074 "ident.ml" 32 1036 1146
 )
-"ident.ml" 31 1089 1122 "ident.ml" 31 1089 1135
+"ident.ml" 32 1036 1074 "ident.ml" 32 1036 1087
 type(
   string -> string list -> string
 )
 ident(
   ext_ref String.concat
 )
-"ident.ml" 31 1089 1136 "ident.ml" 31 1089 1139
+"ident.ml" 32 1036 1088 "ident.ml" 32 1036 1091
 type(
   string
 )
-"ident.ml" 31 1089 1142 "ident.ml" 31 1089 1164
+"ident.ml" 32 1036 1094 "ident.ml" 32 1036 1116
 type(
   clazz -> string list
 )
 ident(
   int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
 )
-"ident.ml" 31 1089 1165 "ident.ml" 31 1089 1166
+"ident.ml" 32 1036 1117 "ident.ml" 32 1036 1118
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 31 1089 1118 "ident.ml" 31 1089 1119
+  int_ref c "ident.ml" 32 1036 1070 "ident.ml" 32 1036 1071
 )
-"ident.ml" 31 1089 1141 "ident.ml" 31 1089 1167
+"ident.ml" 32 1036 1093 "ident.ml" 32 1036 1119
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 31 1089 1168 "ident.ml" 31 1089 1169
+"ident.ml" 32 1036 1120 "ident.ml" 32 1036 1121
 type(
   string list -> string list -> string list
 )
 ident(
   ext_ref Pervasives.( @ )
 )
-"ident.ml" 31 1089 1171 "ident.ml" 31 1089 1190
+"ident.ml" 32 1036 1123 "ident.ml" 32 1036 1142
 type(
   clazz -> string
 )
 ident(
   int_ref get_class_java_name "ident.ml" 27 757 761 "ident.ml" 27 757 780
 )
-"ident.ml" 31 1089 1191 "ident.ml" 31 1089 1192
+"ident.ml" 32 1036 1143 "ident.ml" 32 1036 1144
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 31 1089 1118 "ident.ml" 31 1089 1119
+  int_ref c "ident.ml" 32 1036 1070 "ident.ml" 32 1036 1071
 )
-"ident.ml" 31 1089 1171 "ident.ml" 31 1089 1192
+"ident.ml" 32 1036 1123 "ident.ml" 32 1036 1144
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 31 1089 1170 "ident.ml" 31 1089 1193
+"ident.ml" 32 1036 1122 "ident.ml" 32 1036 1145
 type(
   string list
 )
-"ident.ml" 31 1089 1140 "ident.ml" 31 1089 1194
+"ident.ml" 32 1036 1092 "ident.ml" 32 1036 1146
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 31 1089 1122 "ident.ml" 31 1089 1194
+"ident.ml" 32 1036 1074 "ident.ml" 32 1036 1146
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 32 1195 1199 "ident.ml" 32 1195 1228
+"ident.ml" 33 1147 1151 "ident.ml" 33 1147 1185
 type(
   clazz -> string
 )
 ident(
-  def get_class_java_stub_signature "ident.ml" 33 1320 1320 "_none_" 1 0 -1
+  def get_class_java_qualified_stub_name "ident.ml" 34 1277 1277 "_none_" 1 0 -1
 )
-"ident.ml" 32 1195 1229 "ident.ml" 32 1195 1230
+"ident.ml" 33 1147 1186 "ident.ml" 33 1147 1187
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 32 1195 1233 "ident.ml" 32 1195 1319
+  def c "ident.ml" 33 1147 1190 "ident.ml" 33 1147 1276
 )
-"ident.ml" 32 1195 1233 "ident.ml" 32 1195 1246
+"ident.ml" 33 1147 1190 "ident.ml" 33 1147 1203
 type(
   string -> string list -> string
 )
 ident(
   ext_ref String.concat
 )
-"ident.ml" 32 1195 1247 "ident.ml" 32 1195 1250
+"ident.ml" 33 1147 1204 "ident.ml" 33 1147 1207
 type(
   string
 )
-"ident.ml" 32 1195 1253 "ident.ml" 32 1195 1284
+"ident.ml" 33 1147 1210 "ident.ml" 33 1147 1241
 type(
   clazz -> string list
 )
 ident(
   int_ref get_class_java_callback_package "ident.ml" 24 576 580 "ident.ml" 24 576 611
 )
-"ident.ml" 32 1195 1285 "ident.ml" 32 1195 1286
+"ident.ml" 33 1147 1242 "ident.ml" 33 1147 1243
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 32 1195 1229 "ident.ml" 32 1195 1230
+  int_ref c "ident.ml" 33 1147 1186 "ident.ml" 33 1147 1187
 )
-"ident.ml" 32 1195 1252 "ident.ml" 32 1195 1287
+"ident.ml" 33 1147 1209 "ident.ml" 33 1147 1244
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 32 1195 1288 "ident.ml" 32 1195 1289
+"ident.ml" 33 1147 1245 "ident.ml" 33 1147 1246
 type(
   string list -> string list -> string list
 )
 ident(
   ext_ref Pervasives.( @ )
 )
-"ident.ml" 32 1195 1291 "ident.ml" 32 1195 1315
+"ident.ml" 33 1147 1248 "ident.ml" 33 1147 1272
 type(
   clazz -> string
 )
 ident(
   int_ref get_class_java_stub_name "ident.ml" 28 800 804 "ident.ml" 28 800 828
 )
-"ident.ml" 32 1195 1316 "ident.ml" 32 1195 1317
+"ident.ml" 33 1147 1273 "ident.ml" 33 1147 1274
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 32 1195 1229 "ident.ml" 32 1195 1230
+  int_ref c "ident.ml" 33 1147 1186 "ident.ml" 33 1147 1187
 )
-"ident.ml" 32 1195 1291 "ident.ml" 32 1195 1317
+"ident.ml" 33 1147 1248 "ident.ml" 33 1147 1274
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 32 1195 1290 "ident.ml" 32 1195 1318
+"ident.ml" 33 1147 1247 "ident.ml" 33 1147 1275
 type(
   string list
 )
-"ident.ml" 32 1195 1251 "ident.ml" 32 1195 1319
+"ident.ml" 33 1147 1208 "ident.ml" 33 1147 1276
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 32 1195 1233 "ident.ml" 32 1195 1319
+"ident.ml" 33 1147 1190 "ident.ml" 33 1147 1276
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+"ident.ml" 34 1277 1281 "ident.ml" 34 1277 1305
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_name "ident.ml" 34 1359 1359 "_none_" 1 0 -1
+  def get_class_java_signature "ident.ml" 35 1383 1383 "_none_" 1 0 -1
 )
-"ident.ml" 33 1320 1342 "ident.ml" 33 1320 1343
+"ident.ml" 34 1277 1306 "ident.ml" 34 1277 1307
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 33 1320 1346 "ident.ml" 33 1320 1358
+  def c "ident.ml" 34 1277 1310 "ident.ml" 34 1277 1382
 )
-"ident.ml" 33 1320 1346 "ident.ml" 33 1320 1347
+"ident.ml" 34 1277 1310 "ident.ml" 34 1277 1323
 type(
-  clazz
+  string -> string list -> string
 )
 ident(
-  int_ref c "ident.ml" 33 1320 1342 "ident.ml" 33 1320 1343
+  ext_ref String.concat
 )
-"ident.ml" 33 1320 1346 "ident.ml" 33 1320 1358
+"ident.ml" 34 1277 1324 "ident.ml" 34 1277 1327
 type(
   string
 )
-"ident.ml" 34 1359 1363 "ident.ml" 34 1359 1385
+"ident.ml" 34 1277 1330 "ident.ml" 34 1277 1352
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
+)
+"ident.ml" 34 1277 1353 "ident.ml" 34 1277 1354
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 34 1277 1306 "ident.ml" 34 1277 1307
+)
+"ident.ml" 34 1277 1329 "ident.ml" 34 1277 1355
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 34 1277 1356 "ident.ml" 34 1277 1357
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 34 1277 1359 "ident.ml" 34 1277 1378
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_stub_name "ident.ml" 35 1414 1414 "_none_" 1 0 -1
+  int_ref get_class_java_name "ident.ml" 27 757 761 "ident.ml" 27 757 780
 )
-"ident.ml" 34 1359 1386 "ident.ml" 34 1359 1387
+"ident.ml" 34 1277 1379 "ident.ml" 34 1277 1380
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 34 1359 1390 "ident.ml" 34 1359 1413
+  int_ref c "ident.ml" 34 1277 1306 "ident.ml" 34 1277 1307
 )
-"ident.ml" 34 1359 1390 "ident.ml" 34 1359 1398
+"ident.ml" 34 1277 1359 "ident.ml" 34 1277 1380
+call(
+  stack
+)
 type(
   string
 )
-"ident.ml" 34 1359 1399 "ident.ml" 34 1359 1400
+"ident.ml" 34 1277 1358 "ident.ml" 34 1277 1381
+type(
+  string list
+)
+"ident.ml" 34 1277 1328 "ident.ml" 34 1277 1382
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 34 1277 1310 "ident.ml" 34 1277 1382
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 35 1383 1387 "ident.ml" 35 1383 1416
+type(
+  clazz -> string
+)
+ident(
+  def get_class_java_stub_signature "ident.ml" 36 1508 1508 "_none_" 1 0 -1
+)
+"ident.ml" 35 1383 1417 "ident.ml" 35 1383 1418
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 35 1383 1421 "ident.ml" 35 1383 1507
+)
+"ident.ml" 35 1383 1421 "ident.ml" 35 1383 1434
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"ident.ml" 35 1383 1435 "ident.ml" 35 1383 1438
+type(
+  string
+)
+"ident.ml" 35 1383 1441 "ident.ml" 35 1383 1472
+type(
+  clazz -> string list
+)
+ident(
+  int_ref get_class_java_callback_package "ident.ml" 24 576 580 "ident.ml" 24 576 611
+)
+"ident.ml" 35 1383 1473 "ident.ml" 35 1383 1474
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 35 1383 1417 "ident.ml" 35 1383 1418
+)
+"ident.ml" 35 1383 1440 "ident.ml" 35 1383 1475
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 35 1383 1476 "ident.ml" 35 1383 1477
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ident.ml" 35 1383 1479 "ident.ml" 35 1383 1503
+type(
+  clazz -> string
+)
+ident(
+  int_ref get_class_java_stub_name "ident.ml" 28 800 804 "ident.ml" 28 800 828
+)
+"ident.ml" 35 1383 1504 "ident.ml" 35 1383 1505
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 35 1383 1417 "ident.ml" 35 1383 1418
+)
+"ident.ml" 35 1383 1479 "ident.ml" 35 1383 1505
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 35 1383 1478 "ident.ml" 35 1383 1506
+type(
+  string list
+)
+"ident.ml" 35 1383 1439 "ident.ml" 35 1383 1507
+call(
+  stack
+)
+type(
+  string list
+)
+"ident.ml" 35 1383 1421 "ident.ml" 35 1383 1507
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_name "ident.ml" 37 1547 1547 "_none_" 1 0 -1
+)
+"ident.ml" 36 1508 1530 "ident.ml" 36 1508 1531
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 36 1508 1534 "ident.ml" 36 1508 1546
+)
+"ident.ml" 36 1508 1534 "ident.ml" 36 1508 1535
+type(
+  clazz
+)
+ident(
+  int_ref c "ident.ml" 36 1508 1530 "ident.ml" 36 1508 1531
+)
+"ident.ml" 36 1508 1534 "ident.ml" 36 1508 1546
+type(
+  string
+)
+"ident.ml" 37 1547 1551 "ident.ml" 37 1547 1573
+type(
+  clazz -> string
+)
+ident(
+  def get_class_ml_stub_name "ident.ml" 38 1602 1602 "_none_" 1 0 -1
+)
+"ident.ml" 37 1547 1574 "ident.ml" 37 1547 1575
+type(
+  clazz
+)
+ident(
+  def c "ident.ml" 37 1547 1578 "ident.ml" 37 1547 1601
+)
+"ident.ml" 37 1547 1578 "ident.ml" 37 1547 1586
+type(
+  string
+)
+"ident.ml" 37 1547 1587 "ident.ml" 37 1547 1588
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 34 1359 1401 "ident.ml" 34 1359 1402
+"ident.ml" 37 1547 1589 "ident.ml" 37 1547 1590
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 34 1359 1386 "ident.ml" 34 1359 1387
+  int_ref c "ident.ml" 37 1547 1574 "ident.ml" 37 1547 1575
 )
-"ident.ml" 34 1359 1401 "ident.ml" 34 1359 1413
+"ident.ml" 37 1547 1589 "ident.ml" 37 1547 1601
 type(
   string
 )
-"ident.ml" 34 1359 1390 "ident.ml" 34 1359 1413
+"ident.ml" 37 1547 1578 "ident.ml" 37 1547 1601
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 35 1414 1418 "ident.ml" 35 1414 1450
+"ident.ml" 38 1602 1606 "ident.ml" 38 1602 1638
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_interface_init_name "ident.ml" 36 1495 1495 "_none_" 1 0 -1
+  def get_class_ml_interface_init_name "ident.ml" 39 1683 1683 "_none_" 1 0 -1
 )
-"ident.ml" 35 1414 1451 "ident.ml" 35 1414 1452
+"ident.ml" 38 1602 1639 "ident.ml" 38 1602 1640
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 35 1414 1455 "ident.ml" 35 1414 1493
+  def c "ident.ml" 38 1602 1643 "ident.ml" 38 1602 1681
 )
-"ident.ml" 35 1414 1455 "ident.ml" 35 1414 1466
+"ident.ml" 38 1602 1643 "ident.ml" 38 1602 1654
 type(
   string
 )
-"ident.ml" 35 1414 1467 "ident.ml" 35 1414 1468
+"ident.ml" 38 1602 1655 "ident.ml" 38 1602 1656
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 35 1414 1469 "ident.ml" 35 1414 1491
+"ident.ml" 38 1602 1657 "ident.ml" 38 1602 1679
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_stub_name "ident.ml" 34 1359 1363 "ident.ml" 34 1359 1385
+  int_ref get_class_ml_stub_name "ident.ml" 37 1547 1551 "ident.ml" 37 1547 1573
 )
-"ident.ml" 35 1414 1492 "ident.ml" 35 1414 1493
+"ident.ml" 38 1602 1680 "ident.ml" 38 1602 1681
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 35 1414 1451 "ident.ml" 35 1414 1452
+  int_ref c "ident.ml" 38 1602 1639 "ident.ml" 38 1602 1640
 )
-"ident.ml" 35 1414 1469 "ident.ml" 35 1414 1493
+"ident.ml" 38 1602 1657 "ident.ml" 38 1602 1681
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 35 1414 1455 "ident.ml" 35 1414 1493
+"ident.ml" 38 1602 1643 "ident.ml" 38 1602 1681
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 36 1495 1499 "ident.ml" 36 1495 1525
+"ident.ml" 39 1683 1687 "ident.ml" 39 1683 1713
 type(
   clazz -> Loc.t
 )
 ident(
-  def get_class_ml_name_location "ident.ml" 38 1553 1553 "_none_" 1 0 -1
+  def get_class_ml_name_location "ident.ml" 41 1741 1741 "_none_" 1 0 -1
 )
-"ident.ml" 36 1495 1526 "ident.ml" 36 1495 1527
+"ident.ml" 39 1683 1714 "ident.ml" 39 1683 1715
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 36 1495 1530 "ident.ml" 36 1495 1551
+  def c "ident.ml" 39 1683 1718 "ident.ml" 39 1683 1739
 )
-"ident.ml" 36 1495 1530 "ident.ml" 36 1495 1531
+"ident.ml" 39 1683 1718 "ident.ml" 39 1683 1719
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 36 1495 1526 "ident.ml" 36 1495 1527
+  int_ref c "ident.ml" 39 1683 1714 "ident.ml" 39 1683 1715
 )
-"ident.ml" 36 1495 1530 "ident.ml" 36 1495 1551
+"ident.ml" 39 1683 1718 "ident.ml" 39 1683 1739
 type(
   Loc.t
 )
-"ident.ml" 38 1553 1557 "ident.ml" 38 1553 1583
+"ident.ml" 41 1741 1745 "ident.ml" 41 1741 1771
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_jni_type_name "ident.ml" 39 1618 1618 "_none_" 1 0 -1
+  def get_class_ml_jni_type_name "ident.ml" 42 1806 1806 "_none_" 1 0 -1
 )
-"ident.ml" 38 1553 1584 "ident.ml" 38 1553 1585
+"ident.ml" 41 1741 1772 "ident.ml" 41 1741 1773
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 38 1553 1588 "ident.ml" 38 1553 1617
+  def c "ident.ml" 41 1741 1776 "ident.ml" 41 1741 1805
 )
-"ident.ml" 38 1553 1588 "ident.ml" 38 1553 1595
+"ident.ml" 41 1741 1776 "ident.ml" 41 1741 1783
 type(
   string
 )
-"ident.ml" 38 1553 1596 "ident.ml" 38 1553 1597
+"ident.ml" 41 1741 1784 "ident.ml" 41 1741 1785
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 38 1553 1598 "ident.ml" 38 1553 1615
+"ident.ml" 41 1741 1786 "ident.ml" 41 1741 1803
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 38 1553 1616 "ident.ml" 38 1553 1617
+"ident.ml" 41 1741 1804 "ident.ml" 41 1741 1805
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 38 1553 1584 "ident.ml" 38 1553 1585
+  int_ref c "ident.ml" 41 1741 1772 "ident.ml" 41 1741 1773
 )
-"ident.ml" 38 1553 1598 "ident.ml" 38 1553 1617
+"ident.ml" 41 1741 1786 "ident.ml" 41 1741 1805
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 38 1553 1588 "ident.ml" 38 1553 1617
+"ident.ml" 41 1741 1776 "ident.ml" 41 1741 1805
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 39 1618 1622 "ident.ml" 39 1618 1647
+"ident.ml" 42 1806 1810 "ident.ml" 42 1806 1835
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_wrapper_name "ident.ml" 40 1686 1686 "_none_" 1 0 -1
+  def get_class_ml_wrapper_name "ident.ml" 43 1874 1874 "_none_" 1 0 -1
 )
-"ident.ml" 39 1618 1648 "ident.ml" 39 1618 1649
+"ident.ml" 42 1806 1836 "ident.ml" 42 1806 1837
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 39 1618 1652 "ident.ml" 39 1618 1685
+  def c "ident.ml" 42 1806 1840 "ident.ml" 42 1806 1873
 )
-"ident.ml" 39 1618 1652 "ident.ml" 39 1618 1663
+"ident.ml" 42 1806 1840 "ident.ml" 42 1806 1851
 type(
   string
 )
-"ident.ml" 39 1618 1664 "ident.ml" 39 1618 1665
+"ident.ml" 42 1806 1852 "ident.ml" 42 1806 1853
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 39 1618 1666 "ident.ml" 39 1618 1683
+"ident.ml" 42 1806 1854 "ident.ml" 42 1806 1871
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 39 1618 1684 "ident.ml" 39 1618 1685
+"ident.ml" 42 1806 1872 "ident.ml" 42 1806 1873
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 39 1618 1648 "ident.ml" 39 1618 1649
+  int_ref c "ident.ml" 42 1806 1836 "ident.ml" 42 1806 1837
 )
-"ident.ml" 39 1618 1666 "ident.ml" 39 1618 1685
+"ident.ml" 42 1806 1854 "ident.ml" 42 1806 1873
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 39 1618 1652 "ident.ml" 39 1618 1685
+"ident.ml" 42 1806 1840 "ident.ml" 42 1806 1873
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 40 1686 1690 "ident.ml" 40 1686 1720
+"ident.ml" 43 1874 1878 "ident.ml" 43 1874 1908
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_stub_wrapper_name "ident.ml" 42 1759 1759 "_none_" 1 0 -1
+  def get_class_ml_stub_wrapper_name "ident.ml" 45 1947 1947 "_none_" 1 0 -1
 )
-"ident.ml" 40 1686 1721 "ident.ml" 40 1686 1722
+"ident.ml" 43 1874 1909 "ident.ml" 43 1874 1910
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 40 1686 1725 "ident.ml" 40 1686 1757
+  def c "ident.ml" 43 1874 1913 "ident.ml" 43 1874 1945
 )
-"ident.ml" 40 1686 1725 "ident.ml" 40 1686 1735
+"ident.ml" 43 1874 1913 "ident.ml" 43 1874 1923
 type(
   string
 )
-"ident.ml" 40 1686 1736 "ident.ml" 40 1686 1737
+"ident.ml" 43 1874 1924 "ident.ml" 43 1874 1925
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 40 1686 1738 "ident.ml" 40 1686 1755
+"ident.ml" 43 1874 1926 "ident.ml" 43 1874 1943
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 40 1686 1756 "ident.ml" 40 1686 1757
+"ident.ml" 43 1874 1944 "ident.ml" 43 1874 1945
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 40 1686 1721 "ident.ml" 40 1686 1722
+  int_ref c "ident.ml" 43 1874 1909 "ident.ml" 43 1874 1910
 )
-"ident.ml" 40 1686 1738 "ident.ml" 40 1686 1757
+"ident.ml" 43 1874 1926 "ident.ml" 43 1874 1945
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 40 1686 1725 "ident.ml" 40 1686 1757
+"ident.ml" 43 1874 1913 "ident.ml" 43 1874 1945
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 42 1759 1763 "ident.ml" 42 1759 1790
+"ident.ml" 45 1947 1951 "ident.ml" 45 1947 1978
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_allocator_name "ident.ml" 43 1827 1827 "_none_" 1 0 -1
+  def get_class_ml_allocator_name "ident.ml" 46 2015 2015 "_none_" 1 0 -1
 )
-"ident.ml" 42 1759 1791 "ident.ml" 42 1759 1792
+"ident.ml" 45 1947 1979 "ident.ml" 45 1947 1980
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 42 1759 1795 "ident.ml" 42 1759 1826
+  def c "ident.ml" 45 1947 1983 "ident.ml" 45 1947 2014
 )
-"ident.ml" 42 1759 1795 "ident.ml" 42 1759 1804
+"ident.ml" 45 1947 1983 "ident.ml" 45 1947 1992
 type(
   string
 )
-"ident.ml" 42 1759 1805 "ident.ml" 42 1759 1806
+"ident.ml" 45 1947 1993 "ident.ml" 45 1947 1994
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 42 1759 1807 "ident.ml" 42 1759 1824
+"ident.ml" 45 1947 1995 "ident.ml" 45 1947 2012
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 42 1759 1825 "ident.ml" 42 1759 1826
+"ident.ml" 45 1947 2013 "ident.ml" 45 1947 2014
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 42 1759 1791 "ident.ml" 42 1759 1792
+  int_ref c "ident.ml" 45 1947 1979 "ident.ml" 45 1947 1980
 )
-"ident.ml" 42 1759 1807 "ident.ml" 42 1759 1826
+"ident.ml" 45 1947 1995 "ident.ml" 45 1947 2014
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 42 1759 1795 "ident.ml" 42 1759 1826
+"ident.ml" 45 1947 1983 "ident.ml" 45 1947 2014
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 43 1827 1831 "ident.ml" 43 1827 1863
+"ident.ml" 46 2015 2019 "ident.ml" 46 2015 2051
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_stub_allocator_name "ident.ml" 44 1905 1905 "_none_" 1 0 -1
+  def get_class_ml_stub_allocator_name "ident.ml" 47 2093 2093 "_none_" 1 0 -1
 )
-"ident.ml" 43 1827 1864 "ident.ml" 43 1827 1865
+"ident.ml" 46 2015 2052 "ident.ml" 46 2015 2053
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 43 1827 1868 "ident.ml" 43 1827 1904
+  def c "ident.ml" 46 2015 2056 "ident.ml" 46 2015 2092
 )
-"ident.ml" 43 1827 1868 "ident.ml" 43 1827 1877
+"ident.ml" 46 2015 2056 "ident.ml" 46 2015 2065
 type(
   string
 )
-"ident.ml" 43 1827 1878 "ident.ml" 43 1827 1879
+"ident.ml" 46 2015 2066 "ident.ml" 46 2015 2067
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 43 1827 1880 "ident.ml" 43 1827 1902
+"ident.ml" 46 2015 2068 "ident.ml" 46 2015 2090
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_stub_name "ident.ml" 34 1359 1363 "ident.ml" 34 1359 1385
+  int_ref get_class_ml_stub_name "ident.ml" 37 1547 1551 "ident.ml" 37 1547 1573
 )
-"ident.ml" 43 1827 1903 "ident.ml" 43 1827 1904
+"ident.ml" 46 2015 2091 "ident.ml" 46 2015 2092
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 43 1827 1864 "ident.ml" 43 1827 1865
+  int_ref c "ident.ml" 46 2015 2052 "ident.ml" 46 2015 2053
 )
-"ident.ml" 43 1827 1880 "ident.ml" 43 1827 1904
+"ident.ml" 46 2015 2068 "ident.ml" 46 2015 2092
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 43 1827 1868 "ident.ml" 43 1827 1904
+"ident.ml" 46 2015 2056 "ident.ml" 46 2015 2092
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 44 1905 1909 "ident.ml" 44 1905 1946
+"ident.ml" 47 2093 2097 "ident.ml" 47 2093 2134
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_jni_accessor_method_name "ident.ml" 46 1986 1986 "_none_" 1 0 -1
+  def get_class_ml_jni_accessor_method_name "ident.ml" 49 2174 2174 "_none_" 1 0 -1
 )
-"ident.ml" 44 1905 1947 "ident.ml" 44 1905 1948
+"ident.ml" 47 2093 2135 "ident.ml" 47 2093 2136
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 44 1905 1951 "ident.ml" 44 1905 1984
+  def c "ident.ml" 47 2093 2139 "ident.ml" 47 2093 2172
 )
-"ident.ml" 44 1905 1951 "ident.ml" 44 1905 1962
+"ident.ml" 47 2093 2139 "ident.ml" 47 2093 2150
 type(
   string
 )
-"ident.ml" 44 1905 1963 "ident.ml" 44 1905 1964
+"ident.ml" 47 2093 2151 "ident.ml" 47 2093 2152
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 44 1905 1965 "ident.ml" 44 1905 1982
+"ident.ml" 47 2093 2153 "ident.ml" 47 2093 2170
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 44 1905 1983 "ident.ml" 44 1905 1984
+"ident.ml" 47 2093 2171 "ident.ml" 47 2093 2172
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 44 1905 1947 "ident.ml" 44 1905 1948
+  int_ref c "ident.ml" 47 2093 2135 "ident.ml" 47 2093 2136
 )
-"ident.ml" 44 1905 1965 "ident.ml" 44 1905 1984
+"ident.ml" 47 2093 2153 "ident.ml" 47 2093 2172
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 44 1905 1951 "ident.ml" 44 1905 1984
+"ident.ml" 47 2093 2139 "ident.ml" 47 2093 2172
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 46 1986 1990 "ident.ml" 46 1986 2019
+"ident.ml" 49 2174 2178 "ident.ml" 49 2174 2207
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_array_alloc_name "ident.ml" 47 2061 2061 "_none_" 1 0 -1
+  def get_class_ml_array_alloc_name "ident.ml" 50 2249 2249 "_none_" 1 0 -1
 )
-"ident.ml" 46 1986 2020 "ident.ml" 46 1986 2021
+"ident.ml" 49 2174 2208 "ident.ml" 49 2174 2209
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 46 1986 2024 "ident.ml" 46 1986 2060
+  def c "ident.ml" 49 2174 2212 "ident.ml" 49 2174 2248
 )
-"ident.ml" 46 1986 2024 "ident.ml" 46 1986 2038
+"ident.ml" 49 2174 2212 "ident.ml" 49 2174 2226
 type(
   string
 )
-"ident.ml" 46 1986 2039 "ident.ml" 46 1986 2040
+"ident.ml" 49 2174 2227 "ident.ml" 49 2174 2228
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 46 1986 2041 "ident.ml" 46 1986 2058
+"ident.ml" 49 2174 2229 "ident.ml" 49 2174 2246
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 46 1986 2059 "ident.ml" 46 1986 2060
+"ident.ml" 49 2174 2247 "ident.ml" 49 2174 2248
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 46 1986 2020 "ident.ml" 46 1986 2021
+  int_ref c "ident.ml" 49 2174 2208 "ident.ml" 49 2174 2209
 )
-"ident.ml" 46 1986 2041 "ident.ml" 46 1986 2060
+"ident.ml" 49 2174 2229 "ident.ml" 49 2174 2248
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 46 1986 2024 "ident.ml" 46 1986 2060
+"ident.ml" 49 2174 2212 "ident.ml" 49 2174 2248
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 47 2061 2065 "ident.ml" 47 2061 2093
+"ident.ml" 50 2249 2253 "ident.ml" 50 2249 2281
 type(
   clazz -> string
 )
 ident(
-  def get_class_ml_array_init_name "ident.ml" 49 2137 2137 "_none_" 1 0 -1
+  def get_class_ml_array_init_name "ident.ml" 52 2325 2325 "_none_" 1 0 -1
 )
-"ident.ml" 47 2061 2094 "ident.ml" 47 2061 2095
+"ident.ml" 50 2249 2282 "ident.ml" 50 2249 2283
 type(
   clazz
 )
 ident(
-  def c "ident.ml" 47 2061 2098 "ident.ml" 47 2061 2135
+  def c "ident.ml" 50 2249 2286 "ident.ml" 50 2249 2323
 )
-"ident.ml" 47 2061 2098 "ident.ml" 47 2061 2112
+"ident.ml" 50 2249 2286 "ident.ml" 50 2249 2300
 type(
   string
 )
-"ident.ml" 47 2061 2114 "ident.ml" 47 2061 2115
+"ident.ml" 50 2249 2302 "ident.ml" 50 2249 2303
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 47 2061 2116 "ident.ml" 47 2061 2133
+"ident.ml" 50 2249 2304 "ident.ml" 50 2249 2321
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 47 2061 2134 "ident.ml" 47 2061 2135
+"ident.ml" 50 2249 2322 "ident.ml" 50 2249 2323
 type(
   clazz
 )
 ident(
-  int_ref c "ident.ml" 47 2061 2094 "ident.ml" 47 2061 2095
+  int_ref c "ident.ml" 50 2249 2282 "ident.ml" 50 2249 2283
 )
-"ident.ml" 47 2061 2116 "ident.ml" 47 2061 2135
+"ident.ml" 50 2249 2304 "ident.ml" 50 2249 2323
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 47 2061 2098 "ident.ml" 47 2061 2135
+"ident.ml" 50 2249 2286 "ident.ml" 50 2249 2323
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 49 2137 2141 "ident.ml" 49 2137 2154
+"ident.ml" 52 2325 2329 "ident.ml" 52 2325 2342
 type(
   clazz -> clazz -> int
 )
 ident(
-  def compare_clazz "ident.ml" 52 2208 2208 "_none_" 1 0 -1
+  def compare_clazz "ident.ml" 55 2396 2396 "_none_" 1 0 -1
 )
-"ident.ml" 49 2137 2155 "ident.ml" 49 2137 2158
+"ident.ml" 52 2325 2343 "ident.ml" 52 2325 2346
 type(
   clazz
 )
 ident(
-  def id1 "ident.ml" 49 2137 2159 "ident.ml" 50 2166 2206
+  def id1 "ident.ml" 52 2325 2347 "ident.ml" 53 2354 2394
 )
-"ident.ml" 49 2137 2159 "ident.ml" 49 2137 2162
+"ident.ml" 52 2325 2347 "ident.ml" 52 2325 2350
 type(
   clazz
 )
 ident(
-  def id2 "ident.ml" 50 2166 2168 "ident.ml" 50 2166 2206
+  def id2 "ident.ml" 53 2354 2356 "ident.ml" 53 2354 2394
 )
-"ident.ml" 50 2166 2168 "ident.ml" 50 2166 2186
+"ident.ml" 53 2354 2356 "ident.ml" 53 2354 2374
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.compare
 )
-"ident.ml" 50 2166 2187 "ident.ml" 50 2166 2190
+"ident.ml" 53 2354 2375 "ident.ml" 53 2354 2378
 type(
   clazz
 )
 ident(
-  int_ref id1 "ident.ml" 49 2137 2155 "ident.ml" 49 2137 2158
+  int_ref id1 "ident.ml" 52 2325 2343 "ident.ml" 52 2325 2346
 )
-"ident.ml" 50 2166 2187 "ident.ml" 50 2166 2196
+"ident.ml" 53 2354 2375 "ident.ml" 53 2354 2384
 type(
   int
 )
-"ident.ml" 50 2166 2197 "ident.ml" 50 2166 2200
+"ident.ml" 53 2354 2385 "ident.ml" 53 2354 2388
 type(
   clazz
 )
 ident(
-  int_ref id2 "ident.ml" 49 2137 2159 "ident.ml" 49 2137 2162
+  int_ref id2 "ident.ml" 52 2325 2347 "ident.ml" 52 2325 2350
 )
-"ident.ml" 50 2166 2197 "ident.ml" 50 2166 2206
+"ident.ml" 53 2354 2385 "ident.ml" 53 2354 2394
 type(
   int
 )
-"ident.ml" 50 2166 2168 "ident.ml" 50 2166 2206
+"ident.ml" 53 2354 2356 "ident.ml" 53 2354 2394
 type(
   int
 )
-"ident.ml" 61 2402 2406 "ident.ml" 61 2402 2426
+"ident.ml" 64 2590 2594 "ident.ml" 64 2590 2614
 type(
   mmethod -> string
 )
 ident(
-  def get_method_java_name "ident.ml" 62 2446 2446 "_none_" 1 0 -1
+  def get_method_java_name "ident.ml" 65 2634 2634 "_none_" 1 0 -1
 )
-"ident.ml" 61 2402 2427 "ident.ml" 61 2402 2428
+"ident.ml" 64 2590 2615 "ident.ml" 64 2590 2616
 type(
   mmethod
 )
 ident(
-  def m "ident.ml" 61 2402 2431 "ident.ml" 61 2402 2445
+  def m "ident.ml" 64 2590 2619 "ident.ml" 64 2590 2633
 )
-"ident.ml" 61 2402 2431 "ident.ml" 61 2402 2432
+"ident.ml" 64 2590 2619 "ident.ml" 64 2590 2620
 type(
   mmethod
 )
 ident(
-  int_ref m "ident.ml" 61 2402 2427 "ident.ml" 61 2402 2428
+  int_ref m "ident.ml" 64 2590 2615 "ident.ml" 64 2590 2616
 )
-"ident.ml" 61 2402 2431 "ident.ml" 61 2402 2445
+"ident.ml" 64 2590 2619 "ident.ml" 64 2590 2633
 type(
   string
 )
-"ident.ml" 62 2446 2450 "ident.ml" 62 2446 2468
+"ident.ml" 65 2634 2638 "ident.ml" 65 2634 2656
 type(
   mmethod -> string
 )
 ident(
-  def get_method_ml_name "ident.ml" 63 2486 2486 "_none_" 1 0 -1
+  def get_method_ml_name "ident.ml" 66 2674 2674 "_none_" 1 0 -1
 )
-"ident.ml" 62 2446 2469 "ident.ml" 62 2446 2470
+"ident.ml" 65 2634 2657 "ident.ml" 65 2634 2658
 type(
   mmethod
 )
 ident(
-  def m "ident.ml" 62 2446 2473 "ident.ml" 62 2446 2485
+  def m "ident.ml" 65 2634 2661 "ident.ml" 65 2634 2673
 )
-"ident.ml" 62 2446 2473 "ident.ml" 62 2446 2474
+"ident.ml" 65 2634 2661 "ident.ml" 65 2634 2662
 type(
   mmethod
 )
 ident(
-  int_ref m "ident.ml" 62 2446 2469 "ident.ml" 62 2446 2470
+  int_ref m "ident.ml" 65 2634 2657 "ident.ml" 65 2634 2658
 )
-"ident.ml" 62 2446 2473 "ident.ml" 62 2446 2485
+"ident.ml" 65 2634 2661 "ident.ml" 65 2634 2673
 type(
   string
 )
-"ident.ml" 63 2486 2490 "ident.ml" 63 2486 2517
+"ident.ml" 66 2674 2678 "ident.ml" 66 2674 2705
 type(
   mmethod -> Loc.t
 )
 ident(
-  def get_method_ml_name_location "ident.ml" 64 2544 2544 "_none_" 1 0 -1
+  def get_method_ml_name_location "ident.ml" 67 2732 2732 "_none_" 1 0 -1
 )
-"ident.ml" 63 2486 2518 "ident.ml" 63 2486 2519
+"ident.ml" 66 2674 2706 "ident.ml" 66 2674 2707
 type(
   mmethod
 )
 ident(
-  def m "ident.ml" 63 2486 2522 "ident.ml" 63 2486 2543
+  def m "ident.ml" 66 2674 2710 "ident.ml" 66 2674 2731
 )
-"ident.ml" 63 2486 2522 "ident.ml" 63 2486 2523
+"ident.ml" 66 2674 2710 "ident.ml" 66 2674 2711
 type(
   mmethod
 )
 ident(
-  int_ref m "ident.ml" 63 2486 2518 "ident.ml" 63 2486 2519
+  int_ref m "ident.ml" 66 2674 2706 "ident.ml" 66 2674 2707
 )
-"ident.ml" 63 2486 2522 "ident.ml" 63 2486 2543
+"ident.ml" 66 2674 2710 "ident.ml" 66 2674 2731
 type(
   Loc.t
 )
-"ident.ml" 64 2544 2548 "ident.ml" 64 2544 2571
+"ident.ml" 67 2732 2736 "ident.ml" 67 2732 2759
 type(
   mmethod -> string
 )
 ident(
-  def get_method_ml_stub_name "ident.ml" 66 2609 2609 "_none_" 1 0 -1
+  def get_method_ml_stub_name "ident.ml" 69 2797 2797 "_none_" 1 0 -1
 )
-"ident.ml" 64 2544 2572 "ident.ml" 64 2544 2573
+"ident.ml" 67 2732 2760 "ident.ml" 67 2732 2761
 type(
   mmethod
 )
 ident(
-  def m "ident.ml" 64 2544 2576 "ident.ml" 64 2544 2607
+  def m "ident.ml" 67 2732 2764 "ident.ml" 67 2732 2795
 )
-"ident.ml" 64 2544 2576 "ident.ml" 64 2544 2584
+"ident.ml" 67 2732 2764 "ident.ml" 67 2732 2772
 type(
   string
 )
-"ident.ml" 64 2544 2585 "ident.ml" 64 2544 2586
+"ident.ml" 67 2732 2773 "ident.ml" 67 2732 2774
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 64 2544 2587 "ident.ml" 64 2544 2605
+"ident.ml" 67 2732 2775 "ident.ml" 67 2732 2793
 type(
   mmethod -> string
 )
 ident(
-  int_ref get_method_ml_name "ident.ml" 62 2446 2450 "ident.ml" 62 2446 2468
+  int_ref get_method_ml_name "ident.ml" 65 2634 2638 "ident.ml" 65 2634 2656
 )
-"ident.ml" 64 2544 2606 "ident.ml" 64 2544 2607
+"ident.ml" 67 2732 2794 "ident.ml" 67 2732 2795
 type(
   mmethod
 )
 ident(
-  int_ref m "ident.ml" 64 2544 2572 "ident.ml" 64 2544 2573
+  int_ref m "ident.ml" 67 2732 2760 "ident.ml" 67 2732 2761
 )
-"ident.ml" 64 2544 2587 "ident.ml" 64 2544 2607
+"ident.ml" 67 2732 2775 "ident.ml" 67 2732 2795
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 64 2544 2576 "ident.ml" 64 2544 2607
+"ident.ml" 67 2732 2764 "ident.ml" 67 2732 2795
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 66 2609 2613 "ident.ml" 66 2609 2636
+"ident.ml" 69 2797 2801 "ident.ml" 69 2797 2824
 type(
   mmethod -> string
 )
 ident(
-  def get_method_ml_init_name "ident.ml" 67 2673 2673 "_none_" 1 0 -1
+  def get_method_ml_init_name "ident.ml" 70 2861 2861 "_none_" 1 0 -1
 )
-"ident.ml" 66 2609 2637 "ident.ml" 66 2609 2638
+"ident.ml" 69 2797 2825 "ident.ml" 69 2797 2826
 type(
   mmethod
 )
 ident(
-  def m "ident.ml" 66 2609 2641 "ident.ml" 66 2609 2672
+  def m "ident.ml" 69 2797 2829 "ident.ml" 69 2797 2860
 )
-"ident.ml" 66 2609 2641 "ident.ml" 66 2609 2649
+"ident.ml" 69 2797 2829 "ident.ml" 69 2797 2837
 type(
   string
 )
-"ident.ml" 66 2609 2650 "ident.ml" 66 2609 2651
+"ident.ml" 69 2797 2838 "ident.ml" 69 2797 2839
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 66 2609 2652 "ident.ml" 66 2609 2670
+"ident.ml" 69 2797 2840 "ident.ml" 69 2797 2858
 type(
   mmethod -> string
 )
 ident(
-  int_ref get_method_ml_name "ident.ml" 62 2446 2450 "ident.ml" 62 2446 2468
+  int_ref get_method_ml_name "ident.ml" 65 2634 2638 "ident.ml" 65 2634 2656
 )
-"ident.ml" 66 2609 2671 "ident.ml" 66 2609 2672
+"ident.ml" 69 2797 2859 "ident.ml" 69 2797 2860
 type(
   mmethod
 )
 ident(
-  int_ref m "ident.ml" 66 2609 2637 "ident.ml" 66 2609 2638
+  int_ref m "ident.ml" 69 2797 2825 "ident.ml" 69 2797 2826
 )
-"ident.ml" 66 2609 2652 "ident.ml" 66 2609 2672
+"ident.ml" 69 2797 2840 "ident.ml" 69 2797 2860
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 66 2609 2641 "ident.ml" 66 2609 2672
+"ident.ml" 69 2797 2829 "ident.ml" 69 2797 2860
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 67 2673 2677 "ident.ml" 67 2673 2705
+"ident.ml" 70 2861 2865 "ident.ml" 70 2861 2893
 type(
   mmethod -> string
 )
 ident(
-  def get_method_ml_init_stub_name "ident.ml" 70 2749 2749 "_none_" 1 0 -1
+  def get_method_ml_init_stub_name "ident.ml" 73 2937 2937 "_none_" 1 0 -1
 )
-"ident.ml" 67 2673 2706 "ident.ml" 67 2673 2707
+"ident.ml" 70 2861 2894 "ident.ml" 70 2861 2895
 type(
   mmethod
 )
 ident(
-  def m "ident.ml" 67 2673 2710 "ident.ml" 67 2673 2746
+  def m "ident.ml" 70 2861 2898 "ident.ml" 70 2861 2934
 )
-"ident.ml" 67 2673 2710 "ident.ml" 67 2673 2718
+"ident.ml" 70 2861 2898 "ident.ml" 70 2861 2906
 type(
   string
 )
-"ident.ml" 67 2673 2719 "ident.ml" 67 2673 2720
+"ident.ml" 70 2861 2907 "ident.ml" 70 2861 2908
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 67 2673 2721 "ident.ml" 67 2673 2744
+"ident.ml" 70 2861 2909 "ident.ml" 70 2861 2932
 type(
   mmethod -> string
 )
 ident(
-  int_ref get_method_ml_stub_name "ident.ml" 64 2544 2548 "ident.ml" 64 2544 2571
+  int_ref get_method_ml_stub_name "ident.ml" 67 2732 2736 "ident.ml" 67 2732 2759
 )
-"ident.ml" 67 2673 2745 "ident.ml" 67 2673 2746
+"ident.ml" 70 2861 2933 "ident.ml" 70 2861 2934
 type(
   mmethod
 )
 ident(
-  int_ref m "ident.ml" 67 2673 2706 "ident.ml" 67 2673 2707
+  int_ref m "ident.ml" 70 2861 2894 "ident.ml" 70 2861 2895
 )
-"ident.ml" 67 2673 2721 "ident.ml" 67 2673 2746
+"ident.ml" 70 2861 2909 "ident.ml" 70 2861 2934
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 67 2673 2710 "ident.ml" 67 2673 2746
+"ident.ml" 70 2861 2898 "ident.ml" 70 2861 2934
 call(
   tail
 )
 type(
   string
 )
-"ident.ml" 70 2749 2753 "ident.ml" 70 2749 2767
+"ident.ml" 73 2937 2941 "ident.ml" 73 2937 2955
 type(
   mmethod -> mmethod -> int
 )
 ident(
-  def compare_method "ident.ml" 73 2827 2827 "_none_" 1 0 -1
+  def compare_method "ident.ml" 76 3015 3015 "_none_" 1 0 -1
 )
-"ident.ml" 70 2749 2768 "ident.ml" 70 2749 2771
+"ident.ml" 73 2937 2956 "ident.ml" 73 2937 2959
 type(
   mmethod
 )
 ident(
-  def id1 "ident.ml" 70 2749 2772 "ident.ml" 71 2779 2825
+  def id1 "ident.ml" 73 2937 2960 "ident.ml" 74 2967 3013
 )
-"ident.ml" 70 2749 2772 "ident.ml" 70 2749 2775
+"ident.ml" 73 2937 2960 "ident.ml" 73 2937 2963
 type(
   mmethod
 )
 ident(
-  def id2 "ident.ml" 71 2779 2781 "ident.ml" 71 2779 2825
+  def id2 "ident.ml" 74 2967 2969 "ident.ml" 74 2967 3013
 )
-"ident.ml" 71 2779 2781 "ident.ml" 71 2779 2799
+"ident.ml" 74 2967 2969 "ident.ml" 74 2967 2987
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.compare
 )
-"ident.ml" 71 2779 2800 "ident.ml" 71 2779 2803
+"ident.ml" 74 2967 2988 "ident.ml" 74 2967 2991
 type(
   mmethod
 )
 ident(
-  int_ref id1 "ident.ml" 70 2749 2768 "ident.ml" 70 2749 2771
+  int_ref id1 "ident.ml" 73 2937 2956 "ident.ml" 73 2937 2959
 )
-"ident.ml" 71 2779 2800 "ident.ml" 71 2779 2812
+"ident.ml" 74 2967 2988 "ident.ml" 74 2967 3000
 type(
   int
 )
-"ident.ml" 71 2779 2813 "ident.ml" 71 2779 2816
+"ident.ml" 74 2967 3001 "ident.ml" 74 2967 3004
 type(
   mmethod
 )
 ident(
-  int_ref id2 "ident.ml" 70 2749 2772 "ident.ml" 70 2749 2775
+  int_ref id2 "ident.ml" 73 2937 2960 "ident.ml" 73 2937 2963
 )
-"ident.ml" 71 2779 2813 "ident.ml" 71 2779 2825
+"ident.ml" 74 2967 3001 "ident.ml" 74 2967 3013
 type(
   int
 )
-"ident.ml" 71 2779 2781 "ident.ml" 71 2779 2825
+"ident.ml" 74 2967 2969 "ident.ml" 74 2967 3013
 type(
   int
 )
-"ident.ml" 76 2848 2852 "ident.ml" 76 2848 2868
+"ident.ml" 79 3036 3040 "ident.ml" 79 3036 3056
 type(
   string list -> Idl.def -> clazz
 )
 ident(
-  def make_class_ident "ident.ml" 93 3451 3451 "_none_" 1 0 -1
+  def make_class_ident "ident.ml" 96 3639 3639 "_none_" 1 0 -1
 )
-"ident.ml" 77 2872 2878 "ident.ml" 77 2872 2883
+"ident.ml" 80 3060 3066 "ident.ml" 80 3060 3071
 type(
   int ref
 )
 ident(
-  def stamp "ident.ml" 78 2895 2897 "ident.ml" 91 3415 3449
+  def stamp "ident.ml" 81 3083 3085 "ident.ml" 94 3603 3637
 )
-"ident.ml" 77 2872 2886 "ident.ml" 77 2872 2889
+"ident.ml" 80 3060 3074 "ident.ml" 80 3060 3077
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"ident.ml" 77 2872 2890 "ident.ml" 77 2872 2891
+"ident.ml" 80 3060 3078 "ident.ml" 80 3060 3079
 type(
   int
 )
-"ident.ml" 77 2872 2886 "ident.ml" 77 2872 2891
+"ident.ml" 80 3060 3074 "ident.ml" 80 3060 3079
 type(
   int ref
 )
-"ident.ml" 78 2895 2901 "ident.ml" 78 2895 2908
+"ident.ml" 81 3083 3089 "ident.ml" 81 3083 3096
 type(
   string list
 )
 ident(
-  def package "ident.ml" 78 2895 2909 "ident.ml" 91 3415 3449
+  def package "ident.ml" 81 3083 3097 "ident.ml" 94 3603 3637
 )
-"ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+"ident.ml" 81 3083 3097 "ident.ml" 81 3083 3100
 type(
   Idl.def
 )
 ident(
-  def def "ident.ml" 79 2916 2920 "ident.ml" 91 3415 3449
+  def def "ident.ml" 82 3104 3108 "ident.ml" 94 3603 3637
 )
-"ident.ml" 79 2916 2924 "ident.ml" 79 2916 2926
+"ident.ml" 82 3104 3112 "ident.ml" 82 3104 3114
 type(
   int
 )
 ident(
-  def id "ident.ml" 79 2916 2939 "ident.ml" 91 3415 3449
+  def id "ident.ml" 82 3104 3127 "ident.ml" 94 3603 3637
 )
-"ident.ml" 79 2916 2929 "ident.ml" 79 2916 2930
+"ident.ml" 82 3104 3117 "ident.ml" 82 3104 3118
 type(
   int ref -> int
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"ident.ml" 79 2916 2930 "ident.ml" 79 2916 2935
+"ident.ml" 82 3104 3118 "ident.ml" 82 3104 3123
 type(
   int ref
 )
 ident(
-  int_ref stamp "ident.ml" 77 2872 2878 "ident.ml" 77 2872 2883
+  int_ref stamp "ident.ml" 80 3060 3066 "ident.ml" 80 3060 3071
 )
-"ident.ml" 79 2916 2929 "ident.ml" 79 2916 2935
+"ident.ml" 82 3104 3117 "ident.ml" 82 3104 3123
 type(
   int
 )
-"ident.ml" 79 2916 2939 "ident.ml" 79 2916 2943
+"ident.ml" 82 3104 3127 "ident.ml" 82 3104 3131
 type(
   int ref -> unit
 )
 ident(
   ext_ref Pervasives.incr
 )
-"ident.ml" 79 2916 2944 "ident.ml" 79 2916 2949
+"ident.ml" 82 3104 3132 "ident.ml" 82 3104 3137
 type(
   int ref
 )
 ident(
-  int_ref stamp "ident.ml" 77 2872 2878 "ident.ml" 77 2872 2883
+  int_ref stamp "ident.ml" 80 3060 3066 "ident.ml" 80 3060 3071
 )
-"ident.ml" 79 2916 2939 "ident.ml" 79 2916 2949
+"ident.ml" 82 3104 3127 "ident.ml" 82 3104 3137
 type(
   unit
 )
-"ident.ml" 80 2951 2959 "ident.ml" 80 2951 2968
+"ident.ml" 83 3139 3147 "ident.ml" 83 3139 3156
 type(
   string
 )
 ident(
-  def java_name "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+  def java_name "ident.ml" 88 3417 3421 "ident.ml" 94 3603 3637
 )
-"ident.ml" 80 2951 2971 "ident.ml" 80 2951 2974
+"ident.ml" 83 3139 3159 "ident.ml" 83 3139 3162
 type(
   Idl.def
 )
 ident(
-  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+  int_ref def "ident.ml" 81 3083 3097 "ident.ml" 81 3083 3100
 )
-"ident.ml" 80 2951 2971 "ident.ml" 80 2951 2981
+"ident.ml" 83 3139 3159 "ident.ml" 83 3139 3169
 type(
   Idl.ident
 )
-"ident.ml" 80 2951 2971 "ident.ml" 80 2951 2989
+"ident.ml" 83 3139 3159 "ident.ml" 83 3139 3177
 type(
   string
 )
-"ident.ml" 81 2990 2998 "ident.ml" 81 2990 3005
+"ident.ml" 84 3178 3186 "ident.ml" 84 3178 3193
 type(
   string
 )
 ident(
-  def ml_name "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+  def ml_name "ident.ml" 88 3417 3421 "ident.ml" 94 3603 3637
 )
-"ident.ml" 81 2990 3007 "ident.ml" 81 2990 3013
+"ident.ml" 84 3178 3195 "ident.ml" 84 3178 3201
 type(
   Loc.t
 )
 ident(
-  def ml_loc "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+  def ml_loc "ident.ml" 88 3417 3421 "ident.ml" 94 3603 3637
 )
-"ident.ml" 81 2990 3015 "ident.ml" 81 2990 3022
+"ident.ml" 84 3178 3203 "ident.ml" 84 3178 3210
 type(
   ml_kind
 )
 ident(
-  def ml_kind "ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+  def ml_kind "ident.ml" 88 3417 3421 "ident.ml" 94 3603 3637
 )
-"ident.ml" 81 2990 2998 "ident.ml" 81 2990 3022
+"ident.ml" 84 3178 3186 "ident.ml" 84 3178 3210
 type(
   string * Loc.t * ml_kind
 )
-"ident.ml" 82 3026 3038 "ident.ml" 82 3026 3052
+"ident.ml" 85 3214 3226 "ident.ml" 85 3214 3240
 type(
   Idl.annotation list -> Idl.ident option
 )
 ident(
   ext_ref Annot.get_name
 )
-"ident.ml" 82 3026 3053 "ident.ml" 82 3026 3056
+"ident.ml" 85 3214 3241 "ident.ml" 85 3214 3244
 type(
   Idl.def
 )
 ident(
-  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+  int_ref def "ident.ml" 81 3083 3097 "ident.ml" 81 3083 3100
 )
-"ident.ml" 82 3026 3053 "ident.ml" 82 3026 3064
+"ident.ml" 85 3214 3241 "ident.ml" 85 3214 3252
 type(
   Idl.annotation list
 )
-"ident.ml" 82 3026 3038 "ident.ml" 82 3026 3064
+"ident.ml" 85 3214 3226 "ident.ml" 85 3214 3252
 call(
   stack
 )
 type(
   Idl.ident option
 )
-"ident.ml" 83 3070 3078 "ident.ml" 83 3070 3082
+"ident.ml" 86 3258 3266 "ident.ml" 86 3258 3270
 type(
   Idl.ident option
 )
-"ident.ml" 83 3070 3086 "ident.ml" 83 3070 3089
+"ident.ml" 86 3258 3274 "ident.ml" 86 3258 3277
 type(
   string
 )
-"ident.ml" 83 3070 3089 "ident.ml" 83 3070 3090
+"ident.ml" 86 3258 3277 "ident.ml" 86 3258 3278
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 83 3070 3090 "ident.ml" 83 3070 3093
+"ident.ml" 86 3258 3278 "ident.ml" 86 3258 3281
 type(
   Idl.def
 )
 ident(
-  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+  int_ref def "ident.ml" 81 3083 3097 "ident.ml" 81 3083 3100
 )
-"ident.ml" 83 3070 3090 "ident.ml" 83 3070 3100
+"ident.ml" 86 3258 3278 "ident.ml" 86 3258 3288
 type(
   Idl.ident
 )
-"ident.ml" 83 3070 3090 "ident.ml" 83 3070 3108
+"ident.ml" 86 3258 3278 "ident.ml" 86 3258 3296
 type(
   string
 )
-"ident.ml" 83 3070 3086 "ident.ml" 83 3070 3108
+"ident.ml" 86 3258 3274 "ident.ml" 86 3258 3296
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 83 3070 3110 "ident.ml" 83 3070 3113
+"ident.ml" 86 3258 3298 "ident.ml" 86 3258 3301
 type(
   Idl.def
 )
 ident(
-  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+  int_ref def "ident.ml" 81 3083 3097 "ident.ml" 81 3083 3100
 )
-"ident.ml" 83 3070 3110 "ident.ml" 83 3070 3120
+"ident.ml" 86 3258 3298 "ident.ml" 86 3258 3308
 type(
   Idl.ident
 )
-"ident.ml" 83 3070 3110 "ident.ml" 83 3070 3132
+"ident.ml" 86 3258 3298 "ident.ml" 86 3258 3320
 type(
   Loc.t
 )
-"ident.ml" 83 3070 3134 "ident.ml" 83 3070 3143
+"ident.ml" 86 3258 3322 "ident.ml" 86 3258 3331
 type(
   ml_kind
 )
-"ident.ml" 83 3070 3086 "ident.ml" 83 3070 3143
+"ident.ml" 86 3258 3274 "ident.ml" 86 3258 3331
 type(
   string * Loc.t * ml_kind
 )
-"ident.ml" 84 3159 3172 "ident.ml" 84 3159 3178
+"ident.ml" 87 3347 3360 "ident.ml" 87 3347 3366
 type(
   Idl.ident
 )
 ident(
-  def mlname "ident.ml" 84 3159 3182 "ident.ml" 84 3159 3225
+  def mlname "ident.ml" 87 3347 3370 "ident.ml" 87 3347 3413
 )
-"ident.ml" 84 3159 3167 "ident.ml" 84 3159 3178
+"ident.ml" 87 3347 3355 "ident.ml" 87 3347 3366
 type(
   Idl.ident option
 )
-"ident.ml" 84 3159 3182 "ident.ml" 84 3159 3188
+"ident.ml" 87 3347 3370 "ident.ml" 87 3347 3376
 type(
   Idl.ident
 )
 ident(
-  int_ref mlname "ident.ml" 84 3159 3172 "ident.ml" 84 3159 3178
+  int_ref mlname "ident.ml" 87 3347 3360 "ident.ml" 87 3347 3366
 )
-"ident.ml" 84 3159 3182 "ident.ml" 84 3159 3196
+"ident.ml" 87 3347 3370 "ident.ml" 87 3347 3384
 type(
   string
 )
-"ident.ml" 84 3159 3198 "ident.ml" 84 3159 3204
+"ident.ml" 87 3347 3386 "ident.ml" 87 3347 3392
 type(
   Idl.ident
 )
 ident(
-  int_ref mlname "ident.ml" 84 3159 3172 "ident.ml" 84 3159 3178
+  int_ref mlname "ident.ml" 87 3347 3360 "ident.ml" 87 3347 3366
 )
-"ident.ml" 84 3159 3198 "ident.ml" 84 3159 3216
+"ident.ml" 87 3347 3386 "ident.ml" 87 3347 3404
 type(
   Loc.t
 )
-"ident.ml" 84 3159 3218 "ident.ml" 84 3159 3225
+"ident.ml" 87 3347 3406 "ident.ml" 87 3347 3413
 type(
   ml_kind
 )
-"ident.ml" 84 3159 3182 "ident.ml" 84 3159 3225
+"ident.ml" 87 3347 3370 "ident.ml" 87 3347 3413
 type(
   string * Loc.t * ml_kind
 )
-"ident.ml" 82 3026 3032 "ident.ml" 84 3159 3225
+"ident.ml" 85 3214 3220 "ident.ml" 87 3347 3413
 type(
   string * Loc.t * ml_kind
 )
-"ident.ml" 85 3229 3243 "ident.ml" 85 3229 3245
+"ident.ml" 88 3417 3431 "ident.ml" 88 3417 3433
 type(
   int
 )
 ident(
-  int_ref id "ident.ml" 79 2916 2924 "ident.ml" 79 2916 2926
+  int_ref id "ident.ml" 82 3104 3112 "ident.ml" 82 3104 3114
 )
-"ident.ml" 86 3247 3268 "ident.ml" 86 3247 3271
+"ident.ml" 89 3435 3456 "ident.ml" 89 3435 3459
 type(
   Idl.def
 )
 ident(
-  int_ref def "ident.ml" 78 2895 2909 "ident.ml" 78 2895 2912
+  int_ref def "ident.ml" 81 3083 3097 "ident.ml" 81 3083 3100
 )
-"ident.ml" 86 3247 3268 "ident.ml" 86 3247 3283
+"ident.ml" 89 3435 3456 "ident.ml" 89 3435 3471
 type(
   bool
 )
-"ident.ml" 87 3285 3309 "ident.ml" 87 3285 3316
+"ident.ml" 90 3473 3497 "ident.ml" 90 3473 3504
 type(
   string list
 )
 ident(
-  int_ref package "ident.ml" 78 2895 2901 "ident.ml" 78 2895 2908
+  int_ref package "ident.ml" 81 3083 3089 "ident.ml" 81 3083 3096
 )
-"ident.ml" 88 3318 3339 "ident.ml" 88 3318 3348
+"ident.ml" 91 3506 3527 "ident.ml" 91 3506 3536
 type(
   string
 )
 ident(
-  int_ref java_name "ident.ml" 80 2951 2959 "ident.ml" 80 2951 2968
+  int_ref java_name "ident.ml" 83 3139 3147 "ident.ml" 83 3139 3156
 )
-"ident.ml" 89 3350 3369 "ident.ml" 89 3350 3376
+"ident.ml" 92 3538 3557 "ident.ml" 92 3538 3564
 type(
   string
 )
 ident(
-  int_ref ml_name "ident.ml" 81 2990 2998 "ident.ml" 81 2990 3005
+  int_ref ml_name "ident.ml" 84 3178 3186 "ident.ml" 84 3178 3193
 )
-"ident.ml" 90 3379 3407 "ident.ml" 90 3379 3413
+"ident.ml" 93 3567 3595 "ident.ml" 93 3567 3601
 type(
   Loc.t
 )
 ident(
-  int_ref ml_loc "ident.ml" 81 2990 3007 "ident.ml" 81 2990 3013
+  int_ref ml_loc "ident.ml" 84 3178 3195 "ident.ml" 84 3178 3201
 )
-"ident.ml" 91 3415 3439 "ident.ml" 91 3415 3446
+"ident.ml" 94 3603 3627 "ident.ml" 94 3603 3634
 type(
   ml_kind
 )
 ident(
-  int_ref ml_kind "ident.ml" 81 2990 3015 "ident.ml" 81 2990 3022
+  int_ref ml_kind "ident.ml" 84 3178 3203 "ident.ml" 84 3178 3210
 )
-"ident.ml" 85 3229 3233 "ident.ml" 91 3415 3449
+"ident.ml" 88 3417 3421 "ident.ml" 94 3603 3637
 type(
   clazz
 )
-"ident.ml" 80 2951 2955 "ident.ml" 91 3415 3449
+"ident.ml" 83 3139 3143 "ident.ml" 94 3603 3637
 type(
   clazz
 )
-"ident.ml" 79 2916 2939 "ident.ml" 91 3415 3449
+"ident.ml" 82 3104 3127 "ident.ml" 94 3603 3637
 type(
   clazz
 )
-"ident.ml" 79 2916 2920 "ident.ml" 91 3415 3449
+"ident.ml" 82 3104 3108 "ident.ml" 94 3603 3637
 type(
   clazz
 )
-"ident.ml" 78 2895 2897 "ident.ml" 91 3415 3449
+"ident.ml" 81 3083 3085 "ident.ml" 94 3603 3637
 type(
   string list -> Idl.def -> clazz
 )
-"ident.ml" 77 2872 2874 "ident.ml" 91 3415 3449
+"ident.ml" 80 3060 3062 "ident.ml" 94 3603 3637
 type(
   string list -> Idl.def -> clazz
 )
-"ident.ml" 96 3504 3512 "ident.ml" 96 3504 3519
+"ident.ml" 99 3692 3700 "ident.ml" 99 3692 3707
 type(
   'a -> 'a -> int
 )
 ident(
-  def compare "ident.ml" 96 3504 3557 "ident.ml" 97 3558 3563
+  def compare "ident.ml" 99 3692 3745 "ident.ml" 100 3746 3751
 )
-"ident.ml" 96 3504 3520 "ident.ml" 96 3504 3523
+"ident.ml" 99 3692 3708 "ident.ml" 99 3692 3711
 type(
   'a
 )
 ident(
-  def id1 "ident.ml" 96 3504 3524 "ident.ml" 96 3504 3557
+  def id1 "ident.ml" 99 3692 3712 "ident.ml" 99 3692 3745
 )
-"ident.ml" 96 3504 3524 "ident.ml" 96 3504 3527
+"ident.ml" 99 3692 3712 "ident.ml" 99 3692 3715
 type(
   'a
 )
 ident(
-  def id2 "ident.ml" 96 3504 3531 "ident.ml" 96 3504 3557
+  def id2 "ident.ml" 99 3692 3719 "ident.ml" 99 3692 3745
 )
-"ident.ml" 96 3504 3531 "ident.ml" 96 3504 3549
+"ident.ml" 99 3692 3719 "ident.ml" 99 3692 3737
 type(
   'a -> 'a -> int
 )
 ident(
   ext_ref Pervasives.compare
 )
-"ident.ml" 96 3504 3550 "ident.ml" 96 3504 3553
+"ident.ml" 99 3692 3738 "ident.ml" 99 3692 3741
 type(
   'a
 )
 ident(
-  int_ref id1 "ident.ml" 96 3504 3520 "ident.ml" 96 3504 3523
+  int_ref id1 "ident.ml" 99 3692 3708 "ident.ml" 99 3692 3711
 )
-"ident.ml" 96 3504 3554 "ident.ml" 96 3504 3557
+"ident.ml" 99 3692 3742 "ident.ml" 99 3692 3745
 type(
   'a
 )
 ident(
-  int_ref id2 "ident.ml" 96 3504 3524 "ident.ml" 96 3504 3527
+  int_ref id2 "ident.ml" 99 3692 3712 "ident.ml" 99 3692 3715
 )
-"ident.ml" 96 3504 3531 "ident.ml" 96 3504 3557
+"ident.ml" 99 3692 3719 "ident.ml" 99 3692 3745
 type(
   int
 )
-"ident.ml" 98 3564 3583 "ident.ml" 98 3564 3606
+"ident.ml" 101 3752 3771 "ident.ml" 101 3752 3794
 call(
   stack
 )
-"ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+"ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 type(
   StringEnv.key -> int
 )
 ident(
-  def get_unique_id "ident.ml" 112 3838 3838 "_none_" 1 0 -1
+  def get_unique_id "ident.ml" 115 4026 4026 "_none_" 1 0 -1
 )
-"ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+"ident.ml" 105 3817 3823 "ident.ml" 105 3817 3826
 type(
   int StringEnv.t ref
 )
 ident(
-  def env "ident.ml" 104 3685 3687 "ident.ml" 110 3830 3833
+  def env "ident.ml" 107 3873 3875 "ident.ml" 113 4018 4021
 )
-"ident.ml" 102 3629 3641 "ident.ml" 102 3629 3644
+"ident.ml" 105 3817 3829 "ident.ml" 105 3817 3832
 type(
   int StringEnv.t -> int StringEnv.t ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"ident.ml" 102 3629 3645 "ident.ml" 102 3629 3660
+"ident.ml" 105 3817 3833 "ident.ml" 105 3817 3848
 type(
   int StringEnv.t
 )
 ident(
   ext_ref StringEnv.empty
 )
-"ident.ml" 102 3629 3641 "ident.ml" 102 3629 3660
+"ident.ml" 105 3817 3829 "ident.ml" 105 3817 3848
 type(
   int StringEnv.t ref
 )
-"ident.ml" 103 3662 3668 "ident.ml" 103 3662 3673
+"ident.ml" 106 3850 3856 "ident.ml" 106 3850 3861
 type(
   int ref
 )
 ident(
-  def stamp "ident.ml" 104 3685 3687 "ident.ml" 110 3830 3833
+  def stamp "ident.ml" 107 3873 3875 "ident.ml" 113 4018 4021
 )
-"ident.ml" 103 3662 3676 "ident.ml" 103 3662 3679
+"ident.ml" 106 3850 3864 "ident.ml" 106 3850 3867
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"ident.ml" 103 3662 3680 "ident.ml" 103 3662 3681
+"ident.ml" 106 3850 3868 "ident.ml" 106 3850 3869
 type(
   int
 )
-"ident.ml" 103 3662 3676 "ident.ml" 103 3662 3681
+"ident.ml" 106 3850 3864 "ident.ml" 106 3850 3869
 type(
   int ref
 )
-"ident.ml" 104 3685 3691 "ident.ml" 104 3685 3695
+"ident.ml" 107 3873 3879 "ident.ml" 107 3873 3883
 type(
   StringEnv.key
 )
 ident(
-  def name "ident.ml" 105 3699 3703 "ident.ml" 110 3830 3833
+  def name "ident.ml" 108 3887 3891 "ident.ml" 113 4018 4021
 )
-"ident.ml" 105 3699 3707 "ident.ml" 105 3699 3721
+"ident.ml" 108 3887 3895 "ident.ml" 108 3887 3909
 type(
   StringEnv.key -> int StringEnv.t -> int
 )
 ident(
   ext_ref StringEnv.find
 )
-"ident.ml" 105 3699 3722 "ident.ml" 105 3699 3726
+"ident.ml" 108 3887 3910 "ident.ml" 108 3887 3914
 type(
   StringEnv.key
 )
 ident(
-  int_ref name "ident.ml" 104 3685 3691 "ident.ml" 104 3685 3695
+  int_ref name "ident.ml" 107 3873 3879 "ident.ml" 107 3873 3883
 )
-"ident.ml" 105 3699 3727 "ident.ml" 105 3699 3728
+"ident.ml" 108 3887 3915 "ident.ml" 108 3887 3916
 type(
   int StringEnv.t ref -> int StringEnv.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"ident.ml" 105 3699 3728 "ident.ml" 105 3699 3731
+"ident.ml" 108 3887 3916 "ident.ml" 108 3887 3919
 type(
   int StringEnv.t ref
 )
 ident(
-  int_ref env "ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+  int_ref env "ident.ml" 105 3817 3823 "ident.ml" 105 3817 3826
 )
-"ident.ml" 105 3699 3727 "ident.ml" 105 3699 3731
+"ident.ml" 108 3887 3915 "ident.ml" 108 3887 3919
 type(
   int StringEnv.t
 )
-"ident.ml" 105 3699 3707 "ident.ml" 105 3699 3731
+"ident.ml" 108 3887 3895 "ident.ml" 108 3887 3919
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 107 3741 3747 "ident.ml" 107 3741 3756
+"ident.ml" 110 3929 3935 "ident.ml" 110 3929 3944
 type(
   exn
 )
-"ident.ml" 108 3761 3766 "ident.ml" 108 3761 3768
+"ident.ml" 111 3949 3954 "ident.ml" 111 3949 3956
 type(
   int
 )
 ident(
-  def id "ident.ml" 108 3761 3781 "ident.ml" 110 3830 3833
+  def id "ident.ml" 111 3949 3969 "ident.ml" 113 4018 4021
 )
-"ident.ml" 108 3761 3771 "ident.ml" 108 3761 3772
+"ident.ml" 111 3949 3959 "ident.ml" 111 3949 3960
 type(
   int ref -> int
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"ident.ml" 108 3761 3772 "ident.ml" 108 3761 3777
+"ident.ml" 111 3949 3960 "ident.ml" 111 3949 3965
 type(
   int ref
 )
 ident(
-  int_ref stamp "ident.ml" 103 3662 3668 "ident.ml" 103 3662 3673
+  int_ref stamp "ident.ml" 106 3850 3856 "ident.ml" 106 3850 3861
 )
-"ident.ml" 108 3761 3771 "ident.ml" 108 3761 3777
+"ident.ml" 111 3949 3959 "ident.ml" 111 3949 3965
 type(
   int
 )
-"ident.ml" 108 3761 3781 "ident.ml" 108 3761 3785
+"ident.ml" 111 3949 3969 "ident.ml" 111 3949 3973
 type(
   int ref -> unit
 )
 ident(
   ext_ref Pervasives.incr
 )
-"ident.ml" 108 3761 3786 "ident.ml" 108 3761 3791
+"ident.ml" 111 3949 3974 "ident.ml" 111 3949 3979
 type(
   int ref
 )
 ident(
-  int_ref stamp "ident.ml" 103 3662 3668 "ident.ml" 103 3662 3673
+  int_ref stamp "ident.ml" 106 3850 3856 "ident.ml" 106 3850 3861
 )
-"ident.ml" 108 3761 3781 "ident.ml" 108 3761 3791
+"ident.ml" 111 3949 3969 "ident.ml" 111 3949 3979
 type(
   unit
 )
-"ident.ml" 109 3794 3795 "ident.ml" 109 3794 3798
+"ident.ml" 112 3982 3983 "ident.ml" 112 3982 3986
 type(
   int StringEnv.t ref
 )
 ident(
-  int_ref env "ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+  int_ref env "ident.ml" 105 3817 3823 "ident.ml" 105 3817 3826
 )
-"ident.ml" 109 3794 3799 "ident.ml" 109 3794 3801
+"ident.ml" 112 3982 3987 "ident.ml" 112 3982 3989
 type(
   int StringEnv.t ref -> int StringEnv.t -> unit
 )
 ident(
   ext_ref Pervasives.( := )
 )
-"ident.ml" 109 3794 3802 "ident.ml" 109 3794 3815
+"ident.ml" 112 3982 3990 "ident.ml" 112 3982 4003
 type(
   StringEnv.key -> int -> int StringEnv.t -> int StringEnv.t
 )
 ident(
   ext_ref StringEnv.add
 )
-"ident.ml" 109 3794 3816 "ident.ml" 109 3794 3820
+"ident.ml" 112 3982 4004 "ident.ml" 112 3982 4008
 type(
   StringEnv.key
 )
 ident(
-  int_ref name "ident.ml" 104 3685 3691 "ident.ml" 104 3685 3695
+  int_ref name "ident.ml" 107 3873 3879 "ident.ml" 107 3873 3883
 )
-"ident.ml" 109 3794 3821 "ident.ml" 109 3794 3823
+"ident.ml" 112 3982 4009 "ident.ml" 112 3982 4011
 type(
   int
 )
 ident(
-  int_ref id "ident.ml" 108 3761 3766 "ident.ml" 108 3761 3768
+  int_ref id "ident.ml" 111 3949 3954 "ident.ml" 111 3949 3956
 )
-"ident.ml" 109 3794 3824 "ident.ml" 109 3794 3825
+"ident.ml" 112 3982 4012 "ident.ml" 112 3982 4013
 type(
   int StringEnv.t ref -> int StringEnv.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"ident.ml" 109 3794 3825 "ident.ml" 109 3794 3828
+"ident.ml" 112 3982 4013 "ident.ml" 112 3982 4016
 type(
   int StringEnv.t ref
 )
 ident(
-  int_ref env "ident.ml" 102 3629 3635 "ident.ml" 102 3629 3638
+  int_ref env "ident.ml" 105 3817 3823 "ident.ml" 105 3817 3826
 )
-"ident.ml" 109 3794 3824 "ident.ml" 109 3794 3828
+"ident.ml" 112 3982 4012 "ident.ml" 112 3982 4016
 type(
   int StringEnv.t
 )
-"ident.ml" 109 3794 3802 "ident.ml" 109 3794 3828
+"ident.ml" 112 3982 3990 "ident.ml" 112 3982 4016
 call(
   stack
 )
 type(
   int StringEnv.t
 )
-"ident.ml" 109 3794 3795 "ident.ml" 109 3794 3828
+"ident.ml" 112 3982 3983 "ident.ml" 112 3982 4016
 type(
   unit
 )
-"ident.ml" 110 3830 3831 "ident.ml" 110 3830 3833
+"ident.ml" 113 4018 4019 "ident.ml" 113 4018 4021
 type(
   int
 )
 ident(
-  int_ref id "ident.ml" 108 3761 3766 "ident.ml" 108 3761 3768
+  int_ref id "ident.ml" 111 3949 3954 "ident.ml" 111 3949 3956
 )
-"ident.ml" 109 3794 3795 "ident.ml" 110 3830 3833
+"ident.ml" 112 3982 3983 "ident.ml" 113 4018 4021
 type(
   int
 )
-"ident.ml" 108 3761 3781 "ident.ml" 110 3830 3833
+"ident.ml" 111 3949 3969 "ident.ml" 113 4018 4021
 type(
   int
 )
-"ident.ml" 108 3761 3762 "ident.ml" 110 3830 3833
+"ident.ml" 111 3949 3950 "ident.ml" 113 4018 4021
 type(
   int
 )
-"ident.ml" 105 3699 3703 "ident.ml" 110 3830 3833
+"ident.ml" 108 3887 3891 "ident.ml" 113 4018 4021
 type(
   int
 )
-"ident.ml" 104 3685 3687 "ident.ml" 110 3830 3833
+"ident.ml" 107 3873 3875 "ident.ml" 113 4018 4021
 type(
   StringEnv.key -> int
 )
-"ident.ml" 102 3629 3631 "ident.ml" 110 3830 3833
+"ident.ml" 105 3817 3819 "ident.ml" 113 4018 4021
 type(
   StringEnv.key -> int
 )
-"ident.ml" 112 3838 3842 "ident.ml" 112 3838 3861
+"ident.ml" 115 4026 4030 "ident.ml" 115 4026 4049
 type(
   clazz -> Idl.init -> mmethod
 )
 ident(
-  def make_init_method_id "ident.ml" 135 4579 4579 "_none_" 1 0 -1
+  def make_init_method_id "ident.ml" 138 4767 4767 "_none_" 1 0 -1
 )
-"ident.ml" 112 3838 3862 "ident.ml" 112 3838 3870
+"ident.ml" 115 4026 4050 "ident.ml" 115 4026 4058
 type(
   clazz
 )
 ident(
-  def class_id "ident.ml" 112 3838 3871 "ident.ml" 133 4570 4577
+  def class_id "ident.ml" 115 4026 4059 "ident.ml" 136 4758 4765
 )
-"ident.ml" 112 3838 3871 "ident.ml" 112 3838 3875
+"ident.ml" 115 4026 4059 "ident.ml" 115 4026 4063
 type(
   Idl.init
 )
 ident(
-  def init "ident.ml" 113 3878 3880 "ident.ml" 133 4570 4577
+  def init "ident.ml" 116 4066 4068 "ident.ml" 136 4758 4765
 )
-"ident.ml" 113 3878 3886 "ident.ml" 113 3878 3900
+"ident.ml" 116 4066 4074 "ident.ml" 116 4066 4088
 type(
   Idl.annotation list -> Idl.ident option
 )
 ident(
   ext_ref Annot.get_name
 )
-"ident.ml" 113 3878 3901 "ident.ml" 113 3878 3905
+"ident.ml" 116 4066 4089 "ident.ml" 116 4066 4093
 type(
   Idl.init
 )
 ident(
-  int_ref init "ident.ml" 112 3838 3871 "ident.ml" 112 3838 3875
+  int_ref init "ident.ml" 115 4026 4059 "ident.ml" 115 4026 4063
 )
-"ident.ml" 113 3878 3901 "ident.ml" 113 3878 3913
+"ident.ml" 116 4066 4089 "ident.ml" 116 4066 4101
 type(
   Idl.annotation list
 )
-"ident.ml" 113 3878 3886 "ident.ml" 113 3878 3913
+"ident.ml" 116 4066 4074 "ident.ml" 116 4066 4101
 call(
   stack
 )
 type(
   Idl.ident option
 )
-"ident.ml" 114 3919 3923 "ident.ml" 114 3919 3927
+"ident.ml" 117 4107 4111 "ident.ml" 117 4107 4115
 type(
   Idl.ident option
 )
-"ident.ml" 115 3932 3942 "ident.ml" 115 3932 3949
+"ident.ml" 118 4120 4130 "ident.ml" 118 4120 4137
 type(
   string
 )
 ident(
-  def ml_name "ident.ml" 117 4037 4043 "ident.ml" 122 4189 4196
+  def ml_name "ident.ml" 120 4225 4231 "ident.ml" 125 4377 4384
 )
-"ident.ml" 115 3932 3952 "ident.ml" 115 3932 3969
+"ident.ml" 118 4120 4140 "ident.ml" 118 4120 4157
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 115 3932 3970 "ident.ml" 115 3932 3978
+"ident.ml" 118 4120 4158 "ident.ml" 118 4120 4166
 type(
   clazz
 )
 ident(
-  int_ref class_id "ident.ml" 112 3838 3862 "ident.ml" 112 3838 3870
+  int_ref class_id "ident.ml" 115 4026 4050 "ident.ml" 115 4026 4058
 )
-"ident.ml" 115 3932 3952 "ident.ml" 115 3932 3978
+"ident.ml" 118 4120 4140 "ident.ml" 118 4120 4166
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 116 3979 3989 "ident.ml" 116 3979 3995
+"ident.ml" 119 4167 4177 "ident.ml" 119 4167 4183
 type(
   Loc.t
 )
 ident(
-  def ml_loc "ident.ml" 117 4037 4043 "ident.ml" 122 4189 4196
+  def ml_loc "ident.ml" 120 4225 4231 "ident.ml" 125 4377 4384
 )
-"ident.ml" 116 3979 3998 "ident.ml" 116 3979 4024
+"ident.ml" 119 4167 4186 "ident.ml" 119 4167 4212
 type(
   clazz -> Loc.t
 )
 ident(
-  int_ref get_class_ml_name_location "ident.ml" 36 1495 1499 "ident.ml" 36 1495 1525
+  int_ref get_class_ml_name_location "ident.ml" 39 1683 1687 "ident.ml" 39 1683 1713
 )
-"ident.ml" 116 3979 4025 "ident.ml" 116 3979 4033
+"ident.ml" 119 4167 4213 "ident.ml" 119 4167 4221
 type(
   clazz
 )
 ident(
-  int_ref class_id "ident.ml" 112 3838 3862 "ident.ml" 112 3838 3870
+  int_ref class_id "ident.ml" 115 4026 4050 "ident.ml" 115 4026 4058
 )
-"ident.ml" 116 3979 3998 "ident.ml" 116 3979 4033
+"ident.ml" 119 4167 4186 "ident.ml" 119 4167 4221
 call(
   stack
 )
 type(
   Loc.t
 )
-"ident.ml" 117 4037 4060 "ident.ml" 117 4037 4068
+"ident.ml" 120 4225 4248 "ident.ml" 120 4225 4256
 type(
   string
 )
-"ident.ml" 118 4070 4082 "ident.ml" 118 4070 4095
+"ident.ml" 121 4258 4270 "ident.ml" 121 4258 4283
 type(
   StringEnv.key -> int
 )
 ident(
-  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+  int_ref get_unique_id "ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 )
-"ident.ml" 118 4070 4096 "ident.ml" 118 4070 4103
+"ident.ml" 121 4258 4284 "ident.ml" 121 4258 4291
 type(
   StringEnv.key
 )
 ident(
-  int_ref ml_name "ident.ml" 115 3932 3942 "ident.ml" 115 3932 3949
+  int_ref ml_name "ident.ml" 118 4120 4130 "ident.ml" 118 4120 4137
 )
-"ident.ml" 118 4070 4082 "ident.ml" 118 4070 4103
+"ident.ml" 121 4258 4270 "ident.ml" 121 4258 4291
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 119 4105 4119 "ident.ml" 119 4105 4126
+"ident.ml" 122 4293 4307 "ident.ml" 122 4293 4314
 type(
   string
 )
 ident(
-  int_ref ml_name "ident.ml" 115 3932 3942 "ident.ml" 115 3932 3949
+  int_ref ml_name "ident.ml" 118 4120 4130 "ident.ml" 118 4120 4137
 )
-"ident.ml" 120 4128 4151 "ident.ml" 120 4128 4157
+"ident.ml" 123 4316 4339 "ident.ml" 123 4316 4345
 type(
   Loc.t
 )
 ident(
-  int_ref ml_loc "ident.ml" 116 3979 3989 "ident.ml" 116 3979 3995
+  int_ref ml_loc "ident.ml" 119 4167 4177 "ident.ml" 119 4167 4183
 )
-"ident.ml" 121 4159 4178 "ident.ml" 121 4159 4187
+"ident.ml" 124 4347 4366 "ident.ml" 124 4347 4375
 type(
   ml_kind
 )
-"ident.ml" 117 4037 4043 "ident.ml" 122 4189 4196
+"ident.ml" 120 4225 4231 "ident.ml" 125 4377 4384
 type(
   mmethod
 )
-"ident.ml" 115 3932 3938 "ident.ml" 122 4189 4196
+"ident.ml" 118 4120 4126 "ident.ml" 125 4377 4384
 type(
   mmethod
 )
-"ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+"ident.ml" 126 4385 4394 "ident.ml" 126 4385 4398
 type(
   Idl.ident
 )
 ident(
-  def name "ident.ml" 124 4214 4220 "ident.ml" 133 4570 4577
+  def name "ident.ml" 127 4402 4408 "ident.ml" 136 4758 4765
 )
-"ident.ml" 123 4197 4201 "ident.ml" 123 4197 4210
+"ident.ml" 126 4385 4389 "ident.ml" 126 4385 4398
 type(
   Idl.ident option
 )
-"ident.ml" 124 4214 4224 "ident.ml" 124 4214 4231
+"ident.ml" 127 4402 4412 "ident.ml" 127 4402 4419
 type(
   string
 )
 ident(
-  def ml_name "ident.ml" 126 4287 4293 "ident.ml" 133 4570 4577
+  def ml_name "ident.ml" 129 4475 4481 "ident.ml" 136 4758 4765
 )
-"ident.ml" 124 4214 4234 "ident.ml" 124 4214 4238
+"ident.ml" 127 4402 4422 "ident.ml" 127 4402 4426
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+  int_ref name "ident.ml" 126 4385 4394 "ident.ml" 126 4385 4398
 )
-"ident.ml" 124 4214 4234 "ident.ml" 124 4214 4246
+"ident.ml" 127 4402 4422 "ident.ml" 127 4402 4434
 type(
   string
 )
-"ident.ml" 125 4248 4258 "ident.ml" 125 4248 4264
+"ident.ml" 128 4436 4446 "ident.ml" 128 4436 4452
 type(
   Loc.t
 )
 ident(
-  def ml_loc "ident.ml" 126 4287 4293 "ident.ml" 133 4570 4577
+  def ml_loc "ident.ml" 129 4475 4481 "ident.ml" 136 4758 4765
 )
-"ident.ml" 125 4248 4267 "ident.ml" 125 4248 4271
+"ident.ml" 128 4436 4455 "ident.ml" 128 4436 4459
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+  int_ref name "ident.ml" 126 4385 4394 "ident.ml" 126 4385 4398
 )
-"ident.ml" 125 4248 4267 "ident.ml" 125 4248 4283
+"ident.ml" 128 4436 4455 "ident.ml" 128 4436 4471
 type(
   Loc.t
 )
-"ident.ml" 126 4287 4296 "ident.ml" 126 4287 4320
+"ident.ml" 129 4475 4484 "ident.ml" 129 4475 4508
 type(
   string -> bool
 )
 ident(
   ext_ref Utilities.is_capitalized
 )
-"ident.ml" 126 4287 4321 "ident.ml" 126 4287 4325
+"ident.ml" 129 4475 4509 "ident.ml" 129 4475 4513
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+  int_ref name "ident.ml" 126 4385 4394 "ident.ml" 126 4385 4398
 )
-"ident.ml" 126 4287 4321 "ident.ml" 126 4287 4333
+"ident.ml" 129 4475 4509 "ident.ml" 129 4475 4521
 type(
   string
 )
-"ident.ml" 126 4287 4296 "ident.ml" 126 4287 4333
+"ident.ml" 129 4475 4484 "ident.ml" 129 4475 4521
 call(
   stack
 )
 type(
   bool
 )
-"ident.ml" 127 4339 4340 "ident.ml" 127 4339 4345
+"ident.ml" 130 4527 4528 "ident.ml" 130 4527 4533
 type(
   exn -> unit
 )
 ident(
   ext_ref Pervasives.raise
 )
-"ident.ml" 127 4339 4374 "ident.ml" 127 4339 4378
+"ident.ml" 130 4527 4562 "ident.ml" 130 4527 4566
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 123 4197 4206 "ident.ml" 123 4197 4210
+  int_ref name "ident.ml" 126 4385 4394 "ident.ml" 126 4385 4398
 )
-"ident.ml" 127 4339 4353 "ident.ml" 127 4339 4379
+"ident.ml" 130 4527 4541 "ident.ml" 130 4527 4567
 type(
   Error.t
 )
-"ident.ml" 127 4339 4346 "ident.ml" 127 4339 4380
+"ident.ml" 130 4527 4534 "ident.ml" 130 4527 4568
 type(
   exn
 )
-"ident.ml" 127 4339 4340 "ident.ml" 127 4339 4380
+"ident.ml" 130 4527 4528 "ident.ml" 130 4527 4568
 type(
   unit
 )
-"ident.ml" 126 4287 4293 "ident.ml" 127 4339 4380
+"ident.ml" 129 4475 4481 "ident.ml" 130 4527 4568
 type(
   unit
 )
-"ident.ml" 128 4420 4443 "ident.ml" 128 4420 4451
+"ident.ml" 131 4608 4631 "ident.ml" 131 4608 4639
 type(
   string
 )
-"ident.ml" 129 4453 4465 "ident.ml" 129 4453 4478
+"ident.ml" 132 4641 4653 "ident.ml" 132 4641 4666
 type(
   StringEnv.key -> int
 )
 ident(
-  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+  int_ref get_unique_id "ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 )
-"ident.ml" 129 4453 4479 "ident.ml" 129 4453 4486
+"ident.ml" 132 4641 4667 "ident.ml" 132 4641 4674
 type(
   StringEnv.key
 )
 ident(
-  int_ref ml_name "ident.ml" 124 4214 4224 "ident.ml" 124 4214 4231
+  int_ref ml_name "ident.ml" 127 4402 4412 "ident.ml" 127 4402 4419
 )
-"ident.ml" 129 4453 4465 "ident.ml" 129 4453 4486
+"ident.ml" 132 4641 4653 "ident.ml" 132 4641 4674
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 130 4488 4502 "ident.ml" 130 4488 4509
+"ident.ml" 133 4676 4690 "ident.ml" 133 4676 4697
 type(
   string
 )
 ident(
-  int_ref ml_name "ident.ml" 124 4214 4224 "ident.ml" 124 4214 4231
+  int_ref ml_name "ident.ml" 127 4402 4412 "ident.ml" 127 4402 4419
 )
-"ident.ml" 131 4511 4534 "ident.ml" 131 4511 4540
+"ident.ml" 134 4699 4722 "ident.ml" 134 4699 4728
 type(
   Loc.t
 )
 ident(
-  int_ref ml_loc "ident.ml" 125 4248 4258 "ident.ml" 125 4248 4264
+  int_ref ml_loc "ident.ml" 128 4436 4446 "ident.ml" 128 4436 4452
 )
-"ident.ml" 132 4542 4561 "ident.ml" 132 4542 4568
+"ident.ml" 135 4730 4749 "ident.ml" 135 4730 4756
 type(
   ml_kind
 )
-"ident.ml" 128 4420 4426 "ident.ml" 133 4570 4577
+"ident.ml" 131 4608 4614 "ident.ml" 136 4758 4765
 type(
   mmethod
 )
-"ident.ml" 126 4287 4293 "ident.ml" 133 4570 4577
+"ident.ml" 129 4475 4481 "ident.ml" 136 4758 4765
 type(
   mmethod
 )
-"ident.ml" 124 4214 4220 "ident.ml" 133 4570 4577
+"ident.ml" 127 4402 4408 "ident.ml" 136 4758 4765
 type(
   mmethod
 )
-"ident.ml" 113 3878 3880 "ident.ml" 133 4570 4577
+"ident.ml" 116 4066 4068 "ident.ml" 136 4758 4765
 type(
   mmethod
 )
-"ident.ml" 135 4579 4583 "ident.ml" 135 4579 4603
+"ident.ml" 138 4767 4771 "ident.ml" 138 4767 4791
 type(
   static:bool -> clazz -> Idl.field -> mmethod option * mmethod
 )
 ident(
-  def make_field_method_id "ident.ml" 162 5655 5655 "_none_" 1 0 -1
+  def make_field_method_id "ident.ml" 165 5843 5843 "_none_" 1 0 -1
 )
-"ident.ml" 135 4579 4605 "ident.ml" 135 4579 4611
+"ident.ml" 138 4767 4793 "ident.ml" 138 4767 4799
 type(
   bool
 )
 ident(
-  def static "ident.ml" 135 4579 4612 "ident.ml" 160 5646 5649
+  def static "ident.ml" 138 4767 4800 "ident.ml" 163 5834 5837
 )
-"ident.ml" 135 4579 4612 "ident.ml" 135 4579 4620
+"ident.ml" 138 4767 4800 "ident.ml" 138 4767 4808
 type(
   clazz
 )
 ident(
-  def class_id "ident.ml" 135 4579 4621 "ident.ml" 160 5646 5649
+  def class_id "ident.ml" 138 4767 4809 "ident.ml" 163 5834 5837
 )
-"ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+"ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 type(
   Idl.field
 )
 ident(
-  def field "ident.ml" 136 4629 4631 "ident.ml" 160 5646 5649
+  def field "ident.ml" 139 4817 4819 "ident.ml" 163 5834 5837
 )
-"ident.ml" 136 4629 4635 "ident.ml" 136 4629 4642
+"ident.ml" 139 4817 4823 "ident.ml" 139 4817 4830
 type(
   string
 )
 ident(
-  def package "ident.ml" 137 4733 4735 "ident.ml" 160 5646 5649
+  def package "ident.ml" 140 4921 4923 "ident.ml" 163 5834 5837
 )
-"ident.ml" 136 4629 4645 "ident.ml" 136 4629 4658
+"ident.ml" 139 4817 4833 "ident.ml" 139 4817 4846
 type(
   string -> string list -> string
 )
 ident(
   ext_ref String.concat
 )
-"ident.ml" 136 4629 4659 "ident.ml" 136 4629 4662
+"ident.ml" 139 4817 4847 "ident.ml" 139 4817 4850
 type(
   string
 )
-"ident.ml" 136 4629 4665 "ident.ml" 136 4629 4687
+"ident.ml" 139 4817 4853 "ident.ml" 139 4817 4875
 type(
   clazz -> string list
 )
 ident(
   int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
 )
-"ident.ml" 136 4629 4688 "ident.ml" 136 4629 4696
+"ident.ml" 139 4817 4876 "ident.ml" 139 4817 4884
 type(
   clazz
 )
 ident(
-  int_ref class_id "ident.ml" 135 4579 4612 "ident.ml" 135 4579 4620
+  int_ref class_id "ident.ml" 138 4767 4800 "ident.ml" 138 4767 4808
 )
-"ident.ml" 136 4629 4664 "ident.ml" 136 4629 4697
+"ident.ml" 139 4817 4852 "ident.ml" 139 4817 4885
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 136 4629 4698 "ident.ml" 136 4629 4699
+"ident.ml" 139 4817 4886 "ident.ml" 139 4817 4887
 type(
   string list -> string list -> string list
 )
 ident(
   ext_ref Pervasives.( @ )
 )
-"ident.ml" 136 4629 4701 "ident.ml" 136 4629 4718
+"ident.ml" 139 4817 4889 "ident.ml" 139 4817 4906
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 136 4629 4719 "ident.ml" 136 4629 4727
+"ident.ml" 139 4817 4907 "ident.ml" 139 4817 4915
 type(
   clazz
 )
 ident(
-  int_ref class_id "ident.ml" 135 4579 4612 "ident.ml" 135 4579 4620
+  int_ref class_id "ident.ml" 138 4767 4800 "ident.ml" 138 4767 4808
 )
-"ident.ml" 136 4629 4701 "ident.ml" 136 4629 4727
+"ident.ml" 139 4817 4889 "ident.ml" 139 4817 4915
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 136 4629 4700 "ident.ml" 136 4629 4728
+"ident.ml" 139 4817 4888 "ident.ml" 139 4817 4916
 type(
   string list
 )
-"ident.ml" 136 4629 4663 "ident.ml" 136 4629 4729
+"ident.ml" 139 4817 4851 "ident.ml" 139 4817 4917
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 136 4629 4645 "ident.ml" 136 4629 4729
+"ident.ml" 139 4817 4833 "ident.ml" 139 4817 4917
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 137 4733 4739 "ident.ml" 137 4733 4750
+"ident.ml" 140 4921 4927 "ident.ml" 140 4921 4938
 type(
   string
 )
 ident(
-  def ml_set_name "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+  def ml_set_name "ident.ml" 149 5401 5403 "ident.ml" 163 5834 5837
 )
-"ident.ml" 137 4733 4752 "ident.ml" 137 4733 4763
+"ident.ml" 140 4921 4940 "ident.ml" 140 4921 4951
 type(
   string
 )
 ident(
-  def ml_get_name "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+  def ml_get_name "ident.ml" 149 5401 5403 "ident.ml" 163 5834 5837
 )
-"ident.ml" 137 4733 4765 "ident.ml" 137 4733 4771
+"ident.ml" 140 4921 4953 "ident.ml" 140 4921 4959
 type(
   Loc.t
 )
 ident(
-  def ml_loc "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+  def ml_loc "ident.ml" 149 5401 5403 "ident.ml" 163 5834 5837
 )
-"ident.ml" 137 4733 4773 "ident.ml" 137 4733 4780
+"ident.ml" 140 4921 4961 "ident.ml" 140 4921 4968
 type(
   ml_kind
 )
 ident(
-  def ml_kind "ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+  def ml_kind "ident.ml" 149 5401 5403 "ident.ml" 163 5834 5837
 )
-"ident.ml" 137 4733 4739 "ident.ml" 137 4733 4780
+"ident.ml" 140 4921 4927 "ident.ml" 140 4921 4968
 type(
   string * string * Loc.t * ml_kind
 )
-"ident.ml" 138 4784 4794 "ident.ml" 138 4784 4808
+"ident.ml" 141 4972 4982 "ident.ml" 141 4972 4996
 type(
   Idl.annotation list -> Idl.ident option
 )
 ident(
   ext_ref Annot.get_name
 )
-"ident.ml" 138 4784 4809 "ident.ml" 138 4784 4814
+"ident.ml" 141 4972 4997 "ident.ml" 141 4972 5002
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 138 4784 4809 "ident.ml" 138 4784 4822
+"ident.ml" 141 4972 4997 "ident.ml" 141 4972 5010
 type(
   Idl.annotation list
 )
-"ident.ml" 138 4784 4794 "ident.ml" 138 4784 4822
+"ident.ml" 141 4972 4982 "ident.ml" 141 4972 5010
 call(
   stack
 )
 type(
   Idl.ident option
 )
-"ident.ml" 139 4828 4834 "ident.ml" 139 4828 4838
+"ident.ml" 142 5016 5022 "ident.ml" 142 5016 5026
 type(
   Idl.ident option
 )
-"ident.ml" 140 4842 4847 "ident.ml" 140 4842 4853
+"ident.ml" 143 5030 5035 "ident.ml" 143 5030 5041
 type(
   bool
 )
 ident(
-  int_ref static "ident.ml" 135 4579 4605 "ident.ml" 135 4579 4611
+  int_ref static "ident.ml" 138 4767 4793 "ident.ml" 138 4767 4799
 )
-"ident.ml" 140 4842 4859 "ident.ml" 140 4842 4866
+"ident.ml" 143 5030 5047 "ident.ml" 143 5030 5054
 type(
   string
 )
 ident(
-  int_ref package "ident.ml" 136 4629 4635 "ident.ml" 136 4629 4642
+  int_ref package "ident.ml" 139 4817 4823 "ident.ml" 139 4817 4830
 )
-"ident.ml" 140 4842 4866 "ident.ml" 140 4842 4867
+"ident.ml" 143 5030 5054 "ident.ml" 143 5030 5055
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 140 4842 4867 "ident.ml" 140 4842 4875
+"ident.ml" 143 5030 5055 "ident.ml" 143 5030 5063
 type(
   string
 )
-"ident.ml" 140 4842 4875 "ident.ml" 140 4842 4876
+"ident.ml" 143 5030 5063 "ident.ml" 143 5030 5064
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 140 4842 4876 "ident.ml" 140 4842 4881
+"ident.ml" 143 5030 5064 "ident.ml" 143 5030 5069
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 140 4842 4876 "ident.ml" 140 4842 4888
+"ident.ml" 143 5030 5064 "ident.ml" 143 5030 5076
 type(
   Idl.ident
 )
-"ident.ml" 140 4842 4876 "ident.ml" 140 4842 4896
+"ident.ml" 143 5030 5064 "ident.ml" 143 5030 5084
 type(
   string
 )
-"ident.ml" 140 4842 4867 "ident.ml" 140 4842 4896
+"ident.ml" 143 5030 5055 "ident.ml" 143 5030 5084
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 140 4842 4859 "ident.ml" 140 4842 4896
+"ident.ml" 143 5030 5047 "ident.ml" 143 5030 5084
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 141 4913 4919 "ident.ml" 141 4913 4925
+"ident.ml" 144 5101 5107 "ident.ml" 144 5101 5113
 type(
   string
 )
-"ident.ml" 141 4913 4925 "ident.ml" 141 4913 4926
+"ident.ml" 144 5101 5113 "ident.ml" 144 5101 5114
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 141 4913 4926 "ident.ml" 141 4913 4931
+"ident.ml" 144 5101 5114 "ident.ml" 144 5101 5119
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 141 4913 4926 "ident.ml" 141 4913 4938
+"ident.ml" 144 5101 5114 "ident.ml" 144 5101 5126
 type(
   Idl.ident
 )
-"ident.ml" 141 4913 4926 "ident.ml" 141 4913 4946
+"ident.ml" 144 5101 5114 "ident.ml" 144 5101 5134
 type(
   string
 )
-"ident.ml" 141 4913 4919 "ident.ml" 141 4913 4946
+"ident.ml" 144 5101 5107 "ident.ml" 144 5101 5134
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 140 4842 4843 "ident.ml" 141 4913 4962
+"ident.ml" 143 5030 5031 "ident.ml" 144 5101 5150
 type(
   string
 )
-"ident.ml" 142 4964 4969 "ident.ml" 142 4964 4975
+"ident.ml" 145 5152 5157 "ident.ml" 145 5152 5163
 type(
   bool
 )
 ident(
-  int_ref static "ident.ml" 135 4579 4605 "ident.ml" 135 4579 4611
+  int_ref static "ident.ml" 138 4767 4793 "ident.ml" 138 4767 4799
 )
-"ident.ml" 142 4964 4981 "ident.ml" 142 4964 4988
+"ident.ml" 145 5152 5169 "ident.ml" 145 5152 5176
 type(
   string
 )
 ident(
-  int_ref package "ident.ml" 136 4629 4635 "ident.ml" 136 4629 4642
+  int_ref package "ident.ml" 139 4817 4823 "ident.ml" 139 4817 4830
 )
-"ident.ml" 142 4964 4988 "ident.ml" 142 4964 4989
+"ident.ml" 145 5152 5176 "ident.ml" 145 5152 5177
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 142 4964 4989 "ident.ml" 142 4964 4997
+"ident.ml" 145 5152 5177 "ident.ml" 145 5152 5185
 type(
   string
 )
-"ident.ml" 142 4964 4997 "ident.ml" 142 4964 4998
+"ident.ml" 145 5152 5185 "ident.ml" 145 5152 5186
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 142 4964 4998 "ident.ml" 142 4964 5003
+"ident.ml" 145 5152 5186 "ident.ml" 145 5152 5191
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 142 4964 4998 "ident.ml" 142 4964 5010
+"ident.ml" 145 5152 5186 "ident.ml" 145 5152 5198
 type(
   Idl.ident
 )
-"ident.ml" 142 4964 4998 "ident.ml" 142 4964 5018
+"ident.ml" 145 5152 5186 "ident.ml" 145 5152 5206
 type(
   string
 )
-"ident.ml" 142 4964 4989 "ident.ml" 142 4964 5018
+"ident.ml" 145 5152 5177 "ident.ml" 145 5152 5206
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 142 4964 4981 "ident.ml" 142 4964 5018
+"ident.ml" 145 5152 5169 "ident.ml" 145 5152 5206
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 143 5035 5041 "ident.ml" 143 5035 5047
+"ident.ml" 146 5223 5229 "ident.ml" 146 5223 5235
 type(
   string
 )
-"ident.ml" 143 5035 5047 "ident.ml" 143 5035 5048
+"ident.ml" 146 5223 5235 "ident.ml" 146 5223 5236
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 143 5035 5048 "ident.ml" 143 5035 5053
+"ident.ml" 146 5223 5236 "ident.ml" 146 5223 5241
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 143 5035 5048 "ident.ml" 143 5035 5060
+"ident.ml" 146 5223 5236 "ident.ml" 146 5223 5248
 type(
   Idl.ident
 )
-"ident.ml" 143 5035 5048 "ident.ml" 143 5035 5068
+"ident.ml" 146 5223 5236 "ident.ml" 146 5223 5256
 type(
   string
 )
-"ident.ml" 143 5035 5041 "ident.ml" 143 5035 5068
+"ident.ml" 146 5223 5229 "ident.ml" 146 5223 5256
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 142 4964 4965 "ident.ml" 143 5035 5084
+"ident.ml" 145 5152 5153 "ident.ml" 146 5223 5272
 type(
   string
 )
-"ident.ml" 144 5086 5087 "ident.ml" 144 5086 5092
+"ident.ml" 147 5274 5275 "ident.ml" 147 5274 5280
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 144 5086 5087 "ident.ml" 144 5086 5099
+"ident.ml" 147 5274 5275 "ident.ml" 147 5274 5287
 type(
   Idl.ident
 )
-"ident.ml" 144 5086 5087 "ident.ml" 144 5086 5111
+"ident.ml" 147 5274 5275 "ident.ml" 147 5274 5299
 type(
   Loc.t
 )
-"ident.ml" 144 5086 5113 "ident.ml" 144 5086 5122
+"ident.ml" 147 5274 5301 "ident.ml" 147 5274 5310
 type(
   ml_kind
 )
-"ident.ml" 140 4842 4843 "ident.ml" 144 5086 5122
+"ident.ml" 143 5030 5031 "ident.ml" 147 5274 5310
 type(
   string * string * Loc.t * ml_kind
 )
-"ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+"ident.ml" 148 5311 5322 "ident.ml" 148 5311 5326
 type(
   Idl.ident
 )
 ident(
-  def name "ident.ml" 145 5123 5142 "ident.ml" 145 5123 5209
+  def name "ident.ml" 148 5311 5330 "ident.ml" 148 5311 5397
 )
-"ident.ml" 145 5123 5129 "ident.ml" 145 5123 5138
+"ident.ml" 148 5311 5317 "ident.ml" 148 5311 5326
 type(
   Idl.ident option
 )
-"ident.ml" 145 5123 5142 "ident.ml" 145 5123 5148
+"ident.ml" 148 5311 5330 "ident.ml" 148 5311 5336
 type(
   string
 )
-"ident.ml" 145 5123 5148 "ident.ml" 145 5123 5149
+"ident.ml" 148 5311 5336 "ident.ml" 148 5311 5337
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 145 5123 5149 "ident.ml" 145 5123 5153
+"ident.ml" 148 5311 5337 "ident.ml" 148 5311 5341
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+  int_ref name "ident.ml" 148 5311 5322 "ident.ml" 148 5311 5326
 )
-"ident.ml" 145 5123 5149 "ident.ml" 145 5123 5161
+"ident.ml" 148 5311 5337 "ident.ml" 148 5311 5349
 type(
   string
 )
-"ident.ml" 145 5123 5142 "ident.ml" 145 5123 5161
+"ident.ml" 148 5311 5330 "ident.ml" 148 5311 5349
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 145 5123 5163 "ident.ml" 145 5123 5169
+"ident.ml" 148 5311 5351 "ident.ml" 148 5311 5357
 type(
   string
 )
-"ident.ml" 145 5123 5169 "ident.ml" 145 5123 5170
+"ident.ml" 148 5311 5357 "ident.ml" 148 5311 5358
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 145 5123 5170 "ident.ml" 145 5123 5174
+"ident.ml" 148 5311 5358 "ident.ml" 148 5311 5362
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+  int_ref name "ident.ml" 148 5311 5322 "ident.ml" 148 5311 5326
 )
-"ident.ml" 145 5123 5170 "ident.ml" 145 5123 5182
+"ident.ml" 148 5311 5358 "ident.ml" 148 5311 5370
 type(
   string
 )
-"ident.ml" 145 5123 5163 "ident.ml" 145 5123 5182
+"ident.ml" 148 5311 5351 "ident.ml" 148 5311 5370
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 145 5123 5184 "ident.ml" 145 5123 5188
+"ident.ml" 148 5311 5372 "ident.ml" 148 5311 5376
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 145 5123 5134 "ident.ml" 145 5123 5138
+  int_ref name "ident.ml" 148 5311 5322 "ident.ml" 148 5311 5326
 )
-"ident.ml" 145 5123 5184 "ident.ml" 145 5123 5200
+"ident.ml" 148 5311 5372 "ident.ml" 148 5311 5388
 type(
   Loc.t
 )
-"ident.ml" 145 5123 5202 "ident.ml" 145 5123 5209
+"ident.ml" 148 5311 5390 "ident.ml" 148 5311 5397
 type(
   ml_kind
 )
-"ident.ml" 145 5123 5142 "ident.ml" 145 5123 5209
+"ident.ml" 148 5311 5330 "ident.ml" 148 5311 5397
 type(
   string * string * Loc.t * ml_kind
 )
-"ident.ml" 138 4784 4788 "ident.ml" 145 5123 5209
+"ident.ml" 141 4972 4976 "ident.ml" 148 5311 5397
 type(
   string * string * Loc.t * ml_kind
 )
-"ident.ml" 146 5213 5219 "ident.ml" 146 5213 5237
+"ident.ml" 149 5401 5407 "ident.ml" 149 5401 5425
 type(
   Idl.modifier list -> bool
 )
 ident(
   ext_ref Modifiers.is_final
 )
-"ident.ml" 146 5213 5238 "ident.ml" 146 5213 5243
+"ident.ml" 149 5401 5426 "ident.ml" 149 5401 5431
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 146 5213 5238 "ident.ml" 146 5213 5255
+"ident.ml" 149 5401 5426 "ident.ml" 149 5401 5443
 type(
   Idl.modifier list
 )
-"ident.ml" 146 5213 5219 "ident.ml" 146 5213 5255
+"ident.ml" 149 5401 5407 "ident.ml" 149 5401 5443
 call(
   stack
 )
 type(
   bool
 )
-"ident.ml" 147 5261 5265 "ident.ml" 147 5261 5269
+"ident.ml" 150 5449 5453 "ident.ml" 150 5449 5457
 type(
   mmethod option
 )
-"ident.ml" 149 5277 5303 "ident.ml" 149 5277 5308
+"ident.ml" 152 5465 5491 "ident.ml" 152 5465 5496
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 149 5277 5303 "ident.ml" 149 5277 5315
+"ident.ml" 152 5465 5491 "ident.ml" 152 5465 5503
 type(
   Idl.ident
 )
-"ident.ml" 149 5277 5303 "ident.ml" 149 5277 5323
+"ident.ml" 152 5465 5491 "ident.ml" 152 5465 5511
 type(
   string
 )
-"ident.ml" 150 5325 5340 "ident.ml" 150 5325 5353
+"ident.ml" 153 5513 5528 "ident.ml" 153 5513 5541
 type(
   StringEnv.key -> int
 )
 ident(
-  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+  int_ref get_unique_id "ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 )
-"ident.ml" 150 5325 5354 "ident.ml" 150 5325 5365
+"ident.ml" 153 5513 5542 "ident.ml" 153 5513 5553
 type(
   StringEnv.key
 )
 ident(
-  int_ref ml_set_name "ident.ml" 137 4733 4739 "ident.ml" 137 4733 4750
+  int_ref ml_set_name "ident.ml" 140 4921 4927 "ident.ml" 140 4921 4938
 )
-"ident.ml" 150 5325 5340 "ident.ml" 150 5325 5365
+"ident.ml" 153 5513 5528 "ident.ml" 153 5513 5553
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 151 5367 5384 "ident.ml" 151 5367 5395
+"ident.ml" 154 5555 5572 "ident.ml" 154 5555 5583
 type(
   string
 )
 ident(
-  int_ref ml_set_name "ident.ml" 137 4733 4739 "ident.ml" 137 4733 4750
+  int_ref ml_set_name "ident.ml" 140 4921 4927 "ident.ml" 140 4921 4938
 )
-"ident.ml" 152 5397 5423 "ident.ml" 152 5397 5429
+"ident.ml" 155 5585 5611 "ident.ml" 155 5585 5617
 type(
   Loc.t
 )
 ident(
-  int_ref ml_loc "ident.ml" 137 4733 4765 "ident.ml" 137 4733 4771
+  int_ref ml_loc "ident.ml" 140 4921 4953 "ident.ml" 140 4921 4959
 )
-"ident.ml" 153 5431 5453 "ident.ml" 153 5431 5460
+"ident.ml" 156 5619 5641 "ident.ml" 156 5619 5648
 type(
   ml_kind
 )
 ident(
-  int_ref ml_kind "ident.ml" 137 4733 4773 "ident.ml" 137 4733 4780
+  int_ref ml_kind "ident.ml" 140 4921 4961 "ident.ml" 140 4921 4968
 )
-"ident.ml" 149 5277 5286 "ident.ml" 154 5462 5465
+"ident.ml" 152 5465 5474 "ident.ml" 157 5650 5653
 type(
   mmethod
 )
-"ident.ml" 149 5277 5281 "ident.ml" 154 5462 5465
+"ident.ml" 152 5465 5469 "ident.ml" 157 5650 5653
 type(
   mmethod option
 )
-"ident.ml" 146 5213 5215 "ident.ml" 154 5462 5466
+"ident.ml" 149 5401 5403 "ident.ml" 157 5650 5654
 type(
   mmethod option
 )
-"ident.ml" 155 5468 5487 "ident.ml" 155 5468 5492
+"ident.ml" 158 5656 5675 "ident.ml" 158 5656 5680
 type(
   Idl.field
 )
 ident(
-  int_ref field "ident.ml" 135 4579 4621 "ident.ml" 135 4579 4626
+  int_ref field "ident.ml" 138 4767 4809 "ident.ml" 138 4767 4814
 )
-"ident.ml" 155 5468 5487 "ident.ml" 155 5468 5499
+"ident.ml" 158 5656 5675 "ident.ml" 158 5656 5687
 type(
   Idl.ident
 )
-"ident.ml" 155 5468 5487 "ident.ml" 155 5468 5507
+"ident.ml" 158 5656 5675 "ident.ml" 158 5656 5695
 type(
   string
 )
-"ident.ml" 156 5509 5524 "ident.ml" 156 5509 5537
+"ident.ml" 159 5697 5712 "ident.ml" 159 5697 5725
 type(
   StringEnv.key -> int
 )
 ident(
-  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+  int_ref get_unique_id "ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 )
-"ident.ml" 156 5509 5538 "ident.ml" 156 5509 5549
+"ident.ml" 159 5697 5726 "ident.ml" 159 5697 5737
 type(
   StringEnv.key
 )
 ident(
-  int_ref ml_get_name "ident.ml" 137 4733 4752 "ident.ml" 137 4733 4763
+  int_ref ml_get_name "ident.ml" 140 4921 4940 "ident.ml" 140 4921 4951
 )
-"ident.ml" 156 5509 5524 "ident.ml" 156 5509 5549
+"ident.ml" 159 5697 5712 "ident.ml" 159 5697 5737
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 157 5551 5568 "ident.ml" 157 5551 5579
+"ident.ml" 160 5739 5756 "ident.ml" 160 5739 5767
 type(
   string
 )
 ident(
-  int_ref ml_get_name "ident.ml" 137 4733 4752 "ident.ml" 137 4733 4763
+  int_ref ml_get_name "ident.ml" 140 4921 4940 "ident.ml" 140 4921 4951
 )
-"ident.ml" 158 5581 5607 "ident.ml" 158 5581 5613
+"ident.ml" 161 5769 5795 "ident.ml" 161 5769 5801
 type(
   Loc.t
 )
 ident(
-  int_ref ml_loc "ident.ml" 137 4733 4765 "ident.ml" 137 4733 4771
+  int_ref ml_loc "ident.ml" 140 4921 4953 "ident.ml" 140 4921 4959
 )
-"ident.ml" 159 5615 5637 "ident.ml" 159 5615 5644
+"ident.ml" 162 5803 5825 "ident.ml" 162 5803 5832
 type(
   ml_kind
 )
 ident(
-  int_ref ml_kind "ident.ml" 137 4733 4773 "ident.ml" 137 4733 4780
+  int_ref ml_kind "ident.ml" 140 4921 4961 "ident.ml" 140 4921 4968
 )
-"ident.ml" 155 5468 5470 "ident.ml" 160 5646 5649
+"ident.ml" 158 5656 5658 "ident.ml" 163 5834 5837
 type(
   mmethod
 )
-"ident.ml" 146 5213 5215 "ident.ml" 160 5646 5649
+"ident.ml" 149 5401 5403 "ident.ml" 163 5834 5837
 type(
   mmethod option * mmethod
 )
-"ident.ml" 137 4733 4735 "ident.ml" 160 5646 5649
+"ident.ml" 140 4921 4923 "ident.ml" 163 5834 5837
 type(
   mmethod option * mmethod
 )
-"ident.ml" 136 4629 4631 "ident.ml" 160 5646 5649
+"ident.ml" 139 4817 4819 "ident.ml" 163 5834 5837
 type(
   mmethod option * mmethod
 )
-"ident.ml" 162 5655 5659 "ident.ml" 162 5655 5673
+"ident.ml" 165 5843 5847 "ident.ml" 165 5843 5861
 type(
   static:bool -> clazz -> Idl.mmethod -> mmethod
 )
 ident(
-  def make_method_id "ident.ml" 190 6697 6704 "_none_" 1 0 -1
+  def make_method_id "ident.ml" 193 6885 6892 "_none_" 1 0 -1
 )
-"ident.ml" 162 5655 5675 "ident.ml" 162 5655 5681
+"ident.ml" 165 5843 5863 "ident.ml" 165 5843 5869
 type(
   bool
 )
 ident(
-  def static "ident.ml" 162 5655 5682 "ident.ml" 190 6697 6704
+  def static "ident.ml" 165 5843 5870 "ident.ml" 193 6885 6892
 )
-"ident.ml" 162 5655 5682 "ident.ml" 162 5655 5690
+"ident.ml" 165 5843 5870 "ident.ml" 165 5843 5878
 type(
   clazz
 )
 ident(
-  def class_id "ident.ml" 162 5655 5691 "ident.ml" 190 6697 6704
+  def class_id "ident.ml" 165 5843 5879 "ident.ml" 193 6885 6892
 )
-"ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+"ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 type(
   Idl.mmethod
 )
 ident(
-  def mmethod "ident.ml" 163 5701 5703 "ident.ml" 190 6697 6704
+  def mmethod "ident.ml" 166 5889 5891 "ident.ml" 193 6885 6892
 )
-"ident.ml" 163 5701 5707 "ident.ml" 163 5701 5714
+"ident.ml" 166 5889 5895 "ident.ml" 166 5889 5902
 type(
   string
 )
 ident(
-  def package "ident.ml" 164 5805 5807 "ident.ml" 190 6697 6704
+  def package "ident.ml" 167 5993 5995 "ident.ml" 193 6885 6892
 )
-"ident.ml" 163 5701 5717 "ident.ml" 163 5701 5730
+"ident.ml" 166 5889 5905 "ident.ml" 166 5889 5918
 type(
   string -> string list -> string
 )
 ident(
   ext_ref String.concat
 )
-"ident.ml" 163 5701 5731 "ident.ml" 163 5701 5734
+"ident.ml" 166 5889 5919 "ident.ml" 166 5889 5922
 type(
   string
 )
-"ident.ml" 163 5701 5737 "ident.ml" 163 5701 5759
+"ident.ml" 166 5889 5925 "ident.ml" 166 5889 5947
 type(
   clazz -> string list
 )
 ident(
   int_ref get_class_java_package "ident.ml" 21 436 440 "ident.ml" 21 436 462
 )
-"ident.ml" 163 5701 5760 "ident.ml" 163 5701 5768
+"ident.ml" 166 5889 5948 "ident.ml" 166 5889 5956
 type(
   clazz
 )
 ident(
-  int_ref class_id "ident.ml" 162 5655 5682 "ident.ml" 162 5655 5690
+  int_ref class_id "ident.ml" 165 5843 5870 "ident.ml" 165 5843 5878
 )
-"ident.ml" 163 5701 5736 "ident.ml" 163 5701 5769
+"ident.ml" 166 5889 5924 "ident.ml" 166 5889 5957
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 163 5701 5770 "ident.ml" 163 5701 5771
+"ident.ml" 166 5889 5958 "ident.ml" 166 5889 5959
 type(
   string list -> string list -> string list
 )
 ident(
   ext_ref Pervasives.( @ )
 )
-"ident.ml" 163 5701 5773 "ident.ml" 163 5701 5790
+"ident.ml" 166 5889 5961 "ident.ml" 166 5889 5978
 type(
   clazz -> string
 )
 ident(
-  int_ref get_class_ml_name "ident.ml" 33 1320 1324 "ident.ml" 33 1320 1341
+  int_ref get_class_ml_name "ident.ml" 36 1508 1512 "ident.ml" 36 1508 1529
 )
-"ident.ml" 163 5701 5791 "ident.ml" 163 5701 5799
+"ident.ml" 166 5889 5979 "ident.ml" 166 5889 5987
 type(
   clazz
 )
 ident(
-  int_ref class_id "ident.ml" 162 5655 5682 "ident.ml" 162 5655 5690
+  int_ref class_id "ident.ml" 165 5843 5870 "ident.ml" 165 5843 5878
 )
-"ident.ml" 163 5701 5773 "ident.ml" 163 5701 5799
+"ident.ml" 166 5889 5961 "ident.ml" 166 5889 5987
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 163 5701 5772 "ident.ml" 163 5701 5800
+"ident.ml" 166 5889 5960 "ident.ml" 166 5889 5988
 type(
   string list
 )
-"ident.ml" 163 5701 5735 "ident.ml" 163 5701 5801
+"ident.ml" 166 5889 5923 "ident.ml" 166 5889 5989
 call(
   stack
 )
 type(
   string list
 )
-"ident.ml" 163 5701 5717 "ident.ml" 163 5701 5801
+"ident.ml" 166 5889 5905 "ident.ml" 166 5889 5989
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 164 5805 5813 "ident.ml" 164 5805 5827
+"ident.ml" 167 5993 6001 "ident.ml" 167 5993 6015
 type(
   Idl.annotation list -> Idl.ident option
 )
 ident(
   ext_ref Annot.get_name
 )
-"ident.ml" 164 5805 5828 "ident.ml" 164 5805 5835
+"ident.ml" 167 5993 6016 "ident.ml" 167 5993 6023
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 164 5805 5828 "ident.ml" 164 5805 5843
+"ident.ml" 167 5993 6016 "ident.ml" 167 5993 6031
 type(
   Idl.annotation list
 )
-"ident.ml" 164 5805 5813 "ident.ml" 164 5805 5843
+"ident.ml" 167 5993 6001 "ident.ml" 167 5993 6031
 call(
   stack
 )
 type(
   Idl.ident option
 )
-"ident.ml" 165 5849 5853 "ident.ml" 165 5849 5857
+"ident.ml" 168 6037 6041 "ident.ml" 168 6037 6045
 type(
   Idl.ident option
 )
-"ident.ml" 166 5862 5872 "ident.ml" 166 5862 5879
+"ident.ml" 169 6050 6060 "ident.ml" 169 6050 6067
 type(
   string
 )
 ident(
-  def ml_name "ident.ml" 173 6137 6143 "ident.ml" 178 6323 6330
+  def ml_name "ident.ml" 176 6325 6331 "ident.ml" 181 6511 6518
 )
-"ident.ml" 167 5883 5887 "ident.ml" 167 5883 5893
+"ident.ml" 170 6071 6075 "ident.ml" 170 6071 6081
 type(
   bool
 )
 ident(
-  int_ref static "ident.ml" 162 5655 5675 "ident.ml" 162 5655 5681
+  int_ref static "ident.ml" 165 5843 5863 "ident.ml" 165 5843 5869
 )
-"ident.ml" 167 5883 5899 "ident.ml" 167 5883 5906
+"ident.ml" 170 6071 6087 "ident.ml" 170 6071 6094
 type(
   string
 )
 ident(
-  int_ref package "ident.ml" 163 5701 5707 "ident.ml" 163 5701 5714
+  int_ref package "ident.ml" 166 5889 5895 "ident.ml" 166 5889 5902
 )
-"ident.ml" 167 5883 5906 "ident.ml" 167 5883 5907
+"ident.ml" 170 6071 6094 "ident.ml" 170 6071 6095
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 167 5883 5907 "ident.ml" 167 5883 5911
+"ident.ml" 170 6071 6095 "ident.ml" 170 6071 6099
 type(
   string
 )
-"ident.ml" 167 5883 5911 "ident.ml" 167 5883 5912
+"ident.ml" 170 6071 6099 "ident.ml" 170 6071 6100
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"ident.ml" 167 5883 5912 "ident.ml" 167 5883 5919
+"ident.ml" 170 6071 6100 "ident.ml" 170 6071 6107
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 167 5883 5912 "ident.ml" 167 5883 5926
+"ident.ml" 170 6071 6100 "ident.ml" 170 6071 6114
 type(
   Idl.ident
 )
-"ident.ml" 167 5883 5912 "ident.ml" 167 5883 5934
+"ident.ml" 170 6071 6100 "ident.ml" 170 6071 6122
 type(
   string
 )
-"ident.ml" 167 5883 5907 "ident.ml" 167 5883 5934
+"ident.ml" 170 6071 6095 "ident.ml" 170 6071 6122
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 167 5883 5899 "ident.ml" 167 5883 5934
+"ident.ml" 170 6071 6087 "ident.ml" 170 6071 6122
 call(
   stack
 )
 type(
   string
 )
-"ident.ml" 169 5945 5951 "ident.ml" 169 5945 5975
+"ident.ml" 172 6133 6139 "ident.ml" 172 6133 6163
 type(
   string -> bool
 )
 ident(
   ext_ref Utilities.is_capitalized
 )
-"ident.ml" 169 5945 5976 "ident.ml" 169 5945 5983
+"ident.ml" 172 6133 6164 "ident.ml" 172 6133 6171
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 169 5945 5976 "ident.ml" 169 5945 5990
+"ident.ml" 172 6133 6164 "ident.ml" 172 6133 6178
 type(
   Idl.ident
 )
-"ident.ml" 169 5945 5976 "ident.ml" 169 5945 5998
+"ident.ml" 172 6133 6164 "ident.ml" 172 6133 6186
 type(
   string
 )
-"ident.ml" 169 5945 5951 "ident.ml" 169 5945 5998
+"ident.ml" 172 6133 6139 "ident.ml" 172 6133 6186
 call(
   stack
 )
 type(
   bool
 )
-"ident.ml" 170 6004 6009 "ident.ml" 170 6004 6014
+"ident.ml" 173 6192 6197 "ident.ml" 173 6192 6202
 type(
   exn -> string
 )
 ident(
   ext_ref Pervasives.raise
 )
-"ident.ml" 170 6004 6043 "ident.ml" 170 6004 6050
+"ident.ml" 173 6192 6231 "ident.ml" 173 6192 6238
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 170 6004 6043 "ident.ml" 170 6004 6057
+"ident.ml" 173 6192 6231 "ident.ml" 173 6192 6245
 type(
   Idl.ident
 )
-"ident.ml" 170 6004 6022 "ident.ml" 170 6004 6058
+"ident.ml" 173 6192 6210 "ident.ml" 173 6192 6246
 type(
   Error.t
 )
-"ident.ml" 170 6004 6015 "ident.ml" 170 6004 6059
+"ident.ml" 173 6192 6203 "ident.ml" 173 6192 6247
 type(
   exn
 )
-"ident.ml" 170 6004 6009 "ident.ml" 170 6004 6059
+"ident.ml" 173 6192 6197 "ident.ml" 173 6192 6247
 type(
   string
 )
-"ident.ml" 172 6106 6111 "ident.ml" 172 6106 6118
+"ident.ml" 175 6294 6299 "ident.ml" 175 6294 6306
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 172 6106 6111 "ident.ml" 172 6106 6125
+"ident.ml" 175 6294 6299 "ident.ml" 175 6294 6313
 type(
   Idl.ident
 )
-"ident.ml" 172 6106 6111 "ident.ml" 172 6106 6133
+"ident.ml" 175 6294 6299 "ident.ml" 175 6294 6321
 type(
   string
 )
-"ident.ml" 169 5945 5948 "ident.ml" 172 6106 6133
+"ident.ml" 172 6133 6136 "ident.ml" 175 6294 6321
 type(
   string
 )
-"ident.ml" 167 5883 5884 "ident.ml" 172 6106 6133
+"ident.ml" 170 6071 6072 "ident.ml" 175 6294 6321
 type(
   string
 )
-"ident.ml" 173 6137 6160 "ident.ml" 173 6137 6167
+"ident.ml" 176 6325 6348 "ident.ml" 176 6325 6355
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 173 6137 6160 "ident.ml" 173 6137 6174
+"ident.ml" 176 6325 6348 "ident.ml" 176 6325 6362
 type(
   Idl.ident
 )
-"ident.ml" 173 6137 6160 "ident.ml" 173 6137 6182
+"ident.ml" 176 6325 6348 "ident.ml" 176 6325 6370
 type(
   string
 )
-"ident.ml" 174 6184 6196 "ident.ml" 174 6184 6209
+"ident.ml" 177 6372 6384 "ident.ml" 177 6372 6397
 type(
   StringEnv.key -> int
 )
 ident(
-  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+  int_ref get_unique_id "ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 )
-"ident.ml" 174 6184 6210 "ident.ml" 174 6184 6217
+"ident.ml" 177 6372 6398 "ident.ml" 177 6372 6405
 type(
   StringEnv.key
 )
 ident(
-  int_ref ml_name "ident.ml" 166 5862 5872 "ident.ml" 166 5862 5879
+  int_ref ml_name "ident.ml" 169 6050 6060 "ident.ml" 169 6050 6067
 )
-"ident.ml" 174 6184 6196 "ident.ml" 174 6184 6217
+"ident.ml" 177 6372 6384 "ident.ml" 177 6372 6405
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 175 6219 6233 "ident.ml" 175 6219 6240
+"ident.ml" 178 6407 6421 "ident.ml" 178 6407 6428
 type(
   string
 )
 ident(
-  int_ref ml_name "ident.ml" 166 5862 5872 "ident.ml" 166 5862 5879
+  int_ref ml_name "ident.ml" 169 6050 6060 "ident.ml" 169 6050 6067
 )
-"ident.ml" 176 6242 6265 "ident.ml" 176 6242 6272
+"ident.ml" 179 6430 6453 "ident.ml" 179 6430 6460
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 176 6242 6265 "ident.ml" 176 6242 6279
+"ident.ml" 179 6430 6453 "ident.ml" 179 6430 6467
 type(
   Idl.ident
 )
-"ident.ml" 176 6242 6265 "ident.ml" 176 6242 6291
+"ident.ml" 179 6430 6453 "ident.ml" 179 6430 6479
 type(
   Loc.t
 )
-"ident.ml" 177 6293 6312 "ident.ml" 177 6293 6321
+"ident.ml" 180 6481 6500 "ident.ml" 180 6481 6509
 type(
   ml_kind
 )
-"ident.ml" 173 6137 6143 "ident.ml" 178 6323 6330
+"ident.ml" 176 6325 6331 "ident.ml" 181 6511 6518
 type(
   mmethod
 )
-"ident.ml" 166 5862 5868 "ident.ml" 178 6323 6330
+"ident.ml" 169 6050 6056 "ident.ml" 181 6511 6518
 type(
   mmethod
 )
-"ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+"ident.ml" 182 6519 6528 "ident.ml" 182 6519 6532
 type(
   Idl.ident
 )
 ident(
-  def name "ident.ml" 180 6348 6354 "ident.ml" 190 6697 6704
+  def name "ident.ml" 183 6536 6542 "ident.ml" 193 6885 6892
 )
-"ident.ml" 179 6331 6335 "ident.ml" 179 6331 6344
+"ident.ml" 182 6519 6523 "ident.ml" 182 6519 6532
 type(
   Idl.ident option
 )
-"ident.ml" 180 6348 6358 "ident.ml" 180 6348 6365
+"ident.ml" 183 6536 6546 "ident.ml" 183 6536 6553
 type(
   string
 )
 ident(
-  def ml_name "ident.ml" 185 6523 6529 "ident.ml" 190 6697 6704
+  def ml_name "ident.ml" 188 6711 6717 "ident.ml" 193 6885 6892
 )
-"ident.ml" 181 6369 6373 "ident.ml" 181 6369 6397
+"ident.ml" 184 6557 6561 "ident.ml" 184 6557 6585
 type(
   string -> bool
 )
 ident(
   ext_ref Utilities.is_capitalized
 )
-"ident.ml" 181 6369 6398 "ident.ml" 181 6369 6402
+"ident.ml" 184 6557 6586 "ident.ml" 184 6557 6590
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+  int_ref name "ident.ml" 182 6519 6528 "ident.ml" 182 6519 6532
 )
-"ident.ml" 181 6369 6398 "ident.ml" 181 6369 6410
+"ident.ml" 184 6557 6586 "ident.ml" 184 6557 6598
 type(
   string
 )
-"ident.ml" 181 6369 6373 "ident.ml" 181 6369 6410
+"ident.ml" 184 6557 6561 "ident.ml" 184 6557 6598
 call(
   stack
 )
 type(
   bool
 )
-"ident.ml" 182 6416 6419 "ident.ml" 182 6416 6424
+"ident.ml" 185 6604 6607 "ident.ml" 185 6604 6612
 type(
   exn -> string
 )
 ident(
   ext_ref Pervasives.raise
 )
-"ident.ml" 182 6416 6453 "ident.ml" 182 6416 6457
+"ident.ml" 185 6604 6641 "ident.ml" 185 6604 6645
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+  int_ref name "ident.ml" 182 6519 6528 "ident.ml" 182 6519 6532
 )
-"ident.ml" 182 6416 6432 "ident.ml" 182 6416 6458
+"ident.ml" 185 6604 6620 "ident.ml" 185 6604 6646
 type(
   Error.t
 )
-"ident.ml" 182 6416 6425 "ident.ml" 182 6416 6459
+"ident.ml" 185 6604 6613 "ident.ml" 185 6604 6647
 type(
   exn
 )
-"ident.ml" 182 6416 6419 "ident.ml" 182 6416 6459
+"ident.ml" 185 6604 6607 "ident.ml" 185 6604 6647
 type(
   string
 )
-"ident.ml" 184 6504 6507 "ident.ml" 184 6504 6511
+"ident.ml" 187 6692 6695 "ident.ml" 187 6692 6699
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+  int_ref name "ident.ml" 182 6519 6528 "ident.ml" 182 6519 6532
 )
-"ident.ml" 184 6504 6507 "ident.ml" 184 6504 6519
+"ident.ml" 187 6692 6695 "ident.ml" 187 6692 6707
 type(
   string
 )
-"ident.ml" 181 6369 6370 "ident.ml" 184 6504 6519
+"ident.ml" 184 6557 6558 "ident.ml" 187 6692 6707
 type(
   string
 )
-"ident.ml" 185 6523 6546 "ident.ml" 185 6523 6553
+"ident.ml" 188 6711 6734 "ident.ml" 188 6711 6741
 type(
   Idl.mmethod
 )
 ident(
-  int_ref mmethod "ident.ml" 162 5655 5691 "ident.ml" 162 5655 5698
+  int_ref mmethod "ident.ml" 165 5843 5879 "ident.ml" 165 5843 5886
 )
-"ident.ml" 185 6523 6546 "ident.ml" 185 6523 6560
+"ident.ml" 188 6711 6734 "ident.ml" 188 6711 6748
 type(
   Idl.ident
 )
-"ident.ml" 185 6523 6546 "ident.ml" 185 6523 6568
+"ident.ml" 188 6711 6734 "ident.ml" 188 6711 6756
 type(
   string
 )
-"ident.ml" 186 6570 6582 "ident.ml" 186 6570 6595
+"ident.ml" 189 6758 6770 "ident.ml" 189 6758 6783
 type(
   StringEnv.key -> int
 )
 ident(
-  int_ref get_unique_id "ident.ml" 101 3609 3613 "ident.ml" 101 3609 3626
+  int_ref get_unique_id "ident.ml" 104 3797 3801 "ident.ml" 104 3797 3814
 )
-"ident.ml" 186 6570 6596 "ident.ml" 186 6570 6603
+"ident.ml" 189 6758 6784 "ident.ml" 189 6758 6791
 type(
   StringEnv.key
 )
 ident(
-  int_ref ml_name "ident.ml" 180 6348 6358 "ident.ml" 180 6348 6365
+  int_ref ml_name "ident.ml" 183 6536 6546 "ident.ml" 183 6536 6553
 )
-"ident.ml" 186 6570 6582 "ident.ml" 186 6570 6603
+"ident.ml" 189 6758 6770 "ident.ml" 189 6758 6791
 call(
   stack
 )
 type(
   int
 )
-"ident.ml" 187 6605 6619 "ident.ml" 187 6605 6626
+"ident.ml" 190 6793 6807 "ident.ml" 190 6793 6814
 type(
   string
 )
 ident(
-  int_ref ml_name "ident.ml" 180 6348 6358 "ident.ml" 180 6348 6365
+  int_ref ml_name "ident.ml" 183 6536 6546 "ident.ml" 183 6536 6553
 )
-"ident.ml" 188 6628 6651 "ident.ml" 188 6628 6655
+"ident.ml" 191 6816 6839 "ident.ml" 191 6816 6843
 type(
   Idl.ident
 )
 ident(
-  int_ref name "ident.ml" 179 6331 6340 "ident.ml" 179 6331 6344
+  int_ref name "ident.ml" 182 6519 6528 "ident.ml" 182 6519 6532
 )
-"ident.ml" 188 6628 6651 "ident.ml" 188 6628 6667
+"ident.ml" 191 6816 6839 "ident.ml" 191 6816 6855
 type(
   Loc.t
 )
-"ident.ml" 189 6669 6688 "ident.ml" 189 6669 6695
+"ident.ml" 192 6857 6876 "ident.ml" 192 6857 6883
 type(
   ml_kind
 )
-"ident.ml" 185 6523 6529 "ident.ml" 190 6697 6704
+"ident.ml" 188 6711 6717 "ident.ml" 193 6885 6892
 type(
   mmethod
 )
-"ident.ml" 180 6348 6354 "ident.ml" 190 6697 6704
+"ident.ml" 183 6536 6542 "ident.ml" 193 6885 6892
 type(
   mmethod
 )
-"ident.ml" 164 5805 5807 "ident.ml" 190 6697 6704
+"ident.ml" 167 5993 5995 "ident.ml" 193 6885 6892
 type(
   mmethod
 )
-"ident.ml" 163 5701 5703 "ident.ml" 190 6697 6704
+"ident.ml" 166 5889 5891 "ident.ml" 193 6885 6892
 type(
   mmethod
 )

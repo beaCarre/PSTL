@@ -26,6 +26,9 @@ let get_class_java_callback_package_name c = String.concat "." (get_class_java_c
 
 let get_class_java_name c = c.ic_java_name
 let get_class_java_stub_name c = c.ic_java_name
+
+let get_class_java_oj_name c =  String.concat "'" ((get_class_java_package c) @ [get_class_java_name c])
+(*let get_class_java_instance_name c = (get_class_java_oj_name c) ^" java_instance"*)
 let get_class_java_qualified_name c = String.concat "." ((get_class_java_package c) @ [get_class_java_name c])
 let get_class_java_qualified_stub_name c = String.concat "." ((get_class_java_callback_package c) @ [get_class_java_stub_name c])
 let get_class_java_signature c = String.concat "/" ((get_class_java_package c) @ [get_class_java_name c])

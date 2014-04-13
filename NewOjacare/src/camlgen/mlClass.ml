@@ -8,8 +8,9 @@ let _loc = Loc.ghost
 (** type JNI **********************************************)
 let make_jni_type cl_list =
   let make cl = 
+    let inst = Ident.get_class_java_oj_name cl.cc_ident in
     let name = Ident.get_class_ml_jni_type_name cl.cc_ident in
-    <:str_item< type $lid:name$ = Jni.obj >> in
+    <:str_item< type $lid:name$ = $str:inst$ >> in
   P4helper.str_items (List.map make cl_list)
 
 let make_jni_type_sig cl_list =
