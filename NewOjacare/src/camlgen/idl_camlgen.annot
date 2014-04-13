@@ -17,73 +17,128 @@ type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def make_sig "idl_camlgen.ml" 49 1660 1660 "_none_" 1 0 -1
+  def make_sig "idl_camlgen.ml" 52 1741 1741 "_none_" 1 0 -1
 )
 "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
 type(
   Cidl.clazz list
 )
 ident(
-  def c_file "idl_camlgen.ml" 10 143 145 "idl_camlgen.ml" 47 1635 1654
+  def c_file "idl_camlgen.ml" 10 143 145 "idl_camlgen.ml" 50 1716 1735
 )
 "idl_camlgen.ml" 10 143 149 "idl_camlgen.ml" 10 143 157
 type(
   'a list
 )
 ident(
-  def sig_list "idl_camlgen.ml" 13 194 196 "idl_camlgen.ml" 47 1635 1654
+  def sig_list "idl_camlgen.ml" 13 187 189 "idl_camlgen.ml" 50 1716 1735
 )
 "idl_camlgen.ml" 10 143 160 "idl_camlgen.ml" 10 143 162
 type(
   'a list
 )
-"idl_camlgen.ml" 13 194 200 "idl_camlgen.ml" 13 194 208
+"idl_camlgen.ml" 13 187 193 "idl_camlgen.ml" 13 187 201
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def sig_list "idl_camlgen.ml" 16 282 284 "idl_camlgen.ml" 47 1635 1654
+  def sig_list "idl_camlgen.ml" 16 271 273 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 13 194 212 "idl_camlgen.ml" 13 194 237
+"idl_camlgen.ml" 13 187 215 "idl_camlgen.ml" 13 187 215
 type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
+  (Camlp4.PreCast.Ast.ctyp * Camlp4.PreCast.Ast.ctyp) list
+)
+type(
+  Camlp4.PreCast.Ast.loc
 )
 ident(
-  ext_ref MlClass.make_jni_type_sig
+  int_ref _loc "idl_camlgen.ml" 6 96 100 "idl_camlgen.ml" 6 96 104
 )
-"idl_camlgen.ml" 13 194 238 "idl_camlgen.ml" 13 194 244
 type(
-  Cidl.clazz list
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.ctyp list
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
+  int_ref _loc "idl_camlgen.ml" 6 96 100 "idl_camlgen.ml" 6 96 104
 )
-"idl_camlgen.ml" 13 194 212 "idl_camlgen.ml" 13 194 244
-call(
-  stack
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "idl_camlgen.ml" 6 96 100 "idl_camlgen.ml" 6 96 104
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"idl_camlgen.ml" 13 194 249 "idl_camlgen.ml" 13 194 257
+"idl_camlgen.ml" 13 187 231 "idl_camlgen.ml" 13 187 239
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   int_ref sig_list "idl_camlgen.ml" 10 143 149 "idl_camlgen.ml" 10 143 157
 )
-"idl_camlgen.ml" 13 194 211 "idl_camlgen.ml" 13 194 257
+"idl_camlgen.ml" 13 187 206 "idl_camlgen.ml" 13 187 239
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 16 282 288 "idl_camlgen.ml" 16 282 298
+"idl_camlgen.ml" 16 271 277 "idl_camlgen.ml" 16 271 285
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  def sig_list "idl_camlgen.ml" 19 359 361 "idl_camlgen.ml" 50 1716 1735
+)
+"idl_camlgen.ml" 16 271 289 "idl_camlgen.ml" 16 271 314
+type(
+  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  ext_ref MlClass.make_jni_type_sig
+)
+"idl_camlgen.ml" 16 271 315 "idl_camlgen.ml" 16 271 321
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
+)
+"idl_camlgen.ml" 16 271 289 "idl_camlgen.ml" 16 271 321
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"idl_camlgen.ml" 16 271 326 "idl_camlgen.ml" 16 271 334
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  int_ref sig_list "idl_camlgen.ml" 13 187 193 "idl_camlgen.ml" 13 187 201
+)
+"idl_camlgen.ml" 16 271 288 "idl_camlgen.ml" 16 271 334
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"idl_camlgen.ml" 19 359 365 "idl_camlgen.ml" 19 359 375
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def class_type "idl_camlgen.ml" 17 351 353 "idl_camlgen.ml" 47 1635 1654
+  def class_type "idl_camlgen.ml" 20 428 430 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 16 282 301 "idl_camlgen.ml" 16 282 324
+"idl_camlgen.ml" 19 359 378 "idl_camlgen.ml" 19 359 401
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_type) list
@@ -91,57 +146,57 @@ type(
 ident(
   ext_ref MlClass.make_class_type
 )
-"idl_camlgen.ml" 16 282 335 "idl_camlgen.ml" 16 282 340
+"idl_camlgen.ml" 19 359 412 "idl_camlgen.ml" 19 359 417
 type(
   bool
 )
-"idl_camlgen.ml" 16 282 341 "idl_camlgen.ml" 16 282 347
+"idl_camlgen.ml" 19 359 418 "idl_camlgen.ml" 19 359 424
 type(
   Cidl.clazz list
 )
 ident(
   int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
 )
-"idl_camlgen.ml" 16 282 301 "idl_camlgen.ml" 16 282 347
+"idl_camlgen.ml" 19 359 378 "idl_camlgen.ml" 19 359 424
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 17 351 357 "idl_camlgen.ml" 17 351 365
+"idl_camlgen.ml" 20 428 434 "idl_camlgen.ml" 20 428 442
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def sig_list "idl_camlgen.ml" 21 504 506 "idl_camlgen.ml" 47 1635 1654
+  def sig_list "idl_camlgen.ml" 24 581 583 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 17 351 374 "idl_camlgen.ml" 17 351 384
+"idl_camlgen.ml" 20 428 451 "idl_camlgen.ml" 20 428 461
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 16 282 288 "idl_camlgen.ml" 16 282 298
+  int_ref class_type "idl_camlgen.ml" 19 359 365 "idl_camlgen.ml" 19 359 375
 )
-"idl_camlgen.ml" 18 391 395 "idl_camlgen.ml" 18 391 397
+"idl_camlgen.ml" 21 468 472 "idl_camlgen.ml" 21 468 474
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 18 391 401 "idl_camlgen.ml" 18 391 409
+"idl_camlgen.ml" 21 468 478 "idl_camlgen.ml" 21 468 486
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 13 194 200 "idl_camlgen.ml" 13 194 208
+  int_ref sig_list "idl_camlgen.ml" 16 271 277 "idl_camlgen.ml" 16 271 285
 )
-"idl_camlgen.ml" 19 411 415 "idl_camlgen.ml" 19 411 419
+"idl_camlgen.ml" 22 488 492 "idl_camlgen.ml" 22 488 496
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def list "idl_camlgen.ml" 19 411 425 "idl_camlgen.ml" 19 411 499
+  def list "idl_camlgen.ml" 22 488 502 "idl_camlgen.ml" 22 488 576
 )
-"idl_camlgen.ml" 19 411 434 "idl_camlgen.ml" 19 411 434
+"idl_camlgen.ml" 22 488 511 "idl_camlgen.ml" 22 488 511
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -151,7 +206,7 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"idl_camlgen.ml" 19 411 446 "idl_camlgen.ml" 19 411 471
+"idl_camlgen.ml" 22 488 523 "idl_camlgen.ml" 22 488 548
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list ->
   Camlp4.PreCast.Ast.class_type
@@ -159,43 +214,43 @@ type(
 ident(
   ext_ref MlGen.make_rec_class_type
 )
-"idl_camlgen.ml" 19 411 472 "idl_camlgen.ml" 19 411 482
+"idl_camlgen.ml" 22 488 549 "idl_camlgen.ml" 22 488 559
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 16 282 288 "idl_camlgen.ml" 16 282 298
+  int_ref class_type "idl_camlgen.ml" 19 359 365 "idl_camlgen.ml" 19 359 375
 )
-"idl_camlgen.ml" 19 411 446 "idl_camlgen.ml" 19 411 482
+"idl_camlgen.ml" 22 488 523 "idl_camlgen.ml" 22 488 559
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_type
 )
-"idl_camlgen.ml" 19 411 491 "idl_camlgen.ml" 19 411 499
+"idl_camlgen.ml" 22 488 568 "idl_camlgen.ml" 22 488 576
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 13 194 200 "idl_camlgen.ml" 13 194 208
+  int_ref sig_list "idl_camlgen.ml" 16 271 277 "idl_camlgen.ml" 16 271 285
 )
-"idl_camlgen.ml" 19 411 425 "idl_camlgen.ml" 19 411 499
+"idl_camlgen.ml" 22 488 502 "idl_camlgen.ml" 22 488 576
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 17 351 368 "idl_camlgen.ml" 19 411 499
+"idl_camlgen.ml" 20 428 445 "idl_camlgen.ml" 22 488 576
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 21 504 510 "idl_camlgen.ml" 21 504 520
+"idl_camlgen.ml" 24 581 587 "idl_camlgen.ml" 24 581 597
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def class_type "idl_camlgen.ml" 22 572 574 "idl_camlgen.ml" 47 1635 1654
+  def class_type "idl_camlgen.ml" 25 649 651 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 21 504 523 "idl_camlgen.ml" 21 504 546
+"idl_camlgen.ml" 24 581 600 "idl_camlgen.ml" 24 581 623
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_type) list
@@ -203,57 +258,57 @@ type(
 ident(
   ext_ref MlClass.make_class_type
 )
-"idl_camlgen.ml" 21 504 557 "idl_camlgen.ml" 21 504 561
+"idl_camlgen.ml" 24 581 634 "idl_camlgen.ml" 24 581 638
 type(
   bool
 )
-"idl_camlgen.ml" 21 504 562 "idl_camlgen.ml" 21 504 568
+"idl_camlgen.ml" 24 581 639 "idl_camlgen.ml" 24 581 645
 type(
   Cidl.clazz list
 )
 ident(
   int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
 )
-"idl_camlgen.ml" 21 504 523 "idl_camlgen.ml" 21 504 568
+"idl_camlgen.ml" 24 581 600 "idl_camlgen.ml" 24 581 645
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 22 572 578 "idl_camlgen.ml" 22 572 586
+"idl_camlgen.ml" 25 649 655 "idl_camlgen.ml" 25 649 663
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def sig_list "idl_camlgen.ml" 27 759 761 "idl_camlgen.ml" 47 1635 1654
+  def sig_list "idl_camlgen.ml" 37 1113 1115 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 22 572 595 "idl_camlgen.ml" 22 572 605
+"idl_camlgen.ml" 25 649 672 "idl_camlgen.ml" 25 649 682
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 21 504 510 "idl_camlgen.ml" 21 504 520
+  int_ref class_type "idl_camlgen.ml" 24 581 587 "idl_camlgen.ml" 24 581 597
 )
-"idl_camlgen.ml" 23 612 616 "idl_camlgen.ml" 23 612 618
+"idl_camlgen.ml" 26 689 693 "idl_camlgen.ml" 26 689 695
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 23 612 622 "idl_camlgen.ml" 23 612 630
+"idl_camlgen.ml" 26 689 699 "idl_camlgen.ml" 26 689 707
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 17 351 357 "idl_camlgen.ml" 17 351 365
+  int_ref sig_list "idl_camlgen.ml" 20 428 434 "idl_camlgen.ml" 20 428 442
 )
-"idl_camlgen.ml" 24 632 636 "idl_camlgen.ml" 24 632 640
+"idl_camlgen.ml" 27 709 713 "idl_camlgen.ml" 27 709 717
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def list "idl_camlgen.ml" 24 632 646 "idl_camlgen.ml" 24 632 720
+  def list "idl_camlgen.ml" 27 709 723 "idl_camlgen.ml" 27 709 797
 )
-"idl_camlgen.ml" 24 632 655 "idl_camlgen.ml" 24 632 655
+"idl_camlgen.ml" 27 709 732 "idl_camlgen.ml" 27 709 732
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -263,7 +318,7 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"idl_camlgen.ml" 24 632 667 "idl_camlgen.ml" 24 632 692
+"idl_camlgen.ml" 27 709 744 "idl_camlgen.ml" 27 709 769
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list ->
   Camlp4.PreCast.Ast.class_type
@@ -271,422 +326,369 @@ type(
 ident(
   ext_ref MlGen.make_rec_class_type
 )
-"idl_camlgen.ml" 24 632 693 "idl_camlgen.ml" 24 632 703
+"idl_camlgen.ml" 27 709 770 "idl_camlgen.ml" 27 709 780
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 21 504 510 "idl_camlgen.ml" 21 504 520
+  int_ref class_type "idl_camlgen.ml" 24 581 587 "idl_camlgen.ml" 24 581 597
 )
-"idl_camlgen.ml" 24 632 667 "idl_camlgen.ml" 24 632 703
+"idl_camlgen.ml" 27 709 744 "idl_camlgen.ml" 27 709 780
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_type
 )
-"idl_camlgen.ml" 24 632 712 "idl_camlgen.ml" 24 632 720
+"idl_camlgen.ml" 27 709 789 "idl_camlgen.ml" 27 709 797
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 17 351 357 "idl_camlgen.ml" 17 351 365
+  int_ref sig_list "idl_camlgen.ml" 20 428 434 "idl_camlgen.ml" 20 428 442
 )
-"idl_camlgen.ml" 24 632 646 "idl_camlgen.ml" 24 632 720
+"idl_camlgen.ml" 27 709 723 "idl_camlgen.ml" 27 709 797
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 22 572 589 "idl_camlgen.ml" 24 632 720
+"idl_camlgen.ml" 25 649 666 "idl_camlgen.ml" 27 709 797
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 27 759 765 "idl_camlgen.ml" 27 759 773
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-ident(
-  def sig_list "idl_camlgen.ml" 28 826 828 "idl_camlgen.ml" 47 1635 1654
-)
-"idl_camlgen.ml" 27 759 777 "idl_camlgen.ml" 27 759 802
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
-)
-ident(
-  ext_ref MlClass.make_downcast_sig
-)
-"idl_camlgen.ml" 27 759 803 "idl_camlgen.ml" 27 759 809
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
-)
-"idl_camlgen.ml" 27 759 777 "idl_camlgen.ml" 27 759 809
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.sig_item
-)
-"idl_camlgen.ml" 27 759 814 "idl_camlgen.ml" 27 759 822
+"idl_camlgen.ml" 37 1113 1119 "idl_camlgen.ml" 37 1113 1127
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 22 572 578 "idl_camlgen.ml" 22 572 586
+  def sig_list "idl_camlgen.ml" 38 1192 1194 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 27 759 776 "idl_camlgen.ml" 27 759 822
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-"idl_camlgen.ml" 28 826 832 "idl_camlgen.ml" 28 826 840
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-ident(
-  def sig_list "idl_camlgen.ml" 31 917 919 "idl_camlgen.ml" 47 1635 1654
-)
-"idl_camlgen.ml" 28 826 844 "idl_camlgen.ml" 28 826 872
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
-)
-ident(
-  ext_ref MlClass.make_instance_of_sig
-)
-"idl_camlgen.ml" 28 826 873 "idl_camlgen.ml" 28 826 879
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
-)
-"idl_camlgen.ml" 28 826 844 "idl_camlgen.ml" 28 826 879
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.sig_item
-)
-"idl_camlgen.ml" 28 826 884 "idl_camlgen.ml" 28 826 892
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-ident(
-  int_ref sig_list "idl_camlgen.ml" 27 759 765 "idl_camlgen.ml" 27 759 773
-)
-"idl_camlgen.ml" 28 826 843 "idl_camlgen.ml" 28 826 892
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-"idl_camlgen.ml" 31 917 923 "idl_camlgen.ml" 31 917 931
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-ident(
-  def sig_list "idl_camlgen.ml" 34 1032 1034 "idl_camlgen.ml" 47 1635 1654
-)
-"idl_camlgen.ml" 31 917 935 "idl_camlgen.ml" 31 917 957
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
-)
-ident(
-  ext_ref MlClass.make_array_sig
-)
-"idl_camlgen.ml" 31 917 958 "idl_camlgen.ml" 31 917 964
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
-)
-"idl_camlgen.ml" 31 917 935 "idl_camlgen.ml" 31 917 964
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.sig_item
-)
-"idl_camlgen.ml" 31 917 969 "idl_camlgen.ml" 31 917 977
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-ident(
-  int_ref sig_list "idl_camlgen.ml" 28 826 832 "idl_camlgen.ml" 28 826 840
-)
-"idl_camlgen.ml" 31 917 934 "idl_camlgen.ml" 31 917 977
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-"idl_camlgen.ml" 34 1032 1038 "idl_camlgen.ml" 34 1032 1046
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-ident(
-  def sig_list "idl_camlgen.ml" 35 1111 1113 "idl_camlgen.ml" 47 1635 1654
-)
-"idl_camlgen.ml" 34 1032 1050 "idl_camlgen.ml" 34 1032 1071
+"idl_camlgen.ml" 37 1113 1131 "idl_camlgen.ml" 37 1113 1152
 type(
   callback:bool -> Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref MlInit.make_class_sig
 )
-"idl_camlgen.ml" 34 1032 1082 "idl_camlgen.ml" 34 1032 1087
+"idl_camlgen.ml" 37 1113 1163 "idl_camlgen.ml" 37 1113 1168
 type(
   bool
 )
-"idl_camlgen.ml" 34 1032 1088 "idl_camlgen.ml" 34 1032 1094
+"idl_camlgen.ml" 37 1113 1169 "idl_camlgen.ml" 37 1113 1175
 type(
   Cidl.clazz list
 )
 ident(
   int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
 )
-"idl_camlgen.ml" 34 1032 1050 "idl_camlgen.ml" 34 1032 1094
+"idl_camlgen.ml" 37 1113 1131 "idl_camlgen.ml" 37 1113 1175
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"idl_camlgen.ml" 34 1032 1099 "idl_camlgen.ml" 34 1032 1107
+"idl_camlgen.ml" 37 1113 1180 "idl_camlgen.ml" 37 1113 1188
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 31 917 923 "idl_camlgen.ml" 31 917 931
+  int_ref sig_list "idl_camlgen.ml" 25 649 655 "idl_camlgen.ml" 25 649 663
 )
-"idl_camlgen.ml" 34 1032 1049 "idl_camlgen.ml" 34 1032 1107
+"idl_camlgen.ml" 37 1113 1130 "idl_camlgen.ml" 37 1113 1188
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 35 1111 1117 "idl_camlgen.ml" 35 1111 1125
+"idl_camlgen.ml" 38 1192 1198 "idl_camlgen.ml" 38 1192 1206
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def sig_list "idl_camlgen.ml" 38 1228 1230 "idl_camlgen.ml" 47 1635 1654
+  def sig_list "idl_camlgen.ml" 41 1309 1311 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 35 1111 1129 "idl_camlgen.ml" 35 1111 1150
+"idl_camlgen.ml" 38 1192 1210 "idl_camlgen.ml" 38 1192 1231
 type(
   callback:bool -> Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref MlInit.make_class_sig
 )
-"idl_camlgen.ml" 35 1111 1161 "idl_camlgen.ml" 35 1111 1165
+"idl_camlgen.ml" 38 1192 1242 "idl_camlgen.ml" 38 1192 1246
 type(
   bool
 )
-"idl_camlgen.ml" 35 1111 1166 "idl_camlgen.ml" 35 1111 1172
+"idl_camlgen.ml" 38 1192 1247 "idl_camlgen.ml" 38 1192 1253
 type(
   Cidl.clazz list
 )
 ident(
   int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
 )
-"idl_camlgen.ml" 35 1111 1129 "idl_camlgen.ml" 35 1111 1172
+"idl_camlgen.ml" 38 1192 1210 "idl_camlgen.ml" 38 1192 1253
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"idl_camlgen.ml" 35 1111 1177 "idl_camlgen.ml" 35 1111 1185
+"idl_camlgen.ml" 38 1192 1258 "idl_camlgen.ml" 38 1192 1266
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 34 1032 1038 "idl_camlgen.ml" 34 1032 1046
+  int_ref sig_list "idl_camlgen.ml" 37 1113 1119 "idl_camlgen.ml" 37 1113 1127
 )
-"idl_camlgen.ml" 35 1111 1128 "idl_camlgen.ml" 35 1111 1185
+"idl_camlgen.ml" 38 1192 1209 "idl_camlgen.ml" 38 1192 1266
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 38 1228 1234 "idl_camlgen.ml" 38 1228 1242
+"idl_camlgen.ml" 41 1309 1315 "idl_camlgen.ml" 41 1309 1323
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def sig_list "idl_camlgen.ml" 47 1635 1637 "idl_camlgen.ml" 47 1635 1654
+  def sig_list "idl_camlgen.ml" 50 1716 1718 "idl_camlgen.ml" 50 1716 1735
 )
-"idl_camlgen.ml" 38 1228 1246 "idl_camlgen.ml" 38 1228 1270
+"idl_camlgen.ml" 41 1309 1327 "idl_camlgen.ml" 41 1309 1351
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref MlMethod.make_static_sig
 )
-"idl_camlgen.ml" 38 1228 1271 "idl_camlgen.ml" 38 1228 1277
+"idl_camlgen.ml" 41 1309 1352 "idl_camlgen.ml" 41 1309 1358
 type(
   Cidl.clazz list
 )
 ident(
   int_ref c_file "idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 8 118 137
 )
-"idl_camlgen.ml" 38 1228 1246 "idl_camlgen.ml" 38 1228 1277
+"idl_camlgen.ml" 41 1309 1327 "idl_camlgen.ml" 41 1309 1358
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"idl_camlgen.ml" 38 1228 1282 "idl_camlgen.ml" 38 1228 1290
+"idl_camlgen.ml" 41 1309 1363 "idl_camlgen.ml" 41 1309 1371
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 35 1111 1117 "idl_camlgen.ml" 35 1111 1125
+  int_ref sig_list "idl_camlgen.ml" 38 1192 1198 "idl_camlgen.ml" 38 1192 1206
 )
-"idl_camlgen.ml" 38 1228 1245 "idl_camlgen.ml" 38 1228 1290
+"idl_camlgen.ml" 41 1309 1326 "idl_camlgen.ml" 41 1309 1371
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 47 1635 1637 "idl_camlgen.ml" 47 1635 1645
+"idl_camlgen.ml" 50 1716 1718 "idl_camlgen.ml" 50 1716 1726
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   ext_ref List.rev
 )
-"idl_camlgen.ml" 47 1635 1646 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 50 1716 1727 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref sig_list "idl_camlgen.ml" 38 1228 1234 "idl_camlgen.ml" 38 1228 1242
+  int_ref sig_list "idl_camlgen.ml" 41 1309 1315 "idl_camlgen.ml" 41 1309 1323
 )
-"idl_camlgen.ml" 47 1635 1637 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 50 1716 1718 "idl_camlgen.ml" 50 1716 1735
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 38 1228 1230 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 41 1309 1311 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 35 1111 1113 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 38 1192 1194 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 34 1032 1034 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 37 1113 1115 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 31 917 919 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 25 649 651 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 28 826 828 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 24 581 583 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 27 759 761 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 20 428 430 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 22 572 574 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 19 359 361 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 21 504 506 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 16 271 273 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 17 351 353 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 13 187 189 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 16 282 284 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 10 143 145 "idl_camlgen.ml" 50 1716 1735
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 13 194 196 "idl_camlgen.ml" 47 1635 1654
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-"idl_camlgen.ml" 10 143 145 "idl_camlgen.ml" 47 1635 1654
-type(
-  Camlp4.PreCast.Ast.sig_item list
-)
-"idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 47 1635 1654
+"idl_camlgen.ml" 8 118 131 "idl_camlgen.ml" 50 1716 1735
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 49 1660 1664 "idl_camlgen.ml" 49 1660 1668
+"idl_camlgen.ml" 52 1741 1745 "idl_camlgen.ml" 52 1741 1749
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "idl_camlgen.ml" 106 3678 3678 "_none_" 1 0 -1
+  def make "idl_camlgen.ml" 113 3903 3903 "_none_" 1 0 -1
 )
-"idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+"idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 type(
   Cidl.clazz list
 )
 ident(
-  def c_file "idl_camlgen.ml" 51 1681 1683 "idl_camlgen.ml" 104 3657 3676
+  def c_file "idl_camlgen.ml" 54 1762 1764 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 51 1681 1687 "idl_camlgen.ml" 51 1681 1695
+"idl_camlgen.ml" 54 1762 1768 "idl_camlgen.ml" 54 1762 1776
 type(
   'a list
 )
 ident(
-  def str_list "idl_camlgen.ml" 54 1725 1727 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 57 1819 1821 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 51 1681 1698 "idl_camlgen.ml" 51 1681 1700
+"idl_camlgen.ml" 54 1762 1779 "idl_camlgen.ml" 54 1762 1781
 type(
   'a list
 )
-"idl_camlgen.ml" 54 1725 1731 "idl_camlgen.ml" 54 1725 1739
+"idl_camlgen.ml" 57 1819 1825 "idl_camlgen.ml" 57 1819 1833
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 57 1809 1811 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 58 1873 1875 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 54 1725 1743 "idl_camlgen.ml" 54 1725 1764
+"idl_camlgen.ml" 57 1819 1837 "idl_camlgen.ml" 57 1819 1853
+type(
+  unit -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  ext_ref MlClass.make_top
+)
+"idl_camlgen.ml" 57 1819 1854 "idl_camlgen.ml" 57 1819 1856
+type(
+  unit
+)
+"idl_camlgen.ml" 57 1819 1837 "idl_camlgen.ml" 57 1819 1856
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"idl_camlgen.ml" 57 1819 1861 "idl_camlgen.ml" 57 1819 1869
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  int_ref str_list "idl_camlgen.ml" 54 1762 1768 "idl_camlgen.ml" 54 1762 1776
+)
+"idl_camlgen.ml" 57 1819 1836 "idl_camlgen.ml" 57 1819 1869
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"idl_camlgen.ml" 58 1873 1879 "idl_camlgen.ml" 58 1873 1887
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  def str_list "idl_camlgen.ml" 61 1946 1948 "idl_camlgen.ml" 111 3882 3901
+)
+"idl_camlgen.ml" 58 1873 1891 "idl_camlgen.ml" 58 1873 1907
+type(
+  unit -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  ext_ref MlClass.make_exc
+)
+"idl_camlgen.ml" 58 1873 1908 "idl_camlgen.ml" 58 1873 1910
+type(
+  unit
+)
+"idl_camlgen.ml" 58 1873 1891 "idl_camlgen.ml" 58 1873 1910
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"idl_camlgen.ml" 58 1873 1915 "idl_camlgen.ml" 58 1873 1923
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  int_ref str_list "idl_camlgen.ml" 57 1819 1825 "idl_camlgen.ml" 57 1819 1833
+)
+"idl_camlgen.ml" 58 1873 1890 "idl_camlgen.ml" 58 1873 1923
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"idl_camlgen.ml" 61 1946 1952 "idl_camlgen.ml" 61 1946 1960
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  def str_list "idl_camlgen.ml" 64 2030 2032 "idl_camlgen.ml" 111 3882 3901
+)
+"idl_camlgen.ml" 61 1946 1964 "idl_camlgen.ml" 61 1946 1985
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlClass.make_jni_type
 )
-"idl_camlgen.ml" 54 1725 1765 "idl_camlgen.ml" 54 1725 1771
+"idl_camlgen.ml" 61 1946 1986 "idl_camlgen.ml" 61 1946 1992
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 54 1725 1743 "idl_camlgen.ml" 54 1725 1771
+"idl_camlgen.ml" 61 1946 1964 "idl_camlgen.ml" 61 1946 1992
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 54 1725 1776 "idl_camlgen.ml" 54 1725 1784
+"idl_camlgen.ml" 61 1946 1997 "idl_camlgen.ml" 61 1946 2005
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 51 1681 1687 "idl_camlgen.ml" 51 1681 1695
+  int_ref str_list "idl_camlgen.ml" 58 1873 1879 "idl_camlgen.ml" 58 1873 1887
 )
-"idl_camlgen.ml" 54 1725 1742 "idl_camlgen.ml" 54 1725 1784
+"idl_camlgen.ml" 61 1946 1963 "idl_camlgen.ml" 61 1946 2005
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 57 1809 1815 "idl_camlgen.ml" 57 1809 1825
+"idl_camlgen.ml" 64 2030 2036 "idl_camlgen.ml" 64 2030 2046
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def class_type "idl_camlgen.ml" 58 1878 1880 "idl_camlgen.ml" 104 3657 3676
+  def class_type "idl_camlgen.ml" 65 2099 2101 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 57 1809 1828 "idl_camlgen.ml" 57 1809 1851
+"idl_camlgen.ml" 64 2030 2049 "idl_camlgen.ml" 64 2030 2072
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_type) list
@@ -694,57 +696,57 @@ type(
 ident(
   ext_ref MlClass.make_class_type
 )
-"idl_camlgen.ml" 57 1809 1862 "idl_camlgen.ml" 57 1809 1867
+"idl_camlgen.ml" 64 2030 2083 "idl_camlgen.ml" 64 2030 2088
 type(
   bool
 )
-"idl_camlgen.ml" 57 1809 1868 "idl_camlgen.ml" 57 1809 1874
+"idl_camlgen.ml" 64 2030 2089 "idl_camlgen.ml" 64 2030 2095
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 57 1809 1828 "idl_camlgen.ml" 57 1809 1874
+"idl_camlgen.ml" 64 2030 2049 "idl_camlgen.ml" 64 2030 2095
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 58 1878 1884 "idl_camlgen.ml" 58 1878 1892
+"idl_camlgen.ml" 65 2099 2105 "idl_camlgen.ml" 65 2099 2113
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 62 2031 2033 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 69 2252 2254 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 58 1878 1901 "idl_camlgen.ml" 58 1878 1911
+"idl_camlgen.ml" 65 2099 2122 "idl_camlgen.ml" 65 2099 2132
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 57 1809 1815 "idl_camlgen.ml" 57 1809 1825
+  int_ref class_type "idl_camlgen.ml" 64 2030 2036 "idl_camlgen.ml" 64 2030 2046
 )
-"idl_camlgen.ml" 59 1918 1922 "idl_camlgen.ml" 59 1918 1924
+"idl_camlgen.ml" 66 2139 2143 "idl_camlgen.ml" 66 2139 2145
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 59 1918 1928 "idl_camlgen.ml" 59 1918 1936
+"idl_camlgen.ml" 66 2139 2149 "idl_camlgen.ml" 66 2139 2157
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 54 1725 1731 "idl_camlgen.ml" 54 1725 1739
+  int_ref str_list "idl_camlgen.ml" 61 1946 1952 "idl_camlgen.ml" 61 1946 1960
 )
-"idl_camlgen.ml" 60 1938 1942 "idl_camlgen.ml" 60 1938 1946
+"idl_camlgen.ml" 67 2159 2163 "idl_camlgen.ml" 67 2159 2167
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def list "idl_camlgen.ml" 60 1938 1952 "idl_camlgen.ml" 60 1938 2026
+  def list "idl_camlgen.ml" 67 2159 2173 "idl_camlgen.ml" 67 2159 2247
 )
-"idl_camlgen.ml" 60 1938 1961 "idl_camlgen.ml" 60 1938 1961
+"idl_camlgen.ml" 67 2159 2182 "idl_camlgen.ml" 67 2159 2182
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -754,7 +756,7 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 60 1938 1973 "idl_camlgen.ml" 60 1938 1998
+"idl_camlgen.ml" 67 2159 2194 "idl_camlgen.ml" 67 2159 2219
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list ->
   Camlp4.PreCast.Ast.class_type
@@ -762,43 +764,43 @@ type(
 ident(
   ext_ref MlGen.make_rec_class_type
 )
-"idl_camlgen.ml" 60 1938 1999 "idl_camlgen.ml" 60 1938 2009
+"idl_camlgen.ml" 67 2159 2220 "idl_camlgen.ml" 67 2159 2230
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 57 1809 1815 "idl_camlgen.ml" 57 1809 1825
+  int_ref class_type "idl_camlgen.ml" 64 2030 2036 "idl_camlgen.ml" 64 2030 2046
 )
-"idl_camlgen.ml" 60 1938 1973 "idl_camlgen.ml" 60 1938 2009
+"idl_camlgen.ml" 67 2159 2194 "idl_camlgen.ml" 67 2159 2230
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_type
 )
-"idl_camlgen.ml" 60 1938 2018 "idl_camlgen.ml" 60 1938 2026
+"idl_camlgen.ml" 67 2159 2239 "idl_camlgen.ml" 67 2159 2247
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 54 1725 1731 "idl_camlgen.ml" 54 1725 1739
+  int_ref str_list "idl_camlgen.ml" 61 1946 1952 "idl_camlgen.ml" 61 1946 1960
 )
-"idl_camlgen.ml" 60 1938 1952 "idl_camlgen.ml" 60 1938 2026
+"idl_camlgen.ml" 67 2159 2173 "idl_camlgen.ml" 67 2159 2247
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 58 1878 1895 "idl_camlgen.ml" 60 1938 2026
+"idl_camlgen.ml" 65 2099 2116 "idl_camlgen.ml" 67 2159 2247
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 62 2031 2037 "idl_camlgen.ml" 62 2031 2047
+"idl_camlgen.ml" 69 2252 2258 "idl_camlgen.ml" 69 2252 2268
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def class_type "idl_camlgen.ml" 63 2099 2101 "idl_camlgen.ml" 104 3657 3676
+  def class_type "idl_camlgen.ml" 70 2320 2322 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 62 2031 2050 "idl_camlgen.ml" 62 2031 2073
+"idl_camlgen.ml" 69 2252 2271 "idl_camlgen.ml" 69 2252 2294
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_type) list
@@ -806,57 +808,57 @@ type(
 ident(
   ext_ref MlClass.make_class_type
 )
-"idl_camlgen.ml" 62 2031 2084 "idl_camlgen.ml" 62 2031 2088
+"idl_camlgen.ml" 69 2252 2305 "idl_camlgen.ml" 69 2252 2309
 type(
   bool
 )
-"idl_camlgen.ml" 62 2031 2089 "idl_camlgen.ml" 62 2031 2095
+"idl_camlgen.ml" 69 2252 2310 "idl_camlgen.ml" 69 2252 2316
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 62 2031 2050 "idl_camlgen.ml" 62 2031 2095
+"idl_camlgen.ml" 69 2252 2271 "idl_camlgen.ml" 69 2252 2316
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 63 2099 2105 "idl_camlgen.ml" 63 2099 2113
+"idl_camlgen.ml" 70 2320 2326 "idl_camlgen.ml" 70 2320 2334
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 68 2270 2272 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 83 2808 2810 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 63 2099 2122 "idl_camlgen.ml" 63 2099 2132
+"idl_camlgen.ml" 70 2320 2343 "idl_camlgen.ml" 70 2320 2353
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 62 2031 2037 "idl_camlgen.ml" 62 2031 2047
+  int_ref class_type "idl_camlgen.ml" 69 2252 2258 "idl_camlgen.ml" 69 2252 2268
 )
-"idl_camlgen.ml" 64 2139 2143 "idl_camlgen.ml" 64 2139 2145
+"idl_camlgen.ml" 71 2360 2364 "idl_camlgen.ml" 71 2360 2366
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
-"idl_camlgen.ml" 64 2139 2149 "idl_camlgen.ml" 64 2139 2157
+"idl_camlgen.ml" 71 2360 2370 "idl_camlgen.ml" 71 2360 2378
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 58 1878 1884 "idl_camlgen.ml" 58 1878 1892
+  int_ref str_list "idl_camlgen.ml" 65 2099 2105 "idl_camlgen.ml" 65 2099 2113
 )
-"idl_camlgen.ml" 65 2159 2163 "idl_camlgen.ml" 65 2159 2167
+"idl_camlgen.ml" 72 2380 2384 "idl_camlgen.ml" 72 2380 2388
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  def list "idl_camlgen.ml" 65 2159 2173 "idl_camlgen.ml" 65 2159 2247
+  def list "idl_camlgen.ml" 72 2380 2394 "idl_camlgen.ml" 72 2380 2468
 )
-"idl_camlgen.ml" 65 2159 2182 "idl_camlgen.ml" 65 2159 2182
+"idl_camlgen.ml" 72 2380 2403 "idl_camlgen.ml" 72 2380 2403
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -866,7 +868,7 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 65 2159 2194 "idl_camlgen.ml" 65 2159 2219
+"idl_camlgen.ml" 72 2380 2415 "idl_camlgen.ml" 72 2380 2440
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list ->
   Camlp4.PreCast.Ast.class_type
@@ -874,210 +876,54 @@ type(
 ident(
   ext_ref MlGen.make_rec_class_type
 )
-"idl_camlgen.ml" 65 2159 2220 "idl_camlgen.ml" 65 2159 2230
+"idl_camlgen.ml" 72 2380 2441 "idl_camlgen.ml" 72 2380 2451
 type(
   (string * bool * Camlp4.PreCast.Ast.class_type) list
 )
 ident(
-  int_ref class_type "idl_camlgen.ml" 62 2031 2037 "idl_camlgen.ml" 62 2031 2047
+  int_ref class_type "idl_camlgen.ml" 69 2252 2258 "idl_camlgen.ml" 69 2252 2268
 )
-"idl_camlgen.ml" 65 2159 2194 "idl_camlgen.ml" 65 2159 2230
+"idl_camlgen.ml" 72 2380 2415 "idl_camlgen.ml" 72 2380 2451
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_type
 )
-"idl_camlgen.ml" 65 2159 2239 "idl_camlgen.ml" 65 2159 2247
+"idl_camlgen.ml" 72 2380 2460 "idl_camlgen.ml" 72 2380 2468
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 58 1878 1884 "idl_camlgen.ml" 58 1878 1892
+  int_ref str_list "idl_camlgen.ml" 65 2099 2105 "idl_camlgen.ml" 65 2099 2113
 )
-"idl_camlgen.ml" 65 2159 2173 "idl_camlgen.ml" 65 2159 2247
+"idl_camlgen.ml" 72 2380 2394 "idl_camlgen.ml" 72 2380 2468
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 63 2099 2116 "idl_camlgen.ml" 65 2159 2247
+"idl_camlgen.ml" 70 2320 2337 "idl_camlgen.ml" 72 2380 2468
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 68 2270 2276 "idl_camlgen.ml" 68 2270 2284
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  def str_list "idl_camlgen.ml" 69 2334 2336 "idl_camlgen.ml" 104 3657 3676
-)
-"idl_camlgen.ml" 68 2270 2288 "idl_camlgen.ml" 68 2270 2310
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
-)
-ident(
-  ext_ref MlClass.make_jniupcast
-)
-"idl_camlgen.ml" 68 2270 2311 "idl_camlgen.ml" 68 2270 2317
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
-)
-"idl_camlgen.ml" 68 2270 2288 "idl_camlgen.ml" 68 2270 2317
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.str_item
-)
-"idl_camlgen.ml" 68 2270 2322 "idl_camlgen.ml" 68 2270 2330
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  int_ref str_list "idl_camlgen.ml" 63 2099 2105 "idl_camlgen.ml" 63 2099 2113
-)
-"idl_camlgen.ml" 68 2270 2287 "idl_camlgen.ml" 68 2270 2330
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-"idl_camlgen.ml" 69 2334 2340 "idl_camlgen.ml" 69 2334 2348
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  def str_list "idl_camlgen.ml" 72 2433 2435 "idl_camlgen.ml" 104 3657 3676
-)
-"idl_camlgen.ml" 69 2334 2352 "idl_camlgen.ml" 69 2334 2376
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
-)
-ident(
-  ext_ref MlClass.make_jnidowncast
-)
-"idl_camlgen.ml" 69 2334 2377 "idl_camlgen.ml" 69 2334 2383
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
-)
-"idl_camlgen.ml" 69 2334 2352 "idl_camlgen.ml" 69 2334 2383
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.str_item
-)
-"idl_camlgen.ml" 69 2334 2387 "idl_camlgen.ml" 69 2334 2395
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  int_ref str_list "idl_camlgen.ml" 68 2270 2276 "idl_camlgen.ml" 68 2270 2284
-)
-"idl_camlgen.ml" 69 2334 2351 "idl_camlgen.ml" 69 2334 2395
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-"idl_camlgen.ml" 72 2433 2439 "idl_camlgen.ml" 72 2433 2447
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  def str_list "idl_camlgen.ml" 73 2493 2495 "idl_camlgen.ml" 104 3657 3676
-)
-"idl_camlgen.ml" 72 2433 2451 "idl_camlgen.ml" 72 2433 2469
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
-)
-ident(
-  ext_ref MlClass.make_alloc
-)
-"idl_camlgen.ml" 72 2433 2470 "idl_camlgen.ml" 72 2433 2476
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
-)
-"idl_camlgen.ml" 72 2433 2451 "idl_camlgen.ml" 72 2433 2476
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.str_item
-)
-"idl_camlgen.ml" 72 2433 2481 "idl_camlgen.ml" 72 2433 2489
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  int_ref str_list "idl_camlgen.ml" 69 2334 2340 "idl_camlgen.ml" 69 2334 2348
-)
-"idl_camlgen.ml" 72 2433 2450 "idl_camlgen.ml" 72 2433 2489
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-"idl_camlgen.ml" 73 2493 2499 "idl_camlgen.ml" 73 2493 2507
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  def str_list "idl_camlgen.ml" 76 2583 2585 "idl_camlgen.ml" 104 3657 3676
-)
-"idl_camlgen.ml" 73 2493 2511 "idl_camlgen.ml" 73 2493 2534
-type(
-  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
-)
-ident(
-  ext_ref MlClass.make_alloc_stub
-)
-"idl_camlgen.ml" 73 2493 2535 "idl_camlgen.ml" 73 2493 2541
-type(
-  Cidl.clazz list
-)
-ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
-)
-"idl_camlgen.ml" 73 2493 2511 "idl_camlgen.ml" 73 2493 2541
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.str_item
-)
-"idl_camlgen.ml" 73 2493 2546 "idl_camlgen.ml" 73 2493 2554
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-ident(
-  int_ref str_list "idl_camlgen.ml" 72 2433 2439 "idl_camlgen.ml" 72 2433 2447
-)
-"idl_camlgen.ml" 73 2493 2510 "idl_camlgen.ml" 73 2493 2554
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-"idl_camlgen.ml" 76 2583 2589 "idl_camlgen.ml" 76 2583 2596
+"idl_camlgen.ml" 83 2808 2814 "idl_camlgen.ml" 83 2808 2821
 type(
   'b list
 )
 ident(
-  def wrapper "idl_camlgen.ml" 77 2605 2607 "idl_camlgen.ml" 104 3657 3676
+  def wrapper "idl_camlgen.ml" 84 2830 2832 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 76 2583 2599 "idl_camlgen.ml" 76 2583 2601
+"idl_camlgen.ml" 83 2808 2824 "idl_camlgen.ml" 83 2808 2826
 type(
   'b list
 )
-"idl_camlgen.ml" 77 2605 2611 "idl_camlgen.ml" 77 2605 2618
+"idl_camlgen.ml" 84 2830 2836 "idl_camlgen.ml" 84 2830 2843
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  def wrapper "idl_camlgen.ml" 78 2689 2691 "idl_camlgen.ml" 104 3657 3676
+  def wrapper "idl_camlgen.ml" 85 2914 2916 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 77 2605 2621 "idl_camlgen.ml" 77 2605 2632
+"idl_camlgen.ml" 84 2830 2846 "idl_camlgen.ml" 84 2830 2857
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
   (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
@@ -1086,7 +932,7 @@ type(
 ident(
   ext_ref List.append
 )
-"idl_camlgen.ml" 77 2605 2634 "idl_camlgen.ml" 77 2605 2654
+"idl_camlgen.ml" 84 2830 2859 "idl_camlgen.ml" 84 2830 2879
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_expr) list
@@ -1094,46 +940,46 @@ type(
 ident(
   ext_ref MlClass.make_wrapper
 )
-"idl_camlgen.ml" 77 2605 2665 "idl_camlgen.ml" 77 2605 2669
+"idl_camlgen.ml" 84 2830 2890 "idl_camlgen.ml" 84 2830 2894
 type(
   bool
 )
-"idl_camlgen.ml" 77 2605 2670 "idl_camlgen.ml" 77 2605 2676
+"idl_camlgen.ml" 84 2830 2895 "idl_camlgen.ml" 84 2830 2901
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 77 2605 2634 "idl_camlgen.ml" 77 2605 2676
+"idl_camlgen.ml" 84 2830 2859 "idl_camlgen.ml" 84 2830 2901
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"idl_camlgen.ml" 77 2605 2678 "idl_camlgen.ml" 77 2605 2685
+"idl_camlgen.ml" 84 2830 2903 "idl_camlgen.ml" 84 2830 2910
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  int_ref wrapper "idl_camlgen.ml" 76 2583 2589 "idl_camlgen.ml" 76 2583 2596
+  int_ref wrapper "idl_camlgen.ml" 83 2808 2814 "idl_camlgen.ml" 83 2808 2821
 )
-"idl_camlgen.ml" 77 2605 2621 "idl_camlgen.ml" 77 2605 2685
+"idl_camlgen.ml" 84 2830 2846 "idl_camlgen.ml" 84 2830 2910
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"idl_camlgen.ml" 78 2689 2695 "idl_camlgen.ml" 78 2689 2702
+"idl_camlgen.ml" 85 2914 2920 "idl_camlgen.ml" 85 2914 2927
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  def wrapper "idl_camlgen.ml" 79 2774 2776 "idl_camlgen.ml" 104 3657 3676
+  def wrapper "idl_camlgen.ml" 86 2999 3001 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 78 2689 2705 "idl_camlgen.ml" 78 2689 2716
+"idl_camlgen.ml" 85 2914 2930 "idl_camlgen.ml" 85 2914 2941
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
   (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
@@ -1142,7 +988,7 @@ type(
 ident(
   ext_ref List.append
 )
-"idl_camlgen.ml" 78 2689 2718 "idl_camlgen.ml" 78 2689 2738
+"idl_camlgen.ml" 85 2914 2943 "idl_camlgen.ml" 85 2914 2963
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_expr) list
@@ -1150,75 +996,75 @@ type(
 ident(
   ext_ref MlClass.make_wrapper
 )
-"idl_camlgen.ml" 78 2689 2749 "idl_camlgen.ml" 78 2689 2754
+"idl_camlgen.ml" 85 2914 2974 "idl_camlgen.ml" 85 2914 2979
 type(
   bool
 )
-"idl_camlgen.ml" 78 2689 2755 "idl_camlgen.ml" 78 2689 2761
+"idl_camlgen.ml" 85 2914 2980 "idl_camlgen.ml" 85 2914 2986
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 78 2689 2718 "idl_camlgen.ml" 78 2689 2761
+"idl_camlgen.ml" 85 2914 2943 "idl_camlgen.ml" 85 2914 2986
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"idl_camlgen.ml" 78 2689 2763 "idl_camlgen.ml" 78 2689 2770
+"idl_camlgen.ml" 85 2914 2988 "idl_camlgen.ml" 85 2914 2995
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  int_ref wrapper "idl_camlgen.ml" 77 2605 2611 "idl_camlgen.ml" 77 2605 2618
+  int_ref wrapper "idl_camlgen.ml" 84 2830 2836 "idl_camlgen.ml" 84 2830 2843
 )
-"idl_camlgen.ml" 78 2689 2705 "idl_camlgen.ml" 78 2689 2770
+"idl_camlgen.ml" 85 2914 2930 "idl_camlgen.ml" 85 2914 2995
 call(
   stack
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"idl_camlgen.ml" 79 2774 2780 "idl_camlgen.ml" 79 2774 2788
+"idl_camlgen.ml" 86 2999 3005 "idl_camlgen.ml" 86 2999 3013
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 87 2986 2988 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 94 3211 3213 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 79 2774 2797 "idl_camlgen.ml" 79 2774 2804
+"idl_camlgen.ml" 86 2999 3022 "idl_camlgen.ml" 86 2999 3029
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  int_ref wrapper "idl_camlgen.ml" 78 2689 2695 "idl_camlgen.ml" 78 2689 2702
+  int_ref wrapper "idl_camlgen.ml" 85 2914 2920 "idl_camlgen.ml" 85 2914 2927
 )
-"idl_camlgen.ml" 80 2811 2817 "idl_camlgen.ml" 80 2811 2819
+"idl_camlgen.ml" 87 3036 3042 "idl_camlgen.ml" 87 3036 3044
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"idl_camlgen.ml" 80 2811 2823 "idl_camlgen.ml" 80 2811 2831
+"idl_camlgen.ml" 87 3036 3048 "idl_camlgen.ml" 87 3036 3056
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 73 2493 2499 "idl_camlgen.ml" 73 2493 2507
+  int_ref str_list "idl_camlgen.ml" 70 2320 2326 "idl_camlgen.ml" 70 2320 2334
 )
-"idl_camlgen.ml" 81 2833 2839 "idl_camlgen.ml" 81 2833 2840
+"idl_camlgen.ml" 88 3058 3064 "idl_camlgen.ml" 88 3058 3065
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"idl_camlgen.ml" 82 2844 2856 "idl_camlgen.ml" 82 2844 2860
+"idl_camlgen.ml" 89 3069 3081 "idl_camlgen.ml" 89 3069 3085
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  def list "idl_camlgen.ml" 83 2900 2910 "idl_camlgen.ml" 83 2900 2947
+  def list "idl_camlgen.ml" 90 3125 3135 "idl_camlgen.ml" 90 3125 3172
 )
-"idl_camlgen.ml" 82 2844 2863 "idl_camlgen.ml" 82 2844 2888
+"idl_camlgen.ml" 89 3069 3088 "idl_camlgen.ml" 89 3069 3113
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list ->
   Camlp4.PreCast.Ast.class_expr
@@ -1226,21 +1072,21 @@ type(
 ident(
   ext_ref MlGen.make_rec_class_expr
 )
-"idl_camlgen.ml" 82 2844 2889 "idl_camlgen.ml" 82 2844 2896
+"idl_camlgen.ml" 89 3069 3114 "idl_camlgen.ml" 89 3069 3121
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  int_ref wrapper "idl_camlgen.ml" 78 2689 2695 "idl_camlgen.ml" 78 2689 2702
+  int_ref wrapper "idl_camlgen.ml" 85 2914 2920 "idl_camlgen.ml" 85 2914 2927
 )
-"idl_camlgen.ml" 82 2844 2863 "idl_camlgen.ml" 82 2844 2896
+"idl_camlgen.ml" 89 3069 3088 "idl_camlgen.ml" 89 3069 3121
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_expr
 )
-"idl_camlgen.ml" 83 2900 2919 "idl_camlgen.ml" 83 2900 2919
+"idl_camlgen.ml" 90 3125 3144 "idl_camlgen.ml" 90 3125 3144
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -1250,516 +1096,508 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 83 2900 2926 "idl_camlgen.ml" 83 2900 2930
+"idl_camlgen.ml" 90 3125 3151 "idl_camlgen.ml" 90 3125 3155
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  int_ref list "idl_camlgen.ml" 82 2844 2856 "idl_camlgen.ml" 82 2844 2860
+  int_ref list "idl_camlgen.ml" 89 3069 3081 "idl_camlgen.ml" 89 3069 3085
 )
-"idl_camlgen.ml" 83 2900 2939 "idl_camlgen.ml" 83 2900 2947
+"idl_camlgen.ml" 90 3125 3164 "idl_camlgen.ml" 90 3125 3172
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 73 2493 2499 "idl_camlgen.ml" 73 2493 2507
+  int_ref str_list "idl_camlgen.ml" 70 2320 2326 "idl_camlgen.ml" 70 2320 2334
 )
-"idl_camlgen.ml" 83 2900 2910 "idl_camlgen.ml" 83 2900 2947
+"idl_camlgen.ml" 90 3125 3135 "idl_camlgen.ml" 90 3125 3172
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 82 2844 2852 "idl_camlgen.ml" 83 2900 2947
+"idl_camlgen.ml" 89 3069 3077 "idl_camlgen.ml" 90 3125 3172
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 79 2774 2791 "idl_camlgen.ml" 83 2900 2947
+"idl_camlgen.ml" 86 2999 3016 "idl_camlgen.ml" 90 3125 3172
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 87 2986 2992 "idl_camlgen.ml" 87 2986 3000
+"idl_camlgen.ml" 94 3211 3217 "idl_camlgen.ml" 94 3211 3225
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 88 3049 3051 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 95 3274 3276 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 87 2986 3004 "idl_camlgen.ml" 87 2986 3025
+"idl_camlgen.ml" 94 3211 3229 "idl_camlgen.ml" 94 3211 3250
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlClass.make_downcast
 )
-"idl_camlgen.ml" 87 2986 3026 "idl_camlgen.ml" 87 2986 3032
+"idl_camlgen.ml" 94 3211 3251 "idl_camlgen.ml" 94 3211 3257
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 87 2986 3004 "idl_camlgen.ml" 87 2986 3032
+"idl_camlgen.ml" 94 3211 3229 "idl_camlgen.ml" 94 3211 3257
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 87 2986 3037 "idl_camlgen.ml" 87 2986 3045
+"idl_camlgen.ml" 94 3211 3262 "idl_camlgen.ml" 94 3211 3270
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 79 2774 2780 "idl_camlgen.ml" 79 2774 2788
+  int_ref str_list "idl_camlgen.ml" 86 2999 3005 "idl_camlgen.ml" 86 2999 3013
 )
-"idl_camlgen.ml" 87 2986 3003 "idl_camlgen.ml" 87 2986 3045
+"idl_camlgen.ml" 94 3211 3228 "idl_camlgen.ml" 94 3211 3270
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 88 3049 3055 "idl_camlgen.ml" 88 3049 3063
+"idl_camlgen.ml" 95 3274 3280 "idl_camlgen.ml" 95 3274 3288
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 91 3134 3136 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 98 3359 3361 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 88 3049 3067 "idl_camlgen.ml" 88 3049 3091
+"idl_camlgen.ml" 95 3274 3292 "idl_camlgen.ml" 95 3274 3316
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlClass.make_instance_of
 )
-"idl_camlgen.ml" 88 3049 3092 "idl_camlgen.ml" 88 3049 3098
+"idl_camlgen.ml" 95 3274 3317 "idl_camlgen.ml" 95 3274 3323
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 88 3049 3067 "idl_camlgen.ml" 88 3049 3098
+"idl_camlgen.ml" 95 3274 3292 "idl_camlgen.ml" 95 3274 3323
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 88 3049 3103 "idl_camlgen.ml" 88 3049 3111
+"idl_camlgen.ml" 95 3274 3328 "idl_camlgen.ml" 95 3274 3336
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 87 2986 2992 "idl_camlgen.ml" 87 2986 3000
+  int_ref str_list "idl_camlgen.ml" 94 3211 3217 "idl_camlgen.ml" 94 3211 3225
 )
-"idl_camlgen.ml" 88 3049 3066 "idl_camlgen.ml" 88 3049 3111
+"idl_camlgen.ml" 95 3274 3291 "idl_camlgen.ml" 95 3274 3336
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 91 3134 3140 "idl_camlgen.ml" 91 3134 3148
+"idl_camlgen.ml" 98 3359 3365 "idl_camlgen.ml" 98 3359 3373
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 94 3230 3232 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 101 3455 3457 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 91 3134 3152 "idl_camlgen.ml" 91 3134 3170
+"idl_camlgen.ml" 98 3359 3377 "idl_camlgen.ml" 98 3359 3395
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlClass.make_array
 )
-"idl_camlgen.ml" 91 3134 3171 "idl_camlgen.ml" 91 3134 3177
+"idl_camlgen.ml" 98 3359 3396 "idl_camlgen.ml" 98 3359 3402
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 91 3134 3152 "idl_camlgen.ml" 91 3134 3177
+"idl_camlgen.ml" 98 3359 3377 "idl_camlgen.ml" 98 3359 3402
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 91 3134 3182 "idl_camlgen.ml" 91 3134 3190
+"idl_camlgen.ml" 98 3359 3407 "idl_camlgen.ml" 98 3359 3415
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 88 3049 3055 "idl_camlgen.ml" 88 3049 3063
+  int_ref str_list "idl_camlgen.ml" 95 3274 3280 "idl_camlgen.ml" 95 3274 3288
 )
-"idl_camlgen.ml" 91 3134 3151 "idl_camlgen.ml" 91 3134 3190
+"idl_camlgen.ml" 98 3359 3376 "idl_camlgen.ml" 98 3359 3415
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 94 3230 3236 "idl_camlgen.ml" 94 3230 3244
+"idl_camlgen.ml" 101 3455 3461 "idl_camlgen.ml" 101 3455 3469
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 95 3303 3305 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 102 3528 3530 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 94 3230 3248 "idl_camlgen.ml" 94 3230 3263
+"idl_camlgen.ml" 101 3455 3473 "idl_camlgen.ml" 101 3455 3488
 type(
   callback:bool -> Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlInit.make_fun
 )
-"idl_camlgen.ml" 94 3230 3274 "idl_camlgen.ml" 94 3230 3279
+"idl_camlgen.ml" 101 3455 3499 "idl_camlgen.ml" 101 3455 3504
 type(
   bool
 )
-"idl_camlgen.ml" 94 3230 3280 "idl_camlgen.ml" 94 3230 3286
+"idl_camlgen.ml" 101 3455 3505 "idl_camlgen.ml" 101 3455 3511
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 94 3230 3248 "idl_camlgen.ml" 94 3230 3286
+"idl_camlgen.ml" 101 3455 3473 "idl_camlgen.ml" 101 3455 3511
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 94 3230 3291 "idl_camlgen.ml" 94 3230 3299
+"idl_camlgen.ml" 101 3455 3516 "idl_camlgen.ml" 101 3455 3524
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 91 3134 3140 "idl_camlgen.ml" 91 3134 3148
+  int_ref str_list "idl_camlgen.ml" 98 3359 3365 "idl_camlgen.ml" 98 3359 3373
 )
-"idl_camlgen.ml" 94 3230 3247 "idl_camlgen.ml" 94 3230 3299
+"idl_camlgen.ml" 101 3455 3472 "idl_camlgen.ml" 101 3455 3524
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 95 3303 3309 "idl_camlgen.ml" 95 3303 3317
+"idl_camlgen.ml" 102 3528 3534 "idl_camlgen.ml" 102 3528 3542
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 98 3408 3410 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 105 3633 3635 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 95 3303 3321 "idl_camlgen.ml" 95 3303 3336
+"idl_camlgen.ml" 102 3528 3546 "idl_camlgen.ml" 102 3528 3561
 type(
   callback:bool -> Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlInit.make_fun
 )
-"idl_camlgen.ml" 95 3303 3347 "idl_camlgen.ml" 95 3303 3351
+"idl_camlgen.ml" 102 3528 3572 "idl_camlgen.ml" 102 3528 3576
 type(
   bool
 )
-"idl_camlgen.ml" 95 3303 3352 "idl_camlgen.ml" 95 3303 3358
+"idl_camlgen.ml" 102 3528 3577 "idl_camlgen.ml" 102 3528 3583
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 95 3303 3321 "idl_camlgen.ml" 95 3303 3358
+"idl_camlgen.ml" 102 3528 3546 "idl_camlgen.ml" 102 3528 3583
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 95 3303 3363 "idl_camlgen.ml" 95 3303 3371
+"idl_camlgen.ml" 102 3528 3588 "idl_camlgen.ml" 102 3528 3596
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 94 3230 3236 "idl_camlgen.ml" 94 3230 3244
+  int_ref str_list "idl_camlgen.ml" 101 3455 3461 "idl_camlgen.ml" 101 3455 3469
 )
-"idl_camlgen.ml" 95 3303 3320 "idl_camlgen.ml" 95 3303 3371
+"idl_camlgen.ml" 102 3528 3545 "idl_camlgen.ml" 102 3528 3596
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 98 3408 3414 "idl_camlgen.ml" 98 3408 3422
+"idl_camlgen.ml" 105 3633 3639 "idl_camlgen.ml" 105 3633 3647
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 99 3483 3485 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 106 3708 3710 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 98 3408 3426 "idl_camlgen.ml" 98 3408 3443
+"idl_camlgen.ml" 105 3633 3651 "idl_camlgen.ml" 105 3633 3668
 type(
   callback:bool -> Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlInit.make_class
 )
-"idl_camlgen.ml" 98 3408 3454 "idl_camlgen.ml" 98 3408 3459
+"idl_camlgen.ml" 105 3633 3679 "idl_camlgen.ml" 105 3633 3684
 type(
   bool
 )
-"idl_camlgen.ml" 98 3408 3460 "idl_camlgen.ml" 98 3408 3466
+"idl_camlgen.ml" 105 3633 3685 "idl_camlgen.ml" 105 3633 3691
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 98 3408 3426 "idl_camlgen.ml" 98 3408 3466
+"idl_camlgen.ml" 105 3633 3651 "idl_camlgen.ml" 105 3633 3691
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 98 3408 3471 "idl_camlgen.ml" 98 3408 3479
+"idl_camlgen.ml" 105 3633 3696 "idl_camlgen.ml" 105 3633 3704
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 95 3303 3309 "idl_camlgen.ml" 95 3303 3317
+  int_ref str_list "idl_camlgen.ml" 102 3528 3534 "idl_camlgen.ml" 102 3528 3542
 )
-"idl_camlgen.ml" 98 3408 3425 "idl_camlgen.ml" 98 3408 3479
+"idl_camlgen.ml" 105 3633 3650 "idl_camlgen.ml" 105 3633 3704
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 99 3483 3489 "idl_camlgen.ml" 99 3483 3497
+"idl_camlgen.ml" 106 3708 3714 "idl_camlgen.ml" 106 3708 3722
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 102 3594 3596 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 109 3819 3821 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 99 3483 3501 "idl_camlgen.ml" 99 3483 3518
+"idl_camlgen.ml" 106 3708 3726 "idl_camlgen.ml" 106 3708 3743
 type(
   callback:bool -> Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlInit.make_class
 )
-"idl_camlgen.ml" 99 3483 3529 "idl_camlgen.ml" 99 3483 3533
+"idl_camlgen.ml" 106 3708 3754 "idl_camlgen.ml" 106 3708 3758
 type(
   bool
 )
-"idl_camlgen.ml" 99 3483 3534 "idl_camlgen.ml" 99 3483 3540
+"idl_camlgen.ml" 106 3708 3759 "idl_camlgen.ml" 106 3708 3765
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 99 3483 3501 "idl_camlgen.ml" 99 3483 3540
+"idl_camlgen.ml" 106 3708 3726 "idl_camlgen.ml" 106 3708 3765
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 99 3483 3545 "idl_camlgen.ml" 99 3483 3553
+"idl_camlgen.ml" 106 3708 3770 "idl_camlgen.ml" 106 3708 3778
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 98 3408 3414 "idl_camlgen.ml" 98 3408 3422
+  int_ref str_list "idl_camlgen.ml" 105 3633 3639 "idl_camlgen.ml" 105 3633 3647
 )
-"idl_camlgen.ml" 99 3483 3500 "idl_camlgen.ml" 99 3483 3553
+"idl_camlgen.ml" 106 3708 3725 "idl_camlgen.ml" 106 3708 3778
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 102 3594 3600 "idl_camlgen.ml" 102 3594 3608
+"idl_camlgen.ml" 109 3819 3825 "idl_camlgen.ml" 109 3819 3833
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def str_list "idl_camlgen.ml" 104 3657 3659 "idl_camlgen.ml" 104 3657 3676
+  def str_list "idl_camlgen.ml" 111 3882 3884 "idl_camlgen.ml" 111 3882 3901
 )
-"idl_camlgen.ml" 102 3594 3612 "idl_camlgen.ml" 102 3594 3632
+"idl_camlgen.ml" 109 3819 3837 "idl_camlgen.ml" 109 3819 3857
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref MlMethod.make_static
 )
-"idl_camlgen.ml" 102 3594 3633 "idl_camlgen.ml" 102 3594 3639
+"idl_camlgen.ml" 109 3819 3858 "idl_camlgen.ml" 109 3819 3864
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 49 1660 1675
+  int_ref c_file "idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 52 1741 1756
 )
-"idl_camlgen.ml" 102 3594 3612 "idl_camlgen.ml" 102 3594 3639
+"idl_camlgen.ml" 109 3819 3837 "idl_camlgen.ml" 109 3819 3864
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"idl_camlgen.ml" 102 3594 3644 "idl_camlgen.ml" 102 3594 3652
+"idl_camlgen.ml" 109 3819 3869 "idl_camlgen.ml" 109 3819 3877
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 99 3483 3489 "idl_camlgen.ml" 99 3483 3497
+  int_ref str_list "idl_camlgen.ml" 106 3708 3714 "idl_camlgen.ml" 106 3708 3722
 )
-"idl_camlgen.ml" 102 3594 3611 "idl_camlgen.ml" 102 3594 3652
+"idl_camlgen.ml" 109 3819 3836 "idl_camlgen.ml" 109 3819 3877
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 104 3657 3659 "idl_camlgen.ml" 104 3657 3667
+"idl_camlgen.ml" 111 3882 3884 "idl_camlgen.ml" 111 3882 3892
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
   ext_ref List.rev
 )
-"idl_camlgen.ml" 104 3657 3668 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 111 3882 3893 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref str_list "idl_camlgen.ml" 102 3594 3600 "idl_camlgen.ml" 102 3594 3608
+  int_ref str_list "idl_camlgen.ml" 109 3819 3825 "idl_camlgen.ml" 109 3819 3833
 )
-"idl_camlgen.ml" 104 3657 3659 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 111 3882 3884 "idl_camlgen.ml" 111 3882 3901
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 102 3594 3596 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 109 3819 3821 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 99 3483 3485 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 106 3708 3710 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 98 3408 3410 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 105 3633 3635 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 95 3303 3305 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 102 3528 3530 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 94 3230 3232 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 101 3455 3457 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 91 3134 3136 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 98 3359 3361 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 88 3049 3051 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 95 3274 3276 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 87 2986 2988 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 94 3211 3213 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 79 2774 2776 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 86 2999 3001 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 78 2689 2691 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 85 2914 2916 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 77 2605 2607 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 84 2830 2832 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 76 2583 2585 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 83 2808 2810 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 73 2493 2495 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 70 2320 2322 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 72 2433 2435 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 69 2252 2254 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 69 2334 2336 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 65 2099 2101 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 68 2270 2272 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 64 2030 2032 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 63 2099 2101 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 61 1946 1948 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 62 2031 2033 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 58 1873 1875 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 58 1878 1880 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 57 1819 1821 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 57 1809 1811 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 54 1762 1764 "idl_camlgen.ml" 111 3882 3901
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 54 1725 1727 "idl_camlgen.ml" 104 3657 3676
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-"idl_camlgen.ml" 51 1681 1683 "idl_camlgen.ml" 104 3657 3676
-type(
-  Camlp4.PreCast.Ast.str_item list
-)
-"idl_camlgen.ml" 49 1660 1669 "idl_camlgen.ml" 104 3657 3676
+"idl_camlgen.ml" 52 1741 1750 "idl_camlgen.ml" 111 3882 3901
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 106 3678 3682 "idl_camlgen.ml" 106 3678 3688
+"idl_camlgen.ml" 113 3903 3907 "idl_camlgen.ml" 113 3903 3913
 type(
   Cidl.clazz list -> unit
 )
 ident(
-  def output "idl_camlgen.ml" 110 3845 3845 "_none_" 1 0 -1
+  def output "idl_camlgen.ml" 117 4070 4070 "_none_" 1 0 -1
 )
-"idl_camlgen.ml" 106 3678 3689 "idl_camlgen.ml" 106 3678 3695
+"idl_camlgen.ml" 113 3903 3914 "idl_camlgen.ml" 113 3903 3920
 type(
   Cidl.clazz list
 )
 ident(
-  def c_file "idl_camlgen.ml" 107 3698 3700 "idl_camlgen.ml" 108 3730 3795
+  def c_file "idl_camlgen.ml" 114 3923 3925 "idl_camlgen.ml" 115 3955 4020
 )
-"idl_camlgen.ml" 107 3698 3704 "idl_camlgen.ml" 107 3698 3712
+"idl_camlgen.ml" 114 3923 3929 "idl_camlgen.ml" 114 3923 3937
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def ast_list "idl_camlgen.ml" 108 3730 3732 "idl_camlgen.ml" 108 3730 3795
+  def ast_list "idl_camlgen.ml" 115 3955 3957 "idl_camlgen.ml" 115 3955 4020
 )
-"idl_camlgen.ml" 107 3698 3715 "idl_camlgen.ml" 107 3698 3719
+"idl_camlgen.ml" 114 3923 3940 "idl_camlgen.ml" 114 3923 3944
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref make "idl_camlgen.ml" 49 1660 1664 "idl_camlgen.ml" 49 1660 1668
+  int_ref make "idl_camlgen.ml" 52 1741 1745 "idl_camlgen.ml" 52 1741 1749
 )
-"idl_camlgen.ml" 107 3698 3720 "idl_camlgen.ml" 107 3698 3726
+"idl_camlgen.ml" 114 3923 3945 "idl_camlgen.ml" 114 3923 3951
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 106 3678 3689 "idl_camlgen.ml" 106 3678 3695
+  int_ref c_file "idl_camlgen.ml" 113 3903 3914 "idl_camlgen.ml" 113 3903 3920
 )
-"idl_camlgen.ml" 107 3698 3715 "idl_camlgen.ml" 107 3698 3726
+"idl_camlgen.ml" 114 3923 3940 "idl_camlgen.ml" 114 3923 3951
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"idl_camlgen.ml" 108 3730 3732 "idl_camlgen.ml" 108 3730 3741
+"idl_camlgen.ml" 115 3955 3957 "idl_camlgen.ml" 115 3955 3966
 type(
   (Camlp4.PreCast.Ast.str_item -> unit) ->
   Camlp4.PreCast.Ast.str_item list -> unit
@@ -1767,14 +1605,14 @@ type(
 ident(
   ext_ref List.iter
 )
-"idl_camlgen.ml" 108 3730 3747 "idl_camlgen.ml" 108 3730 3750
+"idl_camlgen.ml" 115 3955 3972 "idl_camlgen.ml" 115 3955 3975
 type(
   Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def ast "idl_camlgen.ml" 108 3730 3754 "idl_camlgen.ml" 108 3730 3785
+  def ast "idl_camlgen.ml" 115 3955 3979 "idl_camlgen.ml" 115 3955 4010
 )
-"idl_camlgen.ml" 108 3730 3754 "idl_camlgen.ml" 108 3730 3781
+"idl_camlgen.ml" 115 3955 3979 "idl_camlgen.ml" 115 3955 4006
 type(
   ?input_file:string ->
   ?output_file:string -> Camlp4.PreCast.Ast.str_item -> unit
@@ -1782,89 +1620,89 @@ type(
 ident(
   ext_ref Camlp4.PreCast.Printers.OCaml.print_implem
 )
-"idl_camlgen.ml" 108 3730 3782 "idl_camlgen.ml" 108 3730 3785
+"idl_camlgen.ml" 115 3955 4007 "idl_camlgen.ml" 115 3955 4010
 type(
   Camlp4.PreCast.Ast.str_item
 )
 ident(
-  int_ref ast "idl_camlgen.ml" 108 3730 3747 "idl_camlgen.ml" 108 3730 3750
+  int_ref ast "idl_camlgen.ml" 115 3955 3972 "idl_camlgen.ml" 115 3955 3975
 )
-"idl_camlgen.ml" 108 3730 3754 "idl_camlgen.ml" 108 3730 3785
+"idl_camlgen.ml" 115 3955 3979 "idl_camlgen.ml" 115 3955 4010
 call(
   tail
 )
 type(
   unit
 )
-"idl_camlgen.ml" 108 3730 3747 "idl_camlgen.ml" 108 3730 3785
+"idl_camlgen.ml" 115 3955 3972 "idl_camlgen.ml" 115 3955 4010
 type(
   Camlp4.PreCast.Ast.str_item -> unit
 )
-"idl_camlgen.ml" 108 3730 3787 "idl_camlgen.ml" 108 3730 3795
+"idl_camlgen.ml" 115 3955 4012 "idl_camlgen.ml" 115 3955 4020
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref ast_list "idl_camlgen.ml" 107 3698 3704 "idl_camlgen.ml" 107 3698 3712
+  int_ref ast_list "idl_camlgen.ml" 114 3923 3929 "idl_camlgen.ml" 114 3923 3937
 )
-"idl_camlgen.ml" 108 3730 3732 "idl_camlgen.ml" 108 3730 3795
+"idl_camlgen.ml" 115 3955 3957 "idl_camlgen.ml" 115 3955 4020
 call(
   tail
 )
 type(
   unit
 )
-"idl_camlgen.ml" 107 3698 3700 "idl_camlgen.ml" 108 3730 3795
+"idl_camlgen.ml" 114 3923 3925 "idl_camlgen.ml" 115 3955 4020
 type(
   unit
 )
-"idl_camlgen.ml" 106 3678 3689 "idl_camlgen.ml" 108 3730 3795
+"idl_camlgen.ml" 113 3903 3914 "idl_camlgen.ml" 115 3955 4020
 type(
   Cidl.clazz list -> unit
 )
-"idl_camlgen.ml" 110 3845 3849 "idl_camlgen.ml" 110 3845 3859
+"idl_camlgen.ml" 117 4070 4074 "idl_camlgen.ml" 117 4070 4084
 type(
   Cidl.clazz list -> unit
 )
 ident(
-  def output_sig "idl_camlgen.ml" 112 3905 3970 "_none_" 1 0 -1
+  def output_sig "idl_camlgen.ml" 119 4130 4195 "_none_" 1 0 -1
 )
-"idl_camlgen.ml" 110 3845 3860 "idl_camlgen.ml" 110 3845 3866
+"idl_camlgen.ml" 117 4070 4085 "idl_camlgen.ml" 117 4070 4091
 type(
   Cidl.clazz list
 )
 ident(
-  def c_file "idl_camlgen.ml" 111 3869 3871 "idl_camlgen.ml" 112 3905 3970
+  def c_file "idl_camlgen.ml" 118 4094 4096 "idl_camlgen.ml" 119 4130 4195
 )
-"idl_camlgen.ml" 111 3869 3875 "idl_camlgen.ml" 111 3869 3883
+"idl_camlgen.ml" 118 4094 4100 "idl_camlgen.ml" 118 4094 4108
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def ast_list "idl_camlgen.ml" 112 3905 3907 "idl_camlgen.ml" 112 3905 3970
+  def ast_list "idl_camlgen.ml" 119 4130 4132 "idl_camlgen.ml" 119 4130 4195
 )
-"idl_camlgen.ml" 111 3869 3886 "idl_camlgen.ml" 111 3869 3894
+"idl_camlgen.ml" 118 4094 4111 "idl_camlgen.ml" 118 4094 4119
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   int_ref make_sig "idl_camlgen.ml" 8 118 122 "idl_camlgen.ml" 8 118 130
 )
-"idl_camlgen.ml" 111 3869 3895 "idl_camlgen.ml" 111 3869 3901
+"idl_camlgen.ml" 118 4094 4120 "idl_camlgen.ml" 118 4094 4126
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref c_file "idl_camlgen.ml" 110 3845 3860 "idl_camlgen.ml" 110 3845 3866
+  int_ref c_file "idl_camlgen.ml" 117 4070 4085 "idl_camlgen.ml" 117 4070 4091
 )
-"idl_camlgen.ml" 111 3869 3886 "idl_camlgen.ml" 111 3869 3901
+"idl_camlgen.ml" 118 4094 4111 "idl_camlgen.ml" 118 4094 4126
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"idl_camlgen.ml" 112 3905 3907 "idl_camlgen.ml" 112 3905 3916
+"idl_camlgen.ml" 119 4130 4132 "idl_camlgen.ml" 119 4130 4141
 type(
   (Camlp4.PreCast.Ast.sig_item -> unit) ->
   Camlp4.PreCast.Ast.sig_item list -> unit
@@ -1872,14 +1710,14 @@ type(
 ident(
   ext_ref List.iter
 )
-"idl_camlgen.ml" 112 3905 3922 "idl_camlgen.ml" 112 3905 3925
+"idl_camlgen.ml" 119 4130 4147 "idl_camlgen.ml" 119 4130 4150
 type(
   Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def ast "idl_camlgen.ml" 112 3905 3929 "idl_camlgen.ml" 112 3905 3960
+  def ast "idl_camlgen.ml" 119 4130 4154 "idl_camlgen.ml" 119 4130 4185
 )
-"idl_camlgen.ml" 112 3905 3929 "idl_camlgen.ml" 112 3905 3956
+"idl_camlgen.ml" 119 4130 4154 "idl_camlgen.ml" 119 4130 4181
 type(
   ?input_file:string ->
   ?output_file:string -> Camlp4.PreCast.Ast.sig_item -> unit
@@ -1887,43 +1725,43 @@ type(
 ident(
   ext_ref Camlp4.PreCast.Printers.OCaml.print_interf
 )
-"idl_camlgen.ml" 112 3905 3957 "idl_camlgen.ml" 112 3905 3960
+"idl_camlgen.ml" 119 4130 4182 "idl_camlgen.ml" 119 4130 4185
 type(
   Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  int_ref ast "idl_camlgen.ml" 112 3905 3922 "idl_camlgen.ml" 112 3905 3925
+  int_ref ast "idl_camlgen.ml" 119 4130 4147 "idl_camlgen.ml" 119 4130 4150
 )
-"idl_camlgen.ml" 112 3905 3929 "idl_camlgen.ml" 112 3905 3960
+"idl_camlgen.ml" 119 4130 4154 "idl_camlgen.ml" 119 4130 4185
 call(
   tail
 )
 type(
   unit
 )
-"idl_camlgen.ml" 112 3905 3922 "idl_camlgen.ml" 112 3905 3960
+"idl_camlgen.ml" 119 4130 4147 "idl_camlgen.ml" 119 4130 4185
 type(
   Camlp4.PreCast.Ast.sig_item -> unit
 )
-"idl_camlgen.ml" 112 3905 3962 "idl_camlgen.ml" 112 3905 3970
+"idl_camlgen.ml" 119 4130 4187 "idl_camlgen.ml" 119 4130 4195
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref ast_list "idl_camlgen.ml" 111 3869 3875 "idl_camlgen.ml" 111 3869 3883
+  int_ref ast_list "idl_camlgen.ml" 118 4094 4100 "idl_camlgen.ml" 118 4094 4108
 )
-"idl_camlgen.ml" 112 3905 3907 "idl_camlgen.ml" 112 3905 3970
+"idl_camlgen.ml" 119 4130 4132 "idl_camlgen.ml" 119 4130 4195
 call(
   tail
 )
 type(
   unit
 )
-"idl_camlgen.ml" 111 3869 3871 "idl_camlgen.ml" 112 3905 3970
+"idl_camlgen.ml" 118 4094 4096 "idl_camlgen.ml" 119 4130 4195
 type(
   unit
 )
-"idl_camlgen.ml" 110 3845 3860 "idl_camlgen.ml" 112 3905 3970
+"idl_camlgen.ml" 117 4070 4085 "idl_camlgen.ml" 119 4130 4195
 type(
   Cidl.clazz list -> unit
 )

@@ -5,12 +5,19 @@ open Cidl
 open Camlp4.PreCast
 let _loc = Loc.ghost
 
-(** type JNI **********************************************)
+(** type top et exception *)
+let make_top () =
+    let jinst = "java'lang'Object" in
+    <:str_item< type top =java_instance $lid:jinst$ >>
+let make_exc () =
+    <:str_item< exception Null_object of string >>
+
+(** type JNI **********************************************) (* OK *)
 let make_jni_type cl_list =
   let make cl = 
-    let inst = Ident.get_class_java_oj_name cl.cc_ident in
+    let jinst = Ident.get_class_java_oj_name cl.cc_ident in
     let name = Ident.get_class_ml_jni_type_name cl.cc_ident in
-    <:str_item< type $lid:name$ = $str:inst$ >> in
+    <:str_item< type $lid:name$ =java_instance $lid:jinst$ >> in
   P4helper.str_items (List.map make cl_list)
 
 let make_jni_type_sig cl_list =
@@ -57,7 +64,7 @@ let make_class_type ~callback cl_list =
       if callback then
 	<:class_sig_item< inherit JniHierarchy.top >> :: method_list 
       else (match cl.cc_extend with
-	None -> <:class_sig_item< inherit JniHierarchy.top >>
+	None -> <:class_sig_item< >>
       | Some super -> <:class_sig_item< inherit $lid:Ident.get_class_ml_name super.cc_ident$ >>) :: method_list
     in
     
@@ -109,7 +116,7 @@ let make_wrapper ~callback cl_list =
     let class_decl = [] in
 
     (* méthode hérité *)
-    let class_decl = 
+    (*let class_decl = 
         (*   if callback then *)
       <:class_str_item< inherit JniHierarchy.top $lid:java_obj$ >> :: class_decl 
         (* else (match cl.cc_extend with
@@ -117,12 +124,12 @@ let make_wrapper ~callback cl_list =
 	   | Some super -> 
 	   let super_name = Ident.get_class_ml_wrapper_name super.cc_ident in
 	   <:class_str_item< inherit $lid:super_name$ $lid:java_obj$ >>) :: class_decl *) 
-    in
+    in*)
     let class_decl = 
       (* if callback then   *)
         (* TODO downcast jni *)  
 	List.fold_right (fun cl class_decl -> 
-	  <:class_str_item< method $lid:Ident.get_class_ml_jni_accessor_method_name cl.cc_ident$ = $lid:java_obj$ >> 
+	  <:class_str_item< method $lid:Ident.get_class_ml_jni_accessor_method_name cl.cc_ident$ = ( $lid:java_obj$ :> $lid:Ident.get_class_ml_jni_type_name cl.cc_ident$ ) >> 
 	    :: class_decl)  cl.cc_all_inherited class_decl 
 	(* else List.rev_append 
 	   (List.map (fun interface -> let interface_name = Ident.get_class_ml_wrapper_name interface.cc_ident in 

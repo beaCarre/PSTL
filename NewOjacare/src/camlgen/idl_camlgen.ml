@@ -8,6 +8,9 @@ let _loc = Loc.ghost
 let make_sig c_file = 
  
   let sig_list = [] in
+  
+  (** type top *)
+  let sig_list = <:sig_item< type top >> :: sig_list in
 
   (** Type jni abstrait *)
   let sig_list = (MlClass.make_jni_type_sig c_file) :: sig_list in
@@ -22,14 +25,14 @@ let make_sig c_file =
   let sig_list = match class_type with 
   | [] -> sig_list 
   | list -> <:sig_item< class type $MlGen.make_rec_class_type class_type$ >> :: sig_list in
-  
+  (*
   (** downcast 'utilisateur' *)
   let sig_list = (MlClass.make_downcast_sig c_file) :: sig_list in
   let sig_list = (MlClass.make_instance_of_sig c_file) :: sig_list in
   
   (** Tableaux *)
   let sig_list = (MlClass.make_array_sig c_file) :: sig_list in
-  
+  *)
   (** classe de construction ("utilisateur") *)
   let sig_list = (MlInit.make_class_sig ~callback:false c_file) :: sig_list in
   let sig_list = (MlInit.make_class_sig ~callback:true c_file) :: sig_list in
@@ -50,6 +53,10 @@ let make c_file =
   
   let str_list = [] in
   
+  (** type top et exception *)
+  let str_list = (MlClass.make_top ()) :: str_list in
+  let str_list = (MlClass.make_exc ()) :: str_list in
+
   (** Type jni *)
   let str_list = (MlClass.make_jni_type c_file) :: str_list in
 
@@ -63,7 +70,7 @@ let make c_file =
   let str_list = match class_type with 
   | [] -> str_list 
   | list -> <:str_item< class type $MlGen.make_rec_class_type class_type$ >> :: str_list in
-
+(*
   (** cast JNI *)
   let str_list = (MlClass.make_jniupcast c_file) :: str_list in
   let str_list = (MlClass.make_jnidowncast c_file):: str_list in 
@@ -71,7 +78,7 @@ let make c_file =
   (** fonction d'allocations *)
   let str_list = (MlClass.make_alloc c_file) :: str_list in
   let str_list = (MlClass.make_alloc_stub c_file) :: str_list in
-
+*)
   (** capsule/souche *)
   let wrapper = [] in
   let wrapper = List.append (MlClass.make_wrapper ~callback:true c_file) wrapper in

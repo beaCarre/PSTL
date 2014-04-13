@@ -1,9 +1,10 @@
-type _jni_jPoint = Jni.obj;;
-type _jni_jColored = Jni.obj;;
-type _jni_jColoredPoint = Jni.obj;;
+type top = java'lang'Object java_instance;;
+exception Null_object of string;;
+type _jni_jPoint = mypack'Point java_instance;;
+type _jni_jColored = mypack'Colored java_instance;;
+type _jni_jColoredPoint = mypack'ColoredPoint java_instance;;
 class type jPoint =
   object
-    inherit JniHierarchy.top
     method _get_jni_jPoint : _jni_jPoint
     method set_x : int -> unit
     method get_x : unit -> int
@@ -18,7 +19,6 @@ class type jPoint =
   end
 and jColored =
   object
-    inherit JniHierarchy.top
     method _get_jni_jColored : _jni_jColored
     method getColor : unit -> string
     method setColor : string -> unit
@@ -30,46 +30,6 @@ and jColoredPoint =
     method _get_jni_jColoredPoint : _jni_jColoredPoint
     method eq_colored_point : jColoredPoint -> bool
   end;;
-let __jni_obj_of_jni_jPoint (java_obj : _jni_jPoint) =
-  (Obj.magic : _jni_jPoint -> Jni.obj) java_obj;;
-let __jni_obj_of_jni_jColored (java_obj : _jni_jColored) =
-  (Obj.magic : _jni_jColored -> Jni.obj) java_obj;;
-let __jni_obj_of_jni_jColoredPoint (java_obj : _jni_jColoredPoint) =
-  (Obj.magic : _jni_jColoredPoint -> Jni.obj) java_obj;;
-let __jni_jPoint_of_jni_obj =
-  let clazz =
-    try Jni.find_class "mypack/Point"
-    with | _ -> failwith "Class not found : mypack.Point."
-  in
-    fun (java_obj : Jni.obj) ->
-      if not (Jni.is_instance_of java_obj clazz)
-      then failwith "``cast error'' : jPoint (mypack/Point)"
-      else (Obj.magic java_obj : _jni_jPoint);;
-let __jni_jColored_of_jni_obj =
-  let clazz =
-    try Jni.find_class "mypack/Colored"
-    with | _ -> failwith "Class not found : mypack.Colored."
-  in
-    fun (java_obj : Jni.obj) ->
-      if not (Jni.is_instance_of java_obj clazz)
-      then failwith "``cast error'' : jColored (mypack/Colored)"
-      else (Obj.magic java_obj : _jni_jColored);;
-let __jni_jColoredPoint_of_jni_obj =
-  let clazz =
-    try Jni.find_class "mypack/ColoredPoint"
-    with | _ -> failwith "Class not found : mypack.ColoredPoint."
-  in
-    fun (java_obj : Jni.obj) ->
-      if not (Jni.is_instance_of java_obj clazz)
-      then failwith "``cast error'' : jColoredPoint (mypack/ColoredPoint)"
-      else (Obj.magic java_obj : _jni_jColoredPoint);;
-let _alloc_jPoint =
-  let clazz = Jni.find_class "mypack/Point"
-  in fun () -> (Jni.alloc_object clazz : _jni_jPoint);;
-let _alloc_jColoredPoint =
-  let clazz = Jni.find_class "mypack/ColoredPoint"
-  in fun () -> (Jni.alloc_object clazz : _jni_jColoredPoint);;
-
 class _capsule_jPoint =
   let clazz = Jni.find_class "mypack/Point"
   in
@@ -139,35 +99,28 @@ class _capsule_jPoint =
                           method eq =
                             fun (_p0 : jPoint) ->
                               let _p0 = _p0#_get_jni_jPoint
-                              in
-                                Jni.call_boolean_method jni_ref __mid_eq
-                                  [| Jni.Obj _p0 |]
+                              in Java.call jni_ref __mid_eq [| Jni.Obj _p0 |]
                           method distance =
-                            fun () ->
-                              Jni.call_double_method jni_ref __mid_distance
-                                [|  |]
+                            fun () -> Java.call jni_ref __mid_distance [|  |]
                           method display =
-                            fun () ->
-                              Jni.call_void_method jni_ref __mid_display
-                                [|  |]
+                            fun () -> Java.call jni_ref __mid_display [|  |]
                           method toString =
                             fun () ->
                               Jni.string_from_java
-                                (Jni.call_object_method jni_ref
-                                   __mid_toString [|  |])
+                                (Java.call jni_ref __mid_toString [|  |])
                           method rmoveto =
                             fun _p0 _p1 ->
                               let _p1 = _p1 in
                               let _p0 = _p0
                               in
-                                Jni.call_void_method jni_ref __mid_rmoveto
+                                Java.call jni_ref __mid_rmoveto
                                   [| Jni.Camlint _p0; Jni.Camlint _p1 |]
                           method moveto =
                             fun _p0 _p1 ->
                               let _p1 = _p1 in
                               let _p0 = _p0
                               in
-                                Jni.call_void_method jni_ref __mid_moveto
+                                Java.call jni_ref __mid_moveto
                                   [| Jni.Camlint _p0; Jni.Camlint _p1 |]
                           method set_y =
                             fun _p ->
@@ -182,7 +135,6 @@ class _capsule_jPoint =
                           method get_x =
                             fun () -> Jni.get_camlint_field jni_ref __fid_x
                           method _get_jni_jPoint = jni_ref
-                          inherit JniHierarchy.top jni_ref
                         end
 and _capsule_jColored = let clazz = Jni.find_class "mypack/Colored"
   in
@@ -210,15 +162,12 @@ and _capsule_jColored = let clazz = Jni.find_class "mypack/Colored"
               method setColor =
                 fun _p0 ->
                   let _p0 = Jni.string_to_java _p0
-                  in
-                    Jni.call_void_method jni_ref __mid_setColor
-                      [| Jni.Obj _p0 |]
+                  in Java.call jni_ref __mid_setColor [| Jni.Obj _p0 |]
               method getColor =
                 fun () ->
                   Jni.string_from_java
-                    (Jni.call_object_method jni_ref __mid_getColor [|  |])
+                    (Java.call jni_ref __mid_getColor [|  |])
               method _get_jni_jColored = jni_ref
-              inherit JniHierarchy.top jni_ref
             end
 and _capsule_jColoredPoint = let clazz = Jni.find_class "mypack/ColoredPoint"
   in
@@ -331,46 +280,45 @@ and _capsule_jColoredPoint = let clazz = Jni.find_class "mypack/ColoredPoint"
                                       fun (_p0 : jColoredPoint) ->
                                         let _p0 = _p0#_get_jni_jColoredPoint
                                         in
-                                          Jni.call_boolean_method jni_ref
+                                          Java.call jni_ref
                                             __mid_eq_colored_point
                                             [| Jni.Obj _p0 |]
                                     method setColor =
                                       fun _p0 ->
                                         let _p0 = Jni.string_to_java _p0
                                         in
-                                          Jni.call_void_method jni_ref
-                                            __mid_setColor [| Jni.Obj _p0 |]
+                                          Java.call jni_ref __mid_setColor
+                                            [| Jni.Obj _p0 |]
                                     method getColor =
                                       fun () ->
                                         Jni.string_from_java
-                                          (Jni.call_object_method jni_ref
-                                             __mid_getColor [|  |])
+                                          (Java.call jni_ref __mid_getColor
+                                             [|  |])
                                     method eq =
                                       fun (_p0 : jPoint) ->
                                         let _p0 = _p0#_get_jni_jPoint
                                         in
-                                          Jni.call_boolean_method jni_ref
-                                            __mid_eq [| Jni.Obj _p0 |]
+                                          Java.call jni_ref __mid_eq
+                                            [| Jni.Obj _p0 |]
                                     method distance =
                                       fun () ->
-                                        Jni.call_double_method jni_ref
-                                          __mid_distance [|  |]
+                                        Java.call jni_ref __mid_distance
+                                          [|  |]
                                     method display =
                                       fun () ->
-                                        Jni.call_void_method jni_ref
-                                          __mid_display [|  |]
+                                        Java.call jni_ref __mid_display
+                                          [|  |]
                                     method toString =
                                       fun () ->
                                         Jni.string_from_java
-                                          (Jni.call_object_method jni_ref
-                                             __mid_toString [|  |])
+                                          (Java.call jni_ref __mid_toString
+                                             [|  |])
                                     method rmoveto =
                                       fun _p0 _p1 ->
                                         let _p1 = _p1 in
                                         let _p0 = _p0
                                         in
-                                          Jni.call_void_method jni_ref
-                                            __mid_rmoveto
+                                          Java.call jni_ref __mid_rmoveto
                                             [| Jni.Camlint _p0;
                                               Jni.Camlint _p1
                                             |]
@@ -379,8 +327,7 @@ and _capsule_jColoredPoint = let clazz = Jni.find_class "mypack/ColoredPoint"
                                         let _p1 = _p1 in
                                         let _p0 = _p0
                                         in
-                                          Jni.call_void_method jni_ref
-                                            __mid_moveto
+                                          Java.call jni_ref __mid_moveto
                                             [| Jni.Camlint _p0;
                                               Jni.Camlint _p1
                                             |]
@@ -403,9 +350,10 @@ and _capsule_jColoredPoint = let clazz = Jni.find_class "mypack/ColoredPoint"
                                       fun () ->
                                         Jni.get_camlint_field jni_ref __fid_x
                                     method _get_jni_jColoredPoint = jni_ref
-                                    method _get_jni_jPoint = jni_ref
-                                    method _get_jni_jColored = jni_ref
-                                    inherit JniHierarchy.top jni_ref
+                                    method _get_jni_jPoint =
+                                      (jni_ref :> _jni_jPoint)
+                                    method _get_jni_jColored =
+                                      (jni_ref :> _jni_jColored)
                                   end;;
 let jPoint_of_top (o : JniHierarchy.top) : jPoint =
   new _capsule_jPoint (__jni_jPoint_of_jni_obj o#_get_jniobj);;

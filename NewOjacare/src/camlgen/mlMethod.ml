@@ -57,15 +57,15 @@ let make_dyn clazz java_obj ~callback m_list =
 	  let args = List.map2 (fun i t -> ("_p"^string_of_int i),t) 
 	      (Utilities.interval 0 (List.length targs)) targs in
 	  let jargs = List.map (fun (narg,targ) -> 
-
-	    <:expr< $id:MlType.constructor_of_type targ$ $lid:narg$  >>) args in
+	    
+	    <:expr< (*$id:MlType.constructor_of_type targ$*) $lid:narg$  >>) args in
 
           (* construction du corps de la méthode *)
 	  let body = 
 	    if not callback then
-	      <:expr< $id:call_method$ $lid:java_obj$ $lid:id$ [| $list:jargs$ |] >> 
+	      <:expr< Java.call $lid:java_obj$ $lid:id$ $lid:jargs$ >> 
 	    else
-	      <:expr< $id:call_method$ $lid:java_obj$ $lid:clazz$ $lid:id$ [| $list:jargs$ |] >> in
+	      <:expr< Java.call $lid:java_obj$ $lid:clazz$ $lid:id$ $lid:jargs$  >> in
 	  let body = MlType.convert_from_java rtyp body in
 	  let body = MlGen.make_local_decl (MlType.get_args_convertion MlType.convert_to_java args) body in
 	  let body = MlGen.make_fun args body in

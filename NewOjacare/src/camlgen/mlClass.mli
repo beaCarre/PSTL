@@ -1,5 +1,7 @@
 open Camlp4.PreCast
 
+val make_top: unit -> Ast.str_item
+val make_exc: unit -> Ast.str_item
 val make_jni_type: Cidl.clazz list -> Ast.str_item
 val make_jni_type_sig: Cidl.clazz list -> Ast.sig_item
 (** Génère l'ast correspondant à la déclaration du type JNI de la classe *)

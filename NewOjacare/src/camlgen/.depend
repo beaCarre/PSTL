@@ -8,8 +8,10 @@ idl_camlgen.cmo : mlMethod.cmi mlInit.cmi mlGen.cmi mlClass.cmi \
     ../check/cidl.cmi idl_camlgen.cmi
 idl_camlgen.cmx : mlMethod.cmx mlInit.cmx mlGen.cmx mlClass.cmx \
     ../check/cidl.cmi idl_camlgen.cmi
-mlClass.cmo : mlClass.cmi
-mlClass.cmx : mlClass.cmi
+mlClass.cmo : p4helper.cmo mlMethod.cmi mlGen.cmi ../check/ident.cmi \
+    ../check/cidl.cmi mlClass.cmi
+mlClass.cmx : p4helper.cmx mlMethod.cmx mlGen.cmx ../check/ident.cmx \
+    ../check/cidl.cmi mlClass.cmi
 mlField.cmo : ../check/cidl.cmi
 mlField.cmx : ../check/cidl.cmi
 mlGen.cmo : p4helper.cmo mlType.cmi ../check/ident.cmi ../check/cidl.cmi \

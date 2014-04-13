@@ -25,6 +25,8 @@ val compare_clazz: clazz -> clazz -> int
 val compare_method: mmethod -> mmethod -> int
 
 (* commmun camlgen javagen*)
+val get_class_java_oj_name: clazz -> string
+val get_class_java_jinst_name: clazz -> string
 val get_class_java_qualified_name: clazz -> string
 val get_class_java_stub_name: clazz -> string
 val get_class_java_qualified_stub_name: clazz -> string
