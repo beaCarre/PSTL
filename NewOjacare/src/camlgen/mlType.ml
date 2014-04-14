@@ -13,7 +13,7 @@ let string_of_type t =
   | Cbyte -> "byte"
   | Cshort -> "short"
   | Cint -> "int"
-  | Ccamlint -> "camlint"
+  | Ccamlint -> "int"
   | Clong -> "long"
   | Cfloat -> "float"
   | Cdouble -> "double"
@@ -38,22 +38,23 @@ let constructor_of_type t =
     | Cvoid -> invalid_arg "constructor_of_type"
   $>>
   
+(** java_type *)
 let rec java_signature_of_type t = 
   match t with
-    Cvoid -> "V"
-  | Cboolean -> "Z"
-  | Cbyte -> "B"
-  | Cchar -> "C"
-  | Cshort -> "S"
-  | Ccamlint -> "I"
-  | Cint -> "I"
-  | Clong -> "J"
-  | Cfloat -> "F"
-  | Cdouble -> "D"
-  | Ccallback _ -> "Lfr/inria/caml/camljava/Callback;"
-  | Cobject Ctop -> "Ljava/lang/Object;"
-  | Cobject Cstring -> "Ljava/lang/String;"
-  | Cobject (Cname id) -> "L"^(Ident.get_class_java_signature id)^";"
+    Cvoid -> "void"
+  | Cboolean -> "boolean"
+  | Cbyte -> "byte"
+  | Cchar -> "char"
+  | Cshort -> "short"
+  | Ccamlint -> "int"
+  | Cint -> "int"
+  | Clong -> "long"
+  | Cfloat -> "float"
+  | Cdouble -> "double"
+  | Ccallback _ -> "fr.inria.caml.camljava.Callback"
+  | Cobject Ctop -> "java.lang.Object"
+  | Cobject Cstring -> "java.lang.String"
+  | Cobject (Cname id) -> Ident.get_class_java_qualified_name id
   | Cobject (Cjavaarray t)
   | Cobject (Carray t) -> "["^(java_signature_of_type t)
 
@@ -77,7 +78,7 @@ let rec idl_signature_of_type t =
   | Cobject (Carray t) -> (idl_signature_of_type t)^"[]"
 				 
 let java_signature args rtyp = 
-  Printf.sprintf "(%s)%s" 
+  Printf.sprintf "(%s):%s" 
     (String.concat "" (List.map java_signature_of_type args))
     (java_signature_of_type rtyp)
 

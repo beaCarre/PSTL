@@ -27,7 +27,7 @@ let make_jni_type_sig cl_list =
   P4helper.sig_items (List.map make cl_list)
   
 
-(** class type ********************************************)
+(** class type ********************************************) (* OK *)
 let make_class_type ~callback cl_list =
   let make cl = 
     

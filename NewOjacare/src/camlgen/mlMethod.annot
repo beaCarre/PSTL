@@ -1,0 +1,8488 @@
+"mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  def _loc "mlMethod.ml" 8 117 117 "_none_" 1 0 -1
+)
+"mlMethod.ml" 6 93 104 "mlMethod.ml" 6 93 113
+type(
+  Camlp4.PreCast.Loc.t
+)
+ident(
+  ext_ref Camlp4.PreCast.Loc.ghost
+)
+"mlMethod.ml" 8 117 121 "mlMethod.ml" 8 117 131
+type(
+  string
+)
+ident(
+  def mid_prefix "mlMethod.ml" 9 143 143 "_none_" 1 0 -1
+)
+"mlMethod.ml" 8 117 134 "mlMethod.ml" 8 117 142
+type(
+  string
+)
+"mlMethod.ml" 9 143 147 "mlMethod.ml" 9 143 157
+type(
+  string
+)
+ident(
+  def fid_prefix "mlMethod.ml" 12 221 221 "_none_" 1 0 -1
+)
+"mlMethod.ml" 9 143 160 "mlMethod.ml" 9 143 168
+type(
+  string
+)
+"mlMethod.ml" 12 221 225 "mlMethod.ml" 12 221 240
+type(
+  callback:bool ->
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  def make_class_type "mlMethod.ml" 34 1110 1110 "_none_" 1 0 -1
+)
+"mlMethod.ml" 12 221 251 "mlMethod.ml" 12 221 259
+type(
+  bool
+)
+ident(
+  def callback "mlMethod.ml" 12 221 260 "mlMethod.ml" 31 1015 1037
+)
+"mlMethod.ml" 12 221 260 "mlMethod.ml" 12 221 266
+type(
+  Cidl.mmethod list
+)
+ident(
+  def m_list "mlMethod.ml" 13 269 271 "mlMethod.ml" 31 1015 1037
+)
+"mlMethod.ml" 13 269 275 "mlMethod.ml" 13 269 279
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.class_sig_item
+)
+ident(
+  def make "mlMethod.ml" 31 1015 1017 "mlMethod.ml" 31 1015 1037
+)
+"mlMethod.ml" 13 269 280 "mlMethod.ml" 13 269 281
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "mlMethod.ml" 14 285 289 "mlMethod.ml" 28 929 1007
+)
+"mlMethod.ml" 14 285 295 "mlMethod.ml" 14 285 296
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 13 269 280 "mlMethod.ml" 13 269 281
+)
+"mlMethod.ml" 14 285 295 "mlMethod.ml" 14 285 304
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 15 310 325 "mlMethod.ml" 15 310 333
+type(
+  bool
+)
+ident(
+  def abstract "mlMethod.ml" 16 354 355 "mlMethod.ml" 22 643 723
+)
+"mlMethod.ml" 15 310 335 "mlMethod.ml" 15 310 340
+type(
+  Cidl.typ
+)
+ident(
+  def rtype "mlMethod.ml" 16 354 355 "mlMethod.ml" 22 643 723
+)
+"mlMethod.ml" 15 310 342 "mlMethod.ml" 15 310 346
+type(
+  Cidl.typ list
+)
+ident(
+  def args "mlMethod.ml" 16 354 355 "mlMethod.ml" 22 643 723
+)
+"mlMethod.ml" 15 310 316 "mlMethod.ml" 15 310 347
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 16 354 359 "mlMethod.ml" 16 354 362
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def typ "mlMethod.ml" 17 399 407 "mlMethod.ml" 22 643 723
+)
+"mlMethod.ml" 16 354 365 "mlMethod.ml" 16 354 384
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 16 354 385 "mlMethod.ml" 16 354 389
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref args "mlMethod.ml" 15 310 342 "mlMethod.ml" 15 310 346
+)
+"mlMethod.ml" 16 354 390 "mlMethod.ml" 16 354 395
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtype "mlMethod.ml" 15 310 335 "mlMethod.ml" 15 310 340
+)
+"mlMethod.ml" 16 354 365 "mlMethod.ml" 16 354 395
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 17 399 410 "mlMethod.ml" 17 399 418
+type(
+  bool
+)
+ident(
+  int_ref abstract "mlMethod.ml" 15 310 325 "mlMethod.ml" 15 310 333
+)
+"mlMethod.ml" 17 399 419 "mlMethod.ml" 17 399 421
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"mlMethod.ml" 17 399 422 "mlMethod.ml" 17 399 430
+type(
+  bool
+)
+ident(
+  int_ref callback "mlMethod.ml" 12 221 251 "mlMethod.ml" 12 221 259
+)
+"mlMethod.ml" 17 399 410 "mlMethod.ml" 17 399 430
+type(
+  bool
+)
+"mlMethod.ml" 20 546 566 "mlMethod.ml" 20 546 566
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 20 546 566 "mlMethod.ml" 20 546 590
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 20 546 591 "mlMethod.ml" 20 546 592
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 13 269 280 "mlMethod.ml" 13 269 281
+)
+"mlMethod.ml" 20 546 591 "mlMethod.ml" 20 546 601
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 20 546 566 "mlMethod.ml" 20 546 601
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 20 546 626 "mlMethod.ml" 20 546 629
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref typ "mlMethod.ml" 16 354 359 "mlMethod.ml" 16 354 362
+)
+"mlMethod.ml" 22 643 663 "mlMethod.ml" 22 643 663
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 22 643 663 "mlMethod.ml" 22 643 687
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 22 643 688 "mlMethod.ml" 22 643 689
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 13 269 280 "mlMethod.ml" 13 269 281
+)
+"mlMethod.ml" 22 643 688 "mlMethod.ml" 22 643 698
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 22 643 663 "mlMethod.ml" 22 643 698
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 22 643 715 "mlMethod.ml" 22 643 718
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref typ "mlMethod.ml" 16 354 359 "mlMethod.ml" 16 354 362
+)
+"mlMethod.ml" 17 399 407 "mlMethod.ml" 22 643 723
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 16 354 355 "mlMethod.ml" 22 643 723
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 23 725 736 "mlMethod.ml" 23 725 739
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 24 745 746 "mlMethod.ml" 25 791 869
+)
+"mlMethod.ml" 23 725 731 "mlMethod.ml" 23 725 739
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 24 745 750 "mlMethod.ml" 24 745 753
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def typ "mlMethod.ml" 25 791 809 "mlMethod.ml" 25 791 809
+)
+"mlMethod.ml" 24 745 756 "mlMethod.ml" 24 745 775
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 24 745 777 "mlMethod.ml" 24 745 780
+type(
+  Cidl.typ list
+)
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 23 725 736 "mlMethod.ml" 23 725 739
+)
+type(
+  Cidl.typ list
+)
+"mlMethod.ml" 24 745 782 "mlMethod.ml" 24 745 787
+type(
+  Cidl.typ
+)
+"mlMethod.ml" 24 745 756 "mlMethod.ml" 24 745 787
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 25 791 809 "mlMethod.ml" 25 791 809
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 25 791 809 "mlMethod.ml" 25 791 833
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 25 791 834 "mlMethod.ml" 25 791 835
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 13 269 280 "mlMethod.ml" 13 269 281
+)
+"mlMethod.ml" 25 791 834 "mlMethod.ml" 25 791 844
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 25 791 809 "mlMethod.ml" 25 791 844
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 25 791 861 "mlMethod.ml" 25 791 864
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref typ "mlMethod.ml" 24 745 750 "mlMethod.ml" 24 745 753
+)
+"mlMethod.ml" 24 745 746 "mlMethod.ml" 25 791 869
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 26 870 881 "mlMethod.ml" 26 870 884
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 27 888 889 "mlMethod.ml" 28 929 1007
+)
+"mlMethod.ml" 26 870 876 "mlMethod.ml" 26 870 884
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 27 888 893 "mlMethod.ml" 27 888 896
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def typ "mlMethod.ml" 28 929 947 "mlMethod.ml" 28 929 947
+)
+"mlMethod.ml" 27 888 899 "mlMethod.ml" 27 888 918
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 27 888 919 "mlMethod.ml" 27 888 921
+type(
+  Cidl.typ list
+)
+"mlMethod.ml" 27 888 922 "mlMethod.ml" 27 888 925
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 26 870 881 "mlMethod.ml" 26 870 884
+)
+"mlMethod.ml" 27 888 899 "mlMethod.ml" 27 888 925
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 28 929 947 "mlMethod.ml" 28 929 947
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 28 929 947 "mlMethod.ml" 28 929 971
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 28 929 972 "mlMethod.ml" 28 929 973
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 13 269 280 "mlMethod.ml" 13 269 281
+)
+"mlMethod.ml" 28 929 972 "mlMethod.ml" 28 929 982
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 28 929 947 "mlMethod.ml" 28 929 982
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 28 929 999 "mlMethod.ml" 28 929 1002
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref typ "mlMethod.ml" 27 888 893 "mlMethod.ml" 27 888 896
+)
+"mlMethod.ml" 27 888 889 "mlMethod.ml" 28 929 1007
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 14 285 289 "mlMethod.ml" 28 929 1007
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 13 269 280 "mlMethod.ml" 28 929 1007
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 31 1015 1017 "mlMethod.ml" 31 1015 1025
+type(
+  (Cidl.mmethod -> Camlp4.PreCast.Ast.class_sig_item) ->
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 31 1015 1026 "mlMethod.ml" 31 1015 1030
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.class_sig_item
+)
+ident(
+  int_ref make "mlMethod.ml" 13 269 275 "mlMethod.ml" 13 269 279
+)
+"mlMethod.ml" 31 1015 1031 "mlMethod.ml" 31 1015 1037
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref m_list "mlMethod.ml" 12 221 260 "mlMethod.ml" 12 221 266
+)
+"mlMethod.ml" 31 1015 1017 "mlMethod.ml" 31 1015 1037
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 13 269 271 "mlMethod.ml" 31 1015 1037
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 12 221 260 "mlMethod.ml" 31 1015 1037
+type(
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 12 221 241 "mlMethod.ml" 31 1015 1037
+type(
+  callback:bool ->
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 34 1110 1114 "mlMethod.ml" 34 1110 1122
+type(
+  string ->
+  string ->
+  callback:bool ->
+  Cidl.mmethod list ->
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  def make_dyn "mlMethod.ml" 122 4644 4644 "_none_" 1 0 -1
+)
+"mlMethod.ml" 34 1110 1123 "mlMethod.ml" 34 1110 1128
+type(
+  string
+)
+ident(
+  def clazz "mlMethod.ml" 34 1110 1129 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 34 1110 1129 "mlMethod.ml" 34 1110 1137
+type(
+  string
+)
+ident(
+  def java_obj "mlMethod.ml" 34 1110 1138 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 34 1110 1148 "mlMethod.ml" 34 1110 1154
+type(
+  Cidl.mmethod list
+)
+ident(
+  def m_list "mlMethod.ml" 35 1157 1159 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 35 1157 1163 "mlMethod.ml" 35 1157 1167
+type(
+  Cidl.mmethod ->
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+ident(
+  def make "mlMethod.ml" 118 4452 4454 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 35 1157 1168 "mlMethod.ml" 35 1157 1169
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "mlMethod.ml" 36 1172 1176 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 36 1172 1180 "mlMethod.ml" 36 1172 1187
+type(
+  string
+)
+ident(
+  def ml_name "mlMethod.ml" 38 1287 1291 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 36 1172 1190 "mlMethod.ml" 36 1172 1214
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 36 1172 1215 "mlMethod.ml" 36 1172 1216
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 35 1157 1168 "mlMethod.ml" 35 1157 1169
+)
+"mlMethod.ml" 36 1172 1215 "mlMethod.ml" 36 1172 1225
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 36 1172 1190 "mlMethod.ml" 36 1172 1225
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+type(
+  string
+)
+ident(
+  def java_name "mlMethod.ml" 38 1287 1291 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 37 1226 1246 "mlMethod.ml" 37 1226 1272
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_java_name
+)
+"mlMethod.ml" 37 1226 1273 "mlMethod.ml" 37 1226 1274
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 35 1157 1168 "mlMethod.ml" 35 1157 1169
+)
+"mlMethod.ml" 37 1226 1273 "mlMethod.ml" 37 1226 1283
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 37 1226 1246 "mlMethod.ml" 37 1226 1283
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 38 1287 1297 "mlMethod.ml" 38 1287 1298
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 35 1157 1168 "mlMethod.ml" 35 1157 1169
+)
+"mlMethod.ml" 38 1287 1297 "mlMethod.ml" 38 1287 1306
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 39 1312 1327 "mlMethod.ml" 39 1312 1335
+type(
+  bool
+)
+ident(
+  def abstract "mlMethod.ml" 41 1354 1355 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 39 1312 1336 "mlMethod.ml" 39 1312 1340
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlMethod.ml" 41 1354 1355 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 39 1312 1341 "mlMethod.ml" 39 1312 1346
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 41 1354 1355 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 39 1312 1318 "mlMethod.ml" 39 1312 1347
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 41 1354 1358 "mlMethod.ml" 41 1354 1366
+type(
+  bool
+)
+ident(
+  int_ref abstract "mlMethod.ml" 39 1312 1327 "mlMethod.ml" 39 1312 1335
+)
+"mlMethod.ml" 41 1354 1367 "mlMethod.ml" 41 1354 1369
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"mlMethod.ml" 41 1354 1370 "mlMethod.ml" 41 1354 1378
+type(
+  bool
+)
+ident(
+  int_ref callback "mlMethod.ml" 34 1110 1138 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 41 1354 1358 "mlMethod.ml" 41 1354 1378
+type(
+  bool
+)
+"mlMethod.ml" 43 1385 1392 "mlMethod.ml" 43 1385 1395
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def typ "mlMethod.ml" 44 1432 1435 "mlMethod.ml" 45 1441 1501
+)
+"mlMethod.ml" 43 1385 1398 "mlMethod.ml" 43 1385 1417
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 43 1385 1418 "mlMethod.ml" 43 1385 1423
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 39 1312 1341 "mlMethod.ml" 39 1312 1346
+)
+"mlMethod.ml" 43 1385 1424 "mlMethod.ml" 43 1385 1428
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 39 1312 1336 "mlMethod.ml" 39 1312 1340
+)
+"mlMethod.ml" 43 1385 1398 "mlMethod.ml" 43 1385 1428
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 44 1432 1435 "mlMethod.ml" 44 1432 1439
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+"mlMethod.ml" 45 1441 1461 "mlMethod.ml" 45 1441 1461
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 45 1441 1461 "mlMethod.ml" 45 1441 1468
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 36 1172 1180 "mlMethod.ml" 36 1172 1187
+)
+"mlMethod.ml" 45 1441 1493 "mlMethod.ml" 45 1441 1496
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref typ "mlMethod.ml" 43 1385 1392 "mlMethod.ml" 43 1385 1395
+)
+"mlMethod.ml" 44 1432 1435 "mlMethod.ml" 45 1441 1501
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 43 1385 1388 "mlMethod.ml" 45 1441 1501
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 49 1554 1561 "mlMethod.ml" 49 1554 1563
+type(
+  string
+)
+ident(
+  def id "mlMethod.ml" 54 1711 1714 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 49 1554 1566 "mlMethod.ml" 49 1554 1576
+type(
+  string
+)
+ident(
+  int_ref mid_prefix "mlMethod.ml" 8 117 121 "mlMethod.ml" 8 117 131
+)
+"mlMethod.ml" 49 1554 1576 "mlMethod.ml" 49 1554 1577
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 49 1554 1577 "mlMethod.ml" 49 1554 1584
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 36 1172 1180 "mlMethod.ml" 36 1172 1187
+)
+"mlMethod.ml" 49 1554 1566 "mlMethod.ml" 49 1554 1584
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 52 1660 1667 "mlMethod.ml" 52 1660 1671
+type(
+  string
+)
+ident(
+  def sign "mlMethod.ml" 54 1711 1714 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 52 1660 1674 "mlMethod.ml" 52 1660 1695
+type(
+  Cidl.typ list -> Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.java_signature
+)
+"mlMethod.ml" 52 1660 1696 "mlMethod.ml" 52 1660 1701
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 39 1312 1341 "mlMethod.ml" 39 1312 1346
+)
+"mlMethod.ml" 52 1660 1702 "mlMethod.ml" 52 1660 1706
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 39 1312 1336 "mlMethod.ml" 39 1312 1340
+)
+"mlMethod.ml" 52 1660 1674 "mlMethod.ml" 52 1660 1706
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 54 1711 1718 "mlMethod.ml" 54 1711 1729
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  def call_method "mlMethod.ml" 57 1886 1889 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 54 1711 1732 "mlMethod.ml" 54 1711 1754
+type(
+  virtual_call:bool -> Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  ext_ref MlType.get_call_method
+)
+"mlMethod.ml" 54 1711 1770 "mlMethod.ml" 54 1711 1773
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"mlMethod.ml" 54 1711 1774 "mlMethod.ml" 54 1711 1782
+type(
+  bool
+)
+ident(
+  int_ref callback "mlMethod.ml" 34 1110 1138 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 54 1711 1770 "mlMethod.ml" 54 1711 1782
+type(
+  bool
+)
+"mlMethod.ml" 54 1711 1784 "mlMethod.ml" 54 1711 1788
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 39 1312 1336 "mlMethod.ml" 39 1312 1340
+)
+"mlMethod.ml" 54 1711 1732 "mlMethod.ml" 54 1711 1788
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 57 1886 1893 "mlMethod.ml" 57 1886 1897
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlMethod.ml" 59 2008 2011 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 57 1886 1900 "mlMethod.ml" 57 1886 1909
+type(
+  (int -> Cidl.typ -> string * Cidl.typ) ->
+  int list -> Cidl.typ list -> (string * Cidl.typ) list
+)
+ident(
+  ext_ref List.map2
+)
+"mlMethod.ml" 57 1886 1915 "mlMethod.ml" 57 1886 1916
+type(
+  int
+)
+ident(
+  def i "mlMethod.ml" 57 1886 1917 "mlMethod.ml" 57 1886 1946
+)
+"mlMethod.ml" 57 1886 1917 "mlMethod.ml" 57 1886 1918
+type(
+  Cidl.typ
+)
+ident(
+  def t "mlMethod.ml" 57 1886 1922 "mlMethod.ml" 57 1886 1946
+)
+"mlMethod.ml" 57 1886 1923 "mlMethod.ml" 57 1886 1927
+type(
+  string
+)
+"mlMethod.ml" 57 1886 1927 "mlMethod.ml" 57 1886 1928
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 57 1886 1928 "mlMethod.ml" 57 1886 1941
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"mlMethod.ml" 57 1886 1942 "mlMethod.ml" 57 1886 1943
+type(
+  int
+)
+ident(
+  int_ref i "mlMethod.ml" 57 1886 1915 "mlMethod.ml" 57 1886 1916
+)
+"mlMethod.ml" 57 1886 1928 "mlMethod.ml" 57 1886 1943
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 57 1886 1923 "mlMethod.ml" 57 1886 1943
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 57 1886 1945 "mlMethod.ml" 57 1886 1946
+type(
+  Cidl.typ
+)
+ident(
+  int_ref t "mlMethod.ml" 57 1886 1917 "mlMethod.ml" 57 1886 1918
+)
+"mlMethod.ml" 57 1886 1922 "mlMethod.ml" 57 1886 1946
+type(
+  string * Cidl.typ
+)
+"mlMethod.ml" 57 1886 1917 "mlMethod.ml" 57 1886 1946
+type(
+  Cidl.typ -> string * Cidl.typ
+)
+"mlMethod.ml" 57 1886 1915 "mlMethod.ml" 57 1886 1946
+type(
+  int -> Cidl.typ -> string * Cidl.typ
+)
+"mlMethod.ml" 58 1949 1957 "mlMethod.ml" 58 1949 1975
+type(
+  int -> int -> int list
+)
+ident(
+  ext_ref Utilities.interval
+)
+"mlMethod.ml" 58 1949 1976 "mlMethod.ml" 58 1949 1977
+type(
+  int
+)
+"mlMethod.ml" 58 1949 1979 "mlMethod.ml" 58 1949 1990
+type(
+  Cidl.typ list -> int
+)
+ident(
+  ext_ref List.length
+)
+"mlMethod.ml" 58 1949 1991 "mlMethod.ml" 58 1949 1996
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 39 1312 1341 "mlMethod.ml" 39 1312 1346
+)
+"mlMethod.ml" 58 1949 1979 "mlMethod.ml" 58 1949 1996
+call(
+  stack
+)
+type(
+  int
+)
+"mlMethod.ml" 58 1949 1957 "mlMethod.ml" 58 1949 1997
+call(
+  stack
+)
+type(
+  int list
+)
+"mlMethod.ml" 58 1949 1999 "mlMethod.ml" 58 1949 2004
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 39 1312 1341 "mlMethod.ml" 39 1312 1346
+)
+"mlMethod.ml" 57 1886 1900 "mlMethod.ml" 58 1949 2004
+call(
+  stack
+)
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 59 2008 2015 "mlMethod.ml" 59 2008 2020
+type(
+  Camlp4.PreCast.Ast.ident list
+)
+ident(
+  def jargs "mlMethod.ml" 64 2191 2194 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 59 2008 2023 "mlMethod.ml" 59 2008 2031
+type(
+  (string * Cidl.typ -> Camlp4.PreCast.Ast.ident) ->
+  (string * Cidl.typ) list -> Camlp4.PreCast.Ast.ident list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 59 2008 2038 "mlMethod.ml" 59 2008 2042
+type(
+  string
+)
+ident(
+  def narg "mlMethod.ml" 61 2059 2072 "mlMethod.ml" 61 2059 2072
+)
+"mlMethod.ml" 59 2008 2043 "mlMethod.ml" 59 2008 2047
+type(
+  Cidl.typ
+)
+ident(
+  def targ "mlMethod.ml" 61 2059 2072 "mlMethod.ml" 61 2059 2072
+)
+"mlMethod.ml" 59 2008 2038 "mlMethod.ml" 59 2008 2047
+type(
+  string * Cidl.typ
+)
+"mlMethod.ml" 61 2059 2072 "mlMethod.ml" 61 2059 2072
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 61 2059 2072 "mlMethod.ml" 61 2059 2076
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 59 2008 2038 "mlMethod.ml" 59 2008 2042
+)
+"mlMethod.ml" 59 2008 2037 "mlMethod.ml" 61 2059 2128
+type(
+  string * Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 61 2059 2130 "mlMethod.ml" 61 2059 2134
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 57 1886 1893 "mlMethod.ml" 57 1886 1897
+)
+"mlMethod.ml" 59 2008 2023 "mlMethod.ml" 61 2059 2134
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ident list
+)
+"mlMethod.ml" 64 2191 2198 "mlMethod.ml" 64 2191 2202
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 69 2389 2392 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 65 2206 2214 "mlMethod.ml" 65 2206 2217
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"mlMethod.ml" 65 2206 2218 "mlMethod.ml" 65 2206 2226
+type(
+  bool
+)
+ident(
+  int_ref callback "mlMethod.ml" 34 1110 1138 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 65 2206 2214 "mlMethod.ml" 65 2206 2226
+type(
+  bool
+)
+"mlMethod.ml" 66 2232 2246 "mlMethod.ml" 66 2232 2246
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 66 2232 2246 "mlMethod.ml" 66 2232 2248
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 49 1554 1561 "mlMethod.ml" 49 1554 1563
+)
+"mlMethod.ml" 66 2232 2246 "mlMethod.ml" 66 2232 2254
+type(
+  string
+)
+ident(
+  int_ref java_obj "mlMethod.ml" 34 1110 1129 "mlMethod.ml" 34 1110 1137
+)
+"mlMethod.ml" 66 2232 2282 "mlMethod.ml" 66 2232 2287
+type(
+  Camlp4.PreCast.Ast.ident list
+)
+ident(
+  int_ref jargs "mlMethod.ml" 59 2008 2015 "mlMethod.ml" 59 2008 2020
+)
+"mlMethod.ml" 66 2232 2282 "mlMethod.ml" 66 2232 2293
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.ident list -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  ext_ref Camlp4.PreCast.Ast.idAcc_of_list
+)
+"mlMethod.ml" 68 2308 2322 "mlMethod.ml" 68 2308 2322
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 68 2308 2322 "mlMethod.ml" 68 2308 2324
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 49 1554 1561 "mlMethod.ml" 49 1554 1563
+)
+"mlMethod.ml" 68 2308 2322 "mlMethod.ml" 68 2308 2327
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 34 1110 1123 "mlMethod.ml" 34 1110 1128
+)
+"mlMethod.ml" 68 2308 2322 "mlMethod.ml" 68 2308 2330
+type(
+  string
+)
+ident(
+  int_ref java_obj "mlMethod.ml" 34 1110 1129 "mlMethod.ml" 34 1110 1137
+)
+"mlMethod.ml" 68 2308 2370 "mlMethod.ml" 68 2308 2375
+type(
+  Camlp4.PreCast.Ast.ident list
+)
+ident(
+  int_ref jargs "mlMethod.ml" 59 2008 2015 "mlMethod.ml" 59 2008 2020
+)
+"mlMethod.ml" 68 2308 2370 "mlMethod.ml" 68 2308 2381
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.ident list -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  ext_ref Camlp4.PreCast.Ast.idAcc_of_list
+)
+"mlMethod.ml" 65 2206 2211 "mlMethod.ml" 68 2308 2385
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 69 2389 2396 "mlMethod.ml" 69 2389 2400
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 70 2441 2444 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 69 2389 2403 "mlMethod.ml" 69 2389 2427
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_from_java
+)
+"mlMethod.ml" 69 2389 2428 "mlMethod.ml" 69 2389 2432
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 39 1312 1336 "mlMethod.ml" 39 1312 1340
+)
+"mlMethod.ml" 69 2389 2433 "mlMethod.ml" 69 2389 2437
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 64 2191 2198 "mlMethod.ml" 64 2191 2202
+)
+"mlMethod.ml" 69 2389 2403 "mlMethod.ml" 69 2389 2437
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 70 2441 2448 "mlMethod.ml" 70 2441 2452
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 71 2542 2545 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 70 2441 2455 "mlMethod.ml" 70 2441 2476
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 70 2441 2478 "mlMethod.ml" 70 2441 2504
+type(
+  (Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr) ->
+  (string * Cidl.typ) list -> (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  ext_ref MlType.get_args_convertion
+)
+"mlMethod.ml" 70 2441 2505 "mlMethod.ml" 70 2441 2527
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_to_java
+)
+"mlMethod.ml" 70 2441 2528 "mlMethod.ml" 70 2441 2532
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 57 1886 1893 "mlMethod.ml" 57 1886 1897
+)
+"mlMethod.ml" 70 2441 2478 "mlMethod.ml" 70 2441 2532
+call(
+  stack
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 70 2441 2534 "mlMethod.ml" 70 2441 2538
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 69 2389 2396 "mlMethod.ml" 69 2389 2400
+)
+"mlMethod.ml" 70 2441 2455 "mlMethod.ml" 70 2441 2538
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 71 2542 2549 "mlMethod.ml" 71 2542 2553
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 73 2588 2591 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 71 2542 2556 "mlMethod.ml" 71 2542 2570
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_fun
+)
+"mlMethod.ml" 71 2542 2571 "mlMethod.ml" 71 2542 2575
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 57 1886 1893 "mlMethod.ml" 57 1886 1897
+)
+"mlMethod.ml" 71 2542 2576 "mlMethod.ml" 71 2542 2580
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 70 2441 2448 "mlMethod.ml" 70 2441 2452
+)
+"mlMethod.ml" 71 2542 2556 "mlMethod.ml" 71 2542 2580
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 73 2588 2595 "mlMethod.ml" 73 2588 2602
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def id_expr "mlMethod.ml" 74 2674 2677 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 73 2588 2612 "mlMethod.ml" 73 2588 2612
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 73 2588 2612 "mlMethod.ml" 73 2588 2616
+type(
+  string
+)
+ident(
+  int_ref sign "mlMethod.ml" 52 1660 1667 "mlMethod.ml" 52 1660 1671
+)
+"mlMethod.ml" 73 2588 2612 "mlMethod.ml" 73 2588 2617
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 34 1110 1123 "mlMethod.ml" 34 1110 1128
+)
+"mlMethod.ml" 73 2588 2612 "mlMethod.ml" 73 2588 2621
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+)
+"mlMethod.ml" 74 2674 2681 "mlMethod.ml" 74 2674 2684
+type(
+  string
+)
+ident(
+  def err "mlMethod.ml" 78 2905 2908 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 74 2674 2687 "mlMethod.ml" 74 2674 2726
+type(
+  string
+)
+"mlMethod.ml" 74 2674 2726 "mlMethod.ml" 74 2674 2727
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 75 2728 2734 "mlMethod.ml" 75 2728 2769
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"mlMethod.ml" 75 2728 2770 "mlMethod.ml" 75 2728 2771
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 35 1157 1168 "mlMethod.ml" 35 1157 1169
+)
+"mlMethod.ml" 75 2728 2770 "mlMethod.ml" 75 2728 2780
+type(
+  Ident.clazz
+)
+"mlMethod.ml" 75 2728 2734 "mlMethod.ml" 75 2728 2780
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 75 2728 2781 "mlMethod.ml" 75 2728 2782
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 75 2728 2782 "mlMethod.ml" 75 2728 2795
+type(
+  string
+)
+"mlMethod.ml" 75 2728 2795 "mlMethod.ml" 75 2728 2796
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 76 2797 2802 "mlMethod.ml" 76 2797 2830
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.idl_signature_of_type
+)
+"mlMethod.ml" 76 2797 2831 "mlMethod.ml" 76 2797 2835
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 39 1312 1336 "mlMethod.ml" 39 1312 1340
+)
+"mlMethod.ml" 76 2797 2802 "mlMethod.ml" 76 2797 2835
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2836 "mlMethod.ml" 76 2797 2837
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 76 2797 2838 "mlMethod.ml" 76 2797 2841
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2842 "mlMethod.ml" 76 2797 2843
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 76 2797 2844 "mlMethod.ml" 76 2797 2853
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+)
+"mlMethod.ml" 76 2797 2854 "mlMethod.ml" 76 2797 2855
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 76 2797 2856 "mlMethod.ml" 76 2797 2859
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2859 "mlMethod.ml" 76 2797 2860
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 77 2861 2866 "mlMethod.ml" 77 2861 2886
+type(
+  Cidl.typ list -> string
+)
+ident(
+  ext_ref MlType.idl_signature
+)
+"mlMethod.ml" 77 2861 2887 "mlMethod.ml" 77 2861 2892
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 39 1312 1341 "mlMethod.ml" 39 1312 1346
+)
+"mlMethod.ml" 77 2861 2866 "mlMethod.ml" 77 2861 2892
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 77 2861 2892 "mlMethod.ml" 77 2861 2893
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 77 2861 2893 "mlMethod.ml" 77 2861 2901
+type(
+  string
+)
+"mlMethod.ml" 77 2861 2866 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2856 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2844 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2838 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 76 2797 2802 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 75 2728 2782 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 75 2728 2733 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 74 2674 2687 "mlMethod.ml" 77 2861 2901
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 78 2905 2912 "mlMethod.ml" 78 2905 2924
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def safe_id_expr "mlMethod.ml" 82 3088 3091 "mlMethod.ml" 83 3116 3169
+)
+"mlMethod.ml" 79 2928 2940 "mlMethod.ml" 79 2928 2940
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 79 2928 2940 "mlMethod.ml" 79 2928 2943
+type(
+  string
+)
+ident(
+  int_ref err "mlMethod.ml" 74 2674 2681 "mlMethod.ml" 74 2674 2684
+)
+"mlMethod.ml" 79 2928 2944 "mlMethod.ml" 79 2928 2951
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref id_expr "mlMethod.ml" 73 2588 2595 "mlMethod.ml" 73 2588 2602
+)
+"mlMethod.ml" 82 3088 3097 "mlMethod.ml" 82 3088 3099
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 49 1554 1561 "mlMethod.ml" 49 1554 1563
+)
+"mlMethod.ml" 82 3088 3101 "mlMethod.ml" 82 3088 3113
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref safe_id_expr "mlMethod.ml" 78 2905 2912 "mlMethod.ml" 78 2905 2924
+)
+"mlMethod.ml" 82 3088 3091 "mlMethod.ml" 82 3088 3114
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+"mlMethod.ml" 83 3116 3136 "mlMethod.ml" 83 3116 3136
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.override_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 83 3116 3136 "mlMethod.ml" 83 3116 3143
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 36 1172 1180 "mlMethod.ml" 36 1172 1187
+)
+"mlMethod.ml" 83 3116 3160 "mlMethod.ml" 83 3116 3164
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 71 2542 2549 "mlMethod.ml" 71 2542 2553
+)
+"mlMethod.ml" 82 3088 3091 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 78 2905 2908 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 74 2674 2677 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 73 2588 2591 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 71 2542 2545 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 70 2441 2444 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 69 2389 2392 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 64 2191 2194 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 59 2008 2011 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 57 1886 1889 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 54 1711 1714 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 49 1554 1557 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 41 1354 1355 "mlMethod.ml" 83 3116 3169
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 85 3171 3182 "mlMethod.ml" 85 3171 3185
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 86 3192 3193 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 85 3171 3177 "mlMethod.ml" 85 3171 3185
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 86 3192 3197 "mlMethod.ml" 86 3192 3199
+type(
+  string
+)
+ident(
+  def id "mlMethod.ml" 89 3336 3337 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 86 3192 3202 "mlMethod.ml" 86 3192 3212
+type(
+  string
+)
+ident(
+  int_ref fid_prefix "mlMethod.ml" 9 143 147 "mlMethod.ml" 9 143 157
+)
+"mlMethod.ml" 86 3192 3212 "mlMethod.ml" 86 3192 3213
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 86 3192 3213 "mlMethod.ml" 86 3192 3222
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+)
+"mlMethod.ml" 86 3192 3202 "mlMethod.ml" 86 3192 3222
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 87 3223 3228 "mlMethod.ml" 87 3223 3244
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  def call_method_name "mlMethod.ml" 89 3336 3337 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 87 3223 3255 "mlMethod.ml" 87 3223 3255
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 87 3223 3255 "mlMethod.ml" 87 3223 3261
+type(
+  string
+)
+"mlMethod.ml" 87 3223 3261 "mlMethod.ml" 87 3223 3262
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 87 3223 3263 "mlMethod.ml" 87 3223 3284
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.string_of_type
+)
+"mlMethod.ml" 87 3223 3285 "mlMethod.ml" 87 3223 3288
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 85 3171 3182 "mlMethod.ml" 85 3171 3185
+)
+"mlMethod.ml" 87 3223 3263 "mlMethod.ml" 87 3223 3288
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 87 3223 3289 "mlMethod.ml" 87 3223 3290
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 87 3223 3290 "mlMethod.ml" 87 3223 3298
+type(
+  string
+)
+"mlMethod.ml" 87 3223 3262 "mlMethod.ml" 87 3223 3298
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 87 3223 3255 "mlMethod.ml" 87 3223 3298
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 88 3316 3321 "mlMethod.ml" 88 3316 3325
+type(
+  string
+)
+ident(
+  def narg "mlMethod.ml" 89 3336 3337 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 88 3316 3328 "mlMethod.ml" 88 3316 3332
+type(
+  string
+)
+"mlMethod.ml" 89 3336 3341 "mlMethod.ml" 89 3336 3345
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def call "mlMethod.ml" 91 3421 3422 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 89 3336 3355 "mlMethod.ml" 89 3336 3355
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 89 3336 3355 "mlMethod.ml" 89 3336 3357
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 86 3192 3197 "mlMethod.ml" 86 3192 3199
+)
+"mlMethod.ml" 89 3336 3355 "mlMethod.ml" 89 3336 3359
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 88 3316 3321 "mlMethod.ml" 88 3316 3325
+)
+"mlMethod.ml" 89 3336 3355 "mlMethod.ml" 89 3336 3363
+type(
+  string
+)
+ident(
+  int_ref java_obj "mlMethod.ml" 34 1110 1129 "mlMethod.ml" 34 1110 1137
+)
+"mlMethod.ml" 89 3336 3357 "mlMethod.ml" 89 3336 3373
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  int_ref call_method_name "mlMethod.ml" 87 3223 3228 "mlMethod.ml" 87 3223 3244
+)
+"mlMethod.ml" 91 3421 3426 "mlMethod.ml" 91 3421 3430
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 92 3519 3520 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 91 3421 3433 "mlMethod.ml" 91 3421 3454
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 91 3421 3456 "mlMethod.ml" 91 3421 3460
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 88 3316 3321 "mlMethod.ml" 88 3316 3325
+)
+"mlMethod.ml" 91 3421 3461 "mlMethod.ml" 91 3421 3483
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_to_java
+)
+"mlMethod.ml" 91 3421 3484 "mlMethod.ml" 91 3421 3487
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 85 3171 3182 "mlMethod.ml" 85 3171 3185
+)
+"mlMethod.ml" 91 3421 3495 "mlMethod.ml" 91 3421 3495
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 91 3421 3495 "mlMethod.ml" 91 3421 3499
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 88 3316 3321 "mlMethod.ml" 88 3316 3325
+)
+"mlMethod.ml" 91 3421 3461 "mlMethod.ml" 91 3421 3509
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 91 3421 3456 "mlMethod.ml" 91 3421 3509
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 91 3421 3511 "mlMethod.ml" 91 3421 3515
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref call "mlMethod.ml" 89 3336 3341 "mlMethod.ml" 89 3336 3345
+)
+"mlMethod.ml" 91 3421 3433 "mlMethod.ml" 91 3421 3515
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 92 3519 3524 "mlMethod.ml" 92 3519 3528
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 94 3566 3567 "mlMethod.ml" 95 3606 3657
+)
+"mlMethod.ml" 92 3519 3531 "mlMethod.ml" 92 3519 3545
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_fun
+)
+"mlMethod.ml" 92 3519 3547 "mlMethod.ml" 92 3519 3551
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 88 3316 3321 "mlMethod.ml" 88 3316 3325
+)
+"mlMethod.ml" 92 3519 3552 "mlMethod.ml" 92 3519 3555
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 85 3171 3182 "mlMethod.ml" 85 3171 3185
+)
+"mlMethod.ml" 92 3519 3547 "mlMethod.ml" 92 3519 3555
+type(
+  (string * Cidl.typ) list
+)
+type(
+  string * Cidl.typ
+)
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 92 3519 3557 "mlMethod.ml" 92 3519 3561
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 91 3421 3426 "mlMethod.ml" 91 3421 3430
+)
+"mlMethod.ml" 92 3519 3531 "mlMethod.ml" 92 3519 3561
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 94 3566 3567 "mlMethod.ml" 94 3566 3571
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+"mlMethod.ml" 95 3606 3624 "mlMethod.ml" 95 3606 3624
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.override_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 95 3606 3624 "mlMethod.ml" 95 3606 3631
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 36 1172 1180 "mlMethod.ml" 36 1172 1187
+)
+"mlMethod.ml" 95 3606 3648 "mlMethod.ml" 95 3606 3652
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 92 3519 3524 "mlMethod.ml" 92 3519 3528
+)
+"mlMethod.ml" 94 3566 3567 "mlMethod.ml" 95 3606 3657
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 92 3519 3520 "mlMethod.ml" 95 3606 3657
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 91 3421 3422 "mlMethod.ml" 95 3606 3657
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 89 3336 3337 "mlMethod.ml" 95 3606 3657
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 86 3192 3193 "mlMethod.ml" 95 3606 3657
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 97 3663 3674 "mlMethod.ml" 97 3663 3677
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 98 3684 3685 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 97 3663 3669 "mlMethod.ml" 97 3663 3677
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 98 3684 3689 "mlMethod.ml" 98 3684 3691
+type(
+  string
+)
+ident(
+  def id "mlMethod.ml" 101 3857 3858 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 98 3684 3694 "mlMethod.ml" 98 3684 3704
+type(
+  string
+)
+ident(
+  int_ref fid_prefix "mlMethod.ml" 9 143 147 "mlMethod.ml" 9 143 157
+)
+"mlMethod.ml" 98 3684 3704 "mlMethod.ml" 98 3684 3705
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 98 3684 3705 "mlMethod.ml" 98 3684 3714
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+)
+"mlMethod.ml" 98 3684 3694 "mlMethod.ml" 98 3684 3714
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 99 3715 3720 "mlMethod.ml" 99 3715 3724
+type(
+  string
+)
+ident(
+  def sign "mlMethod.ml" 101 3857 3858 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 99 3715 3727 "mlMethod.ml" 99 3715 3756
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.java_signature_of_type
+)
+"mlMethod.ml" 99 3715 3757 "mlMethod.ml" 99 3715 3760
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 97 3663 3674 "mlMethod.ml" 97 3663 3677
+)
+"mlMethod.ml" 99 3715 3727 "mlMethod.ml" 99 3715 3760
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 100 3762 3767 "mlMethod.ml" 100 3762 3783
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  def call_method_name "mlMethod.ml" 101 3857 3858 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 100 3762 3794 "mlMethod.ml" 100 3762 3794
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 100 3762 3794 "mlMethod.ml" 100 3762 3800
+type(
+  string
+)
+"mlMethod.ml" 100 3762 3800 "mlMethod.ml" 100 3762 3801
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 100 3762 3802 "mlMethod.ml" 100 3762 3823
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.string_of_type
+)
+"mlMethod.ml" 100 3762 3824 "mlMethod.ml" 100 3762 3827
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 97 3663 3674 "mlMethod.ml" 97 3663 3677
+)
+"mlMethod.ml" 100 3762 3802 "mlMethod.ml" 100 3762 3827
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 100 3762 3828 "mlMethod.ml" 100 3762 3829
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 100 3762 3829 "mlMethod.ml" 100 3762 3837
+type(
+  string
+)
+"mlMethod.ml" 100 3762 3801 "mlMethod.ml" 100 3762 3837
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 100 3762 3794 "mlMethod.ml" 100 3762 3837
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 101 3857 3862 "mlMethod.ml" 101 3857 3866
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def call "mlMethod.ml" 103 3931 3932 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 101 3857 3876 "mlMethod.ml" 101 3857 3876
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 101 3857 3876 "mlMethod.ml" 101 3857 3878
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 98 3684 3689 "mlMethod.ml" 98 3684 3691
+)
+"mlMethod.ml" 101 3857 3876 "mlMethod.ml" 101 3857 3884
+type(
+  string
+)
+ident(
+  int_ref java_obj "mlMethod.ml" 34 1110 1129 "mlMethod.ml" 34 1110 1137
+)
+"mlMethod.ml" 101 3857 3878 "mlMethod.ml" 101 3857 3894
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  int_ref call_method_name "mlMethod.ml" 100 3762 3767 "mlMethod.ml" 100 3762 3783
+)
+"mlMethod.ml" 103 3931 3936 "mlMethod.ml" 103 3931 3940
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 104 3980 3981 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 103 3931 3943 "mlMethod.ml" 103 3931 3967
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_from_java
+)
+"mlMethod.ml" 103 3931 3968 "mlMethod.ml" 103 3931 3971
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 97 3663 3674 "mlMethod.ml" 97 3663 3677
+)
+"mlMethod.ml" 103 3931 3972 "mlMethod.ml" 103 3931 3976
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref call "mlMethod.ml" 101 3857 3862 "mlMethod.ml" 101 3857 3866
+)
+"mlMethod.ml" 103 3931 3943 "mlMethod.ml" 103 3931 3976
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 104 3980 3985 "mlMethod.ml" 104 3980 3989
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 107 4020 4021 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 104 3980 3992 "mlMethod.ml" 104 3980 4006
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_fun
+)
+"mlMethod.ml" 104 3980 4007 "mlMethod.ml" 104 3980 4009
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 104 3980 4010 "mlMethod.ml" 104 3980 4014
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 103 3931 3936 "mlMethod.ml" 103 3931 3940
+)
+"mlMethod.ml" 104 3980 3992 "mlMethod.ml" 104 3980 4014
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 107 4020 4025 "mlMethod.ml" 107 4020 4032
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def id_expr "mlMethod.ml" 108 4104 4105 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 107 4020 4042 "mlMethod.ml" 107 4020 4042
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 107 4020 4042 "mlMethod.ml" 107 4020 4046
+type(
+  string
+)
+ident(
+  int_ref sign "mlMethod.ml" 99 3715 3720 "mlMethod.ml" 99 3715 3724
+)
+"mlMethod.ml" 107 4020 4042 "mlMethod.ml" 107 4020 4047
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 34 1110 1123 "mlMethod.ml" 34 1110 1128
+)
+"mlMethod.ml" 107 4020 4042 "mlMethod.ml" 107 4020 4051
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+)
+"mlMethod.ml" 108 4104 4109 "mlMethod.ml" 108 4104 4112
+type(
+  string
+)
+ident(
+  def err "mlMethod.ml" 111 4288 4289 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 108 4104 4115 "mlMethod.ml" 108 4104 4153
+type(
+  string
+)
+"mlMethod.ml" 108 4104 4153 "mlMethod.ml" 108 4104 4154
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 109 4155 4159 "mlMethod.ml" 109 4155 4194
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"mlMethod.ml" 109 4155 4195 "mlMethod.ml" 109 4155 4196
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 35 1157 1168 "mlMethod.ml" 35 1157 1169
+)
+"mlMethod.ml" 109 4155 4195 "mlMethod.ml" 109 4155 4205
+type(
+  Ident.clazz
+)
+"mlMethod.ml" 109 4155 4159 "mlMethod.ml" 109 4155 4205
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 109 4155 4206 "mlMethod.ml" 109 4155 4207
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 109 4155 4207 "mlMethod.ml" 109 4155 4220
+type(
+  string
+)
+"mlMethod.ml" 109 4155 4220 "mlMethod.ml" 109 4155 4221
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 110 4222 4225 "mlMethod.ml" 110 4222 4253
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.idl_signature_of_type
+)
+"mlMethod.ml" 110 4222 4254 "mlMethod.ml" 110 4222 4257
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 97 3663 3674 "mlMethod.ml" 97 3663 3677
+)
+"mlMethod.ml" 110 4222 4225 "mlMethod.ml" 110 4222 4257
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 110 4222 4258 "mlMethod.ml" 110 4222 4259
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 110 4222 4260 "mlMethod.ml" 110 4222 4263
+type(
+  string
+)
+"mlMethod.ml" 110 4222 4264 "mlMethod.ml" 110 4222 4265
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 110 4222 4266 "mlMethod.ml" 110 4222 4275
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 37 1226 1234 "mlMethod.ml" 37 1226 1243
+)
+"mlMethod.ml" 110 4222 4276 "mlMethod.ml" 110 4222 4277
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 110 4222 4277 "mlMethod.ml" 110 4222 4284
+type(
+  string
+)
+"mlMethod.ml" 110 4222 4266 "mlMethod.ml" 110 4222 4284
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 110 4222 4260 "mlMethod.ml" 110 4222 4284
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 110 4222 4225 "mlMethod.ml" 110 4222 4284
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 109 4155 4207 "mlMethod.ml" 110 4222 4284
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 109 4155 4158 "mlMethod.ml" 110 4222 4284
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 108 4104 4115 "mlMethod.ml" 110 4222 4284
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 111 4288 4293 "mlMethod.ml" 111 4288 4305
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def safe_id_expr "mlMethod.ml" 114 4368 4369 "mlMethod.ml" 115 4393 4444
+)
+"mlMethod.ml" 112 4309 4319 "mlMethod.ml" 112 4309 4319
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 112 4309 4319 "mlMethod.ml" 112 4309 4322
+type(
+  string
+)
+ident(
+  int_ref err "mlMethod.ml" 108 4104 4109 "mlMethod.ml" 108 4104 4112
+)
+"mlMethod.ml" 112 4309 4323 "mlMethod.ml" 112 4309 4330
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref id_expr "mlMethod.ml" 107 4020 4025 "mlMethod.ml" 107 4020 4032
+)
+"mlMethod.ml" 114 4368 4375 "mlMethod.ml" 114 4368 4377
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 98 3684 3689 "mlMethod.ml" 98 3684 3691
+)
+"mlMethod.ml" 114 4368 4378 "mlMethod.ml" 114 4368 4390
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref safe_id_expr "mlMethod.ml" 111 4288 4293 "mlMethod.ml" 111 4288 4305
+)
+"mlMethod.ml" 114 4368 4369 "mlMethod.ml" 114 4368 4391
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+"mlMethod.ml" 115 4393 4411 "mlMethod.ml" 115 4393 4411
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.override_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 115 4393 4411 "mlMethod.ml" 115 4393 4418
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 36 1172 1180 "mlMethod.ml" 36 1172 1187
+)
+"mlMethod.ml" 115 4393 4435 "mlMethod.ml" 115 4393 4439
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 104 3980 3985 "mlMethod.ml" 104 3980 3989
+)
+"mlMethod.ml" 114 4368 4369 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 111 4288 4289 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 108 4104 4105 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 107 4020 4021 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 104 3980 3981 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 103 3931 3932 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 101 3857 3858 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 98 3684 3685 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 38 1287 1291 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 36 1172 1176 "mlMethod.ml" 115 4393 4444
+type(
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 35 1157 1168 "mlMethod.ml" 115 4393 4444
+type(
+  Cidl.mmethod ->
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 118 4452 4458 "mlMethod.ml" 118 4452 4462
+type(
+  (string * Camlp4.PreCast.Ast.expr) option list
+)
+ident(
+  def mids "mlMethod.ml" 119 4505 4507 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 118 4452 4464 "mlMethod.ml" 118 4452 4465
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  def m "mlMethod.ml" 119 4505 4507 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 118 4452 4458 "mlMethod.ml" 118 4452 4465
+type(
+  (string * Camlp4.PreCast.Ast.expr) option list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 118 4452 4468 "mlMethod.ml" 118 4452 4478
+type(
+  ((string * Camlp4.PreCast.Ast.expr) option *
+   Camlp4.PreCast.Ast.class_str_item)
+  list ->
+  (string * Camlp4.PreCast.Ast.expr) option list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  ext_ref List.split
+)
+"mlMethod.ml" 118 4452 4480 "mlMethod.ml" 118 4452 4488
+type(
+  (Cidl.mmethod ->
+   (string * Camlp4.PreCast.Ast.expr) option *
+   Camlp4.PreCast.Ast.class_str_item) ->
+  Cidl.mmethod list ->
+  ((string * Camlp4.PreCast.Ast.expr) option *
+   Camlp4.PreCast.Ast.class_str_item)
+  list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 118 4452 4489 "mlMethod.ml" 118 4452 4493
+type(
+  Cidl.mmethod ->
+  (string * Camlp4.PreCast.Ast.expr) option *
+  Camlp4.PreCast.Ast.class_str_item
+)
+ident(
+  int_ref make "mlMethod.ml" 35 1157 1163 "mlMethod.ml" 35 1157 1167
+)
+"mlMethod.ml" 118 4452 4494 "mlMethod.ml" 118 4452 4500
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref m_list "mlMethod.ml" 34 1110 1148 "mlMethod.ml" 34 1110 1154
+)
+"mlMethod.ml" 118 4452 4480 "mlMethod.ml" 118 4452 4500
+call(
+  stack
+)
+type(
+  ((string * Camlp4.PreCast.Ast.expr) option *
+   Camlp4.PreCast.Ast.class_str_item)
+  list
+)
+"mlMethod.ml" 118 4452 4468 "mlMethod.ml" 118 4452 4501
+call(
+  stack
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) option list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 119 4505 4507 "mlMethod.ml" 119 4505 4522
+type(
+  ((string * Camlp4.PreCast.Ast.expr) option ->
+   (string * Camlp4.PreCast.Ast.expr) list ->
+   (string * Camlp4.PreCast.Ast.expr) list) ->
+  (string * Camlp4.PreCast.Ast.expr) option list ->
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlMethod.ml" 119 4505 4528 "mlMethod.ml" 119 4505 4529
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+ident(
+  def m "mlMethod.ml" 119 4505 4530 "mlMethod.ml" 119 4505 4580
+)
+"mlMethod.ml" 119 4505 4530 "mlMethod.ml" 119 4505 4533
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  def acc "mlMethod.ml" 119 4505 4537 "mlMethod.ml" 119 4505 4580
+)
+"mlMethod.ml" 119 4505 4543 "mlMethod.ml" 119 4505 4544
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+ident(
+  int_ref m "mlMethod.ml" 119 4505 4528 "mlMethod.ml" 119 4505 4529
+)
+"mlMethod.ml" 119 4505 4550 "mlMethod.ml" 119 4505 4554
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+"mlMethod.ml" 119 4505 4558 "mlMethod.ml" 119 4505 4561
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  int_ref acc "mlMethod.ml" 119 4505 4530 "mlMethod.ml" 119 4505 4533
+)
+"mlMethod.ml" 119 4505 4569 "mlMethod.ml" 119 4505 4570
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+ident(
+  def m "mlMethod.ml" 119 4505 4574 "mlMethod.ml" 119 4505 4580
+)
+"mlMethod.ml" 119 4505 4564 "mlMethod.ml" 119 4505 4570
+type(
+  (string * Camlp4.PreCast.Ast.expr) option
+)
+"mlMethod.ml" 119 4505 4574 "mlMethod.ml" 119 4505 4575
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref m "mlMethod.ml" 119 4505 4569 "mlMethod.ml" 119 4505 4570
+)
+"mlMethod.ml" 119 4505 4577 "mlMethod.ml" 119 4505 4580
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  int_ref acc "mlMethod.ml" 119 4505 4530 "mlMethod.ml" 119 4505 4533
+)
+"mlMethod.ml" 119 4505 4574 "mlMethod.ml" 119 4505 4580
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 119 4505 4537 "mlMethod.ml" 119 4505 4580
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 119 4505 4530 "mlMethod.ml" 119 4505 4580
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 119 4505 4528 "mlMethod.ml" 119 4505 4580
+type(
+  (string * Camlp4.PreCast.Ast.expr) option ->
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 119 4505 4582 "mlMethod.ml" 119 4505 4586
+type(
+  (string * Camlp4.PreCast.Ast.expr) option list
+)
+ident(
+  int_ref mids "mlMethod.ml" 118 4452 4458 "mlMethod.ml" 118 4452 4462
+)
+"mlMethod.ml" 119 4505 4587 "mlMethod.ml" 119 4505 4589
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 119 4505 4507 "mlMethod.ml" 119 4505 4589
+call(
+  stack
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 119 4505 4592 "mlMethod.ml" 119 4505 4593
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  int_ref m "mlMethod.ml" 118 4452 4464 "mlMethod.ml" 118 4452 4465
+)
+"mlMethod.ml" 119 4505 4507 "mlMethod.ml" 119 4505 4593
+type(
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 118 4452 4454 "mlMethod.ml" 119 4505 4593
+type(
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 35 1157 1159 "mlMethod.ml" 119 4505 4593
+type(
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 34 1110 1148 "mlMethod.ml" 119 4505 4593
+type(
+  Cidl.mmethod list ->
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 34 1110 1138 "mlMethod.ml" 119 4505 4593
+type(
+  callback:bool ->
+  Cidl.mmethod list ->
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+type(
+  bool
+)
+ident(
+  def callback "mlMethod.ml" 34 1110 1148 "mlMethod.ml" 119 4505 4593
+)
+"mlMethod.ml" 34 1110 1129 "mlMethod.ml" 119 4505 4593
+type(
+  string ->
+  callback:bool ->
+  Cidl.mmethod list ->
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 34 1110 1123 "mlMethod.ml" 119 4505 4593
+type(
+  string ->
+  string ->
+  callback:bool ->
+  Cidl.mmethod list ->
+  (string * Camlp4.PreCast.Ast.expr) list *
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 122 4644 4648 "mlMethod.ml" 122 4644 4661
+type(
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  def make_callback "mlMethod.ml" 152 5890 5890 "_none_" 1 0 -1
+)
+"mlMethod.ml" 122 4644 4662 "mlMethod.ml" 122 4644 4668
+type(
+  Cidl.mmethod list
+)
+ident(
+  def m_list "mlMethod.ml" 123 4671 4673 "mlMethod.ml" 149 5801 5833
+)
+"mlMethod.ml" 123 4671 4677 "mlMethod.ml" 123 4671 4681
+type(
+  Cidl.mmethod ->
+  Camlp4.PreCast.Ast.class_str_item list ->
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  def make "mlMethod.ml" 149 5801 5803 "mlMethod.ml" 149 5801 5833
+)
+"mlMethod.ml" 123 4671 4682 "mlMethod.ml" 123 4671 4683
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "mlMethod.ml" 123 4671 4684 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 123 4671 4684 "mlMethod.ml" 123 4671 4687
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  def acc "mlMethod.ml" 124 4691 4695 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 124 4691 4701 "mlMethod.ml" 124 4691 4702
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 123 4671 4682 "mlMethod.ml" 123 4671 4683
+)
+"mlMethod.ml" 124 4691 4701 "mlMethod.ml" 124 4691 4710
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 125 4717 4728 "mlMethod.ml" 125 4717 4729
+type(
+  Cidl.typ
+)
+"mlMethod.ml" 125 4717 4723 "mlMethod.ml" 125 4717 4729
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 125 4717 4737 "mlMethod.ml" 125 4717 4738
+type(
+  Cidl.typ
+)
+"mlMethod.ml" 125 4717 4732 "mlMethod.ml" 125 4717 4738
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 125 4717 4723 "mlMethod.ml" 125 4717 4738
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 125 4717 4742 "mlMethod.ml" 125 4717 4745
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  int_ref acc "mlMethod.ml" 123 4671 4684 "mlMethod.ml" 123 4671 4687
+)
+"mlMethod.ml" 126 4746 4761 "mlMethod.ml" 126 4746 4769
+type(
+  bool
+)
+ident(
+  def abstract "mlMethod.ml" 127 4787 4788 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 126 4746 4770 "mlMethod.ml" 126 4746 4774
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlMethod.ml" 127 4787 4788 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 126 4746 4776 "mlMethod.ml" 126 4746 4781
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 127 4787 4788 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 126 4746 4752 "mlMethod.ml" 126 4746 4782
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 127 4787 4792 "mlMethod.ml" 127 4787 4799
+type(
+  string
+)
+ident(
+  def ml_name "mlMethod.ml" 132 4998 4999 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 127 4787 4802 "mlMethod.ml" 127 4787 4826
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 127 4787 4827 "mlMethod.ml" 127 4787 4828
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 123 4671 4682 "mlMethod.ml" 123 4671 4683
+)
+"mlMethod.ml" 127 4787 4827 "mlMethod.ml" 127 4787 4837
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 127 4787 4802 "mlMethod.ml" 127 4787 4837
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 128 4838 4843 "mlMethod.ml" 128 4838 4852
+type(
+  string
+)
+ident(
+  def java_name "mlMethod.ml" 132 4998 4999 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 128 4838 4855 "mlMethod.ml" 128 4838 4881
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_java_name
+)
+"mlMethod.ml" 128 4838 4882 "mlMethod.ml" 128 4838 4883
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 123 4671 4682 "mlMethod.ml" 123 4671 4683
+)
+"mlMethod.ml" 128 4838 4882 "mlMethod.ml" 128 4838 4892
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 128 4838 4855 "mlMethod.ml" 128 4838 4892
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 129 4893 4898 "mlMethod.ml" 129 4893 4910
+type(
+  string
+)
+ident(
+  def ml_stub_name "mlMethod.ml" 132 4998 4999 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 129 4893 4913 "mlMethod.ml" 129 4893 4942
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_stub_name
+)
+"mlMethod.ml" 129 4893 4943 "mlMethod.ml" 129 4893 4944
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 123 4671 4682 "mlMethod.ml" 123 4671 4683
+)
+"mlMethod.ml" 129 4893 4943 "mlMethod.ml" 129 4893 4953
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 129 4893 4913 "mlMethod.ml" 129 4893 4953
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 132 4998 5003 "mlMethod.ml" 132 4998 5008
+type(
+  string list
+)
+ident(
+  def nargs "mlMethod.ml" 134 5104 5105 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 132 4998 5011 "mlMethod.ml" 132 4998 5019
+type(
+  (int -> string) -> int list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 132 4998 5025 "mlMethod.ml" 132 4998 5026
+type(
+  int
+)
+ident(
+  def i "mlMethod.ml" 132 4998 5030 "mlMethod.ml" 132 4998 5050
+)
+"mlMethod.ml" 132 4998 5030 "mlMethod.ml" 132 4998 5034
+type(
+  string
+)
+"mlMethod.ml" 132 4998 5034 "mlMethod.ml" 132 4998 5035
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 132 4998 5035 "mlMethod.ml" 132 4998 5048
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"mlMethod.ml" 132 4998 5049 "mlMethod.ml" 132 4998 5050
+type(
+  int
+)
+ident(
+  int_ref i "mlMethod.ml" 132 4998 5025 "mlMethod.ml" 132 4998 5026
+)
+"mlMethod.ml" 132 4998 5035 "mlMethod.ml" 132 4998 5050
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 132 4998 5030 "mlMethod.ml" 132 4998 5050
+call(
+  tail
+)
+type(
+  string
+)
+"mlMethod.ml" 132 4998 5025 "mlMethod.ml" 132 4998 5050
+type(
+  int -> string
+)
+"mlMethod.ml" 133 5053 5059 "mlMethod.ml" 133 5053 5077
+type(
+  int -> int -> int list
+)
+ident(
+  ext_ref Utilities.interval
+)
+"mlMethod.ml" 133 5053 5078 "mlMethod.ml" 133 5053 5079
+type(
+  int
+)
+"mlMethod.ml" 133 5053 5081 "mlMethod.ml" 133 5053 5092
+type(
+  Cidl.typ list -> int
+)
+ident(
+  ext_ref List.length
+)
+"mlMethod.ml" 133 5053 5093 "mlMethod.ml" 133 5053 5098
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 126 4746 4776 "mlMethod.ml" 126 4746 4781
+)
+"mlMethod.ml" 133 5053 5081 "mlMethod.ml" 133 5053 5098
+call(
+  stack
+)
+type(
+  int
+)
+"mlMethod.ml" 133 5053 5059 "mlMethod.ml" 133 5053 5099
+call(
+  stack
+)
+type(
+  int list
+)
+"mlMethod.ml" 132 4998 5011 "mlMethod.ml" 133 5053 5100
+call(
+  stack
+)
+type(
+  string list
+)
+"mlMethod.ml" 134 5104 5109 "mlMethod.ml" 134 5104 5113
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlMethod.ml" 137 5215 5216 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 134 5104 5116 "mlMethod.ml" 134 5104 5128
+type(
+  string list -> Cidl.typ list -> (string * Cidl.typ) list
+)
+ident(
+  ext_ref List.combine
+)
+"mlMethod.ml" 134 5104 5129 "mlMethod.ml" 134 5104 5134
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlMethod.ml" 132 4998 5003 "mlMethod.ml" 132 4998 5008
+)
+"mlMethod.ml" 134 5104 5135 "mlMethod.ml" 134 5104 5140
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 126 4746 4776 "mlMethod.ml" 126 4746 4781
+)
+"mlMethod.ml" 134 5104 5116 "mlMethod.ml" 134 5104 5140
+call(
+  stack
+)
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 137 5215 5220 "mlMethod.ml" 137 5215 5229
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def stub_body "mlMethod.ml" 138 5318 5319 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 137 5215 5232 "mlMethod.ml" 137 5215 5247
+type(
+  Camlp4.PreCast.Ast.expr ->
+  Camlp4.PreCast.Ast.expr list -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_call
+)
+"mlMethod.ml" 137 5215 5255 "mlMethod.ml" 137 5215 5255
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 137 5215 5255 "mlMethod.ml" 137 5215 5262
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 127 4787 4792 "mlMethod.ml" 127 4787 4799
+)
+"mlMethod.ml" 137 5215 5281 "mlMethod.ml" 137 5215 5289
+type(
+  (string -> Camlp4.PreCast.Ast.expr) ->
+  string list -> Camlp4.PreCast.Ast.expr list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 137 5215 5290 "mlMethod.ml" 137 5215 5307
+type(
+  string -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref P4helper.expr_lid
+)
+"mlMethod.ml" 137 5215 5308 "mlMethod.ml" 137 5215 5313
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlMethod.ml" 132 4998 5003 "mlMethod.ml" 132 4998 5008
+)
+"mlMethod.ml" 137 5215 5281 "mlMethod.ml" 137 5215 5313
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+"mlMethod.ml" 137 5215 5232 "mlMethod.ml" 137 5215 5314
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 138 5318 5323 "mlMethod.ml" 138 5318 5332
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def stub_body "mlMethod.ml" 139 5376 5377 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 138 5318 5335 "mlMethod.ml" 138 5318 5357
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_to_java
+)
+"mlMethod.ml" 138 5318 5358 "mlMethod.ml" 138 5318 5362
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 126 4746 4770 "mlMethod.ml" 126 4746 4774
+)
+"mlMethod.ml" 138 5318 5363 "mlMethod.ml" 138 5318 5372
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref stub_body "mlMethod.ml" 137 5215 5220 "mlMethod.ml" 137 5215 5229
+)
+"mlMethod.ml" 138 5318 5335 "mlMethod.ml" 138 5318 5372
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 139 5376 5381 "mlMethod.ml" 139 5376 5390
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def stub_body "mlMethod.ml" 140 5488 5489 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 139 5376 5393 "mlMethod.ml" 139 5376 5414
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 139 5376 5416 "mlMethod.ml" 139 5376 5442
+type(
+  (Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr) ->
+  (string * Cidl.typ) list -> (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  ext_ref MlType.get_args_convertion
+)
+"mlMethod.ml" 139 5376 5443 "mlMethod.ml" 139 5376 5467
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_from_java
+)
+"mlMethod.ml" 139 5376 5468 "mlMethod.ml" 139 5376 5472
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 134 5104 5109 "mlMethod.ml" 134 5104 5113
+)
+"mlMethod.ml" 139 5376 5416 "mlMethod.ml" 139 5376 5472
+call(
+  stack
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 139 5376 5474 "mlMethod.ml" 139 5376 5483
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref stub_body "mlMethod.ml" 138 5318 5323 "mlMethod.ml" 138 5318 5332
+)
+"mlMethod.ml" 139 5376 5393 "mlMethod.ml" 139 5376 5483
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 140 5488 5493 "mlMethod.ml" 140 5488 5502
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def stub_body "mlMethod.ml" 146 5720 5723 "mlMethod.ml" 146 5720 5788
+)
+"mlMethod.ml" 142 5620 5629 "mlMethod.ml" 142 5620 5634
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 126 4746 4776 "mlMethod.ml" 126 4746 4781
+)
+"mlMethod.ml" 143 5640 5645 "mlMethod.ml" 143 5640 5647
+type(
+  Cidl.typ list
+)
+"mlMethod.ml" 143 5640 5651 "mlMethod.ml" 143 5640 5660
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref stub_body "mlMethod.ml" 139 5376 5381 "mlMethod.ml" 139 5376 5390
+)
+"mlMethod.ml" 144 5662 5667 "mlMethod.ml" 144 5662 5672
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 144 5662 5676 "mlMethod.ml" 144 5662 5714
+)
+"mlMethod.ml" 144 5662 5676 "mlMethod.ml" 144 5662 5699
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_callback_fun
+)
+"mlMethod.ml" 144 5662 5700 "mlMethod.ml" 144 5662 5704
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 134 5104 5109 "mlMethod.ml" 134 5104 5113
+)
+"mlMethod.ml" 144 5662 5705 "mlMethod.ml" 144 5662 5714
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref stub_body "mlMethod.ml" 139 5376 5381 "mlMethod.ml" 139 5376 5390
+)
+"mlMethod.ml" 144 5662 5676 "mlMethod.ml" 144 5662 5714
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 142 5620 5623 "mlMethod.ml" 144 5662 5714
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 146 5720 5738 "mlMethod.ml" 146 5720 5738
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.override_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item
+)
+"mlMethod.ml" 146 5720 5738 "mlMethod.ml" 146 5720 5750
+type(
+  string
+)
+ident(
+  int_ref ml_stub_name "mlMethod.ml" 129 4893 4898 "mlMethod.ml" 129 4893 4910
+)
+"mlMethod.ml" 146 5720 5767 "mlMethod.ml" 146 5720 5776
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref stub_body "mlMethod.ml" 140 5488 5493 "mlMethod.ml" 140 5488 5502
+)
+"mlMethod.ml" 146 5720 5785 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  int_ref acc "mlMethod.ml" 123 4671 4684 "mlMethod.ml" 123 4671 4687
+)
+"mlMethod.ml" 146 5720 5723 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 140 5488 5489 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 139 5376 5377 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 138 5318 5319 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 137 5215 5216 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 134 5104 5105 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 132 4998 4999 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 127 4787 4788 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 124 4691 4695 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 123 4671 4684 "mlMethod.ml" 146 5720 5788
+type(
+  Camlp4.PreCast.Ast.class_str_item list ->
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 123 4671 4682 "mlMethod.ml" 146 5720 5788
+type(
+  Cidl.mmethod ->
+  Camlp4.PreCast.Ast.class_str_item list ->
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 149 5801 5803 "mlMethod.ml" 149 5801 5818
+type(
+  (Cidl.mmethod ->
+   Camlp4.PreCast.Ast.class_str_item list ->
+   Camlp4.PreCast.Ast.class_str_item list) ->
+  Cidl.mmethod list ->
+  Camlp4.PreCast.Ast.class_str_item list ->
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlMethod.ml" 149 5801 5819 "mlMethod.ml" 149 5801 5823
+type(
+  Cidl.mmethod ->
+  Camlp4.PreCast.Ast.class_str_item list ->
+  Camlp4.PreCast.Ast.class_str_item list
+)
+ident(
+  int_ref make "mlMethod.ml" 123 4671 4677 "mlMethod.ml" 123 4671 4681
+)
+"mlMethod.ml" 149 5801 5824 "mlMethod.ml" 149 5801 5830
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref m_list "mlMethod.ml" 122 4644 4662 "mlMethod.ml" 122 4644 4668
+)
+"mlMethod.ml" 149 5801 5831 "mlMethod.ml" 149 5801 5833
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 149 5801 5803 "mlMethod.ml" 149 5801 5833
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 123 4671 4673 "mlMethod.ml" 149 5801 5833
+type(
+  Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 122 4644 4662 "mlMethod.ml" 149 5801 5833
+type(
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_str_item list
+)
+"mlMethod.ml" 152 5890 5894 "mlMethod.ml" 152 5890 5918
+type(
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  def make_callback_class_type "mlMethod.ml" 167 6409 6409 "_none_" 1 0 -1
+)
+"mlMethod.ml" 152 5890 5919 "mlMethod.ml" 152 5890 5925
+type(
+  Cidl.mmethod list
+)
+ident(
+  def m_list "mlMethod.ml" 153 5928 5930 "mlMethod.ml" 164 6310 6342
+)
+"mlMethod.ml" 153 5928 5934 "mlMethod.ml" 153 5928 5938
+type(
+  Cidl.mmethod ->
+  Camlp4.PreCast.Ast.class_sig_item list ->
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  def make "mlMethod.ml" 164 6310 6312 "mlMethod.ml" 164 6310 6342
+)
+"mlMethod.ml" 153 5928 5939 "mlMethod.ml" 153 5928 5940
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "mlMethod.ml" 153 5928 5941 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 153 5928 5941 "mlMethod.ml" 153 5928 5944
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  def acc "mlMethod.ml" 154 5948 5952 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 154 5948 5958 "mlMethod.ml" 154 5948 5959
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 153 5928 5939 "mlMethod.ml" 153 5928 5940
+)
+"mlMethod.ml" 154 5948 5958 "mlMethod.ml" 154 5948 5967
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 155 5974 5985 "mlMethod.ml" 155 5974 5986
+type(
+  Cidl.typ
+)
+"mlMethod.ml" 155 5974 5980 "mlMethod.ml" 155 5974 5986
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 155 5974 5994 "mlMethod.ml" 155 5974 5995
+type(
+  Cidl.typ
+)
+"mlMethod.ml" 155 5974 5989 "mlMethod.ml" 155 5974 5995
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 155 5974 5980 "mlMethod.ml" 155 5974 5995
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 155 5974 5999 "mlMethod.ml" 155 5974 6002
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  int_ref acc "mlMethod.ml" 153 5928 5941 "mlMethod.ml" 153 5928 5944
+)
+"mlMethod.ml" 156 6003 6018 "mlMethod.ml" 156 6003 6026
+type(
+  bool
+)
+ident(
+  def abstract "mlMethod.ml" 157 6044 6045 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 156 6003 6027 "mlMethod.ml" 156 6003 6031
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlMethod.ml" 157 6044 6045 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 156 6003 6033 "mlMethod.ml" 156 6003 6038
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 157 6044 6045 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 156 6003 6009 "mlMethod.ml" 156 6003 6039
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 157 6044 6049 "mlMethod.ml" 157 6044 6061
+type(
+  string
+)
+ident(
+  def ml_stub_name "mlMethod.ml" 158 6108 6109 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 157 6044 6064 "mlMethod.ml" 157 6044 6093
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_stub_name
+)
+"mlMethod.ml" 157 6044 6094 "mlMethod.ml" 157 6044 6095
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 153 5928 5939 "mlMethod.ml" 153 5928 5940
+)
+"mlMethod.ml" 157 6044 6094 "mlMethod.ml" 157 6044 6104
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 157 6044 6064 "mlMethod.ml" 157 6044 6104
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 158 6108 6113 "mlMethod.ml" 158 6108 6117
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def sign "mlMethod.ml" 161 6234 6237 "mlMethod.ml" 161 6234 6297
+)
+"mlMethod.ml" 158 6108 6126 "mlMethod.ml" 158 6108 6131
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 156 6003 6033 "mlMethod.ml" 156 6003 6038
+)
+"mlMethod.ml" 159 6138 6141 "mlMethod.ml" 159 6138 6143
+type(
+  Cidl.typ list
+)
+"mlMethod.ml" 159 6138 6147 "mlMethod.ml" 159 6138 6178
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_jni_signature_of_type
+)
+"mlMethod.ml" 159 6138 6179 "mlMethod.ml" 159 6138 6183
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 156 6003 6027 "mlMethod.ml" 156 6003 6031
+)
+"mlMethod.ml" 159 6138 6147 "mlMethod.ml" 159 6138 6183
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 160 6184 6187 "mlMethod.ml" 160 6184 6192
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 160 6184 6196 "mlMethod.ml" 160 6184 6230
+)
+"mlMethod.ml" 160 6184 6196 "mlMethod.ml" 160 6184 6219
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_jni_signature
+)
+"mlMethod.ml" 160 6184 6220 "mlMethod.ml" 160 6184 6225
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 160 6184 6187 "mlMethod.ml" 160 6184 6192
+)
+"mlMethod.ml" 160 6184 6226 "mlMethod.ml" 160 6184 6230
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 156 6003 6027 "mlMethod.ml" 156 6003 6031
+)
+"mlMethod.ml" 160 6184 6196 "mlMethod.ml" 160 6184 6230
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 158 6108 6120 "mlMethod.ml" 160 6184 6230
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 161 6234 6252 "mlMethod.ml" 161 6234 6252
+type(
+  Camlp4.PreCast.Ast.private_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item
+)
+"mlMethod.ml" 161 6234 6252 "mlMethod.ml" 161 6234 6264
+type(
+  string
+)
+ident(
+  int_ref ml_stub_name "mlMethod.ml" 157 6044 6049 "mlMethod.ml" 157 6044 6061
+)
+"mlMethod.ml" 161 6234 6281 "mlMethod.ml" 161 6234 6285
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref sign "mlMethod.ml" 158 6108 6113 "mlMethod.ml" 158 6108 6117
+)
+"mlMethod.ml" 161 6234 6294 "mlMethod.ml" 161 6234 6297
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  int_ref acc "mlMethod.ml" 153 5928 5941 "mlMethod.ml" 153 5928 5944
+)
+"mlMethod.ml" 161 6234 6237 "mlMethod.ml" 161 6234 6297
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 158 6108 6109 "mlMethod.ml" 161 6234 6297
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 157 6044 6045 "mlMethod.ml" 161 6234 6297
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 154 5948 5952 "mlMethod.ml" 161 6234 6297
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 153 5928 5941 "mlMethod.ml" 161 6234 6297
+type(
+  Camlp4.PreCast.Ast.class_sig_item list ->
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 153 5928 5939 "mlMethod.ml" 161 6234 6297
+type(
+  Cidl.mmethod ->
+  Camlp4.PreCast.Ast.class_sig_item list ->
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 164 6310 6312 "mlMethod.ml" 164 6310 6327
+type(
+  (Cidl.mmethod ->
+   Camlp4.PreCast.Ast.class_sig_item list ->
+   Camlp4.PreCast.Ast.class_sig_item list) ->
+  Cidl.mmethod list ->
+  Camlp4.PreCast.Ast.class_sig_item list ->
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  ext_ref List.fold_right
+)
+"mlMethod.ml" 164 6310 6328 "mlMethod.ml" 164 6310 6332
+type(
+  Cidl.mmethod ->
+  Camlp4.PreCast.Ast.class_sig_item list ->
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+ident(
+  int_ref make "mlMethod.ml" 153 5928 5934 "mlMethod.ml" 153 5928 5938
+)
+"mlMethod.ml" 164 6310 6333 "mlMethod.ml" 164 6310 6339
+type(
+  Cidl.mmethod list
+)
+ident(
+  int_ref m_list "mlMethod.ml" 152 5890 5919 "mlMethod.ml" 152 5890 5925
+)
+"mlMethod.ml" 164 6310 6340 "mlMethod.ml" 164 6310 6342
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 164 6310 6312 "mlMethod.ml" 164 6310 6342
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 153 5928 5930 "mlMethod.ml" 164 6310 6342
+type(
+  Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 152 5890 5919 "mlMethod.ml" 164 6310 6342
+type(
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.class_sig_item list
+)
+"mlMethod.ml" 167 6409 6413 "mlMethod.ml" 167 6409 6424
+type(
+  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  def make_static "mlMethod.ml" 247 10194 10194 "_none_" 1 0 -1
+)
+"mlMethod.ml" 167 6409 6425 "mlMethod.ml" 167 6409 6432
+type(
+  Cidl.clazz list
+)
+ident(
+  def cl_list "mlMethod.ml" 168 6435 6437 "mlMethod.ml" 243 9968 10029
+)
+"mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+type(
+  string
+)
+ident(
+  def clazz "mlMethod.ml" 169 6460 6462 "mlMethod.ml" 243 9968 10029
+)
+"mlMethod.ml" 168 6435 6449 "mlMethod.ml" 168 6435 6456
+type(
+  string
+)
+"mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+type(
+  string
+)
+ident(
+  def id "mlMethod.ml" 170 6479 6481 "mlMethod.ml" 243 9968 10029
+)
+"mlMethod.ml" 169 6460 6471 "mlMethod.ml" 169 6460 6475
+type(
+  string
+)
+"mlMethod.ml" 170 6479 6485 "mlMethod.ml" 170 6479 6492
+type(
+  Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  def make_cl "mlMethod.ml" 243 9968 9970 "mlMethod.ml" 243 9968 10029
+)
+"mlMethod.ml" 170 6479 6493 "mlMethod.ml" 170 6479 6495
+type(
+  Cidl.clazz
+)
+ident(
+  def cl "mlMethod.ml" 171 6498 6502 "mlMethod.ml" 241 9924 9962
+)
+"mlMethod.ml" 171 6498 6506 "mlMethod.ml" 171 6498 6516
+type(
+  string
+)
+ident(
+  def class_name "mlMethod.ml" 172 6565 6569 "mlMethod.ml" 241 9924 9962
+)
+"mlMethod.ml" 171 6498 6519 "mlMethod.ml" 171 6498 6549
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_signature
+)
+"mlMethod.ml" 171 6498 6550 "mlMethod.ml" 171 6498 6552
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "mlMethod.ml" 170 6479 6493 "mlMethod.ml" 170 6479 6495
+)
+"mlMethod.ml" 171 6498 6550 "mlMethod.ml" 171 6498 6561
+type(
+  Ident.clazz
+)
+"mlMethod.ml" 171 6498 6519 "mlMethod.ml" 171 6498 6561
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 172 6565 6573 "mlMethod.ml" 172 6565 6583
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def class_expr "mlMethod.ml" 173 6633 6637 "mlMethod.ml" 241 9924 9962
+)
+"mlMethod.ml" 172 6565 6594 "mlMethod.ml" 172 6565 6594
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 172 6565 6594 "mlMethod.ml" 172 6565 6604
+type(
+  string
+)
+ident(
+  int_ref class_name "mlMethod.ml" 171 6498 6506 "mlMethod.ml" 171 6498 6516
+)
+"mlMethod.ml" 173 6633 6641 "mlMethod.ml" 173 6633 6645
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  def make "mlMethod.ml" 241 9924 9928 "mlMethod.ml" 241 9924 9962
+)
+"mlMethod.ml" 173 6633 6646 "mlMethod.ml" 173 6633 6647
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "mlMethod.ml" 174 6651 6657 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 174 6651 6661 "mlMethod.ml" 174 6651 6668
+type(
+  string
+)
+ident(
+  def ml_name "mlMethod.ml" 176 6772 6778 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 174 6651 6671 "mlMethod.ml" 174 6651 6695
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 174 6651 6696 "mlMethod.ml" 174 6651 6697
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 173 6633 6646 "mlMethod.ml" 173 6633 6647
+)
+"mlMethod.ml" 174 6651 6696 "mlMethod.ml" 174 6651 6706
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 174 6651 6671 "mlMethod.ml" 174 6651 6706
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 175 6708 6718 "mlMethod.ml" 175 6708 6727
+type(
+  string
+)
+ident(
+  def java_name "mlMethod.ml" 176 6772 6778 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 175 6708 6731 "mlMethod.ml" 175 6708 6757
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_java_name
+)
+"mlMethod.ml" 175 6708 6758 "mlMethod.ml" 175 6708 6759
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 173 6633 6646 "mlMethod.ml" 173 6633 6647
+)
+"mlMethod.ml" 175 6708 6758 "mlMethod.ml" 175 6708 6768
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 175 6708 6731 "mlMethod.ml" 175 6708 6768
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 176 6772 6784 "mlMethod.ml" 176 6772 6785
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 173 6633 6646 "mlMethod.ml" 173 6633 6647
+)
+"mlMethod.ml" 176 6772 6784 "mlMethod.ml" 176 6772 6793
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 177 6800 6813 "mlMethod.ml" 177 6800 6816
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 178 6820 6823 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 177 6800 6808 "mlMethod.ml" 177 6800 6816
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 178 6820 6827 "mlMethod.ml" 178 6820 6831
+type(
+  string
+)
+ident(
+  def sign "mlMethod.ml" 179 6871 6874 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 178 6820 6834 "mlMethod.ml" 178 6820 6863
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.java_signature_of_type
+)
+"mlMethod.ml" 178 6820 6864 "mlMethod.ml" 178 6820 6867
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 177 6800 6813 "mlMethod.ml" 177 6800 6816
+)
+"mlMethod.ml" 178 6820 6834 "mlMethod.ml" 178 6820 6867
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 179 6871 6878 "mlMethod.ml" 179 6871 6885
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def id_expr "mlMethod.ml" 181 6965 6968 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 179 6871 6895 "mlMethod.ml" 179 6871 6895
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 179 6871 6895 "mlMethod.ml" 179 6871 6899
+type(
+  string
+)
+ident(
+  int_ref sign "mlMethod.ml" 178 6820 6827 "mlMethod.ml" 178 6820 6831
+)
+"mlMethod.ml" 179 6871 6895 "mlMethod.ml" 179 6871 6900
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 179 6871 6895 "mlMethod.ml" 179 6871 6904
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 175 6708 6718 "mlMethod.ml" 175 6708 6727
+)
+"mlMethod.ml" 181 6965 6972 "mlMethod.ml" 181 6965 6988
+type(
+  string
+)
+ident(
+  def call_method_name "mlMethod.ml" 183 7070 7073 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 181 6965 6991 "mlMethod.ml" 181 6965 7008
+type(
+  string
+)
+"mlMethod.ml" 181 6965 7008 "mlMethod.ml" 181 6965 7009
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 181 6965 7010 "mlMethod.ml" 181 6965 7031
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.string_of_type
+)
+"mlMethod.ml" 181 6965 7032 "mlMethod.ml" 181 6965 7035
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 177 6800 6813 "mlMethod.ml" 177 6800 6816
+)
+"mlMethod.ml" 181 6965 7010 "mlMethod.ml" 181 6965 7035
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 181 6965 7036 "mlMethod.ml" 181 6965 7037
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 181 6965 7037 "mlMethod.ml" 181 6965 7045
+type(
+  string
+)
+"mlMethod.ml" 181 6965 7009 "mlMethod.ml" 181 6965 7045
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 181 6965 6991 "mlMethod.ml" 181 6965 7045
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 182 7048 7055 "mlMethod.ml" 182 7048 7059
+type(
+  string
+)
+ident(
+  def narg "mlMethod.ml" 183 7070 7073 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 182 7048 7062 "mlMethod.ml" 182 7048 7066
+type(
+  string
+)
+"mlMethod.ml" 183 7070 7077 "mlMethod.ml" 183 7070 7081
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def call "mlMethod.ml" 185 7158 7161 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 183 7070 7091 "mlMethod.ml" 183 7070 7091
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 183 7070 7091 "mlMethod.ml" 183 7070 7093
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+)
+"mlMethod.ml" 183 7070 7091 "mlMethod.ml" 183 7070 7095
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 182 7048 7055 "mlMethod.ml" 182 7048 7059
+)
+"mlMethod.ml" 183 7070 7091 "mlMethod.ml" 183 7070 7096
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 183 7070 7093 "mlMethod.ml" 183 7070 7109
+type(
+  string
+)
+ident(
+  int_ref call_method_name "mlMethod.ml" 181 6965 6972 "mlMethod.ml" 181 6965 6988
+)
+"mlMethod.ml" 183 7070 7093 "mlMethod.ml" 183 7070 7115
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 185 7158 7165 "mlMethod.ml" 185 7158 7169
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 186 7258 7261 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 185 7158 7172 "mlMethod.ml" 185 7158 7193
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 185 7158 7195 "mlMethod.ml" 185 7158 7199
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 182 7048 7055 "mlMethod.ml" 182 7048 7059
+)
+"mlMethod.ml" 185 7158 7200 "mlMethod.ml" 185 7158 7222
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_to_java
+)
+"mlMethod.ml" 185 7158 7223 "mlMethod.ml" 185 7158 7226
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 177 6800 6813 "mlMethod.ml" 177 6800 6816
+)
+"mlMethod.ml" 185 7158 7234 "mlMethod.ml" 185 7158 7234
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 185 7158 7234 "mlMethod.ml" 185 7158 7238
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 182 7048 7055 "mlMethod.ml" 182 7048 7059
+)
+"mlMethod.ml" 185 7158 7200 "mlMethod.ml" 185 7158 7248
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 185 7158 7195 "mlMethod.ml" 185 7158 7248
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 185 7158 7250 "mlMethod.ml" 185 7158 7254
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref call "mlMethod.ml" 183 7070 7077 "mlMethod.ml" 183 7070 7081
+)
+"mlMethod.ml" 185 7158 7172 "mlMethod.ml" 185 7158 7254
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 186 7258 7265 "mlMethod.ml" 186 7258 7269
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 187 7306 7309 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 186 7258 7272 "mlMethod.ml" 186 7258 7286
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_fun
+)
+"mlMethod.ml" 186 7258 7288 "mlMethod.ml" 186 7258 7292
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 182 7048 7055 "mlMethod.ml" 182 7048 7059
+)
+"mlMethod.ml" 186 7258 7293 "mlMethod.ml" 186 7258 7296
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 177 6800 6813 "mlMethod.ml" 177 6800 6816
+)
+"mlMethod.ml" 186 7258 7288 "mlMethod.ml" 186 7258 7296
+type(
+  (string * Cidl.typ) list
+)
+type(
+  string * Cidl.typ
+)
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 186 7258 7298 "mlMethod.ml" 186 7258 7302
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 185 7158 7165 "mlMethod.ml" 185 7158 7169
+)
+"mlMethod.ml" 186 7258 7272 "mlMethod.ml" 186 7258 7302
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 187 7306 7313 "mlMethod.ml" 187 7306 7317
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 188 7363 7366 "mlMethod.ml" 189 7426 7473
+)
+"mlMethod.ml" 187 7306 7320 "mlMethod.ml" 187 7306 7341
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 187 7306 7343 "mlMethod.ml" 187 7306 7345
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+)
+"mlMethod.ml" 187 7306 7346 "mlMethod.ml" 187 7306 7353
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref id_expr "mlMethod.ml" 179 6871 6878 "mlMethod.ml" 179 6871 6885
+)
+"mlMethod.ml" 187 7306 7343 "mlMethod.ml" 187 7306 7353
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 187 7306 7355 "mlMethod.ml" 187 7306 7359
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 186 7258 7265 "mlMethod.ml" 186 7258 7269
+)
+"mlMethod.ml" 187 7306 7320 "mlMethod.ml" 187 7306 7359
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 188 7363 7370 "mlMethod.ml" 188 7363 7374
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 189 7426 7441 "mlMethod.ml" 189 7426 7441
+)
+"mlMethod.ml" 188 7363 7377 "mlMethod.ml" 188 7363 7398
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 188 7363 7400 "mlMethod.ml" 188 7363 7405
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 188 7363 7406 "mlMethod.ml" 188 7363 7416
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref class_expr "mlMethod.ml" 172 6565 6573 "mlMethod.ml" 172 6565 6583
+)
+"mlMethod.ml" 188 7363 7400 "mlMethod.ml" 188 7363 7416
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 188 7363 7418 "mlMethod.ml" 188 7363 7422
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 187 7306 7313 "mlMethod.ml" 187 7306 7317
+)
+"mlMethod.ml" 188 7363 7377 "mlMethod.ml" 188 7363 7422
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 189 7426 7441 "mlMethod.ml" 189 7426 7441
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 189 7426 7441 "mlMethod.ml" 189 7426 7448
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 174 6651 6661 "mlMethod.ml" 174 6651 6668
+)
+"mlMethod.ml" 189 7426 7464 "mlMethod.ml" 189 7426 7468
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 188 7363 7370 "mlMethod.ml" 188 7363 7374
+)
+"mlMethod.ml" 188 7363 7366 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 187 7306 7309 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 186 7258 7261 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 185 7158 7161 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 183 7070 7073 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 181 6965 6968 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 179 6871 6874 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 178 6820 6823 "mlMethod.ml" 189 7426 7473
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 191 7475 7488 "mlMethod.ml" 191 7475 7491
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 192 7496 7499 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 191 7475 7483 "mlMethod.ml" 191 7475 7491
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 192 7496 7503 "mlMethod.ml" 192 7496 7507
+type(
+  string
+)
+ident(
+  def sign "mlMethod.ml" 193 7547 7550 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 192 7496 7510 "mlMethod.ml" 192 7496 7539
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.java_signature_of_type
+)
+"mlMethod.ml" 192 7496 7540 "mlMethod.ml" 192 7496 7543
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 191 7475 7488 "mlMethod.ml" 191 7475 7491
+)
+"mlMethod.ml" 192 7496 7510 "mlMethod.ml" 192 7496 7543
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 193 7547 7554 "mlMethod.ml" 193 7547 7561
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def id_expr "mlMethod.ml" 194 7640 7643 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 193 7547 7571 "mlMethod.ml" 193 7547 7571
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 193 7547 7571 "mlMethod.ml" 193 7547 7575
+type(
+  string
+)
+ident(
+  int_ref sign "mlMethod.ml" 192 7496 7503 "mlMethod.ml" 192 7496 7507
+)
+"mlMethod.ml" 193 7547 7571 "mlMethod.ml" 193 7547 7576
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 193 7547 7571 "mlMethod.ml" 193 7547 7580
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 175 6708 6718 "mlMethod.ml" 175 6708 6727
+)
+"mlMethod.ml" 194 7640 7647 "mlMethod.ml" 194 7640 7650
+type(
+  string
+)
+ident(
+  def err "mlMethod.ml" 197 7837 7840 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 194 7640 7653 "mlMethod.ml" 194 7640 7698
+type(
+  string
+)
+"mlMethod.ml" 194 7640 7698 "mlMethod.ml" 194 7640 7699
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 195 7700 7706 "mlMethod.ml" 195 7700 7741
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"mlMethod.ml" 195 7700 7742 "mlMethod.ml" 195 7700 7743
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 173 6633 6646 "mlMethod.ml" 173 6633 6647
+)
+"mlMethod.ml" 195 7700 7742 "mlMethod.ml" 195 7700 7752
+type(
+  Ident.clazz
+)
+"mlMethod.ml" 195 7700 7706 "mlMethod.ml" 195 7700 7752
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 195 7700 7753 "mlMethod.ml" 195 7700 7754
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 195 7700 7754 "mlMethod.ml" 195 7700 7767
+type(
+  string
+)
+"mlMethod.ml" 195 7700 7767 "mlMethod.ml" 195 7700 7768
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 196 7769 7774 "mlMethod.ml" 196 7769 7802
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.idl_signature_of_type
+)
+"mlMethod.ml" 196 7769 7803 "mlMethod.ml" 196 7769 7806
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 191 7475 7488 "mlMethod.ml" 191 7475 7491
+)
+"mlMethod.ml" 196 7769 7774 "mlMethod.ml" 196 7769 7806
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 196 7769 7807 "mlMethod.ml" 196 7769 7808
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 196 7769 7809 "mlMethod.ml" 196 7769 7812
+type(
+  string
+)
+"mlMethod.ml" 196 7769 7813 "mlMethod.ml" 196 7769 7814
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 196 7769 7815 "mlMethod.ml" 196 7769 7824
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 175 6708 6718 "mlMethod.ml" 175 6708 6727
+)
+"mlMethod.ml" 196 7769 7825 "mlMethod.ml" 196 7769 7826
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 196 7769 7826 "mlMethod.ml" 196 7769 7833
+type(
+  string
+)
+"mlMethod.ml" 196 7769 7815 "mlMethod.ml" 196 7769 7833
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 196 7769 7809 "mlMethod.ml" 196 7769 7833
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 196 7769 7774 "mlMethod.ml" 196 7769 7833
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 195 7700 7754 "mlMethod.ml" 196 7769 7833
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 195 7700 7705 "mlMethod.ml" 196 7769 7833
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 194 7640 7653 "mlMethod.ml" 196 7769 7833
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 197 7837 7844 "mlMethod.ml" 197 7837 7856
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def safe_id_expr "mlMethod.ml" 200 7921 7924 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 198 7860 7872 "mlMethod.ml" 198 7860 7872
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 198 7860 7872 "mlMethod.ml" 198 7860 7875
+type(
+  string
+)
+ident(
+  int_ref err "mlMethod.ml" 194 7640 7647 "mlMethod.ml" 194 7640 7650
+)
+"mlMethod.ml" 198 7860 7876 "mlMethod.ml" 198 7860 7883
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref id_expr "mlMethod.ml" 193 7547 7554 "mlMethod.ml" 193 7547 7561
+)
+"mlMethod.ml" 200 7921 7928 "mlMethod.ml" 200 7921 7944
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  def call_method_name "mlMethod.ml" 201 8029 8032 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 200 7921 7955 "mlMethod.ml" 200 7921 7955
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 200 7921 7956 "mlMethod.ml" 200 7921 7969
+type(
+  string
+)
+"mlMethod.ml" 200 7921 7969 "mlMethod.ml" 200 7921 7970
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 200 7921 7971 "mlMethod.ml" 200 7921 7992
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.string_of_type
+)
+"mlMethod.ml" 200 7921 7993 "mlMethod.ml" 200 7921 7996
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 191 7475 7488 "mlMethod.ml" 191 7475 7491
+)
+"mlMethod.ml" 200 7921 7971 "mlMethod.ml" 200 7921 7996
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 200 7921 7997 "mlMethod.ml" 200 7921 7998
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 200 7921 7998 "mlMethod.ml" 200 7921 8006
+type(
+  string
+)
+"mlMethod.ml" 200 7921 7970 "mlMethod.ml" 200 7921 8006
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 200 7921 7956 "mlMethod.ml" 200 7921 8006
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 201 8029 8036 "mlMethod.ml" 201 8029 8040
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def call "mlMethod.ml" 203 8105 8108 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 201 8029 8050 "mlMethod.ml" 201 8029 8050
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 201 8029 8050 "mlMethod.ml" 201 8029 8052
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+)
+"mlMethod.ml" 201 8029 8050 "mlMethod.ml" 201 8029 8055
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 201 8029 8052 "mlMethod.ml" 201 8029 8068
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  int_ref call_method_name "mlMethod.ml" 200 7921 7928 "mlMethod.ml" 200 7921 7944
+)
+"mlMethod.ml" 203 8105 8112 "mlMethod.ml" 203 8105 8116
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 204 8156 8159 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 203 8105 8119 "mlMethod.ml" 203 8105 8143
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_from_java
+)
+"mlMethod.ml" 203 8105 8144 "mlMethod.ml" 203 8105 8147
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 191 7475 7488 "mlMethod.ml" 191 7475 7491
+)
+"mlMethod.ml" 203 8105 8148 "mlMethod.ml" 203 8105 8152
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref call "mlMethod.ml" 201 8029 8036 "mlMethod.ml" 201 8029 8040
+)
+"mlMethod.ml" 203 8105 8119 "mlMethod.ml" 203 8105 8152
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 204 8156 8163 "mlMethod.ml" 204 8156 8167
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 205 8196 8199 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 204 8156 8170 "mlMethod.ml" 204 8156 8184
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_fun
+)
+"mlMethod.ml" 204 8156 8185 "mlMethod.ml" 204 8156 8187
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 204 8156 8188 "mlMethod.ml" 204 8156 8192
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 203 8105 8112 "mlMethod.ml" 203 8105 8116
+)
+"mlMethod.ml" 204 8156 8170 "mlMethod.ml" 204 8156 8192
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 205 8196 8203 "mlMethod.ml" 205 8196 8207
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 206 8258 8261 "mlMethod.ml" 208 8322 8368
+)
+"mlMethod.ml" 205 8196 8210 "mlMethod.ml" 205 8196 8231
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 205 8196 8233 "mlMethod.ml" 205 8196 8235
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+)
+"mlMethod.ml" 205 8196 8236 "mlMethod.ml" 205 8196 8248
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref safe_id_expr "mlMethod.ml" 197 7837 7844 "mlMethod.ml" 197 7837 7856
+)
+"mlMethod.ml" 205 8196 8233 "mlMethod.ml" 205 8196 8248
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 205 8196 8250 "mlMethod.ml" 205 8196 8254
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 204 8156 8163 "mlMethod.ml" 204 8156 8167
+)
+"mlMethod.ml" 205 8196 8210 "mlMethod.ml" 205 8196 8254
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 206 8258 8265 "mlMethod.ml" 206 8258 8269
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 208 8322 8336 "mlMethod.ml" 208 8322 8336
+)
+"mlMethod.ml" 206 8258 8272 "mlMethod.ml" 206 8258 8293
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 206 8258 8295 "mlMethod.ml" 206 8258 8300
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 206 8258 8301 "mlMethod.ml" 206 8258 8311
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref class_expr "mlMethod.ml" 172 6565 6573 "mlMethod.ml" 172 6565 6583
+)
+"mlMethod.ml" 206 8258 8295 "mlMethod.ml" 206 8258 8311
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 206 8258 8313 "mlMethod.ml" 206 8258 8317
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 205 8196 8203 "mlMethod.ml" 205 8196 8207
+)
+"mlMethod.ml" 206 8258 8272 "mlMethod.ml" 206 8258 8317
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 208 8322 8336 "mlMethod.ml" 208 8322 8336
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 208 8322 8336 "mlMethod.ml" 208 8322 8343
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 174 6651 6661 "mlMethod.ml" 174 6651 6668
+)
+"mlMethod.ml" 208 8322 8359 "mlMethod.ml" 208 8322 8363
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 206 8258 8265 "mlMethod.ml" 206 8258 8269
+)
+"mlMethod.ml" 206 8258 8261 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 205 8196 8199 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 204 8156 8159 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 203 8105 8108 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 201 8029 8032 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 200 7921 7924 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 197 7837 7840 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 194 7640 7643 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 193 7547 7550 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 192 7496 7499 "mlMethod.ml" 208 8322 8368
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 210 8373 8390 "mlMethod.ml" 210 8373 8398
+type(
+  bool
+)
+ident(
+  def abstract "mlMethod.ml" 211 8415 8418 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 210 8373 8399 "mlMethod.ml" 210 8373 8403
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlMethod.ml" 211 8415 8418 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 210 8373 8404 "mlMethod.ml" 210 8373 8409
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 211 8415 8418 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 210 8373 8381 "mlMethod.ml" 210 8373 8410
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 211 8415 8422 "mlMethod.ml" 211 8415 8426
+type(
+  string
+)
+ident(
+  def sign "mlMethod.ml" 212 8465 8468 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 211 8415 8429 "mlMethod.ml" 211 8415 8450
+type(
+  Cidl.typ list -> Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.java_signature
+)
+"mlMethod.ml" 211 8415 8451 "mlMethod.ml" 211 8415 8456
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 210 8373 8404 "mlMethod.ml" 210 8373 8409
+)
+"mlMethod.ml" 211 8415 8457 "mlMethod.ml" 211 8415 8461
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 210 8373 8399 "mlMethod.ml" 210 8373 8403
+)
+"mlMethod.ml" 211 8415 8429 "mlMethod.ml" 211 8415 8461
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 212 8465 8472 "mlMethod.ml" 212 8465 8479
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def id_expr "mlMethod.ml" 213 8560 8563 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 212 8465 8489 "mlMethod.ml" 212 8465 8489
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 212 8465 8489 "mlMethod.ml" 212 8465 8493
+type(
+  string
+)
+ident(
+  int_ref sign "mlMethod.ml" 211 8415 8422 "mlMethod.ml" 211 8415 8426
+)
+"mlMethod.ml" 212 8465 8489 "mlMethod.ml" 212 8465 8494
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 212 8465 8489 "mlMethod.ml" 212 8465 8498
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 175 6708 6718 "mlMethod.ml" 175 6708 6727
+)
+"mlMethod.ml" 213 8560 8567 "mlMethod.ml" 213 8560 8570
+type(
+  string
+)
+ident(
+  def err "mlMethod.ml" 217 8798 8801 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 213 8560 8573 "mlMethod.ml" 213 8560 8619
+type(
+  string
+)
+"mlMethod.ml" 213 8560 8619 "mlMethod.ml" 213 8560 8620
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 214 8621 8627 "mlMethod.ml" 214 8621 8662
+type(
+  Ident.clazz -> string
+)
+ident(
+  ext_ref Ident.get_class_java_qualified_name
+)
+"mlMethod.ml" 214 8621 8663 "mlMethod.ml" 214 8621 8664
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 173 6633 6646 "mlMethod.ml" 173 6633 6647
+)
+"mlMethod.ml" 214 8621 8663 "mlMethod.ml" 214 8621 8673
+type(
+  Ident.clazz
+)
+"mlMethod.ml" 214 8621 8627 "mlMethod.ml" 214 8621 8673
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 214 8621 8674 "mlMethod.ml" 214 8621 8675
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 214 8621 8675 "mlMethod.ml" 214 8621 8688
+type(
+  string
+)
+"mlMethod.ml" 214 8621 8688 "mlMethod.ml" 214 8621 8689
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 215 8690 8695 "mlMethod.ml" 215 8690 8723
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.idl_signature_of_type
+)
+"mlMethod.ml" 215 8690 8724 "mlMethod.ml" 215 8690 8728
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 210 8373 8399 "mlMethod.ml" 210 8373 8403
+)
+"mlMethod.ml" 215 8690 8695 "mlMethod.ml" 215 8690 8728
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8729 "mlMethod.ml" 215 8690 8730
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 215 8690 8731 "mlMethod.ml" 215 8690 8734
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8735 "mlMethod.ml" 215 8690 8736
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 215 8690 8737 "mlMethod.ml" 215 8690 8746
+type(
+  string
+)
+ident(
+  int_ref java_name "mlMethod.ml" 175 6708 6718 "mlMethod.ml" 175 6708 6727
+)
+"mlMethod.ml" 215 8690 8747 "mlMethod.ml" 215 8690 8748
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 215 8690 8749 "mlMethod.ml" 215 8690 8752
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8752 "mlMethod.ml" 215 8690 8753
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 216 8754 8759 "mlMethod.ml" 216 8754 8779
+type(
+  Cidl.typ list -> string
+)
+ident(
+  ext_ref MlType.idl_signature
+)
+"mlMethod.ml" 216 8754 8780 "mlMethod.ml" 216 8754 8785
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 210 8373 8404 "mlMethod.ml" 210 8373 8409
+)
+"mlMethod.ml" 216 8754 8759 "mlMethod.ml" 216 8754 8785
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 216 8754 8785 "mlMethod.ml" 216 8754 8786
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 216 8754 8786 "mlMethod.ml" 216 8754 8794
+type(
+  string
+)
+"mlMethod.ml" 216 8754 8759 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8749 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8737 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8731 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 215 8690 8695 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 214 8621 8675 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 214 8621 8626 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 213 8560 8573 "mlMethod.ml" 216 8754 8794
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 217 8798 8805 "mlMethod.ml" 217 8798 8817
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def safe_id_expr "mlMethod.ml" 221 8951 8954 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 218 8821 8833 "mlMethod.ml" 218 8821 8833
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  string
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.match_case
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 218 8821 8833 "mlMethod.ml" 218 8821 8836
+type(
+  string
+)
+ident(
+  int_ref err "mlMethod.ml" 213 8560 8567 "mlMethod.ml" 213 8560 8570
+)
+"mlMethod.ml" 218 8821 8837 "mlMethod.ml" 218 8821 8844
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref id_expr "mlMethod.ml" 212 8465 8472 "mlMethod.ml" 212 8465 8479
+)
+"mlMethod.ml" 221 8951 8958 "mlMethod.ml" 221 8951 8969
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  def call_method "mlMethod.ml" 224 9134 9137 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 221 8951 8972 "mlMethod.ml" 221 8951 8984
+type(
+  string -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  ext_ref P4helper.jni
+)
+"mlMethod.ml" 221 8951 8986 "mlMethod.ml" 221 8951 9000
+type(
+  string
+)
+"mlMethod.ml" 221 8951 9000 "mlMethod.ml" 221 8951 9001
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 221 8951 9002 "mlMethod.ml" 221 8951 9023
+type(
+  Cidl.typ -> string
+)
+ident(
+  ext_ref MlType.string_of_type
+)
+"mlMethod.ml" 221 8951 9024 "mlMethod.ml" 221 8951 9028
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 210 8373 8399 "mlMethod.ml" 210 8373 8403
+)
+"mlMethod.ml" 221 8951 9002 "mlMethod.ml" 221 8951 9028
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 221 8951 9029 "mlMethod.ml" 221 8951 9030
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 221 8951 9030 "mlMethod.ml" 221 8951 9039
+type(
+  string
+)
+"mlMethod.ml" 221 8951 9001 "mlMethod.ml" 221 8951 9039
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 221 8951 8986 "mlMethod.ml" 221 8951 9039
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 221 8951 8972 "mlMethod.ml" 221 8951 9040
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 224 9134 9141 "mlMethod.ml" 224 9134 9146
+type(
+  string list
+)
+ident(
+  def nargs "mlMethod.ml" 226 9244 9247 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 224 9134 9149 "mlMethod.ml" 224 9134 9157
+type(
+  (int -> string) -> int list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 224 9134 9163 "mlMethod.ml" 224 9134 9164
+type(
+  int
+)
+ident(
+  def i "mlMethod.ml" 224 9134 9168 "mlMethod.ml" 224 9134 9188
+)
+"mlMethod.ml" 224 9134 9168 "mlMethod.ml" 224 9134 9172
+type(
+  string
+)
+"mlMethod.ml" 224 9134 9172 "mlMethod.ml" 224 9134 9173
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mlMethod.ml" 224 9134 9173 "mlMethod.ml" 224 9134 9186
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"mlMethod.ml" 224 9134 9187 "mlMethod.ml" 224 9134 9188
+type(
+  int
+)
+ident(
+  int_ref i "mlMethod.ml" 224 9134 9163 "mlMethod.ml" 224 9134 9164
+)
+"mlMethod.ml" 224 9134 9173 "mlMethod.ml" 224 9134 9188
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 224 9134 9168 "mlMethod.ml" 224 9134 9188
+call(
+  tail
+)
+type(
+  string
+)
+"mlMethod.ml" 224 9134 9163 "mlMethod.ml" 224 9134 9188
+type(
+  int -> string
+)
+"mlMethod.ml" 225 9191 9199 "mlMethod.ml" 225 9191 9217
+type(
+  int -> int -> int list
+)
+ident(
+  ext_ref Utilities.interval
+)
+"mlMethod.ml" 225 9191 9218 "mlMethod.ml" 225 9191 9219
+type(
+  int
+)
+"mlMethod.ml" 225 9191 9221 "mlMethod.ml" 225 9191 9232
+type(
+  Cidl.typ list -> int
+)
+ident(
+  ext_ref List.length
+)
+"mlMethod.ml" 225 9191 9233 "mlMethod.ml" 225 9191 9238
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 210 8373 8404 "mlMethod.ml" 210 8373 8409
+)
+"mlMethod.ml" 225 9191 9221 "mlMethod.ml" 225 9191 9238
+call(
+  stack
+)
+type(
+  int
+)
+"mlMethod.ml" 225 9191 9199 "mlMethod.ml" 225 9191 9239
+call(
+  stack
+)
+type(
+  int list
+)
+"mlMethod.ml" 224 9134 9149 "mlMethod.ml" 225 9191 9240
+call(
+  stack
+)
+type(
+  string list
+)
+"mlMethod.ml" 226 9244 9251 "mlMethod.ml" 226 9244 9255
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  def args "mlMethod.ml" 227 9286 9289 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 226 9244 9258 "mlMethod.ml" 226 9244 9270
+type(
+  string list -> Cidl.typ list -> (string * Cidl.typ) list
+)
+ident(
+  ext_ref List.combine
+)
+"mlMethod.ml" 226 9244 9271 "mlMethod.ml" 226 9244 9276
+type(
+  string list
+)
+ident(
+  int_ref nargs "mlMethod.ml" 224 9134 9141 "mlMethod.ml" 224 9134 9146
+)
+"mlMethod.ml" 226 9244 9277 "mlMethod.ml" 226 9244 9282
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 210 8373 8404 "mlMethod.ml" 210 8373 8409
+)
+"mlMethod.ml" 226 9244 9258 "mlMethod.ml" 226 9244 9282
+call(
+  stack
+)
+type(
+  (string * Cidl.typ) list
+)
+"mlMethod.ml" 227 9286 9293 "mlMethod.ml" 227 9286 9298
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+ident(
+  def jargs "mlMethod.ml" 231 9454 9457 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 227 9286 9301 "mlMethod.ml" 227 9286 9309
+type(
+  (string * Cidl.typ -> Camlp4.PreCast.Ast.expr) ->
+  (string * Cidl.typ) list -> Camlp4.PreCast.Ast.expr list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 227 9286 9316 "mlMethod.ml" 227 9286 9320
+type(
+  string
+)
+ident(
+  def narg "mlMethod.ml" 228 9331 9343 "mlMethod.ml" 228 9331 9343
+)
+"mlMethod.ml" 227 9286 9321 "mlMethod.ml" 227 9286 9325
+type(
+  Cidl.typ
+)
+ident(
+  def targ "mlMethod.ml" 228 9331 9343 "mlMethod.ml" 228 9331 9343
+)
+"mlMethod.ml" 227 9286 9316 "mlMethod.ml" 227 9286 9325
+type(
+  string * Cidl.typ
+)
+"mlMethod.ml" 228 9331 9343 "mlMethod.ml" 228 9331 9343
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 228 9331 9343 "mlMethod.ml" 228 9331 9347
+type(
+  string
+)
+ident(
+  int_ref narg "mlMethod.ml" 227 9286 9316 "mlMethod.ml" 227 9286 9320
+)
+"mlMethod.ml" 228 9331 9345 "mlMethod.ml" 228 9331 9371
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.ident
+)
+ident(
+  ext_ref MlType.constructor_of_type
+)
+"mlMethod.ml" 228 9331 9372 "mlMethod.ml" 228 9331 9376
+type(
+  Cidl.typ
+)
+ident(
+  int_ref targ "mlMethod.ml" 227 9286 9321 "mlMethod.ml" 227 9286 9325
+)
+"mlMethod.ml" 228 9331 9345 "mlMethod.ml" 228 9331 9376
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+"mlMethod.ml" 227 9286 9315 "mlMethod.ml" 228 9331 9395
+type(
+  string * Cidl.typ -> Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 228 9331 9397 "mlMethod.ml" 228 9331 9401
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 226 9244 9251 "mlMethod.ml" 226 9244 9255
+)
+"mlMethod.ml" 227 9286 9301 "mlMethod.ml" 228 9331 9401
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+"mlMethod.ml" 231 9454 9461 "mlMethod.ml" 231 9454 9465
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 233 9546 9549 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 231 9454 9475 "mlMethod.ml" 231 9454 9475
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 231 9454 9475 "mlMethod.ml" 231 9454 9477
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+)
+"mlMethod.ml" 231 9454 9475 "mlMethod.ml" 231 9454 9480
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 231 9454 9477 "mlMethod.ml" 231 9454 9488
+type(
+  Camlp4.PreCast.Ast.ident
+)
+ident(
+  int_ref call_method "mlMethod.ml" 221 8951 8958 "mlMethod.ml" 221 8951 8969
+)
+"mlMethod.ml" 231 9454 9518 "mlMethod.ml" 231 9454 9523
+type(
+  Camlp4.PreCast.Ast.expr list
+)
+ident(
+  int_ref jargs "mlMethod.ml" 227 9286 9293 "mlMethod.ml" 227 9286 9298
+)
+"mlMethod.ml" 231 9454 9518 "mlMethod.ml" 231 9454 9529
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+type(
+  Camlp4.PreCast.Ast.expr list -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref Camlp4.PreCast.Ast.exSem_of_list
+)
+"mlMethod.ml" 233 9546 9553 "mlMethod.ml" 233 9546 9557
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 234 9598 9601 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 233 9546 9560 "mlMethod.ml" 233 9546 9584
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_from_java
+)
+"mlMethod.ml" 233 9546 9585 "mlMethod.ml" 233 9546 9589
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 210 8373 8399 "mlMethod.ml" 210 8373 8403
+)
+"mlMethod.ml" 233 9546 9590 "mlMethod.ml" 233 9546 9594
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 231 9454 9461 "mlMethod.ml" 231 9454 9465
+)
+"mlMethod.ml" 233 9546 9560 "mlMethod.ml" 233 9546 9594
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 234 9598 9605 "mlMethod.ml" 234 9598 9609
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 235 9699 9702 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 234 9598 9612 "mlMethod.ml" 234 9598 9633
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 234 9598 9635 "mlMethod.ml" 234 9598 9661
+type(
+  (Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr) ->
+  (string * Cidl.typ) list -> (string * Camlp4.PreCast.Ast.expr) list
+)
+ident(
+  ext_ref MlType.get_args_convertion
+)
+"mlMethod.ml" 234 9598 9662 "mlMethod.ml" 234 9598 9684
+type(
+  Cidl.typ -> Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlType.convert_to_java
+)
+"mlMethod.ml" 234 9598 9685 "mlMethod.ml" 234 9598 9689
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 226 9244 9251 "mlMethod.ml" 226 9244 9255
+)
+"mlMethod.ml" 234 9598 9635 "mlMethod.ml" 234 9598 9689
+call(
+  stack
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 234 9598 9691 "mlMethod.ml" 234 9598 9695
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 233 9546 9553 "mlMethod.ml" 233 9546 9557
+)
+"mlMethod.ml" 234 9598 9612 "mlMethod.ml" 234 9598 9695
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 235 9699 9706 "mlMethod.ml" 235 9699 9710
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 236 9741 9744 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 235 9699 9713 "mlMethod.ml" 235 9699 9727
+type(
+  (string * Cidl.typ) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_fun
+)
+"mlMethod.ml" 235 9699 9728 "mlMethod.ml" 235 9699 9732
+type(
+  (string * Cidl.typ) list
+)
+ident(
+  int_ref args "mlMethod.ml" 226 9244 9251 "mlMethod.ml" 226 9244 9255
+)
+"mlMethod.ml" 235 9699 9733 "mlMethod.ml" 235 9699 9737
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 234 9598 9605 "mlMethod.ml" 234 9598 9609
+)
+"mlMethod.ml" 235 9699 9713 "mlMethod.ml" 235 9699 9737
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 236 9741 9748 "mlMethod.ml" 236 9741 9752
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 237 9803 9806 "mlMethod.ml" 239 9870 9916
+)
+"mlMethod.ml" 236 9741 9755 "mlMethod.ml" 236 9741 9776
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 236 9741 9778 "mlMethod.ml" 236 9741 9780
+type(
+  string
+)
+ident(
+  int_ref id "mlMethod.ml" 169 6460 6466 "mlMethod.ml" 169 6460 6468
+)
+"mlMethod.ml" 236 9741 9781 "mlMethod.ml" 236 9741 9793
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref safe_id_expr "mlMethod.ml" 217 8798 8805 "mlMethod.ml" 217 8798 8817
+)
+"mlMethod.ml" 236 9741 9778 "mlMethod.ml" 236 9741 9793
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 236 9741 9795 "mlMethod.ml" 236 9741 9799
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 235 9699 9706 "mlMethod.ml" 235 9699 9710
+)
+"mlMethod.ml" 236 9741 9755 "mlMethod.ml" 236 9741 9799
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 237 9803 9810 "mlMethod.ml" 237 9803 9814
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  def body "mlMethod.ml" 239 9870 9884 "mlMethod.ml" 239 9870 9884
+)
+"mlMethod.ml" 237 9803 9817 "mlMethod.ml" 237 9803 9838
+type(
+  (string * Camlp4.PreCast.Ast.expr) list ->
+  Camlp4.PreCast.Ast.expr -> Camlp4.PreCast.Ast.expr
+)
+ident(
+  ext_ref MlGen.make_local_decl
+)
+"mlMethod.ml" 237 9803 9840 "mlMethod.ml" 237 9803 9845
+type(
+  string
+)
+ident(
+  int_ref clazz "mlMethod.ml" 168 6435 6441 "mlMethod.ml" 168 6435 6446
+)
+"mlMethod.ml" 237 9803 9846 "mlMethod.ml" 237 9803 9856
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref class_expr "mlMethod.ml" 172 6565 6573 "mlMethod.ml" 172 6565 6583
+)
+"mlMethod.ml" 237 9803 9840 "mlMethod.ml" 237 9803 9856
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+type(
+  string * Camlp4.PreCast.Ast.expr
+)
+type(
+  (string * Camlp4.PreCast.Ast.expr) list
+)
+"mlMethod.ml" 237 9803 9858 "mlMethod.ml" 237 9803 9862
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 236 9741 9748 "mlMethod.ml" 236 9741 9752
+)
+"mlMethod.ml" 237 9803 9817 "mlMethod.ml" 237 9803 9862
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.expr
+)
+"mlMethod.ml" 239 9870 9884 "mlMethod.ml" 239 9870 9884
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.ident
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.patt
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.binding
+)
+type(
+  Camlp4.PreCast.Ast.rec_flag
+)
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 239 9870 9884 "mlMethod.ml" 239 9870 9891
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 174 6651 6661 "mlMethod.ml" 174 6651 6668
+)
+"mlMethod.ml" 239 9870 9907 "mlMethod.ml" 239 9870 9911
+type(
+  Camlp4.PreCast.Ast.expr
+)
+ident(
+  int_ref body "mlMethod.ml" 237 9803 9810 "mlMethod.ml" 237 9803 9814
+)
+"mlMethod.ml" 237 9803 9806 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 236 9741 9744 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 235 9699 9702 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 234 9598 9601 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 233 9546 9549 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 231 9454 9457 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 227 9286 9289 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 226 9244 9247 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 224 9134 9137 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 221 8951 8954 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 217 8798 8801 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 213 8560 8563 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 212 8465 8468 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 211 8415 8418 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 176 6772 6778 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 174 6651 6657 "mlMethod.ml" 239 9870 9916
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 173 6633 6646 "mlMethod.ml" 239 9870 9916
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 241 9924 9928 "mlMethod.ml" 241 9924 9936
+type(
+  (Cidl.mmethod -> Camlp4.PreCast.Ast.str_item) ->
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 241 9924 9937 "mlMethod.ml" 241 9924 9941
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  int_ref make "mlMethod.ml" 173 6633 6641 "mlMethod.ml" 173 6633 6645
+)
+"mlMethod.ml" 241 9924 9942 "mlMethod.ml" 241 9924 9944
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "mlMethod.ml" 170 6479 6493 "mlMethod.ml" 170 6479 6495
+)
+"mlMethod.ml" 241 9924 9942 "mlMethod.ml" 241 9924 9962
+type(
+  Cidl.mmethod list
+)
+"mlMethod.ml" 241 9924 9928 "mlMethod.ml" 241 9924 9962
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"mlMethod.ml" 173 6633 6637 "mlMethod.ml" 241 9924 9962
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"mlMethod.ml" 172 6565 6569 "mlMethod.ml" 241 9924 9962
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"mlMethod.ml" 171 6498 6502 "mlMethod.ml" 241 9924 9962
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"mlMethod.ml" 170 6479 6493 "mlMethod.ml" 241 9924 9962
+type(
+  Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
+)
+"mlMethod.ml" 243 9968 9970 "mlMethod.ml" 243 9968 9988
+type(
+  Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
+)
+ident(
+  ext_ref P4helper.str_items
+)
+"mlMethod.ml" 243 9968 9990 "mlMethod.ml" 243 9968 10001
+type(
+  Camlp4.PreCast.Ast.str_item list list -> Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  ext_ref List.concat
+)
+"mlMethod.ml" 243 9968 10003 "mlMethod.ml" 243 9968 10011
+type(
+  (Cidl.clazz -> Camlp4.PreCast.Ast.str_item list) ->
+  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 243 9968 10012 "mlMethod.ml" 243 9968 10019
+type(
+  Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
+)
+ident(
+  int_ref make_cl "mlMethod.ml" 170 6479 6485 "mlMethod.ml" 170 6479 6492
+)
+"mlMethod.ml" 243 9968 10020 "mlMethod.ml" 243 9968 10027
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref cl_list "mlMethod.ml" 167 6409 6425 "mlMethod.ml" 167 6409 6432
+)
+"mlMethod.ml" 243 9968 10003 "mlMethod.ml" 243 9968 10027
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.str_item list list
+)
+"mlMethod.ml" 243 9968 9990 "mlMethod.ml" 243 9968 10028
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.str_item list
+)
+"mlMethod.ml" 243 9968 9970 "mlMethod.ml" 243 9968 10029
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 170 6479 6481 "mlMethod.ml" 243 9968 10029
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 169 6460 6462 "mlMethod.ml" 243 9968 10029
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 168 6435 6437 "mlMethod.ml" 243 9968 10029
+type(
+  Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 167 6409 6425 "mlMethod.ml" 243 9968 10029
+type(
+  Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
+)
+"mlMethod.ml" 247 10194 10198 "mlMethod.ml" 247 10194 10213
+type(
+  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  def make_static_sig "mlMethod.ml" 266 10773 10834 "_none_" 1 0 -1
+)
+"mlMethod.ml" 247 10194 10214 "mlMethod.ml" 247 10194 10221
+type(
+  Cidl.clazz list
+)
+ident(
+  def cl_list "mlMethod.ml" 248 10224 10226 "mlMethod.ml" 266 10773 10834
+)
+"mlMethod.ml" 248 10224 10230 "mlMethod.ml" 248 10224 10237
+type(
+  Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  def make_cl "mlMethod.ml" 266 10773 10775 "mlMethod.ml" 266 10773 10834
+)
+"mlMethod.ml" 248 10224 10238 "mlMethod.ml" 248 10224 10240
+type(
+  Cidl.clazz
+)
+ident(
+  def cl "mlMethod.ml" 249 10243 10247 "mlMethod.ml" 264 10729 10767
+)
+"mlMethod.ml" 249 10243 10251 "mlMethod.ml" 249 10243 10255
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  def make "mlMethod.ml" 264 10729 10733 "mlMethod.ml" 264 10729 10767
+)
+"mlMethod.ml" 249 10243 10256 "mlMethod.ml" 249 10243 10257
+type(
+  Cidl.mmethod
+)
+ident(
+  def m "mlMethod.ml" 250 10261 10267 "mlMethod.ml" 262 10675 10721
+)
+"mlMethod.ml" 250 10261 10271 "mlMethod.ml" 250 10261 10278
+type(
+  string
+)
+ident(
+  def ml_name "mlMethod.ml" 251 10320 10326 "mlMethod.ml" 262 10675 10721
+)
+"mlMethod.ml" 250 10261 10281 "mlMethod.ml" 250 10261 10305
+type(
+  Ident.mmethod -> string
+)
+ident(
+  ext_ref Ident.get_method_ml_name
+)
+"mlMethod.ml" 250 10261 10306 "mlMethod.ml" 250 10261 10307
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 249 10243 10256 "mlMethod.ml" 249 10243 10257
+)
+"mlMethod.ml" 250 10261 10306 "mlMethod.ml" 250 10261 10316
+type(
+  Ident.mmethod
+)
+"mlMethod.ml" 250 10261 10281 "mlMethod.ml" 250 10261 10316
+call(
+  stack
+)
+type(
+  string
+)
+"mlMethod.ml" 251 10320 10332 "mlMethod.ml" 251 10320 10333
+type(
+  Cidl.mmethod
+)
+ident(
+  int_ref m "mlMethod.ml" 249 10243 10256 "mlMethod.ml" 249 10243 10257
+)
+"mlMethod.ml" 251 10320 10332 "mlMethod.ml" 251 10320 10341
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 252 10348 10361 "mlMethod.ml" 252 10348 10364
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 253 10368 10371 "mlMethod.ml" 254 10417 10464
+)
+"mlMethod.ml" 252 10348 10356 "mlMethod.ml" 252 10348 10364
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 253 10368 10375 "mlMethod.ml" 253 10368 10379
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def sign "mlMethod.ml" 254 10417 10432 "mlMethod.ml" 254 10417 10432
+)
+"mlMethod.ml" 253 10368 10382 "mlMethod.ml" 253 10368 10401
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 253 10368 10403 "mlMethod.ml" 253 10368 10406
+type(
+  Cidl.typ list
+)
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 252 10348 10361 "mlMethod.ml" 252 10348 10364
+)
+type(
+  Cidl.typ list
+)
+"mlMethod.ml" 253 10368 10408 "mlMethod.ml" 253 10368 10413
+type(
+  Cidl.typ
+)
+"mlMethod.ml" 253 10368 10382 "mlMethod.ml" 253 10368 10413
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 254 10417 10432 "mlMethod.ml" 254 10417 10432
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 254 10417 10432 "mlMethod.ml" 254 10417 10439
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 250 10261 10271 "mlMethod.ml" 250 10261 10278
+)
+"mlMethod.ml" 254 10417 10455 "mlMethod.ml" 254 10417 10459
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref sign "mlMethod.ml" 253 10368 10375 "mlMethod.ml" 253 10368 10379
+)
+"mlMethod.ml" 253 10368 10371 "mlMethod.ml" 254 10417 10464
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 256 10466 10479 "mlMethod.ml" 256 10466 10482
+type(
+  Cidl.typ
+)
+ident(
+  def typ "mlMethod.ml" 257 10487 10490 "mlMethod.ml" 258 10531 10577
+)
+"mlMethod.ml" 256 10466 10474 "mlMethod.ml" 256 10466 10482
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 257 10487 10494 "mlMethod.ml" 257 10487 10498
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def sign "mlMethod.ml" 258 10531 10545 "mlMethod.ml" 258 10531 10545
+)
+"mlMethod.ml" 257 10487 10501 "mlMethod.ml" 257 10487 10520
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 257 10487 10521 "mlMethod.ml" 257 10487 10523
+type(
+  Cidl.typ list
+)
+"mlMethod.ml" 257 10487 10524 "mlMethod.ml" 257 10487 10527
+type(
+  Cidl.typ
+)
+ident(
+  int_ref typ "mlMethod.ml" 256 10466 10479 "mlMethod.ml" 256 10466 10482
+)
+"mlMethod.ml" 257 10487 10501 "mlMethod.ml" 257 10487 10527
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 258 10531 10545 "mlMethod.ml" 258 10531 10545
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 258 10531 10545 "mlMethod.ml" 258 10531 10552
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 250 10261 10271 "mlMethod.ml" 250 10261 10278
+)
+"mlMethod.ml" 258 10531 10568 "mlMethod.ml" 258 10531 10572
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref sign "mlMethod.ml" 257 10487 10494 "mlMethod.ml" 257 10487 10498
+)
+"mlMethod.ml" 257 10487 10490 "mlMethod.ml" 258 10531 10577
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 260 10582 10599 "mlMethod.ml" 260 10582 10607
+type(
+  bool
+)
+ident(
+  def abstract "mlMethod.ml" 261 10624 10627 "mlMethod.ml" 262 10675 10721
+)
+"mlMethod.ml" 260 10582 10608 "mlMethod.ml" 260 10582 10612
+type(
+  Cidl.typ
+)
+ident(
+  def rtyp "mlMethod.ml" 261 10624 10627 "mlMethod.ml" 262 10675 10721
+)
+"mlMethod.ml" 260 10582 10613 "mlMethod.ml" 260 10582 10618
+type(
+  Cidl.typ list
+)
+ident(
+  def targs "mlMethod.ml" 261 10624 10627 "mlMethod.ml" 262 10675 10721
+)
+"mlMethod.ml" 260 10582 10590 "mlMethod.ml" 260 10582 10619
+type(
+  Cidl.mmethod_desc
+)
+"mlMethod.ml" 261 10624 10631 "mlMethod.ml" 261 10624 10635
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  def sign "mlMethod.ml" 262 10675 10689 "mlMethod.ml" 262 10675 10689
+)
+"mlMethod.ml" 261 10624 10638 "mlMethod.ml" 261 10624 10657
+type(
+  Cidl.typ list -> Cidl.typ -> Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  ext_ref MlType.ml_signature
+)
+"mlMethod.ml" 261 10624 10658 "mlMethod.ml" 261 10624 10663
+type(
+  Cidl.typ list
+)
+ident(
+  int_ref targs "mlMethod.ml" 260 10582 10613 "mlMethod.ml" 260 10582 10618
+)
+"mlMethod.ml" 261 10624 10664 "mlMethod.ml" 261 10624 10668
+type(
+  Cidl.typ
+)
+ident(
+  int_ref rtyp "mlMethod.ml" 260 10582 10608 "mlMethod.ml" 260 10582 10612
+)
+"mlMethod.ml" 261 10624 10638 "mlMethod.ml" 261 10624 10668
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+"mlMethod.ml" 262 10675 10689 "mlMethod.ml" 262 10675 10689
+type(
+  Camlp4.PreCast.Ast.loc
+)
+ident(
+  int_ref _loc "mlMethod.ml" 6 93 97 "mlMethod.ml" 6 93 101
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 262 10675 10689 "mlMethod.ml" 262 10675 10696
+type(
+  string
+)
+ident(
+  int_ref ml_name "mlMethod.ml" 250 10261 10271 "mlMethod.ml" 250 10261 10278
+)
+"mlMethod.ml" 262 10675 10712 "mlMethod.ml" 262 10675 10716
+type(
+  Camlp4.PreCast.Ast.ctyp
+)
+ident(
+  int_ref sign "mlMethod.ml" 261 10624 10631 "mlMethod.ml" 261 10624 10635
+)
+"mlMethod.ml" 261 10624 10627 "mlMethod.ml" 262 10675 10721
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 251 10320 10326 "mlMethod.ml" 262 10675 10721
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 250 10261 10267 "mlMethod.ml" 262 10675 10721
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 249 10243 10256 "mlMethod.ml" 262 10675 10721
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 264 10729 10733 "mlMethod.ml" 264 10729 10741
+type(
+  (Cidl.mmethod -> Camlp4.PreCast.Ast.sig_item) ->
+  Cidl.mmethod list -> Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 264 10729 10742 "mlMethod.ml" 264 10729 10746
+type(
+  Cidl.mmethod -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  int_ref make "mlMethod.ml" 249 10243 10251 "mlMethod.ml" 249 10243 10255
+)
+"mlMethod.ml" 264 10729 10747 "mlMethod.ml" 264 10729 10749
+type(
+  Cidl.clazz
+)
+ident(
+  int_ref cl "mlMethod.ml" 248 10224 10238 "mlMethod.ml" 248 10224 10240
+)
+"mlMethod.ml" 264 10729 10747 "mlMethod.ml" 264 10729 10767
+type(
+  Cidl.mmethod list
+)
+"mlMethod.ml" 264 10729 10733 "mlMethod.ml" 264 10729 10767
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"mlMethod.ml" 249 10243 10247 "mlMethod.ml" 264 10729 10767
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"mlMethod.ml" 248 10224 10238 "mlMethod.ml" 264 10729 10767
+type(
+  Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
+)
+"mlMethod.ml" 266 10773 10775 "mlMethod.ml" 266 10773 10793
+type(
+  Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
+)
+ident(
+  ext_ref P4helper.sig_items
+)
+"mlMethod.ml" 266 10773 10795 "mlMethod.ml" 266 10773 10806
+type(
+  Camlp4.PreCast.Ast.sig_item list list -> Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  ext_ref List.concat
+)
+"mlMethod.ml" 266 10773 10808 "mlMethod.ml" 266 10773 10816
+type(
+  (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list) ->
+  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list list
+)
+ident(
+  ext_ref List.map
+)
+"mlMethod.ml" 266 10773 10817 "mlMethod.ml" 266 10773 10824
+type(
+  Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
+)
+ident(
+  int_ref make_cl "mlMethod.ml" 248 10224 10230 "mlMethod.ml" 248 10224 10237
+)
+"mlMethod.ml" 266 10773 10825 "mlMethod.ml" 266 10773 10832
+type(
+  Cidl.clazz list
+)
+ident(
+  int_ref cl_list "mlMethod.ml" 247 10194 10214 "mlMethod.ml" 247 10194 10221
+)
+"mlMethod.ml" 266 10773 10808 "mlMethod.ml" 266 10773 10832
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.sig_item list list
+)
+"mlMethod.ml" 266 10773 10795 "mlMethod.ml" 266 10773 10833
+call(
+  stack
+)
+type(
+  Camlp4.PreCast.Ast.sig_item list
+)
+"mlMethod.ml" 266 10773 10775 "mlMethod.ml" 266 10773 10834
+call(
+  tail
+)
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 248 10224 10226 "mlMethod.ml" 266 10773 10834
+type(
+  Camlp4.PreCast.Ast.sig_item
+)
+"mlMethod.ml" 247 10194 10214 "mlMethod.ml" 266 10773 10834
+type(
+  Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
+)
