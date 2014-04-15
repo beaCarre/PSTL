@@ -23,5 +23,5 @@ let class_exprs items = match List.rev items with
   | last::items -> List.fold_left (fun st item -> <:class_expr< $item$ and $st$ >>) last items
 
 (* $lid:...$ is more strict in the new camlp4 *)
-let jni s = <:ident< Jni. $lid:s$ >>
+let jni s = <:ident< Java. $lid:s$ >>
 let expr_lid s = <:expr< $lid:s$ >>

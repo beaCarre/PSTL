@@ -16,4 +16,4 @@ val ml_class_signature:
   Cidl.typ list -> Ast.class_type -> Ast.class_type
 val get_args_convertion:
   ('a -> Ast.expr -> 'b) -> (string * 'a) list -> (string * 'b) list
-val get_call_method: virtual_call:bool -> Cidl.typ -> Ast.ident
+val get_call_method: string -> string -> string -> string

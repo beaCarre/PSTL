@@ -22,7 +22,7 @@ let string_of_type t =
   | Ccallback _ -> invalid_arg "string_of_type"
 
 let constructor_of_type t = 
-  <:ident<Jni.$uid:
+  <:ident<$uid:
     match t with 
     | Cboolean -> "Boolean"
     | Cchar -> "Char"
@@ -79,15 +79,17 @@ let rec idl_signature_of_type t =
 				 
 let java_signature args rtyp = 
   Printf.sprintf "(%s):%s" 
-    (String.concat "" (List.map java_signature_of_type args))
+    (String.concat "," (List.map java_signature_of_type args))
     (java_signature_of_type rtyp)
 
 let idl_signature args  = 
     String.concat "," (List.map idl_signature_of_type args)
     
-let rec convert_to_java typ e =
+let rec convert_to_java typ e = (* to_oj_type*)
   match typ with
-  | Cobject Cstring -> <:expr< Jni.string_to_java $e$ >>
+    | Ccamlint ->  <:expr< Int32.of_int $e$ >>
+    | Clong ->  <:expr< Int64.of_int $e$ >>
+  | Cobject Cstring -> <:expr< JavaString.of_string $e$ >>
   | Cobject (Cname id) -> <:expr< $e$ # $lid:Ident.get_class_ml_jni_accessor_method_name id$ >>
   | Cobject Ctop -> <:expr< $e$ # _get_jniobj >>
   | Cobject (Cjavaarray t) -> <:expr< $e$ # _get_jniobj >>
@@ -176,21 +178,18 @@ let get_args_convertion convert args =
   in
   List.map make args
 
-(* nom de la fonction Jni *)
-let get_call_method ~virtual_call rtype = 
-  <:ident< Jni. $lid:
-    "call_"^
-    (if not virtual_call then "nonvirtual_" else "")^
-    (string_of_type rtype)^
-    "_method" 
-  $ >>
+(* nom de la fonction Jni *) (* TODO *)
+let get_call_method java_class_name java_name sign = 
+  java_class_name^"."^java_name^sign
 
 
-let rec convert_from_java typ e =
+let rec convert_from_java typ e = (* to_ml_type *)
   match typ with
-  | Cobject Cstring -> <:expr< Jni.string_from_java $e$ >>
+    |Cint -> <:expr< Int32.to_int $e$ >>
+    |Clong -> <:expr< Int64.to_int $e$ >>
+  | Cobject Cstring -> <:expr< JavaString.to_string $e$ >>
   | Cobject (Cname id) -> <:expr< (new $lid:Ident.get_class_ml_wrapper_name id$ $e$ : $lid:Ident.get_class_ml_name id$) >>
-  | Cobject Ctop -> <:expr< (new JniHierarchy.top $e$ : JniHierarchy.jTop) >>
+  | Cobject Ctop -> <:expr< (new todo $e$ : java'lang'Object java_instance) >>
   | Cobject (Cjavaarray t) -> 
       let jniobj = <:expr< $lid:"jniobj"$ >> in
       let obj = <:expr< $lid:"obj"$ >> in

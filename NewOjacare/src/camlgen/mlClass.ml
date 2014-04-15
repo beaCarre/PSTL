@@ -73,7 +73,7 @@ let make_class_type ~callback cl_list =
   if callback then List.map make (List.filter (fun cl -> not (Ident.is_interface cl.cc_ident) && cl.cc_callback) cl_list)
   else List.map make cl_list
 
-(** Allocation *******************************************)
+(** Allocation *******************************************) (* A enlever *)
 let make_alloc cl_list =
   let make cl acc =
     if Ident.is_interface cl.cc_ident then
@@ -99,7 +99,7 @@ let make_alloc_stub cl_list =
   in
   P4helper.str_items (List.map make  (List.filter (fun cl -> cl.cc_callback ) cl_list))
 
-(** capsule / souche *************************************)
+(** capsule / souche *************************************) (* TODO *)
 let make_wrapper ~callback cl_list =
   let clazz = "clazz"
   and java_obj = "jni_ref" in
@@ -115,7 +115,7 @@ let make_wrapper ~callback cl_list =
     (* construction de la liste des méthodes *)
     let class_decl = [] in
 
-    (* méthode hérité *)
+    (* méthode hérité *) (* enlevé car pas jnihierarchie *)
     (*let class_decl = 
         (*   if callback then *)
       <:class_str_item< inherit JniHierarchy.top $lid:java_obj$ >> :: class_decl 
@@ -127,7 +127,7 @@ let make_wrapper ~callback cl_list =
     in*)
     let class_decl = 
       (* if callback then   *)
-        (* TODO downcast jni *)  
+        (* TODO downcast jni *)  (* ok *)
 	List.fold_right (fun cl class_decl -> 
 	  <:class_str_item< method $lid:Ident.get_class_ml_jni_accessor_method_name cl.cc_ident$ = ( $lid:java_obj$ :> $lid:Ident.get_class_ml_jni_type_name cl.cc_ident$ ) >> 
 	    :: class_decl)  cl.cc_all_inherited class_decl 
@@ -136,12 +136,12 @@ let make_wrapper ~callback cl_list =
 	   <:class_str_item< inherit $lid:interface_name$ $lid:java_obj$ >>) cl.cc_implements) class_decl *)
       in 
 
-    (* méthode accesseur Jni *)
+    (* méthode accesseur Jni *) (* ok *)
     let class_decl = 
       <:class_str_item< method $lid:Ident.get_class_ml_jni_accessor_method_name cl.cc_ident$ = $lid:java_obj$ >> 
 	:: class_decl in
 
-    (* méthodes IDL *)
+    (* méthodes IDL *) (* TODO *)
     let method_ids, methods = 
      (* if callback then *) MlMethod.make_dyn clazz java_obj ~callback:callback cl.cc_public_methods
      (* else MlMethod.make_dyn clazz java_obj ~callback:callback cl.cc_methods *)
@@ -161,8 +161,8 @@ let make_wrapper ~callback cl_list =
     (* test si l'objet est nul ... *)
     let class_body = 
       <:class_expr< let _ = 
-         if Jni.is_null $lid:java_obj$ 
-	 then raise (JniHierarchy.Null_object $str:jclazz$) else () in $class_body$ >> in
+         if Java.is_null $lid:java_obj$ 
+	 then raise (Null_object $str:jclazz$) else () in $class_body$ >> in
 
     (* fonction de création, à partir d'une référence Jni *)
     let class_body = 

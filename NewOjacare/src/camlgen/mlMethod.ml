@@ -34,7 +34,8 @@ let make_class_type ~callback:callback m_list =
 let make_dyn clazz java_obj ~callback m_list =
   let make m =
     let ml_name = Ident.get_method_ml_name m.cm_ident
-    and java_name = Ident.get_method_java_name m.cm_ident in
+    and java_name = Ident.get_method_java_name m.cm_ident 
+    and java_class_name = Ident.get_class_java_qualified_name m.cm_class in
     match m.cm_desc with
     | Cmethod (abstract,rtyp,targs) -> 
 	
@@ -43,7 +44,6 @@ let make_dyn clazz java_obj ~callback m_list =
 	  let typ = MlType.ml_signature targs rtyp in
 	  None,
 	  <:class_str_item< method virtual $lid:ml_name$ : $typ$ >>
-
 	else 
           (* label de l'id de la méthode *)
 	  let id = mid_prefix^ml_name
@@ -51,42 +51,33 @@ let make_dyn clazz java_obj ~callback m_list =
 	  (* Jni : signature de la méthode et nom de la fonction d'appel *)
 	  and sign = MlType.java_signature targs rtyp in
 
-	  let call_method = MlType.get_call_method ~virtual_call:(not callback) rtyp in 
+	  let call_method = MlType.get_call_method java_class_name java_name sign in 
 
           (* Listes les arguments : par noms puis par valeurs pour le tableau d'argument *)
 	  let args = List.map2 (fun i t -> ("_p"^string_of_int i),t) 
 	      (Utilities.interval 0 (List.length targs)) targs in
 	  let jargs = List.map (fun (narg,targ) -> 
-	    
-	    <:ident< (*$id:MlType.constructor_of_type targ$*) $lid:narg$  >>) args in
+	    <:expr< (*$id:MlType.constructor_of_type targ$*) $lid:narg$  >>) args in
 
-          (* construction du corps de la méthode *)
+          (* construction du corps de la méthode *) (* TODO : enlever list *)
 	  let body = 
 	    if not callback then
-	      <:expr< Java.call $lid:java_obj$ $lid:id$ $list:jargs$ >> 
+              <:expr< Java.call $str:call_method$ $lid:java_obj$ (*$lid:id$*) [| $list:jargs$ |] >> 
 	    else
-	      <:expr< Java.call $lid:java_obj$ $lid:clazz$ $lid:id$ $list:jargs$  >> in
+	      <:expr< Java.call $str:call_method$ $lid:java_obj$ $lid:clazz$ (*$lid:id$*) [| $list:jargs$ |] >> in
 	  let body = MlType.convert_from_java rtyp body in
 	  let body = MlGen.make_local_decl (MlType.get_args_convertion MlType.convert_to_java args) body in
 	  let body = MlGen.make_fun args body in
 	  
-	  let id_expr = <:expr<Jni.get_methodID $lid:clazz$ $str:java_name$ $str:sign$ >> in
-	  let err = "Unknown method from IDL in class \\\""^
-	    (Ident.get_class_java_qualified_name m.cm_class)^"\\\" : \\\""^
-	    MlType.idl_signature_of_type rtyp ^ " " ^ java_name ^ "("^
-	    MlType.idl_signature targs^")\\\"." in
-	  let safe_id_expr = 
-	    <:expr<try $id_expr$ with _ -> failwith $str:err$>> in
-
           (* retourne les infos pour la recherche de l'id de méthode, et le corps de la méthode *)
-	  Some (id, safe_id_expr),
+	  None,
 	  <:class_str_item< method $lid:ml_name$ = $body$ >>
 
-    | Cset typ ->   
+    | Cset typ ->   (* TODO *)
 	let id = fid_prefix^java_name
-	and call_method_name = <:ident< Jni. $lid:"set_"^(MlType.string_of_type typ)^"_field"$ >>  
+	and call_method_name = <:ident< Java. $lid:"set_"^(MlType.string_of_type typ)^"_field"$ >>  
 	and narg = "_p" in
-	let call = <:expr< $id:call_method_name$ $lid:java_obj$ $lid:id$ $lid:narg$ >> in
+	let call = <:expr< $id:call_method_name$ $lid:java_obj$ (*$lid:id$*) $lid:narg$ >> in
 	
 	let body = MlGen.make_local_decl [narg,MlType.convert_to_java typ <:expr< $lid:narg$ >>] call in
 	let body = MlGen.make_fun [narg,typ] body in
@@ -94,10 +85,10 @@ let make_dyn clazz java_obj ~callback m_list =
 	None, (* il y a toujours un get ... *)
 	<:class_str_item< method $lid:ml_name$ = $body$ >> 
 	  
-    | Cget typ ->   
+    | Cget typ ->   (* TODO *)
 	let id = fid_prefix^java_name
 	and sign = MlType.java_signature_of_type typ 
-	and call_method_name = <:ident< Jni. $lid:"get_"^(MlType.string_of_type typ)^"_field"$ >>  in
+	and call_method_name = <:ident< Java. $lid:"get_"^(MlType.string_of_type typ)^"_field"$ >>  in
 	let call = <:expr< $id:call_method_name$ $lid:java_obj$ $lid:id$ >> in
 	
 	let body = MlType.convert_from_java typ call in
@@ -111,7 +102,7 @@ let make_dyn clazz java_obj ~callback m_list =
 	let safe_id_expr = 
 	  <:expr<try $id_expr$ with _ -> failwith $str:err$>> in
 
-	Some (id,safe_id_expr),
+	None,
 	<:class_str_item< method $lid:ml_name$ = $body$ >> 
 
   in
