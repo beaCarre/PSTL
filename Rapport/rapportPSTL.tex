@@ -82,14 +82,51 @@
   Béatrice Carre \\
   beatrice.carre@etu.upmc.fr \\
   \\
-  encadrée par Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
+  PSTL encadré par Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
 }
 
 \begin{document}
 \maketitle
 \section*{introduction}
+Deux approches ont déjà été étudiées pour l’interopérabilité entre
+Ocaml et Java à travers leur modèle object respectif :
+
+La première (O’Jacaré) conserve les runtimes des deux langages (GC,
+Exceptions, ...) et les fait communiquer.
+
+La deuxième (ocaml-java 2.0) utilise un seul runtime, celui de Java, en
+compilant les programmes OCaml en byte-code Java.
+\newline
+
+Après l’étude des deux outils, le projet consiste à engendrer pour
+ocaml-java les fichiers d’encapsulation et de callback d’O’Jacaré. Ce
+portage est réalisé en OCaml dans la mesure où il reprend ce qui
+avait été développé pour O’Jacaré. Mais une bonne connaissance du
+langage Java a aussi été nécessaire pour mener à bien ce projet.
+(Les programmes de tests fonctionnent comme les visiteurs
+où données et traitements sont chacun dans un langage différent. On
+pourra aussi mesurer les performances de la réalisation sur ojdvi une
+visionneuse dvi permettant d’afficher les documents créés en LaTeX.)?
+\newline
+
+(* todo : synonyme de outil générateur *)
+
+Dans ce rapport, nous décrivons les schémas globals de l'outil de
+génération de code, ainsi que les outils compilateur d'Ocaml-Java, pour détailler
+ensuite les modifications apportées au générateur de code
+d'interfaces, adapté pour une encapsulation utilisable par le
+compilateur d'OCaml-Java. 
 
 
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   O'Jacaré   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{O'Jacaré, un générateur de code}
 O'Jacaré génère le code nécessaire à
@@ -123,18 +160,93 @@ dont la structure est définie en annexe.
 \subsection{check}
 Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
 phase précédente, vérifiant si le programme est correct, et
+
 construisant une liste de CIdl.clazz, restructurant chaque classe ou interface définie dans l'idl. 
 Le module Cidl définit le nouvel AST allant être manipulé dans les passes de
 génération de code. Il est décrit en annexe.
 
 \subsection{génération stub\_file}
-//TODO
+pour callback : génération java
 
-\section{OCaml-Java, la compilation de code OCaml vers du bytecode Java}
+\subsection{génération des classes encapsulantes}
 
-presentation d'ocaml java, du compilateur
-\subsection{}
+Type jni
 
+Class type
+
+Cast JNI (up et down)
+
+Fonction d'allocation
+
+Capsule / souche
+
+Downcast utilisateur (
+\_downcast,
+\_instance\_of)
+
+Tableaux
+
+Fonction d'initialisation
+Classe de construction
+
+fonctions / methodes static
+
+\subsection{compilation par camljava}
+interfacage C, 2 runtimes, Jni, 
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
+
+\subsection{Accès à du code Java}
+\noindent
+Description des types manipulés par OCaml-Java.  
+
+\begin{tabular}{|l|l|}
+  \hline
+  type Java & description et exemple \\
+  \hline
+  java\_constructor & signature d'un constructeur  \\
+  &  "java.lang.Object()" \\
+  \hline
+  java\_method & signature d'une méthode \\
+  & "java.lang.String.lastIndexOf(string):int"\\
+  \hline
+  java\_field\_get & signature d'un attribut\\
+  & "mypack.Point.x:int" \\
+  \hline
+  java\_field\_set & signature d'un attribut\\
+  & "mypack.Point.x:int" \\
+  \hline
+  java\_type & classe, interface ou type Array\\
+  & "java.lang.String"\\
+  \hline
+  java\_proxy & type d'une interface\\
+  & "java.lang.Comparable"\\ 
+  \hline
+\end{tabular}
+
+\noindent
+Description du module Java
+
+\begin{OCamlEx}
+make : 'a java_constructor -> 'a
+call : 'a java_method -> 'a
+get : 'a java_field_get -> 'a
+set : 'a java_field_set -> 'a
+instanceof : 'a java_type -> 'b java_instance -> bool
+cast : 'a java_type -> 'b java_instance -> 'a
+proxy : 'a java_proxy -> 'a
+\end{OCamlEx}
 
 
 
@@ -146,13 +258,9 @@ presentation d'ocaml java, du compilateur
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   SCHEMAS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Etude du schéma actuel}
+\section{Réalisation}
 
-La génération de ce code se fait en plusieurs passes sur l'ast obtenu
-après ces précédents phases, le CIdl.file.
-
-\subsection{schémas de compilation}
-La génération de code rend du code OCaml (écrit dans un fichier).
+\subsection{schémas de compilation actuels d'O'Jacaré}
 
 \noindent
 Nous considérons un environnement contenant les  variables suivantes, initialisées à leur valuer par défaut: 
@@ -516,7 +624,7 @@ callback
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   newOjacare   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Génération de code pour Ocaml-Java}
+\subsection{Génération de code pour Ocaml-Java}
 L'idée est de partir de 
 Le type top manipulé sera le type d'instance objet de Ocaml-Java :
 \begin{OCamlEx}
@@ -528,45 +636,7 @@ Exception :
 exception Null_object of string
 \end{OCamlEx}
 
-\noindent
-Description des types manipulés par OCaml-Java.  
 
-\begin{tabular}{|l|l|}
-  \hline
-  type Java & description et exemple \\
-  \hline
-  java\_constructor & signature d'un constructeur  \\
-  &  "java.lang.Object()" \\
-  \hline
-  java\_method & signature d'une méthode \\
-  & "java.lang.String.lastIndexOf(string):int"\\
-  \hline
-  java\_field\_get & signature d'un attribut\\
-  & "mypack.Point.x:int" \\
-  \hline
-  java\_field\_set & signature d'un attribut\\
-  & "mypack.Point.x:int" \\
-  \hline
-  java\_type & classe, interface ou type Array\\
-  & "java.lang.String"\\
-  \hline
-  java\_proxy & type d'une interface\\
-  & "java.lang.Comparable"\\ 
-  \hline
-\end{tabular}
-
-\noindent
-Description du module Java
-
-\begin{OCamlEx}
-make : 'a java_constructor -> 'a
-call : 'a java_method -> 'a
-get : 'a java_field_get -> 'a
-set : 'a java_field_set -> 'a
-instanceof : 'a java_type -> 'b java_instance -> bool
-cast : 'a java_type -> 'b java_instance -> 'a
-proxy : 'a java_proxy -> 'a
-\end{OCamlEx}
 
 
 \ 
@@ -576,7 +646,7 @@ proxy : 'a java_proxy -> 'a
 Le schéma de compilation de base pour une classe est largement allégé. 
 En effet,la fonction downcast jni est inutile, puisqu'on a la fonction Java.cast, effectuant tout le travail.
 
-De même, l'upcast -> est direct ? pour quoi ?
+De même, l'upcast -> 
 
 TODO : voir http://www.pps.univ-paris-diderot.fr/~henry/ojacare/doc/ojacare006.html. (** cast JNI, exporté pour préparer la fonction 'import' *)
 
@@ -650,15 +720,13 @@ $[\![ {\color{blue}class}\ CLASS\
 \noindent
 \textbf{ methodes } 
 
-Module Java, module Javastring et des types array
-\url{http://ocamljava.x9c.fr/preview/javalib/index.html}
 
-Tableau représentant les équivalents en OCaml des types Java manipulés.
-La troisième colonne représente les types manipulés par les programmes OCaml.
+
+Tableau représentant les équivalents en OCaml des types Java manipulés
+par OCaml-Java.
+La troisième colonne représente les types manipulés par les programmes
+OCaml écrit par l'utilisateur du nouvel outil.
 Le problème est donc de convertir du deuxième au troisième type pour la manipulation côté OCaml et du troisième au second lors d'un appel à une fonction du module Java (un appel, un constructeur ou autre).
-%% The following table shows how Java primitive types are mapped to OCaml predefined types. 
-
-
 
 \begin{tabular}{|c|l|l|l|}
  \hline
@@ -680,9 +748,9 @@ TYPE IDL &type Java & type OCaml  pour OCaml-Java & type OCaml \\
 \end{tabular}
 \
 \newline
+
 Tableau associant pour chaque types de l'IDL les
 fonctions utiles aux schémas de compilation manipulant ceux-ci, comme explicité ci-dessus. 
-
 
 \begin{tabular}{|c|l|l|l|}
   \hline
@@ -710,7 +778,7 @@ fonctions utiles aux schémas de compilation manipulant ceux-ci, comme explicit�
 
  \emph{string} & JavaString.of\_string & JavaString.to\_string & \_pi\\
 
- \emph{pack/Obj} & \_pi\#\_get\_jni\_jObj & TODO & (\_pi: jObj)\\
+ \emph{pack/Obj} & \_pi\#\_get\_jni\_jObj & (new \_capsule\_jObj ... : jObj) & (\_pi: jObj)\\
 
   \hline
 \end{tabular}
@@ -719,25 +787,25 @@ fonctions utiles aux schémas de compilation manipulant ceux-ci, comme explicit�
 \ 
 \newline
 \noindent
-$[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
+$[\![\ RTYPE\ \ METH\ (TARG1,\ TARG2, ...)]\!]_{ TODO }$$\longrightarrow$
 
 \begin{OCaml}
 ...
 (* type class *)
 "class type jCLASS =
    ...
-   method METH : ARG1 -> ARG2 -> ... -> RTYPE
+   method METH : "(ml_type TARG1) -> (ml_type TARG2)" -> ... ->(ml_type RTYPE)
    ... "
 (* capsule *)
 "class _capsule_jCLASS =
    object (self)      
       method METH =
-         fun "(fcast ARG0) (fcast ARG1) ..." ->
-           let _p1 = "(to_oj_type ARG1)" _p1 in
-           let _p0 = "(to_oj_type ARG0)" _p0
+         fun "(fcast TARG0) (fcast TARG1) ..." ->
+           let _p1 = "(to_oj_type TARG1)" _p1 in
+           let _p0 = "(to_oj_type TARG0)" _p0
            in"
              (to_ml_type RTYPE)
-             "Java.call \"PACK.CLASS.METH("(javaType ARG1),(javaType ARG2),...):(javaType RTYPE)"\" jni_ref _p0 _p1 ..."
+             "Java.call \"PACK.CLASS.METH("(javaType TARG1),(javaType TARG2),...):(javaType RTYPE)"\" jni_ref _p0 _p1 ..."
 
 \end{OCaml}
 \ 
@@ -746,16 +814,16 @@ $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
 \textbf{ inits }
 \newline
 \noindent
-$[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (ARG0,
-    ARG1, ...)]\!]_{}$$\longrightarrow$
+$[\![$[$ {\color{blue}name}\ INIT $]$\ {\color{blue}
+      <init>}\ (TARG0,\ TARG1, ...)]\!]_{}$$\longrightarrow$
 % 
 
 \begin{OCaml}
 "class INIT _p0 _p1 ... =
-  let _p1 = "(to_oj_type ARG1)"  in
-  let _p0 = "(to_oj_type ARG2)" in
+  let _p1 = "(to_oj_type TARG1)"  in
+  let _p0 = "(to_oj_type TARG2)" in
   let java_obj = Java.make \"PACK.CLASS("(javaType
-           ARG1),(javaType ARG2),...")\" _p0 _p1
+           TARG0),(javaType TARG1),...")\" _p0 _p1
   in 
   object (self) 
      inherit _capsule_jCLASS java_obj 
@@ -770,7 +838,7 @@ $[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (ARG0,
 \newline
 \noindent
 \ 
-$[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
+$[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
 
 \begin{OCaml}
 ...
@@ -788,22 +856,14 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
      ...
         method set_ATTR =
            fun "(fcast TYPE)" ->
-              let _p = "(to_oj_type TYPE)"
-              in Jni.set_object_field jni_ref __fid_ATTR _p
+              let _p = "(to_oj_type TYPE)" _p
+              in Java.set \"PACK.CLASS.ATTR:TYPE\" jni_ref _p
         method get_ATTR =
         fun () ->
-           "(to_ml_type TYPE)"
-           (new _capsule_jCLASS (Jni.get_object_field jni_ref __fid_ATTR) :
-           jCLASS)
+           "(to_ml_type TYPE)" (Java.get \"PACK.CLASS.ATTR:TYPE\" jni_ref)
         ...
    "
 
-  method set_y =
-    fun _p ->
-      let _p = Int32.of_int _p
-      in Java.set "mypack.Point.y:int" jni_ref _p
-  method get_y =
-    fun () -> Int32.to_int (Java.get "mypack.Point.y:int" jni_ref)
 \end{OCaml}
 
 
@@ -827,10 +887,34 @@ $[\![ TYPE\ ATTR; ]\!]_{}$$\longrightarrow$
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   BIBLIOGRAPHIE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+\section*{Bibliographie, références}
+[1] CHAILLOUX E., MANOURY P., PAGANO B., \emph{Développement
+  d'applications avec Objective Caml}, O'Reilly
+, 2000, (\url{http://www.oreilly.fr/catalogue/ocaml.html})
 
+[2] CHAILLOUX E., HENRY G., \emph{O’Jacaré, une interface objet
+  entre Objective Caml et Java}, 2004,
 
+[3] CLERC X., \emph{OCaml-Java: Typing Java Accesses from OCaml
+  Programs}, Trends in Functional Programming, Lecture Notes in
+Computer Science Volume 7829,
+2013, \href{http://www.cs.ru.nl/P.Achten/IFL2013/symposium_proceedings_IFL2013/ifl2013_submission_17.pdf}{lien}
 
+[4] CLERC X., \emph{OCaml-Java: OCaml on the JVM}, Trends in
+Functional Programming,
+2012,\href{}{lien}
+
+[5] CLERC X., \emph{OCaml-Java:OCaml-Java: from OCaml sources to Java bytecodes }, Trends in Functional Programming, 2012,\href{http://www.lexifi.com/ml2012/full9.pdf}{lien}
+
+[6] Leroy X., \emph{The camljava project},
+(\url{http://forge.ocamlcore.org/projects/camljava/})
+
+[7] CLERC X.,\emph{OCaml-java : module Java} \url{http://ocamljava.x9c.fr/preview/javalib/index.html}
+
+[8] CamlP4 (* todo *)
 
 
 
@@ -899,105 +983,10 @@ object := qname
 qname ::= (*\name*)<.(*\name*)>*
 (*\name*) ::= (*\ident*)
 \end{idl}
-\newpage
-\subsection*{Module Idl}
-\begin{multicols}{2}
-\begin{OCaml}
-(**  module Idl  *)
 
-type ident = {
-    id_location: Loc.t;
-    id_desc: string 
-  }
-type qident = {
-    qid_location: Loc.t;
-    qid_package: string list;
-    qid_name: ident;
-  }
-type type_desc = 
-    Ivoid  
-  | Iboolean
-  | Ibyte
-  | Ishort
-  | Icamlint
-  | Iint
-  | Ilong
-  | Ifloat
-  | Idouble
-  | Ichar
-  | Istring
-  | Itop
-  | Iarray of typ
-  | Iobject of qident
-and typ = {
-    t_location: Loc.t;
-    t_desc: type_desc;
-  }
-type modifier_desc = 
-  | Ifinal 
-  | Istatic 
-  | Iabstract
-and modifier = {
-    mo_location: Loc.t; 
-    mo_desc: modifier_desc;
-}
-type ann_desc =
-  | Iname of ident
-  | Icallback
-  | Icamlarray
-and annotation = {
-    an_location: Loc.t; 
-    an_desc: ann_desc;
-}
-type arg = {
-    arg_location: Loc.t; 
-    arg_annot: annotation list;
-    arg_type: typ
-}   
-type init = {
-    i_location: Loc.t;
-    i_annot: annotation list; 
-    i_args: arg list;
-}   
-type field = {
-    f_location: Loc.t;
-    f_annot: annotation list; 
-    f_modifiers: modifier list;
-    f_name: ident;
-    f_type: typ
-}
-type mmethod = { 
-    m_location: Loc.t;
-    m_annot: annotation list;
-    m_modifiers: modifier list;
-    m_name: ident;
-    m_return_type: typ;
-    m_args: arg list
-}
-type content = 
-    | Method of mmethod 
-    | Field of field
-type def = {
-    d_location: Loc.t;
-    d_super: qident option;
-    d_implements: qident list;
-    d_annot: annotation list;
-    d_interface: bool;
-    d_modifiers: modifier list;
-    d_name: ident;
-    d_inits: init list;
-    d_contents: content list;
-}
-type package = {
-    p_name: string list;
-    p_defs: def list;
-}   
-type file = package list
- 
-\end{OCaml}
-\end{multicols}
 \newpage
-\subsection*{Module CIdl}
+\subsection*{Module CIdl, structure manipulée par O'Jacaré à partir de
+  l'IDL}
 \begin{OCaml}
 (**  module CIdl  *)
 type typ =
