@@ -71,19 +71,24 @@ val jPoint_of_top : JniHierarchy.top -> jPoint;;
 val jColored_of_top : JniHierarchy.top -> jColored;;
 val jColoredPoint_of_top : JniHierarchy.top -> jColoredPoint;;
 val jCloud_of_top : JniHierarchy.top -> jCloud;;
+
 val _instance_of_jPoint : JniHierarchy.top -> bool;;
 val _instance_of_jColored : JniHierarchy.top -> bool;;
 val _instance_of_jColoredPoint : JniHierarchy.top -> bool;;
 val _instance_of_jCloud : JniHierarchy.top -> bool;;
+
 val jArray_init_jPoint : int -> (int -> jPoint) -> jPoint JniArray.jArray;;
 val jArray_init_jColored :
   int -> (int -> jColored) -> jColored JniArray.jArray;;
 val jArray_init_jColoredPoint :
   int -> (int -> jColoredPoint) -> jColoredPoint JniArray.jArray;;
 val jArray_init_jCloud : int -> (int -> jCloud) -> jCloud JniArray.jArray;;
+
 class point : int -> int -> jPoint;;
 class default_point : unit -> jPoint;;
+
 class colored_point : int -> int -> string -> jColoredPoint;;
+
 class default_colored_point : unit -> jColoredPoint;;
 class empty_cloud : unit -> jCloud;;
 class virtual _stub_colored_point :

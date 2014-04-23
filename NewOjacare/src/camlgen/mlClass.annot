@@ -1819,14 +1819,14 @@ type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_alloc "mlClass.ml" 89 3454 3454 "_none_" 1 0 -1
+  def make_alloc "mlClass.ml" 89 3411 3411 "_none_" 1 0 -1
 )
 "mlClass.ml" 77 2988 3003 "mlClass.ml" 77 2988 3010
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 78 3013 3015 "mlClass.ml" 87 3398 3452
+  def cl_list "mlClass.ml" 78 3013 3015 "mlClass.ml" 87 3355 3409
 )
 "mlClass.ml" 78 3013 3019 "mlClass.ml" 78 3013 3023
 type(
@@ -1834,21 +1834,21 @@ type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "mlClass.ml" 87 3398 3400 "mlClass.ml" 87 3398 3452
+  def make "mlClass.ml" 87 3355 3357 "mlClass.ml" 87 3355 3409
 )
 "mlClass.ml" 78 3013 3024 "mlClass.ml" 78 3013 3026
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 78 3013 3027 "mlClass.ml" 85 3288 3392
+  def cl "mlClass.ml" 78 3013 3027 "mlClass.ml" 85 3245 3349
 )
 "mlClass.ml" 78 3013 3027 "mlClass.ml" 78 3013 3030
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def acc "mlClass.ml" 79 3033 3037 "mlClass.ml" 85 3288 3392
+  def acc "mlClass.ml" 79 3033 3037 "mlClass.ml" 85 3245 3349
 )
 "mlClass.ml" 79 3033 3040 "mlClass.ml" 79 3033 3058
 type(
@@ -1887,7 +1887,7 @@ type(
   string
 )
 ident(
-  def jclazz "mlClass.ml" 83 3160 3168 "mlClass.ml" 85 3288 3392
+  def jclazz "mlClass.ml" 83 3160 3168 "mlClass.ml" 85 3245 3349
 )
 "mlClass.ml" 82 3095 3114 "mlClass.ml" 82 3095 3144
 type(
@@ -2069,108 +2069,6 @@ ident(
   int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
 )
 type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.patt
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.binding
-)
-type(
-  Camlp4.PreCast.Ast.rec_flag
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
   Camlp4.PreCast.Ast.ident
 )
 type(
@@ -2202,13 +2100,6 @@ ident(
 )
 type(
   Camlp4.PreCast.Ast.str_item
-)
-"mlClass.ml" 83 3160 3177 "mlClass.ml" 83 3160 3183
-type(
-  string
-)
-ident(
-  int_ref jclazz "mlClass.ml" 82 3095 3105 "mlClass.ml" 82 3095 3111
 )
 "mlClass.ml" 83 3160 3177 "mlClass.ml" 83 3160 3209
 type(
@@ -2260,42 +2151,42 @@ call(
 type(
   string
 )
-"mlClass.ml" 85 3288 3389 "mlClass.ml" 85 3288 3392
+"mlClass.ml" 85 3245 3346 "mlClass.ml" 85 3245 3349
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
   int_ref acc "mlClass.ml" 78 3013 3027 "mlClass.ml" 78 3013 3030
 )
-"mlClass.ml" 83 3160 3168 "mlClass.ml" 85 3288 3392
+"mlClass.ml" 83 3160 3168 "mlClass.ml" 85 3245 3349
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 82 3095 3101 "mlClass.ml" 85 3288 3392
+"mlClass.ml" 82 3095 3101 "mlClass.ml" 85 3245 3349
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 79 3033 3037 "mlClass.ml" 85 3288 3392
+"mlClass.ml" 79 3033 3037 "mlClass.ml" 85 3245 3349
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 78 3013 3027 "mlClass.ml" 85 3288 3392
+"mlClass.ml" 78 3013 3027 "mlClass.ml" 85 3245 3349
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 78 3013 3024 "mlClass.ml" 85 3288 3392
+"mlClass.ml" 78 3013 3024 "mlClass.ml" 85 3245 3349
 type(
   Cidl.clazz ->
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 87 3398 3400 "mlClass.ml" 87 3398 3418
+"mlClass.ml" 87 3355 3357 "mlClass.ml" 87 3355 3375
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 87 3398 3420 "mlClass.ml" 87 3398 3435
+"mlClass.ml" 87 3355 3377 "mlClass.ml" 87 3355 3392
 type(
   (Cidl.clazz ->
    Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list) ->
@@ -2305,7 +2196,7 @@ type(
 ident(
   ext_ref List.fold_right
 )
-"mlClass.ml" 87 3398 3436 "mlClass.ml" 87 3398 3440
+"mlClass.ml" 87 3355 3393 "mlClass.ml" 87 3355 3397
 type(
   Cidl.clazz ->
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
@@ -2313,168 +2204,168 @@ type(
 ident(
   int_ref make "mlClass.ml" 78 3013 3019 "mlClass.ml" 78 3013 3023
 )
-"mlClass.ml" 87 3398 3441 "mlClass.ml" 87 3398 3448
+"mlClass.ml" 87 3355 3398 "mlClass.ml" 87 3355 3405
 type(
   Cidl.clazz list
 )
 ident(
   int_ref cl_list "mlClass.ml" 77 2988 3003 "mlClass.ml" 77 2988 3010
 )
-"mlClass.ml" 87 3398 3449 "mlClass.ml" 87 3398 3451
+"mlClass.ml" 87 3355 3406 "mlClass.ml" 87 3355 3408
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 87 3398 3420 "mlClass.ml" 87 3398 3451
+"mlClass.ml" 87 3355 3377 "mlClass.ml" 87 3355 3408
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 87 3398 3400 "mlClass.ml" 87 3398 3452
+"mlClass.ml" 87 3355 3357 "mlClass.ml" 87 3355 3409
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 78 3013 3015 "mlClass.ml" 87 3398 3452
+"mlClass.ml" 78 3013 3015 "mlClass.ml" 87 3355 3409
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 77 2988 3003 "mlClass.ml" 87 3398 3452
+"mlClass.ml" 77 2988 3003 "mlClass.ml" 87 3355 3409
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 89 3454 3458 "mlClass.ml" 89 3454 3473
+"mlClass.ml" 89 3411 3415 "mlClass.ml" 89 3411 3430
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_alloc_stub "mlClass.ml" 103 4108 4108 "_none_" 1 0 -1
+  def make_alloc_stub "mlClass.ml" 103 4065 4065 "_none_" 1 0 -1
 )
-"mlClass.ml" 89 3454 3474 "mlClass.ml" 89 3454 3481
+"mlClass.ml" 89 3411 3431 "mlClass.ml" 89 3411 3438
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 90 3484 3486 "mlClass.ml" 100 3948 4035
+  def cl_list "mlClass.ml" 90 3441 3443 "mlClass.ml" 100 3905 3992
 )
-"mlClass.ml" 90 3484 3490 "mlClass.ml" 90 3484 3494
+"mlClass.ml" 90 3441 3447 "mlClass.ml" 90 3441 3451
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make "mlClass.ml" 100 3948 3950 "mlClass.ml" 100 3948 4035
+  def make "mlClass.ml" 100 3905 3907 "mlClass.ml" 100 3905 3992
 )
-"mlClass.ml" 90 3484 3495 "mlClass.ml" 90 3484 3497
+"mlClass.ml" 90 3441 3452 "mlClass.ml" 90 3441 3454
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 91 3500 3504 "mlClass.ml" 98 3843 3942
+  def cl "mlClass.ml" 91 3457 3461 "mlClass.ml" 98 3800 3899
 )
-"mlClass.ml" 91 3500 3508 "mlClass.ml" 91 3500 3514
+"mlClass.ml" 91 3457 3465 "mlClass.ml" 91 3457 3471
 type(
   string
 )
 ident(
-  def jclazz "mlClass.ml" 92 3568 3572 "mlClass.ml" 98 3843 3942
+  def jclazz "mlClass.ml" 92 3525 3529 "mlClass.ml" 98 3800 3899
 )
-"mlClass.ml" 91 3500 3517 "mlClass.ml" 91 3500 3552
+"mlClass.ml" 91 3457 3474 "mlClass.ml" 91 3457 3509
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_stub_signature
 )
-"mlClass.ml" 91 3500 3553 "mlClass.ml" 91 3500 3555
+"mlClass.ml" 91 3457 3510 "mlClass.ml" 91 3457 3512
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 90 3484 3495 "mlClass.ml" 90 3484 3497
+  int_ref cl "mlClass.ml" 90 3441 3452 "mlClass.ml" 90 3441 3454
 )
-"mlClass.ml" 91 3500 3553 "mlClass.ml" 91 3500 3564
+"mlClass.ml" 91 3457 3510 "mlClass.ml" 91 3457 3521
 type(
   Ident.clazz
 )
-"mlClass.ml" 91 3500 3517 "mlClass.ml" 91 3500 3564
+"mlClass.ml" 91 3457 3474 "mlClass.ml" 91 3457 3521
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 92 3568 3576 "mlClass.ml" 92 3568 3579
+"mlClass.ml" 92 3525 3533 "mlClass.ml" 92 3525 3536
 type(
   string
 )
 ident(
-  def err "mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3687
+  def err "mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3644
 )
-"mlClass.ml" 92 3568 3582 "mlClass.ml" 92 3568 3602
+"mlClass.ml" 92 3525 3539 "mlClass.ml" 92 3525 3559
 type(
   string
 )
-"mlClass.ml" 92 3568 3602 "mlClass.ml" 92 3568 3603
+"mlClass.ml" 92 3525 3559 "mlClass.ml" 92 3525 3560
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 93 3604 3610 "mlClass.ml" 93 3604 3650
+"mlClass.ml" 93 3561 3567 "mlClass.ml" 93 3561 3607
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_qualified_stub_name
 )
-"mlClass.ml" 93 3604 3651 "mlClass.ml" 93 3604 3653
+"mlClass.ml" 93 3561 3608 "mlClass.ml" 93 3561 3610
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 90 3484 3495 "mlClass.ml" 90 3484 3497
+  int_ref cl "mlClass.ml" 90 3441 3452 "mlClass.ml" 90 3441 3454
 )
-"mlClass.ml" 93 3604 3651 "mlClass.ml" 93 3604 3662
+"mlClass.ml" 93 3561 3608 "mlClass.ml" 93 3561 3619
 type(
   Ident.clazz
 )
-"mlClass.ml" 93 3604 3610 "mlClass.ml" 93 3604 3662
+"mlClass.ml" 93 3561 3567 "mlClass.ml" 93 3561 3619
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 93 3604 3663 "mlClass.ml" 93 3604 3664
+"mlClass.ml" 93 3561 3620 "mlClass.ml" 93 3561 3621
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 93 3604 3664 "mlClass.ml" 93 3604 3667
+"mlClass.ml" 93 3561 3621 "mlClass.ml" 93 3561 3624
 type(
   string
 )
-"mlClass.ml" 93 3604 3610 "mlClass.ml" 93 3604 3667
+"mlClass.ml" 93 3561 3567 "mlClass.ml" 93 3561 3624
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 92 3568 3582 "mlClass.ml" 93 3604 3667
+"mlClass.ml" 92 3525 3539 "mlClass.ml" 93 3561 3624
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3687
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3644
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -2838,90 +2729,90 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3690
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3647
 type(
   string
 )
 ident(
-  int_ref err "mlClass.ml" 92 3568 3576 "mlClass.ml" 92 3568 3579
+  int_ref err "mlClass.ml" 92 3525 3533 "mlClass.ml" 92 3525 3536
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3693
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3650
 type(
   string
 )
 ident(
-  int_ref jclazz "mlClass.ml" 91 3500 3508 "mlClass.ml" 91 3500 3514
+  int_ref jclazz "mlClass.ml" 91 3457 3465 "mlClass.ml" 91 3457 3471
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3719
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3676
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 95 3672 3720 "mlClass.ml" 95 3672 3722
+"mlClass.ml" 95 3629 3677 "mlClass.ml" 95 3629 3679
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 90 3484 3495 "mlClass.ml" 90 3484 3497
+  int_ref cl "mlClass.ml" 90 3441 3452 "mlClass.ml" 90 3441 3454
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3725
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3682
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_stub_allocator_name
 )
-"mlClass.ml" 95 3672 3726 "mlClass.ml" 95 3672 3728
+"mlClass.ml" 95 3629 3683 "mlClass.ml" 95 3629 3685
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 90 3484 3495 "mlClass.ml" 90 3484 3497
+  int_ref cl "mlClass.ml" 90 3441 3452 "mlClass.ml" 90 3441 3454
 )
-"mlClass.ml" 95 3672 3720 "mlClass.ml" 95 3672 3731
+"mlClass.ml" 95 3629 3677 "mlClass.ml" 95 3629 3688
 type(
   Ident.clazz
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3731
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3688
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 95 3672 3726 "mlClass.ml" 95 3672 3737
+"mlClass.ml" 95 3629 3683 "mlClass.ml" 95 3629 3694
 type(
   Ident.clazz
 )
-"mlClass.ml" 95 3672 3687 "mlClass.ml" 95 3672 3737
+"mlClass.ml" 95 3629 3644 "mlClass.ml" 95 3629 3694
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 92 3568 3572 "mlClass.ml" 98 3843 3942
+"mlClass.ml" 92 3525 3529 "mlClass.ml" 98 3800 3899
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 91 3500 3504 "mlClass.ml" 98 3843 3942
+"mlClass.ml" 91 3457 3461 "mlClass.ml" 98 3800 3899
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 90 3484 3495 "mlClass.ml" 98 3843 3942
+"mlClass.ml" 90 3441 3452 "mlClass.ml" 98 3800 3899
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 100 3948 3950 "mlClass.ml" 100 3948 3968
+"mlClass.ml" 100 3905 3907 "mlClass.ml" 100 3905 3925
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 100 3948 3970 "mlClass.ml" 100 3948 3978
+"mlClass.ml" 100 3905 3927 "mlClass.ml" 100 3905 3935
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.str_item) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list
@@ -2929,262 +2820,262 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 100 3948 3979 "mlClass.ml" 100 3948 3983
+"mlClass.ml" 100 3905 3936 "mlClass.ml" 100 3905 3940
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  int_ref make "mlClass.ml" 90 3484 3490 "mlClass.ml" 90 3484 3494
+  int_ref make "mlClass.ml" 90 3441 3447 "mlClass.ml" 90 3441 3451
 )
-"mlClass.ml" 100 3948 3986 "mlClass.ml" 100 3948 3997
+"mlClass.ml" 100 3905 3943 "mlClass.ml" 100 3905 3954
 type(
   (Cidl.clazz -> bool) -> Cidl.clazz list -> Cidl.clazz list
 )
 ident(
   ext_ref List.filter
 )
-"mlClass.ml" 100 3948 4003 "mlClass.ml" 100 3948 4005
+"mlClass.ml" 100 3905 3960 "mlClass.ml" 100 3905 3962
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 100 3948 4009 "mlClass.ml" 100 3948 4023
+  def cl "mlClass.ml" 100 3905 3966 "mlClass.ml" 100 3905 3980
 )
-"mlClass.ml" 100 3948 4009 "mlClass.ml" 100 3948 4011
+"mlClass.ml" 100 3905 3966 "mlClass.ml" 100 3905 3968
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 100 3948 4003 "mlClass.ml" 100 3948 4005
+  int_ref cl "mlClass.ml" 100 3905 3960 "mlClass.ml" 100 3905 3962
 )
-"mlClass.ml" 100 3948 4009 "mlClass.ml" 100 3948 4023
+"mlClass.ml" 100 3905 3966 "mlClass.ml" 100 3905 3980
 type(
   bool
 )
-"mlClass.ml" 100 3948 4003 "mlClass.ml" 100 3948 4023
+"mlClass.ml" 100 3905 3960 "mlClass.ml" 100 3905 3980
 type(
   Cidl.clazz -> bool
 )
-"mlClass.ml" 100 3948 4026 "mlClass.ml" 100 3948 4033
+"mlClass.ml" 100 3905 3983 "mlClass.ml" 100 3905 3990
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 89 3454 3474 "mlClass.ml" 89 3454 3481
+  int_ref cl_list "mlClass.ml" 89 3411 3431 "mlClass.ml" 89 3411 3438
 )
-"mlClass.ml" 100 3948 3986 "mlClass.ml" 100 3948 4033
+"mlClass.ml" 100 3905 3943 "mlClass.ml" 100 3905 3990
 call(
   stack
 )
 type(
   Cidl.clazz list
 )
-"mlClass.ml" 100 3948 3970 "mlClass.ml" 100 3948 4034
+"mlClass.ml" 100 3905 3927 "mlClass.ml" 100 3905 3991
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 100 3948 3950 "mlClass.ml" 100 3948 4035
+"mlClass.ml" 100 3905 3907 "mlClass.ml" 100 3905 3992
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 90 3484 3486 "mlClass.ml" 100 3948 4035
+"mlClass.ml" 90 3441 3443 "mlClass.ml" 100 3905 3992
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 89 3454 3474 "mlClass.ml" 100 3948 4035
+"mlClass.ml" 89 3411 3431 "mlClass.ml" 100 3905 3992
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 103 4108 4112 "mlClass.ml" 103 4108 4124
+"mlClass.ml" 103 4065 4069 "mlClass.ml" 103 4065 4081
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
 ident(
-  def make_wrapper "mlClass.ml" 218 8757 8757 "_none_" 1 0 -1
+  def make_wrapper "mlClass.ml" 218 8796 8796 "_none_" 1 0 -1
 )
-"mlClass.ml" 103 4108 4135 "mlClass.ml" 103 4108 4142
+"mlClass.ml" 103 4065 4092 "mlClass.ml" 103 4065 4099
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 104 4145 4147 "mlClass.ml" 214 8527 8610
+  def cl_list "mlClass.ml" 104 4102 4104 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 104 4145 4151 "mlClass.ml" 104 4145 4156
+"mlClass.ml" 104 4102 4108 "mlClass.ml" 104 4102 4113
 type(
   string
 )
 ident(
-  def clazz "mlClass.ml" 106 4197 4199 "mlClass.ml" 214 8527 8610
+  def clazz "mlClass.ml" 106 4154 4156 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 104 4145 4159 "mlClass.ml" 104 4145 4166
+"mlClass.ml" 104 4102 4116 "mlClass.ml" 104 4102 4123
 type(
   string
 )
-"mlClass.ml" 105 4167 4173 "mlClass.ml" 105 4167 4181
+"mlClass.ml" 105 4124 4130 "mlClass.ml" 105 4124 4138
 type(
   string
 )
 ident(
-  def java_obj "mlClass.ml" 106 4197 4199 "mlClass.ml" 214 8527 8610
+  def java_obj "mlClass.ml" 106 4154 4156 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 105 4167 4184 "mlClass.ml" 105 4167 4193
+"mlClass.ml" 105 4124 4141 "mlClass.ml" 105 4124 4150
 type(
   string
 )
-"mlClass.ml" 106 4197 4203 "mlClass.ml" 106 4197 4207
+"mlClass.ml" 106 4154 4160 "mlClass.ml" 106 4154 4164
 type(
   Cidl.clazz -> string * bool * Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  def make "mlClass.ml" 214 8527 8529 "mlClass.ml" 214 8527 8610
+  def make "mlClass.ml" 214 8566 8568 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+"mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 108 4214 4218 "mlClass.ml" 211 8483 8517
+  def cl "mlClass.ml" 108 4171 4175 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 108 4214 4222 "mlClass.ml" 108 4214 4230
+"mlClass.ml" 108 4171 4179 "mlClass.ml" 108 4171 4187
 type(
   bool
 )
 ident(
-  def abstract "mlClass.ml" 110 4246 4250 "mlClass.ml" 211 8483 8517
+  def abstract "mlClass.ml" 110 4203 4207 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 108 4214 4233 "mlClass.ml" 108 4214 4241
+"mlClass.ml" 108 4171 4190 "mlClass.ml" 108 4171 4198
 type(
   bool
 )
 ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+  int_ref callback "mlClass.ml" 103 4065 4082 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 110 4246 4254 "mlClass.ml" 110 4246 4260
+"mlClass.ml" 110 4203 4211 "mlClass.ml" 110 4203 4217
 type(
   string
 )
 ident(
-  def jclazz "mlClass.ml" 116 4567 4571 "mlClass.ml" 211 8483 8517
+  def jclazz "mlClass.ml" 116 4524 4528 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 110 4246 4263 "mlClass.ml" 110 4246 4293
+"mlClass.ml" 110 4203 4220 "mlClass.ml" 110 4203 4250
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_signature
 )
-"mlClass.ml" 110 4246 4294 "mlClass.ml" 110 4246 4296
+"mlClass.ml" 110 4203 4251 "mlClass.ml" 110 4203 4253
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 110 4246 4294 "mlClass.ml" 110 4246 4305
+"mlClass.ml" 110 4203 4251 "mlClass.ml" 110 4203 4262
 type(
   Ident.clazz
 )
-"mlClass.ml" 110 4246 4263 "mlClass.ml" 110 4246 4305
+"mlClass.ml" 110 4203 4220 "mlClass.ml" 110 4203 4262
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 111 4366 4374 "mlClass.ml" 111 4366 4384
+"mlClass.ml" 111 4323 4331 "mlClass.ml" 111 4323 4341
 type(
   string
 )
 ident(
-  def class_name "mlClass.ml" 116 4567 4571 "mlClass.ml" 211 8483 8517
+  def class_name "mlClass.ml" 116 4524 4528 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 112 4388 4397 "mlClass.ml" 112 4388 4405
+"mlClass.ml" 112 4345 4354 "mlClass.ml" 112 4345 4362
 type(
   bool
 )
 ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+  int_ref callback "mlClass.ml" 103 4065 4082 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 112 4388 4411 "mlClass.ml" 112 4388 4447
+"mlClass.ml" 112 4345 4368 "mlClass.ml" 112 4345 4404
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_stub_wrapper_name
 )
-"mlClass.ml" 112 4388 4448 "mlClass.ml" 112 4388 4450
+"mlClass.ml" 112 4345 4405 "mlClass.ml" 112 4345 4407
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 112 4388 4448 "mlClass.ml" 112 4388 4459
+"mlClass.ml" 112 4345 4405 "mlClass.ml" 112 4345 4416
 type(
   Ident.clazz
 )
-"mlClass.ml" 112 4388 4411 "mlClass.ml" 112 4388 4459
+"mlClass.ml" 112 4345 4368 "mlClass.ml" 112 4345 4416
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 113 4460 4471 "mlClass.ml" 113 4460 4502
+"mlClass.ml" 113 4417 4428 "mlClass.ml" 113 4417 4459
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_wrapper_name
 )
-"mlClass.ml" 113 4460 4503 "mlClass.ml" 113 4460 4505
+"mlClass.ml" 113 4417 4460 "mlClass.ml" 113 4417 4462
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 113 4460 4503 "mlClass.ml" 113 4460 4514
+"mlClass.ml" 113 4417 4460 "mlClass.ml" 113 4417 4471
 type(
   Ident.clazz
 )
-"mlClass.ml" 113 4460 4471 "mlClass.ml" 113 4460 4514
+"mlClass.ml" 113 4417 4428 "mlClass.ml" 113 4417 4471
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 112 4388 4394 "mlClass.ml" 113 4460 4514
+"mlClass.ml" 112 4345 4351 "mlClass.ml" 113 4417 4471
 type(
   string
 )
-"mlClass.ml" 116 4567 4575 "mlClass.ml" 116 4567 4585
+"mlClass.ml" 116 4524 4532 "mlClass.ml" 116 4524 4542
 type(
   'a list
 )
 ident(
-  def class_decl "mlClass.ml" 128 5093 5097 "mlClass.ml" 211 8483 8517
+  def class_decl "mlClass.ml" 128 5050 5054 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 116 4567 4588 "mlClass.ml" 116 4567 4590
+"mlClass.ml" 116 4524 4545 "mlClass.ml" 116 4524 4547
 type(
   'a list
 )
-"mlClass.ml" 128 5093 5101 "mlClass.ml" 128 5093 5111
+"mlClass.ml" 128 5050 5058 "mlClass.ml" 128 5050 5068
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  def class_decl "mlClass.ml" 140 5738 5742 "mlClass.ml" 211 8483 8517
+  def class_decl "mlClass.ml" 140 5695 5699 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 131 5188 5189 "mlClass.ml" 131 5188 5204
+"mlClass.ml" 131 5145 5146 "mlClass.ml" 131 5145 5161
 type(
   (Cidl.clazz ->
    Camlp4.PreCast.Ast.class_str_item list ->
@@ -3196,21 +3087,21 @@ type(
 ident(
   ext_ref List.fold_right
 )
-"mlClass.ml" 131 5188 5210 "mlClass.ml" 131 5188 5212
+"mlClass.ml" 131 5145 5167 "mlClass.ml" 131 5145 5169
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 131 5188 5213 "mlClass.ml" 133 5397 5415
+  def cl "mlClass.ml" 131 5145 5170 "mlClass.ml" 133 5354 5372
 )
-"mlClass.ml" 131 5188 5213 "mlClass.ml" 131 5188 5223
+"mlClass.ml" 131 5145 5170 "mlClass.ml" 131 5145 5180
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  def class_decl "mlClass.ml" 132 5228 5233 "mlClass.ml" 133 5397 5415
+  def class_decl "mlClass.ml" 132 5185 5190 "mlClass.ml" 133 5354 5372
 )
-"mlClass.ml" 132 5228 5248 "mlClass.ml" 132 5228 5248
+"mlClass.ml" 132 5185 5205 "mlClass.ml" 132 5185 5205
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -3289,118 +3180,118 @@ ident(
 type(
   Camlp4.PreCast.Ast.class_str_item
 )
-"mlClass.ml" 132 5228 5248 "mlClass.ml" 132 5228 5256
+"mlClass.ml" 132 5185 5205 "mlClass.ml" 132 5185 5213
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 105 4167 4173 "mlClass.ml" 105 4167 4181
+  int_ref java_obj "mlClass.ml" 105 4124 4130 "mlClass.ml" 105 4124 4138
 )
-"mlClass.ml" 132 5228 5248 "mlClass.ml" 132 5228 5280
+"mlClass.ml" 132 5185 5205 "mlClass.ml" 132 5185 5237
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 132 5228 5281 "mlClass.ml" 132 5228 5283
+"mlClass.ml" 132 5185 5238 "mlClass.ml" 132 5185 5240
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 131 5188 5210 "mlClass.ml" 131 5188 5212
+  int_ref cl "mlClass.ml" 131 5145 5167 "mlClass.ml" 131 5145 5169
 )
-"mlClass.ml" 132 5228 5248 "mlClass.ml" 132 5228 5291
+"mlClass.ml" 132 5185 5205 "mlClass.ml" 132 5185 5248
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_accessor_method_name
 )
-"mlClass.ml" 132 5228 5281 "mlClass.ml" 132 5228 5292
+"mlClass.ml" 132 5185 5238 "mlClass.ml" 132 5185 5249
 type(
   Ident.clazz
 )
-"mlClass.ml" 132 5228 5248 "mlClass.ml" 132 5228 5292
+"mlClass.ml" 132 5185 5205 "mlClass.ml" 132 5185 5249
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 132 5228 5292 "mlClass.ml" 132 5228 5294
+"mlClass.ml" 132 5185 5249 "mlClass.ml" 132 5185 5251
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 131 5188 5210 "mlClass.ml" 131 5188 5212
+  int_ref cl "mlClass.ml" 131 5145 5167 "mlClass.ml" 131 5145 5169
 )
-"mlClass.ml" 132 5228 5292 "mlClass.ml" 132 5228 5303
+"mlClass.ml" 132 5185 5249 "mlClass.ml" 132 5185 5260
 type(
   Ident.clazz
 )
-"mlClass.ml" 132 5228 5248 "mlClass.ml" 132 5228 5303
+"mlClass.ml" 132 5185 5205 "mlClass.ml" 132 5185 5260
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 133 5397 5405 "mlClass.ml" 133 5397 5415
+"mlClass.ml" 133 5354 5362 "mlClass.ml" 133 5354 5372
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 131 5188 5213 "mlClass.ml" 131 5188 5223
+  int_ref class_decl "mlClass.ml" 131 5145 5170 "mlClass.ml" 131 5145 5180
 )
-"mlClass.ml" 132 5228 5233 "mlClass.ml" 133 5397 5415
+"mlClass.ml" 132 5185 5190 "mlClass.ml" 133 5354 5372
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 131 5188 5213 "mlClass.ml" 133 5397 5415
+"mlClass.ml" 131 5145 5170 "mlClass.ml" 133 5354 5372
 type(
   Camlp4.PreCast.Ast.class_str_item list ->
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 131 5188 5210 "mlClass.ml" 133 5397 5415
+"mlClass.ml" 131 5145 5167 "mlClass.ml" 133 5354 5372
 type(
   Cidl.clazz ->
   Camlp4.PreCast.Ast.class_str_item list ->
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 133 5397 5418 "mlClass.ml" 133 5397 5420
+"mlClass.ml" 133 5354 5375 "mlClass.ml" 133 5354 5377
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 133 5397 5418 "mlClass.ml" 133 5397 5437
+"mlClass.ml" 133 5354 5375 "mlClass.ml" 133 5354 5394
 type(
   Cidl.clazz list
 )
-"mlClass.ml" 133 5397 5438 "mlClass.ml" 133 5397 5448
+"mlClass.ml" 133 5354 5395 "mlClass.ml" 133 5354 5405
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 116 4567 4575 "mlClass.ml" 116 4567 4585
+  int_ref class_decl "mlClass.ml" 116 4524 4532 "mlClass.ml" 116 4524 4542
 )
-"mlClass.ml" 131 5188 5189 "mlClass.ml" 133 5397 5448
+"mlClass.ml" 131 5145 5146 "mlClass.ml" 133 5354 5405
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 140 5738 5746 "mlClass.ml" 140 5738 5756
+"mlClass.ml" 140 5695 5703 "mlClass.ml" 140 5695 5713
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  def class_decl "mlClass.ml" 145 5927 5931 "mlClass.ml" 211 8483 8517
+  def class_decl "mlClass.ml" 145 5884 5888 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 141 5760 5783 "mlClass.ml" 141 5760 5783
+"mlClass.ml" 141 5717 5740 "mlClass.ml" 141 5717 5740
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -3443,69 +3334,69 @@ ident(
 type(
   Camlp4.PreCast.Ast.class_str_item
 )
-"mlClass.ml" 141 5760 5783 "mlClass.ml" 141 5760 5791
+"mlClass.ml" 141 5717 5740 "mlClass.ml" 141 5717 5748
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 105 4167 4173 "mlClass.ml" 105 4167 4181
+  int_ref java_obj "mlClass.ml" 105 4124 4130 "mlClass.ml" 105 4124 4138
 )
-"mlClass.ml" 141 5760 5783 "mlClass.ml" 141 5760 5826
+"mlClass.ml" 141 5717 5740 "mlClass.ml" 141 5717 5783
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_accessor_method_name
 )
-"mlClass.ml" 141 5760 5827 "mlClass.ml" 141 5760 5829
+"mlClass.ml" 141 5717 5784 "mlClass.ml" 141 5717 5786
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 141 5760 5827 "mlClass.ml" 141 5760 5838
+"mlClass.ml" 141 5717 5784 "mlClass.ml" 141 5717 5795
 type(
   Ident.clazz
 )
-"mlClass.ml" 141 5760 5783 "mlClass.ml" 141 5760 5838
+"mlClass.ml" 141 5717 5740 "mlClass.ml" 141 5717 5795
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 142 5874 5878 "mlClass.ml" 142 5874 5888
+"mlClass.ml" 142 5831 5835 "mlClass.ml" 142 5831 5845
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 128 5093 5101 "mlClass.ml" 128 5093 5111
+  int_ref class_decl "mlClass.ml" 128 5050 5058 "mlClass.ml" 128 5050 5068
 )
-"mlClass.ml" 141 5760 5768 "mlClass.ml" 142 5874 5888
+"mlClass.ml" 141 5717 5725 "mlClass.ml" 142 5831 5845
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 145 5927 5935 "mlClass.ml" 145 5927 5945
+"mlClass.ml" 145 5884 5892 "mlClass.ml" 145 5884 5902
 type(
   (string * Camlp4.PreCast.Ast.expr) list
 )
 ident(
-  def method_ids "mlClass.ml" 149 6148 6152 "mlClass.ml" 211 8483 8517
+  def method_ids "mlClass.ml" 149 6105 6109 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 145 5927 5947 "mlClass.ml" 145 5927 5954
+"mlClass.ml" 145 5884 5904 "mlClass.ml" 145 5884 5911
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  def methods "mlClass.ml" 149 6148 6152 "mlClass.ml" 211 8483 8517
+  def methods "mlClass.ml" 149 6105 6109 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 145 5927 5935 "mlClass.ml" 145 5927 5954
+"mlClass.ml" 145 5884 5892 "mlClass.ml" 145 5884 5911
 type(
   (string * Camlp4.PreCast.Ast.expr) list *
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 146 5958 5986 "mlClass.ml" 146 5958 6003
+"mlClass.ml" 146 5915 5943 "mlClass.ml" 146 5915 5960
 type(
   string ->
   string ->
@@ -3517,39 +3408,39 @@ type(
 ident(
   ext_ref MlMethod.make_dyn
 )
-"mlClass.ml" 146 5958 6004 "mlClass.ml" 146 5958 6009
+"mlClass.ml" 146 5915 5961 "mlClass.ml" 146 5915 5966
 type(
   string
 )
 ident(
-  int_ref clazz "mlClass.ml" 104 4145 4151 "mlClass.ml" 104 4145 4156
+  int_ref clazz "mlClass.ml" 104 4102 4108 "mlClass.ml" 104 4102 4113
 )
-"mlClass.ml" 146 5958 6010 "mlClass.ml" 146 5958 6018
+"mlClass.ml" 146 5915 5967 "mlClass.ml" 146 5915 5975
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 105 4167 4173 "mlClass.ml" 105 4167 4181
+  int_ref java_obj "mlClass.ml" 105 4124 4130 "mlClass.ml" 105 4124 4138
 )
-"mlClass.ml" 146 5958 6029 "mlClass.ml" 146 5958 6037
+"mlClass.ml" 146 5915 5986 "mlClass.ml" 146 5915 5994
 type(
   bool
 )
 ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+  int_ref callback "mlClass.ml" 103 4065 4082 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 146 5958 6038 "mlClass.ml" 146 5958 6040
+"mlClass.ml" 146 5915 5995 "mlClass.ml" 146 5915 5997
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 146 5958 6038 "mlClass.ml" 146 5958 6058
+"mlClass.ml" 146 5915 5995 "mlClass.ml" 146 5915 6015
 type(
   Cidl.mmethod list
 )
-"mlClass.ml" 146 5958 5986 "mlClass.ml" 146 5958 6058
+"mlClass.ml" 146 5915 5943 "mlClass.ml" 146 5915 6015
 call(
   stack
 )
@@ -3557,14 +3448,14 @@ type(
   (string * Camlp4.PreCast.Ast.expr) list *
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 149 6148 6156 "mlClass.ml" 149 6148 6166
+"mlClass.ml" 149 6105 6113 "mlClass.ml" 149 6105 6123
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  def class_decl "mlClass.ml" 151 6212 6216 "mlClass.ml" 211 8483 8517
+  def class_decl "mlClass.ml" 151 6169 6173 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 149 6148 6169 "mlClass.ml" 149 6148 6184
+"mlClass.ml" 149 6105 6126 "mlClass.ml" 149 6105 6141
 type(
   Camlp4.PreCast.Ast.class_str_item list ->
   Camlp4.PreCast.Ast.class_str_item list ->
@@ -3573,42 +3464,42 @@ type(
 ident(
   ext_ref List.rev_append
 )
-"mlClass.ml" 149 6148 6185 "mlClass.ml" 149 6148 6192
+"mlClass.ml" 149 6105 6142 "mlClass.ml" 149 6105 6149
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref methods "mlClass.ml" 145 5927 5947 "mlClass.ml" 145 5927 5954
+  int_ref methods "mlClass.ml" 145 5884 5904 "mlClass.ml" 145 5884 5911
 )
-"mlClass.ml" 149 6148 6193 "mlClass.ml" 149 6148 6203
+"mlClass.ml" 149 6105 6150 "mlClass.ml" 149 6105 6160
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 140 5738 5746 "mlClass.ml" 140 5738 5756
+  int_ref class_decl "mlClass.ml" 140 5695 5703 "mlClass.ml" 140 5695 5713
 )
-"mlClass.ml" 149 6148 6169 "mlClass.ml" 149 6148 6203
+"mlClass.ml" 149 6105 6126 "mlClass.ml" 149 6105 6160
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 151 6212 6220 "mlClass.ml" 151 6212 6230
+"mlClass.ml" 151 6169 6177 "mlClass.ml" 151 6169 6187
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  def class_decl "mlClass.ml" 158 6385 6389 "mlClass.ml" 211 8483 8517
+  def class_decl "mlClass.ml" 158 6342 6346 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 152 6234 6243 "mlClass.ml" 152 6234 6251
+"mlClass.ml" 152 6191 6200 "mlClass.ml" 152 6191 6208
 type(
   bool
 )
 ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+  int_ref callback "mlClass.ml" 103 4065 4082 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 153 6257 6258 "mlClass.ml" 153 6257 6273
+"mlClass.ml" 153 6214 6215 "mlClass.ml" 153 6214 6230
 type(
   Camlp4.PreCast.Ast.class_str_item list ->
   Camlp4.PreCast.Ast.class_str_item list ->
@@ -3617,64 +3508,64 @@ type(
 ident(
   ext_ref List.rev_append
 )
-"mlClass.ml" 153 6257 6275 "mlClass.ml" 153 6257 6297
+"mlClass.ml" 153 6214 6232 "mlClass.ml" 153 6214 6254
 type(
   Cidl.mmethod list -> Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
   ext_ref MlMethod.make_callback
 )
-"mlClass.ml" 153 6257 6298 "mlClass.ml" 153 6257 6300
+"mlClass.ml" 153 6214 6255 "mlClass.ml" 153 6214 6257
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 153 6257 6298 "mlClass.ml" 153 6257 6318
+"mlClass.ml" 153 6214 6255 "mlClass.ml" 153 6214 6275
 type(
   Cidl.mmethod list
 )
-"mlClass.ml" 153 6257 6275 "mlClass.ml" 153 6257 6318
+"mlClass.ml" 153 6214 6232 "mlClass.ml" 153 6214 6275
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 153 6257 6320 "mlClass.ml" 153 6257 6330
+"mlClass.ml" 153 6214 6277 "mlClass.ml" 153 6214 6287
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 149 6148 6156 "mlClass.ml" 149 6148 6166
+  int_ref class_decl "mlClass.ml" 149 6105 6113 "mlClass.ml" 149 6105 6123
 )
-"mlClass.ml" 153 6257 6258 "mlClass.ml" 153 6257 6330
+"mlClass.ml" 153 6214 6215 "mlClass.ml" 153 6214 6287
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 155 6342 6343 "mlClass.ml" 155 6342 6353
+"mlClass.ml" 155 6299 6300 "mlClass.ml" 155 6299 6310
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 149 6148 6156 "mlClass.ml" 149 6148 6166
+  int_ref class_decl "mlClass.ml" 149 6105 6113 "mlClass.ml" 149 6105 6123
 )
-"mlClass.ml" 152 6234 6240 "mlClass.ml" 155 6342 6353
+"mlClass.ml" 152 6191 6197 "mlClass.ml" 155 6299 6310
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
-"mlClass.ml" 158 6385 6393 "mlClass.ml" 158 6385 6403
+"mlClass.ml" 158 6342 6350 "mlClass.ml" 158 6342 6360
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  def class_body "mlClass.ml" 162 6512 6516 "mlClass.ml" 211 8483 8517
+  def class_body "mlClass.ml" 162 6469 6473 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 159 6406 6425 "mlClass.ml" 159 6406 6425
+"mlClass.ml" 159 6363 6382 "mlClass.ml" 159 6363 6382
 type(
   string
 )
@@ -3705,14 +3596,14 @@ ident(
 type(
   Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 159 6406 6441 "mlClass.ml" 159 6406 6451
+"mlClass.ml" 159 6363 6398 "mlClass.ml" 159 6363 6408
 type(
   Camlp4.PreCast.Ast.class_str_item list
 )
 ident(
-  int_ref class_decl "mlClass.ml" 151 6212 6220 "mlClass.ml" 151 6212 6230
+  int_ref class_decl "mlClass.ml" 151 6169 6177 "mlClass.ml" 151 6169 6187
 )
-"mlClass.ml" 159 6406 6441 "mlClass.ml" 159 6406 6457
+"mlClass.ml" 159 6363 6398 "mlClass.ml" 159 6363 6414
 call(
   stack
 )
@@ -3725,14 +3616,14 @@ type(
 ident(
   ext_ref Camlp4.PreCast.Ast.crSem_of_list
 )
-"mlClass.ml" 162 6512 6520 "mlClass.ml" 162 6512 6530
+"mlClass.ml" 162 6469 6477 "mlClass.ml" 162 6469 6487
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  def class_body "mlClass.ml" 168 6736 6740 "mlClass.ml" 211 8483 8517
+  def class_body "mlClass.ml" 168 6692 6696 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 163 6534 6553 "mlClass.ml" 163 6534 6553
+"mlClass.ml" 163 6491 6510 "mlClass.ml" 163 6491 6510
 type(
   string
 )
@@ -3931,35 +3822,35 @@ ident(
 type(
   Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 163 6534 6553 "mlClass.ml" 163 6534 6559
+"mlClass.ml" 163 6491 6510 "mlClass.ml" 163 6491 6516
 type(
   string
 )
 ident(
-  int_ref jclazz "mlClass.ml" 110 4246 4254 "mlClass.ml" 110 4246 4260
+  int_ref jclazz "mlClass.ml" 110 4203 4211 "mlClass.ml" 110 4203 4217
 )
-"mlClass.ml" 163 6534 6553 "mlClass.ml" 163 6534 6561
+"mlClass.ml" 163 6491 6510 "mlClass.ml" 163 6491 6518
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 105 4167 4173 "mlClass.ml" 105 4167 4181
+  int_ref java_obj "mlClass.ml" 105 4124 4130 "mlClass.ml" 105 4124 4138
 )
-"mlClass.ml" 165 6604 6655 "mlClass.ml" 165 6604 6665
+"mlClass.ml" 165 6560 6611 "mlClass.ml" 165 6560 6621
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  int_ref class_body "mlClass.ml" 158 6385 6393 "mlClass.ml" 158 6385 6403
+  int_ref class_body "mlClass.ml" 158 6342 6350 "mlClass.ml" 158 6342 6360
 )
-"mlClass.ml" 168 6736 6744 "mlClass.ml" 168 6736 6754
+"mlClass.ml" 168 6692 6700 "mlClass.ml" 168 6692 6710
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  def class_body "mlClass.ml" 172 6980 6984 "mlClass.ml" 211 8483 8517
+  def class_body "mlClass.ml" 172 6936 6940 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 169 6758 6777 "mlClass.ml" 169 6758 6777
+"mlClass.ml" 169 6714 6733 "mlClass.ml" 169 6714 6733
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -4014,53 +3905,53 @@ ident(
 type(
   Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 169 6758 6777 "mlClass.ml" 169 6758 6785
+"mlClass.ml" 169 6714 6733 "mlClass.ml" 169 6714 6741
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 105 4167 4173 "mlClass.ml" 105 4167 4181
+  int_ref java_obj "mlClass.ml" 105 4124 4130 "mlClass.ml" 105 4124 4138
 )
-"mlClass.ml" 169 6758 6777 "mlClass.ml" 169 6758 6809
+"mlClass.ml" 169 6714 6733 "mlClass.ml" 169 6714 6765
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 169 6758 6810 "mlClass.ml" 169 6758 6812
+"mlClass.ml" 169 6714 6766 "mlClass.ml" 169 6714 6768
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
+  int_ref cl "mlClass.ml" 106 4154 4165 "mlClass.ml" 106 4154 4167
 )
-"mlClass.ml" 169 6758 6810 "mlClass.ml" 169 6758 6821
+"mlClass.ml" 169 6714 6766 "mlClass.ml" 169 6714 6777
 type(
   Ident.clazz
 )
-"mlClass.ml" 169 6758 6777 "mlClass.ml" 169 6758 6821
+"mlClass.ml" 169 6714 6733 "mlClass.ml" 169 6714 6777
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 169 6758 6855 "mlClass.ml" 169 6758 6865
+"mlClass.ml" 169 6714 6811 "mlClass.ml" 169 6714 6821
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  int_ref class_body "mlClass.ml" 162 6512 6520 "mlClass.ml" 162 6512 6530
+  int_ref class_body "mlClass.ml" 162 6469 6477 "mlClass.ml" 162 6469 6487
 )
-"mlClass.ml" 172 6980 6988 "mlClass.ml" 172 6980 6998
+"mlClass.ml" 172 6936 6944 "mlClass.ml" 172 6936 6954
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  def class_body "mlClass.ml" 175 7111 7115 "mlClass.ml" 211 8483 8517
+  def class_body "mlClass.ml" 211 8522 8526 "mlClass.ml" 211 8522 8556
 )
-"mlClass.ml" 172 6980 7001 "mlClass.ml" 172 6980 7028
+"mlClass.ml" 172 6936 6957 "mlClass.ml" 172 6936 6984
 type(
   (string * Camlp4.PreCast.Ast.expr) list ->
   Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
@@ -4068,1276 +3959,105 @@ type(
 ident(
   ext_ref MlGen.make_class_local_decl
 )
-"mlClass.ml" 172 6980 7029 "mlClass.ml" 172 6980 7039
+"mlClass.ml" 172 6936 6985 "mlClass.ml" 172 6936 6995
 type(
   (string * Camlp4.PreCast.Ast.expr) list
 )
 ident(
-  int_ref method_ids "mlClass.ml" 145 5927 5935 "mlClass.ml" 145 5927 5945
+  int_ref method_ids "mlClass.ml" 145 5884 5892 "mlClass.ml" 145 5884 5902
 )
-"mlClass.ml" 172 6980 7040 "mlClass.ml" 172 6980 7050
+"mlClass.ml" 172 6936 6996 "mlClass.ml" 172 6936 7006
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  int_ref class_body "mlClass.ml" 168 6736 6744 "mlClass.ml" 168 6736 6754
+  int_ref class_body "mlClass.ml" 168 6692 6700 "mlClass.ml" 168 6692 6710
 )
-"mlClass.ml" 172 6980 7001 "mlClass.ml" 172 6980 7050
+"mlClass.ml" 172 6936 6957 "mlClass.ml" 172 6936 7006
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 175 7111 7119 "mlClass.ml" 175 7111 7129
+"mlClass.ml" 211 8522 8526 "mlClass.ml" 211 8522 8536
 type(
-  Camlp4.PreCast.Ast.class_expr
+  string
 )
 ident(
-  def class_body "mlClass.ml" 190 7699 7703 "mlClass.ml" 211 8483 8517
+  int_ref class_name "mlClass.ml" 111 4323 4331 "mlClass.ml" 111 4323 4341
 )
-"mlClass.ml" 176 7133 7142 "mlClass.ml" 176 7133 7150
+"mlClass.ml" 211 8522 8537 "mlClass.ml" 211 8522 8545
 type(
   bool
 )
 ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+  int_ref abstract "mlClass.ml" 108 4171 4179 "mlClass.ml" 108 4171 4187
 )
-"mlClass.ml" 176 7133 7156 "mlClass.ml" 176 7133 7166
+"mlClass.ml" 211 8522 8546 "mlClass.ml" 211 8522 8556
 type(
   Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  int_ref class_body "mlClass.ml" 172 6980 6988 "mlClass.ml" 172 6980 6998
+  int_ref class_body "mlClass.ml" 172 6936 6944 "mlClass.ml" 172 6936 6954
 )
-"mlClass.ml" 177 7173 7179 "mlClass.ml" 177 7173 7194
-type(
-  (Cidl.clazz ->
-   Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr) ->
-  Cidl.clazz list ->
-  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  ext_ref List.fold_right
-)
-"mlClass.ml" 177 7173 7200 "mlClass.ml" 177 7173 7209
-type(
-  Cidl.clazz
-)
-ident(
-  def interface "mlClass.ml" 177 7173 7210 "mlClass.ml" 187 7593 7614
-)
-"mlClass.ml" 177 7173 7210 "mlClass.ml" 177 7173 7214
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  def body "mlClass.ml" 178 7218 7219 "mlClass.ml" 187 7593 7614
-)
-"mlClass.ml" 178 7218 7223 "mlClass.ml" 178 7218 7226
-type(
-  string
-)
-ident(
-  def err "mlClass.ml" 183 7421 7435 "mlClass.ml" 183 7421 7435
-)
-"mlClass.ml" 178 7218 7229 "mlClass.ml" 178 7218 7268
-type(
-  string
-)
-"mlClass.ml" 178 7218 7268 "mlClass.ml" 178 7218 7269
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 179 7270 7274 "mlClass.ml" 179 7270 7309
-type(
-  Ident.clazz -> string
-)
-ident(
-  ext_ref Ident.get_class_java_qualified_name
-)
-"mlClass.ml" 179 7270 7310 "mlClass.ml" 179 7270 7312
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
-)
-"mlClass.ml" 179 7270 7310 "mlClass.ml" 179 7270 7321
-type(
-  Ident.clazz
-)
-"mlClass.ml" 179 7270 7274 "mlClass.ml" 179 7270 7321
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 179 7270 7322 "mlClass.ml" 179 7270 7323
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 180 7325 7328 "mlClass.ml" 180 7325 7351
-type(
-  string
-)
-"mlClass.ml" 180 7325 7351 "mlClass.ml" 180 7325 7352
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 181 7353 7357 "mlClass.ml" 181 7353 7392
-type(
-  Ident.clazz -> string
-)
-ident(
-  ext_ref Ident.get_class_java_qualified_name
-)
-"mlClass.ml" 181 7353 7393 "mlClass.ml" 181 7353 7402
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref interface "mlClass.ml" 177 7173 7200 "mlClass.ml" 177 7173 7209
-)
-"mlClass.ml" 181 7353 7393 "mlClass.ml" 181 7353 7411
-type(
-  Ident.clazz
-)
-"mlClass.ml" 181 7353 7357 "mlClass.ml" 181 7353 7411
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 181 7353 7412 "mlClass.ml" 181 7353 7413
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 181 7353 7413 "mlClass.ml" 181 7353 7416
-type(
-  string
-)
-"mlClass.ml" 181 7353 7356 "mlClass.ml" 181 7353 7416
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 180 7325 7328 "mlClass.ml" 181 7353 7416
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 179 7270 7273 "mlClass.ml" 181 7353 7416
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 178 7218 7229 "mlClass.ml" 181 7353 7416
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 183 7421 7435 "mlClass.ml" 183 7421 7435
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.patt
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.binding
-)
-type(
-  Camlp4.PreCast.Ast.rec_flag
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 183 7421 7435 "mlClass.ml" 183 7421 7438
-type(
-  string
-)
-ident(
-  int_ref err "mlClass.ml" 178 7218 7223 "mlClass.ml" 178 7218 7226
-)
-"mlClass.ml" 183 7421 7435 "mlClass.ml" 183 7421 7440
-type(
-  string
-)
-ident(
-  int_ref clazz "mlClass.ml" 104 4145 4151 "mlClass.ml" 104 4145 4156
-)
-"mlClass.ml" 183 7421 7436 "mlClass.ml" 183 7421 7466
-type(
-  Ident.clazz -> string
-)
-ident(
-  ext_ref Ident.get_class_java_signature
-)
-"mlClass.ml" 183 7421 7467 "mlClass.ml" 183 7421 7476
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref interface "mlClass.ml" 177 7173 7200 "mlClass.ml" 177 7173 7209
-)
-"mlClass.ml" 183 7421 7467 "mlClass.ml" 183 7421 7485
-type(
-  Ident.clazz
-)
-"mlClass.ml" 183 7421 7436 "mlClass.ml" 183 7421 7485
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 187 7593 7605 "mlClass.ml" 187 7593 7609
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref body "mlClass.ml" 177 7173 7210 "mlClass.ml" 177 7173 7214
-)
-"mlClass.ml" 178 7218 7219 "mlClass.ml" 187 7593 7614
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 177 7173 7210 "mlClass.ml" 187 7593 7614
-type(
-  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 177 7173 7200 "mlClass.ml" 187 7593 7614
-type(
-  Cidl.clazz ->
-  Camlp4.PreCast.Ast.class_expr -> Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 187 7593 7616 "mlClass.ml" 187 7593 7618
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
-)
-"mlClass.ml" 187 7593 7616 "mlClass.ml" 187 7593 7632
-type(
-  Cidl.clazz list
-)
-"mlClass.ml" 187 7593 7633 "mlClass.ml" 187 7593 7643
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref class_body "mlClass.ml" 172 6980 6988 "mlClass.ml" 172 6980 6998
-)
-"mlClass.ml" 177 7173 7179 "mlClass.ml" 187 7593 7643
-call(
-  stack
-)
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 176 7133 7139 "mlClass.ml" 187 7593 7643
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 190 7699 7707 "mlClass.ml" 190 7699 7717
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  def class_body "mlClass.ml" 207 8320 8324 "mlClass.ml" 211 8483 8517
-)
-"mlClass.ml" 191 7721 7730 "mlClass.ml" 191 7721 7738
-type(
-  bool
-)
-ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
-)
-"mlClass.ml" 191 7721 7744 "mlClass.ml" 191 7721 7754
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref class_body "mlClass.ml" 175 7111 7119 "mlClass.ml" 175 7111 7129
-)
-"mlClass.ml" 192 7760 7772 "mlClass.ml" 192 7760 7774
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
-)
-"mlClass.ml" 192 7760 7772 "mlClass.ml" 192 7760 7784
-type(
-  Cidl.clazz option
-)
-"mlClass.ml" 193 7790 7791 "mlClass.ml" 193 7790 7795
-type(
-  Cidl.clazz option
-)
-"mlClass.ml" 193 7790 7799 "mlClass.ml" 193 7790 7809
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref class_body "mlClass.ml" 175 7111 7119 "mlClass.ml" 175 7111 7129
-)
-"mlClass.ml" 194 7810 7823 "mlClass.ml" 194 7810 7828
-type(
-  Cidl.clazz
-)
-ident(
-  def super "mlClass.ml" 195 7833 7836 "mlClass.ml" 204 8200 8229
-)
-"mlClass.ml" 194 7810 7818 "mlClass.ml" 194 7810 7828
-type(
-  Cidl.clazz option
-)
-"mlClass.ml" 195 7833 7840 "mlClass.ml" 195 7833 7843
-type(
-  string
-)
-ident(
-  def err "mlClass.ml" 200 8024 8040 "mlClass.ml" 200 8024 8040
-)
-"mlClass.ml" 195 7833 7846 "mlClass.ml" 195 7833 7875
-type(
-  string
-)
-"mlClass.ml" 195 7833 7875 "mlClass.ml" 195 7833 7876
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 196 7877 7883 "mlClass.ml" 196 7877 7918
-type(
-  Ident.clazz -> string
-)
-ident(
-  ext_ref Ident.get_class_java_qualified_name
-)
-"mlClass.ml" 196 7877 7919 "mlClass.ml" 196 7877 7921
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref cl "mlClass.ml" 106 4197 4208 "mlClass.ml" 106 4197 4210
-)
-"mlClass.ml" 196 7877 7919 "mlClass.ml" 196 7877 7930
-type(
-  Ident.clazz
-)
-"mlClass.ml" 196 7877 7883 "mlClass.ml" 196 7877 7930
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 196 7877 7931 "mlClass.ml" 196 7877 7932
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 197 7934 7939 "mlClass.ml" 197 7934 7954
-type(
-  string
-)
-"mlClass.ml" 197 7934 7954 "mlClass.ml" 197 7934 7955
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 198 7956 7962 "mlClass.ml" 198 7956 7997
-type(
-  Ident.clazz -> string
-)
-ident(
-  ext_ref Ident.get_class_java_qualified_name
-)
-"mlClass.ml" 198 7956 7998 "mlClass.ml" 198 7956 8003
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref super "mlClass.ml" 194 7810 7823 "mlClass.ml" 194 7810 7828
-)
-"mlClass.ml" 198 7956 7998 "mlClass.ml" 198 7956 8012
-type(
-  Ident.clazz
-)
-"mlClass.ml" 198 7956 7962 "mlClass.ml" 198 7956 8012
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 198 7956 8013 "mlClass.ml" 198 7956 8014
-type(
-  string -> string -> string
-)
-ident(
-  ext_ref Pervasives.( ^ )
-)
-"mlClass.ml" 198 7956 8014 "mlClass.ml" 198 7956 8017
-type(
-  string
-)
-"mlClass.ml" 198 7956 7961 "mlClass.ml" 198 7956 8017
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 197 7934 7939 "mlClass.ml" 198 7956 8017
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 196 7877 7882 "mlClass.ml" 198 7956 8017
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 195 7833 7846 "mlClass.ml" 198 7956 8017
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 200 8024 8040 "mlClass.ml" 200 8024 8040
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.patt
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.binding
-)
-type(
-  Camlp4.PreCast.Ast.rec_flag
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 200 8024 8040 "mlClass.ml" 200 8024 8043
-type(
-  string
-)
-ident(
-  int_ref err "mlClass.ml" 195 7833 7840 "mlClass.ml" 195 7833 7843
-)
-"mlClass.ml" 200 8024 8040 "mlClass.ml" 200 8024 8045
-type(
-  string
-)
-ident(
-  int_ref clazz "mlClass.ml" 104 4145 4151 "mlClass.ml" 104 4145 4156
-)
-"mlClass.ml" 200 8024 8041 "mlClass.ml" 200 8024 8071
-type(
-  Ident.clazz -> string
-)
-ident(
-  ext_ref Ident.get_class_java_signature
-)
-"mlClass.ml" 200 8024 8072 "mlClass.ml" 200 8024 8077
-type(
-  Cidl.clazz
-)
-ident(
-  int_ref super "mlClass.ml" 194 7810 7823 "mlClass.ml" 194 7810 7828
-)
-"mlClass.ml" 200 8024 8072 "mlClass.ml" 200 8024 8086
-type(
-  Ident.clazz
-)
-"mlClass.ml" 200 8024 8041 "mlClass.ml" 200 8024 8086
-call(
-  stack
-)
-type(
-  string
-)
-"mlClass.ml" 204 8200 8214 "mlClass.ml" 204 8200 8224
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref class_body "mlClass.ml" 175 7111 7119 "mlClass.ml" 175 7111 7129
-)
-"mlClass.ml" 195 7833 7836 "mlClass.ml" 204 8200 8229
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 192 7760 7766 "mlClass.ml" 204 8200 8229
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 191 7721 7727 "mlClass.ml" 204 8200 8229
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 207 8320 8328 "mlClass.ml" 207 8320 8338
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  def class_body "mlClass.ml" 211 8483 8487 "mlClass.ml" 211 8483 8517
-)
-"mlClass.ml" 208 8342 8361 "mlClass.ml" 208 8342 8361
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  string
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.expr
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.ident
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.patt
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.binding
-)
-type(
-  Camlp4.PreCast.Ast.rec_flag
-)
-type(
-  Camlp4.PreCast.Ast.loc
-)
-ident(
-  int_ref _loc "mlClass.ml" 6 92 96 "mlClass.ml" 6 92 100
-)
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 208 8342 8361 "mlClass.ml" 208 8342 8366
-type(
-  string
-)
-ident(
-  int_ref clazz "mlClass.ml" 104 4145 4151 "mlClass.ml" 104 4145 4156
-)
-"mlClass.ml" 208 8342 8361 "mlClass.ml" 208 8342 8367
-type(
-  string
-)
-ident(
-  int_ref jclazz "mlClass.ml" 110 4246 4254 "mlClass.ml" 110 4246 4260
-)
-"mlClass.ml" 208 8342 8411 "mlClass.ml" 208 8342 8421
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref class_body "mlClass.ml" 190 7699 7707 "mlClass.ml" 190 7699 7717
-)
-"mlClass.ml" 211 8483 8487 "mlClass.ml" 211 8483 8497
-type(
-  string
-)
-ident(
-  int_ref class_name "mlClass.ml" 111 4366 4374 "mlClass.ml" 111 4366 4384
-)
-"mlClass.ml" 211 8483 8498 "mlClass.ml" 211 8483 8506
-type(
-  bool
-)
-ident(
-  int_ref abstract "mlClass.ml" 108 4214 4222 "mlClass.ml" 108 4214 4230
-)
-"mlClass.ml" 211 8483 8507 "mlClass.ml" 211 8483 8517
-type(
-  Camlp4.PreCast.Ast.class_expr
-)
-ident(
-  int_ref class_body "mlClass.ml" 207 8320 8328 "mlClass.ml" 207 8320 8338
-)
-"mlClass.ml" 211 8483 8487 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 211 8522 8526 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 207 8320 8324 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 172 6936 6940 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 190 7699 7703 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 168 6692 6696 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 175 7111 7115 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 162 6469 6473 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 172 6980 6984 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 158 6342 6346 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 168 6736 6740 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 151 6169 6173 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 162 6512 6516 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 149 6105 6109 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 158 6385 6389 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 145 5884 5888 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 151 6212 6216 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 140 5695 5699 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 149 6148 6152 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 128 5050 5054 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 145 5927 5931 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 116 4524 4528 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 140 5738 5742 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 110 4203 4207 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 128 5093 5097 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 108 4171 4175 "mlClass.ml" 211 8522 8556
 type(
   string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 116 4567 4571 "mlClass.ml" 211 8483 8517
-type(
-  string * bool * Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 110 4246 4250 "mlClass.ml" 211 8483 8517
-type(
-  string * bool * Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 108 4214 4218 "mlClass.ml" 211 8483 8517
-type(
-  string * bool * Camlp4.PreCast.Ast.class_expr
-)
-"mlClass.ml" 106 4197 4208 "mlClass.ml" 211 8483 8517
+"mlClass.ml" 106 4154 4165 "mlClass.ml" 211 8522 8556
 type(
   Cidl.clazz -> string * bool * Camlp4.PreCast.Ast.class_expr
 )
-"mlClass.ml" 214 8527 8529 "mlClass.ml" 214 8527 8537
+"mlClass.ml" 214 8566 8568 "mlClass.ml" 214 8566 8576
 type(
   (Cidl.clazz -> string * bool * Camlp4.PreCast.Ast.class_expr) ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_expr) list
@@ -5345,105 +4065,105 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 214 8527 8538 "mlClass.ml" 214 8527 8542
+"mlClass.ml" 214 8566 8577 "mlClass.ml" 214 8566 8581
 type(
   Cidl.clazz -> string * bool * Camlp4.PreCast.Ast.class_expr
 )
 ident(
-  int_ref make "mlClass.ml" 106 4197 4203 "mlClass.ml" 106 4197 4207
+  int_ref make "mlClass.ml" 106 4154 4160 "mlClass.ml" 106 4154 4164
 )
-"mlClass.ml" 214 8527 8544 "mlClass.ml" 214 8527 8555
+"mlClass.ml" 214 8566 8583 "mlClass.ml" 214 8566 8594
 type(
   (Cidl.clazz -> bool) -> Cidl.clazz list -> Cidl.clazz list
 )
 ident(
   ext_ref List.filter
 )
-"mlClass.ml" 214 8527 8561 "mlClass.ml" 214 8527 8563
+"mlClass.ml" 214 8566 8600 "mlClass.ml" 214 8566 8602
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 214 8527 8567 "mlClass.ml" 214 8527 8599
+  def cl "mlClass.ml" 214 8566 8606 "mlClass.ml" 214 8566 8638
 )
-"mlClass.ml" 214 8527 8568 "mlClass.ml" 214 8527 8571
+"mlClass.ml" 214 8566 8607 "mlClass.ml" 214 8566 8610
 type(
   bool -> bool
 )
 ident(
   ext_ref Pervasives.not
 )
-"mlClass.ml" 214 8527 8572 "mlClass.ml" 214 8527 8580
+"mlClass.ml" 214 8566 8611 "mlClass.ml" 214 8566 8619
 type(
   bool
 )
 ident(
-  int_ref callback "mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+  int_ref callback "mlClass.ml" 103 4065 4082 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 214 8527 8568 "mlClass.ml" 214 8527 8580
+"mlClass.ml" 214 8566 8607 "mlClass.ml" 214 8566 8619
 type(
   bool
 )
-"mlClass.ml" 214 8527 8582 "mlClass.ml" 214 8527 8584
+"mlClass.ml" 214 8566 8621 "mlClass.ml" 214 8566 8623
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"mlClass.ml" 214 8527 8585 "mlClass.ml" 214 8527 8587
+"mlClass.ml" 214 8566 8624 "mlClass.ml" 214 8566 8626
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 214 8527 8561 "mlClass.ml" 214 8527 8563
+  int_ref cl "mlClass.ml" 214 8566 8600 "mlClass.ml" 214 8566 8602
 )
-"mlClass.ml" 214 8527 8585 "mlClass.ml" 214 8527 8599
+"mlClass.ml" 214 8566 8624 "mlClass.ml" 214 8566 8638
 type(
   bool
 )
-"mlClass.ml" 214 8527 8567 "mlClass.ml" 214 8527 8599
+"mlClass.ml" 214 8566 8606 "mlClass.ml" 214 8566 8638
 type(
   bool
 )
-"mlClass.ml" 214 8527 8561 "mlClass.ml" 214 8527 8599
+"mlClass.ml" 214 8566 8600 "mlClass.ml" 214 8566 8638
 type(
   Cidl.clazz -> bool
 )
-"mlClass.ml" 214 8527 8602 "mlClass.ml" 214 8527 8609
+"mlClass.ml" 214 8566 8641 "mlClass.ml" 214 8566 8648
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 103 4108 4135 "mlClass.ml" 103 4108 4142
+  int_ref cl_list "mlClass.ml" 103 4065 4092 "mlClass.ml" 103 4065 4099
 )
-"mlClass.ml" 214 8527 8544 "mlClass.ml" 214 8527 8609
+"mlClass.ml" 214 8566 8583 "mlClass.ml" 214 8566 8648
 call(
   stack
 )
 type(
   Cidl.clazz list
 )
-"mlClass.ml" 214 8527 8529 "mlClass.ml" 214 8527 8610
+"mlClass.ml" 214 8566 8568 "mlClass.ml" 214 8566 8649
 call(
   tail
 )
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"mlClass.ml" 106 4197 4199 "mlClass.ml" 214 8527 8610
+"mlClass.ml" 106 4154 4156 "mlClass.ml" 214 8566 8649
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"mlClass.ml" 104 4145 4147 "mlClass.ml" 214 8527 8610
+"mlClass.ml" 104 4102 4104 "mlClass.ml" 214 8566 8649
 type(
   (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"mlClass.ml" 103 4108 4135 "mlClass.ml" 214 8527 8610
+"mlClass.ml" 103 4065 4092 "mlClass.ml" 214 8566 8649
 type(
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_expr) list
 )
-"mlClass.ml" 103 4108 4125 "mlClass.ml" 214 8527 8610
+"mlClass.ml" 103 4065 4082 "mlClass.ml" 214 8566 8649
 type(
   callback:bool ->
   Cidl.clazz list -> (string * bool * Camlp4.PreCast.Ast.class_expr) list
@@ -5452,101 +4172,101 @@ type(
   bool
 )
 ident(
-  def callback "mlClass.ml" 103 4108 4135 "mlClass.ml" 214 8527 8610
+  def callback "mlClass.ml" 103 4065 4092 "mlClass.ml" 214 8566 8649
 )
-"mlClass.ml" 218 8757 8761 "mlClass.ml" 218 8757 8777
+"mlClass.ml" 218 8796 8800 "mlClass.ml" 218 8796 8816
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make_wrapper_sig "mlClass.ml" 227 9128 9128 "_none_" 1 0 -1
+  def make_wrapper_sig "mlClass.ml" 227 9167 9167 "_none_" 1 0 -1
 )
-"mlClass.ml" 218 8757 8778 "mlClass.ml" 218 8757 8785
+"mlClass.ml" 218 8796 8817 "mlClass.ml" 218 8796 8824
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 219 8788 8790 "mlClass.ml" 224 9081 9125
+  def cl_list "mlClass.ml" 219 8827 8829 "mlClass.ml" 224 9120 9164
 )
-"mlClass.ml" 219 8788 8794 "mlClass.ml" 219 8788 8798
+"mlClass.ml" 219 8827 8833 "mlClass.ml" 219 8827 8837
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make "mlClass.ml" 224 9081 9083 "mlClass.ml" 224 9081 9125
+  def make "mlClass.ml" 224 9120 9122 "mlClass.ml" 224 9120 9164
 )
-"mlClass.ml" 219 8788 8799 "mlClass.ml" 219 8788 8801
+"mlClass.ml" 219 8827 8838 "mlClass.ml" 219 8827 8840
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 220 8806 8810 "mlClass.ml" 222 8934 9075
+  def cl "mlClass.ml" 220 8845 8849 "mlClass.ml" 222 8973 9114
 )
-"mlClass.ml" 220 8806 8814 "mlClass.ml" 220 8806 8820
+"mlClass.ml" 220 8845 8853 "mlClass.ml" 220 8845 8859
 type(
   string
 )
 ident(
-  def jclazz "mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8949
+  def jclazz "mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 8988
 )
-"mlClass.ml" 220 8806 8823 "mlClass.ml" 220 8806 8853
+"mlClass.ml" 220 8845 8862 "mlClass.ml" 220 8845 8892
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_signature
 )
-"mlClass.ml" 220 8806 8854 "mlClass.ml" 220 8806 8856
+"mlClass.ml" 220 8845 8893 "mlClass.ml" 220 8845 8895
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 219 8788 8799 "mlClass.ml" 219 8788 8801
+  int_ref cl "mlClass.ml" 219 8827 8838 "mlClass.ml" 219 8827 8840
 )
-"mlClass.ml" 220 8806 8854 "mlClass.ml" 220 8806 8865
+"mlClass.ml" 220 8845 8893 "mlClass.ml" 220 8845 8904
 type(
   Ident.clazz
 )
-"mlClass.ml" 220 8806 8823 "mlClass.ml" 220 8806 8865
+"mlClass.ml" 220 8845 8862 "mlClass.ml" 220 8845 8904
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 221 8866 8874 "mlClass.ml" 221 8866 8884
+"mlClass.ml" 221 8905 8913 "mlClass.ml" 221 8905 8923
 type(
   string
 )
 ident(
-  def class_name "mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8949
+  def class_name "mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 8988
 )
-"mlClass.ml" 221 8866 8887 "mlClass.ml" 221 8866 8918
+"mlClass.ml" 221 8905 8926 "mlClass.ml" 221 8905 8957
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_wrapper_name
 )
-"mlClass.ml" 221 8866 8919 "mlClass.ml" 221 8866 8921
+"mlClass.ml" 221 8905 8958 "mlClass.ml" 221 8905 8960
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 219 8788 8799 "mlClass.ml" 219 8788 8801
+  int_ref cl "mlClass.ml" 219 8827 8838 "mlClass.ml" 219 8827 8840
 )
-"mlClass.ml" 221 8866 8919 "mlClass.ml" 221 8866 8930
+"mlClass.ml" 221 8905 8958 "mlClass.ml" 221 8905 8969
 type(
   Ident.clazz
 )
-"mlClass.ml" 221 8866 8887 "mlClass.ml" 221 8866 8930
+"mlClass.ml" 221 8905 8926 "mlClass.ml" 221 8905 8969
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8949
+"mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 8988
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -5652,79 +4372,79 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8959
+"mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 8998
 type(
   string
 )
 ident(
-  int_ref class_name "mlClass.ml" 221 8866 8874 "mlClass.ml" 221 8866 8884
+  int_ref class_name "mlClass.ml" 221 8905 8913 "mlClass.ml" 221 8905 8923
 )
-"mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8972
+"mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 9011
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 222 8934 8973 "mlClass.ml" 222 8934 8975
+"mlClass.ml" 222 8973 9012 "mlClass.ml" 222 8973 9014
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 219 8788 8799 "mlClass.ml" 219 8788 8801
+  int_ref cl "mlClass.ml" 219 8827 8838 "mlClass.ml" 219 8827 8840
 )
-"mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8981
+"mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 9020
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 222 8934 8982 "mlClass.ml" 222 8934 8984
+"mlClass.ml" 222 8973 9021 "mlClass.ml" 222 8973 9023
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 219 8788 8799 "mlClass.ml" 219 8788 8801
+  int_ref cl "mlClass.ml" 219 8827 8838 "mlClass.ml" 219 8827 8840
 )
-"mlClass.ml" 222 8934 8973 "mlClass.ml" 222 8934 8984
+"mlClass.ml" 222 8973 9012 "mlClass.ml" 222 8973 9023
 type(
   Ident.clazz
 )
-"mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8984
+"mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 9023
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 222 8934 8982 "mlClass.ml" 222 8934 8993
+"mlClass.ml" 222 8973 9021 "mlClass.ml" 222 8973 9032
 type(
   Ident.clazz
 )
-"mlClass.ml" 222 8934 8949 "mlClass.ml" 222 8934 8993
+"mlClass.ml" 222 8973 8988 "mlClass.ml" 222 8973 9032
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 220 8806 8810 "mlClass.ml" 222 8934 9075
+"mlClass.ml" 220 8845 8849 "mlClass.ml" 222 8973 9114
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 219 8788 8799 "mlClass.ml" 222 8934 9075
+"mlClass.ml" 219 8827 8838 "mlClass.ml" 222 8973 9114
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 224 9081 9083 "mlClass.ml" 224 9081 9101
+"mlClass.ml" 224 9120 9122 "mlClass.ml" 224 9120 9140
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref P4helper.sig_items
 )
-"mlClass.ml" 224 9081 9103 "mlClass.ml" 224 9081 9111
+"mlClass.ml" 224 9120 9142 "mlClass.ml" 224 9120 9150
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list
@@ -5732,121 +4452,121 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 224 9081 9112 "mlClass.ml" 224 9081 9116
+"mlClass.ml" 224 9120 9151 "mlClass.ml" 224 9120 9155
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  int_ref make "mlClass.ml" 219 8788 8794 "mlClass.ml" 219 8788 8798
+  int_ref make "mlClass.ml" 219 8827 8833 "mlClass.ml" 219 8827 8837
 )
-"mlClass.ml" 224 9081 9117 "mlClass.ml" 224 9081 9124
+"mlClass.ml" 224 9120 9156 "mlClass.ml" 224 9120 9163
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 218 8757 8778 "mlClass.ml" 218 8757 8785
+  int_ref cl_list "mlClass.ml" 218 8796 8817 "mlClass.ml" 218 8796 8824
 )
-"mlClass.ml" 224 9081 9103 "mlClass.ml" 224 9081 9124
+"mlClass.ml" 224 9120 9142 "mlClass.ml" 224 9120 9163
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 224 9081 9083 "mlClass.ml" 224 9081 9125
+"mlClass.ml" 224 9120 9122 "mlClass.ml" 224 9120 9164
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 219 8788 8790 "mlClass.ml" 224 9081 9125
+"mlClass.ml" 219 8827 8829 "mlClass.ml" 224 9120 9164
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 218 8757 8778 "mlClass.ml" 224 9081 9125
+"mlClass.ml" 218 8796 8817 "mlClass.ml" 224 9120 9164
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 227 9128 9132 "mlClass.ml" 227 9128 9146
+"mlClass.ml" 227 9167 9171 "mlClass.ml" 227 9167 9185
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_jniupcast "mlClass.ml" 239 9584 9584 "_none_" 1 0 -1
+  def make_jniupcast "mlClass.ml" 239 9623 9623 "_none_" 1 0 -1
 )
-"mlClass.ml" 227 9128 9147 "mlClass.ml" 227 9128 9154
+"mlClass.ml" 227 9167 9186 "mlClass.ml" 227 9167 9193
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 228 9157 9159 "mlClass.ml" 237 9524 9582
+  def cl_list "mlClass.ml" 228 9196 9198 "mlClass.ml" 237 9563 9621
 )
-"mlClass.ml" 228 9157 9163 "mlClass.ml" 228 9157 9171
+"mlClass.ml" 228 9196 9202 "mlClass.ml" 228 9196 9210
 type(
   string
 )
 ident(
-  def java_obj "mlClass.ml" 229 9188 9190 "mlClass.ml" 237 9524 9582
+  def java_obj "mlClass.ml" 229 9227 9229 "mlClass.ml" 237 9563 9621
 )
-"mlClass.ml" 228 9157 9174 "mlClass.ml" 228 9157 9184
+"mlClass.ml" 228 9196 9213 "mlClass.ml" 228 9196 9223
 type(
   string
 )
-"mlClass.ml" 229 9188 9194 "mlClass.ml" 229 9188 9198
+"mlClass.ml" 229 9227 9233 "mlClass.ml" 229 9227 9237
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "mlClass.ml" 237 9524 9526 "mlClass.ml" 237 9524 9582
+  def make "mlClass.ml" 237 9563 9565 "mlClass.ml" 237 9563 9621
 )
-"mlClass.ml" 229 9188 9199 "mlClass.ml" 229 9188 9201
+"mlClass.ml" 229 9227 9238 "mlClass.ml" 229 9227 9240
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 230 9204 9208 "mlClass.ml" 235 9469 9517
+  def cl "mlClass.ml" 230 9243 9247 "mlClass.ml" 235 9508 9556
 )
-"mlClass.ml" 230 9204 9212 "mlClass.ml" 230 9204 9217
+"mlClass.ml" 230 9243 9251 "mlClass.ml" 230 9243 9256
 type(
   string
 )
 ident(
-  def tname "mlClass.ml" 231 9268 9272 "mlClass.ml" 235 9469 9517
+  def tname "mlClass.ml" 231 9307 9311 "mlClass.ml" 235 9508 9556
 )
-"mlClass.ml" 230 9204 9220 "mlClass.ml" 230 9204 9252
+"mlClass.ml" 230 9243 9259 "mlClass.ml" 230 9243 9291
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 230 9204 9253 "mlClass.ml" 230 9204 9255
+"mlClass.ml" 230 9243 9292 "mlClass.ml" 230 9243 9294
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 229 9188 9199 "mlClass.ml" 229 9188 9201
+  int_ref cl "mlClass.ml" 229 9227 9238 "mlClass.ml" 229 9227 9240
 )
-"mlClass.ml" 230 9204 9253 "mlClass.ml" 230 9204 9264
+"mlClass.ml" 230 9243 9292 "mlClass.ml" 230 9243 9303
 type(
   Ident.clazz
 )
-"mlClass.ml" 230 9204 9220 "mlClass.ml" 230 9204 9264
+"mlClass.ml" 230 9243 9259 "mlClass.ml" 230 9243 9303
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 231 9268 9276 "mlClass.ml" 231 9268 9280
+"mlClass.ml" 231 9307 9315 "mlClass.ml" 231 9307 9319
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 233 9356 9360 "mlClass.ml" 235 9469 9517
+  def body "mlClass.ml" 233 9395 9399 "mlClass.ml" 235 9508 9556
 )
-"mlClass.ml" 232 9284 9297 "mlClass.ml" 232 9284 9297
+"mlClass.ml" 232 9323 9336 "mlClass.ml" 232 9323 9336
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -5994,28 +4714,28 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 232 9284 9297 "mlClass.ml" 232 9284 9302
+"mlClass.ml" 232 9323 9336 "mlClass.ml" 232 9323 9341
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 230 9204 9212 "mlClass.ml" 230 9204 9217
+  int_ref tname "mlClass.ml" 230 9243 9251 "mlClass.ml" 230 9243 9256
 )
-"mlClass.ml" 232 9284 9297 "mlClass.ml" 232 9284 9305
+"mlClass.ml" 232 9323 9336 "mlClass.ml" 232 9323 9344
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 228 9157 9163 "mlClass.ml" 228 9157 9171
+  int_ref java_obj "mlClass.ml" 228 9196 9202 "mlClass.ml" 228 9196 9210
 )
-"mlClass.ml" 233 9356 9364 "mlClass.ml" 233 9356 9368
+"mlClass.ml" 233 9395 9403 "mlClass.ml" 233 9395 9407
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 234 9430 9434 "mlClass.ml" 235 9469 9517
+  def body "mlClass.ml" 234 9469 9473 "mlClass.ml" 235 9508 9556
 )
-"mlClass.ml" 233 9356 9378 "mlClass.ml" 233 9356 9378
+"mlClass.ml" 233 9395 9417 "mlClass.ml" 233 9395 9417
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -6088,60 +4808,60 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 233 9356 9378 "mlClass.ml" 233 9356 9383
+"mlClass.ml" 233 9395 9417 "mlClass.ml" 233 9395 9422
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 230 9204 9212 "mlClass.ml" 230 9204 9217
+  int_ref tname "mlClass.ml" 230 9243 9251 "mlClass.ml" 230 9243 9256
 )
-"mlClass.ml" 233 9356 9378 "mlClass.ml" 233 9356 9386
+"mlClass.ml" 233 9395 9417 "mlClass.ml" 233 9395 9425
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 228 9157 9163 "mlClass.ml" 228 9157 9171
+  int_ref java_obj "mlClass.ml" 228 9196 9202 "mlClass.ml" 228 9196 9210
 )
-"mlClass.ml" 233 9356 9417 "mlClass.ml" 233 9356 9421
+"mlClass.ml" 233 9395 9456 "mlClass.ml" 233 9395 9460
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 231 9268 9276 "mlClass.ml" 231 9268 9280
+  int_ref body "mlClass.ml" 231 9307 9315 "mlClass.ml" 231 9307 9319
 )
-"mlClass.ml" 234 9430 9438 "mlClass.ml" 234 9430 9442
+"mlClass.ml" 234 9469 9477 "mlClass.ml" 234 9469 9481
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 235 9469 9477 "mlClass.ml" 235 9469 9515
+  def name "mlClass.ml" 235 9508 9516 "mlClass.ml" 235 9508 9554
 )
-"mlClass.ml" 234 9430 9445 "mlClass.ml" 234 9430 9459
+"mlClass.ml" 234 9469 9484 "mlClass.ml" 234 9469 9498
 type(
   string
 )
-"mlClass.ml" 234 9430 9459 "mlClass.ml" 234 9430 9460
+"mlClass.ml" 234 9469 9498 "mlClass.ml" 234 9469 9499
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 234 9430 9460 "mlClass.ml" 234 9430 9465
+"mlClass.ml" 234 9469 9499 "mlClass.ml" 234 9469 9504
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 230 9204 9212 "mlClass.ml" 230 9204 9217
+  int_ref tname "mlClass.ml" 230 9243 9251 "mlClass.ml" 230 9243 9256
 )
-"mlClass.ml" 234 9430 9445 "mlClass.ml" 234 9430 9465
+"mlClass.ml" 234 9469 9484 "mlClass.ml" 234 9469 9504
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 235 9469 9486 "mlClass.ml" 235 9469 9486
+"mlClass.ml" 235 9508 9525 "mlClass.ml" 235 9508 9525
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -6181,62 +4901,62 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 235 9469 9486 "mlClass.ml" 235 9469 9490
+"mlClass.ml" 235 9508 9525 "mlClass.ml" 235 9508 9529
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 234 9430 9438 "mlClass.ml" 234 9430 9442
+  int_ref name "mlClass.ml" 234 9469 9477 "mlClass.ml" 234 9469 9481
 )
-"mlClass.ml" 235 9469 9506 "mlClass.ml" 235 9469 9510
+"mlClass.ml" 235 9508 9545 "mlClass.ml" 235 9508 9549
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 233 9356 9364 "mlClass.ml" 233 9356 9368
+  int_ref body "mlClass.ml" 233 9395 9403 "mlClass.ml" 233 9395 9407
 )
-"mlClass.ml" 235 9469 9477 "mlClass.ml" 235 9469 9515
+"mlClass.ml" 235 9508 9516 "mlClass.ml" 235 9508 9554
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 234 9430 9434 "mlClass.ml" 235 9469 9517
+"mlClass.ml" 234 9469 9473 "mlClass.ml" 235 9508 9556
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 233 9356 9360 "mlClass.ml" 235 9469 9517
+"mlClass.ml" 233 9395 9399 "mlClass.ml" 235 9508 9556
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 231 9268 9272 "mlClass.ml" 235 9469 9517
+"mlClass.ml" 231 9307 9311 "mlClass.ml" 235 9508 9556
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 230 9204 9208 "mlClass.ml" 235 9469 9517
+"mlClass.ml" 230 9243 9247 "mlClass.ml" 235 9508 9556
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 229 9188 9199 "mlClass.ml" 235 9469 9517
+"mlClass.ml" 229 9227 9238 "mlClass.ml" 235 9508 9556
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 237 9524 9526 "mlClass.ml" 237 9524 9544
+"mlClass.ml" 237 9563 9565 "mlClass.ml" 237 9563 9583
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 237 9524 9546 "mlClass.ml" 237 9524 9557
+"mlClass.ml" 237 9563 9585 "mlClass.ml" 237 9563 9596
 type(
   Camlp4.PreCast.Ast.str_item list list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 237 9524 9559 "mlClass.ml" 237 9524 9567
+"mlClass.ml" 237 9563 9598 "mlClass.ml" 237 9563 9606
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.str_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list list
@@ -6244,146 +4964,146 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 237 9524 9568 "mlClass.ml" 237 9524 9572
+"mlClass.ml" 237 9563 9607 "mlClass.ml" 237 9563 9611
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref make "mlClass.ml" 229 9188 9194 "mlClass.ml" 229 9188 9198
+  int_ref make "mlClass.ml" 229 9227 9233 "mlClass.ml" 229 9227 9237
 )
-"mlClass.ml" 237 9524 9573 "mlClass.ml" 237 9524 9580
+"mlClass.ml" 237 9563 9612 "mlClass.ml" 237 9563 9619
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 227 9128 9147 "mlClass.ml" 227 9128 9154
+  int_ref cl_list "mlClass.ml" 227 9167 9186 "mlClass.ml" 227 9167 9193
 )
-"mlClass.ml" 237 9524 9559 "mlClass.ml" 237 9524 9580
+"mlClass.ml" 237 9563 9598 "mlClass.ml" 237 9563 9619
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list list
 )
-"mlClass.ml" 237 9524 9546 "mlClass.ml" 237 9524 9581
+"mlClass.ml" 237 9563 9585 "mlClass.ml" 237 9563 9620
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 237 9524 9526 "mlClass.ml" 237 9524 9582
+"mlClass.ml" 237 9563 9565 "mlClass.ml" 237 9563 9621
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 229 9188 9190 "mlClass.ml" 237 9524 9582
+"mlClass.ml" 229 9227 9229 "mlClass.ml" 237 9563 9621
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 228 9157 9159 "mlClass.ml" 237 9524 9582
+"mlClass.ml" 228 9196 9198 "mlClass.ml" 237 9563 9621
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 227 9128 9147 "mlClass.ml" 237 9524 9582
+"mlClass.ml" 227 9167 9186 "mlClass.ml" 237 9563 9621
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 239 9584 9588 "mlClass.ml" 239 9584 9606
+"mlClass.ml" 239 9623 9627 "mlClass.ml" 239 9623 9645
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make_jniupcast_sig "mlClass.ml" 247 9867 9867 "_none_" 1 0 -1
+  def make_jniupcast_sig "mlClass.ml" 247 9906 9906 "_none_" 1 0 -1
 )
-"mlClass.ml" 239 9584 9607 "mlClass.ml" 239 9584 9614
+"mlClass.ml" 239 9623 9646 "mlClass.ml" 239 9623 9653
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 240 9617 9619 "mlClass.ml" 245 9807 9865
+  def cl_list "mlClass.ml" 240 9656 9658 "mlClass.ml" 245 9846 9904
 )
-"mlClass.ml" 240 9617 9623 "mlClass.ml" 240 9617 9627
+"mlClass.ml" 240 9656 9662 "mlClass.ml" 240 9656 9666
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def make "mlClass.ml" 245 9807 9809 "mlClass.ml" 245 9807 9865
+  def make "mlClass.ml" 245 9846 9848 "mlClass.ml" 245 9846 9904
 )
-"mlClass.ml" 240 9617 9628 "mlClass.ml" 240 9617 9630
+"mlClass.ml" 240 9656 9667 "mlClass.ml" 240 9656 9669
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 241 9633 9637 "mlClass.ml" 243 9736 9800
+  def cl "mlClass.ml" 241 9672 9676 "mlClass.ml" 243 9775 9839
 )
-"mlClass.ml" 241 9633 9641 "mlClass.ml" 241 9633 9646
+"mlClass.ml" 241 9672 9680 "mlClass.ml" 241 9672 9685
 type(
   string
 )
 ident(
-  def tname "mlClass.ml" 242 9697 9701 "mlClass.ml" 243 9736 9800
+  def tname "mlClass.ml" 242 9736 9740 "mlClass.ml" 243 9775 9839
 )
-"mlClass.ml" 241 9633 9649 "mlClass.ml" 241 9633 9681
+"mlClass.ml" 241 9672 9688 "mlClass.ml" 241 9672 9720
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 241 9633 9682 "mlClass.ml" 241 9633 9684
+"mlClass.ml" 241 9672 9721 "mlClass.ml" 241 9672 9723
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 240 9617 9628 "mlClass.ml" 240 9617 9630
+  int_ref cl "mlClass.ml" 240 9656 9667 "mlClass.ml" 240 9656 9669
 )
-"mlClass.ml" 241 9633 9682 "mlClass.ml" 241 9633 9693
+"mlClass.ml" 241 9672 9721 "mlClass.ml" 241 9672 9732
 type(
   Ident.clazz
 )
-"mlClass.ml" 241 9633 9649 "mlClass.ml" 241 9633 9693
+"mlClass.ml" 241 9672 9688 "mlClass.ml" 241 9672 9732
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 242 9697 9705 "mlClass.ml" 242 9697 9709
+"mlClass.ml" 242 9736 9744 "mlClass.ml" 242 9736 9748
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 243 9736 9744 "mlClass.ml" 243 9736 9798
+  def name "mlClass.ml" 243 9775 9783 "mlClass.ml" 243 9775 9837
 )
-"mlClass.ml" 242 9697 9712 "mlClass.ml" 242 9697 9726
+"mlClass.ml" 242 9736 9751 "mlClass.ml" 242 9736 9765
 type(
   string
 )
-"mlClass.ml" 242 9697 9726 "mlClass.ml" 242 9697 9727
+"mlClass.ml" 242 9736 9765 "mlClass.ml" 242 9736 9766
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 242 9697 9727 "mlClass.ml" 242 9697 9732
+"mlClass.ml" 242 9736 9766 "mlClass.ml" 242 9736 9771
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 241 9633 9641 "mlClass.ml" 241 9633 9646
+  int_ref tname "mlClass.ml" 241 9672 9680 "mlClass.ml" 241 9672 9685
 )
-"mlClass.ml" 242 9697 9712 "mlClass.ml" 242 9697 9732
+"mlClass.ml" 242 9736 9751 "mlClass.ml" 242 9736 9771
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 243 9736 9753 "mlClass.ml" 243 9736 9753
+"mlClass.ml" 243 9775 9792 "mlClass.ml" 243 9775 9792
 type(
   string
 )
@@ -6462,54 +5182,54 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 243 9736 9753 "mlClass.ml" 243 9736 9757
+"mlClass.ml" 243 9775 9792 "mlClass.ml" 243 9775 9796
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 242 9697 9705 "mlClass.ml" 242 9697 9709
+  int_ref name "mlClass.ml" 242 9736 9744 "mlClass.ml" 242 9736 9748
 )
-"mlClass.ml" 243 9736 9753 "mlClass.ml" 243 9736 9758
+"mlClass.ml" 243 9775 9792 "mlClass.ml" 243 9775 9797
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 241 9633 9641 "mlClass.ml" 241 9633 9646
+  int_ref tname "mlClass.ml" 241 9672 9680 "mlClass.ml" 241 9672 9685
 )
-"mlClass.ml" 243 9736 9744 "mlClass.ml" 243 9736 9798
+"mlClass.ml" 243 9775 9783 "mlClass.ml" 243 9775 9837
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 242 9697 9701 "mlClass.ml" 243 9736 9800
+"mlClass.ml" 242 9736 9740 "mlClass.ml" 243 9775 9839
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 241 9633 9637 "mlClass.ml" 243 9736 9800
+"mlClass.ml" 241 9672 9676 "mlClass.ml" 243 9775 9839
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 240 9617 9628 "mlClass.ml" 243 9736 9800
+"mlClass.ml" 240 9656 9667 "mlClass.ml" 243 9775 9839
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 245 9807 9809 "mlClass.ml" 245 9807 9827
+"mlClass.ml" 245 9846 9848 "mlClass.ml" 245 9846 9866
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref P4helper.sig_items
 )
-"mlClass.ml" 245 9807 9829 "mlClass.ml" 245 9807 9840
+"mlClass.ml" 245 9846 9868 "mlClass.ml" 245 9846 9879
 type(
   Camlp4.PreCast.Ast.sig_item list list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 245 9807 9842 "mlClass.ml" 245 9807 9850
+"mlClass.ml" 245 9846 9881 "mlClass.ml" 245 9846 9889
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list list
@@ -6517,292 +5237,292 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 245 9807 9851 "mlClass.ml" 245 9807 9855
+"mlClass.ml" 245 9846 9890 "mlClass.ml" 245 9846 9894
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref make "mlClass.ml" 240 9617 9623 "mlClass.ml" 240 9617 9627
+  int_ref make "mlClass.ml" 240 9656 9662 "mlClass.ml" 240 9656 9666
 )
-"mlClass.ml" 245 9807 9856 "mlClass.ml" 245 9807 9863
+"mlClass.ml" 245 9846 9895 "mlClass.ml" 245 9846 9902
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 239 9584 9607 "mlClass.ml" 239 9584 9614
+  int_ref cl_list "mlClass.ml" 239 9623 9646 "mlClass.ml" 239 9623 9653
 )
-"mlClass.ml" 245 9807 9842 "mlClass.ml" 245 9807 9863
+"mlClass.ml" 245 9846 9881 "mlClass.ml" 245 9846 9902
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list list
 )
-"mlClass.ml" 245 9807 9829 "mlClass.ml" 245 9807 9864
+"mlClass.ml" 245 9846 9868 "mlClass.ml" 245 9846 9903
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 245 9807 9809 "mlClass.ml" 245 9807 9865
+"mlClass.ml" 245 9846 9848 "mlClass.ml" 245 9846 9904
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 240 9617 9619 "mlClass.ml" 245 9807 9865
+"mlClass.ml" 240 9656 9658 "mlClass.ml" 245 9846 9904
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 239 9584 9607 "mlClass.ml" 245 9807 9865
+"mlClass.ml" 239 9623 9646 "mlClass.ml" 245 9846 9904
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 247 9867 9871 "mlClass.ml" 247 9867 9887
+"mlClass.ml" 247 9906 9910 "mlClass.ml" 247 9906 9926
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_jnidowncast "mlClass.ml" 270 10842 10842 "_none_" 1 0 -1
+  def make_jnidowncast "mlClass.ml" 270 10881 10881 "_none_" 1 0 -1
 )
-"mlClass.ml" 247 9867 9888 "mlClass.ml" 247 9867 9895
+"mlClass.ml" 247 9906 9927 "mlClass.ml" 247 9906 9934
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 248 9898 9900 "mlClass.ml" 268 10782 10840
+  def cl_list "mlClass.ml" 248 9937 9939 "mlClass.ml" 268 10821 10879
 )
-"mlClass.ml" 248 9898 9904 "mlClass.ml" 248 9898 9912
+"mlClass.ml" 248 9937 9943 "mlClass.ml" 248 9937 9951
 type(
   string
 )
 ident(
-  def java_obj "mlClass.ml" 250 9951 9953 "mlClass.ml" 268 10782 10840
+  def java_obj "mlClass.ml" 250 9990 9992 "mlClass.ml" 268 10821 10879
 )
-"mlClass.ml" 248 9898 9915 "mlClass.ml" 248 9898 9925
+"mlClass.ml" 248 9937 9954 "mlClass.ml" 248 9937 9964
 type(
   string
 )
-"mlClass.ml" 249 9927 9933 "mlClass.ml" 249 9927 9938
+"mlClass.ml" 249 9966 9972 "mlClass.ml" 249 9966 9977
 type(
   string
 )
 ident(
-  def clazz "mlClass.ml" 250 9951 9953 "mlClass.ml" 268 10782 10840
+  def clazz "mlClass.ml" 250 9990 9992 "mlClass.ml" 268 10821 10879
 )
-"mlClass.ml" 249 9927 9940 "mlClass.ml" 249 9927 9947
+"mlClass.ml" 249 9966 9979 "mlClass.ml" 249 9966 9986
 type(
   string
 )
-"mlClass.ml" 250 9951 9957 "mlClass.ml" 250 9951 9961
+"mlClass.ml" 250 9990 9996 "mlClass.ml" 250 9990 10000
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "mlClass.ml" 268 10782 10784 "mlClass.ml" 268 10782 10840
+  def make "mlClass.ml" 268 10821 10823 "mlClass.ml" 268 10821 10879
 )
-"mlClass.ml" 250 9951 9962 "mlClass.ml" 250 9951 9964
+"mlClass.ml" 250 9990 10001 "mlClass.ml" 250 9990 10003
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 251 9967 9971 "mlClass.ml" 266 10728 10776
+  def cl "mlClass.ml" 251 10006 10010 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 251 9967 9975 "mlClass.ml" 251 9967 9979
+"mlClass.ml" 251 10006 10014 "mlClass.ml" 251 10006 10018
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 254 10148 10152 "mlClass.ml" 266 10728 10776
+  def name "mlClass.ml" 254 10187 10191 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 251 9967 9982 "mlClass.ml" 251 9967 10005
+"mlClass.ml" 251 10006 10021 "mlClass.ml" 251 10006 10044
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 251 9967 10006 "mlClass.ml" 251 9967 10008
+"mlClass.ml" 251 10006 10045 "mlClass.ml" 251 10006 10047
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 250 9951 9962 "mlClass.ml" 250 9951 9964
+  int_ref cl "mlClass.ml" 250 9990 10001 "mlClass.ml" 250 9990 10003
 )
-"mlClass.ml" 251 9967 10006 "mlClass.ml" 251 9967 10017
+"mlClass.ml" 251 10006 10045 "mlClass.ml" 251 10006 10056
 type(
   Ident.clazz
 )
-"mlClass.ml" 251 9967 9982 "mlClass.ml" 251 9967 10017
+"mlClass.ml" 251 10006 10021 "mlClass.ml" 251 10006 10056
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 252 10019 10027 "mlClass.ml" 252 10019 10032
+"mlClass.ml" 252 10058 10066 "mlClass.ml" 252 10058 10071
 type(
   string
 )
 ident(
-  def tname "mlClass.ml" 254 10148 10152 "mlClass.ml" 266 10728 10776
+  def tname "mlClass.ml" 254 10187 10191 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 252 10019 10035 "mlClass.ml" 252 10019 10067
+"mlClass.ml" 252 10058 10074 "mlClass.ml" 252 10058 10106
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 252 10019 10068 "mlClass.ml" 252 10019 10070
+"mlClass.ml" 252 10058 10107 "mlClass.ml" 252 10058 10109
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 250 9951 9962 "mlClass.ml" 250 9951 9964
+  int_ref cl "mlClass.ml" 250 9990 10001 "mlClass.ml" 250 9990 10003
 )
-"mlClass.ml" 252 10019 10068 "mlClass.ml" 252 10019 10079
+"mlClass.ml" 252 10058 10107 "mlClass.ml" 252 10058 10118
 type(
   Ident.clazz
 )
-"mlClass.ml" 252 10019 10035 "mlClass.ml" 252 10019 10079
+"mlClass.ml" 252 10058 10074 "mlClass.ml" 252 10058 10118
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 253 10081 10089 "mlClass.ml" 253 10081 10098
+"mlClass.ml" 253 10120 10128 "mlClass.ml" 253 10120 10137
 type(
   string
 )
 ident(
-  def java_name "mlClass.ml" 254 10148 10152 "mlClass.ml" 266 10728 10776
+  def java_name "mlClass.ml" 254 10187 10191 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 253 10081 10101 "mlClass.ml" 253 10081 10131
+"mlClass.ml" 253 10120 10140 "mlClass.ml" 253 10120 10170
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_signature
 )
-"mlClass.ml" 253 10081 10132 "mlClass.ml" 253 10081 10134
+"mlClass.ml" 253 10120 10171 "mlClass.ml" 253 10120 10173
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 250 9951 9962 "mlClass.ml" 250 9951 9964
+  int_ref cl "mlClass.ml" 250 9990 10001 "mlClass.ml" 250 9990 10003
 )
-"mlClass.ml" 253 10081 10132 "mlClass.ml" 253 10081 10143
+"mlClass.ml" 253 10120 10171 "mlClass.ml" 253 10120 10182
 type(
   Ident.clazz
 )
-"mlClass.ml" 253 10081 10101 "mlClass.ml" 253 10081 10143
+"mlClass.ml" 253 10120 10140 "mlClass.ml" 253 10120 10182
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 254 10148 10156 "mlClass.ml" 254 10148 10159
+"mlClass.ml" 254 10187 10195 "mlClass.ml" 254 10187 10198
 type(
   string
 )
 ident(
-  def err "mlClass.ml" 255 10211 10215 "mlClass.ml" 266 10728 10776
+  def err "mlClass.ml" 255 10250 10254 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 254 10148 10162 "mlClass.ml" 254 10148 10181
+"mlClass.ml" 254 10187 10201 "mlClass.ml" 254 10187 10220
 type(
   string
 )
-"mlClass.ml" 254 10148 10181 "mlClass.ml" 254 10148 10182
+"mlClass.ml" 254 10187 10220 "mlClass.ml" 254 10187 10221
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 254 10148 10182 "mlClass.ml" 254 10148 10186
+"mlClass.ml" 254 10187 10221 "mlClass.ml" 254 10187 10225
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 251 9967 9975 "mlClass.ml" 251 9967 9979
+  int_ref name "mlClass.ml" 251 10006 10014 "mlClass.ml" 251 10006 10018
 )
-"mlClass.ml" 254 10148 10186 "mlClass.ml" 254 10148 10187
+"mlClass.ml" 254 10187 10225 "mlClass.ml" 254 10187 10226
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 254 10148 10187 "mlClass.ml" 254 10148 10191
+"mlClass.ml" 254 10187 10226 "mlClass.ml" 254 10187 10230
 type(
   string
 )
-"mlClass.ml" 254 10148 10191 "mlClass.ml" 254 10148 10192
+"mlClass.ml" 254 10187 10230 "mlClass.ml" 254 10187 10231
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 254 10148 10193 "mlClass.ml" 254 10148 10202
+"mlClass.ml" 254 10187 10232 "mlClass.ml" 254 10187 10241
 type(
   string
 )
 ident(
-  int_ref java_name "mlClass.ml" 253 10081 10089 "mlClass.ml" 253 10081 10098
+  int_ref java_name "mlClass.ml" 253 10120 10128 "mlClass.ml" 253 10120 10137
 )
-"mlClass.ml" 254 10148 10203 "mlClass.ml" 254 10148 10204
+"mlClass.ml" 254 10187 10242 "mlClass.ml" 254 10187 10243
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 254 10148 10204 "mlClass.ml" 254 10148 10207
+"mlClass.ml" 254 10187 10243 "mlClass.ml" 254 10187 10246
 type(
   string
 )
-"mlClass.ml" 254 10148 10192 "mlClass.ml" 254 10148 10207
+"mlClass.ml" 254 10187 10231 "mlClass.ml" 254 10187 10246
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 254 10148 10187 "mlClass.ml" 254 10148 10207
+"mlClass.ml" 254 10187 10226 "mlClass.ml" 254 10187 10246
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 254 10148 10182 "mlClass.ml" 254 10148 10207
+"mlClass.ml" 254 10187 10221 "mlClass.ml" 254 10187 10246
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 254 10148 10162 "mlClass.ml" 254 10148 10207
+"mlClass.ml" 254 10187 10201 "mlClass.ml" 254 10187 10246
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 255 10211 10219 "mlClass.ml" 255 10211 10223
+"mlClass.ml" 255 10250 10258 "mlClass.ml" 255 10250 10262
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 259 10385 10389 "mlClass.ml" 266 10728 10776
+  def body "mlClass.ml" 259 10424 10428 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 256 10227 10240 "mlClass.ml" 256 10227 10240
+"mlClass.ml" 256 10266 10279 "mlClass.ml" 256 10266 10279
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -7073,47 +5793,47 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 256 10227 10240 "mlClass.ml" 256 10227 10243
+"mlClass.ml" 256 10266 10279 "mlClass.ml" 256 10266 10282
 type(
   string
 )
 ident(
-  int_ref err "mlClass.ml" 254 10148 10156 "mlClass.ml" 254 10148 10159
+  int_ref err "mlClass.ml" 254 10187 10195 "mlClass.ml" 254 10187 10198
 )
-"mlClass.ml" 256 10227 10240 "mlClass.ml" 256 10227 10245
+"mlClass.ml" 256 10266 10279 "mlClass.ml" 256 10266 10284
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 252 10019 10027 "mlClass.ml" 252 10019 10032
-)
-type(
-  string
-)
-ident(
-  int_ref clazz "mlClass.ml" 249 9927 9933 "mlClass.ml" 249 9927 9938
-)
-"mlClass.ml" 256 10227 10240 "mlClass.ml" 256 10227 10248
-type(
-  string
-)
-ident(
-  int_ref java_obj "mlClass.ml" 248 9898 9904 "mlClass.ml" 248 9898 9912
+  int_ref tname "mlClass.ml" 252 10058 10066 "mlClass.ml" 252 10058 10071
 )
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 248 9898 9904 "mlClass.ml" 248 9898 9912
+  int_ref clazz "mlClass.ml" 249 9966 9972 "mlClass.ml" 249 9966 9977
 )
-"mlClass.ml" 259 10385 10393 "mlClass.ml" 259 10385 10397
+"mlClass.ml" 256 10266 10279 "mlClass.ml" 256 10266 10287
+type(
+  string
+)
+ident(
+  int_ref java_obj "mlClass.ml" 248 9937 9943 "mlClass.ml" 248 9937 9951
+)
+type(
+  string
+)
+ident(
+  int_ref java_obj "mlClass.ml" 248 9937 9943 "mlClass.ml" 248 9937 9951
+)
+"mlClass.ml" 259 10424 10432 "mlClass.ml" 259 10424 10436
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 260 10455 10459 "mlClass.ml" 266 10728 10776
+  def body "mlClass.ml" 260 10494 10498 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 259 10385 10407 "mlClass.ml" 259 10385 10407
+"mlClass.ml" 259 10424 10446 "mlClass.ml" 259 10424 10446
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -7210,96 +5930,96 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 259 10385 10407 "mlClass.ml" 259 10385 10415
+"mlClass.ml" 259 10424 10446 "mlClass.ml" 259 10424 10454
 type(
   string
 )
 ident(
-  int_ref java_obj "mlClass.ml" 248 9898 9904 "mlClass.ml" 248 9898 9912
+  int_ref java_obj "mlClass.ml" 248 9937 9943 "mlClass.ml" 248 9937 9951
 )
-"mlClass.ml" 259 10385 10442 "mlClass.ml" 259 10385 10446
+"mlClass.ml" 259 10424 10481 "mlClass.ml" 259 10424 10485
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 255 10211 10219 "mlClass.ml" 255 10211 10223
+  int_ref body "mlClass.ml" 255 10250 10258 "mlClass.ml" 255 10250 10262
 )
-"mlClass.ml" 260 10455 10463 "mlClass.ml" 260 10455 10466
+"mlClass.ml" 260 10494 10502 "mlClass.ml" 260 10494 10505
 type(
   string
 )
 ident(
-  def err "mlClass.ml" 262 10553 10557 "mlClass.ml" 266 10728 10776
+  def err "mlClass.ml" 262 10592 10596 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 260 10455 10469 "mlClass.ml" 260 10455 10489
+"mlClass.ml" 260 10494 10508 "mlClass.ml" 260 10494 10528
 type(
   string
 )
-"mlClass.ml" 260 10455 10489 "mlClass.ml" 260 10455 10490
+"mlClass.ml" 260 10494 10528 "mlClass.ml" 260 10494 10529
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 261 10491 10497 "mlClass.ml" 261 10491 10532
+"mlClass.ml" 261 10530 10536 "mlClass.ml" 261 10530 10571
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_qualified_name
 )
-"mlClass.ml" 261 10491 10533 "mlClass.ml" 261 10491 10535
+"mlClass.ml" 261 10530 10572 "mlClass.ml" 261 10530 10574
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 250 9951 9962 "mlClass.ml" 250 9951 9964
+  int_ref cl "mlClass.ml" 250 9990 10001 "mlClass.ml" 250 9990 10003
 )
-"mlClass.ml" 261 10491 10533 "mlClass.ml" 261 10491 10544
+"mlClass.ml" 261 10530 10572 "mlClass.ml" 261 10530 10583
 type(
   Ident.clazz
 )
-"mlClass.ml" 261 10491 10497 "mlClass.ml" 261 10491 10544
+"mlClass.ml" 261 10530 10536 "mlClass.ml" 261 10530 10583
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 261 10491 10545 "mlClass.ml" 261 10491 10546
+"mlClass.ml" 261 10530 10584 "mlClass.ml" 261 10530 10585
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 261 10491 10546 "mlClass.ml" 261 10491 10549
+"mlClass.ml" 261 10530 10585 "mlClass.ml" 261 10530 10588
 type(
   string
 )
-"mlClass.ml" 261 10491 10497 "mlClass.ml" 261 10491 10549
+"mlClass.ml" 261 10530 10536 "mlClass.ml" 261 10530 10588
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 260 10455 10469 "mlClass.ml" 261 10491 10549
+"mlClass.ml" 260 10494 10508 "mlClass.ml" 261 10530 10588
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 262 10553 10561 "mlClass.ml" 262 10553 10565
+"mlClass.ml" 262 10592 10600 "mlClass.ml" 262 10592 10604
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 265 10686 10690 "mlClass.ml" 266 10728 10776
+  def body "mlClass.ml" 265 10725 10729 "mlClass.ml" 266 10767 10815
 )
-"mlClass.ml" 262 10553 10575 "mlClass.ml" 262 10553 10575
+"mlClass.ml" 262 10592 10614 "mlClass.ml" 262 10592 10614
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -7474,85 +6194,85 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 262 10553 10575 "mlClass.ml" 262 10553 10578
+"mlClass.ml" 262 10592 10614 "mlClass.ml" 262 10592 10617
 type(
   string
 )
 ident(
-  int_ref err "mlClass.ml" 260 10455 10463 "mlClass.ml" 260 10455 10466
+  int_ref err "mlClass.ml" 260 10494 10502 "mlClass.ml" 260 10494 10505
 )
-"mlClass.ml" 262 10553 10575 "mlClass.ml" 262 10553 10580
+"mlClass.ml" 262 10592 10614 "mlClass.ml" 262 10592 10619
 type(
   string
 )
 ident(
-  int_ref clazz "mlClass.ml" 249 9927 9933 "mlClass.ml" 249 9927 9938
+  int_ref clazz "mlClass.ml" 249 9966 9972 "mlClass.ml" 249 9966 9977
 )
-"mlClass.ml" 262 10553 10575 "mlClass.ml" 262 10553 10584
+"mlClass.ml" 262 10592 10614 "mlClass.ml" 262 10592 10623
 type(
   string
 )
 ident(
-  int_ref java_name "mlClass.ml" 253 10081 10089 "mlClass.ml" 253 10081 10098
+  int_ref java_name "mlClass.ml" 253 10120 10128 "mlClass.ml" 253 10120 10137
 )
-"mlClass.ml" 264 10641 10673 "mlClass.ml" 264 10641 10677
+"mlClass.ml" 264 10680 10712 "mlClass.ml" 264 10680 10716
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 259 10385 10393 "mlClass.ml" 259 10385 10397
+  int_ref body "mlClass.ml" 259 10424 10432 "mlClass.ml" 259 10424 10436
 )
-"mlClass.ml" 265 10686 10694 "mlClass.ml" 265 10686 10698
+"mlClass.ml" 265 10725 10733 "mlClass.ml" 265 10725 10737
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 266 10728 10736 "mlClass.ml" 266 10728 10774
+  def name "mlClass.ml" 266 10767 10775 "mlClass.ml" 266 10767 10813
 )
-"mlClass.ml" 265 10686 10701 "mlClass.ml" 265 10686 10704
+"mlClass.ml" 265 10725 10740 "mlClass.ml" 265 10725 10743
 type(
   string
 )
-"mlClass.ml" 265 10686 10704 "mlClass.ml" 265 10686 10705
+"mlClass.ml" 265 10725 10743 "mlClass.ml" 265 10725 10744
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 265 10686 10705 "mlClass.ml" 265 10686 10710
+"mlClass.ml" 265 10725 10744 "mlClass.ml" 265 10725 10749
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 252 10019 10027 "mlClass.ml" 252 10019 10032
+  int_ref tname "mlClass.ml" 252 10058 10066 "mlClass.ml" 252 10058 10071
 )
-"mlClass.ml" 265 10686 10710 "mlClass.ml" 265 10686 10711
+"mlClass.ml" 265 10725 10749 "mlClass.ml" 265 10725 10750
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 265 10686 10711 "mlClass.ml" 265 10686 10724
+"mlClass.ml" 265 10725 10750 "mlClass.ml" 265 10725 10763
 type(
   string
 )
-"mlClass.ml" 265 10686 10705 "mlClass.ml" 265 10686 10724
+"mlClass.ml" 265 10725 10744 "mlClass.ml" 265 10725 10763
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 265 10686 10701 "mlClass.ml" 265 10686 10724
+"mlClass.ml" 265 10725 10740 "mlClass.ml" 265 10725 10763
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 266 10728 10745 "mlClass.ml" 266 10728 10745
+"mlClass.ml" 266 10767 10784 "mlClass.ml" 266 10767 10784
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -7592,74 +6312,74 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 266 10728 10745 "mlClass.ml" 266 10728 10749
+"mlClass.ml" 266 10767 10784 "mlClass.ml" 266 10767 10788
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 265 10686 10694 "mlClass.ml" 265 10686 10698
+  int_ref name "mlClass.ml" 265 10725 10733 "mlClass.ml" 265 10725 10737
 )
-"mlClass.ml" 266 10728 10765 "mlClass.ml" 266 10728 10769
+"mlClass.ml" 266 10767 10804 "mlClass.ml" 266 10767 10808
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 262 10553 10561 "mlClass.ml" 262 10553 10565
+  int_ref body "mlClass.ml" 262 10592 10600 "mlClass.ml" 262 10592 10604
 )
-"mlClass.ml" 266 10728 10736 "mlClass.ml" 266 10728 10774
+"mlClass.ml" 266 10767 10775 "mlClass.ml" 266 10767 10813
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 265 10686 10690 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 265 10725 10729 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 262 10553 10557 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 262 10592 10596 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 260 10455 10459 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 260 10494 10498 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 259 10385 10389 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 259 10424 10428 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 255 10211 10215 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 255 10250 10254 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 254 10148 10152 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 254 10187 10191 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 251 9967 9971 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 251 10006 10010 "mlClass.ml" 266 10767 10815
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 250 9951 9962 "mlClass.ml" 266 10728 10776
+"mlClass.ml" 250 9990 10001 "mlClass.ml" 266 10767 10815
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 268 10782 10784 "mlClass.ml" 268 10782 10802
+"mlClass.ml" 268 10821 10823 "mlClass.ml" 268 10821 10841
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 268 10782 10804 "mlClass.ml" 268 10782 10815
+"mlClass.ml" 268 10821 10843 "mlClass.ml" 268 10821 10854
 type(
   Camlp4.PreCast.Ast.str_item list list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 268 10782 10817 "mlClass.ml" 268 10782 10825
+"mlClass.ml" 268 10821 10856 "mlClass.ml" 268 10821 10864
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.str_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list list
@@ -7667,164 +6387,164 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 268 10782 10826 "mlClass.ml" 268 10782 10830
+"mlClass.ml" 268 10821 10865 "mlClass.ml" 268 10821 10869
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref make "mlClass.ml" 250 9951 9957 "mlClass.ml" 250 9951 9961
+  int_ref make "mlClass.ml" 250 9990 9996 "mlClass.ml" 250 9990 10000
 )
-"mlClass.ml" 268 10782 10831 "mlClass.ml" 268 10782 10838
+"mlClass.ml" 268 10821 10870 "mlClass.ml" 268 10821 10877
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 247 9867 9888 "mlClass.ml" 247 9867 9895
+  int_ref cl_list "mlClass.ml" 247 9906 9927 "mlClass.ml" 247 9906 9934
 )
-"mlClass.ml" 268 10782 10817 "mlClass.ml" 268 10782 10838
+"mlClass.ml" 268 10821 10856 "mlClass.ml" 268 10821 10877
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list list
 )
-"mlClass.ml" 268 10782 10804 "mlClass.ml" 268 10782 10839
+"mlClass.ml" 268 10821 10843 "mlClass.ml" 268 10821 10878
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 268 10782 10784 "mlClass.ml" 268 10782 10840
+"mlClass.ml" 268 10821 10823 "mlClass.ml" 268 10821 10879
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 250 9951 9953 "mlClass.ml" 268 10782 10840
+"mlClass.ml" 250 9990 9992 "mlClass.ml" 268 10821 10879
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 248 9898 9900 "mlClass.ml" 268 10782 10840
+"mlClass.ml" 248 9937 9939 "mlClass.ml" 268 10821 10879
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 247 9867 9888 "mlClass.ml" 268 10782 10840
+"mlClass.ml" 247 9906 9927 "mlClass.ml" 268 10821 10879
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 270 10842 10846 "mlClass.ml" 270 10842 10866
+"mlClass.ml" 270 10881 10885 "mlClass.ml" 270 10881 10905
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make_jnidowncast_sig "mlClass.ml" 278 11130 11130 "_none_" 1 0 -1
+  def make_jnidowncast_sig "mlClass.ml" 278 11169 11169 "_none_" 1 0 -1
 )
-"mlClass.ml" 270 10842 10867 "mlClass.ml" 270 10842 10874
+"mlClass.ml" 270 10881 10906 "mlClass.ml" 270 10881 10913
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 271 10877 10879 "mlClass.ml" 276 11070 11128
+  def cl_list "mlClass.ml" 271 10916 10918 "mlClass.ml" 276 11109 11167
 )
-"mlClass.ml" 271 10877 10883 "mlClass.ml" 271 10877 10887
+"mlClass.ml" 271 10916 10922 "mlClass.ml" 271 10916 10926
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def make "mlClass.ml" 276 11070 11072 "mlClass.ml" 276 11070 11128
+  def make "mlClass.ml" 276 11109 11111 "mlClass.ml" 276 11109 11167
 )
-"mlClass.ml" 271 10877 10888 "mlClass.ml" 271 10877 10890
+"mlClass.ml" 271 10916 10927 "mlClass.ml" 271 10916 10929
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 272 10893 10897 "mlClass.ml" 274 10999 11063
+  def cl "mlClass.ml" 272 10932 10936 "mlClass.ml" 274 11038 11102
 )
-"mlClass.ml" 272 10893 10901 "mlClass.ml" 272 10893 10906
+"mlClass.ml" 272 10932 10940 "mlClass.ml" 272 10932 10945
 type(
   string
 )
 ident(
-  def tname "mlClass.ml" 273 10957 10961 "mlClass.ml" 274 10999 11063
+  def tname "mlClass.ml" 273 10996 11000 "mlClass.ml" 274 11038 11102
 )
-"mlClass.ml" 272 10893 10909 "mlClass.ml" 272 10893 10941
+"mlClass.ml" 272 10932 10948 "mlClass.ml" 272 10932 10980
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 272 10893 10942 "mlClass.ml" 272 10893 10944
+"mlClass.ml" 272 10932 10981 "mlClass.ml" 272 10932 10983
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 271 10877 10888 "mlClass.ml" 271 10877 10890
+  int_ref cl "mlClass.ml" 271 10916 10927 "mlClass.ml" 271 10916 10929
 )
-"mlClass.ml" 272 10893 10942 "mlClass.ml" 272 10893 10953
+"mlClass.ml" 272 10932 10981 "mlClass.ml" 272 10932 10992
 type(
   Ident.clazz
 )
-"mlClass.ml" 272 10893 10909 "mlClass.ml" 272 10893 10953
+"mlClass.ml" 272 10932 10948 "mlClass.ml" 272 10932 10992
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 273 10957 10965 "mlClass.ml" 273 10957 10969
+"mlClass.ml" 273 10996 11004 "mlClass.ml" 273 10996 11008
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 274 10999 11007 "mlClass.ml" 274 10999 11061
+  def name "mlClass.ml" 274 11038 11046 "mlClass.ml" 274 11038 11100
 )
-"mlClass.ml" 273 10957 10972 "mlClass.ml" 273 10957 10975
+"mlClass.ml" 273 10996 11011 "mlClass.ml" 273 10996 11014
 type(
   string
 )
-"mlClass.ml" 273 10957 10975 "mlClass.ml" 273 10957 10976
+"mlClass.ml" 273 10996 11014 "mlClass.ml" 273 10996 11015
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 273 10957 10976 "mlClass.ml" 273 10957 10981
+"mlClass.ml" 273 10996 11015 "mlClass.ml" 273 10996 11020
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 272 10893 10901 "mlClass.ml" 272 10893 10906
+  int_ref tname "mlClass.ml" 272 10932 10940 "mlClass.ml" 272 10932 10945
 )
-"mlClass.ml" 273 10957 10981 "mlClass.ml" 273 10957 10982
+"mlClass.ml" 273 10996 11020 "mlClass.ml" 273 10996 11021
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 273 10957 10982 "mlClass.ml" 273 10957 10995
+"mlClass.ml" 273 10996 11021 "mlClass.ml" 273 10996 11034
 type(
   string
 )
-"mlClass.ml" 273 10957 10976 "mlClass.ml" 273 10957 10995
+"mlClass.ml" 273 10996 11015 "mlClass.ml" 273 10996 11034
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 273 10957 10972 "mlClass.ml" 273 10957 10995
+"mlClass.ml" 273 10996 11011 "mlClass.ml" 273 10996 11034
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 274 10999 11016 "mlClass.ml" 274 10999 11016
+"mlClass.ml" 274 11038 11055 "mlClass.ml" 274 11038 11055
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -7903,54 +6623,54 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 274 10999 11016 "mlClass.ml" 274 10999 11020
+"mlClass.ml" 274 11038 11055 "mlClass.ml" 274 11038 11059
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 273 10957 10965 "mlClass.ml" 273 10957 10969
+  int_ref name "mlClass.ml" 273 10996 11004 "mlClass.ml" 273 10996 11008
 )
-"mlClass.ml" 274 10999 11016 "mlClass.ml" 274 10999 11021
+"mlClass.ml" 274 11038 11055 "mlClass.ml" 274 11038 11060
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 272 10893 10901 "mlClass.ml" 272 10893 10906
+  int_ref tname "mlClass.ml" 272 10932 10940 "mlClass.ml" 272 10932 10945
 )
-"mlClass.ml" 274 10999 11007 "mlClass.ml" 274 10999 11061
+"mlClass.ml" 274 11038 11046 "mlClass.ml" 274 11038 11100
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 273 10957 10961 "mlClass.ml" 274 10999 11063
+"mlClass.ml" 273 10996 11000 "mlClass.ml" 274 11038 11102
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 272 10893 10897 "mlClass.ml" 274 10999 11063
+"mlClass.ml" 272 10932 10936 "mlClass.ml" 274 11038 11102
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 271 10877 10888 "mlClass.ml" 274 10999 11063
+"mlClass.ml" 271 10916 10927 "mlClass.ml" 274 11038 11102
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 276 11070 11072 "mlClass.ml" 276 11070 11090
+"mlClass.ml" 276 11109 11111 "mlClass.ml" 276 11109 11129
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref P4helper.sig_items
 )
-"mlClass.ml" 276 11070 11092 "mlClass.ml" 276 11070 11103
+"mlClass.ml" 276 11109 11131 "mlClass.ml" 276 11109 11142
 type(
   Camlp4.PreCast.Ast.sig_item list list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 276 11070 11105 "mlClass.ml" 276 11070 11113
+"mlClass.ml" 276 11109 11144 "mlClass.ml" 276 11109 11152
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list list
@@ -7958,246 +6678,246 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 276 11070 11114 "mlClass.ml" 276 11070 11118
+"mlClass.ml" 276 11109 11153 "mlClass.ml" 276 11109 11157
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref make "mlClass.ml" 271 10877 10883 "mlClass.ml" 271 10877 10887
+  int_ref make "mlClass.ml" 271 10916 10922 "mlClass.ml" 271 10916 10926
 )
-"mlClass.ml" 276 11070 11119 "mlClass.ml" 276 11070 11126
+"mlClass.ml" 276 11109 11158 "mlClass.ml" 276 11109 11165
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 270 10842 10867 "mlClass.ml" 270 10842 10874
+  int_ref cl_list "mlClass.ml" 270 10881 10906 "mlClass.ml" 270 10881 10913
 )
-"mlClass.ml" 276 11070 11105 "mlClass.ml" 276 11070 11126
+"mlClass.ml" 276 11109 11144 "mlClass.ml" 276 11109 11165
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list list
 )
-"mlClass.ml" 276 11070 11092 "mlClass.ml" 276 11070 11127
+"mlClass.ml" 276 11109 11131 "mlClass.ml" 276 11109 11166
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 276 11070 11072 "mlClass.ml" 276 11070 11128
+"mlClass.ml" 276 11109 11111 "mlClass.ml" 276 11109 11167
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 271 10877 10879 "mlClass.ml" 276 11070 11128
+"mlClass.ml" 271 10916 10918 "mlClass.ml" 276 11109 11167
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 270 10842 10867 "mlClass.ml" 276 11070 11128
+"mlClass.ml" 270 10881 10906 "mlClass.ml" 276 11109 11167
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 278 11130 11134 "mlClass.ml" 278 11130 11147
+"mlClass.ml" 278 11169 11173 "mlClass.ml" 278 11169 11186
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_downcast "mlClass.ml" 305 12217 12217 "_none_" 1 0 -1
+  def make_downcast "mlClass.ml" 305 12256 12256 "_none_" 1 0 -1
 )
-"mlClass.ml" 278 11130 11148 "mlClass.ml" 278 11130 11155
+"mlClass.ml" 278 11169 11187 "mlClass.ml" 278 11169 11194
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 279 11158 11160 "mlClass.ml" 303 12157 12215
+  def cl_list "mlClass.ml" 279 11197 11199 "mlClass.ml" 303 12196 12254
 )
-"mlClass.ml" 279 11158 11164 "mlClass.ml" 279 11158 11172
+"mlClass.ml" 279 11197 11203 "mlClass.ml" 279 11197 11211
 type(
   string
 )
 ident(
-  def java_obj "mlClass.ml" 282 11226 11228 "mlClass.ml" 303 12157 12215
+  def java_obj "mlClass.ml" 282 11265 11267 "mlClass.ml" 303 12196 12254
 )
-"mlClass.ml" 279 11158 11175 "mlClass.ml" 279 11158 11185
+"mlClass.ml" 279 11197 11214 "mlClass.ml" 279 11197 11224
 type(
   string
 )
-"mlClass.ml" 280 11187 11193 "mlClass.ml" 280 11187 11196
-type(
-  string
-)
-ident(
-  def obj "mlClass.ml" 282 11226 11228 "mlClass.ml" 303 12157 12215
-)
-"mlClass.ml" 280 11187 11198 "mlClass.ml" 280 11187 11201
-type(
-  string
-)
-"mlClass.ml" 281 11202 11208 "mlClass.ml" 281 11202 11213
+"mlClass.ml" 280 11226 11232 "mlClass.ml" 280 11226 11235
 type(
   string
 )
 ident(
-  def clazz "mlClass.ml" 282 11226 11228 "mlClass.ml" 303 12157 12215
+  def obj "mlClass.ml" 282 11265 11267 "mlClass.ml" 303 12196 12254
 )
-"mlClass.ml" 281 11202 11215 "mlClass.ml" 281 11202 11222
+"mlClass.ml" 280 11226 11237 "mlClass.ml" 280 11226 11240
 type(
   string
 )
-"mlClass.ml" 282 11226 11232 "mlClass.ml" 282 11226 11236
+"mlClass.ml" 281 11241 11247 "mlClass.ml" 281 11241 11252
+type(
+  string
+)
+ident(
+  def clazz "mlClass.ml" 282 11265 11267 "mlClass.ml" 303 12196 12254
+)
+"mlClass.ml" 281 11241 11254 "mlClass.ml" 281 11241 11261
+type(
+  string
+)
+"mlClass.ml" 282 11265 11271 "mlClass.ml" 282 11265 11275
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "mlClass.ml" 303 12157 12159 "mlClass.ml" 303 12157 12215
+  def make "mlClass.ml" 303 12196 12198 "mlClass.ml" 303 12196 12254
 )
-"mlClass.ml" 282 11226 11237 "mlClass.ml" 282 11226 11239
+"mlClass.ml" 282 11265 11276 "mlClass.ml" 282 11265 11278
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 283 11242 11246 "mlClass.ml" 292 11751 11760
+  def cl "mlClass.ml" 283 11281 11285 "mlClass.ml" 292 11790 11799
 )
-"mlClass.ml" 283 11242 11250 "mlClass.ml" 283 11242 11254
+"mlClass.ml" 283 11281 11289 "mlClass.ml" 283 11281 11293
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 287 11472 11476 "mlClass.ml" 292 11751 11760
+  def name "mlClass.ml" 287 11511 11515 "mlClass.ml" 292 11790 11799
 )
-"mlClass.ml" 283 11242 11257 "mlClass.ml" 283 11242 11280
+"mlClass.ml" 283 11281 11296 "mlClass.ml" 283 11281 11319
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 283 11242 11281 "mlClass.ml" 283 11242 11283
+"mlClass.ml" 283 11281 11320 "mlClass.ml" 283 11281 11322
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 282 11226 11237 "mlClass.ml" 282 11226 11239
+  int_ref cl "mlClass.ml" 282 11265 11276 "mlClass.ml" 282 11265 11278
 )
-"mlClass.ml" 283 11242 11281 "mlClass.ml" 283 11242 11292
+"mlClass.ml" 283 11281 11320 "mlClass.ml" 283 11281 11331
 type(
   Ident.clazz
 )
-"mlClass.ml" 283 11242 11257 "mlClass.ml" 283 11242 11292
+"mlClass.ml" 283 11281 11296 "mlClass.ml" 283 11281 11331
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 284 11294 11302 "mlClass.ml" 284 11294 11307
+"mlClass.ml" 284 11333 11341 "mlClass.ml" 284 11333 11346
 type(
   string
 )
 ident(
-  def tname "mlClass.ml" 287 11472 11476 "mlClass.ml" 292 11751 11760
+  def tname "mlClass.ml" 287 11511 11515 "mlClass.ml" 292 11790 11799
 )
-"mlClass.ml" 284 11294 11310 "mlClass.ml" 284 11294 11342
+"mlClass.ml" 284 11333 11349 "mlClass.ml" 284 11333 11381
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_jni_type_name
 )
-"mlClass.ml" 284 11294 11343 "mlClass.ml" 284 11294 11345
+"mlClass.ml" 284 11333 11382 "mlClass.ml" 284 11333 11384
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 282 11226 11237 "mlClass.ml" 282 11226 11239
+  int_ref cl "mlClass.ml" 282 11265 11276 "mlClass.ml" 282 11265 11278
 )
-"mlClass.ml" 284 11294 11343 "mlClass.ml" 284 11294 11354
+"mlClass.ml" 284 11333 11382 "mlClass.ml" 284 11333 11393
 type(
   Ident.clazz
 )
-"mlClass.ml" 284 11294 11310 "mlClass.ml" 284 11294 11354
+"mlClass.ml" 284 11333 11349 "mlClass.ml" 284 11333 11393
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 285 11356 11364 "mlClass.ml" 285 11356 11369
+"mlClass.ml" 285 11395 11403 "mlClass.ml" 285 11395 11408
 type(
   string
 )
 ident(
-  def wname "mlClass.ml" 287 11472 11476 "mlClass.ml" 292 11751 11760
+  def wname "mlClass.ml" 287 11511 11515 "mlClass.ml" 292 11790 11799
 )
-"mlClass.ml" 285 11356 11372 "mlClass.ml" 285 11356 11403
+"mlClass.ml" 285 11395 11411 "mlClass.ml" 285 11395 11442
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_wrapper_name
 )
-"mlClass.ml" 285 11356 11404 "mlClass.ml" 285 11356 11406
+"mlClass.ml" 285 11395 11443 "mlClass.ml" 285 11395 11445
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 282 11226 11237 "mlClass.ml" 282 11226 11239
+  int_ref cl "mlClass.ml" 282 11265 11276 "mlClass.ml" 282 11265 11278
 )
-"mlClass.ml" 285 11356 11404 "mlClass.ml" 285 11356 11415
+"mlClass.ml" 285 11395 11443 "mlClass.ml" 285 11395 11454
 type(
   Ident.clazz
 )
-"mlClass.ml" 285 11356 11372 "mlClass.ml" 285 11356 11415
+"mlClass.ml" 285 11395 11411 "mlClass.ml" 285 11395 11454
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 286 11417 11425 "mlClass.ml" 286 11417 11430
+"mlClass.ml" 286 11456 11464 "mlClass.ml" 286 11456 11469
 type(
   string
 )
 ident(
-  def sname "mlClass.ml" 287 11472 11476 "mlClass.ml" 292 11751 11760
+  def sname "mlClass.ml" 287 11511 11515 "mlClass.ml" 292 11790 11799
 )
-"mlClass.ml" 286 11417 11433 "mlClass.ml" 286 11417 11456
+"mlClass.ml" 286 11456 11472 "mlClass.ml" 286 11456 11495
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 286 11417 11457 "mlClass.ml" 286 11417 11459
+"mlClass.ml" 286 11456 11496 "mlClass.ml" 286 11456 11498
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 282 11226 11237 "mlClass.ml" 282 11226 11239
+  int_ref cl "mlClass.ml" 282 11265 11276 "mlClass.ml" 282 11265 11278
 )
-"mlClass.ml" 286 11417 11457 "mlClass.ml" 286 11417 11468
+"mlClass.ml" 286 11456 11496 "mlClass.ml" 286 11456 11507
 type(
   Ident.clazz
 )
-"mlClass.ml" 286 11417 11433 "mlClass.ml" 286 11417 11468
+"mlClass.ml" 286 11456 11472 "mlClass.ml" 286 11456 11507
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 287 11472 11481 "mlClass.ml" 287 11472 11485
+"mlClass.ml" 287 11511 11520 "mlClass.ml" 287 11511 11524
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 289 11596 11600 "mlClass.ml" 291 11704 11749
+  def body "mlClass.ml" 289 11635 11639 "mlClass.ml" 291 11743 11788
 )
-"mlClass.ml" 288 11489 11502 "mlClass.ml" 288 11489 11502
+"mlClass.ml" 288 11528 11541 "mlClass.ml" 288 11528 11541
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -8309,76 +7029,76 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 288 11489 11502 "mlClass.ml" 288 11489 11505
+"mlClass.ml" 288 11528 11541 "mlClass.ml" 288 11528 11544
 type(
   string
 )
 ident(
-  int_ref obj "mlClass.ml" 280 11187 11193 "mlClass.ml" 280 11187 11196
+  int_ref obj "mlClass.ml" 280 11226 11232 "mlClass.ml" 280 11226 11235
 )
 type(
   string
 )
-"mlClass.ml" 288 11489 11505 "mlClass.ml" 288 11489 11506
+"mlClass.ml" 288 11528 11544 "mlClass.ml" 288 11528 11545
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 288 11489 11502 "mlClass.ml" 288 11489 11507
+"mlClass.ml" 288 11528 11541 "mlClass.ml" 288 11528 11546
 type(
   string
 )
 ident(
-  int_ref sname "mlClass.ml" 286 11417 11425 "mlClass.ml" 286 11417 11430
+  int_ref sname "mlClass.ml" 286 11456 11464 "mlClass.ml" 286 11456 11469
 )
 type(
   string
 )
 ident(
-  int_ref wname "mlClass.ml" 285 11356 11364 "mlClass.ml" 285 11356 11369
+  int_ref wname "mlClass.ml" 285 11395 11403 "mlClass.ml" 285 11395 11408
 )
-"mlClass.ml" 288 11489 11506 "mlClass.ml" 288 11489 11511
+"mlClass.ml" 288 11528 11545 "mlClass.ml" 288 11528 11550
 type(
   string
 )
 ident(
-  int_ref tname "mlClass.ml" 284 11294 11302 "mlClass.ml" 284 11294 11307
+  int_ref tname "mlClass.ml" 284 11333 11341 "mlClass.ml" 284 11333 11346
 )
-"mlClass.ml" 288 11489 11511 "mlClass.ml" 288 11489 11512
+"mlClass.ml" 288 11528 11550 "mlClass.ml" 288 11528 11551
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 288 11489 11512 "mlClass.ml" 288 11489 11525
+"mlClass.ml" 288 11528 11551 "mlClass.ml" 288 11528 11564
 type(
   string
 )
-"mlClass.ml" 288 11489 11506 "mlClass.ml" 288 11489 11525
+"mlClass.ml" 288 11528 11545 "mlClass.ml" 288 11528 11564
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 288 11489 11502 "mlClass.ml" 288 11489 11525
+"mlClass.ml" 288 11528 11541 "mlClass.ml" 288 11528 11564
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 289 11596 11604 "mlClass.ml" 289 11596 11608
+"mlClass.ml" 289 11635 11643 "mlClass.ml" 289 11635 11647
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 290 11670 11674 "mlClass.ml" 291 11704 11749
+  def body "mlClass.ml" 290 11709 11713 "mlClass.ml" 291 11743 11788
 )
-"mlClass.ml" 289 11596 11618 "mlClass.ml" 289 11596 11618
+"mlClass.ml" 289 11635 11657 "mlClass.ml" 289 11635 11657
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -8475,53 +7195,53 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 289 11596 11618 "mlClass.ml" 289 11596 11621
+"mlClass.ml" 289 11635 11657 "mlClass.ml" 289 11635 11660
 type(
   string
 )
 ident(
-  int_ref obj "mlClass.ml" 280 11187 11193 "mlClass.ml" 280 11187 11196
+  int_ref obj "mlClass.ml" 280 11226 11232 "mlClass.ml" 280 11226 11235
 )
-"mlClass.ml" 289 11596 11657 "mlClass.ml" 289 11596 11661
+"mlClass.ml" 289 11635 11696 "mlClass.ml" 289 11635 11700
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 287 11472 11481 "mlClass.ml" 287 11472 11485
+  int_ref body "mlClass.ml" 287 11511 11520 "mlClass.ml" 287 11511 11524
 )
-"mlClass.ml" 290 11670 11678 "mlClass.ml" 290 11670 11683
+"mlClass.ml" 290 11709 11717 "mlClass.ml" 290 11709 11722
 type(
   string
 )
 ident(
-  def fname "mlClass.ml" 291 11704 11719 "mlClass.ml" 291 11704 11719
+  def fname "mlClass.ml" 291 11743 11758 "mlClass.ml" 291 11743 11758
 )
-"mlClass.ml" 290 11670 11686 "mlClass.ml" 290 11670 11690
+"mlClass.ml" 290 11709 11725 "mlClass.ml" 290 11709 11729
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 283 11242 11250 "mlClass.ml" 283 11242 11254
+  int_ref name "mlClass.ml" 283 11281 11289 "mlClass.ml" 283 11281 11293
 )
-"mlClass.ml" 290 11670 11690 "mlClass.ml" 290 11670 11691
+"mlClass.ml" 290 11709 11729 "mlClass.ml" 290 11709 11730
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 290 11670 11691 "mlClass.ml" 290 11670 11700
+"mlClass.ml" 290 11709 11730 "mlClass.ml" 290 11709 11739
 type(
   string
 )
-"mlClass.ml" 290 11670 11686 "mlClass.ml" 290 11670 11700
+"mlClass.ml" 290 11709 11725 "mlClass.ml" 290 11709 11739
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 291 11704 11719 "mlClass.ml" 291 11704 11719
+"mlClass.ml" 291 11743 11758 "mlClass.ml" 291 11743 11758
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -8561,63 +7281,63 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 291 11704 11719 "mlClass.ml" 291 11704 11724
+"mlClass.ml" 291 11743 11758 "mlClass.ml" 291 11743 11763
 type(
   string
 )
 ident(
-  int_ref fname "mlClass.ml" 290 11670 11678 "mlClass.ml" 290 11670 11683
+  int_ref fname "mlClass.ml" 290 11709 11717 "mlClass.ml" 290 11709 11722
 )
-"mlClass.ml" 291 11704 11740 "mlClass.ml" 291 11704 11744
+"mlClass.ml" 291 11743 11779 "mlClass.ml" 291 11743 11783
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 289 11596 11604 "mlClass.ml" 289 11596 11608
+  int_ref body "mlClass.ml" 289 11635 11643 "mlClass.ml" 289 11635 11647
 )
-"mlClass.ml" 290 11670 11674 "mlClass.ml" 291 11704 11749
+"mlClass.ml" 290 11709 11713 "mlClass.ml" 291 11743 11788
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 289 11596 11600 "mlClass.ml" 291 11704 11749
+"mlClass.ml" 289 11635 11639 "mlClass.ml" 291 11743 11788
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 287 11472 11477 "mlClass.ml" 291 11704 11749
+"mlClass.ml" 287 11511 11516 "mlClass.ml" 291 11743 11788
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 292 11751 11758 "mlClass.ml" 292 11751 11760
+"mlClass.ml" 292 11790 11797 "mlClass.ml" 292 11790 11799
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 287 11472 11476 "mlClass.ml" 292 11751 11760
+"mlClass.ml" 287 11511 11515 "mlClass.ml" 292 11790 11799
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 283 11242 11246 "mlClass.ml" 292 11751 11760
+"mlClass.ml" 283 11281 11285 "mlClass.ml" 292 11790 11799
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 282 11226 11237 "mlClass.ml" 292 11751 11760
+"mlClass.ml" 282 11265 11276 "mlClass.ml" 292 11790 11799
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 303 12157 12159 "mlClass.ml" 303 12157 12177
+"mlClass.ml" 303 12196 12198 "mlClass.ml" 303 12196 12216
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 303 12157 12179 "mlClass.ml" 303 12157 12190
+"mlClass.ml" 303 12196 12218 "mlClass.ml" 303 12196 12229
 type(
   Camlp4.PreCast.Ast.str_item list list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 303 12157 12192 "mlClass.ml" 303 12157 12200
+"mlClass.ml" 303 12196 12231 "mlClass.ml" 303 12196 12239
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.str_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list list
@@ -8625,146 +7345,146 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 303 12157 12201 "mlClass.ml" 303 12157 12205
+"mlClass.ml" 303 12196 12240 "mlClass.ml" 303 12196 12244
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref make "mlClass.ml" 282 11226 11232 "mlClass.ml" 282 11226 11236
+  int_ref make "mlClass.ml" 282 11265 11271 "mlClass.ml" 282 11265 11275
 )
-"mlClass.ml" 303 12157 12206 "mlClass.ml" 303 12157 12213
+"mlClass.ml" 303 12196 12245 "mlClass.ml" 303 12196 12252
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 278 11130 11148 "mlClass.ml" 278 11130 11155
+  int_ref cl_list "mlClass.ml" 278 11169 11187 "mlClass.ml" 278 11169 11194
 )
-"mlClass.ml" 303 12157 12192 "mlClass.ml" 303 12157 12213
+"mlClass.ml" 303 12196 12231 "mlClass.ml" 303 12196 12252
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list list
 )
-"mlClass.ml" 303 12157 12179 "mlClass.ml" 303 12157 12214
+"mlClass.ml" 303 12196 12218 "mlClass.ml" 303 12196 12253
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 303 12157 12159 "mlClass.ml" 303 12157 12215
+"mlClass.ml" 303 12196 12198 "mlClass.ml" 303 12196 12254
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 282 11226 11228 "mlClass.ml" 303 12157 12215
+"mlClass.ml" 282 11265 11267 "mlClass.ml" 303 12196 12254
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 279 11158 11160 "mlClass.ml" 303 12157 12215
+"mlClass.ml" 279 11197 11199 "mlClass.ml" 303 12196 12254
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 278 11130 11148 "mlClass.ml" 303 12157 12215
+"mlClass.ml" 278 11169 11187 "mlClass.ml" 303 12196 12254
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 305 12217 12221 "mlClass.ml" 305 12217 12238
+"mlClass.ml" 305 12256 12260 "mlClass.ml" 305 12256 12277
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make_downcast_sig "mlClass.ml" 321 12723 12723 "_none_" 1 0 -1
+  def make_downcast_sig "mlClass.ml" 321 12762 12762 "_none_" 1 0 -1
 )
-"mlClass.ml" 305 12217 12239 "mlClass.ml" 305 12217 12246
+"mlClass.ml" 305 12256 12278 "mlClass.ml" 305 12256 12285
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 306 12249 12251 "mlClass.ml" 318 12662 12720
+  def cl_list "mlClass.ml" 306 12288 12290 "mlClass.ml" 318 12701 12759
 )
-"mlClass.ml" 306 12249 12255 "mlClass.ml" 306 12249 12259
+"mlClass.ml" 306 12288 12294 "mlClass.ml" 306 12288 12298
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def make "mlClass.ml" 318 12662 12664 "mlClass.ml" 318 12662 12720
+  def make "mlClass.ml" 318 12701 12703 "mlClass.ml" 318 12701 12759
 )
-"mlClass.ml" 306 12249 12260 "mlClass.ml" 306 12249 12262
+"mlClass.ml" 306 12288 12299 "mlClass.ml" 306 12288 12301
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 307 12265 12269 "mlClass.ml" 310 12426 12435
+  def cl "mlClass.ml" 307 12304 12308 "mlClass.ml" 310 12465 12474
 )
-"mlClass.ml" 307 12265 12273 "mlClass.ml" 307 12265 12277
+"mlClass.ml" 307 12304 12312 "mlClass.ml" 307 12304 12316
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 308 12319 12323 "mlClass.ml" 310 12426 12435
+  def name "mlClass.ml" 308 12358 12362 "mlClass.ml" 310 12465 12474
 )
-"mlClass.ml" 307 12265 12280 "mlClass.ml" 307 12265 12303
+"mlClass.ml" 307 12304 12319 "mlClass.ml" 307 12304 12342
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 307 12265 12304 "mlClass.ml" 307 12265 12306
+"mlClass.ml" 307 12304 12343 "mlClass.ml" 307 12304 12345
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 306 12249 12260 "mlClass.ml" 306 12249 12262
+  int_ref cl "mlClass.ml" 306 12288 12299 "mlClass.ml" 306 12288 12301
 )
-"mlClass.ml" 307 12265 12304 "mlClass.ml" 307 12265 12315
+"mlClass.ml" 307 12304 12343 "mlClass.ml" 307 12304 12354
 type(
   Ident.clazz
 )
-"mlClass.ml" 307 12265 12280 "mlClass.ml" 307 12265 12315
+"mlClass.ml" 307 12304 12319 "mlClass.ml" 307 12304 12354
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 308 12319 12328 "mlClass.ml" 308 12319 12333
+"mlClass.ml" 308 12358 12367 "mlClass.ml" 308 12358 12372
 type(
   string
 )
 ident(
-  def fname "mlClass.ml" 309 12354 12369 "mlClass.ml" 309 12354 12369
+  def fname "mlClass.ml" 309 12393 12408 "mlClass.ml" 309 12393 12408
 )
-"mlClass.ml" 308 12319 12336 "mlClass.ml" 308 12319 12340
+"mlClass.ml" 308 12358 12375 "mlClass.ml" 308 12358 12379
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 307 12265 12273 "mlClass.ml" 307 12265 12277
+  int_ref name "mlClass.ml" 307 12304 12312 "mlClass.ml" 307 12304 12316
 )
-"mlClass.ml" 308 12319 12340 "mlClass.ml" 308 12319 12341
+"mlClass.ml" 308 12358 12379 "mlClass.ml" 308 12358 12380
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 308 12319 12341 "mlClass.ml" 308 12319 12350
+"mlClass.ml" 308 12358 12380 "mlClass.ml" 308 12358 12389
 type(
   string
 )
-"mlClass.ml" 308 12319 12336 "mlClass.ml" 308 12319 12350
+"mlClass.ml" 308 12358 12375 "mlClass.ml" 308 12358 12389
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 309 12354 12369 "mlClass.ml" 309 12354 12369
+"mlClass.ml" 309 12393 12408 "mlClass.ml" 309 12393 12408
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -8843,55 +7563,55 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 309 12354 12369 "mlClass.ml" 309 12354 12373
+"mlClass.ml" 309 12393 12408 "mlClass.ml" 309 12393 12412
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 307 12265 12273 "mlClass.ml" 307 12265 12277
+  int_ref name "mlClass.ml" 307 12304 12312 "mlClass.ml" 307 12304 12316
 )
-"mlClass.ml" 309 12354 12369 "mlClass.ml" 309 12354 12374
+"mlClass.ml" 309 12393 12408 "mlClass.ml" 309 12393 12413
 type(
   string
 )
 ident(
-  int_ref fname "mlClass.ml" 308 12319 12328 "mlClass.ml" 308 12319 12333
+  int_ref fname "mlClass.ml" 308 12358 12367 "mlClass.ml" 308 12358 12372
 )
-"mlClass.ml" 308 12319 12324 "mlClass.ml" 309 12354 12423
+"mlClass.ml" 308 12358 12363 "mlClass.ml" 309 12393 12462
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 310 12426 12433 "mlClass.ml" 310 12426 12435
+"mlClass.ml" 310 12465 12472 "mlClass.ml" 310 12465 12474
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 308 12319 12323 "mlClass.ml" 310 12426 12435
+"mlClass.ml" 308 12358 12362 "mlClass.ml" 310 12465 12474
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 307 12265 12269 "mlClass.ml" 310 12426 12435
+"mlClass.ml" 307 12304 12308 "mlClass.ml" 310 12465 12474
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 306 12249 12260 "mlClass.ml" 310 12426 12435
+"mlClass.ml" 306 12288 12299 "mlClass.ml" 310 12465 12474
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 318 12662 12664 "mlClass.ml" 318 12662 12682
+"mlClass.ml" 318 12701 12703 "mlClass.ml" 318 12701 12721
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref P4helper.sig_items
 )
-"mlClass.ml" 318 12662 12684 "mlClass.ml" 318 12662 12695
+"mlClass.ml" 318 12701 12723 "mlClass.ml" 318 12701 12734
 type(
   Camlp4.PreCast.Ast.sig_item list list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 318 12662 12697 "mlClass.ml" 318 12662 12705
+"mlClass.ml" 318 12701 12736 "mlClass.ml" 318 12701 12744
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list list
@@ -8899,150 +7619,150 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 318 12662 12706 "mlClass.ml" 318 12662 12710
+"mlClass.ml" 318 12701 12745 "mlClass.ml" 318 12701 12749
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref make "mlClass.ml" 306 12249 12255 "mlClass.ml" 306 12249 12259
+  int_ref make "mlClass.ml" 306 12288 12294 "mlClass.ml" 306 12288 12298
 )
-"mlClass.ml" 318 12662 12711 "mlClass.ml" 318 12662 12718
+"mlClass.ml" 318 12701 12750 "mlClass.ml" 318 12701 12757
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 305 12217 12239 "mlClass.ml" 305 12217 12246
+  int_ref cl_list "mlClass.ml" 305 12256 12278 "mlClass.ml" 305 12256 12285
 )
-"mlClass.ml" 318 12662 12697 "mlClass.ml" 318 12662 12718
+"mlClass.ml" 318 12701 12736 "mlClass.ml" 318 12701 12757
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list list
 )
-"mlClass.ml" 318 12662 12684 "mlClass.ml" 318 12662 12719
+"mlClass.ml" 318 12701 12723 "mlClass.ml" 318 12701 12758
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 318 12662 12664 "mlClass.ml" 318 12662 12720
+"mlClass.ml" 318 12701 12703 "mlClass.ml" 318 12701 12759
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 306 12249 12251 "mlClass.ml" 318 12662 12720
+"mlClass.ml" 306 12288 12290 "mlClass.ml" 318 12701 12759
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 305 12217 12239 "mlClass.ml" 318 12662 12720
+"mlClass.ml" 305 12256 12278 "mlClass.ml" 318 12701 12759
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 321 12723 12727 "mlClass.ml" 321 12723 12743
+"mlClass.ml" 321 12762 12766 "mlClass.ml" 321 12762 12782
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_instance_of "mlClass.ml" 336 13335 13335 "_none_" 1 0 -1
+  def make_instance_of "mlClass.ml" 336 13374 13374 "_none_" 1 0 -1
 )
-"mlClass.ml" 321 12723 12744 "mlClass.ml" 321 12723 12751
+"mlClass.ml" 321 12762 12783 "mlClass.ml" 321 12762 12790
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 322 12754 12756 "mlClass.ml" 334 13275 13333
+  def cl_list "mlClass.ml" 322 12793 12795 "mlClass.ml" 334 13314 13372
 )
-"mlClass.ml" 322 12754 12760 "mlClass.ml" 322 12754 12768
+"mlClass.ml" 322 12793 12799 "mlClass.ml" 322 12793 12807
 type(
   string
 )
 ident(
-  def java_obj "mlClass.ml" 325 12822 12824 "mlClass.ml" 334 13275 13333
+  def java_obj "mlClass.ml" 325 12861 12863 "mlClass.ml" 334 13314 13372
 )
-"mlClass.ml" 322 12754 12771 "mlClass.ml" 322 12754 12781
+"mlClass.ml" 322 12793 12810 "mlClass.ml" 322 12793 12820
 type(
   string
 )
-"mlClass.ml" 323 12783 12789 "mlClass.ml" 323 12783 12792
-type(
-  string
-)
-ident(
-  def obj "mlClass.ml" 325 12822 12824 "mlClass.ml" 334 13275 13333
-)
-"mlClass.ml" 323 12783 12794 "mlClass.ml" 323 12783 12797
-type(
-  string
-)
-"mlClass.ml" 324 12798 12804 "mlClass.ml" 324 12798 12809
+"mlClass.ml" 323 12822 12828 "mlClass.ml" 323 12822 12831
 type(
   string
 )
 ident(
-  def clazz "mlClass.ml" 325 12822 12824 "mlClass.ml" 334 13275 13333
+  def obj "mlClass.ml" 325 12861 12863 "mlClass.ml" 334 13314 13372
 )
-"mlClass.ml" 324 12798 12811 "mlClass.ml" 324 12798 12818
+"mlClass.ml" 323 12822 12833 "mlClass.ml" 323 12822 12836
 type(
   string
 )
-"mlClass.ml" 325 12822 12828 "mlClass.ml" 325 12822 12832
+"mlClass.ml" 324 12837 12843 "mlClass.ml" 324 12837 12848
+type(
+  string
+)
+ident(
+  def clazz "mlClass.ml" 325 12861 12863 "mlClass.ml" 334 13314 13372
+)
+"mlClass.ml" 324 12837 12850 "mlClass.ml" 324 12837 12857
+type(
+  string
+)
+"mlClass.ml" 325 12861 12867 "mlClass.ml" 325 12861 12871
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "mlClass.ml" 334 13275 13277 "mlClass.ml" 334 13275 13333
+  def make "mlClass.ml" 334 13314 13316 "mlClass.ml" 334 13314 13372
 )
-"mlClass.ml" 325 12822 12833 "mlClass.ml" 325 12822 12835
+"mlClass.ml" 325 12861 12872 "mlClass.ml" 325 12861 12874
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 326 12838 12842 "mlClass.ml" 332 13221 13269
+  def cl "mlClass.ml" 326 12877 12881 "mlClass.ml" 332 13260 13308
 )
-"mlClass.ml" 326 12838 12846 "mlClass.ml" 326 12838 12853
+"mlClass.ml" 326 12877 12885 "mlClass.ml" 326 12877 12892
 type(
   string
 )
 ident(
-  def ml_name "mlClass.ml" 327 12895 12899 "mlClass.ml" 332 13221 13269
+  def ml_name "mlClass.ml" 327 12934 12938 "mlClass.ml" 332 13260 13308
 )
-"mlClass.ml" 326 12838 12856 "mlClass.ml" 326 12838 12879
+"mlClass.ml" 326 12877 12895 "mlClass.ml" 326 12877 12918
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 326 12838 12880 "mlClass.ml" 326 12838 12882
+"mlClass.ml" 326 12877 12919 "mlClass.ml" 326 12877 12921
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 325 12822 12833 "mlClass.ml" 325 12822 12835
+  int_ref cl "mlClass.ml" 325 12861 12872 "mlClass.ml" 325 12861 12874
 )
-"mlClass.ml" 326 12838 12880 "mlClass.ml" 326 12838 12891
+"mlClass.ml" 326 12877 12919 "mlClass.ml" 326 12877 12930
 type(
   Ident.clazz
 )
-"mlClass.ml" 326 12838 12856 "mlClass.ml" 326 12838 12891
+"mlClass.ml" 326 12877 12895 "mlClass.ml" 326 12877 12930
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 327 12895 12903 "mlClass.ml" 327 12895 12907
+"mlClass.ml" 327 12934 12942 "mlClass.ml" 327 12934 12946
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 329 12984 12988 "mlClass.ml" 332 13221 13269
+  def body "mlClass.ml" 329 13023 13027 "mlClass.ml" 332 13260 13308
 )
-"mlClass.ml" 328 12911 12924 "mlClass.ml" 328 12911 12924
+"mlClass.ml" 328 12950 12963 "mlClass.ml" 328 12950 12963
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -9151,28 +7871,28 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 328 12911 12924 "mlClass.ml" 328 12911 12927
+"mlClass.ml" 328 12950 12963 "mlClass.ml" 328 12950 12966
 type(
   string
 )
 ident(
-  int_ref obj "mlClass.ml" 323 12783 12789 "mlClass.ml" 323 12783 12792
+  int_ref obj "mlClass.ml" 323 12822 12828 "mlClass.ml" 323 12822 12831
 )
-"mlClass.ml" 328 12911 12924 "mlClass.ml" 328 12911 12929
+"mlClass.ml" 328 12950 12963 "mlClass.ml" 328 12950 12968
 type(
   string
 )
 ident(
-  int_ref clazz "mlClass.ml" 324 12798 12804 "mlClass.ml" 324 12798 12809
+  int_ref clazz "mlClass.ml" 324 12837 12843 "mlClass.ml" 324 12837 12848
 )
-"mlClass.ml" 329 12984 12992 "mlClass.ml" 329 12984 12996
+"mlClass.ml" 329 13023 13031 "mlClass.ml" 329 13023 13035
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 330 13058 13062 "mlClass.ml" 332 13221 13269
+  def body "mlClass.ml" 330 13097 13101 "mlClass.ml" 332 13260 13308
 )
-"mlClass.ml" 329 12984 13006 "mlClass.ml" 329 12984 13006
+"mlClass.ml" 329 13023 13045 "mlClass.ml" 329 13023 13045
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -9269,28 +7989,28 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 329 12984 13006 "mlClass.ml" 329 12984 13009
+"mlClass.ml" 329 13023 13045 "mlClass.ml" 329 13023 13048
 type(
   string
 )
 ident(
-  int_ref obj "mlClass.ml" 323 12783 12789 "mlClass.ml" 323 12783 12792
+  int_ref obj "mlClass.ml" 323 12822 12828 "mlClass.ml" 323 12822 12831
 )
-"mlClass.ml" 329 12984 13045 "mlClass.ml" 329 12984 13049
+"mlClass.ml" 329 13023 13084 "mlClass.ml" 329 13023 13088
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 327 12895 12903 "mlClass.ml" 327 12895 12907
+  int_ref body "mlClass.ml" 327 12934 12942 "mlClass.ml" 327 12934 12946
 )
-"mlClass.ml" 330 13058 13066 "mlClass.ml" 330 13058 13070
+"mlClass.ml" 330 13097 13105 "mlClass.ml" 330 13097 13109
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body "mlClass.ml" 331 13179 13183 "mlClass.ml" 332 13221 13269
+  def body "mlClass.ml" 331 13218 13222 "mlClass.ml" 332 13260 13308
 )
-"mlClass.ml" 330 13058 13080 "mlClass.ml" 330 13058 13080
+"mlClass.ml" 330 13097 13119 "mlClass.ml" 330 13097 13119
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -9390,78 +8110,78 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 330 13058 13080 "mlClass.ml" 330 13058 13085
+"mlClass.ml" 330 13097 13119 "mlClass.ml" 330 13097 13124
 type(
   string
 )
 ident(
-  int_ref clazz "mlClass.ml" 324 12798 12804 "mlClass.ml" 324 12798 12809
+  int_ref clazz "mlClass.ml" 324 12837 12843 "mlClass.ml" 324 12837 12848
 )
-"mlClass.ml" 330 13058 13080 "mlClass.ml" 330 13058 13110
+"mlClass.ml" 330 13097 13119 "mlClass.ml" 330 13097 13149
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_signature
 )
-"mlClass.ml" 330 13058 13111 "mlClass.ml" 330 13058 13113
+"mlClass.ml" 330 13097 13150 "mlClass.ml" 330 13097 13152
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 325 12822 12833 "mlClass.ml" 325 12822 12835
+  int_ref cl "mlClass.ml" 325 12861 12872 "mlClass.ml" 325 12861 12874
 )
-"mlClass.ml" 330 13058 13111 "mlClass.ml" 330 13058 13122
+"mlClass.ml" 330 13097 13150 "mlClass.ml" 330 13097 13161
 type(
   Ident.clazz
 )
-"mlClass.ml" 330 13058 13080 "mlClass.ml" 330 13058 13122
+"mlClass.ml" 330 13097 13119 "mlClass.ml" 330 13097 13161
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 330 13058 13166 "mlClass.ml" 330 13058 13170
+"mlClass.ml" 330 13097 13205 "mlClass.ml" 330 13097 13209
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 329 12984 12992 "mlClass.ml" 329 12984 12996
+  int_ref body "mlClass.ml" 329 13023 13031 "mlClass.ml" 329 13023 13035
 )
-"mlClass.ml" 331 13179 13187 "mlClass.ml" 331 13179 13191
+"mlClass.ml" 331 13218 13226 "mlClass.ml" 331 13218 13230
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 332 13221 13229 "mlClass.ml" 332 13221 13267
+  def name "mlClass.ml" 332 13260 13268 "mlClass.ml" 332 13260 13306
 )
-"mlClass.ml" 331 13179 13194 "mlClass.ml" 331 13179 13209
+"mlClass.ml" 331 13218 13233 "mlClass.ml" 331 13218 13248
 type(
   string
 )
-"mlClass.ml" 331 13179 13209 "mlClass.ml" 331 13179 13210
+"mlClass.ml" 331 13218 13248 "mlClass.ml" 331 13218 13249
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 331 13179 13210 "mlClass.ml" 331 13179 13217
+"mlClass.ml" 331 13218 13249 "mlClass.ml" 331 13218 13256
 type(
   string
 )
 ident(
-  int_ref ml_name "mlClass.ml" 326 12838 12846 "mlClass.ml" 326 12838 12853
+  int_ref ml_name "mlClass.ml" 326 12877 12885 "mlClass.ml" 326 12877 12892
 )
-"mlClass.ml" 331 13179 13194 "mlClass.ml" 331 13179 13217
+"mlClass.ml" 331 13218 13233 "mlClass.ml" 331 13218 13256
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 332 13221 13238 "mlClass.ml" 332 13221 13238
+"mlClass.ml" 332 13260 13277 "mlClass.ml" 332 13260 13277
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -9501,66 +8221,66 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 332 13221 13238 "mlClass.ml" 332 13221 13242
+"mlClass.ml" 332 13260 13277 "mlClass.ml" 332 13260 13281
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 331 13179 13187 "mlClass.ml" 331 13179 13191
+  int_ref name "mlClass.ml" 331 13218 13226 "mlClass.ml" 331 13218 13230
 )
-"mlClass.ml" 332 13221 13258 "mlClass.ml" 332 13221 13262
+"mlClass.ml" 332 13260 13297 "mlClass.ml" 332 13260 13301
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body "mlClass.ml" 330 13058 13066 "mlClass.ml" 330 13058 13070
+  int_ref body "mlClass.ml" 330 13097 13105 "mlClass.ml" 330 13097 13109
 )
-"mlClass.ml" 332 13221 13229 "mlClass.ml" 332 13221 13267
+"mlClass.ml" 332 13260 13268 "mlClass.ml" 332 13260 13306
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 331 13179 13183 "mlClass.ml" 332 13221 13269
+"mlClass.ml" 331 13218 13222 "mlClass.ml" 332 13260 13308
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 330 13058 13062 "mlClass.ml" 332 13221 13269
+"mlClass.ml" 330 13097 13101 "mlClass.ml" 332 13260 13308
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 329 12984 12988 "mlClass.ml" 332 13221 13269
+"mlClass.ml" 329 13023 13027 "mlClass.ml" 332 13260 13308
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 327 12895 12899 "mlClass.ml" 332 13221 13269
+"mlClass.ml" 327 12934 12938 "mlClass.ml" 332 13260 13308
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 326 12838 12842 "mlClass.ml" 332 13221 13269
+"mlClass.ml" 326 12877 12881 "mlClass.ml" 332 13260 13308
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 325 12822 12833 "mlClass.ml" 332 13221 13269
+"mlClass.ml" 325 12861 12872 "mlClass.ml" 332 13260 13308
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 334 13275 13277 "mlClass.ml" 334 13275 13295
+"mlClass.ml" 334 13314 13316 "mlClass.ml" 334 13314 13334
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 334 13275 13297 "mlClass.ml" 334 13275 13308
+"mlClass.ml" 334 13314 13336 "mlClass.ml" 334 13314 13347
 type(
   Camlp4.PreCast.Ast.str_item list list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 334 13275 13310 "mlClass.ml" 334 13275 13318
+"mlClass.ml" 334 13314 13349 "mlClass.ml" 334 13314 13357
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.str_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item list list
@@ -9568,146 +8288,146 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 334 13275 13319 "mlClass.ml" 334 13275 13323
+"mlClass.ml" 334 13314 13358 "mlClass.ml" 334 13314 13362
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref make "mlClass.ml" 325 12822 12828 "mlClass.ml" 325 12822 12832
+  int_ref make "mlClass.ml" 325 12861 12867 "mlClass.ml" 325 12861 12871
 )
-"mlClass.ml" 334 13275 13324 "mlClass.ml" 334 13275 13331
+"mlClass.ml" 334 13314 13363 "mlClass.ml" 334 13314 13370
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 321 12723 12744 "mlClass.ml" 321 12723 12751
+  int_ref cl_list "mlClass.ml" 321 12762 12783 "mlClass.ml" 321 12762 12790
 )
-"mlClass.ml" 334 13275 13310 "mlClass.ml" 334 13275 13331
+"mlClass.ml" 334 13314 13349 "mlClass.ml" 334 13314 13370
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list list
 )
-"mlClass.ml" 334 13275 13297 "mlClass.ml" 334 13275 13332
+"mlClass.ml" 334 13314 13336 "mlClass.ml" 334 13314 13371
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 334 13275 13277 "mlClass.ml" 334 13275 13333
+"mlClass.ml" 334 13314 13316 "mlClass.ml" 334 13314 13372
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 325 12822 12824 "mlClass.ml" 334 13275 13333
+"mlClass.ml" 325 12861 12863 "mlClass.ml" 334 13314 13372
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 322 12754 12756 "mlClass.ml" 334 13275 13333
+"mlClass.ml" 322 12793 12795 "mlClass.ml" 334 13314 13372
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 321 12723 12744 "mlClass.ml" 334 13275 13333
+"mlClass.ml" 321 12762 12783 "mlClass.ml" 334 13314 13372
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 336 13335 13339 "mlClass.ml" 336 13335 13359
+"mlClass.ml" 336 13374 13378 "mlClass.ml" 336 13374 13398
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make_instance_of_sig "mlClass.ml" 344 13617 13617 "_none_" 1 0 -1
+  def make_instance_of_sig "mlClass.ml" 344 13656 13656 "_none_" 1 0 -1
 )
-"mlClass.ml" 336 13335 13360 "mlClass.ml" 336 13335 13367
+"mlClass.ml" 336 13374 13399 "mlClass.ml" 336 13374 13406
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 337 13370 13372 "mlClass.ml" 342 13557 13615
+  def cl_list "mlClass.ml" 337 13409 13411 "mlClass.ml" 342 13596 13654
 )
-"mlClass.ml" 337 13370 13376 "mlClass.ml" 337 13370 13380
+"mlClass.ml" 337 13409 13415 "mlClass.ml" 337 13409 13419
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  def make "mlClass.ml" 342 13557 13559 "mlClass.ml" 342 13557 13615
+  def make "mlClass.ml" 342 13596 13598 "mlClass.ml" 342 13596 13654
 )
-"mlClass.ml" 337 13370 13381 "mlClass.ml" 337 13370 13383
+"mlClass.ml" 337 13409 13420 "mlClass.ml" 337 13409 13422
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 338 13386 13390 "mlClass.ml" 340 13485 13551
+  def cl "mlClass.ml" 338 13425 13429 "mlClass.ml" 340 13524 13590
 )
-"mlClass.ml" 338 13386 13394 "mlClass.ml" 338 13386 13401
+"mlClass.ml" 338 13425 13433 "mlClass.ml" 338 13425 13440
 type(
   string
 )
 ident(
-  def ml_name "mlClass.ml" 339 13443 13447 "mlClass.ml" 340 13485 13551
+  def ml_name "mlClass.ml" 339 13482 13486 "mlClass.ml" 340 13524 13590
 )
-"mlClass.ml" 338 13386 13404 "mlClass.ml" 338 13386 13427
+"mlClass.ml" 338 13425 13443 "mlClass.ml" 338 13425 13466
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 338 13386 13428 "mlClass.ml" 338 13386 13430
+"mlClass.ml" 338 13425 13467 "mlClass.ml" 338 13425 13469
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 337 13370 13381 "mlClass.ml" 337 13370 13383
+  int_ref cl "mlClass.ml" 337 13409 13420 "mlClass.ml" 337 13409 13422
 )
-"mlClass.ml" 338 13386 13428 "mlClass.ml" 338 13386 13439
+"mlClass.ml" 338 13425 13467 "mlClass.ml" 338 13425 13478
 type(
   Ident.clazz
 )
-"mlClass.ml" 338 13386 13404 "mlClass.ml" 338 13386 13439
+"mlClass.ml" 338 13425 13443 "mlClass.ml" 338 13425 13478
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 339 13443 13451 "mlClass.ml" 339 13443 13455
+"mlClass.ml" 339 13482 13490 "mlClass.ml" 339 13482 13494
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 340 13485 13493 "mlClass.ml" 340 13485 13549
+  def name "mlClass.ml" 340 13524 13532 "mlClass.ml" 340 13524 13588
 )
-"mlClass.ml" 339 13443 13458 "mlClass.ml" 339 13443 13473
+"mlClass.ml" 339 13482 13497 "mlClass.ml" 339 13482 13512
 type(
   string
 )
-"mlClass.ml" 339 13443 13473 "mlClass.ml" 339 13443 13474
+"mlClass.ml" 339 13482 13512 "mlClass.ml" 339 13482 13513
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"mlClass.ml" 339 13443 13474 "mlClass.ml" 339 13443 13481
+"mlClass.ml" 339 13482 13513 "mlClass.ml" 339 13482 13520
 type(
   string
 )
 ident(
-  int_ref ml_name "mlClass.ml" 338 13386 13394 "mlClass.ml" 338 13386 13401
+  int_ref ml_name "mlClass.ml" 338 13425 13433 "mlClass.ml" 338 13425 13440
 )
-"mlClass.ml" 339 13443 13458 "mlClass.ml" 339 13443 13481
+"mlClass.ml" 339 13482 13497 "mlClass.ml" 339 13482 13520
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 340 13485 13502 "mlClass.ml" 340 13485 13502
+"mlClass.ml" 340 13524 13541 "mlClass.ml" 340 13524 13541
 type(
   string
 )
@@ -9789,47 +8509,47 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 340 13485 13502 "mlClass.ml" 340 13485 13506
+"mlClass.ml" 340 13524 13541 "mlClass.ml" 340 13524 13545
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 339 13443 13451 "mlClass.ml" 339 13443 13455
+  int_ref name "mlClass.ml" 339 13482 13490 "mlClass.ml" 339 13482 13494
 )
-"mlClass.ml" 340 13485 13493 "mlClass.ml" 340 13485 13549
+"mlClass.ml" 340 13524 13532 "mlClass.ml" 340 13524 13588
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 339 13443 13447 "mlClass.ml" 340 13485 13551
+"mlClass.ml" 339 13482 13486 "mlClass.ml" 340 13524 13590
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 338 13386 13390 "mlClass.ml" 340 13485 13551
+"mlClass.ml" 338 13425 13429 "mlClass.ml" 340 13524 13590
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 337 13370 13381 "mlClass.ml" 340 13485 13551
+"mlClass.ml" 337 13409 13420 "mlClass.ml" 340 13524 13590
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 342 13557 13559 "mlClass.ml" 342 13557 13577
+"mlClass.ml" 342 13596 13598 "mlClass.ml" 342 13596 13616
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref P4helper.sig_items
 )
-"mlClass.ml" 342 13557 13579 "mlClass.ml" 342 13557 13590
+"mlClass.ml" 342 13596 13618 "mlClass.ml" 342 13596 13629
 type(
   Camlp4.PreCast.Ast.sig_item list list -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
   ext_ref List.concat
 )
-"mlClass.ml" 342 13557 13592 "mlClass.ml" 342 13557 13600
+"mlClass.ml" 342 13596 13631 "mlClass.ml" 342 13596 13639
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list list
@@ -9837,189 +8557,189 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 342 13557 13601 "mlClass.ml" 342 13557 13605
+"mlClass.ml" 342 13596 13640 "mlClass.ml" 342 13596 13644
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item list
 )
 ident(
-  int_ref make "mlClass.ml" 337 13370 13376 "mlClass.ml" 337 13370 13380
+  int_ref make "mlClass.ml" 337 13409 13415 "mlClass.ml" 337 13409 13419
 )
-"mlClass.ml" 342 13557 13606 "mlClass.ml" 342 13557 13613
+"mlClass.ml" 342 13596 13645 "mlClass.ml" 342 13596 13652
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 336 13335 13360 "mlClass.ml" 336 13335 13367
+  int_ref cl_list "mlClass.ml" 336 13374 13399 "mlClass.ml" 336 13374 13406
 )
-"mlClass.ml" 342 13557 13592 "mlClass.ml" 342 13557 13613
+"mlClass.ml" 342 13596 13631 "mlClass.ml" 342 13596 13652
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list list
 )
-"mlClass.ml" 342 13557 13579 "mlClass.ml" 342 13557 13614
+"mlClass.ml" 342 13596 13618 "mlClass.ml" 342 13596 13653
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 342 13557 13559 "mlClass.ml" 342 13557 13615
+"mlClass.ml" 342 13596 13598 "mlClass.ml" 342 13596 13654
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 337 13370 13372 "mlClass.ml" 342 13557 13615
+"mlClass.ml" 337 13409 13411 "mlClass.ml" 342 13596 13654
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 336 13335 13360 "mlClass.ml" 342 13557 13615
+"mlClass.ml" 336 13374 13399 "mlClass.ml" 342 13596 13654
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 344 13617 13621 "mlClass.ml" 344 13617 13631
+"mlClass.ml" 344 13656 13660 "mlClass.ml" 344 13656 13670
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
-  def make_array "mlClass.ml" 368 14712 14712 "_none_" 1 0 -1
+  def make_array "mlClass.ml" 368 14751 14751 "_none_" 1 0 -1
 )
-"mlClass.ml" 344 13617 13632 "mlClass.ml" 344 13617 13639
+"mlClass.ml" 344 13656 13671 "mlClass.ml" 344 13656 13678
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 345 13642 13644 "mlClass.ml" 366 14656 14710
+  def cl_list "mlClass.ml" 345 13681 13683 "mlClass.ml" 366 14695 14749
 )
-"mlClass.ml" 345 13642 13648 "mlClass.ml" 345 13642 13652
+"mlClass.ml" 345 13681 13687 "mlClass.ml" 345 13681 13691
 type(
   Cidl.clazz ->
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def make "mlClass.ml" 366 14656 14658 "mlClass.ml" 366 14656 14710
+  def make "mlClass.ml" 366 14695 14697 "mlClass.ml" 366 14695 14749
 )
-"mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+"mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 345 13642 13656 "mlClass.ml" 364 14532 14650
+  def cl "mlClass.ml" 345 13681 13695 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 345 13642 13656 "mlClass.ml" 345 13642 13659
+"mlClass.ml" 345 13681 13695 "mlClass.ml" 345 13681 13698
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  def acc "mlClass.ml" 346 13662 13666 "mlClass.ml" 364 14532 14650
+  def acc "mlClass.ml" 346 13701 13705 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 346 13662 13670 "mlClass.ml" 346 13662 13677
+"mlClass.ml" 346 13701 13709 "mlClass.ml" 346 13701 13716
 type(
   string
 )
 ident(
-  def ml_name "mlClass.ml" 347 13719 13723 "mlClass.ml" 364 14532 14650
+  def ml_name "mlClass.ml" 347 13758 13762 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 346 13662 13680 "mlClass.ml" 346 13662 13703
+"mlClass.ml" 346 13701 13719 "mlClass.ml" 346 13701 13742
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 346 13662 13704 "mlClass.ml" 346 13662 13706
+"mlClass.ml" 346 13701 13743 "mlClass.ml" 346 13701 13745
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+  int_ref cl "mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 )
-"mlClass.ml" 346 13662 13704 "mlClass.ml" 346 13662 13715
+"mlClass.ml" 346 13701 13743 "mlClass.ml" 346 13701 13754
 type(
   Ident.clazz
 )
-"mlClass.ml" 346 13662 13680 "mlClass.ml" 346 13662 13715
+"mlClass.ml" 346 13701 13719 "mlClass.ml" 346 13701 13754
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 347 13719 13727 "mlClass.ml" 347 13719 13735
+"mlClass.ml" 347 13758 13766 "mlClass.ml" 347 13758 13774
 type(
   string
 )
 ident(
-  def name_new "mlClass.ml" 349 13858 13862 "mlClass.ml" 364 14532 14650
+  def name_new "mlClass.ml" 349 13897 13901 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 347 13719 13738 "mlClass.ml" 347 13719 13773
+"mlClass.ml" 347 13758 13777 "mlClass.ml" 347 13758 13812
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_array_alloc_name
 )
-"mlClass.ml" 347 13719 13774 "mlClass.ml" 347 13719 13776
+"mlClass.ml" 347 13758 13813 "mlClass.ml" 347 13758 13815
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+  int_ref cl "mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 )
-"mlClass.ml" 347 13719 13774 "mlClass.ml" 347 13719 13785
+"mlClass.ml" 347 13758 13813 "mlClass.ml" 347 13758 13824
 type(
   Ident.clazz
 )
-"mlClass.ml" 347 13719 13738 "mlClass.ml" 347 13719 13785
+"mlClass.ml" 347 13758 13777 "mlClass.ml" 347 13758 13824
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 348 13786 13794 "mlClass.ml" 348 13786 13805
+"mlClass.ml" 348 13825 13833 "mlClass.ml" 348 13825 13844
 type(
   string
 )
 ident(
-  def name_create "mlClass.ml" 349 13858 13862 "mlClass.ml" 364 14532 14650
+  def name_create "mlClass.ml" 349 13897 13901 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 348 13786 13808 "mlClass.ml" 348 13786 13842
+"mlClass.ml" 348 13825 13847 "mlClass.ml" 348 13825 13881
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_array_init_name
 )
-"mlClass.ml" 348 13786 13843 "mlClass.ml" 348 13786 13845
+"mlClass.ml" 348 13825 13882 "mlClass.ml" 348 13825 13884
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+  int_ref cl "mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 )
-"mlClass.ml" 348 13786 13843 "mlClass.ml" 348 13786 13854
+"mlClass.ml" 348 13825 13882 "mlClass.ml" 348 13825 13893
 type(
   Ident.clazz
 )
-"mlClass.ml" 348 13786 13808 "mlClass.ml" 348 13786 13854
+"mlClass.ml" 348 13825 13847 "mlClass.ml" 348 13825 13893
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 349 13858 13866 "mlClass.ml" 349 13858 13872
+"mlClass.ml" 349 13897 13905 "mlClass.ml" 349 13897 13911
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def jniobj "mlClass.ml" 350 13904 13908 "mlClass.ml" 364 14532 14650
+  def jniobj "mlClass.ml" 350 13943 13947 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 349 13858 13882 "mlClass.ml" 349 13858 13882
+"mlClass.ml" 349 13897 13921 "mlClass.ml" 349 13897 13921
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -10038,18 +8758,18 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 349 13858 13882 "mlClass.ml" 349 13858 13890
+"mlClass.ml" 349 13897 13921 "mlClass.ml" 349 13897 13929
 type(
   string
 )
-"mlClass.ml" 350 13904 13912 "mlClass.ml" 350 13904 13915
+"mlClass.ml" 350 13943 13951 "mlClass.ml" 350 13943 13954
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def obj "mlClass.ml" 351 13944 13948 "mlClass.ml" 364 14532 14650
+  def obj "mlClass.ml" 351 13983 13987 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 350 13904 13925 "mlClass.ml" 350 13904 13925
+"mlClass.ml" 350 13943 13964 "mlClass.ml" 350 13943 13964
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -10068,18 +8788,18 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 350 13904 13925 "mlClass.ml" 350 13904 13930
+"mlClass.ml" 350 13943 13964 "mlClass.ml" 350 13943 13969
 type(
   string
 )
-"mlClass.ml" 351 13944 13952 "mlClass.ml" 351 13944 13960
+"mlClass.ml" 351 13983 13991 "mlClass.ml" 351 13983 13999
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body_new "mlClass.ml" 364 14532 14539 "mlClass.ml" 364 14532 14650
+  def body_new "mlClass.ml" 364 14571 14578 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 351 13944 13970 "mlClass.ml" 351 13944 13970
+"mlClass.ml" 351 13983 14009 "mlClass.ml" 351 13983 14009
 type(
   string
 )
@@ -10635,50 +9355,50 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 351 13944 13971 "mlClass.ml" 351 13944 14001
+"mlClass.ml" 351 13983 14010 "mlClass.ml" 351 13983 14040
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_java_signature
 )
-"mlClass.ml" 351 13944 13971 "mlClass.ml" 351 13944 14002
+"mlClass.ml" 351 13983 14010 "mlClass.ml" 351 13983 14041
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_wrapper_name
 )
-"mlClass.ml" 351 13944 14002 "mlClass.ml" 351 13944 14004
+"mlClass.ml" 351 13983 14041 "mlClass.ml" 351 13983 14043
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+  int_ref cl "mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 )
-"mlClass.ml" 351 13944 14003 "mlClass.ml" 351 13944 14005
+"mlClass.ml" 351 13983 14042 "mlClass.ml" 351 13983 14044
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+  int_ref cl "mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 )
-"mlClass.ml" 351 13944 14002 "mlClass.ml" 351 13944 14013
+"mlClass.ml" 351 13983 14041 "mlClass.ml" 351 13983 14052
 type(
   Ident.clazz
 )
-"mlClass.ml" 351 13944 13971 "mlClass.ml" 351 13944 14013
+"mlClass.ml" 351 13983 14010 "mlClass.ml" 351 13983 14052
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 351 13944 14003 "mlClass.ml" 351 13944 14014
+"mlClass.ml" 351 13983 14042 "mlClass.ml" 351 13983 14053
 type(
   Ident.clazz
 )
-"mlClass.ml" 351 13944 13971 "mlClass.ml" 351 13944 14014
+"mlClass.ml" 351 13983 14010 "mlClass.ml" 351 13983 14053
 call(
   stack
 )
@@ -10691,46 +9411,46 @@ ident(
 type(
   string
 )
-"mlClass.ml" 351 13944 14015 "mlClass.ml" 351 13944 14017
+"mlClass.ml" 351 13983 14054 "mlClass.ml" 351 13983 14056
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 345 13642 13653 "mlClass.ml" 345 13642 13655
+  int_ref cl "mlClass.ml" 345 13681 13692 "mlClass.ml" 345 13681 13694
 )
-"mlClass.ml" 351 13944 14015 "mlClass.ml" 351 13944 14026
+"mlClass.ml" 351 13983 14054 "mlClass.ml" 351 13983 14065
 type(
   Ident.clazz
 )
-"mlClass.ml" 351 13944 13971 "mlClass.ml" 351 13944 14026
+"mlClass.ml" 351 13983 14010 "mlClass.ml" 351 13983 14065
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 357 14191 14266 "mlClass.ml" 357 14191 14272
+"mlClass.ml" 357 14230 14305 "mlClass.ml" 357 14230 14311
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref jniobj "mlClass.ml" 349 13858 13866 "mlClass.ml" 349 13858 13872
+  int_ref jniobj "mlClass.ml" 349 13897 13905 "mlClass.ml" 349 13897 13911
 )
-"mlClass.ml" 358 14277 14292 "mlClass.ml" 358 14277 14295
+"mlClass.ml" 358 14316 14331 "mlClass.ml" 358 14316 14334
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref obj "mlClass.ml" 350 13904 13912 "mlClass.ml" 350 13904 13915
+  int_ref obj "mlClass.ml" 350 13943 13951 "mlClass.ml" 350 13943 13954
 )
-"mlClass.ml" 360 14381 14389 "mlClass.ml" 360 14381 14400
+"mlClass.ml" 360 14420 14428 "mlClass.ml" 360 14420 14439
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  def body_create "mlClass.ml" 364 14532 14539 "mlClass.ml" 364 14532 14650
+  def body_create "mlClass.ml" 364 14571 14578 "mlClass.ml" 364 14571 14689
 )
-"mlClass.ml" 360 14381 14410 "mlClass.ml" 360 14381 14410
+"mlClass.ml" 360 14420 14449 "mlClass.ml" 360 14420 14449
 type(
   string
 )
@@ -11157,14 +9877,14 @@ ident(
 type(
   Camlp4.PreCast.Ast.expr
 )
-"mlClass.ml" 360 14381 14410 "mlClass.ml" 360 14381 14418
+"mlClass.ml" 360 14420 14449 "mlClass.ml" 360 14420 14457
 type(
   string
 )
 ident(
-  int_ref name_new "mlClass.ml" 347 13719 13727 "mlClass.ml" 347 13719 13735
+  int_ref name_new "mlClass.ml" 347 13758 13766 "mlClass.ml" 347 13758 13774
 )
-"mlClass.ml" 364 14532 14548 "mlClass.ml" 364 14532 14548
+"mlClass.ml" 364 14571 14587 "mlClass.ml" 364 14571 14587
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -11204,21 +9924,21 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 364 14532 14548 "mlClass.ml" 364 14532 14556
+"mlClass.ml" 364 14571 14587 "mlClass.ml" 364 14571 14595
 type(
   string
 )
 ident(
-  int_ref name_new "mlClass.ml" 347 13719 13727 "mlClass.ml" 347 13719 13735
+  int_ref name_new "mlClass.ml" 347 13758 13766 "mlClass.ml" 347 13758 13774
 )
-"mlClass.ml" 364 14532 14572 "mlClass.ml" 364 14532 14580
+"mlClass.ml" 364 14571 14611 "mlClass.ml" 364 14571 14619
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body_new "mlClass.ml" 351 13944 13952 "mlClass.ml" 351 13944 13960
+  int_ref body_new "mlClass.ml" 351 13983 13991 "mlClass.ml" 351 13983 13999
 )
-"mlClass.ml" 364 14532 14600 "mlClass.ml" 364 14532 14600
+"mlClass.ml" 364 14571 14639 "mlClass.ml" 364 14571 14639
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -11258,72 +9978,72 @@ ident(
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 364 14532 14600 "mlClass.ml" 364 14532 14611
+"mlClass.ml" 364 14571 14639 "mlClass.ml" 364 14571 14650
 type(
   string
 )
 ident(
-  int_ref name_create "mlClass.ml" 348 13786 13794 "mlClass.ml" 348 13786 13805
+  int_ref name_create "mlClass.ml" 348 13825 13833 "mlClass.ml" 348 13825 13844
 )
-"mlClass.ml" 364 14532 14627 "mlClass.ml" 364 14532 14638
+"mlClass.ml" 364 14571 14666 "mlClass.ml" 364 14571 14677
 type(
   Camlp4.PreCast.Ast.expr
 )
 ident(
-  int_ref body_create "mlClass.ml" 360 14381 14389 "mlClass.ml" 360 14381 14400
+  int_ref body_create "mlClass.ml" 360 14420 14428 "mlClass.ml" 360 14420 14439
 )
-"mlClass.ml" 364 14532 14647 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 364 14571 14686 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref acc "mlClass.ml" 345 13642 13656 "mlClass.ml" 345 13642 13659
+  int_ref acc "mlClass.ml" 345 13681 13695 "mlClass.ml" 345 13681 13698
 )
-"mlClass.ml" 364 14532 14591 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 364 14571 14630 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 364 14532 14539 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 364 14571 14578 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 351 13944 13948 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 351 13983 13987 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 350 13904 13908 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 350 13943 13947 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 349 13858 13862 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 349 13897 13901 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 347 13719 13723 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 347 13758 13762 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 346 13662 13666 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 346 13701 13705 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 345 13642 13656 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 345 13681 13695 "mlClass.ml" 364 14571 14689
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 345 13642 13653 "mlClass.ml" 364 14532 14650
+"mlClass.ml" 345 13681 13692 "mlClass.ml" 364 14571 14689
 type(
   Cidl.clazz ->
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 366 14656 14658 "mlClass.ml" 366 14656 14676
+"mlClass.ml" 366 14695 14697 "mlClass.ml" 366 14695 14715
 type(
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item
 )
 ident(
   ext_ref P4helper.str_items
 )
-"mlClass.ml" 366 14656 14678 "mlClass.ml" 366 14656 14693
+"mlClass.ml" 366 14695 14717 "mlClass.ml" 366 14695 14732
 type(
   (Cidl.clazz ->
    Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list) ->
@@ -11333,140 +10053,140 @@ type(
 ident(
   ext_ref List.fold_right
 )
-"mlClass.ml" 366 14656 14694 "mlClass.ml" 366 14656 14698
+"mlClass.ml" 366 14695 14733 "mlClass.ml" 366 14695 14737
 type(
   Cidl.clazz ->
   Camlp4.PreCast.Ast.str_item list -> Camlp4.PreCast.Ast.str_item list
 )
 ident(
-  int_ref make "mlClass.ml" 345 13642 13648 "mlClass.ml" 345 13642 13652
+  int_ref make "mlClass.ml" 345 13681 13687 "mlClass.ml" 345 13681 13691
 )
-"mlClass.ml" 366 14656 14699 "mlClass.ml" 366 14656 14706
+"mlClass.ml" 366 14695 14738 "mlClass.ml" 366 14695 14745
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 344 13617 13632 "mlClass.ml" 344 13617 13639
+  int_ref cl_list "mlClass.ml" 344 13656 13671 "mlClass.ml" 344 13656 13678
 )
-"mlClass.ml" 366 14656 14707 "mlClass.ml" 366 14656 14709
+"mlClass.ml" 366 14695 14746 "mlClass.ml" 366 14695 14748
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 366 14656 14678 "mlClass.ml" 366 14656 14709
+"mlClass.ml" 366 14695 14717 "mlClass.ml" 366 14695 14748
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.str_item list
 )
-"mlClass.ml" 366 14656 14658 "mlClass.ml" 366 14656 14710
+"mlClass.ml" 366 14695 14697 "mlClass.ml" 366 14695 14749
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 345 13642 13644 "mlClass.ml" 366 14656 14710
+"mlClass.ml" 345 13681 13683 "mlClass.ml" 366 14695 14749
 type(
   Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 344 13617 13632 "mlClass.ml" 366 14656 14710
+"mlClass.ml" 344 13656 13671 "mlClass.ml" 366 14695 14749
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.str_item
 )
-"mlClass.ml" 368 14712 14716 "mlClass.ml" 368 14712 14730
+"mlClass.ml" 368 14751 14755 "mlClass.ml" 368 14751 14769
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make_array_sig "mlClass.ml" 375 15050 15094 "_none_" 1 0 -1
+  def make_array_sig "mlClass.ml" 375 15089 15133 "_none_" 1 0 -1
 )
-"mlClass.ml" 368 14712 14731 "mlClass.ml" 368 14712 14738
+"mlClass.ml" 368 14751 14770 "mlClass.ml" 368 14751 14777
 type(
   Cidl.clazz list
 )
 ident(
-  def cl_list "mlClass.ml" 369 14741 14743 "mlClass.ml" 375 15050 15094
+  def cl_list "mlClass.ml" 369 14780 14782 "mlClass.ml" 375 15089 15133
 )
-"mlClass.ml" 369 14741 14747 "mlClass.ml" 369 14741 14751
+"mlClass.ml" 369 14780 14786 "mlClass.ml" 369 14780 14790
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  def make "mlClass.ml" 375 15050 15052 "mlClass.ml" 375 15050 15094
+  def make "mlClass.ml" 375 15089 15091 "mlClass.ml" 375 15089 15133
 )
-"mlClass.ml" 369 14741 14752 "mlClass.ml" 369 14741 14754
+"mlClass.ml" 369 14780 14791 "mlClass.ml" 369 14780 14793
 type(
   Cidl.clazz
 )
 ident(
-  def cl "mlClass.ml" 370 14757 14761 "mlClass.ml" 373 14976 15044
+  def cl "mlClass.ml" 370 14796 14800 "mlClass.ml" 373 15015 15083
 )
-"mlClass.ml" 370 14757 14765 "mlClass.ml" 370 14757 14772
+"mlClass.ml" 370 14796 14804 "mlClass.ml" 370 14796 14811
 type(
   string
 )
 ident(
-  def ml_name "mlClass.ml" 371 14814 14818 "mlClass.ml" 373 14976 15044
+  def ml_name "mlClass.ml" 371 14853 14857 "mlClass.ml" 373 15015 15083
 )
-"mlClass.ml" 370 14757 14775 "mlClass.ml" 370 14757 14798
+"mlClass.ml" 370 14796 14814 "mlClass.ml" 370 14796 14837
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 370 14757 14799 "mlClass.ml" 370 14757 14801
+"mlClass.ml" 370 14796 14838 "mlClass.ml" 370 14796 14840
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 369 14741 14752 "mlClass.ml" 369 14741 14754
+  int_ref cl "mlClass.ml" 369 14780 14791 "mlClass.ml" 369 14780 14793
 )
-"mlClass.ml" 370 14757 14799 "mlClass.ml" 370 14757 14810
+"mlClass.ml" 370 14796 14838 "mlClass.ml" 370 14796 14849
 type(
   Ident.clazz
 )
-"mlClass.ml" 370 14757 14775 "mlClass.ml" 370 14757 14810
+"mlClass.ml" 370 14796 14814 "mlClass.ml" 370 14796 14849
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 371 14814 14822 "mlClass.ml" 371 14814 14826
+"mlClass.ml" 371 14853 14861 "mlClass.ml" 371 14853 14865
 type(
   string
 )
 ident(
-  def name "mlClass.ml" 372 14879 14894 "mlClass.ml" 372 14879 14894
+  def name "mlClass.ml" 372 14918 14933 "mlClass.ml" 372 14918 14933
 )
-"mlClass.ml" 371 14814 14829 "mlClass.ml" 371 14814 14863
+"mlClass.ml" 371 14853 14868 "mlClass.ml" 371 14853 14902
 type(
   Ident.clazz -> string
 )
 ident(
   ext_ref Ident.get_class_ml_array_init_name
 )
-"mlClass.ml" 371 14814 14864 "mlClass.ml" 371 14814 14866
+"mlClass.ml" 371 14853 14903 "mlClass.ml" 371 14853 14905
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 369 14741 14752 "mlClass.ml" 369 14741 14754
+  int_ref cl "mlClass.ml" 369 14780 14791 "mlClass.ml" 369 14780 14793
 )
-"mlClass.ml" 371 14814 14864 "mlClass.ml" 371 14814 14875
+"mlClass.ml" 371 14853 14903 "mlClass.ml" 371 14853 14914
 type(
   Ident.clazz
 )
-"mlClass.ml" 371 14814 14829 "mlClass.ml" 371 14814 14875
+"mlClass.ml" 371 14853 14868 "mlClass.ml" 371 14853 14914
 call(
   stack
 )
 type(
   string
 )
-"mlClass.ml" 372 14879 14894 "mlClass.ml" 372 14879 14894
+"mlClass.ml" 372 14918 14933 "mlClass.ml" 372 14918 14933
 type(
   Camlp4.PreCast.Ast.loc
 )
@@ -11632,14 +10352,14 @@ ident(
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 372 14879 14894 "mlClass.ml" 372 14879 14898
+"mlClass.ml" 372 14918 14933 "mlClass.ml" 372 14918 14937
 type(
   string
 )
 ident(
-  int_ref name "mlClass.ml" 371 14814 14822 "mlClass.ml" 371 14814 14826
+  int_ref name "mlClass.ml" 371 14853 14861 "mlClass.ml" 371 14853 14865
 )
-"mlClass.ml" 372 14879 14895 "mlClass.ml" 372 14879 14918
+"mlClass.ml" 372 14918 14934 "mlClass.ml" 372 14918 14957
 type(
   Ident.clazz -> string
 )
@@ -11652,27 +10372,27 @@ type(
 ident(
   ext_ref Ident.get_class_ml_name
 )
-"mlClass.ml" 372 14879 14919 "mlClass.ml" 372 14879 14921
+"mlClass.ml" 372 14918 14958 "mlClass.ml" 372 14918 14960
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 369 14741 14752 "mlClass.ml" 369 14741 14754
+  int_ref cl "mlClass.ml" 369 14780 14791 "mlClass.ml" 369 14780 14793
 )
 type(
   Cidl.clazz
 )
 ident(
-  int_ref cl "mlClass.ml" 369 14741 14752 "mlClass.ml" 369 14741 14754
+  int_ref cl "mlClass.ml" 369 14780 14791 "mlClass.ml" 369 14780 14793
 )
-"mlClass.ml" 372 14879 14919 "mlClass.ml" 372 14879 14930
+"mlClass.ml" 372 14918 14958 "mlClass.ml" 372 14918 14969
 type(
   Ident.clazz
 )
 type(
   Ident.clazz
 )
-"mlClass.ml" 372 14879 14895 "mlClass.ml" 372 14879 14930
+"mlClass.ml" 372 14918 14934 "mlClass.ml" 372 14918 14969
 call(
   stack
 )
@@ -11685,26 +10405,26 @@ type(
 type(
   string
 )
-"mlClass.ml" 371 14814 14818 "mlClass.ml" 373 14976 15044
+"mlClass.ml" 371 14853 14857 "mlClass.ml" 373 15015 15083
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 370 14757 14761 "mlClass.ml" 373 14976 15044
+"mlClass.ml" 370 14796 14800 "mlClass.ml" 373 15015 15083
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 369 14741 14752 "mlClass.ml" 373 14976 15044
+"mlClass.ml" 369 14780 14791 "mlClass.ml" 373 15015 15083
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 375 15050 15052 "mlClass.ml" 375 15050 15070
+"mlClass.ml" 375 15089 15091 "mlClass.ml" 375 15089 15109
 type(
   Camlp4.PreCast.Ast.sig_item list -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
   ext_ref P4helper.sig_items
 )
-"mlClass.ml" 375 15050 15072 "mlClass.ml" 375 15050 15080
+"mlClass.ml" 375 15089 15111 "mlClass.ml" 375 15089 15119
 type(
   (Cidl.clazz -> Camlp4.PreCast.Ast.sig_item) ->
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item list
@@ -11712,39 +10432,39 @@ type(
 ident(
   ext_ref List.map
 )
-"mlClass.ml" 375 15050 15081 "mlClass.ml" 375 15050 15085
+"mlClass.ml" 375 15089 15120 "mlClass.ml" 375 15089 15124
 type(
   Cidl.clazz -> Camlp4.PreCast.Ast.sig_item
 )
 ident(
-  int_ref make "mlClass.ml" 369 14741 14747 "mlClass.ml" 369 14741 14751
+  int_ref make "mlClass.ml" 369 14780 14786 "mlClass.ml" 369 14780 14790
 )
-"mlClass.ml" 375 15050 15086 "mlClass.ml" 375 15050 15093
+"mlClass.ml" 375 15089 15125 "mlClass.ml" 375 15089 15132
 type(
   Cidl.clazz list
 )
 ident(
-  int_ref cl_list "mlClass.ml" 368 14712 14731 "mlClass.ml" 368 14712 14738
+  int_ref cl_list "mlClass.ml" 368 14751 14770 "mlClass.ml" 368 14751 14777
 )
-"mlClass.ml" 375 15050 15072 "mlClass.ml" 375 15050 15093
+"mlClass.ml" 375 15089 15111 "mlClass.ml" 375 15089 15132
 call(
   stack
 )
 type(
   Camlp4.PreCast.Ast.sig_item list
 )
-"mlClass.ml" 375 15050 15052 "mlClass.ml" 375 15050 15094
+"mlClass.ml" 375 15089 15091 "mlClass.ml" 375 15089 15133
 call(
   tail
 )
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 369 14741 14743 "mlClass.ml" 375 15050 15094
+"mlClass.ml" 369 14780 14782 "mlClass.ml" 375 15089 15133
 type(
   Camlp4.PreCast.Ast.sig_item
 )
-"mlClass.ml" 368 14712 14731 "mlClass.ml" 375 15050 15094
+"mlClass.ml" 368 14751 14770 "mlClass.ml" 375 15089 15133
 type(
   Cidl.clazz list -> Camlp4.PreCast.Ast.sig_item
 )

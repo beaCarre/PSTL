@@ -17,3 +17,4 @@ val ml_class_signature:
 val get_args_convertion:
   ('a -> Ast.expr -> 'b) -> (string * 'a) list -> (string * 'b) list
 val get_call_method: string -> string -> string -> string
+val get_accessors_method : string -> string -> string -> string

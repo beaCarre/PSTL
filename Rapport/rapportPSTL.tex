@@ -82,11 +82,13 @@
   Béatrice Carre \\
   beatrice.carre@etu.upmc.fr \\
   \\
-  PSTL encadré par Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
+  encadrement par Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
 }
 
 \begin{document}
 \maketitle
+\tableofcontents
+\newpage
 \section*{introduction}
 Deux approches ont déjà été étudiées pour l’interopérabilité entre
 Ocaml et Java à travers leur modèle object respectif :
@@ -98,24 +100,24 @@ La deuxième (ocaml-java 2.0) utilise un seul runtime, celui de Java, en
 compilant les programmes OCaml en byte-code Java.
 \newline
 
+L'idée serait de pouvoir profiter des deux approches, l'accès direct à toute
+l'API Java grâce à OCaml-Java, et l'accès à d'autres classes définies
+par le programmeur intéressé, en générant le code nécessaire à cet
+accès grâce à O'Jacaré, et le tout en gardant qu'un seul runtime, la JVM.
+
 Après l’étude des deux outils, le projet consiste à engendrer pour
 ocaml-java les fichiers d’encapsulation et de callback d’O’Jacaré. Ce
 portage est réalisé en OCaml dans la mesure où il reprend ce qui
 avait été développé pour O’Jacaré. Mais une bonne connaissance du
 langage Java a aussi été nécessaire pour mener à bien ce projet.
-(Les programmes de tests fonctionnent comme les visiteurs
-où données et traitements sont chacun dans un langage différent. On
-pourra aussi mesurer les performances de la réalisation sur ojdvi une
-visionneuse dvi permettant d’afficher les documents créés en LaTeX.)?
 \newline
 
-(* todo : synonyme de outil générateur *)
-
-Dans ce rapport, nous décrivons les schémas globals de l'outil de
-génération de code, ainsi que les outils compilateur d'Ocaml-Java, pour détailler
-ensuite les modifications apportées au générateur de code
+Dans ce rapport, nous décrivons le schéma global avec ses avantages du
+générateur de code d'O'Jacaré, et celui du compilateur d'Ocaml-Java,
+pour détailler ensuite les modifications apportées à la génération
 d'interfaces, adapté pour une encapsulation utilisable par le
-compilateur d'OCaml-Java. 
+compilateur d'OCaml-Java.Pour finir, un exemple d'application accompagné d'un
+test de performance sera présenté.
 
 
 
@@ -128,8 +130,8 @@ compilateur d'OCaml-Java.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   O'Jacaré   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{O'Jacaré, un générateur de code}
-O'Jacaré génère le code nécessaire à
+\section{O'Jacaré, un générateur de code d'interface}
+O'Jacaré génère le code nécessaire à l'encapsulation des classes définies dans l'IDL, pour per
 
 La génération de code se fait en plusieurs passes :
 \begin{itemize}
@@ -145,6 +147,10 @@ Ces différentes étapes seront présentées plus en profondeur.
 
 
 \subsection{La syntaxe de l'idl}
+L'IDL est défini pour la construction des interfaces entreO'Caml et
+Java, il est donc défini en s'approchant de l'intersection des deux
+mondes objet
+
 La syntaxe du langage d'interface est donné en annexe, en utilisant la
 notation BNF.
 
@@ -152,12 +158,11 @@ Les symboles < et > encadrent des règles optionnelles,
 les terminaux sont en bleu, et les non-terminaux sont en italique.
 
 
-\subsection{lexing parsing}
+\subsection{Analyse lexical, syntaxique et sémantique}
 La première phase est celle d'analyse lexicale et syntaxique,
 séparant l'idl en lexèmes et construisant l'AST, défini par Idl.file,
 dont la structure est définie en annexe.
 
-\subsection{check}
 Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
 phase précédente, vérifiant si le programme est correct, et
 
@@ -191,6 +196,10 @@ Classe de construction
 
 fonctions / methodes static
 
+\subsection{génération .mli}
+
+
+
 \subsection{compilation par camljava}
 interfacage C, 2 runtimes, Jni, 
 
@@ -199,12 +208,9 @@ interfacage C, 2 runtimes, Jni,
 
 
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\newpage
 \section{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
 
 \subsection{Accès à du code Java}
@@ -607,7 +613,7 @@ $[\![ TYPE METH (ARG1, ARG2, ...)]\!]_{}$$\longrightarrow$
 retour Obj dans methode
 array
 callback
-\section{génération .mli}
+
  
 
 
@@ -890,7 +896,7 @@ $[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   BIBLIOGRAPHIE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\section*{Bibliographie, références}
+\section{Bibliographie, références}
 [1] CHAILLOUX E., MANOURY P., PAGANO B., \emph{Développement
   d'applications avec Objective Caml}, O'Reilly
 , 2000, (\url{http://www.oreilly.fr/catalogue/ocaml.html})
@@ -924,11 +930,12 @@ Functional Programming,
 
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   ANNEXE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \newpage
-\section*{Annexe}
+\section{Annexe}
 
 
 \subsection*{BNF}

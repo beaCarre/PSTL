@@ -178,10 +178,13 @@ let get_args_convertion convert args =
   in
   List.map make args
 
-(* nom de la fonction Jni *) (* TODO *)
+(* nom de la fonction Jni *) (*ok *)
 let get_call_method java_class_name java_name sign = 
   java_class_name^"."^java_name^sign
-
+    
+let get_accessors_method java_class_name java_name typ =
+  java_class_name^"."^java_name^":"^typ
+    
 
 let rec convert_from_java typ e = (* to_ml_type *)
   match typ with

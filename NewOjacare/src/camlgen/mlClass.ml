@@ -81,7 +81,7 @@ let make_alloc cl_list =
     else
       let jclazz = Ident.get_class_java_signature cl.cc_ident in
       <:str_item< value $lid:Ident.get_class_ml_allocator_name cl.cc_ident$ = 
-      let clazz = Jni.find_class $str:jclazz$ in
+     
       fun () -> ( Jni.alloc_object clazz : $lid:Ident.get_class_ml_jni_type_name cl.cc_ident$) >> :: acc
   in
   P4helper.str_items (List.fold_right make cl_list [])
@@ -161,7 +161,7 @@ let make_wrapper ~callback cl_list =
     (* test si l'objet est nul ... *)
     let class_body = 
       <:class_expr< let _ = 
-         if Java.is_null $lid:java_obj$ 
+         if Java.is_null $lid:java_obj$
 	 then raise (Null_object $str:jclazz$) else () in $class_body$ >> in
 
     (* fonction de création, à partir d'une référence Jni *)
@@ -171,8 +171,8 @@ let make_wrapper ~callback cl_list =
     (* Déclaration des id. de méthode et de champs (capturé dans l'env de la fonction de création) *)
     let class_body = MlGen.make_class_local_decl method_ids class_body in
 
-    (* Test de l'héritage au chargement : interfaces *)
-    let class_body = 
+    (* Test de l'héritage au chargement : interfaces *) (* B : Pas besoin*)
+    (*let class_body = 
       if callback then class_body else 
       List.fold_right (fun interface body ->
 	let err = "Wrong implemented interface in IDL : "^
@@ -184,10 +184,10 @@ let make_wrapper ~callback cl_list =
 	let _ = if not (Jni.is_assignable_from $lid:clazz$ 
 			(Jni.find_class $str: Ident.get_class_java_signature interface.cc_ident$))
 	then failwith $str:err$
-	else () in $body$ >>) cl.cc_implements class_body in
+	else () in $body$ >>) cl.cc_implements class_body in*)
     
-    (* Test de l'héritage au chargement *)    
-    let class_body = 
+    (* Test de l'héritage au chargement *) (* B : idem pas besoin, verif par ocaml-java*)
+    (*let class_body = 
       if callback then class_body else
       match cl.cc_extend with
 	None -> class_body
@@ -201,11 +201,11 @@ let make_wrapper ~callback cl_list =
 	  let _ = if not (Jni.is_assignable_from $lid:clazz$ 
 			  (Jni.find_class $str: Ident.get_class_java_signature super.cc_ident$))
 	  then failwith $str:err$
-	  else () in $class_body$ >> in
+	  else () in $class_body$ >> in*)
     
-    (* Chargement de l'objet classe Java : qui ne sera pas jamais déchargé ... *)
-    let class_body = 
-      <:class_expr< let $lid:clazz$ = Jni.find_class $str:jclazz$ in $class_body$ >> in
+    (* Chargement de l'objet classe Java : qui ne sera pas jamais déchargé ... *) (* B *)
+    (*let class_body = 
+      <:class_expr< let $lid:clazz$ = Jni.find_class $str:jclazz$ in $class_body$ >> in*)
     
     (* Retour de 'make' : nom, abstract, body*)
     class_name,abstract,class_body 
