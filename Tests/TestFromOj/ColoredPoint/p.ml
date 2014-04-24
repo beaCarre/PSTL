@@ -1,10 +1,8 @@
 type top = java'lang'Object java_instance;;
 exception Null_object of string
-
 type _jni_jPoint = mypack'Point java_instance
 type _jni_jColored = mypack'Colored java_instance
 type _jni_jColoredPoint = mypack'ColoredPoint java_instance
-
 class type jPoint =
 object
   method _get_jni_jPoint : _jni_jPoint
@@ -18,15 +16,13 @@ object
   method display : unit -> unit
   method distance : unit -> float
   method eq : jPoint -> bool
-end;;
-
+end
 class type jColored =
 object
   method _get_jni_jColored : _jni_jColored
   method getColor : unit -> string
   method setColor : string -> unit
 end
-
 class type jColoredPoint =
 object
   inherit jPoint
@@ -34,7 +30,6 @@ object
   method _get_jni_jColoredPoint : _jni_jColoredPoint
   method eq_colored_point : jColoredPoint -> bool
 end
-
 class _capsule_jPoint =
   fun (jni_ref : _jni_jPoint) ->
     let _ =
@@ -48,11 +43,9 @@ object (self)
       let _p0 = _p0#_get_jni_jPoint in
       Java.call "mypack.Point.eq(mypack.Point):boolean" jni_ref _p0
   method distance =
-    fun () ->
-      Java.call "mypack.Point.distance():double" jni_ref
+    fun () -> Java.call "mypack.Point.distance():double" jni_ref
   method display =
-    fun () ->
-      Java.call "mypack.Point.display():void" jni_ref
+    fun () -> Java.call "mypack.Point.display():void" jni_ref
   method toString =
     fun () ->
       JavaString.to_string
@@ -91,8 +84,7 @@ class _capsule_jColored =
     in
 object (self)
   method getColor =
-    fun () ->
-      JavaString.to_string (Java.call "mypack.Colored.getColor():java.lang.String" jni_ref)
+    fun () -> JavaString.to_string (Java.call "mypack.Colored.getColor():java.lang.String" jni_ref)
   method setColor =
     fun _p0 ->
       let _p0 = JavaString.of_string _p0 in
@@ -193,7 +185,8 @@ class colored_point _p0 _p1 _p2 =
   let _p1 = Int32.of_int _p1 in
   let _p0 = Int32.of_int _p0 in
   let _p2 = JavaString.of_string _p2 in
-  let java_obj = Java.make "mypack.ColoredPoint(int,int,java.lang.String)" _p0 _p1 _p2
+  let java_obj = 
+    Java.make "mypack.ColoredPoint(int,int,java.lang.String)" _p0 _p1 _p2
   in object (self) inherit _capsule_jColoredPoint java_obj end
 
 class default_colored_point () =

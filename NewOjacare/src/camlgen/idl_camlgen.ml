@@ -95,12 +95,12 @@ let make c_file =
   let str_list = (MlClass.make_instance_of c_file) :: str_list in
 
   (** Tableaux *)
-  let str_list = (MlClass.make_array c_file) :: str_list in
+  (*let str_list = (MlClass.make_array c_file) :: str_list in*)
 
   (** fonction d'initialisation *)
-  let str_list = (MlInit.make_fun ~callback:false c_file) :: str_list in
+ (* let str_list = (MlInit.make_fun ~callback:false c_file) :: str_list in
   let str_list = (MlInit.make_fun ~callback:true c_file) :: str_list in
-
+ *)
   (** classe de construction *)
   let str_list = (MlInit.make_class ~callback:false c_file) :: str_list in
   let str_list = (MlInit.make_class ~callback:true c_file) :: str_list in

@@ -11,8 +11,8 @@ class Point {
   void moveto(int,int);
   void rmoveto(int,int);
   string toString();
-  int display(long);
-  long distance();
+  void display();
+  double distance();
   boolean eq(Point);
 
 }

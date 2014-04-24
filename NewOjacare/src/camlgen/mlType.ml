@@ -82,6 +82,10 @@ let java_signature args rtyp =
     (String.concat "," (List.map java_signature_of_type args))
     (java_signature_of_type rtyp)
 
+let java_init_signature args = 
+  Printf.sprintf "(%s)" 
+    (String.concat "," (List.map java_signature_of_type args))
+
 let idl_signature args  = 
     String.concat "," (List.map idl_signature_of_type args)
     
@@ -122,7 +126,7 @@ let rec ml_signature_of_type typ =
   | Cshort -> <:ctyp< int >>
   | Cint -> <:ctyp< int32 >>
   | Ccamlint -> <:ctyp< int >>
-  | Clong -> <:ctyp< int64 >>
+  | Clong -> <:ctyp< int >>
   | Cfloat -> <:ctyp< float >>
   | Cdouble -> <:ctyp< float >>
   | Cobject Cstring -> <:ctyp< string >> 
@@ -184,11 +188,14 @@ let get_call_method java_class_name java_name sign =
     
 let get_accessors_method java_class_name java_name typ =
   java_class_name^"."^java_name^":"^typ
-    
+
+let get_init_method java_class_name sign =
+  java_class_name^sign
 
 let rec convert_from_java typ e = (* to_ml_type *)
   match typ with
     |Cint -> <:expr< Int32.to_int $e$ >>
+    |Ccamlint -> <:expr< Int32.to_int $e$ >>
     |Clong -> <:expr< Int64.to_int $e$ >>
   | Cobject Cstring -> <:expr< JavaString.to_string $e$ >>
   | Cobject (Cname id) -> <:expr< (new $lid:Ident.get_class_ml_wrapper_name id$ $e$ : $lid:Ident.get_class_ml_name id$) >>

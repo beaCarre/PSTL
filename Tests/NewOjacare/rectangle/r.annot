@@ -1,0 +1,905 @@
+"r.ml" 19 650 673 "r.ml" 19 650 680
+type(
+  _jni_jPoint
+)
+"r.ml" 20 698 704 "r.ml" 20 698 705
+type(
+  unit
+)
+"r.ml" 21 708 715 "r.ml" 21 708 727
+type(
+  _jni_jPoint -> bool
+)
+ident(
+  ext_ref Java.is_null
+)
+"r.ml" 21 708 728 "r.ml" 21 708 735
+type(
+  _jni_jPoint
+)
+ident(
+  int_ref jni_ref "r.ml" 19 650 673 "r.ml" 19 650 680
+)
+"r.ml" 21 708 715 "r.ml" 21 708 735
+type(
+  bool
+)
+"r.ml" 21 708 741 "r.ml" 21 708 746
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"r.ml" 21 708 760 "r.ml" 21 708 774
+type(
+  string
+)
+"r.ml" 21 708 747 "r.ml" 21 708 775
+type(
+  exn
+)
+"r.ml" 21 708 741 "r.ml" 21 708 775
+type(
+  unit
+)
+"r.ml" 21 708 781 "r.ml" 21 708 783
+type(
+  unit
+)
+"r.ml" 21 708 712 "r.ml" 21 708 783
+type(
+  unit
+)
+"r.ml" 22 784 796 "r.ml" 22 784 802
+type(
+  < _get_jni_jPoint : _jni_jPoint; .. >
+)
+"r.ml" 22 784 828 "r.ml" 22 784 835
+type(
+  _jni_jPoint
+)
+type(
+  _jni_jPoint
+)
+"r.ml" 23 840 867 "r.ml" 23 840 874
+type(
+  _jni_jRectangleGr
+)
+"r.ml" 24 898 904 "r.ml" 24 898 905
+type(
+  unit
+)
+"r.ml" 25 908 915 "r.ml" 25 908 927
+type(
+  _jni_jRectangleGr -> bool
+)
+ident(
+  ext_ref Java.is_null
+)
+"r.ml" 25 908 928 "r.ml" 25 908 935
+type(
+  _jni_jRectangleGr
+)
+ident(
+  int_ref jni_ref "r.ml" 23 840 867 "r.ml" 23 840 874
+)
+"r.ml" 25 908 915 "r.ml" 25 908 935
+type(
+  bool
+)
+"r.ml" 26 936 945 "r.ml" 26 936 950
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"r.ml" 26 936 964 "r.ml" 26 936 984
+type(
+  string
+)
+"r.ml" 26 936 951 "r.ml" 26 936 985
+type(
+  exn
+)
+"r.ml" 26 936 945 "r.ml" 26 936 985
+type(
+  unit
+)
+"r.ml" 27 986 995 "r.ml" 27 986 997
+type(
+  unit
+)
+"r.ml" 25 908 912 "r.ml" 27 986 997
+type(
+  unit
+)
+"r.ml" 29 1003 1014 "r.ml" 29 1003 1020
+type(
+  < _get_jni_jRectangleGr : _jni_jRectangleGr;
+    compute_perimeter : unit -> int; toString : unit -> string; .. >
+)
+"r.ml" 31 1045 1057 "r.ml" 31 1045 1059
+type(
+  unit
+)
+"r.ml" 32 1063 1073 "r.ml" 32 1063 1093
+type(
+  java'lang'String java_instance -> string
+)
+ident(
+  ext_ref JavaString.to_string
+)
+"r.ml" 33 1094 1107 "r.ml" 33 1094 1116
+type(
+  (_jni_jRectangleGr -> java'lang'String java_instance) java_method ->
+  _jni_jRectangleGr -> java'lang'String java_instance
+)
+ident(
+  ext_ref Java.call
+)
+"r.ml" 33 1094 1117 "r.ml" 33 1094 1165
+type(
+  (_jni_jRectangleGr -> java'lang'String java_instance) java_method
+)
+"r.ml" 34 1166 1181 "r.ml" 34 1166 1188
+type(
+  _jni_jRectangleGr
+)
+"r.ml" 33 1094 1106 "r.ml" 34 1166 1189
+type(
+  java'lang'String java_instance
+)
+"r.ml" 32 1063 1073 "r.ml" 34 1166 1189
+type(
+  string
+)
+"r.ml" 31 1045 1053 "r.ml" 34 1166 1189
+type(
+  unit -> string
+)
+type(
+  unit -> string
+)
+"r.ml" 36 1223 1235 "r.ml" 36 1223 1237
+type(
+  unit
+)
+"r.ml" 37 1241 1251 "r.ml" 37 1241 1263
+type(
+  int32 -> int
+)
+ident(
+  ext_ref Int32.to_int
+)
+"r.ml" 38 1264 1277 "r.ml" 38 1264 1286
+type(
+  (_jni_jRectangleGr -> int32) java_method -> _jni_jRectangleGr -> int32
+)
+ident(
+  ext_ref Java.call
+)
+"r.ml" 38 1264 1287 "r.ml" 38 1264 1330
+type(
+  (_jni_jRectangleGr -> int32) java_method
+)
+"r.ml" 38 1264 1331 "r.ml" 38 1264 1338
+type(
+  _jni_jRectangleGr
+)
+"r.ml" 38 1264 1276 "r.ml" 38 1264 1339
+type(
+  int32
+)
+"r.ml" 37 1241 1251 "r.ml" 38 1264 1339
+type(
+  int
+)
+"r.ml" 36 1223 1231 "r.ml" 38 1264 1339
+type(
+  unit -> int
+)
+type(
+  unit -> int
+)
+"r.ml" 39 1340 1377 "r.ml" 39 1340 1384
+type(
+  _jni_jRectangleGr
+)
+type(
+  _jni_jRectangleGr
+)
+"r.ml" 41 1393 1421 "r.ml" 41 1393 1428
+type(
+  _jni_jRectangleGeo
+)
+"r.ml" 42 1453 1459 "r.ml" 42 1453 1460
+type(
+  unit
+)
+"r.ml" 43 1463 1470 "r.ml" 43 1463 1482
+type(
+  _jni_jRectangleGeo -> bool
+)
+ident(
+  ext_ref Java.is_null
+)
+"r.ml" 43 1463 1483 "r.ml" 43 1463 1490
+type(
+  _jni_jRectangleGeo
+)
+ident(
+  int_ref jni_ref "r.ml" 41 1393 1421 "r.ml" 41 1393 1428
+)
+"r.ml" 43 1463 1470 "r.ml" 43 1463 1490
+type(
+  bool
+)
+"r.ml" 44 1491 1500 "r.ml" 44 1491 1505
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"r.ml" 44 1491 1519 "r.ml" 44 1491 1540
+type(
+  string
+)
+"r.ml" 44 1491 1506 "r.ml" 44 1491 1541
+type(
+  exn
+)
+"r.ml" 44 1491 1500 "r.ml" 44 1491 1541
+type(
+  unit
+)
+"r.ml" 45 1542 1551 "r.ml" 45 1542 1553
+type(
+  unit
+)
+"r.ml" 43 1463 1467 "r.ml" 45 1542 1553
+type(
+  unit
+)
+"r.ml" 47 1559 1570 "r.ml" 47 1559 1576
+type(
+  < _get_jni_jRectangleGeo : _jni_jRectangleGeo; compute_area : unit -> int;
+    toString : unit -> string; .. >
+)
+"r.ml" 49 1605 1617 "r.ml" 49 1605 1619
+type(
+  unit
+)
+"r.ml" 50 1623 1633 "r.ml" 50 1623 1645
+type(
+  int32 -> int
+)
+ident(
+  ext_ref Int32.to_int
+)
+"r.ml" 51 1646 1659 "r.ml" 51 1646 1668
+type(
+  (_jni_jRectangleGeo -> int32) java_method -> _jni_jRectangleGeo -> int32
+)
+ident(
+  ext_ref Java.call
+)
+"r.ml" 51 1646 1669 "r.ml" 51 1646 1708
+type(
+  (_jni_jRectangleGeo -> int32) java_method
+)
+"r.ml" 51 1646 1709 "r.ml" 51 1646 1716
+type(
+  _jni_jRectangleGeo
+)
+"r.ml" 51 1646 1658 "r.ml" 51 1646 1717
+type(
+  int32
+)
+"r.ml" 50 1623 1633 "r.ml" 51 1646 1717
+type(
+  int
+)
+"r.ml" 49 1605 1613 "r.ml" 51 1646 1717
+type(
+  unit -> int
+)
+type(
+  unit -> int
+)
+"r.ml" 53 1742 1754 "r.ml" 53 1742 1756
+type(
+  unit
+)
+"r.ml" 54 1760 1770 "r.ml" 54 1760 1790
+type(
+  java'lang'String java_instance -> string
+)
+ident(
+  ext_ref JavaString.to_string
+)
+"r.ml" 55 1791 1804 "r.ml" 55 1791 1813
+type(
+  (_jni_jRectangleGeo -> java'lang'String java_instance) java_method ->
+  _jni_jRectangleGeo -> java'lang'String java_instance
+)
+ident(
+  ext_ref Java.call
+)
+"r.ml" 55 1791 1814 "r.ml" 55 1791 1863
+type(
+  (_jni_jRectangleGeo -> java'lang'String java_instance) java_method
+)
+"r.ml" 56 1864 1879 "r.ml" 56 1864 1886
+type(
+  _jni_jRectangleGeo
+)
+"r.ml" 55 1791 1803 "r.ml" 56 1864 1887
+type(
+  java'lang'String java_instance
+)
+"r.ml" 54 1760 1770 "r.ml" 56 1864 1887
+type(
+  string
+)
+"r.ml" 53 1742 1750 "r.ml" 56 1864 1887
+type(
+  unit -> string
+)
+type(
+  unit -> string
+)
+"r.ml" 57 1888 1926 "r.ml" 57 1888 1933
+type(
+  _jni_jRectangleGeo
+)
+type(
+  _jni_jRectangleGeo
+)
+"r.ml" 59 1944 1948 "r.ml" 59 1944 1961
+type(
+  top -> jPoint
+)
+ident(
+  def jPoint_of_top "r.ml" 61 2036 2036 "_none_" 1 0 -1
+)
+"r.ml" 59 1944 1963 "r.ml" 59 1944 1964
+type(
+  top
+)
+ident(
+  def o "r.ml" 59 1944 1972 "r.ml" 60 1983 2033
+)
+"r.ml" 60 1983 1985 "r.ml" 60 1983 2004
+type(
+  _jni_jPoint -> _capsule_jPoint
+)
+"r.ml" 60 1983 2006 "r.ml" 60 1983 2015
+type(
+  _jni_jPoint java_type -> top -> _jni_jPoint
+)
+ident(
+  ext_ref Java.cast
+)
+"r.ml" 60 1983 2016 "r.ml" 60 1983 2030
+type(
+  _jni_jPoint java_type
+)
+"r.ml" 60 1983 2031 "r.ml" 60 1983 2032
+type(
+  top
+)
+ident(
+  int_ref o "r.ml" 59 1944 1963 "r.ml" 59 1944 1964
+)
+"r.ml" 60 1983 2005 "r.ml" 60 1983 2033
+type(
+  _jni_jPoint
+)
+"r.ml" 60 1983 1985 "r.ml" 60 1983 2033
+call(
+  tail
+)
+type(
+  jPoint
+)
+type(
+  _capsule_jPoint
+)
+"r.ml" 61 2036 2040 "r.ml" 61 2036 2059
+type(
+  top -> jRectangleGr
+)
+ident(
+  def jRectangleGr_of_top "r.ml" 63 2152 2152 "_none_" 1 0 -1
+)
+"r.ml" 61 2036 2061 "r.ml" 61 2036 2062
+type(
+  top
+)
+ident(
+  def o "r.ml" 61 2036 2070 "r.ml" 62 2087 2149
+)
+"r.ml" 62 2087 2089 "r.ml" 62 2087 2114
+type(
+  _jni_jRectangleGr -> _capsule_jRectangleGr
+)
+"r.ml" 62 2087 2116 "r.ml" 62 2087 2125
+type(
+  _jni_jRectangleGr java_type -> top -> _jni_jRectangleGr
+)
+ident(
+  ext_ref Java.cast
+)
+"r.ml" 62 2087 2126 "r.ml" 62 2087 2146
+type(
+  _jni_jRectangleGr java_type
+)
+"r.ml" 62 2087 2147 "r.ml" 62 2087 2148
+type(
+  top
+)
+ident(
+  int_ref o "r.ml" 61 2036 2061 "r.ml" 61 2036 2062
+)
+"r.ml" 62 2087 2115 "r.ml" 62 2087 2149
+type(
+  _jni_jRectangleGr
+)
+"r.ml" 62 2087 2089 "r.ml" 62 2087 2149
+call(
+  tail
+)
+type(
+  jRectangleGr
+)
+type(
+  _capsule_jRectangleGr
+)
+"r.ml" 63 2152 2156 "r.ml" 63 2152 2176
+type(
+  top -> jRectangleGeo
+)
+ident(
+  def jRectangleGeo_of_top "r.ml" 65 2272 2272 "_none_" 1 0 -1
+)
+"r.ml" 63 2152 2178 "r.ml" 63 2152 2179
+type(
+  top
+)
+ident(
+  def o "r.ml" 63 2152 2187 "r.ml" 64 2205 2269
+)
+"r.ml" 64 2205 2207 "r.ml" 64 2205 2233
+type(
+  _jni_jRectangleGeo -> _capsule_jRectangleGeo
+)
+"r.ml" 64 2205 2235 "r.ml" 64 2205 2244
+type(
+  _jni_jRectangleGeo java_type -> top -> _jni_jRectangleGeo
+)
+ident(
+  ext_ref Java.cast
+)
+"r.ml" 64 2205 2245 "r.ml" 64 2205 2266
+type(
+  _jni_jRectangleGeo java_type
+)
+"r.ml" 64 2205 2267 "r.ml" 64 2205 2268
+type(
+  top
+)
+ident(
+  int_ref o "r.ml" 63 2152 2178 "r.ml" 63 2152 2179
+)
+"r.ml" 64 2205 2234 "r.ml" 64 2205 2269
+type(
+  _jni_jRectangleGeo
+)
+"r.ml" 64 2205 2207 "r.ml" 64 2205 2269
+call(
+  tail
+)
+type(
+  jRectangleGeo
+)
+type(
+  _capsule_jRectangleGeo
+)
+"r.ml" 65 2272 2276 "r.ml" 65 2272 2295
+type(
+  top -> bool
+)
+ident(
+  def _instance_of_jPoint "r.ml" 66 2343 2343 "_none_" 1 0 -1
+)
+"r.ml" 65 2272 2297 "r.ml" 65 2272 2298
+type(
+  top
+)
+ident(
+  def o "r.ml" 65 2272 2308 "r.ml" 65 2272 2340
+)
+"r.ml" 65 2272 2308 "r.ml" 65 2272 2323
+type(
+  mypack'Point java_instance java_type -> top -> bool
+)
+ident(
+  ext_ref Java.instanceof
+)
+"r.ml" 65 2272 2324 "r.ml" 65 2272 2338
+type(
+  mypack'Point java_instance java_type
+)
+"r.ml" 65 2272 2339 "r.ml" 65 2272 2340
+type(
+  top
+)
+ident(
+  int_ref o "r.ml" 65 2272 2297 "r.ml" 65 2272 2298
+)
+"r.ml" 65 2272 2308 "r.ml" 65 2272 2340
+type(
+  bool
+)
+"r.ml" 66 2343 2347 "r.ml" 66 2343 2372
+type(
+  top -> bool
+)
+ident(
+  def _instance_of_jRectangleGr "r.ml" 68 2428 2428 "_none_" 1 0 -1
+)
+"r.ml" 66 2343 2374 "r.ml" 66 2343 2375
+type(
+  top
+)
+ident(
+  def o "r.ml" 67 2385 2387 "r.ml" 67 2385 2425
+)
+"r.ml" 67 2385 2387 "r.ml" 67 2385 2402
+type(
+  mypack'RectangleGr java_instance java_type -> top -> bool
+)
+ident(
+  ext_ref Java.instanceof
+)
+"r.ml" 67 2385 2403 "r.ml" 67 2385 2423
+type(
+  mypack'RectangleGr java_instance java_type
+)
+"r.ml" 67 2385 2424 "r.ml" 67 2385 2425
+type(
+  top
+)
+ident(
+  int_ref o "r.ml" 66 2343 2374 "r.ml" 66 2343 2375
+)
+"r.ml" 67 2385 2387 "r.ml" 67 2385 2425
+type(
+  bool
+)
+"r.ml" 68 2428 2432 "r.ml" 68 2428 2458
+type(
+  top -> bool
+)
+ident(
+  def _instance_of_jRectangleGeo "r.ml" 70 2515 2515 "_none_" 1 0 -1
+)
+"r.ml" 68 2428 2460 "r.ml" 68 2428 2461
+type(
+  top
+)
+ident(
+  def o "r.ml" 69 2471 2473 "r.ml" 69 2471 2512
+)
+"r.ml" 69 2471 2473 "r.ml" 69 2471 2488
+type(
+  mypack'RectangleGeo java_instance java_type -> top -> bool
+)
+ident(
+  ext_ref Java.instanceof
+)
+"r.ml" 69 2471 2489 "r.ml" 69 2471 2510
+type(
+  mypack'RectangleGeo java_instance java_type
+)
+"r.ml" 69 2471 2511 "r.ml" 69 2471 2512
+type(
+  top
+)
+ident(
+  int_ref o "r.ml" 68 2428 2460 "r.ml" 68 2428 2461
+)
+"r.ml" 69 2471 2473 "r.ml" 69 2471 2512
+type(
+  bool
+)
+"r.ml" 70 2515 2527 "r.ml" 70 2515 2530
+type(
+  int
+)
+"r.ml" 70 2515 2531 "r.ml" 70 2515 2534
+type(
+  int
+)
+"r.ml" 71 2537 2543 "r.ml" 71 2537 2546
+type(
+  int32
+)
+"r.ml" 71 2537 2549 "r.ml" 71 2537 2561
+type(
+  int -> int32
+)
+ident(
+  ext_ref Int32.of_int
+)
+"r.ml" 71 2537 2562 "r.ml" 71 2537 2565
+type(
+  int
+)
+ident(
+  int_ref _p1 "r.ml" 70 2515 2531 "r.ml" 70 2515 2534
+)
+"r.ml" 71 2537 2549 "r.ml" 71 2537 2565
+type(
+  int32
+)
+"r.ml" 72 2566 2575 "r.ml" 72 2566 2578
+type(
+  int32
+)
+"r.ml" 72 2566 2581 "r.ml" 72 2566 2593
+type(
+  int -> int32
+)
+ident(
+  ext_ref Int32.of_int
+)
+"r.ml" 72 2566 2594 "r.ml" 72 2566 2597
+type(
+  int
+)
+ident(
+  int_ref _p0 "r.ml" 70 2515 2527 "r.ml" 70 2515 2530
+)
+"r.ml" 72 2566 2581 "r.ml" 72 2566 2597
+type(
+  int32
+)
+"r.ml" 73 2598 2609 "r.ml" 73 2598 2617
+type(
+  mypack'Point java_instance
+)
+"r.ml" 73 2598 2620 "r.ml" 73 2598 2629
+type(
+  (int32 -> int32 -> mypack'Point java_instance) java_constructor ->
+  int32 -> int32 -> mypack'Point java_instance
+)
+ident(
+  ext_ref Java.make
+)
+"r.ml" 73 2598 2630 "r.ml" 73 2598 2653
+type(
+  (int32 -> int32 -> mypack'Point java_instance) java_constructor
+)
+"r.ml" 73 2598 2654 "r.ml" 73 2598 2657
+type(
+  int32
+)
+ident(
+  int_ref _p0 "r.ml" 72 2566 2575 "r.ml" 72 2566 2578
+)
+"r.ml" 73 2598 2658 "r.ml" 73 2598 2661
+type(
+  int32
+)
+ident(
+  int_ref _p1 "r.ml" 71 2537 2543 "r.ml" 71 2537 2546
+)
+"r.ml" 73 2598 2620 "r.ml" 73 2598 2661
+type(
+  mypack'Point java_instance
+)
+"r.ml" 74 2662 2678 "r.ml" 74 2662 2684
+type(
+  < _get_jni_jPoint : _jni_jPoint; .. >
+)
+"r.ml" 74 2662 2709 "r.ml" 74 2662 2717
+type(
+  _jni_jPoint
+)
+ident(
+  int_ref java_obj "r.ml" 73 2598 2609 "r.ml" 73 2598 2617
+)
+"r.ml" 75 2724 2741 "r.ml" 75 2724 2744
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. >
+)
+"r.ml" 75 2724 2745 "r.ml" 75 2724 2748
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. >
+)
+"r.ml" 76 2751 2757 "r.ml" 76 2751 2760
+type(
+  mypack'Point java_extends
+)
+"r.ml" 76 2751 2763 "r.ml" 76 2751 2766
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. > as 'a
+)
+ident(
+  int_ref _p1 "r.ml" 75 2724 2745 "r.ml" 75 2724 2748
+)
+"r.ml" 76 2751 2763 "r.ml" 76 2751 2782
+call(
+  stack
+)
+type(
+  mypack'Point java_extends
+)
+"r.ml" 77 2783 2792 "r.ml" 77 2783 2795
+type(
+  mypack'Point java_extends
+)
+"r.ml" 77 2783 2798 "r.ml" 77 2783 2801
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. > as 'b
+)
+ident(
+  int_ref _p0 "r.ml" 75 2724 2741 "r.ml" 75 2724 2744
+)
+"r.ml" 77 2783 2798 "r.ml" 77 2783 2817
+call(
+  stack
+)
+type(
+  mypack'Point java_extends
+)
+"r.ml" 79 2825 2835 "r.ml" 79 2825 2843
+type(
+  mypack'RectangleGr java_instance
+)
+"r.ml" 80 2846 2854 "r.ml" 80 2846 2863
+type(
+  (mypack'Point java_extends ->
+   mypack'Point java_extends -> mypack'RectangleGr java_instance)
+  java_constructor ->
+  mypack'Point java_extends ->
+  mypack'Point java_extends -> mypack'RectangleGr java_instance
+)
+ident(
+  ext_ref Java.make
+)
+"r.ml" 80 2846 2864 "r.ml" 80 2846 2911
+type(
+  (mypack'Point java_extends ->
+   mypack'Point java_extends -> mypack'RectangleGr java_instance)
+  java_constructor
+)
+"r.ml" 80 2846 2912 "r.ml" 80 2846 2915
+type(
+  mypack'Point java_extends
+)
+ident(
+  int_ref _p0 "r.ml" 77 2783 2792 "r.ml" 77 2783 2795
+)
+"r.ml" 80 2846 2916 "r.ml" 80 2846 2919
+type(
+  mypack'Point java_extends
+)
+ident(
+  int_ref _p1 "r.ml" 76 2751 2757 "r.ml" 76 2751 2760
+)
+"r.ml" 80 2846 2854 "r.ml" 80 2846 2919
+type(
+  mypack'RectangleGr java_instance
+)
+"r.ml" 81 2920 2936 "r.ml" 81 2920 2942
+type(
+  < _get_jni_jRectangleGr : _jni_jRectangleGr;
+    compute_perimeter : unit -> int; toString : unit -> string; .. >
+)
+"r.ml" 81 2920 2973 "r.ml" 81 2920 2981
+type(
+  _jni_jRectangleGr
+)
+ident(
+  int_ref java_obj "r.ml" 79 2825 2835 "r.ml" 79 2825 2843
+)
+"r.ml" 82 2988 3003 "r.ml" 82 2988 3006
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. >
+)
+"r.ml" 82 2988 3007 "r.ml" 82 2988 3010
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. >
+)
+"r.ml" 83 3013 3019 "r.ml" 83 3013 3022
+type(
+  mypack'Point java_extends
+)
+"r.ml" 83 3013 3025 "r.ml" 83 3013 3028
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. > as 'a
+)
+ident(
+  int_ref _p1 "r.ml" 82 2988 3007 "r.ml" 82 2988 3010
+)
+"r.ml" 83 3013 3025 "r.ml" 83 3013 3044
+call(
+  stack
+)
+type(
+  mypack'Point java_extends
+)
+"r.ml" 84 3045 3054 "r.ml" 84 3045 3057
+type(
+  mypack'Point java_extends
+)
+"r.ml" 84 3045 3060 "r.ml" 84 3045 3063
+type(
+  < _get_jni_jPoint : mypack'Point java_extends; .. > as 'b
+)
+ident(
+  int_ref _p0 "r.ml" 82 2988 3003 "r.ml" 82 2988 3006
+)
+"r.ml" 84 3045 3060 "r.ml" 84 3045 3079
+call(
+  stack
+)
+type(
+  mypack'Point java_extends
+)
+"r.ml" 86 3087 3097 "r.ml" 86 3087 3105
+type(
+  mypack'RectangleGeo java_instance
+)
+"r.ml" 87 3108 3116 "r.ml" 87 3108 3125
+type(
+  (mypack'Point java_extends ->
+   mypack'Point java_extends -> mypack'RectangleGeo java_instance)
+  java_constructor ->
+  mypack'Point java_extends ->
+  mypack'Point java_extends -> mypack'RectangleGeo java_instance
+)
+ident(
+  ext_ref Java.make
+)
+"r.ml" 87 3108 3126 "r.ml" 87 3108 3174
+type(
+  (mypack'Point java_extends ->
+   mypack'Point java_extends -> mypack'RectangleGeo java_instance)
+  java_constructor
+)
+"r.ml" 87 3108 3175 "r.ml" 87 3108 3178
+type(
+  mypack'Point java_extends
+)
+ident(
+  int_ref _p0 "r.ml" 84 3045 3054 "r.ml" 84 3045 3057
+)
+"r.ml" 87 3108 3179 "r.ml" 87 3108 3182
+type(
+  mypack'Point java_extends
+)
+ident(
+  int_ref _p1 "r.ml" 83 3013 3019 "r.ml" 83 3013 3022
+)
+"r.ml" 87 3108 3116 "r.ml" 87 3108 3182
+type(
+  mypack'RectangleGeo java_instance
+)
+"r.ml" 88 3183 3199 "r.ml" 88 3183 3205
+type(
+  < _get_jni_jRectangleGeo : _jni_jRectangleGeo; compute_area : unit -> int;
+    toString : unit -> string; .. >
+)
+"r.ml" 88 3183 3237 "r.ml" 88 3183 3245
+type(
+  _jni_jRectangleGeo
+)
+ident(
+  int_ref java_obj "r.ml" 86 3087 3097 "r.ml" 86 3087 3105
+)

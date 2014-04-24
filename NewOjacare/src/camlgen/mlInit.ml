@@ -144,6 +144,12 @@ let make_class ~callback cl_list =
 	  let nargs = List.map (fun i -> ("_p"^string_of_int i)) 
 	      (Utilities.interval 0 (List.length targs)) in
 	  let args = List.combine nargs targs in
+	  
+	  let sign = MlType.java_init_signature targs in
+	  let java_name = Ident.get_method_java_name init.cmi_ident in 
+	  let java_class_name = Ident.get_class_java_qualified_name init.cmi_class in
+	  let call_method = MlType.get_init_method java_class_name sign in
+	  
 
 	  let class_decl = [ <:class_str_item< inherit $lid:class_wrapper_name$ $lid:java_obj$ >> ] in
 	  let class_decl =  
@@ -159,12 +165,10 @@ let make_class ~callback cl_list =
 	    <:class_expr< 
 	    object (self) $list:class_decl$
 	    end >> in
-
-	  let init_expr = MlGen.make_call <:expr< $lid:ml_init_name$>> (List.map P4helper.expr_lid (java_obj::nargs)) in 
-	  let body = if callback then body else <:class_expr< let _ = $init_expr$ in $body$>> in 
+	  
 	  let body = MlGen.make_class_local_decl 
-	      [java_obj,<:expr< $lid:class_allocator_name$ () >>] body in
-
+	      [java_obj, MlGen.make_call <:expr< Java.make $str:call_method$ >> (List.map P4helper.expr_lid (nargs))] body in
+	  let body = MlGen.make_class_local_decl (MlType.get_args_convertion MlType.convert_to_java args) body in
 	  let body = MlGen.make_class_fun nargs body in
 	  
 	  if callback then

@@ -12,8 +12,8 @@ class type jPoint =
     method moveto : int -> int -> unit
     method rmoveto : int -> int -> unit
     method toString : unit -> string
-    method display : int64 -> int
-    method distance : unit -> int64
+    method display : unit -> unit
+    method distance : unit -> float
     method eq : jPoint -> bool
   end
 and jColored =

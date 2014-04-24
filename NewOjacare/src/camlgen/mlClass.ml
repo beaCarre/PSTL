@@ -99,7 +99,7 @@ let make_alloc_stub cl_list =
   in
   P4helper.str_items (List.map make  (List.filter (fun cl -> cl.cc_callback ) cl_list))
 
-(** capsule / souche *************************************) (* TODO *)
+(** capsule / souche *************************************) (* B : ok, TODO char *)
 let make_wrapper ~callback cl_list =
   let clazz = "clazz"
   and java_obj = "jni_ref" in
@@ -141,7 +141,7 @@ let make_wrapper ~callback cl_list =
       <:class_str_item< method $lid:Ident.get_class_ml_jni_accessor_method_name cl.cc_ident$ = $lid:java_obj$ >> 
 	:: class_decl in
 
-    (* méthodes IDL *) (* TODO *)
+    (* méthodes IDL *) (* ok *)
     let method_ids, methods = 
      (* if callback then *) MlMethod.make_dyn clazz java_obj ~callback:callback cl.cc_public_methods
      (* else MlMethod.make_dyn clazz java_obj ~callback:callback cl.cc_methods *)
@@ -283,10 +283,11 @@ let make_downcast cl_list =
     let name = Ident.get_class_ml_name cl.cc_ident 
     and tname = Ident.get_class_ml_jni_type_name cl.cc_ident 
     and wname = Ident.get_class_ml_wrapper_name cl.cc_ident 
-    and sname = Ident.get_class_ml_name cl.cc_ident in
+    and sname = Ident.get_class_ml_name cl.cc_ident 
+    and java_name = Ident.get_class_java_qualified_name cl.cc_ident in
     (let body = 
-      <:expr< (new $lid:wname$ ($lid:"_"^tname^"_of_jni_obj" $ $lid:obj$#_get_jniobj) : $lid:sname$) >> in
-    let body = <:expr< fun ($lid:obj$ : JniHierarchy.top) -> $body$ >> in
+      <:expr< (new $lid:wname$ (Java.cast $str:java_name$ $lid:obj$) : $lid:sname$) >> in
+    let body = <:expr< fun ($lid:obj$ : top) -> $body$ >> in
     let fname = name^"_of_top" in
     <:str_item< value $lid:fname$ = $body$ >>)
     :: [] (*
@@ -306,7 +307,7 @@ let make_downcast_sig cl_list =
   let make cl =
     let name = Ident.get_class_ml_name cl.cc_ident in
     (let fname = name^"_of_top" in
-    <:sig_item< value $lid:fname$ : JniHierarchy.top -> $lid:name$ >>) 
+    <:sig_item< value $lid:fname$ : top -> $lid:name$ >>) 
     :: [] (*
       (List.map 
 	 (fun s -> 
@@ -323,11 +324,11 @@ let make_instance_of cl_list =
   and obj ="o"
   and clazz ="clazz" in
   let make cl =
-    let ml_name = Ident.get_class_ml_name cl.cc_ident in
+    let ml_name = Ident.get_class_ml_name cl.cc_ident
+    and java_name = Ident.get_class_java_qualified_name cl.cc_ident in
     let body = 
-      <:expr< Jni.is_instance_of $lid:obj$#_get_jniobj $lid:clazz$ >> in
-    let body = <:expr< fun ($lid:obj$ : JniHierarchy.top) -> $body$ >> in
-    let body = <:expr< let $lid:clazz$ = Jni.find_class $str:Ident.get_class_java_signature cl.cc_ident$ in $body$ >> in
+      <:expr< Java.instanceof $str:java_name$ $lid:obj$ >> in
+    let body = <:expr< fun ($lid:obj$ : top) -> $body$ >> in
     let name = "_instance_of_"^ml_name in
     [ <:str_item< value $lid:name$ = $body$ >> ]
   in
@@ -337,7 +338,7 @@ let make_instance_of_sig cl_list =
   let make cl =
     let ml_name = Ident.get_class_ml_name cl.cc_ident in
     let name = "_instance_of_"^ml_name in
-    [ <:sig_item< value $lid:name$ : JniHierarchy.top -> bool >> ]
+    [ <:sig_item< value $lid:name$ : top -> bool >> ]
   in
   P4helper.sig_items (List.concat (List.map make cl_list))
 

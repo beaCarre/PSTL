@@ -1,29 +1,28 @@
-#	$Id: Makefile,v 1.6 2004/03/28 02:45:09 henry Exp $
+#HOME
+JAVA_PATH=/usr/lib/jvm/java-7-oracle
+#ARI :
+#JAVA_PATH=/usr/lib/jvm/jdk1.7.0_07
 
-include ../Makefile.config
+JAVA=$(JAVA_PATH)/bin/java
+JAVAC=$(JAVA_PATH)/bin/javac
+OCAMLJAVA=ocamljava -java-extensions javalib.cmja
 
-# Nom de l'éxécutable
-EXEC = point
+CP=-annot -cp $(JAVA_PATH)/lib/ct.sym -cp mypack
 
-# Liste des fichiers IDL
-IDL       = p
+default: clean compile run
 
-# Liste des répertoires contenant les modules et bibliotèques Caml utilisées
-MLINCDIRS = 
+compile:
+	$(JAVAC) mypack/*.java
+	$(OCAMLJAVA) $(CP) -c p.mli
+	$(OCAMLJAVA) $(CP) -c p.ml
+	$(OCAMLJAVA) $(CP) -c main.ml
+	$(OCAMLJAVA) p.cmj main.cmj
 
-# Liste des modules Caml 
-MODULES   = 
+run:
+	$(JAVA) -cp camlprog.jar:. pack.ocamljavaMain
 
-# Liste des bibliothèques Caml à inclure à l'édition de lien
-LIBRARIES = 
+clean:
+	rm -f camlprog.jar *.cm* *.jo mypack/*.class *.annot
 
-# Liste des bibliothèques C à inclure à l'édition de lien
-CLIBS     = 
 
-# Liste des classes Java à compiler
-CLASS     = mypack/Point mypack/Colored mypack/ColoredPoint mypack/Cloud 
-
-# Liste des classes Java ayant l'attribut callback 
-CBCLASS   = mypack/ColoredPoint
-
-include $(OJACAREDIR)/Makefile.include
+.PHONY: default compile run clean

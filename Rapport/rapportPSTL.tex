@@ -7,7 +7,7 @@
 
 \usepackage{multicol}
 \usepackage{listings}
-
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \usepackage{color}
@@ -73,7 +73,12 @@
                     }
                   }
                   {} 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \title{
   \huge L'interopérabilité entre OCaml et Java\\
@@ -82,7 +87,7 @@
   Béatrice Carre \\
   beatrice.carre@etu.upmc.fr \\
   \\
-  encadrement par Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
+  encadrants : Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
 }
 
 \begin{document}
@@ -90,33 +95,50 @@
 \tableofcontents
 \newpage
 \section*{introduction}
-Deux approches ont déjà été étudiées pour l’interopérabilité entre
+Il arrive d'avoir envie de réutiliser des structures
+écrites dans un certain langage sans avoir à les réécrire complètement.
+Il peut arriver de vouloir d'utiliser l'efficacité et
+l'élégance du style fonctionnel d'Ocaml pour les calculs d'un
+programme mais aussi la portabilité du style objet de Java et la
+diversité de son API.
+
+C'est pourquoi l'interopérabilité est un problème intéressant.
+L'interopérabilité engenre beaucoup de questions sur la gestion de
+plusieurs éléments :
+le cohérence des types d'un langage à l'autre,
+la copie ou partage des valeurs d'un monde à l'autre,
+le passage des exceptions,
+la gestion automatique de la mémoire (GC), 
+et celle des caractéristiques de programmation pas forcément gérées dans les
+deux langages.
+
+Deux études ont déjà été réalisées pour l’interopérabilité entre
 Ocaml et Java à travers leur modèle object respectif :
 
-La première (O’Jacaré) conserve les runtimes des deux langages (GC,
+\emph{O’Jacaré} conserve les runtimes des deux langages (GC,
 Exceptions, ...) et les fait communiquer.
 
-La deuxième (ocaml-java 2.0) utilise un seul runtime, celui de Java, en
-compilant les programmes OCaml en byte-code Java.
+\emph{OCaml-java
+  2.0} utilise un seul runtime, celui de Java, en compilant les programmes OCaml en byte-code Java.
 \newline
 
-L'idée serait de pouvoir profiter des deux approches, l'accès direct à toute
+L'idée est de profiter des deux approches, l'accès direct à toute
 l'API Java grâce à OCaml-Java, et l'accès à d'autres classes définies
 par le programmeur intéressé, en générant le code nécessaire à cet
 accès grâce à O'Jacaré, et le tout en gardant qu'un seul runtime, la JVM.
 
 Après l’étude des deux outils, le projet consiste à engendrer pour
-ocaml-java les fichiers d’encapsulation et de callback d’O’Jacaré. Ce
-portage est réalisé en OCaml dans la mesure où il reprend ce qui
-avait été développé pour O’Jacaré. Mais une bonne connaissance du
-langage Java a aussi été nécessaire pour mener à bien ce projet.
+ocaml-java les fichiers d’encapsulation d'O’Jacaré. Ce
+portage est réalisé en OCaml étant donné qu'il reprend ce qui
+a déjà été développé pour O’Jacaré.
 \newline
 
 Dans ce rapport, nous décrivons le schéma global avec ses avantages du
 générateur de code d'O'Jacaré, et celui du compilateur d'Ocaml-Java,
 pour détailler ensuite les modifications apportées à la génération
-d'interfaces, adapté pour une encapsulation utilisable par le
-compilateur d'OCaml-Java.Pour finir, un exemple d'application accompagné d'un
+d'interfaces, adaptée pour une encapsulation utilisable par le
+compilateur d'OCaml-Java. 
+Pour finir, un exemple d'application accompagnée d'un
 test de performance sera présenté.
 
 
@@ -128,28 +150,39 @@ test de performance sera présenté.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   O'Jacaré   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 
-\section{O'Jacaré, un générateur de code d'interface}
-O'Jacaré génère le code nécessaire à l'encapsulation des classes définies dans l'IDL, pour per
+\section{L'interopérabilité entre OCaml et Java}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.1  O'Jacaré   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{O'Jacaré, un générateur de code d'interface}
+O'Jacaré génère le code nécessaire à l'encapsulation des classes
+définies dans un IDL, pour permettre aux interface avec C de chacunes
+de comminuquer.
 
 La génération de code se fait en plusieurs passes :
 \begin{itemize}
-\item analyse lexicale et analyse syntaxique de l' idl donnant un
-  ast de type Idl.file.
-\item vérification des types de l'ast, donnant un nouvel ast de type
-  CIdl.file.
+\item analyse lexicale et analyse syntaxique de l' idl donnant un AST.
+\item vérification des types de l'AST, donnant un nouvel arbre nommé
+  CAST (Checked AST).
 \item la génération des fichiers stub java nécessaires pour un appel callback 
-\item la génération à partir de l'ast CIdl.file du fichier .ml
-\item la génération à partir du CIdl.file du fichier .mli
+\item la génération à partir du CAST des classes encapsulantes dans un fichier .ml
+\item la génération à partir du CAST du module .mli adapté
 \end{itemize}
 Ces différentes étapes seront présentées plus en profondeur.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics{schemaOjacare.pdf}
+  \caption{Schéma global de la génération d'O'Jacaré}
+\end{figure}
 
-\subsection{La syntaxe de l'idl}
+
+\subsubsection{La syntaxe de l'idl}
 L'IDL est défini pour la construction des interfaces entreO'Caml et
 Java, il est donc défini en s'approchant de l'intersection des deux
-mondes objet
+mondes objet ( TODO : A completer : definir cette intersection )
 
 La syntaxe du langage d'interface est donné en annexe, en utilisant la
 notation BNF.
@@ -158,22 +191,22 @@ Les symboles < et > encadrent des règles optionnelles,
 les terminaux sont en bleu, et les non-terminaux sont en italique.
 
 
-\subsection{Analyse lexical, syntaxique et sémantique}
+\subsubsection{Analyse lexical, syntaxique et sémantique}
 La première phase est celle d'analyse lexicale et syntaxique,
-séparant l'idl en lexèmes et construisant l'AST, défini par Idl.file,
+séparant l'idl en lexèmes et construisant l'AST, défini en annexe par Idl.file,
 dont la structure est définie en annexe.
 
 Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
 phase précédente, vérifiant si le programme est correct, et
 
 construisant une liste de CIdl.clazz, restructurant chaque classe ou interface définie dans l'idl. 
-Le module Cidl définit le nouvel AST allant être manipulé dans les passes de
+Le module Cidl définit le nouvel AST nommé CAST allant être manipulé dans les passes de
 génération de code. Il est décrit en annexe.
 
-\subsection{génération stub\_file}
+\subsubsection{génération stub\_file}
 pour callback : génération java
 
-\subsection{génération des classes encapsulantes}
+\subsubsection{génération des classes encapsulantes}
 
 Type jni
 
@@ -196,26 +229,35 @@ Classe de construction
 
 fonctions / methodes static
 
-\subsection{génération .mli}
-
-
-
-\subsection{compilation par camljava}
-interfacage C, 2 runtimes, Jni, 
+\subsubsection{compilation par camljava}
+interfacage C, 2 runtimes, destiné à Jni, 
 
 
 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.2  OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\section{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
+\subsection{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
+intro TODO presentation
 
-\subsection{Accès à du code Java}
+\begin{figure}[h]
+  \centering
+  \includegraphics{schemaOCamlJava.pdf}
+  \caption{Schéma global du compilateur d'OCaml-Java}
+\end{figure}
+
+\subsubsection{Accès à du code Java}
 \noindent
-Description des types manipulés par OCaml-Java.  
+Description des types manipulés par OCaml-Java permettant un accès au
+monde de Java depuis celui d'OCaml.  
 
 \begin{tabular}{|l|l|}
   \hline
@@ -245,14 +287,43 @@ Description des types manipulés par OCaml-Java.
 Description du module Java
 
 \begin{OCamlEx}
-make : 'a java_constructor -> 'a
-call : 'a java_method -> 'a
-get : 'a java_field_get -> 'a
-set : 'a java_field_set -> 'a
+make : 'a java_constructor -> 'a (* crée une instance d'objet *)
+call : 'a java_method -> 'a (* appelle d'une méthode *)
+get : 'a java_field_get -> 'a (* accès à un champ, statique ou non *)
+set : 'a java_field_set -> 'a (* modification du champ non statique
+d'une instance d'objet *)
+is_null : 'a java_instance -> bool (* teste si une instance est égale à null*)
 instanceof : 'a java_type -> 'b java_instance -> bool
 cast : 'a java_type -> 'b java_instance -> 'a
 proxy : 'a java_proxy -> 'a
 \end{OCamlEx}
+Une exception est définie dans le module pour permettre d'attraper les
+exceptions du côté OCaml :
+\begin{OCamlEx}
+exception Java_exception of java'lang'Throwable java_instance
+\end{OCamlEx}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.3  PROBLEME, IDEE de solution   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{profiter des deux approches}
+O'Jacaré construit les classes encapsulantes de classes
+java définies par l'utilisateur, et permet ainsi l'accès aux méthodes
+(d'instance ou de classe) Java en OCaml en passant par l'interface de bas niveau CamlJava.
+Cette interface de bas-niveau 
+
+OCaml-Java permet l'accès à toute l'API Java depuis OCaml TODO
+
+
+\ 
+\newline
+Solution problèmes : TODO
+- gestion de la surchage (absente en OCaml) -> renommage obligatoire
+dans IDL.
+- 2 runtimes vs 1 seul (-> résoud pd de communication GC et exceptions)
+- gestion du typage (statype en OCaml vs dynamique en Java)
+-
 
 
 
@@ -261,10 +332,10 @@ proxy : 'a java_proxy -> 'a
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%   SCHEMAS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  2  REALISATION   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Réalisation}
+\section{Portage d'O'Jacaré pour OCaml-Java}
 
 \subsection{schémas de compilation actuels d'O'Jacaré}
 
@@ -287,44 +358,7 @@ $\Delta$ = [] : les interfaces qu'\textbf{implements} la classe courante.
 \ %%   \rho,\Lambda,\gamma,\theta,\alpha,\delta,\Delta
 \newline
 \noindent
-Et les fonctions suivantes :
 
-init\_env () : réinitialise toutes les variables d'environnement 
-
-init\_class\_env () : réinitialise toutes les variables d'environnement sauf $\rho$.
-
-hd(elt*) : rend le premier élément de la list elt*.
-
-tl(elt*) : rend la liste elt* privée de son premier élément.
-
-\begin{multicols}{2}
-\textbf{file}
-\newline
-\noindent
-$[\![ package^* ]\!]$$\longrightarrow$
-
-$[\![ hd(package^*) ]\!]$
-\begin{OCaml}
-   init_env ();
-\end{OCaml} 
-
-$[\![ tl(package^*) ]\!]$ 
-\newline
-\ 
-\newline
-\noindent
-$[\![ decl^* ]\!]$$\longrightarrow$
-% classes et interfaces sans package
-
-$[\![ hd(decl^*) ]\!]$
-\begin{OCaml}
-   init_class_env ();
-\end{OCaml} 
-
-$[\![ tl(decl^*) ]\!]$ 
-\newline
-\ 
-\newline
 
 \textbf{package}
 \newline
@@ -353,7 +387,6 @@ $[\![{\color{blue}class}\  name ]\!]_{\rho,\Lambda=name,\gamma=true}$
 $[\![$[$ {\color{blue}callabck}$]${\color{blue} class}\  name ]\!]_{\rho,\Lambda,\gamma,\theta,\alpha}$$\longrightarrow$
 
 $[\![{\color{blue}class}\  name ]\!]_{\rho,\Lambda=name,\gamma,\theta=true,\alpha}$
-\end{multicols}
 
 \ 
 \newpage
@@ -396,8 +429,8 @@ $\Delta=[I1,I2,I3]$
 "type _jni_jCLASS = Jni.obj"
 
 (** classe encapsulante *)
-"class type jCLASS =
-   object inherit E
+"class type jCLASS = object 
+   inherit E
    inherits jI1
    inherits jI2 ...
    method _get_jni_jCLASS : _jni_jCLASS
@@ -474,7 +507,7 @@ Ce tableau représente le résultat des fonctions str, jni\_type, getJni, cast s
   \hline
   TYPE & str & jni\_type & getJni & cast \\
   \hline
-  void & " "||V & & & \\
+  void & V & & & \\
   boolean & Z & Jni.Boolean \_pi & \_pi  & \_pi \\
   byte & B & Jni.Byte \_pi & \_pi & \_pi \\
   char & C & Jni.Char \_pi & \_pi & \_pi \\
@@ -495,15 +528,13 @@ Ce tableau représente le résultat des fonctions str, jni\_type, getJni, cast s
 \noindent
 $[\![$[$ {\color{blue}name}\ INIT $]${\color{blue} <init>} (A0,
     A1, ...)]\!]_{}$$\longrightarrow$
-% 
 
 \begin{OCaml}
 "let _init_INIT =
   let id = Jni.get_methodID clazz \"<init>\" 
             \"("(toStr A0)(toStr A1)...")V\"
   in
-    fun (java_obj : _jni_jCLASS) "(cast A0) (cast A1) ..." -> 
-      ...
+    fun (java_obj : _jni_jCLASS) "(cast A0) (cast A1) ..." -> ...
       let _p1 = "(getJni A1)" in
       let _p0 = "(getJni A0)" in
       Jni.call_nonvirtual_void_method java_obj clazz id 
