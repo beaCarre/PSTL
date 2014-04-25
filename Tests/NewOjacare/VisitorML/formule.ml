@@ -517,7 +517,7 @@ class visiteurTS () =
   in object (self) inherit _capsule_jVisiteurTS java_obj end;;
 
 let fr_upmc_infop6_mlo_jMainJava__main =
-
     fun (_p0 : jMainML) ->
       let _p0 = _p0#_get_jni_jMainML
-      in Java.call"fr.upmc.infop6.mlo.MainJava.main(fr.upmc.infop6.mlo.MainML):void" () _p0 ;;
+      in 
+	(Java.call "fr.upmc.infop6.mlo.MainJava.main(fr.upmc.infop6.mlo.MainML):void" _p0) ;;
