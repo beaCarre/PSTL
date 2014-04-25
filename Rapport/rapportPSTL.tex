@@ -94,7 +94,8 @@
 \maketitle
 \tableofcontents
 \newpage
-\section*{introduction}
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 Il arrive d'avoir envie de réutiliser des structures
 écrites dans un certain langage sans avoir à les réécrire complètement.
 Il peut arriver de vouloir d'utiliser l'efficacité et
@@ -116,10 +117,10 @@ Deux études ont déjà été réalisées pour l’interopérabilité entre
 Ocaml et Java à travers leur modèle object respectif :
 
 \emph{O’Jacaré} conserve les runtimes des deux langages (GC,
-Exceptions, ...) et les fait communiquer.
+Exceptions, ...) et les fait communiquer avec l'aide de CamlJava, TODO.
 
 \emph{OCaml-java
-  2.0} utilise un seul runtime, celui de Java, en compilant les programmes OCaml en byte-code Java.
+  2.0} utilise un seul runtime, celui de Java, en compilant les programmes OCaml en byte-code Java. TODO.
 \newline
 
 L'idée est de profiter des deux approches, l'accès direct à toute
@@ -161,6 +162,18 @@ O'Jacaré génère le code nécessaire à l'encapsulation des classes
 définies dans un IDL, pour permettre aux interface avec C de chacunes
 de comminuquer.
 
+\subsubsection{Principe global}
+O'Jacaré génère des fichier permettant à CamlJava de faire communiquer les deux mondes. 
+CamlJava est une interface bas-niveau basée sur les interfaces de chaque langage avec C : la JNI (Java Native Interface) et external.
+
+O'Jacaré permet à OCaml (resp. Java) d'accéder aux classes Java (resp. OCaml) grâce aux capsules (resp. stub) générées, qui contrôlent la communication à travers l'interface Camljava.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{schemaCamljava2.pdf}
+  \caption{Schéma global de la communication par Camljava}
+\end{figure}
+
 La génération de code se fait en plusieurs passes :
 \begin{itemize}
 \item analyse lexicale et analyse syntaxique de l' idl donnant un AST.
@@ -178,7 +191,7 @@ Ces différentes étapes seront présentées plus en profondeur.
   \caption{Schéma global de la génération d'O'Jacaré}
 \end{figure}
 
-
+\newpage
 \subsubsection{La syntaxe de l'idl}
 L'IDL est défini pour la construction des interfaces entreO'Caml et
 Java, il est donc défini en s'approchant de l'intersection des deux
@@ -287,12 +300,12 @@ monde de Java depuis celui d'OCaml.
 Description du module Java
 
 \begin{OCamlEx}
-make : 'a java_constructor -> 'a (* crée une instance d'objet *)
-call : 'a java_method -> 'a (* appelle d'une méthode *)
-get : 'a java_field_get -> 'a (* accès à un champ, statique ou non *)
+make : 'a java_constructor -> 'a (* cree une instance d'objet *)
+call : 'a java_method -> 'a (* appelle d'une methode *)
+get : 'a java_field_get -> 'a (* acces a un champ, statique ou non *)
 set : 'a java_field_set -> 'a (* modification du champ non statique
 d'une instance d'objet *)
-is_null : 'a java_instance -> bool (* teste si une instance est égale à null*)
+is_null : 'a java_instance -> bool (* teste si une instance est egale a null*)
 instanceof : 'a java_type -> 'b java_instance -> bool
 cast : 'a java_type -> 'b java_instance -> 'a
 proxy : 'a java_proxy -> 'a
@@ -336,6 +349,13 @@ dans IDL.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  2  REALISATION   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Portage d'O'Jacaré pour OCaml-Java}
+
+
+\subsection{}
+
+
+
+
 
 \subsection{schémas de compilation actuels d'O'Jacaré}
 
@@ -662,7 +682,7 @@ callback
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   newOjacare   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Génération de code pour Ocaml-Java}
-L'idée est de partir de 
+ 
 Le type top manipulé sera le type d'instance objet de Ocaml-Java :
 \begin{OCamlEx}
 type top = java'lang'Object java_instance;;
@@ -904,6 +924,7 @@ $[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
 \end{OCaml}
 
 
+\section{Application et performance}
 
 
 
@@ -911,9 +932,8 @@ $[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
 
 
 
-
-
-
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
 
 
 
@@ -927,7 +947,8 @@ $[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   BIBLIOGRAPHIE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\section{Bibliographie, références}
+\section*{Bibliographie, références}
+\addcontentsline{toc}{section}{Bibliographie, références}
 [1] CHAILLOUX E., MANOURY P., PAGANO B., \emph{Développement
   d'applications avec Objective Caml}, O'Reilly
 , 2000, (\url{http://www.oreilly.fr/catalogue/ocaml.html})
@@ -966,7 +987,8 @@ Functional Programming,
 
 
 \newpage
-\section{Annexe}
+\section*{Annexe}
+\addcontentsline{toc}{section}{Annexe}
 
 
 \subsection*{BNF}
@@ -1099,7 +1121,7 @@ type mmethod = {
 \end{OCaml}
 \ 
 
-\subsection*{idl\_camlgen.make ast}
+\subsection*{phases de }
 \ 
 \newline
 Type jni

@@ -517,15 +517,7 @@ class visiteurTS () =
   in object (self) inherit _capsule_jVisiteurTS java_obj end;;
 
 let fr_upmc_infop6_mlo_jMainJava__main =
-  let clazz = Jni.find_class "fr/upmc/infop6/mlo/MainJava" in
-  let id =
-    try
-      Jni.get_static_methodID clazz "main" "(fr.upmc.infop6.mlo.MainML):void"
-    with
-    | _ ->
-        failwith
-          "Unknown static method from IDL in class \"fr.upmc.infop6.mlo.MainJava\" : \"void main(fr.upmc.infop6.mlo.MainML)\"."
-  in
+
     fun (_p0 : jMainML) ->
       let _p0 = _p0#_get_jni_jMainML
-      in Java.call_static_void_method clazz id [| Obj _p0 |];;
+      in Java.call"fr.upmc.infop6.mlo.MainJava.main(fr.upmc.infop6.mlo.MainML):void" () _p0 ;;
