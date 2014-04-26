@@ -4,7 +4,7 @@ class Image { }
 
 package mypack;
 
-[name ml_dvi, callback] interface MlDvi {
+[name ml_dvi] interface MlDvi {
   void run(string, GrView, GrControler);
 }
 

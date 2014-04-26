@@ -1,0 +1,5 @@
+package mypack;
+
+class GraphicDB {
+  [name graphicDB] <init> (string, [array]string, [array,array]string);
+}

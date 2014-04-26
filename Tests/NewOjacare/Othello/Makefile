@@ -1,6 +1,6 @@
-PACK=fr/upmc/infop6/mlo
-NAME=formule
-MAIN=main-visitorML
+PACK=src
+NAME=othello
+MAIN=main-othello
 
 #HOME
 JAVA_PATH=/usr/lib/jvm/java-7-oracle

@@ -1,14 +1,17 @@
 open Formule
 open Format
+let jni : fr'upmc'infop6'mlo'VisiteurML java_instance ref = ref Java.null
 
-let visiteur_ml = 
+let _ =
+jni :=
   Java.proxy "fr.upmc.infop6.mlo.VisiteurML" (
     object (self)
       val buf = Buffer.create 80
 
-    (*  method _get_jni_jVisiteur = *)
+      method _get_jni_jVisiteur = Obj.magic !jni
+      method _get_jni_jVisiteurML = Obj.magic !jni
 
-      method visite_cst cst = 
+      method visite_cst (cst = 
 	Buffer.add_string buf (if cst#valeur () then "true" else "false")
 
       method visite_var var = 
@@ -45,6 +48,9 @@ let visiteur_ml =
 
     end)
 
+(*
+let visiteur_ml = 
+
 let mainML =
   Java.proxy "fr.upmc.infop6.mlo.MainML" (
     object
@@ -53,3 +59,4 @@ let mainML =
     end)
 
 let _ = fr_upmc_infop6_mlo_jMainJava__main ( mainML :> jMainML)
+*)

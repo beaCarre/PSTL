@@ -1,6 +1,7 @@
-PACK=fr/upmc/infop6/mlo
-NAME=formule
-MAIN=main-visitorML
+PACK=mypack
+NAME=jdb
+MAIN=db
+TEST=db_test
 
 #HOME
 JAVA_PATH=/usr/lib/jvm/java-7-oracle
@@ -19,8 +20,10 @@ compile:
 	$(JAVAC) $(PACK)/*.java
 	$(OCAMLJAVA) $(CP) -c $(NAME).mli
 	$(OCAMLJAVA) $(CP) -c $(NAME).ml
+	$(OCAMLJAVA) $(CP) -c $(MAIN).mli
 	$(OCAMLJAVA) $(CP) -c $(MAIN).ml
-	$(OCAMLJAVA) $(NAME).cmj $(MAIN).cmj
+	$(OCAMLJAVA) $(CP) -c $(TEST).ml
+	$(OCAMLJAVA) $(NAME).cmj $(MAIN).cmj $(TEST).cmj
 
 run:
 	$(JAVA) -cp camlprog.jar:. pack.ocamljavaMain
