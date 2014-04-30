@@ -9,6 +9,8 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
 
 \usepackage{color}
 \definecolor{lightgray}{rgb}{.9,.9,.9}
@@ -73,7 +75,23 @@
                     }
                   }
                   {} 
-
+\lstnewenvironment{idlEx}
+                  {\lstset{
+                      language=idlgrammar,
+                      breaklines=true,
+                      showstringspaces=false,
+                      commentstyle=\color{red},
+                      stringstyle=\color{darkgray},
+                      identifierstyle=\ttfamily\textit,
+                      keywordstyle=\color{blue},
+                      basicstyle=\footnotesize,
+                     escapeinside={/*}{*/},
+                      frame=single,
+                      numbers=left,
+                      %xleftmargin=0.08\textwidth
+                    }
+                  }
+                  {}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,63 +102,89 @@
   \huge L'interopérabilité entre OCaml et Java\\
 }
 \author{
-  Béatrice Carre \\
+  Béatrice Carré \\
   beatrice.carre@etu.upmc.fr \\
   \\
-  encadrants : Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
+  Encadrants : Emmanuel Chailloux, Xavier Clerc et Grégoire Henry \\
 }
 
 \begin{document}
 \maketitle
 \tableofcontents
 \newpage
+
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Il arrive d'avoir envie de réutiliser des structures
-écrites dans un certain langage sans avoir à les réécrire complètement.
-Il peut arriver de vouloir d'utiliser l'efficacité et
-l'élégance du style fonctionnel d'Ocaml pour les calculs d'un
-programme mais aussi la portabilité du style objet de Java et la
+Il est parfois utile de réutiliser des structures
+écrites dans un certain langage sans avoir à les réécrire entièrement.
+Il peut arriver de vouloir utiliser l'efficacité et
+l'élégance du style fonctionnel d'Ocaml dans un
+programme autant que la portabilité du style objet de Java et la
 diversité de son API.
 
 C'est pourquoi l'interopérabilité est un problème intéressant.
-L'interopérabilité engenre beaucoup de questions sur la gestion de
+Mais elle engendre beaucoup de questions sur la gestion de
 plusieurs éléments :
-le cohérence des types d'un langage à l'autre,
-la copie ou partage des valeurs d'un monde à l'autre,
+la cohérence des types d'un langage à l'autre,
+la copie ou le partage des valeurs d'un monde à l'autre,
 le passage des exceptions,
 la gestion automatique de la mémoire (GC), 
-et celle des caractéristiques de programmation pas forcément gérées dans les
+et des caractéristiques de programmation qui ne sont pas forcément gérées par les
 deux langages.
+
+OCaml et Java comportent des différences entre leur modèles
+objet, comme le montre le tableau ci-dessous, il donc est nécessaire
+de réduire l'étude à leur l'intersection.
+
+\ 
+\newline
+\noindent
+\begin{tabular}{|l|c|c|c|c|}
+  \hline
+  \emph{caractéristiques} & \emph{Java} & \emph{OCaml} \\
+  \hline
+  accès champs & selon la visibilité & via appels de méthode\\\hline
+  variables/méthodes statiques & \checkmark & fonctions/décl. globales\\\hline
+  typage dynamique & \checkmark & pas de downcast \\\hline
+  héritage $\equiv$ sous-typage ? &\checkmark  & $\times$ \\\hline
+  surcharge & \checkmark & $\times$ \\\hline
+  héritage multiple & seulement pour les interfaces & \checkmark\\
+  \hline
+  packetages/modules & pas de modules paramétrés & \checkmark\\\hline
+\end{tabular}
 
 Deux études ont déjà été réalisées pour l’interopérabilité entre
 Ocaml et Java à travers leur modèle object respectif :
 
-\emph{O’Jacaré} conserve les runtimes des deux langages (GC,
-Exceptions, ...) et les fait communiquer avec l'aide de CamlJava, TODO.
+\emph{O’Jacaré (et Camljava)} conserve les runtimes des deux langages (GC,
+Exceptions, ...) et les fait communiquer par l'interface camljava,
+avec l'aide de classes encapsulantes générées par O'Jacaré.
 
 \emph{OCaml-java
-  2.0} utilise un seul runtime, celui de Java, en compilant les programmes OCaml en byte-code Java. TODO.
+  2.0} utilise un seul runtime, en compilant le OCaml en byte-code
+Java. La manipulation des classes Java se fait à l'aide de nouveaux types introduits.
 \newline
 
-L'idée est de profiter des deux approches, l'accès direct à toute
-l'API Java grâce à OCaml-Java, et l'accès à d'autres classes définies
-par le programmeur intéressé, en générant le code nécessaire à cet
-accès grâce à O'Jacaré, et le tout en gardant qu'un seul runtime, la JVM.
+L'idée est de profiter des deux approches : d'une part, d'un accès simple à des classes
+définies, en générant le code nécessaire à cet accès grâce à O'Jacaré
+et d'autre part de l'accès direct à toute
+l'API Java en ne gardant qu'un seul runtime, la
+JRE, grâce à OCaml-Java
 
 Après l’étude des deux outils, le projet consiste à engendrer pour
 ocaml-java les fichiers d’encapsulation d'O’Jacaré. Ce
 portage est réalisé en OCaml étant donné qu'il reprend ce qui
-a déjà été développé pour O’Jacaré.
+a déjà été développé pour O’Jacaré. Cette adaptation ne gère pas, pour
+le moment, les appels de Java vers OCaml (callback), ainsi que les tableaux.
 \newline
 
-Dans ce rapport, nous décrivons le schéma global avec ses avantages du
-générateur de code d'O'Jacaré, et celui du compilateur d'Ocaml-Java,
-pour détailler ensuite les modifications apportées à la génération
-d'interfaces, adaptée pour une encapsulation utilisable par le
-compilateur d'OCaml-Java. 
-Pour finir, un exemple d'application accompagnée d'un
-test de performance sera présenté.
+Dans ce rapport, nous décrivons le schéma global du
+générateur de code d'O'Jacaré, et celui du compilateur d'Ocaml-Java
+pour en faire ressortir les avantages d'un portage d'O'Jacaré pour OCaml-Java.
+Nous détaillons par la suite les modifications apportées à la
+génération d'interfaces, adaptée pour une encapsulation utilisable par
+le compilateur d'OCaml-Java.
+Pour finir, un exemple d'application vous sera présenté.
 
 
 
@@ -158,15 +202,21 @@ test de performance sera présenté.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.1  O'Jacaré   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{O'Jacaré, un générateur de code d'interface}
-O'Jacaré génère le code nécessaire à l'encapsulation des classes
-définies dans un IDL, pour permettre aux interface avec C de chacunes
-de comminuquer.
+
+
 
 \subsubsection{Principe global}
-O'Jacaré génère des fichier permettant à CamlJava de faire communiquer les deux mondes. 
-CamlJava est une interface bas-niveau basée sur les interfaces de chaque langage avec C : la JNI (Java Native Interface) et external.
+O'Jacaré génère le code nécessaire à l'encapsulation des classes
+définies dans un IDL, pour permettre aux interfaces avec C de chacunes
+de communiquer.
 
-O'Jacaré permet à OCaml (resp. Java) d'accéder aux classes Java (resp. OCaml) grâce aux capsules (resp. stub) générées, qui contrôlent la communication à travers l'interface Camljava.
+L'appel à des classes et méthodes Java est alors possible en appelant
+les méthodes de la capsule générée, qui va gérer l'appel aux classes
+Java par le biais de l'interface camlJava.
+Les stubs générés par le callback vont permettre avec le même
+principe, les appels dans l'autre sens.
+
+CamlJava est une interface bas-niveau basée sur les interfaces de chaque langage avec C : la JNI (Java Native Interface) et external.
 
 \begin{figure}[h]
   \centering
@@ -183,7 +233,8 @@ La génération de code se fait en plusieurs passes :
 \item la génération à partir du CAST des classes encapsulantes dans un fichier .ml
 \item la génération à partir du CAST du module .mli adapté
 \end{itemize}
-Ces différentes étapes seront présentées plus en profondeur.
+Ces différentes étapes seront présentées plus en profondeur dans la
+partie 2.1.
 
 \begin{figure}[h]
   \centering
@@ -192,58 +243,39 @@ Ces différentes étapes seront présentées plus en profondeur.
 \end{figure}
 
 \newpage
-\subsubsection{La syntaxe de l'idl}
-L'IDL est défini pour la construction des interfaces entreO'Caml et
-Java, il est donc défini en s'approchant de l'intersection des deux
-mondes objet ( TODO : A completer : definir cette intersection )
 
-La syntaxe du langage d'interface est donné en annexe, en utilisant la
-notation BNF.
-
-Les symboles < et > encadrent des règles optionnelles,
-les terminaux sont en bleu, et les non-terminaux sont en italique.
-
-
-\subsubsection{Analyse lexical, syntaxique et sémantique}
-La première phase est celle d'analyse lexicale et syntaxique,
-séparant l'idl en lexèmes et construisant l'AST, défini en annexe par Idl.file,
-dont la structure est définie en annexe.
-
-Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
-phase précédente, vérifiant si le programme est correct, et
-
-construisant une liste de CIdl.clazz, restructurant chaque classe ou interface définie dans l'idl. 
-Le module Cidl définit le nouvel AST nommé CAST allant être manipulé dans les passes de
-génération de code. Il est décrit en annexe.
-
-\subsubsection{génération stub\_file}
-pour callback : génération java
-
-\subsubsection{génération des classes encapsulantes}
-
-Type jni
-
-Class type
-
-Cast JNI (up et down)
-
-Fonction d'allocation
-
-Capsule / souche
-
-Downcast utilisateur (
-\_downcast,
-\_instance\_of)
-
-Tableaux
-
-Fonction d'initialisation
-Classe de construction
-
-fonctions / methodes static
-
+\subsubsection{la génération de code}
+La génération de code se fait à partir d'un IDL, dont la grammaire
+(BNF) est définie en annexe.
+\begin{idlEx}
+package mypack;
+class Point {
+  int x;
+  int y; 
+  [name default_point] <init> ();
+  [name point] <init> (int,int);
+  void moveto(int,int);
+  string toString();
+  boolean eq(Point);
+}
+interface Colored {
+  string getColor();
+  void setColor(string);
+}
+[callback] class ColoredPoint extends Point implements Colored {
+  [name default_colored_point] <init> ();
+  [name colored_point] <init> (int,int,string);
+  [name eq_colored_point] boolean eq(ColoredPoint);
+}
+\end{idlEx}
 \subsubsection{compilation par camljava}
 interfacage C, 2 runtimes, destiné à Jni, 
+
+
+
+
+
+
 
 
 
@@ -259,7 +291,9 @@ interfacage C, 2 runtimes, destiné à Jni,
 
 \newpage
 \subsection{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
-intro TODO presentation
+
+\subsubsection{Principe Global}
+intro TODO presentation OCaml-Java
 
 \begin{figure}[h]
   \centering
@@ -317,6 +351,8 @@ exception Java_exception of java'lang'Throwable java_instance
 \end{OCamlEx}
 
 
+exemple !
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.3  PROBLEME, IDEE de solution   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -328,7 +364,6 @@ Cette interface de bas-niveau
 
 OCaml-Java permet l'accès à toute l'API Java depuis OCaml TODO
 
-
 \ 
 \newline
 Solution problèmes : TODO
@@ -338,8 +373,13 @@ dans IDL.
 - gestion du typage (statype en OCaml vs dynamique en Java)
 -
 
+sortie prématurée du sensé binome -> manque de temps.
+Restriction : pas CB, pas gestion array.
 
+\subsection{travail à effectuer}
 
+étude outils O'Jacaré, mais aussi fonctionnement Camljava pour pouvoir
+comparer avec cible du fichier généré : OCamljava à) la place.
 
 
 
@@ -351,8 +391,56 @@ dans IDL.
 \section{Portage d'O'Jacaré pour OCaml-Java}
 
 
-\subsection{}
+\subsection{La génération d'O'Jacaré}
+\subsubsection{La syntaxe de l'idl}
+L'IDL est défini pour la construction des interfaces entreO'Caml et
+Java, il est donc défini en s'approchant de l'intersection des deux
+mondes objet ( TODO : A completer : definir cette intersection )
 
+La syntaxe du langage d'interface est donné en annexe, en utilisant la
+notation BNF.
+
+Les symboles < et > encadrent des règles optionnelles,
+les terminaux sont en bleu, et les non-terminaux sont en italique.
+
+
+\subsubsection{Analyse lexical, syntaxique et sémantique}
+La première phase est celle d'analyse lexicale et syntaxique,
+séparant l'idl en lexèmes et construisant l'AST, défini en annexe par Idl.file,
+dont la structure est définie en annexe.
+
+Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
+phase précédente, vérifiant si le programme est correct, et
+
+construisant une liste de CIdl.clazz, restructurant chaque classe ou interface définie dans l'idl. 
+Le module Cidl définit le nouvel AST nommé CAST allant être manipulé dans les passes de
+génération de code. Il est décrit en annexe.
+
+\subsubsection{génération stub\_file}
+pour callback : génération java
+
+\subsubsection{génération des classes encapsulantes}
+
+Type jni
+
+Class type
+
+Cast JNI (up et down)
+
+Fonction d'allocation
+
+Capsule / souche
+
+Downcast utilisateur (
+\_downcast,
+\_instance\_of)
+
+Tableaux
+
+Fonction d'initialisation
+Classe de construction
+
+fonctions / methodes static
 
 
 
