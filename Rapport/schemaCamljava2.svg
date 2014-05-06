@@ -13,8 +13,8 @@
    height="231.71428"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="schemaCamljava.pdf">
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="schemaCamljava2.svg">
   <defs
      id="defs4">
     <marker
@@ -110,9 +110,9 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1519"
+     inkscape:window-width="1213"
      inkscape:window-height="863"
-     inkscape:window-x="8"
+     inkscape:window-x="65"
      inkscape:window-y="95"
      inkscape:window-maximized="0" />
   <metadata
@@ -155,12 +155,12 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="485.71432"
-       y="105.93359"
+       x="420.00003"
+       y="129.50502"
        id="text3612"><tspan
          sodipodi:role="line"
-         x="485.71432"
-         y="105.93359"
+         x="420.00003"
+         y="129.50502"
          id="tspan3616">.java</tspan></text>
     <text
        xml:space="preserve"
@@ -267,8 +267,8 @@
        id="rect3692"
        width="42.857143"
        height="17.142857"
-       x="184.28571"
-       y="96.647903" />
+       x="182.14285"
+       y="95.933617" />
     <rect
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3694"
@@ -281,8 +281,8 @@
        id="rect3696"
        width="48.57143"
        height="21.428572"
-       x="475.00003"
-       y="90.21933" />
+       x="409.28574"
+       y="113.79076" />
     <rect
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3698"
@@ -290,31 +290,10 @@
        height="22.142857"
        x="355.71429"
        y="46.647892" />
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="397.85715"
-       y="129.50504"
-       id="text6424"><tspan
-         sodipodi:role="line"
-         id="tspan6426"
-         x="397.85715"
-         y="129.50504">stub.java</tspan></text>
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.92882943;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3694-3"
-       width="65.071175"
-       height="18.642599"
-       x="392.82156"
-       y="115.18375" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#EmptyTriangleOutL)"
        d="M 366.42857,69.505039 310,117.36218"
        id="path6450" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#EmptyTriangleOutL)"
-       d="m 370,68.076467 55.71429,45.714283"
-       id="path6452" />
     <rect
        style="opacity:0.2635659;fill:#000000;fill-opacity:1;stroke:none"
        id="rect6422"
@@ -331,9 +310,15 @@
        d="m 370.75986,221.69346 0.62314,47.766"
        id="path6846" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend);stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 146.42857,105.28571 0.71429,32.14285 191.42857,0.71429 -0.71429,-32.85714"
+       style="fill:none;stroke:#000000;stroke-width:1.23472774;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
+       d="m 310.42857,137.14789 0.48399,32.14285 129.70796,0.71429 -0.48399,-32.85714"
        id="path6894"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
+       d="M 61.428571,71.714279 104.28571,94.571422"
+       id="path3029"
+       inkscape:connector-curvature="0"
        transform="translate(164,31.862181)" />
   </g>
 </svg>
