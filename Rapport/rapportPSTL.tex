@@ -376,9 +376,50 @@ exceptions du côté OCaml :
 \begin{OCamlEx}
 exception Java_exception of java'lang'Throwable java_instance
 \end{OCamlEx}
+\newpage
+Exemple :
+\begin{OCamlEx}
+let color = JavaString.of_string "bleu"
+and x = Int32.of_int 1
+and y = Int32.of_int 2 in
+let p = Java.make "mypack.ColoredPoint(int,int,java.lang.String)" s y color 
+in
+   Java.call "mypack.Point.eq(mypack.Point):boolean" p p2
+\end{OCamlEx}
 
 
-exemple !
+
+
+
+\begin{OCamlEx}
+let _init_point =
+  let clazz = Jni.find_class "mypack/Point" in
+  let id =
+    try Jni.get_methodID clazz "<init>" "(II)V"
+    with
+    | _ ->
+        failwith
+          "Unknown constructor from IDL in class \"mypack.Point\" : \"Point(int,int)\"."
+  in
+    fun (java_obj : _jni_jPoint) _p0 _p1 ->
+      let _p1 = _p1 in
+      let _p0 = _p0
+      in
+        Jni.call_nonvirtual_void_method java_obj clazz id
+          [| Jni.Camlint _p0; Jni.Camlint _p1 |];;
+class point _p0 _p1 =
+  let java_obj = _alloc_jPoint ()
+  in let _ = _init_point java_obj _p0 _p1
+    in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+\begin{OCamlEx}
+class point _p0 _p1 =
+  let _p1 = Int32.of_int _p1
+  in let _p0 = Int32.of_int _p0
+    in let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
+      in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.3  PROBLEME, IDEE de solution   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
