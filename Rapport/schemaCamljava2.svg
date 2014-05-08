@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="schemaCamljava2.svg">
+   sodipodi:docname="schemaCamljava2.pdf">
   <defs
      id="defs4">
     <marker
@@ -106,14 +106,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
      inkscape:cx="68.047241"
-     inkscape:cy="55.102859"
+     inkscape:cy="140.81714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1213"
-     inkscape:window-height="863"
+     inkscape:window-height="604"
      inkscape:window-x="65"
-     inkscape:window-y="95"
+     inkscape:window-y="27"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -135,13 +135,13 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="189.28571"
-       y="108.79075"
+       x="172.14285"
+       y="109.50504"
        id="text3604"><tspan
          sodipodi:role="line"
-         id="tspan3606"
-         x="189.28571"
-         y="108.79075">main</tspan></text>
+         x="172.14285"
+         y="109.50504"
+         id="tspan3030">main.ml</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -263,12 +263,12 @@
        x="485.80606"
        y="160.31111" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:1.16589355;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3692"
-       width="42.857143"
+       width="58.256046"
        height="17.142857"
-       x="182.14285"
-       y="95.933617" />
+       x="167.45825"
+       y="96.647903" />
     <rect
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3694"
@@ -306,9 +306,10 @@
        d="M 368.61714,32.407886 369.24,168.03076"
        id="path6844" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.09114468;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.27343407, 3.27343407;stroke-dashoffset:0"
-       d="m 370.75986,221.69346 0.62314,47.766"
-       id="path6846" />
+       style="fill:none;stroke:#000000;stroke-width:1.01299322;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.03897983, 3.03897983;stroke-dashoffset:0"
+       d="m 370.75986,221.69346 0.62314,41.16872"
+       id="path6846"
+       inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.23472774;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
        d="m 310.42857,137.14789 0.48399,32.14285 129.70796,0.71429 -0.48399,-32.85714"
@@ -320,5 +321,24 @@
        id="path3029"
        inkscape:connector-curvature="0"
        transform="translate(164,31.862181)" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="151.42857"
+       y="63.142853"
+       id="text3034"
+       sodipodi:linespacing="125%"
+       transform="translate(164,31.862181)"><tspan
+         sodipodi:role="line"
+         id="tspan3036"
+         x="151.42857"
+         y="63.142853">O'Jacaré</tspan></text>
+    <rect
+       style="opacity:0.2635659;fill:#000000;fill-opacity:1;stroke:none"
+       id="rect6422-3"
+       width="56.428585"
+       height="16.428572"
+       x="311.14285"
+       y="82.862175" />
   </g>
 </svg>

@@ -93,6 +93,25 @@
                   }
                   {}
 
+\lstnewenvironment{javaEx}
+                  {\lstset{
+                      language=Java,
+                      breaklines=true,
+                      showstringspaces=false,
+                      commentstyle=\color{red},
+                      stringstyle=\color{darkgray},
+                      identifierstyle=\ttfamily\textit,
+                      keywordstyle=\color{blue},
+                      basicstyle=\footnotesize,
+                     escapeinside={/*}{*/},
+                      frame=single,
+                      numbers=left,
+                      %xleftmargin=0.08\textwidth
+                    }
+                  }
+                  {}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -233,7 +252,7 @@ Un schéma décrit ces étapes dans la figure 2.
 
 \newpage
 
-\subsubsection{la génération de code}
+\subsubsection{La génération de code}
 La génération de code se fait à partir d'un IDL, dont la grammaire
 (BNF) est définie en annexe.
 Dans cet IDL, nous pouvons définir des déclarations qui sont à
@@ -246,9 +265,45 @@ Ces classes encapsulantes servant à faire le liens entre les
 classes/interfaces de chaque côté, il n'est donc nécessaire de définir
 dans l'IDL uniquement les méthodes que nous voulons appeler depuis OCaml.
 
-Voici un exemple de déclarations pour la fameuse classe Point dans un
-fichier IDL.
+Voici un exemple de déclarations dans un IDL, si on veut utiliser la classe Point définie à gauche. Il n'est nécéssaire de définir dans l'IDL uniquement les méthodes ou attributs que l'on veut manipuler depuis Java.
 
+
+\begin{multicols}{2}
+Point.java
+\begin{javaEx}
+  package mypack;
+  public class Point {
+    int x;
+    int y;
+    public Point() { 
+      this.x = 0;
+      this.y = 0;
+    }
+    public Point(int x,int y) {
+      this.x = x;
+      this.y = y;
+    }
+    public void moveto(int x,int y){
+      this.x = x;
+      this.y = y;
+    }
+    public String toString() {
+      return "("+x+","+y+")";
+    }
+    public double distance() {
+      return Math.sqrt
+      (this.x*this.x+this.y*this.y);
+    }
+    public boolean eq(Point p) {
+      return this.x == p.x 
+          && this.y == p.y;
+    }
+  }
+\end{javaEx}
+
+\bigskip
+
+point.idl
 \begin{idlEx}
 package mypack;
 class Point {
@@ -260,21 +315,13 @@ class Point {
   string toString();
   boolean eq(Point);
 }
-interface Colored {
-  string getColor();
-  void setColor(string);
-}
-class ColoredPoint extends Point implements Colored {
-  [name default_colored_point] <init> ();
-  [name colored_point] <init> (int,int,string);
-  [name eq_colored_point] boolean eq(ColoredPoint);
-}
 \end{idlEx}
 
 Pour une déclaration de classe ou interface, la génération de code
 donne :
 \begin{itemize}
-  \item Un type objet t
+  \item Un type abstrait correspondant au type Java
+  \item Un type classe t
   \item Une classe encapsulante C de type t
   \item 1 à n classes Ci, sous-classes de C (une par constructeur),
  
@@ -282,6 +329,14 @@ donne :
   \item Une fonction instanceof pour ce type
   \item Une fonction de cast pour ce type
 \end{itemize}
+
+\ 
+\newline
+
+\bigskip
+
+\end{multicols}
+Vous trouverez en annexe le code du fichier généré par ces déclarations.
 
 Les fichiers générés sont destinés à être compilés avec l'aide la bibliothèque
 Camljava.
@@ -297,9 +352,10 @@ champs ou autres.
 L'exécution se fait dans les 2 runtimes, qui peuvent alors communiquer.
 
 La gestion des exceptions est faite par encapsulation aussi, et la
-gestion de la mémoire se fait par une mise en racine de l'objet dans
+gestion de la mémoire se fait par une mise en racine de l'objet dans la mémoire
 l'autre monde avant de le passer en référence.
 
+Mais cette gestion avec deux Garbage Collector et deux racine pour la mémoire reste incertaine, dans la mesure où TODO
 \begin{figure}[h]
   \centering
   \includegraphics{schemaCamljava2.pdf}
@@ -319,7 +375,9 @@ l'autre monde avant de le passer en référence.
 \subsection{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
 
 \subsubsection{Principe Global}
-intro TODO presentation OCaml-Java
+intro TODO presentation 
+
+OCaml-Java est un compilateur
 
 
 
