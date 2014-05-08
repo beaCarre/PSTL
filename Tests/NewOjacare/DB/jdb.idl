@@ -1,5 +1,5 @@
 package mypack;
 
-class GraphicDB {
-  [name graphicDB] <init> (string, [array]string, [array,array]string);
+class FrameDB {
+  [name frameDB] <init> (string, [array]string, [array,array]string);
 }

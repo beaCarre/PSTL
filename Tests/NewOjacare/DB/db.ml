@@ -248,4 +248,4 @@ let print_db title db =
   in
   let rowsArray = Array.of_list (convert_rows rows)
   in 
-  ignore (new graphicDB title fieldsArray rowsArray)
+  ignore (new frameDB title fieldsArray rowsArray)
