@@ -134,11 +134,10 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Il est parfois utile de réutiliser des structures
-écrites dans un certain langage sans avoir à les réécrire entièrement.
-Il peut arriver de vouloir utiliser l'efficacité et
-l'élégance du style fonctionnel d'Ocaml dans un
-programme autant que la portabilité du style objet de Java et la
+Il est utile de réutiliser dans un certain langage du code
+écrit dans un autre, sans avoir à le réécrire.
+Il arrive souvent de vouloir utiliser l'expressivité et
+l'élégance du langage Ocaml autant que le style objet de Java et la
 diversité de son API.
 
 C'est pourquoi l'interopérabilité est un problème intéressant.
@@ -147,7 +146,7 @@ plusieurs éléments :
 la cohérence des types d'un langage à l'autre,
 la copie ou le partage des valeurs d'un monde à l'autre,
 le passage des exceptions,
-la gestion automatique de la mémoire (GC), 
+la gestion automatique de la mémoire (GC\footnote{Garbage Collector}), 
 et des caractéristiques de programmation qui ne sont pas forcément gérées par les
 deux langages.
 
@@ -174,31 +173,30 @@ de réduire l'étude à leur l'intersection.
 
 Deux études ont déjà été réalisées pour l’interopérabilité entre
 Ocaml et Java à travers leur modèle object respectif :
-
-\emph{O’Jacaré (et Camljava)} conserve les runtimes des deux langages (GC,
+\begin{itemize}
+\item \emph{O’Jacaré (et Camljava)} conserve les runtimes des deux langages (GC,
 Exceptions, ...) et les fait communiquer par l'interface camljava,
 avec l'aide de classes encapsulantes générées par O'Jacaré.
 
-\emph{OCaml-java
+\item \emph{OCaml-java
   2.0} utilise un seul runtime, en compilant le OCaml en byte-code
 Java. La manipulation des classes Java se fait à l'aide de nouveaux types introduits.
-\newline
+\end{itemize}
 
 L'idée est de profiter des deux approches : d'une part, d'un accès simple à des classes
-définies, en générant le code nécessaire à cet accès grâce à O'Jacaré
-et d'autre part de l'accès direct à toute
+définies, en générant grâce à O'Jacaré le code nécessaire à cet accès 
+et profiter d'autre part de l'accès direct à toute
 l'API Java en ne gardant qu'un seul runtime, la
 JRE, grâce à OCaml-Java
 
 Après l’étude des deux outils, le projet consiste à engendrer pour
 ocaml-java les fichiers d’encapsulation d'O’Jacaré. Ce
 portage est réalisé en OCaml étant donné qu'il reprend ce qui
-a déjà été développé pour O’Jacaré. Cette adaptation ne gère pas les appels de Java vers OCaml (callback), ainsi que les tableaux.
+a déjà été développé pour O’Jacaré. Cette adaptation ne gère pas les appels de Java vers OCaml (\emph{callback}\footnote{attribut représentant le sens d'appel de Java vers OCaml}).
 \newline
 
-Dans ce rapport, nous décrivons le schéma global du
-générateur de code d'O'Jacaré, et celui du compilateur d'Ocaml-Java
-pour en faire ressortir les avantages d'un portage d'O'Jacaré pour OCaml-Java.
+Dans ce rapport, nous décrivons le schéma global d'O'Jacaré, et d'Ocaml-Java
+pour en faire ressortir les avantages d'un portage d'O'Jacaré (O'Jacaré 2) pour OCaml-Java.
 Nous détaillons par la suite les modifications apportées à la
 génération d'interfaces, adaptée pour une encapsulation utilisable par
 le compilateur d'OCaml-Java.
@@ -221,8 +219,11 @@ Pour finir, un exemple d'application vous sera présenté.
 
 \subsubsection{Principe global}
 O'Jacaré génère le code nécessaire à l'encapsulation des classes
-définies dans un IDL, pour permettre aux interfaces avec C de chacunes
-de communiquer.
+définies dans un IDL\footnote{Langage de définition d'interface}, pour permettre aux interfaces avec C de chacuns des deux langages de communiquer.
+
+Lorsqu'on parle d'une classe encapsulante (capsule) d'une classe Java, 
+on parle d'une classe OCaml qui porte une référence sur l'objet Java en question,
+et qui est chargée de faire les opérations sur celui-ci.
 
 L'appel à des classes et méthodes Java est alors possible en appelant
 les méthodes de la capsule générée, qui va gérer l'appel aux classes
@@ -241,7 +242,7 @@ La génération de code se fait en plusieurs passes :
 \item la génération à partir du CAST du module .mli adapté
 \end{itemize}
 Les deux dernières étapes seront présentées plus en profondeur dans la
-section TODO.
+section \ref{2.1}.
 Un schéma décrit ces étapes dans la figure 2.
 
 \begin{figure}[h]
@@ -254,7 +255,7 @@ Un schéma décrit ces étapes dans la figure 2.
 
 \subsubsection{La génération de code}
 La génération de code se fait à partir d'un IDL, dont la grammaire
-(BNF) est définie en annexe.
+(BNF\footnote{Backus-Naur Form}) est définie en annexe \ref{BNF_IDL}.
 Dans cet IDL, nous pouvons définir des déclarations qui sont à
 l'intersection de ce qui est accessible dans les modèles objet de
 chaque langage. 
@@ -372,35 +373,41 @@ Mais cette gestion avec deux Garbage Collector et deux racine pour la mémoire r
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.2  OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{OCaml-Java et la compilation de code OCaml vers du bytecode Java}
+\subsection{OCaml-Java : compilation de code OCaml vers du bytecode Java}
 
 \subsubsection{Principe Global}
-intro TODO presentation 
 
-OCaml-Java est un compilateur
+OCaml-Java est un compilateur, générant du code octet Java (.jar) à
+partir d'un programme OCaml. Ce processus s'effectue en deux phases :
+\begin{enumerate}
+\item La compilation vers du code intermédiaire 
+\item La résolution dynamique pour produire un exécutable pour la
+  JVM\footnote{Java Virtual Machine}
+\end{enumerate}
+Il est naturellement possible d'utiliser des bibliothèques Java en
+utilisant la barrière d'abstraction d'OCaml-Java.
 
-
-
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics{schemaOCamlJava.pdf}
   \caption{Schéma global du compilateur d'OCaml-Java}
 \end{figure}
 
-\subsubsection{Accès à du code Java}
+\subsubsection{Barrière d'abstraction : manipuler du Java}
 \noindent
 Description des types manipulés par OCaml-Java permettant un accès au
-monde de Java depuis celui d'OCaml.  
+monde de Java depuis celui d'OCaml :
 
 \begin{tabular}{|l|l|}
   \hline
-  type Java & description et exemple \\
+  \emph{types OCaml-Java} & \emph{descriptions et exemples} \\\hline
+  java\_instance & référence sur une instance Java  \\
   \hline
   java\_constructor & signature d'un constructeur  \\
   &  "java.lang.Object()" \\
   \hline
   java\_method & signature d'une méthode \\
-  & "java.lang.String.lastIndexOf(string):int"\\
+  & "java.lang.String.lastIndexOf(String):int"\\
   \hline
   java\_field\_get & signature d'un attribut\\
   & "mypack.Point.x:int" \\
@@ -411,13 +418,10 @@ monde de Java depuis celui d'OCaml.
   java\_type & classe, interface ou type Array\\
   & "java.lang.String"\\
   \hline
-  java\_proxy & type d'une interface\\
-  & "java.lang.Comparable"\\ 
-  \hline
 \end{tabular}
 
 \noindent
-Description du module Java
+et les méthodes du module Java
 
 \begin{OCamlEx}
 make : 'a java_constructor -> 'a 
@@ -429,13 +433,13 @@ instanceof : 'a java_type -> 'b java_instance -> bool
 cast : 'a java_type -> 'b java_instance -> 'a
 proxy : 'a java_proxy -> 'a
 \end{OCamlEx}
-Une exception est définie dans le module pour permettre d'attraper les
+Une exception est aussi définie pour permettre d'attraper les
 exceptions du côté OCaml :
 \begin{OCamlEx}
 exception Java_exception of java'lang'Throwable java_instance
 \end{OCamlEx}
 \newpage
-Exemple :
+Voici un exemple d'utilisation du module Java d'OCaml, voué à être compilé avec OCaml-Java :
 \begin{OCamlEx}
 let color = JavaString.of_string "bleu"
 and x = Int32.of_int 1
@@ -445,107 +449,94 @@ in
    Java.call "mypack.Point.eq(mypack.Point):boolean" p p2
 \end{OCamlEx}
 
+Ce compilateur apporte une interopérabilité sûre par le fait qu'il ammène à une exécution sur un seul runtime et qu'il encadre et vérifie les accès à Java.
+Mais sa syntaxe est assez verbeuse, donc son utilisation moyennement accessible. 
 
 
 
-
-\begin{OCamlEx}
-let _init_point =
-  let clazz = Jni.find_class "mypack/Point" in
-  let id =
-    try Jni.get_methodID clazz "<init>" "(II)V"
-    with
-    | _ ->
-        failwith
-          "Unknown constructor from IDL in class \"mypack.Point\" : \"Point(int,int)\"."
-  in
-    fun (java_obj : _jni_jPoint) _p0 _p1 ->
-      let _p1 = _p1 in
-      let _p0 = _p0
-      in
-        Jni.call_nonvirtual_void_method java_obj clazz id
-          [| Jni.Camlint _p0; Jni.Camlint _p1 |];;
-class point _p0 _p1 =
-  let java_obj = _alloc_jPoint ()
-  in let _ = _init_point java_obj _p0 _p1
-    in object (self) inherit _capsule_jPoint java_obj end;;
-\end{OCamlEx}
-\begin{OCamlEx}
-class point _p0 _p1 =
-  let _p1 = Int32.of_int _p1
-  in let _p0 = Int32.of_int _p0
-    in let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
-      in object (self) inherit _capsule_jPoint java_obj end;;
-\end{OCamlEx}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.3  PROBLEME, IDEE de solution   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{profiter des deux approches}
+\subsection{Le travail à effectuer pour profiter des deux approches}
 O'Jacaré construit les classes encapsulantes de classes
 java définies par l'utilisateur, et permet ainsi l'accès aux méthodes
 (d'instance ou de classe) Java en OCaml en passant par l'interface de bas niveau CamlJava.
-Cette interface de bas-niveau 
 
-OCaml-Java permet l'accès à toute l'API Java depuis OCaml TODO
+OCaml-Java permet l'accès simple à toute l'API Java depuis OCaml ou toute autre classe définie, de manière sûre. 
 
-\ 
-\newline
-Solution problèmes : TODO
-- gestion de la surchage (absente en OCaml) -> renommage obligatoire
-dans IDL.
-- 2 runtimes vs 1 seul (-> résoud pd de communication GC et exceptions)
-- gestion du typage (statype en OCaml vs dynamique en Java)
--
+La question à se poser est maintenant est : comment modifier la génération d’O’Jacaré pour obtenir les classes d’encapsulation adaptées pour OCaml-Java. Sur le schéma ci-dessous, cette modification est représentée par $\Delta$.
 
-sortie prématurée du sensé binome -> manque de temps.
-Restriction : pas CB, pas gestion array.
+\begin{figure}[h]
+  \centering
+  \includegraphics{schema1.pdf}
+  \caption{Le travail à effectuer}
+\end{figure}
 
-\subsection{travail à effectuer}
-
-étude outils O'Jacaré, mais aussi fonctionnement Camljava pour pouvoir
-comparer avec cible du fichier généré : OCamljava à) la place.
-
+La génération de code va être basée sur le même principe de classes encapsulantes pour garder l'avantage d'un appel largement simplifié vers Java, mais en utilisant désormais OCaml-Java comme outil de communication avec Java.
 
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  2  REALISATION   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Portage d'O'Jacaré pour OCaml-Java : \emph{O'Jacaré 2}}
 
-\section{Portage d'O'Jacaré pour OCaml-Java}
 
-
-\subsection{La génération d'O'Jacaré}
-\subsubsection{La syntaxe de l'idl}
-L'IDL est défini pour la construction des interfaces entreO'Caml et
-Java, il est donc défini en s'approchant de l'intersection des deux
-mondes objet ( TODO : A completer : definir cette intersection )
+\subsection{\'Etude de la génération d'O'Jacaré}\label{2.1}
+\subsubsection{La définition de l'IDL}
+Les deux modèles objets étant différents, l'interface entre OCaml et Java doit être réduite à l'intersection de ces modèles pour définir l'IDL.
 
 La syntaxe du langage d'interface est donné en annexe, en utilisant la
 notation BNF.
 
-Les symboles < et > encadrent des règles optionnelles,
-les terminaux sont en bleu, et les non-terminaux sont en italique.
+O'Jacaré 2 utilisera ce même IDL, en retirant de sa BNF l'attribut \emph{callback}, l'autre sens de communication n'étant pas géré dans O'Jacaré 2.
 
-
-\subsubsection{Analyse lexical, syntaxique et sémantique}
+\subsubsection{Analyse lexicale, syntaxique et sémantique}
 La première phase est celle d'analyse lexicale et syntaxique,
-séparant l'idl en lexèmes et construisant l'AST, défini en annexe par Idl.file,
-dont la structure est définie en annexe.
+séparant l'idl en lexèmes et construisant un AST\footnote{\emph{Abstract syntax tree} ou arbre syntaxique abstrait}, structurant les déclarations de l'IDL.
 
 Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenue par la
 phase précédente, vérifiant si le programme est correct, et
 
 construisant une liste de CIdl.clazz, restructurant chaque classe ou interface définie dans l'idl. 
-Le module Cidl définit le nouvel AST nommé CAST allant être manipulé dans les passes de
-génération de code. Il est décrit en annexe.
+Le module Cidl définit le nouvel AST nommé CAST\footnote{Pour \emph{Checked AST}} allant être manipulé dans les passes de
+génération de code.
 
 \subsubsection{génération stub\_file}
-pour callback : génération java
+O'Jacaré permet la génération de classes Java qui encapsulent une classe OCaml, et permet ainsi un appel dans l'autre sens (de Java vers OCaml), grâce à un attribut "callback" ajouté devant une classe définie dans l'IDL.
+
+Mais notre nouvel outil ne gérant pas ce sens de communication, nous ne nous intéresserons pas à cette génération de code.
 
 \subsubsection{génération des classes encapsulantes}
+
+\`A partir de la structure du fichier généré par O'Jacaré, nous avons d'abord étudié l'utilité et les éléments à modifier pour l'adapter pour OCaml-Java :
+
+\begin{tabular}{|c|l|l|}
+  \hline
+  élément & descriptions supplémentaires & modifications à faire pour OCaml-Java\\
+  \hline
+  Type abstrait jni & référence sur l'objet Java & de type java\_instance\\
+  \hline
+  Class type t & type objet respectant le type de la classe Java & aucunes\\
+  \hline
+  Cast JNI (up et down) & utile pour le cast utilisateur & inutile : une fonction de OCaml-Java (Java.cast) le fait déjà\\
+  \hline
+  Fonction d'allocation & alloue la référence Java du côté OCaml & inutile : OCaml-Java n'utilise que le runtime Java \\
+  \hline
+  Capsule & vérifications avant l'appel vers Java & inutile : les vérifications se font lors de la compilation\\
+  & arguements des méthodes & conversion des types \\
+  \hline
+  Downcast utilisateur & cast de top vers t & simplifié grâce à la fonction Java.cast \\
+  \hline
+  Instance\_of utilisateur & teste si un objet est une instance de la classe Java & \\
+  \hline
+  Fonction d'initialisation & & \\
+  et Classe de construction & & \\
+  \hline
+\end{tabular}
 
 Type jni
 
@@ -555,53 +546,15 @@ Cast JNI (up et down)
 
 Fonction d'allocation
 
-Capsule / souche
+Capsule
 
 Downcast utilisateur (
 \_downcast,
 \_instance\_of)
 
-Tableaux
-
-Fonction d'initialisation
-Classe de construction
+Fonction d'initialisation et Classe de construction
 
 fonctions / methodes static
-
-
-
-
-\subsection{schémas de compilation actuels d'O'Jacaré}
-
-
-
-
-\noindent
-\begin{tabular}{|l|c|c|c|c|}
-  \hline
-  TYPE & jni\_type & getJni \\
-  \hline
-  void & & \\
-  boolean & Jni.Boolean &   \\
-  byte & Jni.Byte & \\
-  char & Jni.Char &  \\
-  short & Jni.Short &  \\
-  int & Jni.Camlint &  \\
-  long & Jni.Long  & \\
-  float & Jni.Float & \\
-  double & Jni.Double  &  \\
-  string & Jni.Obj \_pi & Jni.string\_to\_java \_pi  \\
-  pack/Obj& Jni.Obj \_pi & \_pi\#\_get\_jni\_jname  \\
-  \hline
-\end{tabular}
- 
-
-
-
-
-
-
-
 
 
 
@@ -839,6 +792,8 @@ $[\![$[$ {\color{blue}name}\ INIT $]$\ {\color{blue}
 
 \end{OCaml}
 
+
+
 \ 
 \newline
 \noindent
@@ -873,6 +828,42 @@ $[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
    "
 
 \end{OCaml}
+
+
+\subsection{Comparaison d'O'Jacaré avec O'Jacaré 2}
+
+\begin{OCamlEx}
+let _init_point =
+  let clazz = Jni.find_class "mypack/Point" in
+  let id =
+    try Jni.get_methodID clazz "<init>" "(II)V"
+    with
+    | _ ->
+        failwith
+          "Unknown constructor from IDL in class \"mypack.Point\" : \"Point(int,int)\"."
+  in
+    fun (java_obj : _jni_jPoint) _p0 _p1 ->
+      let _p1 = _p1 in
+      let _p0 = _p0
+      in
+        Jni.call_nonvirtual_void_method java_obj clazz id
+          [| Jni.Camlint _p0; Jni.Camlint _p1 |];;
+class point _p0 _p1 =
+  let java_obj = _alloc_jPoint ()
+  in let _ = _init_point java_obj _p0 _p1
+    in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+\begin{OCamlEx}
+class point _p0 _p1 =
+  let _p1 = Int32.of_int _p1
+  in let _p0 = Int32.of_int _p0
+    in let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
+      in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+
+
+
+
 
 
 \section{Application et performance}
@@ -942,10 +933,12 @@ Functional Programming,
 \addcontentsline{toc}{section}{Annexe}
 
 
-\subsection*{BNF}
-\begin{idl}
-(*\class*)
+\subsection{grammaire de l'IDL d'O'Jacaré}\label{BNF_IDL}
 
+\emph{Les symboles < et > encadrent des règles optionnelles,
+les terminaux sont en bleu, et les non-terminaux sont en italique.}
+
+\begin{idl}
 file ::= (*\package*) <(*\package*)>*
   	| decl <decl>*
  
@@ -1033,35 +1026,31 @@ class _capsule_jPoint =
     let __mid_eq =
       try Jni.get_methodID clazz "eq" "(Lmypack/Point;)Z"
       with
-      | _ ->failwith
+      | _ -> failwith
             "Unknown method from IDL in class \"mypack.Point\" : \"boolean eq(mypack.Point)\"."
     in
       let __mid_toString =
         try Jni.get_methodID clazz "toString" "()Ljava/lang/String;"
         with
-        | _ ->
-            failwith
+        | _ ->failwith
               "Unknown method from IDL in class \"mypack.Point\" : \"string toString()\"."
       in
         let __mid_moveto =
           try Jni.get_methodID clazz "moveto" "(II)V"
           with
-          | _ ->
-              failwith
-                "Unknown method from IDL in class \"mypack.Point\" : \"void moveto(int,int)\"."
+          | _ ->failwith
+               "Unknown method from IDL in class \"mypack.Point\" : \"void moveto(int,int)\"."
         in
           let __fid_y =
             try Jni.get_fieldID clazz "y" "I"
             with
-            | _ ->
-                failwith
+            | _ ->failwith
                   "Unknown field from IDL in class \"mypack.Point\" : \"int y\"."
           in
             let __fid_x =
               try Jni.get_fieldID clazz "x" "I"
               with
-              | _ ->
-                  failwith
+              | _ -> failwith
                     "Unknown field from IDL in class \"mypack.Point\" : \"int x\"."
             in
               fun (jni_ref : _jni_jPoint) ->
@@ -1122,10 +1111,8 @@ let _init_point =
   let clazz = Jni.find_class "mypack/Point" in
   let id =
     try Jni.get_methodID clazz "<init>" "(II)V"
-    with
-    | _ ->
-        failwith
-          "Unknown constructor from IDL in class \"mypack.Point\" : \"Point(int,int)\"."
+    with| _ ->failwith
+     "Unknown constructor from IDL in class \"mypack.Point\" : \"Point(int,int)\"."
   in
     fun (java_obj : _jni_jPoint) _p0 _p1 ->
       let _p1 = _p1 in
@@ -1137,10 +1124,8 @@ let _init_default_point =
   let clazz = Jni.find_class "mypack/Point" in
   let id =
     try Jni.get_methodID clazz "<init>" "()V"
-    with
-    | _ ->
-        failwith
-          "Unknown constructor from IDL in class \"mypack.Point\" : \"Point()\"."
+    with | _ -> failwith
+         "Unknown constructor from IDL in class \"mypack.Point\" : \"Point()\"."
   in
     fun (java_obj : _jni_jPoint) ->
       Jni.call_nonvirtual_void_method java_obj clazz id [|  |];;
@@ -1155,132 +1140,91 @@ class default_point () =
     in object (self) inherit _capsule_jPoint java_obj end;;
 \end{OCamlEx}
 
-
 \newpage
-\subsection*{Module CIdl, structure manipulée par O'Jacaré à partir de
-  l'IDL}
-\begin{OCaml}
-(**  module CIdl  *)
-type typ =
-  | Cvoid
-  | Cboolean (** boolean -> bool *)
-  | Cchar (** char -> char *)
-  | Cbyte (** byte -> int *)
-  | Cshort (** short -> int *)
-  | Ccamlint (** int -> int<31> *)
-  | Cint (** int -> int32 *)
-  | Clong (** long -> int64 *)
-  | Cfloat (** float -> float *)
-  | Cdouble (** double -> float *)
-  | Ccallback of Ident.clazz
-  | Cobject of object_type (** object -> ... *)
-and object_type = 
-  | Cname of Ident.clazz (** ... -> object *)
-  | Cstring (** ... -> string *)
-  | Cjavaarray of typ (** ... -> t jArray *) 
-  | Carray of typ (** ... -> t array *) 
-  | Ctop
+\subsection{Génération de la classe Point par O'Jacaré 2}
 
-type clazz = {
-    cc_abstract: bool;
-    cc_callback: bool;
-    cc_ident: Ident.clazz;
-    cc_extend: clazz option; (* None = top *)
-    cc_implements: clazz list;
-    cc_all_inherited: clazz list; (* tout jusque top ... (et avec les interfaces) sauf elle-meme. *)
-    cc_inits: init list;
-    cc_methods: mmethod list; (* methodes + champs *)
-    cc_public_methods: mmethod list; (* methodes declarees + celles heritees *)
-    cc_static_methods: mmethod list; 
-  }
-and mmethod_desc = 
-  | Cmethod of bool * typ * typ list (* abstract, rtype, args *)
-  | Cget of typ
-  | Cset of typ
-and mmethod = {
-    cm_class: Ident.clazz;
-    cm_ident: Ident.mmethod; 
-    cm_desc: mmethod_desc;
-  }         
-and init = {
-    cmi_ident: Ident.mmethod;
-    cmi_class: Ident.clazz;
-    cmi_args: typ list;
-  }
-type file = clazz list
-\end{OCaml}
+\begin{OCamlEx}
+type top = java'lang'Object java_instance;;
+exception Null_object of string
+type _jni_jPoint = mypack'Point java_instance;;
 
-\subsection*{module Ident}
-\begin{OCaml}
-(* module Ident  *)
-(* le type des identifiants de classe de l'IDL *)
-type clazz = {
-    ic_id: int;
-    ic_interface: bool;
-    ic_java_package: string list;
-    ic_java_name: string;
-    ic_ml_name: string;
-    ic_ml_name_location: Loc.t;
-    ic_ml_name_kind: ml_kind;
-  }
-type mmethod = {
-    im_java_name: string;
-    im_ml_id: int; (** entier unique pour une nom ml *)
-    im_ml_name: string;
-    im_ml_name_location:Loc.t;
-    im_ml_name_kind: ml_kind;
-  }
-\end{OCaml}
-\ 
+class type jPoint =
+  object
+    method _get_jni_jPoint : _jni_jPoint
+    method set_x : int -> unit
+    method get_x : unit -> int
+    method set_y : int -> unit
+    method get_y : unit -> int
+    method moveto : int -> int -> unit
+    method rmoveto : int -> int -> unit
+    method toString : unit -> string
+    method display : unit -> unit
+    method distance : unit -> float
+    method eq : jPoint -> bool
+  end
 
-\subsection*{phases de }
-\ 
-\newline
-Type jni
+class _capsule_jPoint =
+  fun (jni_ref : _jni_jPoint) ->
+    let _ =
+      if Java.is_null jni_ref
+      then raise (Null_object "mypack/Point")
+      else ()
+    in
+object (self)
+  method eq =
+    fun (_p0 : jPoint) ->
+      let _p0 = _p0#_get_jni_jPoint in
+      Java.call "mypack.Point.eq(mypack.Point):boolean" jni_ref _p0
+  method distance =
+    fun () ->
+      Java.call "mypack.Point.distance():double" jni_ref
+  method display =
+    fun () ->
+      Java.call "mypack.Point.display():void" jni_ref
+  method toString =
+    fun () ->
+      JavaString.to_string
+	(Java.call "mypack.Point.toString():java.lang.String" jni_ref)
+  method rmoveto =
+    fun _p0 _p1 ->
+      let _p1 = Int32.of_int _p1 in
+      let _p0 = Int32.of_int _p0
+      in Java.call "mypack.Point.rmoveto(int,int):void" jni_ref _p0 _p1
+  method moveto =
+    fun _p0 _p1 ->
+      let _p1 = Int32.of_int _p1 in
+      let _p0 = Int32.of_int _p0
+      in Java.call "mypack.Point.moveto(int,int):void" jni_ref _p0 _p1
+  method set_y =
+    fun _p ->
+      let _p = Int32.of_int _p
+      in Java.set "mypack.Point.y:int" jni_ref _p
+  method get_y =
+    fun () -> Int32.to_int (Java.get "mypack.Point.y:int" jni_ref)
+  method set_x =
+    fun _p ->
+      let _p = Int32.of_int _p
+      in Java.set "mypack.Point.x:int" jni_ref _p
+  method get_x =
+    fun () -> Int32.to_int (Java.get "mypack.Point.x:int" jni_ref)
+  method _get_jni_jPoint = jni_ref
+end;;
 
-\emph{MlClass.make\_jni\_type}
-\newline
-Class type
+let jPoint_of_top (o : top) : jPoint =
+  new _capsule_jPoint (Java.cast "mypack.Point" o);;
+let _instance_of_jPoint (o : top) =
+  Java.instanceof "mypack.Point" o;;
 
-\emph{MlClass.make\_class\_type}
-\newline
-Cast JNI
+class point _p0 _p1 =
+  let _p1 = Int32.of_int _p1 in
+  let _p0 = Int32.of_int _p0 in
+  let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
+  in object (self) inherit _capsule_jPoint java_obj end;;
+class default_point () =
+  let java_obj = Java.make "mypack.Point()" ()
+  in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
 
-\emph{MlClass.make\_jniupcast}
-
-\emph{MlClass.make\_jnidowncast}
-\newline
-Fonction d'allocation
-
-\emph{MlClass.make\_alloc}
-
-\emph{MlClass.make\_alloc\_stub}
-\newline
-Capsule / souche
-
-\emph{MlClass.make\_wrapper}
-\newline
-Downcast utilisateur
-
-\emph{MlClass.make\_downcast}
-
-\emph{MlClass.make\_instance\_of}
-\newline
-Tableaux
-
-\emph{MlClass.make\_array}
-\newline
-Fonction d'initialisation
-
-\emph{MlClass.make\_fun}
-\newline
-Classe de construction
-
-\emph{MlClass.make\_class}
-\newline
-fonctions / methodes static
-
-\emph{MlClass.make\_static}
 
 
 \end{document}

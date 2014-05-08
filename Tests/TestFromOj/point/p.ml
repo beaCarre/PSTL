@@ -1,6 +1,5 @@
 type top = java'lang'Object java_instance;;
 exception Null_object of string
-
 type _jni_jPoint = mypack'Point java_instance;;
 
 class type jPoint =
@@ -67,16 +66,14 @@ end;;
 
 let jPoint_of_top (o : top) : jPoint =
   new _capsule_jPoint (Java.cast "mypack.Point" o);;
-
 let _instance_of_jPoint (o : top) =
   Java.instanceof "mypack.Point" o;;
-  
+
 class point _p0 _p1 =
   let _p1 = Int32.of_int _p1 in
   let _p0 = Int32.of_int _p0 in
   let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
   in object (self) inherit _capsule_jPoint java_obj end;;
-
 class default_point () =
   let java_obj = Java.make "mypack.Point()" ()
   in object (self) inherit _capsule_jPoint java_obj end;;
