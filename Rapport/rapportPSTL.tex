@@ -260,7 +260,7 @@ Un schéma décrit ces étapes dans la figure 2.
 
 \subsubsection{Génération de code OK}
 La génération de code se fait à partir d'un IDL, dont la grammaire
-(BNF\footnote{Backus-Naur Form}) est définie en annexe \ref{BNF_IDL}.
+(BNF\footnote{Backus-Naur Form}) est définie en annexe dans la section \ref{4.1}.
 Dans cet IDL, nous pouvons définir des déclarations qui sont à
 l'intersection de ce qui est accessible dans les modèles objet de
 chaque langage. 
@@ -558,8 +558,7 @@ statiques & fonctions/méthodes globales & \\
   \hline
 \end{tabular}
 
-
-
+\'A partir de cette étude il a fallut faire les schémas de compilation correspondant à chaque type de déclaration de l'IDL.
 
 
 
@@ -569,15 +568,16 @@ statiques & fonctions/méthodes globales & \\
 \subsection{Génération de code pour Ocaml-Java TODO}
 
 \subsubsection{\'Les types dans OCaml-Java}
-Tableau représentant les équivalents en OCaml des types Java manipulés
-par OCaml-Java.
-La troisième colonne représente les types manipulés par les programmes
-OCaml écrit par l'utilisateur d'O'Jacaré2
-Le problème est donc de convertir du deuxième au troisième type pour la manipulation côté OCaml et du troisième au second lors d'un appel à une fonction du module Java (un appel, un constructeur ou autre).
+Pour préparer ces schémas de compilation, nous avons écrit le tableau représentant les équivalents en OCaml des types Java manipulés
+par OCaml-Java. \'A partir de celui-ci, la phase suivante était de définir les conversions à faire pour l'adaptation sous forme de schémas de compilation.
+
+La troisième colonne représente les types manipulés par le programme
+OCaml écrit par l'utilisateur d'O'Jacaré2, la troisième ce qu'attend le compilateur OCaml-Java, tout cela en fonction du type correspondant au type Java.
+Le problème est donc de convertir du deuxième \emph{oj\_type} au \emph{ml\_type} type pour la manipulation côté OCaml et du \emph{ml\_type} au \emph{oj\_type} lors d'un appel à une fonction du module Java (un appel, un constructeur ou autre).
 
 \begin{tabular}{|c|l|l|l|}
  \hline
-TYPE IDL &type Java & type OCaml  pour OCaml-Java & type OCaml \\
+TYPE IDL &type Java & type OCaml pour OCaml-Java & type OCaml \\
 & (java\_type) & (oj\_type t) & (ml\_type t) \\
  \hline
 \emph{void} & void & unit & unit\\
@@ -596,23 +596,18 @@ TYPE IDL &type Java & type OCaml  pour OCaml-Java & type OCaml \\
 \
 \newline
 
-Tableau associant pour chaque types de l'IDL les
-fonctions utiles aux schémas de compilation manipulant ceux-ci, comme explicité ci-dessus. 
+Tableau associant pour chaque type de l'IDL les
+fonctions de conversion utiles aux schémas de compilation manipulant ceux-ci, comme explicité ci-dessus. 
 
 \begin{tabular}{|c|l|l|l|}
   \hline
   TYPE IDL & to\_oj\_Type ARGi & to\_ml\_type ARGi & fcast\\
   \hline
-  \emph{void} &   &  & \\
-  \emph{boolean} &  &  &\_pi \\
- \emph{byte} & &  &\_pi  \\
- \emph{cha}r & TODO  & TODO & \_pi \\
-  \emph{short} & &  & \\
- \emph{int} & Int32.of\_int\ & Int32.to\_int & \_pi\\
- \emph{long} & Int64.of\_int & Int64.to\_int & \_pi\\
- \emph{float} & & &\_pi \\
-  \emph{doubl}e & & & \_pi\\
- \emph{string} & JavaString.of\_string & JavaString.to\_string & \_pi\\
+
+ \emph{int} & Int32.of\_int\ & Int32.to\_int & \\
+ \emph{long} & Int64.of\_int & Int64.to\_int & \\
+ 
+ \emph{string} & JavaString.of\_string & JavaString.to\_string & \\
  \emph{pack/Obj} & \_pi\#\_get\_jni\_jObj & (new \_capsule\_jObj ... : jObj) & (\_pi: jObj)\\
   \hline
 \end{tabular}
@@ -639,23 +634,12 @@ $\Delta$ = [] : les interfaces qu'\textbf{implements} la classe courante.
 \newline
 \textbf{class}
 
-Le schéma de compilation de base pour une classe est largement allégé. 
-En effet,la fonction downcast jni est inutile, puisqu'on a la fonction Java.cast, effectuant tout le travail.
-
-De même, l'upcast -> 
-
-
-L'allocation n'est pas non plus nécessaire, OCaml-Java gérant tout ça côté Java. 
-
-La capsule est aussi très simplifiée, les tests d'existance des méthodes classes etc est aussi géré par COaml-Java.
-
-
-Le type top manipulé sera le type d'instance objet de Ocaml-Java :
+Le type "top" manipulé sera le type d'une instance de Ocaml-Java de la classe Objet Java :
 \begin{OCamlEx}
 type top = java'lang'Object java_instance;;
 \end{OCamlEx}
 
-Exception :
+Une exception a été ajoutée,  :
 \begin{OCamlEx}
 exception Null_object of string
 \end{OCamlEx}
@@ -867,12 +851,31 @@ La structure de ce programme est la suivante :
   \includegraphics{exempleDB.pdf}
 \end{figure}
 
+Le détail du code est en annexe dans la section \ref{4.4}
 
 
-
-
+\newpage
 \section*{Conclusion TODO}
 \addcontentsline{toc}{section}{Conclusion}
+
+Pour conclure de travail de PSTL mérite une approfondissement, comme un stage, et au moins un 18/20 !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -922,15 +925,32 @@ Functional Programming,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   ANNEXE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \newpage
-\section*{Annexe}
-\addcontentsline{toc}{section}{Annexe}
+\section{Annexe}
 
 
-\subsection{grammaire de l'IDL d'O'Jacaré}\label{BNF_IDL}
+\subsection{grammaire de l'IDL d'O'Jacaré}\label{4.1}
 
 \emph{Les symboles < et > encadrent des règles optionnelles,
 les terminaux sont en bleu, et les non-terminaux sont en italique.}
@@ -1223,7 +1243,7 @@ class default_point () =
 \end{OCamlEx}
 
 \newpage
-\subsection{Exemple d'application : l'affichage d'une base de donnée}
+\subsection{Exemple d'application : l'affichage d'une base de donnée}\label{4.4}
 
 FrameDB.java :
 \begin{javaEx}
