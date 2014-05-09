@@ -156,12 +156,11 @@ la gestion automatique de la mémoire (GC\footnote{Garbage Collector}),
 et des caractéristiques de programmation qui ne sont pas forcément gérées par les
 deux langages.
 
-OCaml et Java comportent des différences entre leur modèles
+OCaml et Java comportent des différences entre leurs modèles
 objet, comme le montre le tableau ci-dessous, il donc est nécessaire
 de réduire l'étude à leur l'intersection.
 
-\ 
-\newline
+\medskip
 \noindent
 \begin{tabular}{|l|c|c|c|c|}
   \hline
@@ -170,14 +169,13 @@ de réduire l'étude à leur l'intersection.
   accès champs & selon la visibilité & via appels de méthode\\\hline
   variables/méthodes statiques & \checkmark & fonctions/décl. globales\\\hline
   typage dynamique & \checkmark & $\times$ \\\hline
-  héritage $\equiv$ sous-typage ? &\checkmark  & $\times$ \\\hline
   surcharge & \checkmark & $\times$ \\\hline
   héritage multiple & seulement pour les interfaces & \checkmark\\
   \hline
-  packetages/modules & pas de modules paramétrés & \checkmark\\\hline
 \end{tabular}
 
-Deux travaux ont déjà été réalisées pour l’interopérabilité entre
+\medskip
+Deux travaux ont déjà été réalisés pour l’interopérabilité entre
 OCaml et Java à travers leur modèle object respectif :
 \begin{itemize}
 \item \emph{O’Jacaré}\cite{O'Jacaré} conserve les runtimes des deux langages (GC,
@@ -185,7 +183,7 @@ Exceptions, ...) et les fait communiquer par l'interface \camljava \cite{camljav
 avec l'aide de classes encapsulantes générées par O'Jacaré.
 
 \item \emph{OCaml-java
-  2.0}\cite{OCaml-Java} utilise un seul runtime, en compilant le OCaml en byte-code
+  2.0}\cite{OCaml-Java} utilise un seul runtime, en compilant code le OCaml en byte-code
 Java. La manipulation des classes Java se fait à l'aide de nouveaux types introduits.
 \end{itemize}
 L'idée est de profiter des deux approches : d'une part, d'un accès simple à des classes
@@ -233,7 +231,7 @@ et qui est chargée de faire les opérations sur celui-ci.
 L'appel à des classes et méthodes Java est alors possible en appelant
 les méthodes de la capsule générée, qui va gérer l'appel aux classes
 Java par le biais de l'interface \camljava.
-Le code Java généré pour le callback vont permettre avec le même
+Le code Java généré pour le callback va permettre avec le même
 principe, les appels dans l'autre sens.
 
 \camljava est une interface bas-niveau basée sur les interfaces de chaque langage avec C : la JNI\footnote{Java Native Interface} et \emph{External}.
@@ -271,7 +269,7 @@ Ces classes encapsulantes servant à faire le lien entre les
 classes/interfaces de chaque côté, il n'est donc nécessaire de définir
 dans l'IDL que les méthodes que nous voulons appeler depuis OCaml.
 
-Voici un exemple de déclarations dans un IDL, si on veut utiliser la classe Point définie à gauche. Il n'est nécéssaire de définir dans l'IDL uniquement les méthodes ou attributs que l'on veut manipuler depuis Java.
+Voici un exemple de déclarations dans un IDL, si on veut utiliser la classe Point définie à gauche. Il n'est nécéssaire de définir dans l'IDL uniquement les méthodes ou attributs que l'on veut manipuler depuis OCaml.
 
 
 \begin{multicols}{2}
@@ -348,10 +346,9 @@ Les fichiers générés sont destinés à être compilés avec l'aide la bibliot
 \camljava.
 
 \subsubsection{Compilation avec la bibliothèque \camljava}
-\camljava gère l'interfacage entre OCaml et Java via C, comme décrit
-dans la figure 3.
+\camljava gère l'interfacage entre OCaml et Java via C.
 
-Un extrait d'utilisation de cette bibliothèque est :
+Un exemple d'utilisation de cette bibliothèque est :
 \begin{OCamlEx}
 let clazz = Jni.find_class "mypack/Point" in
 let id = Jni.get_methodID clazz "<init>" "(II)V" in
@@ -370,7 +367,7 @@ La gestion des exceptions est faite par encapsulation aussi, et la
 gestion de la mémoire se fait par une mise en racine de l'objet dans la mémoire
 l'autre monde avant de le passer en référence.
 
-Mais cette gestion avec deux Garbage Collector et deux ensembles de racine pour la mémoire reste incertaine, dans la mesure où 
+Mais cette gestion avec deux Garbage Collector et deux ensembles de racines pour la mémoire reste incertaine, dans la mesure où 
 du point de vue mémoire tout objet Java alloué en O’Caml est une
 racine du GC de Java. Quand O’Caml ne l’utilise plus, la racine Java
 est supprimée mais l’objet peut être conservé par le GC de Java s’il
@@ -474,7 +471,7 @@ in
    Java.call "mypack.Point.eq(mypack.Point):boolean" p p2
 \end{OCamlEx}
 
-Ce compilateur apporte une interopérabilité sûre par le fait qu'il ammène à une exécution sur un seul runtime et qu'il encadre et vérifie les accès à Java.
+Ce compilateur apporte une interopérabilité sûre par le fait qu'il amène à une exécution sur un seul runtime et qu'il encadre et vérifie les accès à Java.
 Mais sa syntaxe est assez verbeuse, donc son utilisation moyennement accessible. 
 
 
@@ -484,7 +481,7 @@ Mais sa syntaxe est assez verbeuse, donc son utilisation moyennement accessible.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.3  PROBLEME, IDEE de solution   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Le travail à effectuer pour profiter des deux approches OK}
+\subsection{Le travail à effectuer pour profiter des deux approches }
 O'Jacaré construit les classes encapsulantes de classes
 java définies par l'utilisateur, et permet ainsi l'accès aux méthodes
 (d'instance ou de classe) Java en OCaml en passant par l'interface de bas niveau \camljava.
@@ -524,7 +521,7 @@ La première phase est celle d'analyse lexicale et syntaxique,
 séparant l'IDL en lexèmes et construisant un AST\footnote{\emph{Abstract syntax tree} ou arbre syntaxique abstrait}, structurant les déclarations de l'IDL.
 
 Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenu par la
-phase précédente, vérifiant si l'IDL est correct sémentiquement,
+phase précédente, vérifiant si l'IDL est correct sémantiquement,
 restructurant chaque classe ou interface définie dans l'IDL en construisant un nouvel AST (CAST) qui va être manipulé dans les passes de génération de code.
 
 Dans O'Jacaré 2, cette phase est différente uniquement dans le fait qu'on n'accepte plus l'attribut callback dans l'IDL. 
@@ -578,7 +575,9 @@ statiques & fonctions/méthodes globales & \\
   \hline
 \end{tabular}
 
-Après cela, il a fallut partir des fichiers générés d'O'Jacaré, et faire une ébauche à la main (en supprimant l'inutile et en adaptant les appels vers Java).
+Nous savons que \emph{OCaml-Java} s'assure statiquement de l'existance des classes et méthodes appelées, nous pouvons être sûrs que beaucoup de fonctions seront inutiles pour celui-ci.
+
+Après cela, il a fallu partir des fichiers générés d'O'Jacaré, et faire une ébauche à la main (en supprimant l'inutile et en adaptant les appels vers Java).
 
 Puis à partir de l'ébauche écrite, nous avons fait ressortir les schémas de compilation correspondants à chaque type de déclaration de l'IDL.
 
@@ -666,7 +665,8 @@ Le type "top" manipulé est le type d'une instance de Ocaml-Java de la classe Ob
 type top = java'lang'Object java_instance;;
 \end{OCamlEx}
 
-Une exception a été ajoutée, TODO :
+Une exception a été définie, qui permettra de vérifier dynamiquement si l'objet Java passé en référence est nul ou non, en attrapant une exception Java du côté OCaml : 
+
 \begin{OCamlEx}
 exception Null_object of string
 \end{OCamlEx}
@@ -683,9 +683,9 @@ $[\![ {\color{blue}class}\ CLASS\
  {\color{blue}extends}\  E \ 
  {\color{blue}implements}\  I1,I2... \{$
 
- $ \ \ \ attr1; attr2; ...;$
+ $ \ \ \ <static> attr1; <static> attr2; ...;$
 
-  $\ \ \ m1; m2; ...;$
+  $\ \ \ <static> m1; <static> m2; ...;$
 
   $\ \ \ init1; init2; ...;$
 
@@ -739,11 +739,11 @@ let _instance_of_jCLASS (o : top) =
     Java.instanceof \"PACK.CLASS\" o;;
 \end{OCaml}
 
-    \emph{eval}$[\![init1; init2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+    \emph{eval}$[\![init1;\ init2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
 
-    \emph{eval}$[\![static m1; static m2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+    \emph{eval}$[\![static\ m1;\ static\ m2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
 
-
+\emph{eval}$[\![static\ attr1;\ static\ attr2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
 
 \newpage
 \noindent
@@ -900,9 +900,9 @@ class point _p0 _p1 =
 
 \section{Application}
 
-En développant ce projet, une application concrète m'est venue à l'esprit : un mini-projet de gestion de base de donnée implémenté en OCaml au cours de mes études manquait d'une interface graphique. Or, la bibliothèque graphique \emph{swing} offre un composant permettant d'afficher un tableau (JTable), très simple d'utilisation.
+En développant ce projet, une application concrète m'est venue à l'esprit : un mini-projet de gestion de base de données implémenté en OCaml au cours de mes études manquait d'une interface graphique. Or, la bibliothèque graphique \emph{swing} offre un composant permettant d'afficher un tableau (JTable), très simple d'utilisation.
 
-J'ai donc d'un côté repris ce projet en ajoutant une fonction créant un JTable en lui donnant les données de la base de donnée créée, et implémenté une classe Java JTable construisant le composant en question.
+J'ai donc d'un côté repris ce projet en ajoutant une fonction créant un JTable en lui donnant les données de la base de données créée, et implémenté une classe Java JTable construisant le composant en question.
 En quelques lignes de code, j'ai ajouté une interface graphique Java à mon programme OCaml de gestion de base de données.
 
 \begin{figure}[h!]
@@ -921,8 +921,33 @@ Le détail du code est en annexe dans la section \ref{4.4}
 
 
 \newpage
-\section*{Conclusion TODO}
+\section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
+
+
+Le but de ce projet
+était de créer un outil simple d'utilisation et efficace pour l'interopérabilité entre OCaml et Java.
+\emph{O'Jacaré} et \emph{OCaml-Java} respectent chacune des ces deux
+idées : nous avons repris la simplicité d'utilisation
+d'\emph{O'Jacaré} et l'efficacité de compilation d'\emph{OCaml-Java}.
+
+Nous avons adapté \emph{O'Jacaré} afin qu'il prenne pour cible
+\emph{OCaml-Java}.  \emph{O'Jacaré} 2 respecte le contrat dans la
+mesure où l'utilisateur n'a qu'à définir un IDL simple, pour pouvoir
+utiliser du code Java dans son programme OCaml.  De plus, la
+compilation se fait de manière sûre grâce à un outil qui assure des
+appels cohérents de manière statique, et en n'utilisant qu'un seul environnement d'exécution.
+
+L'interopérabilité a tout de même des limites du fait que deux modèles
+de programmations différents ne peuvent communiquer que sur ce qu'ils
+ont en commun, mais il est certain que de futures applications
+profiteront de cette complémentarité entre les mondes Java et OCaml.
+
+Enfin, en ajoutant à \emph{O'Jacaré} 2 la possibilité d'assurer la
+communication de Java vers OCaml, nous pourrons dire qu'il
+sera complet. Dans cette continuité, un stage à INRIA sera effectué afin de parfaire cette communication de Java vers OCaml.
+
+
 
 
 
