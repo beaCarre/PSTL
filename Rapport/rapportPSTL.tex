@@ -114,6 +114,7 @@
                   {}
 
 
+\newcommand{\camljava}{{\tt{camljava}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -137,7 +138,7 @@
 \tableofcontents
 \newpage
 
-\section*{Introduction OK}
+\section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 Il est utile de réutiliser dans un certain langage du code
 écrit dans un autre, sans avoir à le réécrire.
@@ -168,7 +169,7 @@ de réduire l'étude à leur l'intersection.
   \hline
   accès champs & selon la visibilité & via appels de méthode\\\hline
   variables/méthodes statiques & \checkmark & fonctions/décl. globales\\\hline
-  typage dynamique & \checkmark & pas de downcast \\\hline
+  typage dynamique & \checkmark & $\times$ \\\hline
   héritage $\equiv$ sous-typage ? &\checkmark  & $\times$ \\\hline
   surcharge & \checkmark & $\times$ \\\hline
   héritage multiple & seulement pour les interfaces & \checkmark\\
@@ -176,23 +177,22 @@ de réduire l'étude à leur l'intersection.
   packetages/modules & pas de modules paramétrés & \checkmark\\\hline
 \end{tabular}
 
-Deux études ont déjà été réalisées pour l’interopérabilité entre
-Ocaml et Java à travers leur modèle object respectif :
+Deux travaux ont déjà été réalisées pour l’interopérabilité entre
+OCaml et Java à travers leur modèle object respectif :
 \begin{itemize}
-\item \emph{O’Jacaré (et Camljava)} conserve les runtimes des deux langages (GC,
-Exceptions, ...) et les fait communiquer par l'interface camljava,
+\item \emph{O’Jacaré} conserve les runtimes des deux langages (GC,
+Exceptions, ...) et les fait communiquer par l'interface \camljava,
 avec l'aide de classes encapsulantes générées par O'Jacaré.
 
 \item \emph{OCaml-java
   2.0} utilise un seul runtime, en compilant le OCaml en byte-code
 Java. La manipulation des classes Java se fait à l'aide de nouveaux types introduits.
 \end{itemize}
-
 L'idée est de profiter des deux approches : d'une part, d'un accès simple à des classes
 définies, en générant grâce à O'Jacaré le code nécessaire à cet accès 
 et profiter d'autre part de l'accès direct à toute
 l'API Java en ne gardant qu'un seul runtime, la
-JRE, grâce à OCaml-Java
+JRE, grâce à \emph{OCaml-Java}
 
 Après l’étude des deux outils, le projet consiste à engendrer pour
 ocaml-java les fichiers d’encapsulation d'O’Jacaré. Ce
@@ -201,11 +201,11 @@ a déjà été développé pour O’Jacaré. Cette adaptation ne gère pas les a
 \newline
 
 Dans ce rapport, nous décrivons le schéma global d'O'Jacaré, et d'Ocaml-Java
-pour en faire ressortir les avantages d'un portage d'O'Jacaré (O'Jacaré 2) pour OCaml-Java.
+pour en faire ressortir les avantages d'un portage d'O'Jacaré (O'Jacaré 2) pour \emph{OCaml-Java}.
 Nous détaillons par la suite les modifications apportées à la
 génération d'interfaces, adaptée pour une encapsulation utilisable par
-le compilateur d'OCaml-Java.
-Pour finir, un exemple d'application vous sera présenté.
+le compilateur d'\emph{OCaml-Java}.
+Pour finir, un exemple d'application sera présenté.
 \newpage
 
 
@@ -222,9 +222,9 @@ Pour finir, un exemple d'application vous sera présenté.
 
 \subsection{O'Jacaré, un générateur de code d'interface}
 
-\subsubsection{Principe global OK}
+\subsubsection{Principe global}
 O'Jacaré génère le code nécessaire à l'encapsulation des classes
-définies dans un IDL\footnote{Langage de définition d'interface}, pour permettre aux interfaces avec C de chacuns des deux langages de communiquer.
+définies dans un IDL\footnote{Langage de définition d'interface}, pour permettre aux interfaces avec C de chacun des deux langages de communiquer.
 
 Lorsqu'on parle d'une classe encapsulante (capsule) d'une classe Java, 
 on parle d'une classe OCaml qui porte une référence sur l'objet Java en question,
@@ -232,15 +232,15 @@ et qui est chargée de faire les opérations sur celui-ci.
 
 L'appel à des classes et méthodes Java est alors possible en appelant
 les méthodes de la capsule générée, qui va gérer l'appel aux classes
-Java par le biais de l'interface camlJava.
-Le code Java généré par le callback vont permettre avec le même
+Java par le biais de l'interface \camljava.
+Le code Java généré pour le callback vont permettre avec le même
 principe, les appels dans l'autre sens.
 
-CamlJava est une interface bas-niveau basée sur les interfaces de chaque langage avec C : la JNI\footnote{Java Native Interface} et \emph{External}.
+\camljava est une interface bas-niveau basée sur les interfaces de chaque langage avec C : la JNI\footnote{Java Native Interface} et \emph{External}.
 
 La génération de code se fait en plusieurs passes :
 \begin{itemize}
-\item analyse lexicale et analyse syntaxique de l' idl donnant un AST.
+\item analyse lexicale et analyse syntaxique de l' IDL donnant un AST.
 \item vérification des types de l'AST, donnant un nouvel arbre CAST\footnote{Pour \emph{Checked AST}}.
 \item la génération des fichiers Java nécessaires pour un appel callback. 
 \item la génération à partir du CAST des classes encapsulantes dans un fichier .ml
@@ -250,15 +250,15 @@ Les deux dernières étapes seront présentées plus en profondeur dans la
 section \ref{2.1}.
 Un schéma décrit ces étapes dans la figure 2. 
 
-\begin{figure}[h]
-  \centering
-  \includegraphics{schemaOjacare.pdf}
-  \caption{Schéma global de la génération d'O'Jacaré}
-\end{figure}
+%% \begin{figure}[h]
+%%   \centering
+%%   \includegraphics{schemaOjacare.pdf}
+%%   \caption{Schéma global de la génération d'O'Jacaré}
+%% \end{figure}
 
-\newpage
 
-\subsubsection{Génération de code OK}
+
+\subsubsection{Génération de code}
 La génération de code se fait à partir d'un IDL, dont la grammaire
 (BNF\footnote{Backus-Naur Form}) est définie en annexe dans la section \ref{4.1}.
 Dans cet IDL, nous pouvons définir des déclarations qui sont à
@@ -267,9 +267,9 @@ chaque langage.
 
 Le but de cet IDL est de définir la signature des
 classes Java déjà définies, que nous voulons manipuler du côté OCaml.
-Ces classes encapsulantes servant à faire le liens entre les
+Ces classes encapsulantes servant à faire le lien entre les
 classes/interfaces de chaque côté, il n'est donc nécessaire de définir
-dans l'IDL uniquement les méthodes que nous voulons appeler depuis OCaml.
+dans l'IDL que les méthodes que nous voulons appeler depuis OCaml.
 
 Voici un exemple de déclarations dans un IDL, si on veut utiliser la classe Point définie à gauche. Il n'est nécéssaire de définir dans l'IDL uniquement les méthodes ou attributs que l'on veut manipuler depuis Java.
 
@@ -345,15 +345,24 @@ donne :
 Vous trouverez en annexe le code du fichier généré par ces déclarations.
 
 Les fichiers générés sont destinés à être compilés avec l'aide la bibliothèque
-Camljava.
+\camljava.
 
-\newpage
-\subsubsection{Compilation par camljava OK TODO}
-Camljava gère l'interfacage entre OCaml et Java avec C, comme décrit
+\subsubsection{Compilation avec la bibliothèque \camljava}
+\camljava gère l'interfacage entre OCaml et Java via C, comme décrit
 dans la figure 3.
+
+Un extrait d'utilisation de cette bibliothèque est :
+\begin{OCamlEx}
+let clazz = Jni.find_class "mypack/Point" in
+let id = Jni.get_methodID clazz "<init>" "(II)V" in
+let java_obj = Jni.alloc_object clazz : Jni.obj in
+Jni.call_nonvirtual_void_method java_obj clazz id 
+          [| Jni.Camlint 1; Jni.Camlint 2 |];;
+\end{OCamlEx}
+
 Les références sur les objets Java correspondent à un type abstrait en
-OCaml, sur lesquels des opérations donnent accès à des méthodes, à des
-champs ou autres. 
+OCaml, dans lequel des opérations donnent accès à des méthodes ou à des
+champs de cet objet Java. 
 
 L'exécution se fait dans les 2 runtimes, qui peuvent alors communiquer.
 
@@ -361,11 +370,20 @@ La gestion des exceptions est faite par encapsulation aussi, et la
 gestion de la mémoire se fait par une mise en racine de l'objet dans la mémoire
 l'autre monde avant de le passer en référence.
 
-Mais cette gestion avec deux Garbage Collector et deux racine pour la mémoire reste incertaine, dans la mesure où TODO
+Mais cette gestion avec deux Garbage Collector et deux ensembles de racine pour la mémoire reste incertaine, dans la mesure où 
+du point de vue mémoire tout objet Java alloué en O’Caml est une
+racine du GC de Java. Quand O’Caml ne l’utilise plus, la racine Java
+est supprimée mais l’objet peut être conservé par le GC de Java s’il
+est référencé par un autre objet encore vivant. On retrouve
+donc les problèmes inhérents aux compteurs de références pour les
+structures circulaires.
+
+
+
 \begin{figure}[h]
   \centering
   \includegraphics{schemaCamljava2.pdf}
-  \caption{La communication grâce à Camljava}
+  \caption{La communication grâce à \camljava}
 \end{figure}
 
 
@@ -376,13 +394,13 @@ Mais cette gestion avec deux Garbage Collector et deux racine pour la mémoire r
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.2  OCaml-Java   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  1.2  \emph{OCaml-Java}   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{OCaml-Java : compilation de code OCaml vers du bytecode Java OK}
+\subsection{\emph{OCaml-Java} : compilation de code OCaml vers du bytecode Java}
 
 \subsubsection{Principe global}
 
-OCaml-Java est un compilateur, générant du code octet Java (.jar) à
+\emph{OCaml-Java} est un compilateur, générant du code octet Java (.jar) à
 partir d'un programme OCaml. Ce processus s'effectue en deux phases :
 \begin{enumerate}
 \item La compilation vers du code intermédiaire 
@@ -390,17 +408,18 @@ partir d'un programme OCaml. Ce processus s'effectue en deux phases :
   JVM\footnote{Java Virtual Machine}
 \end{enumerate}
 Il est naturellement possible d'utiliser des bibliothèques Java en
-utilisant la barrière d'abstraction d'OCaml-Java.
+utilisant la barrière d'abstraction d'\emph{OCaml-Java}.
 
 \begin{figure}[h!]
   \centering
   \includegraphics{schemaOCamlJava.pdf}
-  \caption{Schéma global du compilateur d'OCaml-Java}
+  \caption{Schéma global du compilateur d'\emph{OCaml-Java}}
 \end{figure}
 
+\newpage
 \subsubsection{Barrière d'abstraction : manipuler du Java OK}
 \noindent
-Description des types manipulés par OCaml-Java permettant un accès au
+Description des types manipulés par \emph{OCaml-Java} permettant un accès au
 monde de Java depuis celui d'OCaml :
 
 \begin{tabular}{|l|l|}
@@ -443,8 +462,9 @@ exceptions du côté OCaml :
 \begin{OCamlEx}
 exception Java_exception of java'lang'Throwable java_instance
 \end{OCamlEx}
+
 \newpage
-Voici un exemple d'utilisation du module Java d'OCaml, voué à être compilé avec OCaml-Java :
+Voici un exemple d'utilisation du module Java d'OCaml, voué à être compilé avec \emph{OCaml-Java} :
 \begin{OCamlEx}
 let color = JavaString.of_string "bleu"
 and x = Int32.of_int 1
@@ -467,11 +487,11 @@ Mais sa syntaxe est assez verbeuse, donc son utilisation moyennement accessible.
 \subsection{Le travail à effectuer pour profiter des deux approches OK}
 O'Jacaré construit les classes encapsulantes de classes
 java définies par l'utilisateur, et permet ainsi l'accès aux méthodes
-(d'instance ou de classe) Java en OCaml en passant par l'interface de bas niveau CamlJava.
+(d'instance ou de classe) Java en OCaml en passant par l'interface de bas niveau \camljava.
 
-OCaml-Java permet l'accès simple à toute l'API Java depuis OCaml ou toute autre classe définie, de manière sûre. 
+\emph{OCaml-Java} permet l'accès simple à toute l'API Java depuis OCaml ou toute autre classe définie, de manière sûre. 
 
-La question à se poser est maintenant est : comment modifier la génération d’O’Jacaré pour obtenir les classes d’encapsulation adaptées pour OCaml-Java. Sur le schéma ci-dessous, cette modification est représentée par $\Delta$.
+La question à se poser est maintenant est : comment modifier la génération d’O’Jacaré pour obtenir les classes d’encapsulation adaptées pour \emph{OCaml-Java}. Sur le schéma ci-dessous, cette modification est représentée par $\Delta$.
 
 \begin{figure}[h]
   \centering
@@ -479,7 +499,7 @@ La question à se poser est maintenant est : comment modifier la génération d�
   \caption{Le travail à effectuer}
 \end{figure}
 
-La génération de code va être basée sur le même principe de classes encapsulantes pour garder l'avantage d'un appel largement simplifié vers Java, mais en utilisant désormais OCaml-Java comme outil de communication avec Java.
+La génération de code va être basée sur le même principe de classes encapsulantes pour garder l'avantage d'un appel largement simplifié vers Java, mais en utilisant désormais \emph{OCaml-Java} comme outil de communication avec Java.
 
 
 
@@ -487,7 +507,7 @@ La génération de code va être basée sur le même principe de classes encapsu
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  2  REALISATION   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Portage d'O'Jacaré pour OCaml-Java : \emph{O'Jacaré 2} OK}
+\section{Portage d'O'Jacaré pour \emph{OCaml-Java} : \emph{O'Jacaré 2} }
 
 
 \subsection{\'Etude de la génération d'O'Jacaré}\label{2.1}
@@ -499,28 +519,28 @@ notation BNF.
 
 O'Jacaré 2 utilisera ce même IDL, en retirant de sa BNF l'attribut \emph{callback}, l'autre sens de communication n'étant pas géré dans O'Jacaré 2.
 
-\subsubsection{Analyse lexicale, syntaxique et sémantique OK}
+\subsubsection{Analyse lexicale, syntaxique et sémantique }
 La première phase est celle d'analyse lexicale et syntaxique,
 séparant l'IDL en lexèmes et construisant un AST\footnote{\emph{Abstract syntax tree} ou arbre syntaxique abstrait}, structurant les déclarations de l'IDL.
 
 Vient ensuite la phase d'analyse sémantique, analysant l'AST obtenu par la
 phase précédente, vérifiant si l'IDL est correct sémentiquement,
-restructurant chaque classe ou interface définie dans l'idl en construisant un nouvel AST (CAST) qui va être manipulé dans les passes de génération de code.
+restructurant chaque classe ou interface définie dans l'IDL en construisant un nouvel AST (CAST) qui va être manipulé dans les passes de génération de code.
 
 Dans O'Jacaré 2, cette phase est différente uniquement dans le fait qu'on n'accepte plus l'attribut callback dans l'IDL. 
 
-\subsubsection{génération de Java pour le callback OK}
+\subsubsection{génération de Java pour le callback}
 O'Jacaré permet la génération de classes Java qui encapsulent une classe OCaml, et permet ainsi un appel dans l'autre sens (de Java vers OCaml), grâce à un attribut "callback" ajouté devant une classe définie dans l'IDL.
 
 Mais O'Jacaré 2 ne gérant pas ce sens de communication, nous ne nous intéresserons pas à cette génération de code.
 
-\subsubsection{génération des classes encapsulantes OK TODO}
+\subsubsection{génération des classes encapsulante}
 
-Cette phase est la plus modifiée pour notre adaptation.
+Cette phase est la plus largement modifiée pour notre adaptation.
 
-Pour avoir une idée des modifications à faire TODO
+\`A partir de la structure du fichier généré par O'Jacaré, nous avons d'abord étudié l'utilité et les éléments à modifier pour l'adapter pour \emph{OCaml-Java} :
 
-\`A partir de la structure du fichier généré par O'Jacaré, nous avons d'abord étudié l'utilité et les éléments à modifier pour l'adapter pour OCaml-Java :
+
 
 \begin{tabular}{|c|l|l|}
   \hline
@@ -534,7 +554,7 @@ Pour avoir une idée des modifications à faire TODO
   \hline
   Cast JNI (up et down) & utile pour le cast utilisateur & inutile\\
   \hline
-  Fonction d'allocation & alloue la référence & inutile : OCaml-Java \\
+  Fonction d'allocation & alloue la référence & inutile : \emph{OCaml-Java} \\
   & Java du côté OCaml & n'utilise que le runtime Java\\
   \hline
   Capsule & vérifications avant & inutile : les vérifications \\
@@ -558,26 +578,28 @@ statiques & fonctions/méthodes globales & \\
   \hline
 \end{tabular}
 
-\'A partir de cette étude il a fallut faire les schémas de compilation correspondant à chaque type de déclaration de l'IDL.
+Après cela, il a fallut partir des fichiers générés d'O'Jacaré, et faire une ébauche à la main (en supprimant l'inutile et en adaptant les appels vers Java).
+
+Puis à partir de l'ébauche écrite, nous avons fait ressortir les schémas de compilation correspondants à chaque type de déclaration de l'IDL.
 
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%   newOjacare   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Génération de code pour Ocaml-Java TODO}
+\subsection{Génération de code pour Ocaml-Java}
 
-\subsubsection{\'Les types dans OCaml-Java}
+\subsubsection{\'Les types dans \emph{OCaml-Java}}
 Pour préparer ces schémas de compilation, nous avons écrit le tableau représentant les équivalents en OCaml des types Java manipulés
-par OCaml-Java. \'A partir de celui-ci, la phase suivante était de définir les conversions à faire pour l'adaptation sous forme de schémas de compilation.
+par \emph{OCaml-Java}. \'A partir de celui-ci, la phase suivante était de définir les conversions à faire pour l'adaptation sous forme de schémas de compilation.
 
 La troisième colonne représente les types manipulés par le programme
-OCaml écrit par l'utilisateur d'O'Jacaré2, la troisième ce qu'attend le compilateur OCaml-Java, tout cela en fonction du type correspondant au type Java.
+OCaml écrit par l'utilisateur d'O'Jacaré2, la troisième ce qu'attend le compilateur \emph{OCaml-Java}, tout cela en fonction du type correspondant au type Java.
 Le problème est donc de convertir du deuxième \emph{oj\_type} au \emph{ml\_type} type pour la manipulation côté OCaml et du \emph{ml\_type} au \emph{oj\_type} lors d'un appel à une fonction du module Java (un appel, un constructeur ou autre).
 
 \begin{tabular}{|c|l|l|l|}
  \hline
-TYPE IDL &type Java & type OCaml pour OCaml-Java & type OCaml \\
+TYPE IDL &type Java & type OCaml pour \emph{OCaml-Java} & type OCaml \\
 & (java\_type) & (oj\_type t) & (ml\_type t) \\
  \hline
 \emph{void} & void & unit & unit\\
@@ -639,14 +661,14 @@ Le type "top" manipulé sera le type d'une instance de Ocaml-Java de la classe O
 type top = java'lang'Object java_instance;;
 \end{OCamlEx}
 
-Une exception a été ajoutée,  :
+Une exception a été ajoutée, TODO :
 \begin{OCamlEx}
 exception Null_object of string
 \end{OCamlEx}
 
 
-\ 
-\newline
+\newpage
+\noindent
 \textbf{class}
 
 \ 
@@ -662,13 +684,10 @@ $[\![ {\color{blue}class}\ CLASS\
 
   $\ \ \ init1; init2; ...;$
 
- $\} ]\!]_{\rho,CB}\longrightarrow$
-
-\ 
-\newline
+\noindent
+ $\} ]\!]_{\rho,\Lambda,\gamma,\delta,\Delta}\longrightarrow$
 
 \begin{OCaml}
-
 (** type 'a java_instance*)
 "type _jni_jCLASS = PACK'CLASS java_instance;;"
 
@@ -676,77 +695,112 @@ $[\![ {\color{blue}class}\ CLASS\
 "class type jCLASS =
    object inherit E
    inherits jI1
-   inherits jI2 ...
-   method _get_jni_jCLASS : _jni_jCLASS
-   end"
+   inherits jI2 ..."
+\end{OCaml}
+
+\emph{eval\_classe}$[\![attr1; attr2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+
+\emph{eval\_classe}$[\![m1; m2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+
+\begin{OCaml}
+ "  method _get_jni_jCLASS : _jni_jCLASS
+ end"
 
 (* capsule wrapper *)
 "class _capsule_jCLASS = 
   fun (jni_ref : _jni_jCLASS) ->
      let _ =
         if Java.is_null jni_ref
-        then raise (Null_object "mypack/Point")
+        then raise (Null_object \"PACK/POINT\")
         else ()
      in
+    object (self)"\end{OCaml}
 
-    object (self)
-     (* method _get_jni_jCLASS = jni_ref
-      method _get_jni_jE = jni_ref
-      method _get_jni_jI1 = jni_ref
-      method _get_jni_jI2 = jni_ref*)
-      inherit JniHierarchy.top jni_ref
+    \emph{eval\_capsule}$[\![attr1; attr2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+
+    \emph{eval\_capsule}$[\![m1; m2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+    \begin{OCaml}
+     "method _get_jni_jI1 = (jni_ref :> _jni_jI1)
+      method _get_jni_jI2 = (jni_ref :> _jni_jI2)...
+      method _get_jni_jE = (jni_ref :> _jni_jE) 
+      method _get_jni_jCLASS = jni_ref
     end"
 
 (* downcast utilisateur *)
-"let jCLASS_of_top (o : TOP) : jCLASS =
-    new _capsule_jCLASS (__jni_jCLASS_of_jni_obj o#_get_jniobj)"
+"let jCLASS_of_top (o : top) : jCLASS =
+    new _capsule_jCLASS (Java.cast \"PACK.CLASS\" o)
 (* instance_of *)
-"let _instance_of_jCLASS =
-    in fun (o : TOP) -> Jni.is_instance_of o#_get_jniobj clazz"
-
-
+let _instance_of_jCLASS (o : top) =
+    Java.instanceof \"PACK.CLASS\" o;;
 \end{OCaml}
-\ 
-\newline
+
+    \emph{eval}$[\![init1; init2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+
+    \emph{eval}$[\![static m1; static m2; ...]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
+
+
+
+\newpage
 \noindent
 \textbf{ methodes } 
 
 
-
-\ 
-\newline
-\ 
-\newline
 \noindent
-$[\![\ RTYPE\ \ METH\ (TARG1,\ TARG2, ...)]\!]_{ TODO }$$\longrightarrow$
+\emph{eval\_classe}$[\![RTYPE\ \ METH\ (TARG1,\ TARG2, ...)]\!]_{ \rho=PACK,\Lambda=CLASS,\gamma=,\delta=E,\Delta=I1,I2...  }$$\longrightarrow$
 
 \begin{OCaml}
-...
-(* type class *)
-"class type jCLASS =
-   ...
-   method METH : "(ml_type TARG1) -> (ml_type TARG2)" -> ... ->(ml_type RTYPE)
-   ... "
-(* capsule *)
-"class _capsule_jCLASS =
-   object (self)      
-      method METH =
+  " method METH :"(ml_type TARG1) -> (ml_type TARG2) ->...->(ml_type RTYPE)
+\end{OCaml}
+\
+\newline
+\noindent
+\emph{eval\_capsule}$[\![RTYPE\ \ METH\ (TARG1,\ TARG2,..)]\!]_{ \rho=PACK,\Lambda=CLASS,\gamma=,\delta=E,\Delta=I1,I2...  }$$\longrightarrow$
+
+\begin{OCaml}
+"      method METH =
          fun "(fcast TARG0) (fcast TARG1) ..." ->
            let _p1 = "(to_oj_type TARG1)" _p1 in
            let _p0 = "(to_oj_type TARG0)" _p0
            in"
              (to_ml_type RTYPE)
              "Java.call \"PACK.CLASS.METH("(javaType TARG1),(javaType TARG2),...):(javaType RTYPE)"\" jni_ref _p0 _p1 ..."
-
 \end{OCaml}
+\ 
+
+\ 
+\newline
+\noindent
+\textbf{ attributs }
+
+\noindent
+\emph{eval\_classe}$[\![ TYPE\ \ ATTR; ]\!]_\rho=PACK,\Lambda=CLASS,\gamma=,\delta=E,\Delta=I1,I2...{}$$\longrightarrow$
+
+\begin{OCaml}
+  "method set_ATTR : "(ml_type TYPE)" -> unit
+   method get_ATTR : unit -> "(ml_type TYPE)
+\end{OCaml}
+
+\noindent
+\emph{eval\_classe}$[\![ TYPE\ \ ATTR; ]\!]_\rho=PACK,\Lambda=CLASS,\gamma=,\delta=E,\Delta=I1,I2...{}$$\longrightarrow$
+
+\begin{OCaml}
+       "method set_ATTR =
+           fun "(fcast TYPE)" ->
+              let _p = "(to_oj_type TYPE)" _p
+              in Java.set \"PACK.CLASS.ATTR:TYPE\" jni_ref _p
+        method get_ATTR =
+        fun () ->
+           "(to_ml_type TYPE)" (Java.get \"PACK.CLASS.ATTR:TYPE\" jni_ref)"
+\end{OCaml}
+
 \ 
 \newline
 \noindent
 \textbf{ inits }
-\newline
+
 \noindent
-$[\![$[$ {\color{blue}name}\ INIT $]$\ {\color{blue}
-      <init>}\ (TARG0,\ TARG1, ...)]\!]_{}$$\longrightarrow$
+\emph{eval}$[\![$[$ {\color{blue}name}\ INIT $]$\ {\color{blue}
+      <init>}\ (TARG0,\ TARG1, ...)]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=,\delta=E,\Delta=I1,I2...}$$\longrightarrow$
 % 
 
 \begin{OCaml}
@@ -759,45 +813,46 @@ $[\![$[$ {\color{blue}name}\ INIT $]$\ {\color{blue}
   object (self) 
      inherit _capsule_jCLASS java_obj 
   end;;"
-
 \end{OCaml}
 
 
 
-\ 
-\newline
+\newpage
 \noindent
-\textbf{ attributs }
-\newline
+\textbf{ méthodes statiques }
+
 \noindent
-\ 
-$[\![ TYPE\ \ ATTR; ]\!]_{}$$\longrightarrow$
+\emph{eval}$[\![static RTYPE\ \ METH\ (TARG1,\ TARG2,..)]\!]_{\rho=PACK,\Lambda=CLASS,\gamma=false,\delta=E,\Delta=I1,I2... }$
 
 \begin{OCaml}
-...
-(* type class *)
-"class type jCLASS =
-  ...
-   method set_ATTR : "(ml_type TYPE)" -> unit
-   method get_ATTR : unit -> "(ml_type TYPE)"
-   ... "
-(* capsule *)
-"class _capsule_jCLASS =
-   ...
-   fun (jni_ref : _jni_jCLASS) -> 
-     object (self)
-     ...
-        method set_ATTR =
+"let PACK_CLASS__m1 =
+ fun "(fcast TARG0) (fcast TARG1) ..." ->
+           let _p1 = "(to_oj_type TARG1)" _p1 in
+           let _p0 = "(to_oj_type TARG0)" _p0
+           in"
+             (to_ml_type RTYPE)
+             "Java.call \"PACK.CLASS.METH("(javaType TARG1),(javaType TARG2),...):(javaType RTYPE)"\" _p0 _p1 ..."
+\end{OCaml}
+
+\ 
+\newline
+\noindent
+\textbf{ attributs statiques }
+
+
+\noindent
+\emph{eval}$[\![static TYPE\ \ ATTR; ]\!]_\rho=PACK,\Lambda=CLASS,\gamma=,\delta=E,\Delta=I1,I2...{}$$\longrightarrow$
+
+\begin{OCaml}
+"let PACK_CLASS__set_ATTR =
            fun "(fcast TYPE)" ->
               let _p = "(to_oj_type TYPE)" _p
-              in Java.set \"PACK.CLASS.ATTR:TYPE\" jni_ref _p
-        method get_ATTR =
+              in Java.set \"PACK.CLASS.ATTR:TYPE\" () _p
+let PACK_CLASS__get_ATTR =
         fun () ->
-           "(to_ml_type TYPE)" (Java.get \"PACK.CLASS.ATTR:TYPE\" jni_ref)
-        ...
-   "
-
+           "(to_ml_type TYPE)" (Java.get \"PACK.CLASS.ATTR:TYPE\") ()"
 \end{OCaml}
+
 
 
 \subsection{Comparaison d'O'Jacaré avec O'Jacaré 2 TODO}
@@ -838,15 +893,21 @@ class point _p0 _p1 =
 
 
 
-\section{Application TODO}
+\section{Application}
 
 En développant ce projet, une application concrète m'est venue à l'esprit : un mini-projet de gestion de base de donnée implémenté en OCaml au cours de mes études manquait d'une interface graphique. Or, la bibliothèque graphique \emph{swing} offre un composant permettant d'afficher un tableau (JTable), très simple d'utilisation.
 
 J'ai donc d'un côté repris ce projet en ajoutant une fonction créant un JTable en lui donnant les données de la base de donnée créée, et implémenté une classe Java JTable construisant le composant en question.
+En quelques lignes de code, j'ai ajouté une interface graphique Java à mon programme OCaml de gestion de base de données.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{exempleDBuse.png}
+\end{figure}
 
 La structure de ce programme est la suivante :
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics{exempleDB.pdf}
 \end{figure}
@@ -857,8 +918,6 @@ Le détail du code est en annexe dans la section \ref{4.4}
 \newpage
 \section*{Conclusion TODO}
 \addcontentsline{toc}{section}{Conclusion}
-
-Pour conclure de travail de PSTL mérite une approfondissement, comme un stage, et au moins un 18/20 !
 
 
 
