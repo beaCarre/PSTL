@@ -180,12 +180,12 @@ de réduire l'étude à leur l'intersection.
 Deux travaux ont déjà été réalisées pour l’interopérabilité entre
 OCaml et Java à travers leur modèle object respectif :
 \begin{itemize}
-\item \emph{O’Jacaré} conserve les runtimes des deux langages (GC,
-Exceptions, ...) et les fait communiquer par l'interface \camljava,
+\item \emph{O’Jacaré}\cite{O'Jacaré} conserve les runtimes des deux langages (GC,
+Exceptions, ...) et les fait communiquer par l'interface \camljava \cite{camljava},
 avec l'aide de classes encapsulantes générées par O'Jacaré.
 
 \item \emph{OCaml-java
-  2.0} utilise un seul runtime, en compilant le OCaml en byte-code
+  2.0}\cite{OCaml-Java} utilise un seul runtime, en compilant le OCaml en byte-code
 Java. La manipulation des classes Java se fait à l'aide de nouveaux types introduits.
 \end{itemize}
 L'idée est de profiter des deux approches : d'une part, d'un accès simple à des classes
@@ -417,7 +417,7 @@ utilisant la barrière d'abstraction d'\emph{OCaml-Java}.
 \end{figure}
 
 \newpage
-\subsubsection{Barrière d'abstraction : manipuler du Java OK}
+\subsubsection{Barrière d'abstraction : manipuler du Java}
 \noindent
 Description des types manipulés par \emph{OCaml-Java} permettant un accès au
 monde de Java depuis celui d'OCaml :
@@ -445,7 +445,7 @@ monde de Java depuis celui d'OCaml :
 \end{tabular}
 
 \noindent
-et les méthodes du module Java
+et les méthodes du module Java\cite{module Java} pour OCaml
 
 \begin{OCamlEx}
 make : 'a java_constructor -> 'a 
@@ -464,7 +464,7 @@ exception Java_exception of java'lang'Throwable java_instance
 \end{OCamlEx}
 
 \newpage
-Voici un exemple d'utilisation du module Java d'OCaml, voué à être compilé avec \emph{OCaml-Java} :
+Voici un exemple d'utilisation du module Java \cite{module Java} d'OCaml, voué à être compilé avec \emph{OCaml-Java} :
 \begin{OCamlEx}
 let color = JavaString.of_string "bleu"
 and x = Int32.of_int 1
@@ -534,7 +534,7 @@ O'Jacaré permet la génération de classes Java qui encapsulent une classe OCam
 
 Mais O'Jacaré 2 ne gérant pas ce sens de communication, nous ne nous intéresserons pas à cette génération de code.
 
-\subsubsection{génération des classes encapsulante}
+\subsubsection{Génération des classes encapsulante}
 
 Cette phase est la plus largement modifiée pour notre adaptation.
 
@@ -597,9 +597,11 @@ La troisième colonne représente les types manipulés par le programme
 OCaml écrit par l'utilisateur d'O'Jacaré2, la troisième ce qu'attend le compilateur \emph{OCaml-Java}, tout cela en fonction du type correspondant au type Java.
 Le problème est donc de convertir du deuxième \emph{oj\_type} au \emph{ml\_type} type pour la manipulation côté OCaml et du \emph{ml\_type} au \emph{oj\_type} lors d'un appel à une fonction du module Java (un appel, un constructeur ou autre).
 
+\begin{figure}
+\centering
 \begin{tabular}{|c|l|l|l|}
  \hline
-TYPE IDL &type Java & type OCaml pour \emph{OCaml-Java} & type OCaml \\
+\emph{TYPE IDL} & \emph{type Java} &\emph{ type OCaml pour OCaml-Java} & \emph{type OCaml} \\
 & (java\_type) & (oj\_type t) & (ml\_type t) \\
  \hline
 \emph{void} & void & unit & unit\\
@@ -615,6 +617,9 @@ TYPE IDL &type Java & type OCaml pour \emph{OCaml-Java} & type OCaml \\
 \emph{pack/Obj} & pack.Obj & pack'Obj java\_instance & jObj\\
  \hline
 \end{tabular}
+\caption{Tableau associant pour chaque type de l'IDL les
+fonctions de conversion utiles aux schémas de compilation manipulant ceux-ci, comme explicité ci-dessus.}
+\end{figure}
 \
 \newline
 
@@ -623,7 +628,7 @@ fonctions de conversion utiles aux schémas de compilation manipulant ceux-ci, c
 
 \begin{tabular}{|c|l|l|l|}
   \hline
-  TYPE IDL & to\_oj\_Type ARGi & to\_ml\_type ARGi & fcast\\
+  \emph{TYPE IDL} & \emph{to\_oj\_Type ARGi} & \emph{to\_ml\_type ARGi} & \emph{fcast}\\
   \hline
 
  \emph{int} & Int32.of\_int\ & Int32.to\_int & \\
@@ -635,7 +640,7 @@ fonctions de conversion utiles aux schémas de compilation manipulant ceux-ci, c
 \end{tabular}
 
 
-\subsubsection{schémas de compilation d'O'Jacaré 2 TODO}
+\subsubsection{schémas de compilation d'O'Jacaré 2}
 
 \noindent
 Nous considérons un environnement contenant les  variables suivantes, initialisées à leur valeur par défaut: 
@@ -646,9 +651,9 @@ $\Lambda$ = "" : le \textbf{nom de la classe} courant.
 
 $\gamma$ = false : si la déclaration est une \textbf{interface}.
 
-$\delta$ = "" : la classe dont \textbf{extends} la classe courante.
+$\delta$ = "" : la classe dont \textbf{hérite} la classe courante.
 
-$\Delta$ = [] : les interfaces qu'\textbf{implements} la classe courante.
+$\Delta$ = [] : les interfaces qu'\textbf{implemente} la classe courante.
 \ %%   \rho,\Lambda,\gamma,\theta,\alpha,\delta,\Delta
 
 
@@ -656,7 +661,7 @@ $\Delta$ = [] : les interfaces qu'\textbf{implements} la classe courante.
 \newline
 \textbf{class}
 
-Le type "top" manipulé sera le type d'une instance de Ocaml-Java de la classe Objet Java :
+Le type "top" manipulé est le type d'une instance de Ocaml-Java de la classe Objet Java :
 \begin{OCamlEx}
 type top = java'lang'Object java_instance;;
 \end{OCamlEx}
@@ -855,7 +860,7 @@ let PACK_CLASS__get_ATTR =
 
 
 
-\subsection{Comparaison d'O'Jacaré avec O'Jacaré 2 TODO}
+\subsection{Comparaison d'O'Jacaré avec O'Jacaré 2}
 
 Ici nous présentons un exemple de morceaux de code généré 
 
@@ -950,33 +955,40 @@ Le détail du code est en annexe dans la section \ref{4.4}
 \newpage
 \section*{Bibliographie, références}
 \addcontentsline{toc}{section}{Bibliographie, références}
-[1] CHAILLOUX E., MANOURY P., PAGANO B., \emph{Développement
+
+
+\begin{thebibliography}{}
+\bibitem{DAOC} CHAILLOUX E., MANOURY P., PAGANO B., \emph{Développement
   d'applications avec Objective Caml}, O'Reilly
 , 2000, (\url{http://www.oreilly.fr/catalogue/ocaml.html})
 
-[2] CHAILLOUX E., HENRY G., \emph{O’Jacaré, une interface objet
-  entre Objective Caml et Java}, 2004,
+\bibitem{O'Jacaré} HENRY G., \emph{O’Jacaré} \url{http://www.pps.univ-paris-diderot.fr/~henry/ojacare/}
 
-[3] CLERC X., \emph{OCaml-Java: Typing Java Accesses from OCaml
+\bibitem{OCaml-Java} CLERC X.,\emph{OCaml-Java 2.0} \url{http://ocamljava.x9c.fr/preview/}
+
+\bibitem{O'Jacaré2} CHAILLOUX E., HENRY G., \emph{O’Jacaré, une interface objet
+  entre Objective Caml et Java}, 2004
+
+\bibitem{OCaml-Java2} CLERC X., \emph{OCaml-Java: Typing Java Accesses from OCaml
   Programs}, Trends in Functional Programming, Lecture Notes in
 Computer Science Volume 7829,
 2013, \href{http://www.cs.ru.nl/P.Achten/IFL2013/symposium_proceedings_IFL2013/ifl2013_submission_17.pdf}{lien}
 
-[4] CLERC X., \emph{OCaml-Java: OCaml on the JVM}, Trends in
+\bibitem{OCaml-Java3} CLERC X., \emph{OCaml-Java: OCaml on the JVM}, Trends in
 Functional Programming,
 2012,\href{}{lien}
 
-[5] CLERC X., \emph{OCaml-Java:OCaml-Java: from OCaml sources to Java bytecodes }, Trends in Functional Programming, 2012,\href{http://www.lexifi.com/ml2012/full9.pdf}{lien}
+\bibitem{OCaml-Java3} CLERC X., \emph{OCaml-Java:OCaml-Java: from OCaml sources to Java bytecodes }, Trends in Functional Programming, 2012,\url{http://www.lexifi.com/ml2012/full9.pdf}
 
-[6] Leroy X., \emph{The camljava project},
+\bibitem{camljava} Leroy X., \emph{The camljava project},
 (\url{http://forge.ocamlcore.org/projects/camljava/})
 
-[7] CLERC X.,\emph{OCaml-java : module Java} \url{http://ocamljava.x9c.fr/preview/javalib/index.html}
+\bibitem{module Java} CLERC X.,\emph{OCaml-java : module Java} \url{http://ocamljava.x9c.fr/preview/javalib/index.html}
 
-[8] CamlP4 (* todo *)
+\bibitem{camlp4} CamlP4 \url{http://pauillac.inria.fr/camlp4/}
 
 
-
+\end{thebibliography}
 
 
 
