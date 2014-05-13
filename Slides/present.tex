@@ -15,7 +15,29 @@
 
 \pdfcompresslevel0
 
+\usepackage{listings}
 \usepackage{color}
+
+\definecolor{darkgray}{rgb}{.5,.2,.2}
+
+\lstnewenvironment{javaEx}
+                  {\lstset{
+                      language=Java,             
+                      breaklines=true,
+                      showstringspaces=false,
+                      commentstyle=\tiny\color{red},
+                      stringstyle=\tiny\color{darkgray},
+                      identifierstyle=\tiny\ttfamily\textit,
+                      keywordstyle=\tiny\color{blue},
+                      basicstyle=\tiny\footnotesize,
+                      escapeinside={/*}{*/},
+                      frame=double,
+                      numbers=left,
+                      %xleftmargin=0.08\textwidth
+                    }
+                  }
+                  {}
+
 
 \addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber
 
@@ -51,22 +73,29 @@
 
 
 
-
 \begin{frame}{Objectif}
-
-Caractéristiques d'une interopérabilité efficace :
+\begin{definition}
+L'\alert{interop\'erabilit\'e entre deux langages:} est la 
+capacité d'un programme écrit dans un certain langage d'utiliser un
+programme dans un autre langage.
+\end{definition}
 \begin{itemize}
-\item accès à l'autre monde simple ou implicite
-\item bonne gestion mémoire et des exceptions
-\item gestion des caractéristiques de chaque monde
-\end{itemize}
+\item Pour quoi faire ?
 
+Tirer parti des spécificités de chaque langage
+
+\item Caractéristiques d'une interopérabilité efficace :
+\begin{itemize}
+\item accès simple ou implicite à l'autre langage
+\item gestion mémoire et des exceptions
+\item bonne gestion des caractéristiques différentes
+\end{itemize}
+\end{itemize}
 \end{frame}
 
 
 
 \begin{frame}{Comparaison des deux mondes}
-  
 L'interopérabilité se fait sur le modèle objet de chacun
 
 \bigskip
@@ -76,8 +105,7 @@ L'interopérabilité se fait sur le modèle objet de chacun
   \hline
   accès champs & selon la visibilité & via appels de méthode\\\hline
   var./méth. statiques & \checkmark & fonct./décl. globales\\\hline
-  typage dynamique & \checkmark & pas de downcast \\\hline
-  héritage$\equiv$sous-typage? &\checkmark  & $\times$ \\\hline
+  typage dynamique & \checkmark &  $\times$  \\\hline
   surcharge & \checkmark & $\times$ \\\hline
   héritage multiple & pour les interfaces & \checkmark\\
   \hline
@@ -87,7 +115,6 @@ L'interopérabilité se fait sur le modèle objet de chacun
 \bigskip
 
 $\Rightarrow$ Il faut réduire les possibilités d'un outil à l'intersection des deux mondes
- 
 \end{frame}
 
 
@@ -129,6 +156,41 @@ O'Jacaré génère leurs classes encapsulantes à partir d'un fichier dans leque
 
 
 
+\begin{frame}[fragile]{Code Java}
+%mise en page TODO
+\begin{javaEx} 
+  package mypack;
+  public class Point {
+    int x;
+    int y;
+    public Point() { 
+      this.x = 0;
+      this.y = 0;
+    }
+    public Point(int x,int y) {
+      this.x = x;
+      this.y = y;
+    }
+    public void moveto(int x,int y){
+      this.x = x;
+      this.y = y;
+    }
+    public String toString() {
+      return "("+x+","+y+")";
+    }
+    public double distance() {
+      return Math.sqrt
+      (this.x*this.x+this.y*this.y);
+    }
+    public boolean eq(Point p) {
+      return this.x == p.x 
+          && this.y == p.y;
+    }
+  }
+\end{javaEx}
+
+\end{frame}
+
 
 
 
@@ -165,7 +227,7 @@ Pas de problème de gestion mémoire, de communications .
   \includegraphics[scale=0.33]{methModuleJava.png}
 \end{figure}
 
-Accès à l'API Java et à du code utilisateur grâce à ce module.
+Accès aux bibliothèques Java et à du code utilisateur grâce à ce module.
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.30]{exempleOCaml-Java.png}
