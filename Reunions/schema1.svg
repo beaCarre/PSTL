@@ -13,10 +13,20 @@
    height="88.068825"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="schema1.svg">
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="schema1.svg"
+   inkscape:export-filename="/users/nfs/Etu7/2900087/PSTL/PSTL/Slides/schema1.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 44.034412 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="384.26013 : 44.034412 : 1"
+       inkscape:persp3d-origin="192.13007 : 29.356275 : 1"
+       id="perspective75" />
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
@@ -117,14 +127,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="158.01021"
-     inkscape:cy="50.72411"
+     inkscape:cy="49.713957"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1279"
      inkscape:window-height="604"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="51"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -140,7 +150,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -331,11 +341,11 @@
        sodipodi:cy="321.64789"
        sodipodi:rx="69.285713"
        sodipodi:ry="31.428572"
-       d="m 272.30323,353.03835 c -38.21904,-0.85454 -67.67451,-15.60128 -65.79063,-32.93775 1.88388,-17.33647 34.39372,-30.69772 72.61276,-29.84317 38.21904,0.85454 67.67451,15.60127 65.79063,32.93775 -1.8719,17.22627 -33.99855,30.5499 -71.98995,29.85582"
+       d="m 272.30323,353.03835 a 69.285713,31.428572 0 1 1 0.62281,0.0127"
        sodipodi:start="1.6200481"
        sodipodi:end="7.8942353"
        sodipodi:open="true"
-       transform="matrix(0.54104703,0,0,0.45572563,247.82435,-7.9326982)" />
+       transform="matrix(0.54104703,0,0,0.45572563,245.29897,-4.3971643)" />
     <rect
        style="opacity:0.63484491;fill:none;stroke:#000000;stroke-width:2.81399989;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4072"
@@ -378,7 +388,7 @@
          y="190.93361" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 308.98023,166.40714 -4.28571,6.78572 8.21428,0.17857 z"
+       d="m 309.99038,167.41729 -4.28571,6.78572 8.21428,0.17857 z"
        id="path4161"
        inkscape:connector-curvature="0" />
     <path

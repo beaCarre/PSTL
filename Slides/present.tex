@@ -1,4 +1,5 @@
-\documentclass{beamer}
+
+\documentclass[xcolor={table,dvipsnames}]{beamer}
 
 \usetheme{Warsaw}
 
@@ -8,6 +9,7 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 
+
 \usepackage{graphicx}
 
 \usepackage{tikz}
@@ -15,24 +17,65 @@
 
 \pdfcompresslevel0
 
+\newcommand{\camljava}{{\tt{camljava}}}
+
 \usepackage{listings}
 \usepackage{color}
-
 \definecolor{darkgray}{rgb}{.5,.2,.2}
+
+\usepackage[table]{xcolor}
+
+\lstdefinelanguage{idlgrammar}{
+  morekeywords={package,abstract,extends,class,implements,static,final,<ini>,interface,callback,array,[,],{,},
+    name ,void,boolean,byte,char,short,int,long,float,double,string},
+  alsoletter=[]{},
+}
+\lstnewenvironment{idlEx}
+                  {\lstset{
+                      language=idlgrammar,
+                      breaklines=true,
+                      showstringspaces=false,
+                      commentstyle=\color{red},
+                      stringstyle=\color{darkgray},
+                      identifierstyle=\ttfamily\textit,
+                      keywordstyle=\color{blue},
+                      basicstyle=\tiny,
+                      escapeinside={/*}{*/},
+                      frame=single,
+                      %xleftmargin=0.08\textwidth
+                    }
+                  }
+                  {}
+
+\lstnewenvironment{OCamlEx}
+                  {\lstset{
+                      language=[Objective]Caml,
+                      breaklines=true,
+                      showstringspaces=false,
+                      commentstyle=\color{red},
+                      stringstyle=\color{darkgray},
+                      identifierstyle=\ttfamily,
+                      keywordstyle=\color{blue},
+                      basicstyle=\tiny,
+                      escapeinside={/*}{*/},
+                      frame=single,
+                      %xleftmargin=0.08\textwidth
+                    }
+                  }
+                  {}
 
 \lstnewenvironment{javaEx}
                   {\lstset{
                       language=Java,             
                       breaklines=true,
                       showstringspaces=false,
-                      commentstyle=\tiny\color{red},
-                      stringstyle=\tiny\color{darkgray},
-                      identifierstyle=\tiny\ttfamily\textit,
-                      keywordstyle=\tiny\color{blue},
-                      basicstyle=\tiny\footnotesize,
+                      commentstyle=\color{red},
+                      stringstyle=\color{darkgray},
+                      identifierstyle=\ttfamily\textit,
+                      keywordstyle=\color{purple},
+                      basicstyle=\tiny,
                       escapeinside={/*}{*/},
                       frame=double,
-                      numbers=left,
                       %xleftmargin=0.08\textwidth
                     }
                   }
@@ -75,12 +118,12 @@
 
 \begin{frame}{Objectif}
 \begin{definition}
-L'\alert{interop\'erabilit\'e entre deux langages:} est la 
+L'\alert{interop\'erabilit\'e entre deux langages} est la 
 capacité d'un programme écrit dans un certain langage d'utiliser un
 programme dans un autre langage.
 \end{definition}
 \begin{itemize}
-\item Pour quoi faire ?
+\item Intérêt :
 
 Tirer parti des spécificités de chaque langage
 
@@ -96,7 +139,7 @@ Tirer parti des spécificités de chaque langage
 
 
 \begin{frame}{Comparaison des deux mondes}
-L'interopérabilité se fait sur le modèle objet de chacun
+L'interopérabilité se fait sur le modèle objet de chacun, dont voici les caractéristiques qui diffèrent :
 
 \bigskip
 \begin{tabular}{|l|c|c|c|c|}
@@ -109,7 +152,6 @@ L'interopérabilité se fait sur le modèle objet de chacun
   surcharge & \checkmark & $\times$ \\\hline
   héritage multiple & pour les interfaces & \checkmark\\
   \hline
-  modules paramétrés & $\times$ & \checkmark\\\hline
 \end{tabular}
 
 \bigskip
@@ -119,12 +161,13 @@ $\Rightarrow$ Il faut réduire les possibilités d'un outil à l'intersection de
 
 
 
-
 \begin{frame}{O'Jacaré : schéma global }
 
-Pour un accès à des classes Java :
+\begin{definition}
+Un \alert{IDL} (Langage de définition d'Interface) définit une interface entre les deux langages, qui va permettre de les faire communiquer.
+\end{definition}
 
-O'Jacaré génère leurs classes encapsulantes à partir d'un fichier dans lequel sont décrites les classes qu'on veut manipuler.
+O'Jacaré génère les classes encapsulantes à partir d'un IDL dans lequel sont décrites les classes qu'on veut manipuler.
 \medskip
 \begin{figure}[h]
   \centering
@@ -135,29 +178,31 @@ O'Jacaré génère leurs classes encapsulantes à partir d'un fichier dans leque
 \end{frame}
 
 
-
-
-
-\begin{frame}{O'Jacaré : schéma global }
-\begin{itemize}
-\item La capsule générée permet à l'utilisateur de faire des appels transparents à des méthodes Java.
-\item Camljava gère la communication entre les deux mondes :
+\begin{frame}{O'Jacaré : schéma global (2) }
+  \begin{definition}
+    La \alert{classe encapsulante} générée à partir de l'IDL contient une référence sur un objet Java et permet à l'utilisateur de faire les appels sur celui-ci.
+  \end{definition}
+La bibliothèque \camljava \ gère la communication OCaml-Java :
 \begin{itemize}
 \item Recherche des classes par nom et des méthodes par signature
-\item Conversion des types de base est assurée
+\item La conversion des types de base est assurée
 \end{itemize}
-\end{itemize}
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.6]{schemaCamljava2.png}
+  \includegraphics[scale=0.8]{schemaCamljava2.png}
 \end{figure}
 
 \end{frame}
 
 
 
-\begin{frame}[fragile]{Code Java}
+
+
+\begin{frame}[fragile]{La classe Point (Java)}
 %mise en page TODO
+
+\bigskip
+
 \begin{javaEx} 
   package mypack;
   public class Point {
@@ -179,12 +224,10 @@ O'Jacaré génère leurs classes encapsulantes à partir d'un fichier dans leque
       return "("+x+","+y+")";
     }
     public double distance() {
-      return Math.sqrt
-      (this.x*this.x+this.y*this.y);
+      return Math.sqrt (this.x*this.x+this.y*this.y);
     }
     public boolean eq(Point p) {
-      return this.x == p.x 
-          && this.y == p.y;
+      return this.x == p.x  && this.y == p.y;
     }
   }
 \end{javaEx}
@@ -195,62 +238,99 @@ O'Jacaré génère leurs classes encapsulantes à partir d'un fichier dans leque
 
 
 
-\begin{frame}{O'Jacaré : exemple d'idl}
-  
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.35]{pointIdlEx.png}
-\end{figure}
+\begin{frame}[fragile]{O'Jacaré : définition de l'IDL}
+  IDL : point.idl
+\begin{idlEx} 
+package mypack;
+
+class Point {
+  int x;
+  int y; 
+  [name default_point] <init> ();
+  [name point] <init> (int,int);
+  void moveto(int,int);
+  string toString();
+  boolean eq(Point);
+}
+\end{idlEx}
+
+Utilisation : main.ml
+\begin{OCamlEx}
+  open Point
+
+  let p = new default_point () in
+  let p2 = new point 1 1 in
+  p#moveto 4 3;
+  p#display ();
+  print_string (if (p#eq p2) then "true" else "false")
+\end{OCamlEx}
 \end{frame}
 
 
 
 
 \begin{frame}{OCaml-Java : schéma global}
-\begin{figure}
+\begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.5]{schemaOCamlJava.png}
+  \includegraphics[scale=0.8]{schemaOCamlJava.png}
 \end{figure}
 Compilation vers du bytecode Java
 
 $\Rightarrow$ un seul runtime
-Pas de problème de gestion mémoire, de communications .
+\begin{itemize}
+\item Pas de problème de gestion mémoire, 
+\item ni de communication dynamique
+\end{itemize}
 \end{frame}
 
 
 
 
 
-\begin{frame}{OCaml-Java : l'accès au monde Java}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.33]{methModuleJava.png}
-\end{figure}
+\begin{frame}[fragile]{OCaml-Java : l'accès au monde Java}
+\begin{OCamlEx}
+make : 'a java_constructor -> 'a 
+call : 'a java_method -> 'a 
+get : 'a java_field_get -> 'a 
+set : 'a java_field_set -> 'a 
+is_null : 'a java_instance -> bool 
+instanceof : 'a java_type -> 'b java_instance -> bool
+cast : 'a java_type -> 'b java_instance -> 'a
+\end{OCamlEx}
 
 Accès aux bibliothèques Java et à du code utilisateur grâce à ce module.
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.30]{exempleOCaml-Java.png}
-\end{figure}
+
+\begin{OCamlEx}
+let color = JavaString.of_string "bleu"
+and x = Int32.of_int 1
+and y = Int32.of_int 2 in
+let p = Java.make "mypack.ColoredPoint(int,int,java.lang.String)" s y color 
+in
+   Java.call "mypack.Point.eq(mypack.Point):boolean" p p2
+\end{OCamlEx}
+
 
 \end{frame}
 
 
 \begin{frame}{Fusion des deux approches}
 
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c@{\,\vrule width 6pt\,}c|}
   \hline
-   \emph{O'Jacaré+CamlJava} & \emph{OCaml-Java} & \emph{O'Jacaré+OCaml-Java}\\
-  \hline
-  appels transparents & via module Java & appels transparents\\\hline
-  2 runtime & 1 runtime & 1 runtime \\\hline
-  Pas d'allocation & & \\\hline
-  vérifications accès & vérifications accès & vérifications accès \\
-  dans la capsule & par le compilateur & par le compilateur\\
-  (avant accès Java) & (côté Java) & (côté Java) \\ \hline
+   \cellcolor[gray]{0.6}\emph{O'Jacaré+}\camljava & \cellcolor[gray]{0.6}\emph{OCaml-Java}& \cellcolor[gray]{0.6} \emph{O'Jacaré+OCaml-Java}\\
+  \hline\hline
+ \cellcolor[gray]{0.9} appels transparents & via module Java & \cellcolor[gray]{0.9}appels transparents\\
+\hline
+  2 runtime &\cellcolor[gray]{0.9} 1 runtime&\cellcolor[gray]{0.9} 1 runtime \\
+\hline
 \end{tabular}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=1]{schema1.png}
+\end{figure}
 
 \end{frame}
+
 
 
 \begin{frame}{Adaptation d'Ojacaré}
@@ -283,19 +363,6 @@ avec une simplicité d'utilisation :
 \item Code généré simplifié ($\sim$ 5 fois moins)
 \item 
 \end{itemize}
-
-\begin{tabular}{|l|c|}
-  \hline
-  \emph{caractéristiques} & \emph{O'Jacaré + OCaml-Java} \\
-  \hline
-  accès champs & selon la visibilité + via appels de méthode\\\hline
-  var./méth. statiques &  fonctions/décl. globales\\\hline
-  héritage$\equiv$sous-typage? & $\times$ \\\hline
-  surcharge & $\times$ \\\hline
-  héritage multiple & \checkmark\\
-  \hline
-\end{tabular}
-
 
 \end{frame}
 

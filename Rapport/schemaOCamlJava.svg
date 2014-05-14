@@ -13,10 +13,20 @@
    height="204.1004"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="schemaOCamlJava.svg">
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="schemaOCamlJava.svg"
+   inkscape:export-filename="/users/nfs/Etu7/2900087/PSTL/PSTL/Slides/schemaOCamlJava.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 102.0502 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="478.08798 : 102.0502 : 1"
+       inkscape:persp3d-origin="239.04399 : 68.033468 : 1"
+       id="perspective115" />
     <marker
        inkscape:stockid="StopL"
        orient="auto"
@@ -165,7 +175,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
      inkscape:cx="203.70431"
-     inkscape:cy="88.380086"
+     inkscape:cy="86.951515"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -186,7 +196,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
