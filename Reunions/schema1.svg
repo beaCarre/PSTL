@@ -16,8 +16,8 @@
    inkscape:version="0.47 r22583"
    sodipodi:docname="schema1.svg"
    inkscape:export-filename="/users/nfs/Etu7/2900087/PSTL/PSTL/Slides/schema1.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -127,7 +127,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="158.01021"
-     inkscape:cy="49.713957"
+     inkscape:cy="47.693651"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -150,7 +150,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -341,7 +341,7 @@
        sodipodi:cy="321.64789"
        sodipodi:rx="69.285713"
        sodipodi:ry="31.428572"
-       d="m 272.30323,353.03835 a 69.285713,31.428572 0 1 1 0.62281,0.0127"
+       d="m 272.30323,353.03835 c -38.21904,-0.85454 -67.67451,-15.60128 -65.79063,-32.93775 1.88388,-17.33647 34.39372,-30.69772 72.61276,-29.84317 38.21904,0.85454 67.67451,15.60127 65.79063,32.93775 -1.8719,17.22627 -33.99855,30.5499 -71.98995,29.85582"
        sodipodi:start="1.6200481"
        sodipodi:end="7.8942353"
        sodipodi:open="true"
@@ -356,14 +356,14 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="367.31003"
-       y="202.58751"
+       x="367.81509"
+       y="199.05197"
        id="text4074"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4076"
-         x="367.31003"
-         y="202.58751">ocaml-java</tspan></text>
+         x="367.81509"
+         y="199.05197">ocaml-java</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"

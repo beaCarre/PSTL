@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.10)  14 MAY 2014 18:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.9.10)  15 MAY 2014 16:08
 entering extended mode
  %&-line parsing enabled.
 **present.tex -o present.pdf
@@ -1155,16 +1155,16 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 160.
+LaTeX Font Info:    Try loading font information for U+msa on input line 167.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 160.
+LaTeX Font Info:    Try loading font information for U+msb on input line 167.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Overfull \hbox (5.935pt too wide) in paragraph at lines 160--160
+Overfull \hbox (5.935pt too wide) in paragraph at lines 167--167
 [][]  
  []
 
@@ -1175,13 +1175,12 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 
 [3
 
-] <schemaOjacare.png, id=54, 390.45876pt x 141.52875pt>
+] <schemaOjacare.png, id=55, 296.307pt x 106.2369pt>
 File: schemaOjacare.png Graphic file (type png)
-
-<use schemaOjacare.png>
+ <use schemaOjacare.png>
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 178.
+(Font)              using `T1/cmss/m/n' instead on input line 185.
 
 
 Overfull \hbox (2.34813pt too wide) has occurred while \output is active
@@ -1191,16 +1190,16 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [4
 
  <./schemaOjacare.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 195.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 202.
 
  (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<schemaCamljava2.png, id=63, 304.61806pt x 142.73325pt>
+<schemaCamljava2.png, id=64, 302.8113pt x 142.3719pt>
 File: schemaCamljava2.png Graphic file (type png)
 
 <use schemaCamljava2.png>
-Overfull \vbox (5.52223pt too high) detected at line 195
+Overfull \vbox (5.23315pt too high) detected at line 202
  []
 
 
@@ -1257,7 +1256,7 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 
 [7
 
-] <schemaOCamlJava.png, id=88, 383.9946pt x 163.812pt>
+] <schemaOCamlJava.png, id=89, 383.9946pt x 163.812pt>
 File: schemaOCamlJava.png Graphic file (type png)
 
 <use schemaOCamlJava.png>
@@ -1278,14 +1277,14 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (1.7314pt too wide) in paragraph at lines 332--332
+Overfull \hbox (1.7314pt too wide) in paragraph at lines 343--343
 [][]  
  []
 
-<schema1.png, id=101, 308.5929pt x 67.9338pt>
+<schema1.png, id=104, 308.5929pt x 67.9338pt>
 File: schema1.png Graphic file (type png)
  <use schema1.png>
-Overfull \hbox (1.30226pt too wide) in paragraph at lines 332--332
+Overfull \hbox (1.30226pt too wide) in paragraph at lines 343--343
  [] 
  []
 
@@ -1296,27 +1295,29 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 
 [10
 
- <./schema1.png>] <typesOCamlJava.png, id=109, 987.69pt x 467.7475pt>
-File: typesOCamlJava.png Graphic file (type png)
+ <./schema1.png>]
+Overfull \hbox (9.70178pt too wide) in paragraph at lines 374--374
+ [] 
+ []
 
-<use typesOCamlJava.png>
+
 Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [][] 
  []
 
 [11
 
- <./typesOCamlJava.png (PNG copy)>]
-<exemple.png, id=116, 762.85pt x 540.0175pt>
-File: exemple.png Graphic file (type png)
- <use exemple.png>
+]
+\openout3 = `present.vrb'.
+
+ (./present.vrb)
 Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [][] 
  []
 
 [12
 
- <./exemple.png (PNG copy)>]
+]
 Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1324,6 +1325,13 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 [13
 
 ]
+Overfull \hbox (2.34813pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 \tf@nav=\write6
 \openout6 = `present.nav'.
 
@@ -1333,7 +1341,8 @@ Overfull \hbox (2.34813pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `present.snm'.
 
- (./present.aux)
+
+(./present.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1343,27 +1352,29 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17815 strings out of 495061
- 309646 string characters out of 1182621
- 593128 words of memory out of 3000000
- 20489 multiletter control sequences out of 15000+50000
- 18386 words of font info for 50 fonts, out of 3000000 for 9000
+ 17905 strings out of 495061
+ 311449 string characters out of 1182621
+ 669473 words of memory out of 3000000
+ 20571 multiletter control sequences out of 15000+50000
+ 19936 words of font info for 52 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  55i,15n,63p,330b,1422s stack positions out of 5000i,500n,10000p,200000b,50000s
- </users/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.450pk> 
-</users/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0800.450pk> </u
-sers/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </user
-s/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </users/E
-tu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </users/Etu7
-/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk> </users/Etu7/29
-00087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </users/Etu7/29000
-87/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/symbols/msam10.pfb>
-Output written on present.pdf (13 pages, 9471901 bytes).
+ </users/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0600.600pk> 
+</users/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.450pk> </u
+sers/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecit0800.450pk> </user
+s/Etu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </users/E
+tu7/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </users/Etu7
+/2900087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </users/Etu7/29
+00087/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </users/Etu7/29000
+87/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk> </users/Etu7/2900087/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </users/Etu7/2900087/.te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb>
+Output written on present.pdf (14 pages, 15370070 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

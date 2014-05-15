@@ -123,27 +123,31 @@ capacité d'un programme écrit dans un certain langage d'utiliser un
 programme dans un autre langage.
 \end{definition}
 \begin{itemize}
-\item Intérêt :
+\item \textbf{Intérêt} :
 
 Tirer parti des spécificités de chaque langage
 
-\item Caractéristiques d'une interopérabilité efficace :
+\item\textbf{Interopérabilité efficace} :
 \begin{itemize}
-\item accès simple ou implicite à l'autre langage
-\item gestion mémoire et des exceptions
-\item bonne gestion des caractéristiques différentes
+\item accès simple à l'autre langage
+\item bonne gestion mémoire et des exceptions
+\item bonne gestion des types (conversions) et caractéristiques
 \end{itemize}
+\item \textbf{Projet} : 
+  
+  Adapter deux travaux déjà développés (\emph{O'Jacaré} et \emph{OCaml-Java}) pour tirer parti des avantages de chacuns.
+
 \end{itemize}
 \end{frame}
 
 
 
 \begin{frame}{Comparaison des deux mondes}
-L'interopérabilité se fait sur le modèle objet de chacun, dont voici les caractéristiques qui diffèrent :
+Dans ce projet, l'interopérabilité se fait sur le modèle objet de chacun :
 
 \bigskip
 \begin{tabular}{|l|c|c|c|c|}
-  \hline
+  \hline \rowcolor[gray]{0.9}
   \emph{caractéristiques} & \emph{Java} & \emph{OCaml} \\
   \hline
   accès champs & selon la visibilité & via appels de méthode\\\hline
@@ -156,7 +160,10 @@ L'interopérabilité se fait sur le modèle objet de chacun, dont voici les cara
 
 \bigskip
 
-$\Rightarrow$ Il faut réduire les possibilités d'un outil à l'intersection des deux mondes
+\begin{definition}
+Une \alert{interface} définit la frontière de communication entre deux entités.
+\end{definition}
+Pour l'interopérabilité, il est nécessaire de définir une interface, qui soit à l'intersection des deux mondes.
 \end{frame}
 
 
@@ -164,14 +171,14 @@ $\Rightarrow$ Il faut réduire les possibilités d'un outil à l'intersection de
 \begin{frame}{O'Jacaré : schéma global }
 
 \begin{definition}
-Un \alert{IDL} (Langage de définition d'Interface) définit une interface entre les deux langages, qui va permettre de les faire communiquer.
+Un \alert{IDL} (Langage de Définition d'Interface) définit une interface entre les deux langages, qui va permettre de les faire communiquer.
 \end{definition}
 
 O'Jacaré génère les classes encapsulantes à partir d'un IDL dans lequel sont décrites les classes qu'on veut manipuler.
 \medskip
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.6]{schemaOjacare.png}
+  \includegraphics[scale=0.9]{schemaOjacare.png}
   \caption{La génération de code d'O'Jacaré}
 \end{figure}
 
@@ -198,7 +205,7 @@ La bibliothèque \camljava \ gère la communication OCaml-Java :
 
 
 
-\begin{frame}[fragile]{La classe Point (Java)}
+\begin{frame}[fragile]{O'Jacaré exemple : La classe Point (Java)}
 %mise en page TODO
 
 \bigskip
@@ -238,7 +245,7 @@ La bibliothèque \camljava \ gère la communication OCaml-Java :
 
 
 
-\begin{frame}[fragile]{O'Jacaré : définition de l'IDL}
+\begin{frame}[fragile]{O'Jacaré exemple : IDL et utilisation}
   IDL : point.idl
 \begin{idlEx} 
 package mypack;
@@ -288,17 +295,19 @@ $\Rightarrow$ un seul runtime
 
 
 \begin{frame}[fragile]{OCaml-Java : l'accès au monde Java}
+
+Méthodes d'accès à du code Java dans le \textbf{module Java} d'OCaml
 \begin{OCamlEx}
-make : 'a java_constructor -> 'a 
-call : 'a java_method -> 'a 
-get : 'a java_field_get -> 'a 
-set : 'a java_field_set -> 'a 
-is_null : 'a java_instance -> bool 
-instanceof : 'a java_type -> 'b java_instance -> bool
-cast : 'a java_type -> 'b java_instance -> 'a
+/*\textbf{make}*/ : 'a java_constructor -> 'a 
+/*\textbf{call}*/ : 'a java_method -> 'a 
+/*\textbf{get}*/ : 'a java_field_get -> 'a 
+/*\textbf{set}*/ : 'a java_field_set -> 'a 
+/*\textbf{is\_null}*/ : 'a java_instance -> bool 
+/*\textbf{instanceof}*/ : 'a java_type -> 'b java_instance -> bool
+/*\textbf{cast}*/ : 'a java_type -> 'b java_instance -> 'a
 \end{OCamlEx}
 
-Accès aux bibliothèques Java et à du code utilisateur grâce à ce module.
+Exemple d'utilisation :
 
 \begin{OCamlEx}
 let color = JavaString.of_string "bleu"
@@ -309,7 +318,6 @@ in
    Java.call "mypack.Point.eq(mypack.Point):boolean" p p2
 \end{OCamlEx}
 
-
 \end{frame}
 
 
@@ -319,11 +327,14 @@ in
   \hline
    \cellcolor[gray]{0.6}\emph{O'Jacaré+}\camljava & \cellcolor[gray]{0.6}\emph{OCaml-Java}& \cellcolor[gray]{0.6} \emph{O'Jacaré+OCaml-Java}\\
   \hline\hline
- \cellcolor[gray]{0.9} appels transparents & via module Java & \cellcolor[gray]{0.9}appels transparents\\
+ \cellcolor[gray]{0.8} appels transparents & via module Java & \cellcolor[gray]{0.8}appels transparents\\
 \hline
-  2 runtime &\cellcolor[gray]{0.9} 1 runtime&\cellcolor[gray]{0.9} 1 runtime \\
+  2 runtime &\cellcolor[gray]{0.8} 1 runtime&\cellcolor[gray]{0.8} 1 runtime \\
 \hline
 \end{tabular}
+
+\bigskip 
+
 \begin{figure}[h]
   \centering
   \includegraphics[scale=1]{schema1.png}
@@ -333,58 +344,125 @@ in
 
 
 
-\begin{frame}{Adaptation d'Ojacaré}
+\begin{frame}{Adaptation d'Ojacaré : O'Jacaré 2}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.30]{typesOCamlJava.png}
-  \caption{Les types dans OCamlJava}
+\begin{enumerate}
+\item Garder la même structure de capsule : à part les vérifications dynamiques, ou les allocations.
+
+\item Adapter à la bibliothèque \emph{Java} de OCaml-Java
+
+\item Convertir les types
+
+\begin{figure}\scalebox{0.8}{
+\centering
+\begin{tabular}{|c|l|l|l|}
+ \hline\rowcolor[gray]{0.9}
+\emph{TYPE IDL} & \emph{type Java} &\emph{type OCaml pour OCaml-Java} & \emph{type OCaml} \\ \rowcolor[gray]{0.9}
+& (java\_type) & (oj\_type t) & (ml\_type t)\\
+ \hline
+\emph{int} & int & int32 & int\\
+\emph{long} & long & int64 & int\\
+\emph{string} & java.lang.String & java'lang'String java\_instance & string\\
+\emph{pack/Obj} & pack.Obj & pack'Obj java\_instance & jObj\\
+ \hline
+\end{tabular}
+}
+\caption{Tableau associant pour chaque type de l'IDL et de Java : le type OCaml maniulé par OCaml-Java (oj\_type) et le type utilisateur OCaml (ml\_type).}
 \end{figure}
 
+\end{enumerate}
 \end{frame}
 
-\begin{frame}{Comparaison de génération}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.35]{exemple.png}
-  \caption{La génération du constructeur de Point}
-\end{figure}
+
+
+
+
+\begin{frame}[fragile]{Comparaison de génération}
+
+La génération du constructeur de Point par 
+\begin{itemize}
+\item O'Jacaré
+\begin{OCamlEx}
+let _init_point =
+  let clazz = Jni.find_class "mypack/Point" in
+  let id =
+    try Jni.get_methodID clazz "<init>" "(II)V"
+    with | _ ->failwith
+          "Unknown constructor from IDL in class \"mypack.Point\" : \"Point(int,int)\"."
+  in
+    fun (java_obj : _jni_jPoint) _p0 _p1 ->
+      let _p1 = _p1 in
+      let _p0 = _p0
+      in
+        Jni.call_nonvirtual_void_method java_obj clazz id
+          [| Jni.Camlint _p0; Jni.Camlint _p1 |];;
+class point _p0 _p1 =
+  let java_obj = _alloc_jPoint ()
+  in let _ = _init_point java_obj _p0 _p1
+    in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+
+\item O'Jacaré 2 
+\begin{OCamlEx}
+class point _p0 _p1 =
+  let _p1 = Int32.of_int _p1
+  in let _p0 = Int32.of_int _p0
+    in let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
+      in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+
+\end{itemize}
 \end{frame}
 
 
 \begin{frame}{Conclusion}
 
+Difficultés :
+\begin{itemize}
+\item S'approprier les outils, avec lectures des articles associés
+\item Systèmes de types de OCaml-Java
+\end{itemize}
+
 Ce nouvel outil a apporté des nouvelles possibilités d'un côté,
 avec une simplicité d'utilisation :
 \begin{itemize}
-\item Accès simple à l'API Java
+\item Accès simple à l'API Java ou à du code utilisateur
 \item Accès utilisateur transparent grâce aux classes encapsulantes
 \item 1 seul runtime -> Gestion mémoire simplifiée et sûre
-\item Code généré simplifié ($\sim$ 5 fois moins)
-\item 
+\item Code généré simplifié ($\sim$ 5 fois moins de lignes)
 \end{itemize}
 
 \end{frame}
 
-%% \begin{frame}{Bibliographie}
-  
-%%   \begin{thebibliography}{9}
-%%   \bibitem{amato2013localizing}
-%%     Amato, Gianluca and Scozzari, Francesca,
-%%     \emph{Localizing widening and narrowing}.
-%%     Static Analysis, Springer.
-%%     pages 25--42,
-%%     2013.
 
-%%   \bibitem{halbwachs2012decreasing}
-%%     Halbwachs, Nicolas and Henry, Julien,
-%%     \emph{When the decreasing sequence fails}.
-%%     Static Analysis, Springer.
-%%     pages 198--213,
-%%     2012.
-%%   \end{thebibliography}
 
-%% \end{frame}
+
+
+\begin{frame}{Bibliographie}
+
+  \begin{thebibliography}{}
+  \bibitem{DAOC} CHAILLOUX E., MANOURY P., PAGANO B., \emph{Développement
+    d'applications avec Objective Caml}, O'Reilly
+    , 2000
+
+  \bibitem{}  HENRY G., \emph{O’Jacaré} \url{http://www.pps.univ-paris-diderot.fr/~henry/ojacare/}
+
+  \bibitem{}  CLERC X.,\emph{OCaml-Java 2.0} \url{http://ocamljava.x9c.fr/preview/}
+
+  \bibitem{} CHAILLOUX E., HENRY G., \emph{O’Jacaré, une interface objet
+    entre Objective Caml et Java}, 2004
+
+  \bibitem{} CLERC X., \emph{OCaml-Java: Typing Java Accesses from OCaml
+    Programs}, Trends in Functional Programming, Lecture Notes in
+    Computer Science Volume 7829,
+    2013
+
+  \bibitem{camljava} Leroy X., \emph{The camljava project},
+
+  \bibitem{module Java} CLERC X.,\emph{OCaml-java : module Java} \href{http://ocamljava.x9c.fr/preview/javalib/index.html}{lien}
+
+  \end{thebibliography}
+\end{frame}
 
 \end{document}
 
