@@ -125,17 +125,16 @@ programme dans un autre langage.
 \begin{itemize}
 \item \textbf{Intérêt} :
 
-Tirer parti des spécificités de chaque langage
+Tirer parti des spécificités de chaque langage.
 
 \item\textbf{Interopérabilité efficace} :
-\begin{itemize}
-\item accès simple à l'autre langage
-\item bonne gestion mémoire et des exceptions
-\item bonne gestion des types (conversions) et caractéristiques
-\end{itemize}
+
+ Accès simple à l'autre langage (ici, manipuler un objet Java comme un
+ objet OCaml.
+
 \item \textbf{Projet} : 
   
-  Adapter deux travaux déjà développés (\emph{O'Jacaré} et \emph{OCaml-Java}) pour tirer parti des avantages de chacuns.
+  Adapter deux travaux déjà développés (\emph{O'Jacaré} et \emph{OCaml-Java}) pour tirer parti des avantages de chacun.
 
 \end{itemize}
 \end{frame}
@@ -143,7 +142,8 @@ Tirer parti des spécificités de chaque langage
 
 
 \begin{frame}{Comparaison des deux mondes}
-Dans ce projet, l'interopérabilité se fait sur le modèle objet de chacun :
+Dans ce projet, l'interopérabilité se fait sur le modèle objet de
+chacun :
 
 \bigskip
 \begin{tabular}{|l|c|c|c|c|}
@@ -161,9 +161,10 @@ Dans ce projet, l'interopérabilité se fait sur le modèle objet de chacun :
 \bigskip
 
 \begin{definition}
-Une \alert{interface} définit la frontière de communication entre deux entités.
+Une \alert{interface} définit la frontière de communication entre deux
+entités.
 \end{definition}
-Pour l'interopérabilité, il est nécessaire de définir une interface, qui soit à l'intersection des deux mondes.
+Pour l'interopérabilité, il est nécessaire de définir une interface qui adapte les deux modèles.
 \end{frame}
 
 
@@ -179,7 +180,6 @@ O'Jacaré génère les classes encapsulantes à partir d'un IDL dans lequel sont
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.9]{schemaOjacare.png}
-  \caption{La génération de code d'O'Jacaré}
 \end{figure}
 
 \end{frame}
@@ -192,7 +192,7 @@ O'Jacaré génère les classes encapsulantes à partir d'un IDL dans lequel sont
 La bibliothèque \camljava \ gère la communication OCaml-Java :
 \begin{itemize}
 \item Recherche des classes par nom et des méthodes par signature
-\item La conversion des types de base est assurée
+\item Conversion des types de base
 \end{itemize}
 \begin{figure}[h!]
   \centering
@@ -268,7 +268,7 @@ Utilisation : main.ml
   let p = new default_point () in
   let p2 = new point 1 1 in
   p#moveto 4 3;
-  p#display ();
+  p#tostring ();
   print_string (if (p#eq p2) then "true" else "false")
 \end{OCamlEx}
 \end{frame}
@@ -285,8 +285,8 @@ Compilation vers du bytecode Java
 
 $\Rightarrow$ un seul runtime
 \begin{itemize}
-\item Pas de problème de gestion mémoire, 
-\item ni de communication dynamique
+\item Pas de problème de gestion mémoire
+\item Typage statique
 \end{itemize}
 \end{frame}
 
@@ -296,24 +296,20 @@ $\Rightarrow$ un seul runtime
 
 \begin{frame}[fragile]{OCaml-Java : l'accès au monde Java}
 
-Méthodes d'accès à du code Java dans le \textbf{module Java} d'OCaml
-\begin{OCamlEx}
-/*\textbf{make}*/ : 'a java_constructor -> 'a 
-/*\textbf{call}*/ : 'a java_method -> 'a 
-/*\textbf{get}*/ : 'a java_field_get -> 'a 
-/*\textbf{set}*/ : 'a java_field_set -> 'a 
-/*\textbf{is\_null}*/ : 'a java_instance -> bool 
-/*\textbf{instanceof}*/ : 'a java_type -> 'b java_instance -> bool
-/*\textbf{cast}*/ : 'a java_type -> 'b java_instance -> 'a
-\end{OCamlEx}
+  Accès à du code Java grâce à des méthodes définies dans le
+  \textbf{module Java} OCaml pour OCaml-Java.
+
+\bigskip
 
 Exemple d'utilisation :
 
 \begin{OCamlEx}
-let color = JavaString.of_string "bleu"
 and x = Int32.of_int 1
 and y = Int32.of_int 2 in
-let p = Java.make "mypack.ColoredPoint(int,int,java.lang.String)" s y color 
+let (p : mypack'Point java_instance) = 
+   Java.make "mypack.Point()" ()
+let (p2 : mypack'Point java_instance) = 
+   Java.make "mypack.Point(int,int)" x y 
 in
    Java.call "mypack.Point.eq(mypack.Point):boolean" p p2
 \end{OCamlEx}
@@ -329,7 +325,7 @@ in
   \hline\hline
  \cellcolor[gray]{0.8} appels transparents & via module Java & \cellcolor[gray]{0.8}appels transparents\\
 \hline
-  2 runtime &\cellcolor[gray]{0.8} 1 runtime&\cellcolor[gray]{0.8} 1 runtime \\
+  2 runtimes &\cellcolor[gray]{0.8} 1 runtime&\cellcolor[gray]{0.8} 1 runtime \\
 \hline
 \end{tabular}
 
@@ -347,18 +343,22 @@ in
 \begin{frame}{Adaptation d'Ojacaré : O'Jacaré 2}
 
 \begin{enumerate}
-\item Garder la même structure de capsule : à part les vérifications dynamiques, ou les allocations.
+\item Garder la même structure de capsule sauf l'introspection des
+  types dynamiques, qui se fait statiquement par OCaml-Java
 
-\item Adapter à la bibliothèque \emph{Java} de OCaml-Java
+\item Adapter au module \emph{Java} de OCaml-Java
 
-\item Convertir les types
+\item Redéfinir la conversion des types
 
 \begin{figure}\scalebox{0.8}{
 \centering
 \begin{tabular}{|c|l|l|l|}
- \hline\rowcolor[gray]{0.9}
-\emph{TYPE IDL} & \emph{type Java} &\emph{type OCaml pour OCaml-Java} & \emph{type OCaml} \\ \rowcolor[gray]{0.9}
-& (java\_type) & (oj\_type t) & (ml\_type t)\\
+ \hline
+ \rowcolor[gray]{0.8}
+\emph{TYPE IDL} & \emph{type Java} &\emph{type OCaml manipulés} &
+\emph{type OCaml} \\ 
+\rowcolor[gray]{0.8}
+& (java\_type) & \emph{par OCaml-Java} (oj\_type t) & (ml\_type t)\\
  \hline
 \emph{int} & int & int32 & int\\
 \emph{long} & long & int64 & int\\
@@ -367,7 +367,6 @@ in
  \hline
 \end{tabular}
 }
-\caption{Tableau associant pour chaque type de l'IDL et de Java : le type OCaml maniulé par OCaml-Java (oj\_type) et le type utilisateur OCaml (ml\_type).}
 \end{figure}
 
 \end{enumerate}
@@ -417,21 +416,27 @@ class point _p0 _p1 =
 
 \begin{frame}{Conclusion}
 
-Difficultés :
+Travail :
 \begin{itemize}
-\item S'approprier les outils, avec lectures des articles associés
-\item Systèmes de types de OCaml-Java
+\item S'approprier les outils et lire les articles associés
+\item Comprendre le système de types de OCaml-Java
+\item Ecrire O'Jacaré 2
 \end{itemize}
 
-Ce nouvel outil a apporté des nouvelles possibilités d'un côté,
-avec une simplicité d'utilisation :
+O'Jacaré 2 :
 \begin{itemize}
-\item Accès simple à l'API Java ou à du code utilisateur
+\item Accès simple à du code Java ou à l'API
 \item Accès utilisateur transparent grâce aux classes encapsulantes
-\item 1 seul runtime -> Gestion mémoire simplifiée et sûre
+\item 1 seul runtime -> gestion mémoire plus sûre
 \item Code généré simplifié ($\sim$ 5 fois moins de lignes)
 \end{itemize}
 
+Travaux futurs:
+\begin{itemize}
+\item Conversion des types tableaux
+\item Gérer un mécanisme de rappel (la redéfinition d'une méthode Java
+  pas une méthode OCaml)
+\end{itemize}
 \end{frame}
 
 
@@ -464,5 +469,110 @@ avec une simplicité d'utilisation :
   \end{thebibliography}
 \end{frame}
 
+
+
+\begin{frame}[fragile]{Module Java de OCaml}
+\scalebox{0.8}{
+\begin{tabular}{|l|l|}
+  \hline
+  \emph{types OCaml-Java} & \emph{descriptions et exemples} \\\hline
+  java\_instance & référence sur une instance Java  \\
+  \hline
+  java\_constructor & signature d'un constructeur  \\
+  &  "java.lang.Object()" \\
+  \hline
+  java\_method & signature d'une méthode \\
+  & "java.lang.String.lastIndexOf(String):int"\\
+  \hline
+  java\_field\_get & signature d'un attribut\\
+  & "mypack.Point.x:int" \\
+  \hline
+  java\_field\_set & signature d'un attribut\\
+  & "mypack.Point.x:int" \\
+  \hline
+  java\_type & classe, interface ou type Array\\
+  & "java.lang.String"\\
+  \hline
+\end{tabular}
+}
+\begin{OCamlEx}
+/*\textbf{make}*/ : 'a java_constructor -> 'a 
+/*\textbf{call}*/ : 'a java_method -> 'a 
+/*\textbf{get}*/ : 'a java_field_get -> 'a 
+/*\textbf{set}*/ : 'a java_field_set -> 'a 
+/*\textbf{is\_null}*/ : 'a java_instance -> bool 
+/*\textbf{instanceof}*/ : 'a java_type -> 'b java_instance -> bool
+/*\textbf{cast}*/ : 'a java_type -> 'b java_instance -> 'a
+\end{OCamlEx}
+\end{frame}
+
+
+\begin{frame}[fragile]{génération O'Jacaré 2 : la classe Point}
+\begin{OCamlEx}
+type top = java'lang'Object java_instance;;
+exception Null_object of string;;
+type _jni_jPoint = mypack'Point java_instance;;
+class type jPoint =
+  object
+    method _get_jni_jPoint : _jni_jPoint
+    method set_x : int -> unit
+    method get_x : unit -> int
+    method set_y : int -> unit
+    method get_y : unit -> int
+    method moveto : int -> int -> unit
+    method toString : unit -> string
+    method eq : jPoint -> bool
+  end;;
+class _capsule_jPoint (jni_ref : _jni_jPoint) =
+  let _ =
+    if Java.is_null jni_ref then raise (Null_object "mypack/Point") else ()
+  in
+    object (self)
+      method eq =
+        fun (_p0 : jPoint) ->
+          let _p0 = _p0#_get_jni_jPoint
+          in Java.call "mypack.Point.eq(mypack.Point):boolean" jni_ref _p0
+      method toString =
+        fun () ->
+          JavaString.to_string
+            (Java.call "mypack.Point.toString():java.lang.String"
+          jni_ref)
+\end{OCamlEx}
+\end{frame}
+
+\begin{frame}[fragile]{génération O'Jacaré 2 : la classe Point (2)}
+\begin{OCamlEx}
+      method moveto =
+        fun _p0 _p1 ->
+          let _p1 = Int32.of_int _p1 in
+          let _p0 = Int32.of_int _p0
+          in Java.call "mypack.Point.moveto(int,int):void" jni_ref _p0 _p1
+      method set_y =
+        fun _p ->
+          let _p = Int32.of_int _p
+          in Java.set "mypack.Point.y:int" jni_ref _p
+      method get_y =
+        fun () -> Int32.to_int (Java.get "mypack.Point.y:int" jni_ref)
+      method set_x =
+        fun _p ->
+          let _p = Int32.of_int _p
+          in Java.set "mypack.Point.x:int" jni_ref _p
+      method get_x =
+        fun () -> Int32.to_int (Java.get "mypack.Point.x:int" jni_ref)
+      method _get_jni_jPoint = jni_ref
+    end;;
+let jPoint_of_top (o : top) : jPoint =
+  new _capsule_jPoint (Java.cast "mypack.Point" o);;
+let _instance_of_jPoint (o : top) = Java.instanceof "mypack.Point" o;;
+class point _p0 _p1 =
+  let _p1 = Int32.of_int _p1
+  in let _p0 = Int32.of_int _p0
+    in let java_obj = Java.make "mypack.Point(int,int)" _p0 _p1
+      in object (self) inherit _capsule_jPoint java_obj end;;
+class default_point () =
+  let java_obj = Java.make "mypack.Point()" ()
+  in object (self) inherit _capsule_jPoint java_obj end;;
+\end{OCamlEx}
+\end{frame}
 \end{document}
 
